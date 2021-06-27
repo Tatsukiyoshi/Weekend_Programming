@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cl.exe build active file",
+            "windows": {
+                "command": "cl.exe",
+                "args": [
+                    "/Zi",
+                    "/EHsc",
+                    "/Fe:",
+                    "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                    "${file}"
+                ]
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
