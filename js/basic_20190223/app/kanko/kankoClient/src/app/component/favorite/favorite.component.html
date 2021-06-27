@@ -1,0 +1,45 @@
+<div style="position:static; margin:10px;height:100%;">
+  <div
+    *ngFor="let doc of docs; let i = index"
+    style="border:2px solid silver;font-family:sans-serif ;
+    margin:10px auto"
+  >
+    <!--へッダーエリア-->
+    <div style="background-color: beige;height:45px;padding:5px;
+    display:flex;flex-direction:row;border-bottom:solid gray 1px; ">
+      <div style="margin:auto auto auto 0;color:black;
+           font-weight: bold;text-align: left;overflow: hidden;
+display:flex;align-items: center">
+        <mat-icon (click)="clickFavoriteButton(doc)" class="myFavoriteButton"
+                  style="align-self:center;margin: auto 0.2em ;">
+          {{doc.isFavorite?"favorite":"favorite_border"}}
+        </mat-icon>
+        <span class="myTitle" style="color:black;">
+          {{doc.name}}
+          <span class="mySubTitle">({{doc.timestr}}登録)</span>
+      </span>
+      </div>
+      <div style="display:flex;align-items: center">
+        <button mat-mini-fab
+                color="accent"
+                style="margin-right: 10px ;"
+                (click)="openDialog(doc)">詳細
+        </button>
+      </div>
+    </div>
+
+    <!-- 説明文 -->
+    <div style="height:80px;padding:10px;font-size:15px;overflow: hidden">
+      <span class="mySubTitle" >
+      {{doc.prefName}}>{{doc.genreName}}
+        [{{doc._id}}]
+        <br>
+      </span>
+      <span class="myText">
+      {{doc.descript}}
+
+      </span>
+    </div>
+  </div>
+  <div *ngIf="docs" style="background-color: orange;text-align: center">データ末尾</div>
+</div>

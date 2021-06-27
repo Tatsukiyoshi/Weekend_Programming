@@ -1,0 +1,91 @@
+<div (click)="clickOp($event)">
+<div
+  *ngIf="isWait"
+  style="display:flex;width:100%;height:100% ;align-items:center;justify-content:center;">
+  起動中....
+</div>
+
+<div
+  *ngIf="!isWait"
+>
+  <!--ヘッダ-->
+  <mat-toolbar
+    color="primary"
+    style="position:fixed;top:0;left:0;height:56px;width: 100%; max-width:1024px; z-index: 2;"
+  >
+    <button mat-icon-button
+            [matMenuTriggerFor]="menu"
+            color="accent">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!--ヘッダータイトル-->
+    <h1>観光情報検索</h1>
+    <div style="margin:auto 0 auto auto;display:flex; align-items: center;">
+
+      <!--<mat-icon  *ngIf="stateService.state.isEdit">-->
+         <!--edit-->
+         <!--</mat-icon>-->
+      <!--<span *ngIf="stateService.state.isReadyOffline">-->
+        <!--PWA-->
+      <!--</span>-->
+      <mat-icon *ngIf="isUpdate" class="spin">
+        autorenew
+      </mat-icon>
+      <span *ngIf="stateService.state.setting.prefetch.value">
+        Pre
+      </span>
+      <span *ngIf="stateService.docCount>0">
+      　{{"　"+stateService.docCount}}件
+      </span>
+    </div>
+    <mat-menu #menu="matMenu">
+
+      <button mat-menu-item
+              *ngIf="router.url !=='/search' "
+              (click)="newSearch()">
+        <span>新規検索</span>
+      </button>
+
+      <button mat-menu-item
+              *ngIf="router.url !=='/search'"
+              (click)="search()">
+        <span>再検索</span>
+      </button>
+
+      <button mat-menu-item
+              *ngIf="router.url !=='/favorite' "
+              (click)="favorite()">
+        <span>お気に入り</span>
+      </button>
+
+      <button mat-menu-item
+              *ngIf="router.url !=='/setting' "
+              (click)="setting()">
+        <span>設定</span>
+      </button>
+
+    </mat-menu>
+
+  </mat-toolbar>
+
+  <!--待ち受け背景-->
+  <div
+    *ngIf="isQue"
+    class="darkBackground"
+  ></div>
+
+  <!--待ち受けアニメーション-->
+  <div *ngIf="isQue"
+style="z-index:2;height:10rem;width:10rem;position:
+absolute;top:10rem;right:calc(50% - 5rem);" color="Warn">
+    <mat-progress-spinner
+      mode="indeterminate"></mat-progress-spinner>
+  </div>
+
+  <div style="position:absolute;top:56px;left:0;width: 100%; max-width:1024px; ">
+    <router-outlet #outlet></router-outlet>
+  </div>
+
+</div>
+
+</div>

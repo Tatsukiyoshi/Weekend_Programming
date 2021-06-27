@@ -1,0 +1,53 @@
+<div  class="myContainer" >
+<!--<div mat-dialog-title class="myContainer" >-->
+
+  <div class="myContainer" style="justify-content:center">
+
+    <mat-icon [ngClass]="{noDisplay:doc.isStart}" (click)="movePage(-1)"  class="myNavButton">
+       arrow_back
+    </mat-icon>
+    <mat-icon (click)="close()" class="myNavButton"  style="margin: 0 2rem ">
+      cancel</mat-icon>
+    <mat-icon   [ngClass]="{noDisplay:doc.isEnd}" (click)="movePage(1)"  class="myNavButton">
+      arrow_forward</mat-icon>
+  </div>
+
+  <div class="myContainer" style="align-items: center;margin-top: 0.5rem;">
+  <mat-icon
+    (click)="clickFavoriteButton(doc)"
+    class="myFavoriteButton"
+  >
+    {{doc.isFavorite?"favorite":"favorite_border"}}
+  </mat-icon>
+
+  <span class="myTitle" style="word-break:break-all;">
+    {{doc.name}}({{doc.name_kana}})
+  </span>
+</div>
+
+</div>
+
+<div  class="myContainer">
+<!--<div mat-dialog-content class="myContainer">-->
+
+  <div class="myContainer">
+    <img *ngIf="imgStr"
+         [src]="imgStr"
+         style="width:100%;"
+    >
+  </div>
+  <mat-divider></mat-divider>
+
+  <div class="myContainer">
+  <p class="mySubTitle">
+    {{doc.prefName}}>{{doc.genreName}}
+  </p>
+     <span class="myText"
+      style="text-align: left;">
+    {{doc.descript}}
+     </span>
+  </div>
+
+</div>
+
+

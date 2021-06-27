@@ -1,0 +1,15 @@
+<mat-nav-list class="myContainer">
+  <form [formGroup]="toggleButtonGroup"
+        class="myContainer" style="flex-direction: column;flex-wrap:wrap;width:90%;">
+    <mat-slide-toggle *ngFor="let label of labels"
+                      [formControlName]="label.name">
+      {{label.label}}
+    </mat-slide-toggle>
+  </form>
+  <div style="width:10%;">
+    <mat-icon (click)="close()" class="myNavButton" style="margin: 0 0 auto auto">
+      close
+    </mat-icon>
+
+  </div>
+</mat-nav-list>

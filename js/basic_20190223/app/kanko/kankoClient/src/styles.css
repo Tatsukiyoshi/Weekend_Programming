@@ -1,0 +1,74 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body { margin: 0; }
+
+#mybody .myFavoriteButton{
+  color:red;
+  margin: 0 ;
+  font-size:35px;
+  width:auto;
+  height:auto;
+  cursor: pointer;
+}
+#mybody .myNavButton{
+  color:black;
+  margin: 0 ;
+  font-size:35px;
+  width:auto;
+  height:auto;
+  cursor: pointer;
+}
+#mybody .myDetailButton{
+  color:red;
+  margin: 0 ;
+  font-size:35px;
+  width:auto;
+  height:auto;
+  cursor: pointer;
+}
+#mybody .myTitle{
+  color:black;
+  line-height: 100% ;
+  font-size:1rem;
+  font-weight:bold;
+}
+#mybody .mySubTitle{
+  color:blue;
+  line-height: 100% ;
+  font-size:1rem;
+  font-weight:bold;
+}
+#mybody .myText{
+  color:black;
+  line-height: 100% ;
+  font-size:1rem;
+  font-weight:normal;
+  font-family: sans-serif;
+}
+#mybody .myContainer{
+  color:black;
+  line-height: 100% ;
+  font-size:1rem;
+  font-weight:normal;
+  font-family: sans-serif;
+  width:100%;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: static;
+}
+#mybody mat-slide-toggle{
+  margin: 1rem;
+}
+
+#mybody .noDisplay{
+  visibility:hidden;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

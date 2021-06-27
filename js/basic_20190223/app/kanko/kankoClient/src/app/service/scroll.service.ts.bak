@@ -1,0 +1,196 @@
+import {ElementRef, Injectable} from "@angular/core";
+import {DataService} from "./data.service";
+import {StateService} from "./state.service";
+
+
+@Injectable()
+export class ScrollService {
+
+  isWait = true;
+  prefetchSize = 10;
+  prefetchTime = 0;
+  PREFECH_VALIS_TIME=100*60*1000;
+  ADD_LOAD_SIZE = 50;
+  ROW_HEIGHT =167;
+  WINDOW_HEIGHT;
+  CONTENTS_HEIGHT;
+  SCROLL_OFFSET;
+  THRESHOLD;
+  SCROLL_WAIT = 100;
+  start = 1;
+  end;
+  pos=1;
+  posY=0;
+  docs;
+  nextDocs;
+  isEnd = false;
+  state;
+
+  constructor(
+    private dataService: DataService,
+    private stateService: StateService,
+  ) {
+  }
+
+
+  async prefetch(){
+    try {
+     this.clearDoc();
+     this.docs = await  this.dataService.getDocs({skip:0,limit:this.prefetchSize});
+   console.log("@@@ Prefetch完了");
+   this.init();
+    } catch (error) {
+      throw new Error("" + error.message);
+    }
+  }
+
+  //リスト表示は、検索画面からの呼び出し、メニューからの呼び出し（新規、再表示）の３パターン
+  async init() {
+    try {
+      if(!this.docs){
+      await this.prefetch();
+      }
+      await this.initScroll();
+      this.resize();
+      this.setBuffer({skip:this.prefetchSize, limit:(this.ADD_LOAD_SIZE*2-this.prefetchSize)});
+    } catch (error) {
+      this.stateService.openSnackBar("Scrollサービス初期化失敗" + error.message);
+    }
+  }
+
+
+  stop() {
+    this.isWait = true;
+  }
+
+  //初期バッファ設定
+  async setBuffer(query:{skip:number, limit:number}) {
+    let param = {
+      skip: query.skip,
+      limit: query.limit,
+      include_docs: true
+    };
+
+    let res = await this.dataService.getDocs(param);
+this.docs=this.docs.concat(res);
+
+    if (this.docs && this.docs.length) {
+      this.updatePos(this.docs);
+      this.checkEnd(this.docs);
+      this.isWait = false;
+    }
+  }
+
+  updatePos(docs: any[]) {
+    //検索結果のDoc採番（１から）
+    this.start = docs[0].serial; //1から採番
+    this.end = docs[docs.length - 1].serial;
+    this.pos = this.pos || 1;
+    this.posY = this.posY || 0;
+  }
+
+
+  checkEnd(docs: any) {
+    this.isEnd = docs.length < (this.ADD_LOAD_SIZE * 2);
+    // this.isEnd = docs.length < this.query.size;
+    this.isWait = this.isEnd;
+  }
+
+  resize() {
+    //画面表示域の高さ
+    this.WINDOW_HEIGHT = innerHeight;
+    //リスト全体の高さ
+    this.CONTENTS_HEIGHT = this.ROW_HEIGHT * this.ADD_LOAD_SIZE;
+    //スクロールオフセット
+    this.SCROLL_OFFSET = this.ROW_HEIGHT * this.ADD_LOAD_SIZE;
+    //データ追加ロードのしきい値
+    this.THRESHOLD = this.SCROLL_OFFSET / 2;
+  }
+
+  update() {
+    let posY = scrollY;
+    // this.setConst();
+
+    //表示先頭のデータ番号
+    // this.pos = Math.floor(this.start + posY / this.ROW_HEIGHT);
+    // this.stateService.state.docCount = this.pos + "/" + this.stateService.state.docCount + "件目";
+
+    if (this.isWait || this.isEnd) {
+      return;
+    }
+
+    //下スクロール可能サイズ
+    let bottomScrollMargin = this.CONTENTS_HEIGHT - this.WINDOW_HEIGHT - posY;
+    //log
+    // console.log("posY=%d,magin=%d,threshold=%d,listH=%d",
+    //     posY, bottomScrollMargin, this.THRESHOLD, bottomScrollMargin + posY + this.WINDOW_HEIGHT);
+
+    //スクロール終端で強制反転
+    if (bottomScrollMargin < this.ROW_HEIGHT) {
+      console.log("スクロール強制反転");
+      this.move(scrollY - this.ROW_HEIGHT, 0, null);
+    }
+
+    //バッファのリフレッシュ
+    if (bottomScrollMargin < this.THRESHOLD) {
+      console.log("バッファ更新要求");
+      this.refreshBuffer();
+    }
+  }
+
+
+  async refreshBuffer() {
+    if (!this.nextDocs) {
+      return;
+    }
+    console.log("バッファ更新処理開始");
+    this.move(scrollY - this.SCROLL_OFFSET, this.SCROLL_WAIT, null);
+    this.docs = this.nextDocs;
+    this.updatePos(this.docs);
+    this.checkEnd(this.docs);
+    this.nextDocs = null;
+    console.log("バッファ更新完了:%d～%d件目", this.start, this.end);
+    await this.createNextBuffer();
+    return true;
+  }
+
+  initScroll() {
+    this.move(this.posY, this.SCROLL_WAIT, null);
+  }
+
+  move(posY: number, wait: number, callback: any) {
+    setTimeout(() => {
+      scroll(0, posY);
+      if (callback) {
+        callback();
+      }
+    }, wait);
+  }
+
+
+
+  async createNextBuffer() {
+    if (this.isEnd) {
+      return;
+    }
+    console.log("追加データ受信開始:%d～%d件目", this.end + 1, this.end + this.ADD_LOAD_SIZE);
+    this.prefetchSize=this.ADD_LOAD_SIZE;
+    let docs = await this.dataService.getDocs({
+      skip: this.end,
+      limit: this.prefetchSize
+    });
+    if (docs) {
+
+      this.nextDocs = this.docs.concat(docs).slice(this.ADD_LOAD_SIZE);
+      console.log("次バッファ準備完了:%d～%d",
+        this.nextDocs[0].serial,
+        this.nextDocs[this.nextDocs.length - 1].serial);
+    }
+  }
+
+  clearDoc() {
+    this.docs = null;
+    this.nextDocs = null;
+  }
+
+}

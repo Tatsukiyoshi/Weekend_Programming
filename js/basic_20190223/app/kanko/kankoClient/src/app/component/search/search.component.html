@@ -1,0 +1,106 @@
+<mat-vertical-stepper #mystepper
+  (selectionChange)="onChangeStep($event)">
+<!--ステップ１-->
+  <mat-step id="step01">
+    <ng-template matStepLabel>エリアの選択</ng-template>
+    <div
+      style="display:flex; flex-direction: row; flex-wrap: wrap">
+      <button mat-button
+              matStepperNext
+              *ngFor="let areaObj of AREA_FORM"
+              color="primary"
+              (click)="setArea(areaObj.code)"
+      >
+        {{areaObj.name}}
+      </button>
+    </div>
+  </mat-step>
+
+  <!--ステップ２-->
+  <mat-step id="step02">
+    <form [formGroup]="checkBoxGroup">
+      <ng-template matStepLabel
+                   style="margin-bottom: 0.5em;">
+        ジャンルの選択
+      </ng-template>
+      <div style="background-color: beige; padding:0.3em;line-height:130%;margin:0;">
+        <p>[エリア]　{{selectedAreaName}}</p>
+        <p>[ジャンル]　{{selectedGenreName}}</p>
+      </div>
+      <div>
+        <mat-accordion>
+          <div *ngFor='let categoryObj of GENRE_FORM'>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                {{categoryObj.category}}
+              </mat-expansion-panel-header>
+
+              <div
+                style="display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;align-content: flex-start">
+                <div>
+                  <mat-checkbox
+                    style="padding:1em;"
+                    *ngFor="let genreObj of categoryObj.genre"
+                    [formControlName]="genreObj.code"
+                  >
+                    {{genreObj.name}}
+                  </mat-checkbox>
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+          </div>
+        </mat-accordion>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious>
+          戻る
+        </button>
+        <button mat-button
+                (click)="selectAllGenre(false)">
+          選択解除
+        </button>
+        <button mat-button
+                (click)="selectAllGenre(true)">
+          すべて選択
+        </button>
+        <button mat-button
+        matStepperNext
+         >
+          次へ
+        </button>
+      </div>
+    </form>
+  </mat-step>
+
+  <!--ステップ３-->
+  <mat-step id="step03">
+    <ng-template matStepLabel
+    style="margin-bottom: 0.5em;">
+該当件数
+</ng-template>
+<div style="border:2px solid silver">
+<div style="background-color: beige; padding:0.3em;line-height:130%;margin:0;">
+  <p>[エリア]　{{selectedAreaName}}</p>
+  <p>[ジャンル]　{{selectedGenreName}}</p>
+</div>
+    <div style="font-size: 2em; text-align:center;font-weight:bold; margin:1em auto;">
+{{stateService.docCount}}件
+    </div>
+  </div>
+    <div>
+        <button mat-button
+        matStepperPrevious>
+          戻る
+        </button>
+        <button mat-button
+        [disabled]="!stateService.docCount"
+                (click)="showData()"
+        >
+          表示
+        </button>
+      </div>
+  </mat-step>
+
+</mat-vertical-stepper>

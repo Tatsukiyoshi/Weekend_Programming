@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Emulator",
+            "command": "C:\\Users\\taish\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe",
+            "args": [
+                "-avd",
+                "Nexus_5X_API_29_x86"
+            ],
+            "type": "process"
+        },
+        {
+            "label": "Chcp(utf-8)",
+            "command" : "chcp",
+            "args": [
+                "65001"
+            ],
+            "type": "shell"
+        },
+        {
+            "label": "Chcp(Shift-Jis)",
+            "command": "chcp",
+            "args": [
+                "932"
+            ],
+            "type": "shell"
+        }
+    ]
+}
