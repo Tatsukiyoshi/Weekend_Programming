@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "rust"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
