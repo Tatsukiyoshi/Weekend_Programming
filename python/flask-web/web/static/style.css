@@ -1,0 +1,29 @@
+body {
+    margin-top:  20px;
+    margin-left: 50px;
+    max-width:  900px;
+    background: beige;
+}
+h1 {
+    background: olive;
+    color: khaki;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    padding-left:   20px;
+}
+table {
+    background: #dbebc4;
+    margin-left: 20px;
+    padding:     10px;
+}
+td,th {
+    text-align: left;
+    padding-right: 10px;
+}
+.keyname {
+    color: olive;
+}
+.list {
+    color: maroon;
+    padding-bottom: 10px;
+}

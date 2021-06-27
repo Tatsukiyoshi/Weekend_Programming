@@ -1,0 +1,13 @@
+# ラマヌジャンが発見した円周率の式を使う
+
+def factorial(n):
+  k = 1
+  for i in range(1, n + 1): k = k * i
+  return k
+
+s = sum(factorial(4*n) * (26390*n+1103) / \
+  ((factorial(n))**4 * 396**(4*n)) for n in range(3))
+
+print(1 / ((8**0.5 / 9801) * s))
+
+

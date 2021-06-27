@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+    <country name="リヒテンシュタイン">
+        <rank>1</rank>
+        <year>2008</year>
+        <gdppc>141100</gdppc>
+        <neighbor direction="E" name="オーストリア" />
+        <neighbor direction="W" name="スイス" />
+    </country>
+    <country name="パナマ">
+        <rank>68</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor direction="W" name="コスタリカ" />
+        <neighbor direction="E" name="コロンビア" />
+    </country>
+</data>

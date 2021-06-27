@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}著者情報を編集{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>著者情報を編集します</h2>
+<form method="post">
+    <p><label for="name">著者名</label>
+    <input name="name" id="name" value="{{author['name']}}" ></p>
+    <p><label for="bio">説明</label>
+    <textarea name="bio" id="bio" cols="40" rows="3">{{author['bio']}}</textarea></p>
+    <p><input type="submit" value="登録"></p>
+</form>
+{% endblock %}

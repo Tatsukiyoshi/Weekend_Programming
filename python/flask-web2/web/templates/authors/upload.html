@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}著者データをアップロード{% endblock %}
+
+{% block content %}
+<h2>著者データをCSVで読み込ませる</h2>
+<form method=POST enctype=multipart/form-data>
+  <div>ファイルをアップロードしてください<br>
+  <input type=file name=file></div>
+  <input type="submit" value="アップロード">
+</form>
+<div><a href="{{url_for('authors.all')}}">アップロードをやめる</a></div>
+{% endblock %}

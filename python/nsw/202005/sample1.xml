@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<data>
+    <country name="リヒテンシュタイン">
+        <rank>1</rank>
+        <year>2008</year>
+        <gdppc>141100</gdppc>
+        <neighbor name="オーストリア" direction="E"/>
+        <neighbor name="スイス" direction="W"/>
+    </country>
+    <country name="シンガポール">
+        <rank>4</rank>
+        <year>2011</year>
+        <gdppc>59900</gdppc>
+        <neighbor name="マレーシア" direction="N"/>
+    </country>
+    <country name="パナマ">
+        <rank>68</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="コスタリカ" direction="W"/>
+        <neighbor name="コロンビア" direction="E"/>
+    </country>
+</data>

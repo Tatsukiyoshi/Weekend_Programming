@@ -1,0 +1,7 @@
+@startuml state_test
+
+state test1 {
+    [*] --> testdot
+}
+
+@enduml

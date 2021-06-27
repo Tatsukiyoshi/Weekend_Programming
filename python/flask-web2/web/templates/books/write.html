@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}書籍データの書き出し{% endblock %}
+
+{% block content %}
+<h1>書籍一覧のCSV形式</h1>
+<div>
+    <a href="{{url_for('static', filename='csv/books.csv')}}" download="books.csv">ダウンロード</a>
+    <a href="{{url_for('books.all')}}">一覧に戻る</a>
+</div>
+<textarea rows="10" cols="50">{{str}}</textarea>
+{% endblock %}

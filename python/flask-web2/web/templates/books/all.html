@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}書籍{% endblock %}
+
+{% block content %}
+<h1>蔵書一覧</h1>
+  <div>
+      <a href="{{url_for('books.new')}}">新規書籍</a>|
+      <a href="{{url_for('books.write')}}">データの書き出し</a>
+  </div>
+  <ul>
+      {% for book in books %}
+      <li><a href="{{url_for('books.show',book_id=book['id'])}}">{{book['title']}}</a></li>
+      {% endfor %}
+  </ul>
+{% endblock %}

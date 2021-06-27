@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}新規著者{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>著者を追加します</h2>
+<form method="POST">
+    <p><label for="name">著者名</label>
+    <input name="name" id="name" ></p>
+    <p><label for="bio">説明</label>
+    <textarea name="bio" id="bio" cols="40" rows="3"></textarea></p>
+    <p><input type="submit" value="登録"></p>
+</form>
+{% endblock %}

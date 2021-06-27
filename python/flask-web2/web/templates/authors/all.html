@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}著者{% endblock %}
+
+{% block content %}
+<h1>蔵書の著者一覧</h1>
+  <div>
+      <a href="{{url_for('authors.new')}}">新規著者</a>|
+      <a href="{{url_for('authors.upload')}}">CSVファイルから著者データを追加</a>
+
+  </div>
+  <ul>
+      {% for author in authors %}
+      <li><a href="{{url_for('authors.show',author_id=author['id'])}}">{{author['name']}}</a></li>
+      {% endfor %}
+  </ul>
+{% endblock %}

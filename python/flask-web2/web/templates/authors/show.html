@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}著書について{% endblock %}
+
+{% block content %}
+<h2>{{author['name']}}について</h2>
+<div>{{author['bio']}}</div>
+<div>
+    <a href="{{ url_for('authors.all')}}">著者一覧に戻る</a>|
+    <a href="{{ url_for('authors.edit',author_id=author['id'])}}">編集</a>|
+    <a href="{{ url_for('authors.delete',author_id=author['id'])}}">データを削除</a>
+</div>
+{% endblock %}

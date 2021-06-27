@@ -1,0 +1,3380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc3 3.1.0" />
+<title>Swagger Petstore</title>
+<style type="text/css">
+/* Shared CSS for AsciiDoc3 xhtml11 and html5 backends */
+
+/* Default font. */
+body {
+  font-family: Georgia,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+h5 {
+  font-size: 1.0em;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+  padding: 0;
+  margin: 0;
+}
+pre {
+  white-space: pre-wrap;
+}
+
+#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#email {
+}
+#revnumber, #revdate, #revremark {
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #888;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; vertical-align: text-bottom; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toc {
+  margin-bottom: 2.5em;
+}
+
+#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+div.unbreakable { page-break-inside: avoid; }
+
+
+/*
+ * xhtml11 specific
+ *
+ * */
+
+div.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+/*
+ * html5 specific
+ *
+ * */
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #527bbd;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #527bbd;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/*
+ * manpage specific
+ *
+ * */
+
+body.manpage h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+}
+body.manpage h2 {
+  border-style: none;
+}
+body.manpage div.sectionbody {
+  margin-left: 3em;
+}
+
+@media print {
+  body.manpage div#toc { display: none; }
+}
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install();
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>Swagger Petstore</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_overview">Overview</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This is a sample server Petstore server. You can find out more about Swagger at <a href="http://swagger.io">http://swagger.io</a> or on <a href="http://swagger.io/irc/">"irc.freenode.net, #swagger"</a>. For this sample, you can use the api key <code>special-key</code> to test the authorization filters.</p></div>
+<div class="sect2">
+<h3 id="_version_information">Version information</h3>
+<div class="paragraph"><p><em>Version</em> : 1.0.2</p></div>
+</div>
+<div class="sect2">
+<h3 id="_contact_information">Contact information</h3>
+<div class="paragraph"><p><em>Contact Email</em> : <a href="mailto:apiteam@swagger.io">apiteam@swagger.io</a></p></div>
+</div>
+<div class="sect2">
+<h3 id="_license_information">License information</h3>
+<div class="paragraph"><p><em>License</em> : Apache 2.0
+<em>License URL</em> : <a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a>
+<em>Terms of service</em> : <a href="http://swagger.io/terms/">http://swagger.io/terms/</a></p></div>
+</div>
+<div class="sect2">
+<h3 id="_uri_scheme">URI scheme</h3>
+<div class="paragraph"><p><em>Host</em> : petstore.swagger.io
+<em>BasePath</em> : /v2
+<em>Schemes</em> : HTTPS, HTTP</p></div>
+</div>
+<div class="sect2">
+<h3 id="_tags">Tags</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+pet : Everything about your Pets
+</p>
+</li>
+<li>
+<p>
+store : Access to Petstore orders
+</p>
+</li>
+<li>
+<p>
+user : Operations about user
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_external_docs">External Docs</h3>
+<div class="paragraph"><p><em>Description</em> : Find out more about Swagger
+<em>URL</em> : <a href="http://swagger.io">http://swagger.io</a></p></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paths">Paths</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_addpet">Add a new pet to the store</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /pet</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet object that needs to be added to the store</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_pet">Pet</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>405</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid input</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consumes">Consumes</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_produces">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_2">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_updatepet">Update an existing pet</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>PUT /pet</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_2">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet object that needs to be added to the store</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_pet">Pet</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_2">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid ID supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>405</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Validation exception</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consumes_2">Consumes</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_produces_2">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_3">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_2">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_findpetsbystatus">Finds Pets by status</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /pet/findByStatus</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description">Description</h4>
+<div class="paragraph"><p>Multiple status values can be provided with comma separated strings</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_3">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Query</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>status</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Status values that need to be considered for filter</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; enum (available, pending, sold) &gt; array(multi)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_3">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; <a href="#_pet">Pet</a> &gt; array</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid status value</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_3">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_4">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_3">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_findpetsbytags">Finds Pets by tags</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /pet/findByTags</code></pre>
+</div></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Caution</div>
+</td>
+<td class="content">
+<div class="paragraph"><p>operation.deprecated</p></div>
+</td>
+</tr></table>
+</div>
+<div class="sect3">
+<h4 id="_description_2">Description</h4>
+<div class="paragraph"><p>Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_4">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Query</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>tags</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Tags to filter by</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; string &gt; array(multi)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_4">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; <a href="#_pet">Pet</a> &gt; array</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid tag value</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_4">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_5">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_4">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_updatepetwithform">Updates a pet in the store with form data</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /pet/{petId}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_5">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>petId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>ID of pet that needs to be updated</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>FormData</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>name</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Updated name of the pet</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>FormData</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>status</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Updated status of the pet</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_5">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>405</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid input</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consumes_3">Consumes</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/x-www-form-urlencoded</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_produces_5">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_6">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_5">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getpetbyid">Find pet by ID</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /pet/{petId}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_3">Description</h4>
+<div class="paragraph"><p>Returns a single pet</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_6">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>petId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>ID of pet to return</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_6">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_pet">Pet</a></p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid ID supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_6">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_7">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_6">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="42%" />
+<col width="57%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>apiKey</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_api_key">api_key</a></strong></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deletepet">Deletes a pet</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>DELETE /pet/{petId}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_7">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Header</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>api_key</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>petId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet id to delete</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_7">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid ID supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Pet not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_7">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_8">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_7">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uploadfile">uploads an image</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /pet/{petId}/uploadImage</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_8">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>petId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>ID of pet to update</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>FormData</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>additionalMetadata</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Additional data to pass to server</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>FormData</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>file</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>file to upload</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>file</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_8">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_apiresponse">ApiResponse</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consumes_4">Consumes</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>multipart/form-data</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_produces_8">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_9">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+pet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_8">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="20%" />
+<col width="65%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Scopes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>oauth2</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_petstore_auth">petstore_auth</a></strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets,read:pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getinventory">Returns pet inventories by status</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /store/inventory</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_4">Description</h4>
+<div class="paragraph"><p>Returns a map of status codes to quantities</p></div>
+</div>
+<div class="sect3">
+<h4 id="_responses_9">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; string, integer (int32) &gt; map</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_9">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_10">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+store
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_security_9">Security</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="42%" />
+<col width="57%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>apiKey</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong><a href="#_api_key">api_key</a></strong></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_placeorder">Place an order for a pet</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /store/order</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_9">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>order placed for purchasing the pet</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_order">Order</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_10">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_order">Order</a></p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid Order</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_10">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_11">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+store
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getorderbyid">Find purchase order by ID</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /store/order/{orderId}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_5">Description</h4>
+<div class="paragraph"><p>For valid response try integer IDs with value &gt;= 1 and &lt;= 10. Other values will generated exceptions</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_10">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>orderId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>ID of pet that needs to be fetched</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_11">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_order">Order</a></p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid ID supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Order not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_11">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_12">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+store
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deleteorder">Delete purchase order by ID</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>DELETE /store/order/{orderId}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_6">Description</h4>
+<div class="paragraph"><p>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_11">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>orderId</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>ID of the order that needs to be deleted</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_12">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid ID supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Order not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_12">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_13">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+store
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_createuser">Create user</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /user</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_7">Description</h4>
+<div class="paragraph"><p>This can only be done by the logged in user.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_12">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Created user object</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_user">User</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_13">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>default</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_13">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_14">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_createuserswitharrayinput">Creates list of users with given input array</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /user/createWithArray</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_13">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>List of user object</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; <a href="#_user">User</a> &gt; array</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_14">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>default</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_14">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_15">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_createuserswithlistinput">Creates list of users with given input array</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>POST /user/createWithList</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_14">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>List of user object</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; <a href="#_user">User</a> &gt; array</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_15">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>default</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_15">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_16">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_loginuser">Logs user into the system</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /user/login</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_15">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Query</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>password</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>The password for login in clear text</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Query</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>username</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>The user name for login</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_16">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation<br />
+
+<strong>Headers</strong> : <br />
+
+<code>X-Rate-Limit</code> (integer (int32)) : calls per hour allowed by the user.<br />
+
+<code>X-Expires-After</code> (string (date-time)) : date in UTC when token expires.</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid username/password supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_16">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_17">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logoutuser">Logs out current logged in user session</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /user/logout</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_responses_17">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>default</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_17">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_18">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getuserbyname">Get user by user name</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>GET /user/{username}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_parameters_16">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>username</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>The name that needs to be fetched. Use user1 for testing.</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_18">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>200</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>successful operation</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_user">User</a></p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid username supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>User not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_18">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_19">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_updateuser">Updated user</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>PUT /user/{username}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_8">Description</h4>
+<div class="paragraph"><p>This can only be done by the logged in user.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_17">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>username</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>name that need to be updated</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Body</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>body</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Updated user object</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_user">User</a></p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_19">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid user supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>User not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_19">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_20">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deleteuser">Delete user</h3>
+<div class="literalblock">
+<div class="content">
+<pre><code>DELETE /user/{username}</code></pre>
+</div></div>
+<div class="sect3">
+<h4 id="_description_9">Description</h4>
+<div class="paragraph"><p>This can only be done by the logged in user.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_18">Parameters</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="11%" />
+<col width="16%" />
+<col width="50%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Type</th>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Path</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>username</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>The name that needs to be deleted</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_responses_20">Responses</h4>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="10%" />
+<col width="70%" />
+<col width="20%" />
+<thead>
+<tr>
+<th align="left" valign="middle">HTTP Code</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>400</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Invalid username supplied</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>404</strong></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>User not found</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>No Content</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_produces_20">Produces</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+<code>application/xml</code>
+</p>
+</li>
+<li>
+<p>
+<code>application/json</code>
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_tags_21">Tags</h4>
+<div class="ulist"><ul>
+<li>
+<p>
+user
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_definitions">Definitions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_apiresponse">ApiResponse</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="42%" />
+<col width="57%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>code</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int32)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>message</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>type</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_category">Category</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="42%" />
+<col width="57%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>id</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>name</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_order">Order</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="16%" />
+<col width="61%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>complete</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Default</strong> : <code>false</code></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>boolean</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>id</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>petId</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>quantity</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int32)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>shipDate</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string (date-time)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>status</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>Order Status</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>enum (placed, approved, delivered)</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pet">Pet</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="16%" />
+<col width="61%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>category</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><a href="#_category">Category</a></p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>id</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>name</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>Example</strong> : <code>"doggie"</code></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>photoUrls</strong><br />
+
+<em>required</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; string &gt; array</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>status</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>pet status in the store</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>enum (available, pending, sold)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>tags</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>&lt; <a href="#_tag">Tag</a> &gt; array</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tag">Tag</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="42%" />
+<col width="57%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>id</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>name</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user">User</h3>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="16%" />
+<col width="61%" />
+<col width="22%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+<th align="left" valign="middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>email</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>firstName</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>id</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int64)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>lastName</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>password</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>phone</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>userStatus</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>User Status</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>integer (int32)</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p><strong>username</strong><br />
+
+<em>optional</em></p></div></div></td>
+<td align="left" valign="middle"><div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>string</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_securityscheme">Security</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_petstore_auth">petstore_auth</h3>
+<div class="paragraph"><p><em>Type</em> : oauth2
+<em>Flow</em> : implicit
+<em>Token URL</em> : <a href="https://petstore.swagger.io/oauth/authorize">https://petstore.swagger.io/oauth/authorize</a></p></div>
+<div class="tableblock">
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="15%" />
+<col width="85%" />
+<thead>
+<tr>
+<th align="left" valign="middle">Name</th>
+<th align="left" valign="middle">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p>write:pets</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>modify pets in your account</p></div></div></td>
+</tr>
+<tr>
+<td align="left" valign="middle"><div><div class="paragraph"><p>read:pets</p></div></div></td>
+<td align="left" valign="middle"><div><div class="paragraph"><p>read your pets</p></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_api_key">api_key</h3>
+<div class="paragraph"><p><em>Type</em> : apiKey
+<em>Name</em> : api_key
+<em>In</em> : HEADER</p></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-10-12 19:14:57  (W)
+</div>
+</div>
+</body>
+</html>

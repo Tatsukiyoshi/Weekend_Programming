@@ -1,0 +1,40 @@
+= API Title
+
+
+[[_overview]]
+== Overview
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : api.server.test
+__BasePath__ : /
+__Schemes__ : HTTPS
+
+
+
+
+[[_paths]]
+== Paths
+
+[[_test_get]]
+=== GET /test
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|No Content
+|===
+
+
+
+
+
+
+

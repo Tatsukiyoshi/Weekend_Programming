@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<title>VSCodeでPython-flask</title>
+<link rel="stylesheet" href="{{url_for('static', filename='page.css')}}">
+
+<h1>英単語練習用アプリ</h1>
+<div class='show'>{{question}}</div>
+<div>{{message}}</div>
+
+<form method='POST'>
+    <input name="answer" size=20>
+    <input type='submit' value="Answer!">
+</form>

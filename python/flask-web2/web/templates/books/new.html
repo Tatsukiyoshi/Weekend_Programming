@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}新規書籍{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>書籍を追加します</h2>
+<form method="POST">
+    <p><label for="title">題名</label>
+    <input name="title" id="title" ></p>
+    <p><label for="author">著者</label>
+    <select name="author" id="author">
+        {% for author in authors %}
+        <option value="{{author['name']}}">{{author['name']}}</option>
+        {% endfor %}
+    </select>
+    <p><input type="submit" value="登録"></p>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Flask", // メニューからタスクを選ぶ時の表示名
+            "type": "shell", // その他のシェルコマンド
+            "options": {
+                "env": // 環境変数
+                {
+                    "FLASK_APP":"app.py",
+                    "FLASK_ENV":"development"
+                },
+                "cwd" : ".\\python\\canvas-flask" //実行するアプリのディレクトリ
+            },
+            "command": "flask", // コマンド
+            "args": [
+                "run" // コマンド引数
+            ]
+        }
+    ]
+}

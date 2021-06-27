@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}書籍の詳細{% endblock %}
+
+{% block content %}
+<h2>{{book['title']}}の詳細</h2>
+<div>著者：{{book['author']}}</div>
+<div>
+    <img src="{{url_for('static', filename='img/'+book['cover'])}}"/>
+    <a href="{{url_for('books.upload', book_id=book['id'])}}">カバー絵をアップロード</a>
+</div>
+<div>
+    <a href="{{ url_for('books.all')}}">書籍一覧に戻る</a>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}書籍カバー絵をアップロード{% endblock %}
+
+{% block content %}
+<h2>  「{{book['title']}}」のカバー絵を指定</h2>
+<form method="POST" enctype="multipart/form-data">
+  <div>ファイルをアップロードしてください<br>
+  <input type="file" name=file></div>
+  <input type="submit" value="アップロード">
+</form>
+<div><a href="{{url_for('books.show', book_id=book['id'])}}">アップロードをやめる</a></div>
+{% endblock %}
