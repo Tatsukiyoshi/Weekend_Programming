@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Janken</string>
+    <string name="janken_text">じゃん・けん・・・</string>
+    <string name="back_text">戻る</string>
+    <string name="result_win">あなたの勝ちです</string>
+    <string name="result_lose">コンピュータの勝ちです</string>
+    <string name="result_draw">あいこです</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Samodelkin</string>
+    <string name="nameLabelText">name:</string>
+    <string name="raceLabelText">race:</string>
+    <string name="statsLabelText">stats:</string>
+    <string name="wisdomLabelText">wisdom:</string>
+    <string name="strengthLabelText">strength:</string>
+    <string name="dexterityLabelText">dexterity:</string>
+    <string name="generateButtonText">generate</string>
+</resources>

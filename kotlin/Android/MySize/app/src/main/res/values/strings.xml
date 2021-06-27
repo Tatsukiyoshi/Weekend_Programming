@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MySize</string>
+    <string name="height">170</string>
+    <string name="height1">140</string>
+    <string name="height2">150</string>
+    <string name="height3">160</string>
+    <string name="height4">170</string>
+    <string name="tall">身長</string>
+</resources>
