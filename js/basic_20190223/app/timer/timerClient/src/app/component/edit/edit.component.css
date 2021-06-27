@@ -1,0 +1,42 @@
+
+.mySliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem auto 1rem auto;
+  width: 90%;
+}
+
+.mySliderLabelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -3rem 0;
+  padding: 0;
+  z-index: -1;
+  list-style: none;
+}
+
+.mySliderLabel {
+  position: relative;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mySliderLabelContainer li::after {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  content: "";
+  margin: 0 auto;
+  width: 4px;
+  height: 16px;
+  background: #b2b2b2;
+}
+
+.myTimerNameInput {
+  margin-top: 3rem;
+  text-align: center;
+  width: 90%;
+}

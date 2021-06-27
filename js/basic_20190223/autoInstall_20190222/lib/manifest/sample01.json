@@ -1,0 +1,11 @@
+{
+  "version": "1.11.0",
+  "homepage": "https://www.staffnet.co.jp",
+  "url": "https://github.com/jsha/minica/archive/master.zip",
+  "hash": "7B8ABA398D476A180EEC776FE400B268FD9D29BD752EA163B479B6BBCFB701DE",
+  "extract_dir": "$env:USERPROFILE\\basic_20190217\\app\\sample01\\",
+  "installer": {
+    "script": "$env:goroot\\bin\\go build  $original_dir\\_tmp\\minica-master -o  $dir -a"
+  },
+  "licence":"(C)Staffnet Inc. All right reserved."
+}

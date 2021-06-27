@@ -1,0 +1,63 @@
+<div class="myContainerMain">
+  
+  <!--操作メッセージ-->
+  <div
+    class="myTextLarge myCenterLayout myTextCenter my2RemMargin">
+    ボタンをクリック
+  </div>
+  
+  <!--タイマー新規作成ボタン-->
+  <button
+    mat-fab
+    color="warn"
+    aria-label="新規タイマー作成"
+    class="myCenterLayout"
+    (click)="next()"
+  >
+    <mat-icon>alarm_add</mat-icon>
+  </button>
+  
+  <!--タイマー一覧-->
+  <mat-list
+    *ngIf="dataService.alarmList.length>0"
+    class="myFullWidth"
+  >
+    <mat-list-item
+      *ngFor=
+        "let alarm of dataService.alarmList;let i=index"
+      class="myFullWidth"
+    >
+      <mat-icon
+        matListIcon
+        *ngIf="alarm?.isPush"
+        class="myRed"
+      >
+        cloud_download
+      </mat-icon>
+      <!--アラーム時刻-->
+      <div class="myTimerListText">
+        {{alarm?.getTimeString()}}
+      </div>
+      
+      <!--アラーム名-->
+      <div class="myTimerListText myFlexGrow">
+        {{alarm?.title}}
+      </div>
+      
+      <div class="myTrushboxLayout">
+        <!--削除アイコンボタン-->
+        <button
+          mat-icon-button
+          color="primary"
+          aria-label="アラーム削除"
+          (click)="delete(i)"
+        >
+          <mat-icon matListIcon>delete</mat-icon>
+        </button>
+      </div>
+    
+    </mat-list-item>
+  
+  </mat-list>
+
+</div>

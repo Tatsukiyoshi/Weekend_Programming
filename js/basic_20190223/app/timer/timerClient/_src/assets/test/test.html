@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>通知ダイアログ動作確認</title>
+</head>
+<body>
+<p>
+<a href=# style="font-size:2rem;" onclick="showNotification()">クリックして通知の表示</a>
+</p>
+<script>
+  async function showNotification() {
+    if (!("Notification" in window)) {
+      alert("Notification APIに対応していません");
+      return;
+    }
+    let status = await Notification.requestPermission();
+    if (status == "denied") {
+      alert("通知がブロックされています");
+      return;
+    }
+    var opt = {
+      body: "現在時刻は " + (new Date()).toLocaleTimeString(),
+      icon: "/assets/icons/info_icon_96.png",
+      requireInteraction: true
+    };
+    var myNotification = new Notification("テスト通知", opt);
+  }
+
+</script>
+</body>
+</html>

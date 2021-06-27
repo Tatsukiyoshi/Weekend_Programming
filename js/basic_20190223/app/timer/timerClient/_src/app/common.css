@@ -1,0 +1,80 @@
+/*複数のコンポーネントで共通利用*/
+.myContainerMain {
+  color: black;
+  line-height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  position: static;
+  box-sizing: border-box;
+  max-width: 640px;
+  border: gray solid 2px;
+}
+
+.myRed {
+  color: red;
+}
+
+.myClickableIcon {
+  cursor: pointer;
+  font-weight: bold
+}
+
+.myCenterLayout {
+  margin: 1rem auto 1rem auto;
+}
+
+.myFlexGrow {
+  flex-grow: 1;
+}
+
+.myFullWidth {
+  width: 100%;
+}
+
+.my90Width {
+  width: 90%;
+}
+
+.myTextCenter {
+  text-align: center;
+}
+
+.myToolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 100%;
+  z-index: 2;
+  max-width: 640px;
+}
+
+.my1RemMargin {
+  margin: 1rem auto 1rem auto;
+}
+
+.my2RemMargin {
+  margin: 2rem auto 2rem auto;
+}
+
+.myTextLarge {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.myBackButton {
+  display: inline;
+  font-size: 4rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+

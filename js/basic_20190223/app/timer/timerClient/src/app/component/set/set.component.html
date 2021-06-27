@@ -1,0 +1,49 @@
+<div class="myContainerMain">
+  
+  <!--戻るボタン-->
+  <mat-icon
+    class="myBackButton"
+    (click)="back()"
+  >arrow_back
+  </mat-icon>
+  
+  <!--タイマー設定時間-->
+  <div class="myTextLarge my2RemMargin">
+    {{tmpAlarm.timerValue}}分後
+  </div>
+  
+  <!--アラーム通知時刻-->
+  <div class="myAlarmTime">
+    {{tmpAlarm.getTimeString()}}
+  </div>
+  
+  <!--アラーム名-->
+  <div class="myTextLarge myCenterLayout">
+    {{tmpAlarm.title}}
+  </div>
+  
+  <div class="myCenterLayout myTextCenter">
+    <!--1-clickリンクのコピー-->
+    <button mat-button
+      (click)="copyLink(hiddenText)"
+    >
+      1-click操作のリンク
+    </button>
+    
+    <!--リンクコピーのための隠し表示欄-->
+    <input #hiddenText
+      class="myHiddenText">
+    
+    <!--登録ボタン-->
+    <div>
+      <button
+        mat-fab color="warn"
+        (click)="next()"
+        class="myCenterLayout"
+      >
+        <mat-icon>add_alert</mat-icon>
+      </button>
+    </div>
+  
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "kankoServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.5.1",
+    "express-pouchdb": "^4.1.0",
+    "fkill": "^6.2.0",
+    "http-proxy": "^1.17.0",
+    "keypair": "^1.0.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "pouchdb": "^7.0.0",
+    "pouchdb-debug": "^7.0.0",
+    "pouchdb-find": "^7.0.0",
+    "spdy": "^4.0.0",
+    "tcp-port-used": "^1.0.1",
+    "web-push": "^3.3.5"
+  }
+}

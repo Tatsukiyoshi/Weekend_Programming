@@ -1,0 +1,66 @@
+<div class="myContainerMain">
+  
+  <!--戻るボタン-->
+  <mat-icon
+    class="myBackButton"
+    (click)="back()"
+  >
+    arrow_back
+  </mat-icon>
+  
+  <!--タイマー設定時間-->
+  <div class="myTextLarge my2RemMargin">
+    {{tmpAlarm.timerValue}}分後
+  </div>
+  
+  <div class="mySliderContainer">
+    
+    <!--スライダー-->
+    <mat-slider
+      class="myFullWidth"
+      (input)="tmpAlarm.setTimerValue($event.value)"
+      max="10"
+      min="0"
+      step="1"
+      thumbLabel="true"
+      [value]="tmpAlarm.timerValue"
+    >
+    </mat-slider>
+    
+    <!--スライダーのラベル-->
+    <ul class="range-labels mySliderLabelContainer">
+      <li
+        class="mySliderLabel"
+        (click)="tmpAlarm.setTimerValue(1*m)"
+        *ngFor="let m of [
+          '00','01','02','03','04','05','06','07','08','09','10'
+        ]"
+      >
+        {{m}}
+      </li>
+    </ul>
+  </div>
+  
+  <!--アラーム名入力-->
+  <mat-form-field class="myTimerNameInput myCenterLayout">
+    <input matInput
+      class="myTextLarge"
+      (input)="tmpAlarm.title=$event.target.value;
+        dataService.setTitle($event.target.value)"
+      maxlength="20"
+      placeholder="アラーム名(20字以内)"
+      [value]="tmpAlarm.title"
+    >
+  </mat-form-field>
+  
+  <!--ナビボタン(進む）-->
+  <button mat-fab
+    class="myCenterLayout"
+    (click)="next()"
+    color="warn"
+  >
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+
+
+</div>

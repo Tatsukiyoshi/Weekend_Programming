@@ -1,0 +1,92 @@
+<!--ヘッダ-->
+<mat-toolbar
+  [color]="myHeaderColor" class="myToolbar">
+  <!--color="primary" class="myToolbar">-->
+  <button
+    mat-icon-button
+    aria-label="メニュー"
+    [matMenuTriggerFor]="myMenu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+  <!--ヘッダータイトル-->
+  <h1
+    class="myClickableIcon"
+    (click)="goHome()"
+  >
+    マルチタイマー
+  </h1>
+  
+  <!--通知アイコン-->
+  <mat-icon
+    *ngIf="dataService.isEnablePush"
+  >
+    cloud_download
+  </mat-icon>
+  
+  <!--メニュー-->
+  <mat-menu
+    #myMenu="matMenu"
+  >
+    <button
+      mat-menu-item
+      aria-label="サーバからの通知を設定"
+      (click)="toggleEnablePush()"
+    >
+      <span>
+        {{dataService.isEnablePush ?
+        "通知Offにする" : "通知Onにする"}}
+      </span>
+    </button>
+    
+    <button
+      mat-menu-item
+      aria-label="テーマ１"
+      (click)="changeTheme('primary')">
+      <span>テーマ１</span>
+    </button>
+    <button
+      mat-menu-item
+      aria-label="テーマ２"
+      (click)="changeTheme('accent')">
+      <span>テーマ2</span>
+    </button>
+    
+    <button
+      mat-menu-item
+      aria-label="テーマ３"
+      (click)="changeTheme('warn')">
+      <span>テーマ3</span>
+    </button>
+    
+    <button
+      mat-menu-item
+      aria-label="リセット"
+      (click)="initApp()"
+    >
+      <span>リセット</span>
+    </button>
+  
+  </mat-menu>
+
+</mat-toolbar>
+
+<!--ルータ切り替え画面の表示エリア-->
+<div class="outletArea">
+  
+  <!--背景を暗くする-->
+  <div
+    *ngIf="dataService.bgMessage"
+    class="darkBackground"
+  >
+    <span class="darkBackgroundText">
+      {{dataService.bgMessage}}
+    </span>
+  </div>
+  
+  <!--ここにルータで切り替えられたコンポーネントが挿入されます-->
+  <router-outlet class="outletWidth"></router-outlet>
+
+</div>
+

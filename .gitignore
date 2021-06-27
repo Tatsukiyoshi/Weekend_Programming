@@ -70,3 +70,4 @@ Bin/
 # VS Debug files
 Debug/
 
+node_modules/

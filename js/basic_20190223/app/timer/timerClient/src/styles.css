@@ -1,0 +1,31 @@
+/*bodyタグに設定したid="mybody"により*/
+/*UIライブラリのクラスより優先度を上げ上書き*/
+
+/*スライダーの外観*/
+#mybody .mat-slider-thumb-label {
+  background-color: #ff4081;
+  border-radius: 50% 50% 0;
+  transform: rotate(45deg);
+  opacity: 1;
+}
+#mybody .mat-slider-focus-ring,
+#mybody .mat-slider-thumb {
+  opacity: 0;
+}
+#mybody .mat-slider-thumb-label-text {
+  opacity: 1;
+}
+
+
+/*識別しやすくするために奇数行を水色に着色*/
+#mybody mat-list-item:nth-child(odd) {
+  background: aliceblue;
+}
+
+#mybody mat-list-item .mat-list-item-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+}

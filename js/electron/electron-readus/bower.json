@@ -1,0 +1,21 @@
+{
+  "name": "electron-readus",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Shinya Watanabe <48684470+taishow2019@users.noreply.github.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/taishow2019/Programming_study",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.8",
+    "marked": "^0.7.0"
+  }
+}

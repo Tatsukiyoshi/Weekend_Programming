@@ -1,0 +1,38 @@
+﻿**********************
+Windows PowerShell トランスクリプト開始
+開始時刻: 20190222103352
+ユーザー名: EX01\akira
+RunAs ユーザー: EX01\akira
+構成名: 
+コンピューター: EX01 (Microsoft Windows NT 10.0.16299.0)
+ホスト アプリケーション: powershell -ExecutionPolicy RemoteSigned -File .\loader_setup.ps1
+プロセス ID: 29392
+PSVersion: 5.1.16299.820
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.16299.820
+BuildVersion: 10.0.16299.820
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+トランスクリプトが開始されました。出力ファイル: log.txt
+===========インストール先設定開始============
+===========インストール先設定完了開始============
+Extracting...
+Creating shim...
+Scoop was installed successfully!
+Type 'scoop help' for instructions.
+ERROR It looks like a previous installation of git failed.
+Run 'scoop uninstall git' before retrying the install.
+WARN  'git' () is already installed.
+Use 'scoop update git' to install a new version.
+WARN  'nodejs-lts' (10.15.1) is already installed.
+Use 'scoop update nodejs-lts' to install a new version.
+===========loader貅門ｙ螳御ｺ・===========
+PS>$global:?
+True
+**********************
+Windows PowerShell トランスクリプト終了
+終了時刻: 20190222103356
+**********************
