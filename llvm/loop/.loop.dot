@@ -1,0 +1,14 @@
+digraph "CFG for 'loop' function" {
+	label="CFG for 'loop' function";
+
+	Node0xe85d10 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  store i32 0, i32* %3, align 4\l  br label %4\l}"];
+	Node0xe85d10 -> Node0xe86600;
+	Node0xe86600 [shape=record,label="{%4:\l4:                                                \l  %5 = load i32, i32* %3, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = icmp slt i32 %5, %6\l  br i1 %7, label %8, label %14\l|{<s0>T|<s1>F}}"];
+	Node0xe86600:s0 -> Node0xe86830;
+	Node0xe86600:s1 -> Node0xe86880;
+	Node0xe86830 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %3, align 4\l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %9)\l  br label %11\l}"];
+	Node0xe86830 -> Node0xe86d30;
+	Node0xe86d30 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %3, align 4\l  %13 = add nsw i32 %12, 1\l  store i32 %13, i32* %3, align 4\l  br label %4\l}"];
+	Node0xe86d30 -> Node0xe86600;
+	Node0xe86880 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %3, align 4\l  ret i32 %15\l}"];
+}

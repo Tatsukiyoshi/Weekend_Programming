@@ -1,0 +1,12 @@
+digraph "CFG for '_vsnprintf_l' function" {
+	label="CFG for '_vsnprintf_l' function";
+
+	Node0xab8230 [shape=record,label="{entry:\l  %_ArgList.addr = alloca i8*, align 8\l  %_Locale.addr = alloca %struct.__crt_locale_pointers*, align 8\l  %_Format.addr = alloca i8*, align 8\l  %_BufferCount.addr = alloca i64, align 8\l  %_Buffer.addr = alloca i8*, align 8\l  %_Result = alloca i32, align 4\l  store i8* %_ArgList, i8** %_ArgList.addr, align 8\l  store %struct.__crt_locale_pointers* %_Locale,\l... %struct.__crt_locale_pointers** %_Locale.addr, align 8\l  store i8* %_Format, i8** %_Format.addr, align 8\l  store i64 %_BufferCount, i64* %_BufferCount.addr, align 8\l  store i8* %_Buffer, i8** %_Buffer.addr, align 8\l  %0 = load i8*, i8** %_ArgList.addr, align 8\l  %1 = load %struct.__crt_locale_pointers*, %struct.__crt_locale_pointers**\l... %_Locale.addr, align 8\l  %2 = load i8*, i8** %_Format.addr, align 8\l  %3 = load i64, i64* %_BufferCount.addr, align 8\l  %4 = load i8*, i8** %_Buffer.addr, align 8\l  %call = call i64* @__local_stdio_printf_options()\l  %5 = load i64, i64* %call, align 8\l  %or = or i64 %5, 1\l  %call1 = call i32 @__stdio_common_vsprintf(i64 %or, i8* %4, i64 %3, i8* %2,\l... %struct.__crt_locale_pointers* %1, i8* %0)\l  store i32 %call1, i32* %_Result, align 4\l  %6 = load i32, i32* %_Result, align 4\l  %cmp = icmp slt i32 %6, 0\l  br i1 %cmp, label %cond.true, label %cond.false\l|{<s0>T|<s1>F}}"];
+	Node0xab8230:s0 -> Node0xab95d0;
+	Node0xab8230:s1 -> Node0xab9680;
+	Node0xab95d0 [shape=record,label="{cond.true:                                        \l  br label %cond.end\l}"];
+	Node0xab95d0 -> Node0xab97f0;
+	Node0xab9680 [shape=record,label="{cond.false:                                       \l  %7 = load i32, i32* %_Result, align 4\l  br label %cond.end\l}"];
+	Node0xab9680 -> Node0xab97f0;
+	Node0xab97f0 [shape=record,label="{cond.end:                                         \l  %cond = phi i32 [ -1, %cond.true ], [ %7, %cond.false ]\l  ret i32 %cond\l}"];
+}

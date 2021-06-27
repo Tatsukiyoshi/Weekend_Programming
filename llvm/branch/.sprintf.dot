@@ -1,0 +1,5 @@
+digraph "CFG for 'sprintf' function" {
+	label="CFG for 'sprintf' function";
+
+	Node0xab3050 [shape=record,label="{entry:\l  %_Format.addr = alloca i8*, align 8\l  %_Buffer.addr = alloca i8*, align 8\l  %_Result = alloca i32, align 4\l  %_ArgList = alloca i8*, align 8\l  store i8* %_Format, i8** %_Format.addr, align 8\l  store i8* %_Buffer, i8** %_Buffer.addr, align 8\l  %_ArgList1 = bitcast i8** %_ArgList to i8*\l  call void @llvm.va_start(i8* %_ArgList1)\l  %0 = load i8*, i8** %_ArgList, align 8\l  %1 = load i8*, i8** %_Format.addr, align 8\l  %2 = load i8*, i8** %_Buffer.addr, align 8\l  %call = call i32 @_vsprintf_l(i8* %2, i8* %1, %struct.__crt_locale_pointers*\l... null, i8* %0)\l  store i32 %call, i32* %_Result, align 4\l  %_ArgList2 = bitcast i8** %_ArgList to i8*\l  call void @llvm.va_end(i8* %_ArgList2)\l  %3 = load i32, i32* %_Result, align 4\l  ret i32 %3\l}"];
+}

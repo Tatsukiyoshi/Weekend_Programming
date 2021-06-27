@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "llvm"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp"
+		},
+		"git.ignoreLimitWarning": true
+	}
+}

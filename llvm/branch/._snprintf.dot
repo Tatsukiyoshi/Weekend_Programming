@@ -1,0 +1,5 @@
+digraph "CFG for '_snprintf' function" {
+	label="CFG for '_snprintf' function";
+
+	Node0xab4d40 [shape=record,label="{entry:\l  %_Format.addr = alloca i8*, align 8\l  %_BufferCount.addr = alloca i64, align 8\l  %_Buffer.addr = alloca i8*, align 8\l  %_Result = alloca i32, align 4\l  %_ArgList = alloca i8*, align 8\l  store i8* %_Format, i8** %_Format.addr, align 8\l  store i64 %_BufferCount, i64* %_BufferCount.addr, align 8\l  store i8* %_Buffer, i8** %_Buffer.addr, align 8\l  %_ArgList1 = bitcast i8** %_ArgList to i8*\l  call void @llvm.va_start(i8* %_ArgList1)\l  %0 = load i8*, i8** %_ArgList, align 8\l  %1 = load i8*, i8** %_Format.addr, align 8\l  %2 = load i64, i64* %_BufferCount.addr, align 8\l  %3 = load i8*, i8** %_Buffer.addr, align 8\l  %call = call i32 @_vsnprintf(i8* %3, i64 %2, i8* %1, i8* %0)\l  store i32 %call, i32* %_Result, align 4\l  %_ArgList2 = bitcast i8** %_ArgList to i8*\l  call void @llvm.va_end(i8* %_ArgList2)\l  %4 = load i32, i32* %_Result, align 4\l  ret i32 %4\l}"];
+}
