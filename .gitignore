@@ -70,4 +70,5 @@ Bin/
 # VS Debug files
 Debug/
 
+# Javascript Import Modules
 node_modules/

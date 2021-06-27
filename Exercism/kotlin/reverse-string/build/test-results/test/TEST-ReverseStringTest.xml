@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReverseStringTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-17T13:45:39" hostname="DESKTOP-3N7CSE4" time="0.296">
+  <properties/>
+  <testcase name="testAWord" classname="ReverseStringTest" time="0.292"/>
+  <testcase name="testAnEmptyString" classname="ReverseStringTest" time="0.0"/>
+  <testcase name="testACapitalizedWord" classname="ReverseStringTest" time="0.0"/>
+  <testcase name="testASentenceWithPunctuation" classname="ReverseStringTest" time="0.0"/>
+  <testcase name="testAPalindrome" classname="ReverseStringTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
