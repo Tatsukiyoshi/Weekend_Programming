@@ -7,9 +7,8 @@
 class IntArray {
     // IntArrayのインタフェース関数
 public:
-    // IntArrayのインスタンスを生成、消滅
-    void init();
-    void cleanup();
+    IntArray();     // コンストラクタ
+    ~IntArray();    // デストラクタ
 
     // IntArrayの要素の数にアクセス
     void setSize(size_t value);
@@ -28,8 +27,8 @@ void error(char* mes) {
     std::cerr << mes;
 }
 
-// init()の定義
-void IntArray::init() {
+// コンストラクタの定義
+IntArray::IntArray() {
     numElems = 0;
     elems = 0;
 }
@@ -41,8 +40,8 @@ void IntArray::setSize(size_t value) {
     this->elems = (int*)malloc(value * sizeof(int));
 }
 
-// cleanup()の定義
-void IntArray::cleanup() {
+// デストラクタの定義
+IntArray::~IntArray() {
     this->setSize(0);
 }
 
@@ -69,7 +68,6 @@ int main()
 
     //IntArray powersOf2 = { 0, 0 };  // 2の累乗を保持
     IntArray powersOf2;
-    powersOf2.init();
     
     //powersOf2.numElems = 8;
     //powersOf2.elems = (int*)malloc(powersOf2.numElems * sizeof(int));
@@ -100,7 +98,6 @@ int main()
     powersOf2.setElem(7, 2 * powersOf2.getElem(6));
 
     //free(powersOf2.elems);
-    powersOf2.cleanup();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
