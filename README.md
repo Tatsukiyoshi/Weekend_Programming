@@ -86,16 +86,16 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- Eclipse IDE for Java Developers 2021-03
+- Eclipse IDE for Java Developers 2021-06
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) <BR>
   <strong>2021/05/21</strong>:Chapter 5 ストリーム処理を使いこなす finished
 
-- Pleiades(Eclipse 2021-03＋プラグイン)
+- Pleiades(Eclipse 2021-06＋プラグイン)
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
   <strong>2021/06/02</strong>:Chapter 4 JSPの基本 finished
 
 ### .NET Framework
-- Visual Studio 2019(16.10) + .NET 5 
+- Visual Studio 2022 Preview + .NET 5/6 Preview 
 - C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)/[サポートページ](http://mana.on.coocan.jp/yasacs.html) <BR>
   <strong>2021/05/23</strong>:Lesson 6 イベント finished
@@ -109,7 +109,7 @@ exercism download --exercise=two-fer --track=kotlin
 - Lazarus(FreePascal) [Lazarus日本語情報トップページ](https://ja.osdn.net/projects/sfnet_lazarus/)/[Lazarus Tutorial](https://wiki.freepascal.org/Lazarus_Tutorial/ja)
   - Project1(Press Again)
 
-### Visual Studio 2019(16.10) / VS Build Tools
+### Visual Studio 2022 Preview
 - [C++ プログラミング入門](http://examples.oreilly.com/core/)
   <strong>2021/06/05</strong>:Chapter 2 クラスを使用しないC++
 
