@@ -19,6 +19,7 @@ namespace WindowsFormsApp2
             sampleText.BackColor = Color.Black;
         }
 
+        // 色選択開始
         private void button1_Click(object sender, EventArgs e)
         {
             // 色選択用ダイアログ
@@ -29,16 +30,22 @@ namespace WindowsFormsApp2
 
             // 色の作成可否の設定
             colorDialog1.AllowFullOpen = this.fullColorOn.Checked;
+            NLogService.PrintInfoLog("AllowFullOpen:" + colorDialog1.AllowFullOpen.ToString());
 
             //　色を選択すると、サンプルテキストに反映
-            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 sampleText.ForeColor = colorDialog1.Color;
+                NLogService.PrintInfoLog("Selected:" + colorDialog1.Color.R + ","
+                    + colorDialog1.Color.G + ","
+                    + colorDialog1.Color.B);
             }
         }
 
+        // 色選択ダイアログのクローズ
         private void form2CloseButton_Click(object sender, EventArgs e)
         {
+            NLogService.PrintInfoLog("Clicked form2 Close Button");
             this.Hide();
         }
     }

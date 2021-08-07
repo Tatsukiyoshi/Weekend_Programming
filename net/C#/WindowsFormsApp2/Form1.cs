@@ -17,8 +17,11 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+        // 色選択メニューの選択
         private void TextColor_Click(object sender, EventArgs e)
         {
+            NLogService.PrintInfoLog("TextColor Clicked!");
+
             Form2 form2 = new Form2();
             form2.ShowDialog();
         }
