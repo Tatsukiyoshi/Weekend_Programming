@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NLog;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -20,10 +21,10 @@ namespace WindowsFormsApp2
         // 色選択メニューの選択
         private void TextColor_Click(object sender, EventArgs e)
         {
-            NLogService.PrintInfoLog("TextColor Clicked!");
+            Program.PrintInfoLog("TextColor Clicked!");
 
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            SettingForm SettingForm1 = new SettingForm();
+            SettingForm1.ShowDialog();
         }
     }
 }

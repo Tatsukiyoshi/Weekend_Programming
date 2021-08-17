@@ -94,28 +94,28 @@ exercism download --exercise=two-fer --track=kotlin
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
   <strong>2021/07/04</strong>:Chapter 5.3 フォームを使ったプログラムの作成 finished
 
-### .NET Framework
+### .NET Framework / C++
 - Visual Studio 2022 Preview + .NET 5/6 Preview 
 - C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)/[サポートページ](http://mana.on.coocan.jp/yasacs.html) <BR>
   <strong>2021/05/23</strong>:Lesson 6 イベント finished
+  - ColorDialog
 - SQL
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
+- C++
+  - [C++ プログラミング入門](http://examples.oreilly.com/core/)
+    <strong>2021/06/05</strong>:Chapter 2 クラスを使用しないC++
+
+  - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
+    - HelloWorld
+    - [Learn C++](https://www.learncpp.com/) <strong>@2019/10/22:1.5 Introduction to iostream</strong>
 
 ### ObjectPascal
 - Delphi
   - CardPanelDemo
 - Lazarus(FreePascal) [Lazarus日本語情報トップページ](https://ja.osdn.net/projects/sfnet_lazarus/)/[Lazarus Tutorial](https://wiki.freepascal.org/Lazarus_Tutorial/ja)
   - Project1(Press Again)
-
-### Visual Studio 2022 Preview
-- [C++ プログラミング入門](http://examples.oreilly.com/core/)
-  <strong>2021/06/05</strong>:Chapter 2 クラスを使用しないC++
-
-- C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
-  - HelloWorld
-  - [Learn C++](https://www.learncpp.com/) <strong>@2019/10/22:1.5 Introduction to iostream</strong>
 
 ### Dart - flutter
 - flutter dev [Get started](https://flutter.dev/docs/get-started/install)
