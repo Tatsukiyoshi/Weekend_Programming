@@ -17,10 +17,32 @@
             "problemMatcher": [
                 "$gcc"
             ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe アクティブなファイルのビルド",
+            "command": "cl.exe",
+            "args": [
+                "/IC:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.23.28105\\include",
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "コンパイラ: cl.exe"
         }
     ]
 }
