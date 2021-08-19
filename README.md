@@ -64,9 +64,6 @@ exercism download --exercise=two-fer --track=kotlin
 ### Kotlin
 - Android - はじめてのAndroidプログラミング <strong>@2019/10/12:My Scheduler(Chapter 12) [finished!]</strong><BR>
 [サンプル](http://isbn.sbcr.jp/95815)
-  - Andorid Studio Arctic Fox
-    - ビューバインディング
-    - 共有プリファレンス
 - Programming - Kotlinプログラミング <strong>@2019/11/13:Chapter 22(coroutines sample update for kotlin1.3)</strong>
   - Android
     - Chapter 22 coroutines
@@ -75,6 +72,13 @@ exercism download --exercise=two-fer --track=kotlin
   - Hint of Challenges
     - [Tavern Challenge 19](https://forums.bignerdranch.com/t/tavern-challenge/15141/2)
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
+- Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3)
+  - 非互換として吸収すべき課題
+    - ビューバインディング
+    - 共有プリファレンス
+    - FragmentPagerAdapter
+    - SoundPool
+- IntelliJ IDEA 2021.1.3
 
 ### JavaScript
 - Angular - 日経ソフトウェア 2019年5月号
