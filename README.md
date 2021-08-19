@@ -75,9 +75,14 @@ exercism download --exercise=two-fer --track=kotlin
 - Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3)
   - 非互換として吸収すべき課題
     - ビューバインディング
-    - 共有プリファレンス
-    - FragmentPagerAdapter
-    - SoundPool
+    - 共有プリファレンス <BR>
+      https://github.com/android/user-interface-samples/blob/master/PreferencesKotlin/app/build.gradle
+    - FragmentStatePagerAdapter <BR>
+      https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
+    - SoundPool(Lollipopで非推奨) <BR>
+      https://developer.android.com/reference/kotlin/android/media/SoundPool?hl=en
+    - Handler <BR>
+      https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
 - IntelliJ IDEA 2021.1.3
 
 ### JavaScript
