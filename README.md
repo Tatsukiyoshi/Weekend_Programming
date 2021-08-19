@@ -64,6 +64,9 @@ exercism download --exercise=two-fer --track=kotlin
 ### Kotlin
 - Android - はじめてのAndroidプログラミング <strong>@2019/10/12:My Scheduler(Chapter 12) [finished!]</strong><BR>
 [サンプル](http://isbn.sbcr.jp/95815)
+  - Andorid Studio Arctic Fox
+    - ビューバインディング
+    - 共有プリファレンス
 - Programming - Kotlinプログラミング <strong>@2019/11/13:Chapter 22(coroutines sample update for kotlin1.3)</strong>
   - Android
     - Chapter 22 coroutines
