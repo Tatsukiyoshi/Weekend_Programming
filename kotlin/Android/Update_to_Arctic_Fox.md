@@ -42,7 +42,8 @@
             </activity>
             ```
         - ビューバインディング <BR>
-        Andorid 3.5までの実装を変更する
+            Andorid 3.5までの実装を変更する <BR>
+            https://developer.android.com/topic/libraries/view-binding?hl=ja
             *   ビューバインディングの使用を宣言する <BR>
             build.gradle(app)
             ```
@@ -60,48 +61,86 @@
             }
             ```
 
-            *   アクティビティにバインディング変数を追加する
-            ```
-            class MainActivity : AppCompatActivity() {
-                private lateinit var binding: ActivityMainBinding
-                ...
-            }
-            ```
-            *   インポートする名前空間を変更する（上記の変数を追加するとIDEからメッセージが出る）
-            ```
-            import kotlinx.android.synthetic.main.activity_main.*
-            ```
-            ```
-            import com.example.helloandroid.databinding.ActivityMainBinding
-            ```
-            *   初期化時にバインディング変数を初期化する
-            ```
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                binding = ActivityMainBinding.inflate(layoutInflater)
-                val view = binding.root
-                setContentView(view)
-                ...
-            }
-            ```
-            *   アクティビティ内の項目へのアクセスを変更する
-            ```
-            override fun onCreate(savedInstanceState: Bundle?) {
-                ...
-                tapHere.setOnClickListener {
-                    textView.text = "ボタンがタップされました"
+            * アクティビティの場合
+                * アクティビティにバインディングクラスのインスタンス変数を追加する
+                ```
+                class MainActivity : AppCompatActivity() {
+                    private lateinit var binding: ActivityMainBinding
+                    ...
                 }
-            }
-            ```
-            ↓
-            ```
-            override fun onCreate(savedInstanceState: Bundle?) {
-                ...
-                binding.tapHere.setOnClickListener {
-                    binding.textView.text = "ボタンがタップされました"
+                ```
+                * インポートする名前空間を変更する（上記の変数を追加するとIDEからメッセージが出る）
+                ```
+                import kotlinx.android.synthetic.main.activity_main.*
+                ```
+                ```
+                import com.example.helloandroid.databinding.ActivityMainBinding
+                ```
+                * 初期化時にバインディングクラスのインスタンス変数を初期化し、ルートビューへの参照を取得する
+                ```
+                override fun onCreate(savedInstanceState: Bundle?) {
+                    super.onCreate(savedInstanceState)
+                    binding = ActivityMainBinding.inflate(layoutInflater)
+                    val view = binding.root
+                    setContentView(view)
+                    ...
                 }
-            }
-            ```
+                ```
+                * アクティビティ内の項目へのアクセスを変更する
+                ```
+                override fun onCreate(savedInstanceState: Bundle?) {
+                    ...
+                    tapHere.setOnClickListener {
+                        textView.text = "ボタンがタップされました"
+                    }
+                }
+                ```
+                ↓
+                ```
+                override fun onCreate(savedInstanceState: Bundle?) {
+                    ...
+                    binding.tapHere.setOnClickListener {
+                        binding.textView.text = "ボタンがタップされました"
+                    }
+                }
+                ```
+            * フラグメントの場合
+                * フラグメントにバインディングクラスのインスタンス変数を追加する
+                ```
+                private var _binding: ResultProfileBinding? = null
+                // This property is only valid between onCreateView and
+                // onDestroyView.
+                private val binding get() = _binding!!
+                ```
+                * フラグメントの初期化時にバインディングクラスのインスタンス変数を初期化し、ルートビューへの参照を取得する
+                ```
+                override fun onCreateView(
+                    inflater: LayoutInflater,
+                    container: ViewGroup?,
+                    savedInstanceState: Bundle?
+                ): View? {
+                    _binding = ResultProfileBinding.inflate(inflater, container, false)
+                    val view = binding.root
+                    return view
+                }
+                ```
+                * フラグメントの破棄時にバインディングクラスのインスタンス変数を解放する
+                ```
+                override fun onDestroyView() {
+                    super.onDestroyView()
+                    _binding = null
+                }
+                ```
+                * フラグメント内の項目への参照を変更する
+                ```
+                name.text = viewModel.name
+                button.setOnClickListener { viewModel.userClicked() }
+                ```
+                ↓
+                ```
+                binding.name.text = viewModel.name
+                binding.button.setOnClickListener { viewModel.userClicked() }
+                ```
         - 共有プリファレンス <BR>
         https://github.com/android/user-interface-samples/blob/master/PreferencesKotlin/app/build.gradle
         - FragmentStatePagerAdapter <BR>
