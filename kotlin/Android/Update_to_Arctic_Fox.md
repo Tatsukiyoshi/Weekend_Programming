@@ -24,19 +24,36 @@
     - 非互換として吸収すべき課題
         - ビューバインディング <BR>
         Andorid 3.5までの実装を変更する
-            *   インポートする名前空間を変更する
+            *   ビューバインディングの使用を宣言する <BR>
+            build.gradle(app)
             ```
-            import kotlinx.android.synthetic.main.activity_main.*
+            android {
+                viewBinding {
+                    enabled = true
+                }
+            }
             ```
+            *   ビューバインディング使用により、不要になるkotlin-android-extensionsプラグインを削除する（削除すると、下記のようになる）
             ```
-            import com.example.helloandroid.databinding.ActivityMainBinding
+            plugins {
+                id 'com.android.application'
+                id 'kotlin-android'
+            }
             ```
+
             *   アクティビティにバインディング変数を追加する
             ```
             class MainActivity : AppCompatActivity() {
                 private lateinit var binding: ActivityMainBinding
                 ...
             }
+            ```
+            *   インポートする名前空間を変更する（上記の変数を追加するとIDEからメッセージが出る）
+            ```
+            import kotlinx.android.synthetic.main.activity_main.*
+            ```
+            ```
+            import com.example.helloandroid.databinding.ActivityMainBinding
             ```
             *   初期化時にバインディング変数を初期化する
             ```
