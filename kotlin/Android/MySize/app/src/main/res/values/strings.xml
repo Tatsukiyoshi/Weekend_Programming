@@ -6,4 +6,11 @@
     <string name="height3">160</string>
     <string name="height4">170</string>
     <string name="tall">身長</string>
+    <string name="neckHint">首回り</string>
+    <string name="sleeveHint">裄丈</string>
+    <string name="inseamHint">股下</string>
+    <string name="waistHint">胴回り</string>
+    <string name="saveButtonText">保存</string>
+    <string name="droidImageDescription">droidImage</string>
+    <string name="heightDescription">身長</string>
 </resources>

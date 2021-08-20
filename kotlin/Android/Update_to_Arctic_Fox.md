@@ -24,6 +24,23 @@
         }
         ```
     - 非互換として吸収すべき課題
+        - SDKバージョン範囲の見直し <BR>
+        ビルド時に下記メッセージが出るため、SDKバージョンを26以上にする
+            * "Invoke-customs are only supported starting with Android O (--min-api 26)"
+            * "Default interface methods are only supported starting with Android N (--min-api 24)
+            * "Static interface methods are only supported starting with Android N (--min-api 24)
+        - マニフェスト
+            * アクティビティのエクスポート
+              manifestでintent-filerを使っているため、下記を参照して設定。<BR>
+            https://developer.android.com/guide/topics/manifest/activity-element#exported <BR>
+            intent-filterを指定している場合には、android:exportedをtrueにする必要あり
+            ```
+            <activity android:name=".MainActivity" android:exported="true">
+                <intent-filter>
+                ...
+                </intent-filter>
+            </activity>
+            ```
         - ビューバインディング <BR>
         Andorid 3.5までの実装を変更する
             *   ビューバインディングの使用を宣言する <BR>

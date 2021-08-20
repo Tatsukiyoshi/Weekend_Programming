@@ -1,0 +1,22 @@
+■
+AGPBI: {"kind":"error","text":"Invoke-customs are only supported starting with Android O (--min-api 26)","sources":[{}],"tool":"D8"}
+Invoke-customs are only supported starting with Android O (--min-api 26)
+
+AGPBI: {"kind":"error","text":"Default interface methods are only supported starting with Android N (--min-api 24): Landroidx/core/internal/view/SupportMenuItem;setTooltipText(Ljava/lang/CharSequence;)Landroid/view/MenuItem;","sources":[{}],"tool":"D8"}
+Default interface methods are only supported starting with Android N (--min-api 24): Landroidx/core/internal/view/SupportMenuItem;setTooltipText(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+
+AGPBI: {"kind":"error","text":"Static interface methods are only supported starting with Android N (--min-api 24): Landroidx/constraintlayout/core/motion/utils/TypedValues$Attributes;getId(Ljava/lang/String;)I","sources":[{}],"tool":"D8"}
+Static interface methods are only supported starting with Android N (--min-api 24): Landroidx/constraintlayout/core/motion/utils/TypedValues$Attributes;getId(Ljava/lang/String;)I
+
+■Manifest Merger Failed
+  manifestでintent-filerを使っているため、下記を参照して設定。
+　https://developer.android.com/guide/topics/manifest/activity-element#exported
+
+        <activity android:name=".MainActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
