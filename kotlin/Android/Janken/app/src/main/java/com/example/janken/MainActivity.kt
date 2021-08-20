@@ -3,20 +3,23 @@ package com.example.janken
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
+import androidx.preference.PreferenceManager
 import android.view.View
 import androidx.core.content.edit
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.janken.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        gu.setOnClickListener { onJankenButtonTapped(it) }
-        choki.setOnClickListener { onJankenButtonTapped(it) }
-        pa.setOnClickListener { onJankenButtonTapped(it) }
+        binding.gu.setOnClickListener { onJankenButtonTapped(it) }
+        binding.choki.setOnClickListener { onJankenButtonTapped(it) }
+        binding.pa.setOnClickListener { onJankenButtonTapped(it) }
 
         // 共有プリファレンスをクリアする
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
