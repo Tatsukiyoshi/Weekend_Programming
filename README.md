@@ -73,16 +73,8 @@ exercism download --exercise=two-fer --track=kotlin
     - [Tavern Challenge 19](https://forums.bignerdranch.com/t/tavern-challenge/15141/2)
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 - Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3)
-  - 非互換として吸収すべき課題
-    - ビューバインディング
-    - 共有プリファレンス <BR>
-      https://github.com/android/user-interface-samples/blob/master/PreferencesKotlin/app/build.gradle
-    - FragmentStatePagerAdapter <BR>
-      https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
-    - SoundPool(Lollipopで非推奨) <BR>
-      https://developer.android.com/reference/kotlin/android/media/SoundPool?hl=en
-    - Handler <BR>
-      https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
+  - 非互換として吸収すべき課題 <BR>
+  Update_to_Arctic_Fox.mdを参照
 - IntelliJ IDEA 2021.1.3
 
 ### JavaScript
