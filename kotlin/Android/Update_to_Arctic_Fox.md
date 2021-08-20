@@ -4,6 +4,8 @@
         Build.gradleでKotlinバージョンを変更
         - Gradle V7.0 <BR>
         Project Referenceで使用するGradleのバージョンを変更
+            - Android Gradle Plugin Version: 7.0.1
+            - Gradle Vercion: 7.0.2
         - JDK 11 <BR>
         Android Studioに含まれるJDKがJDK11に変更になり、同じJDKをGradle実行にも使用するため、Gradle SettingでAndroid Studioに含まれるJDKを使用するように変更する
 
