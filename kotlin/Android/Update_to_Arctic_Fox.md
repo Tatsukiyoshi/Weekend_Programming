@@ -9,7 +9,7 @@
         - JDK 11 <BR>
         Android Studioに含まれるJDKがJDK11に変更になり、同じJDKをGradle実行にも使用するため、Gradle SettingでAndroid Studioに含まれるJDKを使用するように変更する
 
-        build.gradle
+        build.gradle(project)
         ```
         buildscript {
             ext.kotlin_version = '1.5.21'
@@ -18,7 +18,7 @@
                 mavenCentral()
             }
             dependencies {
-                classpath "com.android.tools.build:gradle:7.0.0"
+                classpath "com.android.tools.build:gradle:7.0.1"
                 classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
             }
         }
