@@ -141,6 +141,21 @@
                 binding.name.text = viewModel.name
                 binding.button.setOnClickListener { viewModel.userClicked() }
                 ```
+            * フラグメントをアクティビティ内で機能させる <BR>
+                https://developer.android.com/guide/fragments/fragmentmanager
+                * フラグメントマネージャーを取得する。
+                ```
+                FragmentManager supportFragmentManeger = getSupportFragmentManager()
+                ```
+                * トランザクションを実行する <BR>
+                下記例では、トランザクション開始～コンテナへのフラグメント追加～トランザクション終了（コミット）を一連のブロック(commitブロック)で実行する
+                ```
+                supportFragmentManager.commit {
+                    replace<ExampleFragment>(R.id.fragment_container)
+                    setReorderingAllowed(true)
+                    addToBackStack("name") // name can be null
+                }
+                ```
         - 共有プリファレンス <BR>
         https://github.com/android/user-interface-samples/blob/master/PreferencesKotlin/app/build.gradle
         - FragmentStatePagerAdapter <BR>
