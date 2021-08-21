@@ -143,16 +143,20 @@
                 ```
             * フラグメントをアクティビティ内で機能させる <BR>
                 https://developer.android.com/guide/fragments/fragmentmanager
-                * フラグメントマネージャーを取得する。
+                * フラグメント生成
                 ```
-                FragmentManager supportFragmentManeger = getSupportFragmentManager()
+                val fragment = TitleFragment()
+                fragment.setTitle("フラグメント動物図鑑")
                 ```
-                * トランザクションを実行する <BR>
-                下記例では、トランザクション開始～コンテナへのフラグメント追加～トランザクション終了（コミット）を一連のブロック(commitブロック)で実行する
+                * フラグメントマネージャーの取得
+                ```
+                val fragmentManeger = this.supportFragmentManager
+                ```
+                * トランザクション実行 <BR>
+                下記例では、トランザクション開始～フラグメント追加～トランザクション終了（コミット）を一連のブロック(commitブロック)で実行する
                 ```
                 supportFragmentManager.commit {
-                    replace<ExampleFragment>(R.id.fragment_container)
-                    setReorderingAllowed(true)
+                    replace(R.id.fragmentContainerView, fragment)
                     addToBackStack("name") // name can be null
                 }
                 ```
