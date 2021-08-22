@@ -1,15 +1,15 @@
-- Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3) <strong>Wrote at 2021.8.20</strong>
+- Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3) <font color=red><strong>Wrote first at 2021.8.20</strong></font>
     - 環境刷新
         - Kotlln 1.5.21 <BR>
         Build.gradleでKotlinバージョンを変更
         - Gradle V7.0 <BR>
         Project Referenceで使用するGradleのバージョンを変更
-            - Android Gradle Plugin Version: 7.0.1 <strong>Update at 2021.8.20</strong>
+            - Android Gradle Plugin Version: 7.0.1 <font color=red><strong>Update at 2021.8.20</strong></font>
             - Gradle Vercion: 7.0.2
         - JDK 11 <BR>
         Android Studioに含まれるJDKがJDK11に変更になり、同じJDKをGradle実行にも使用するため、Gradle SettingでAndroid Studioに含まれるJDKを使用するように変更する
 
-        build.gradle(project) <strong>Update at 2021.8.20</strong>
+        build.gradle(project) <font color=red><strong>Update at 2021.8.20</strong></font>
         ```
         buildscript {
             ext.kotlin_version = '1.5.21'
@@ -24,12 +24,12 @@
         }
         ```
     - 非互換として吸収すべき課題
-        - SDKバージョン範囲の見直し <strong>Update at 2021.8.20</strong><BR>
+        - SDKバージョン範囲の見直し <font color=red><strong>Update at 2021.8.20</strong></font><BR>
         ビルド時に下記メッセージが出るため、SDKバージョンを26以上にする
             * "Invoke-customs are only supported starting with Android O (--min-api 26)"
             * "Default interface methods are only supported starting with Android N (--min-api 24)
             * "Static interface methods are only supported starting with Android N (--min-api 24)
-        - マニフェスト <strong>Update at 2021.8.20</strong>
+        - マニフェスト <font color=red><strong>Update at 2021.8.20</strong></font>
             * アクティビティのエクスポート
               manifestでintent-filerを使っているため、下記を参照して設定。<BR>
             https://developer.android.com/guide/topics/manifest/activity-element#exported <BR>
@@ -118,7 +118,7 @@
                     inflater: LayoutInflater,
                     container: ViewGroup?,
                     savedInstanceState: Bundle?
-                ): View? {
+                ): View {
                     _binding = ResultProfileBinding.inflate(inflater, container, false)
                     val view = binding.root
                     return view
@@ -141,7 +141,7 @@
                 binding.name.text = viewModel.name
                 binding.button.setOnClickListener { viewModel.userClicked() }
                 ```
-            * フラグメントをアクティビティ内で機能させる <strong>Update at 2021.8.21</strong><BR>
+            * フラグメントをアクティビティ内で機能させる <font color=red><strong>Update at 2021.8.21</strong></font><BR>
                 https://developer.android.com/guide/fragments/fragmentmanager
                 * フラグメント生成
                 ```
@@ -161,10 +161,21 @@
                 }
                 ```
         - 共有プリファレンス <BR>
-        https://github.com/android/user-interface-samples/blob/master/PreferencesKotlin/app/build.gradle
-        - FragmentStatePagerAdapter <BR>
-        https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
+        build.gradle(app)に以下を追加する        
+            ```
+            dependencies {
+                ...
+                implemetation 'androidx.preference:preference-ktx:1.1.0'
+                ...
+            }
+            ```
+        - [FragmentStatePagerAdapter](https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter) <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+        androidx.viewpager2.adapterの[FragmentStateAdapter](https://developer.android.com/reference/androidx/viewpager2/adapter/FragmentStateAdapter)に置き換える必要あり
+        - [Handler](https://developer.android.com/reference/kotlin/android/os/Handler?hl=en) <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+        Hndlerは、[Executor](https://developer.android.com/reference/java/util/concurrent/Executor?hl=en)を使うか、Handler(Looper.myLooper(), callback)で書き換える。
+        - Fragment::onActivityCreated <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+        onActivityCreated() メソッドは非推奨。<BR>
+        フラグメントのビューをタッチするコードは onViewCreated()（onActivityCreated() の直前に呼び出される）、<BR>
+        他の初期化コードは onCreate() で実行する必要あり。
         - SoundPool(Lollipopで非推奨) <BR>
         https://developer.android.com/reference/kotlin/android/media/SoundPool?hl=en
-        - Handler <BR>
-        https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
