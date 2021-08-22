@@ -1,15 +1,15 @@
-- Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3)
+- Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3) <strong>Wrote at 2021.8.20</strong>
     - 環境刷新
         - Kotlln 1.5.21 <BR>
         Build.gradleでKotlinバージョンを変更
         - Gradle V7.0 <BR>
         Project Referenceで使用するGradleのバージョンを変更
-            - Android Gradle Plugin Version: 7.0.1
+            - Android Gradle Plugin Version: 7.0.1 <strong>Update at 2021.8.20</strong>
             - Gradle Vercion: 7.0.2
         - JDK 11 <BR>
         Android Studioに含まれるJDKがJDK11に変更になり、同じJDKをGradle実行にも使用するため、Gradle SettingでAndroid Studioに含まれるJDKを使用するように変更する
 
-        build.gradle(project)
+        build.gradle(project) <strong>Update at 2021.8.20</strong>
         ```
         buildscript {
             ext.kotlin_version = '1.5.21'
@@ -24,12 +24,12 @@
         }
         ```
     - 非互換として吸収すべき課題
-        - SDKバージョン範囲の見直し <BR>
+        - SDKバージョン範囲の見直し <strong>Update at 2021.8.20</strong><BR>
         ビルド時に下記メッセージが出るため、SDKバージョンを26以上にする
             * "Invoke-customs are only supported starting with Android O (--min-api 26)"
             * "Default interface methods are only supported starting with Android N (--min-api 24)
             * "Static interface methods are only supported starting with Android N (--min-api 24)
-        - マニフェスト
+        - マニフェスト <strong>Update at 2021.8.20</strong>
             * アクティビティのエクスポート
               manifestでintent-filerを使っているため、下記を参照して設定。<BR>
             https://developer.android.com/guide/topics/manifest/activity-element#exported <BR>
@@ -141,7 +141,7 @@
                 binding.name.text = viewModel.name
                 binding.button.setOnClickListener { viewModel.userClicked() }
                 ```
-            * フラグメントをアクティビティ内で機能させる <BR>
+            * フラグメントをアクティビティ内で機能させる <strong>Update at 2021.8.21</strong><BR>
                 https://developer.android.com/guide/fragments/fragmentmanager
                 * フラグメント生成
                 ```
