@@ -104,6 +104,61 @@
                     }
                 }
                 ```
+                - FragmentStatePagerAdapterの置換 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+                    - アダプタの継承クラスのコンストラクタの継承元をFragmentStateAdapterに置き換える <BR>
+                    https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
+                    ```
+                    class MyAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm){
+                        ...
+                        override fun getCount(): Int {
+                            ...
+                        }
+                    }
+                    ```
+                    https://developer.android.com/reference/androidx/viewpager2/adapter/FragmentStateAdapter
+                    ```
+                    class MyAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa){
+                        ...
+                        override fun getItemCount(): Int {
+                            ...
+                        }
+                    }
+                    ```
+                    - アクティビティでのアダプタへのアクセスを変更する
+                    ```
+                        binding.pager.adapter = MyAdapter(supportFragmentManager)
+                    ```
+                    ↓
+                    ```
+                        binding.pager.adapter = MyAdapter(this)
+                    ```
+                - タイマ処理におけるハンドラ周りを見直す <font color=red><strong>Update at 2021.8.22</strong></font><BR> 
+                https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
+                    - ハンドラ生成の見直し
+                    ```
+                    var handler = Handler()
+                    ```
+                    ↓
+                    ```
+                    Looper.prepare()
+                    val handler = Looper.myLooper()?.let { Handler(it, null) }
+                    ```
+                    - ハンドラ利用の見直し（セーフアクセス修飾子）
+                    ```
+                    timer(period = 5000){
+                        handler.post {
+                            ...
+                        }
+                    }
+                    ```
+                    ↓
+                    ```
+                    timer(period = 5000){
+                        handler?.post {
+                            ...
+                        }
+                    }
+                    ```
             * フラグメントの場合
                 * フラグメントにバインディングクラスのインスタンス変数を追加する
                 ```
@@ -141,6 +196,19 @@
                 binding.name.text = viewModel.name
                 binding.button.setOnClickListener { viewModel.userClicked() }
                 ```
+                * フラグメント作成後の処理手続きの変更 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+                onActivityCreatedメソッドでの実行は非推奨となったため、フラグメントのビューをタッチするコードは、onActivityCreatedメソッドの実行直前に呼び出されるonViewCreatedメソッドでの実行に変更。その他の初期化コードは onCreate() 内での実行に変更。
+                ```
+                override fun onActivityCreated(...){
+                    ...
+                }
+                ```
+                ↓
+                ```
+                override fun onViewCreated(...){
+                    ...
+                }
+                ```
             * フラグメントをアクティビティ内で機能させる <font color=red><strong>Update at 2021.8.21</strong></font><BR>
                 https://developer.android.com/guide/fragments/fragmentmanager
                 * フラグメント生成
@@ -169,13 +237,5 @@
                 ...
             }
             ```
-        - [FragmentStatePagerAdapter](https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter) <font color=red><strong>Update at 2021.8.22</strong></font><BR>
-        androidx.viewpager2.adapterの[FragmentStateAdapter](https://developer.android.com/reference/androidx/viewpager2/adapter/FragmentStateAdapter)に置き換える必要あり
-        - [Handler](https://developer.android.com/reference/kotlin/android/os/Handler?hl=en) <font color=red><strong>Update at 2021.8.22</strong></font><BR>
-        Hndlerは、[Executor](https://developer.android.com/reference/java/util/concurrent/Executor?hl=en)を使うか、Handler(Looper.myLooper(), callback)で書き換える。
-        - Fragment::onActivityCreated <font color=red><strong>Update at 2021.8.22</strong></font><BR>
-        onActivityCreated() メソッドは非推奨。<BR>
-        フラグメントのビューをタッチするコードは onViewCreated()（onActivityCreated() の直前に呼び出される）、<BR>
-        他の初期化コードは onCreate() で実行する必要あり。
         - SoundPool(Lollipopで非推奨) <BR>
         https://developer.android.com/reference/kotlin/android/media/SoundPool?hl=en
