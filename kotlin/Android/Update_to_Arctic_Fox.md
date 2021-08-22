@@ -104,61 +104,6 @@
                     }
                 }
                 ```
-                - FragmentStatePagerAdapterの置換 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
-                    - アダプタの継承クラスのコンストラクタの継承元をFragmentStateAdapterに置き換える <BR>
-                    https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
-                    ```
-                    class MyAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm){
-                        ...
-                        override fun getCount(): Int {
-                            ...
-                        }
-                    }
-                    ```
-                    https://developer.android.com/reference/androidx/viewpager2/adapter/FragmentStateAdapter
-                    ```
-                    class MyAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa){
-                        ...
-                        override fun getItemCount(): Int {
-                            ...
-                        }
-                    }
-                    ```
-                    - アクティビティでのアダプタへのアクセスを変更する
-                    ```
-                        binding.pager.adapter = MyAdapter(supportFragmentManager)
-                    ```
-                    ↓
-                    ```
-                        binding.pager.adapter = MyAdapter(this)
-                    ```
-                - タイマ処理におけるハンドラ周りを見直す <font color=red><strong>Update at 2021.8.22</strong></font><BR> 
-                https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
-                    - ハンドラ生成の見直し
-                    ```
-                    var handler = Handler()
-                    ```
-                    ↓
-                    ```
-                    Looper.prepare()
-                    val handler = Looper.myLooper()?.let { Handler(it, null) }
-                    ```
-                    - ハンドラ利用の見直し（セーフアクセス修飾子）
-                    ```
-                    timer(period = 5000){
-                        handler.post {
-                            ...
-                        }
-                    }
-                    ```
-                    ↓
-                    ```
-                    timer(period = 5000){
-                        handler?.post {
-                            ...
-                        }
-                    }
-                    ```
             * フラグメントの場合
                 * フラグメントにバインディングクラスのインスタンス変数を追加する
                 ```
@@ -196,19 +141,6 @@
                 binding.name.text = viewModel.name
                 binding.button.setOnClickListener { viewModel.userClicked() }
                 ```
-                * フラグメント作成後の処理手続きの変更 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
-                onActivityCreatedメソッドでの実行は非推奨となったため、フラグメントのビューをタッチするコードは、onActivityCreatedメソッドの実行直前に呼び出されるonViewCreatedメソッドでの実行に変更。その他の初期化コードは onCreate() 内での実行に変更。
-                ```
-                override fun onActivityCreated(...){
-                    ...
-                }
-                ```
-                ↓
-                ```
-                override fun onViewCreated(...){
-                    ...
-                }
-                ```
             * フラグメントをアクティビティ内で機能させる <font color=red><strong>Update at 2021.8.21</strong></font><BR>
                 https://developer.android.com/guide/fragments/fragmentmanager
                 * フラグメント生成
@@ -228,12 +160,80 @@
                     addToBackStack("name") // name can be null
                 }
                 ```
-        - 共有プリファレンス <BR>
-        build.gradle(app)に以下を追加する        
+        - 共有プリファレンス
+            - build.gradle(app)に以下を追加する        
             ```
             dependencies {
                 ...
                 implemetation 'androidx.preference:preference-ktx:1.1.0'
+                ...
+            }
+            ```
+        - FragmentStatePagerAdapterの置換 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+            - アダプタの継承クラスのコンストラクタの継承元をFragmentStateAdapterに置き換える <BR>
+            https://developer.android.com/reference/androidx/fragment/app/FragmentStatePagerAdapter
+                ```
+                class MyAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm){
+                    ...
+                    override fun getCount(): Int {
+                        ...
+                    }
+                }
+                ```
+                https://developer.android.com/reference/androidx/viewpager2/adapter/FragmentStateAdapter
+                ```
+                class MyAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa){
+                    ...
+                    override fun getItemCount(): Int {
+                        ...
+                    }
+                }
+                ```
+            - アクティビティでのアダプタへのアクセスを変更する
+                ```
+                binding.pager.adapter = MyAdapter(supportFragmentManager)
+                ```
+                ↓
+                ```
+                binding.pager.adapter = MyAdapter(this)
+                ```
+        - タイマ処理におけるハンドラ周りを見直す <font color=red><strong>Update at 2021.8.22</strong></font><BR> 
+        https://developer.android.com/reference/kotlin/android/os/Handler?hl=en
+            - ハンドラ生成の見直し
+                ```
+                var handler = Handler()
+                ```
+                ↓
+                ```
+                Looper.prepare()
+                val handler = Looper.myLooper()?.let { Handler(it, null) }
+                ```
+            - ハンドラ利用の見直し（セーフアクセス修飾子）
+                ```
+                timer(period = 5000){
+                    handler.post {
+                        ...
+                    }
+                }
+                ```
+                ↓
+                ```
+                timer(period = 5000){
+                    handler?.post {
+                        ...
+                    }
+                }
+                ```
+        - フラグメント作成後の処理手続きの変更 <font color=red><strong>Update at 2021.8.22</strong></font><BR>
+        onActivityCreatedメソッドでの実行は非推奨となったため、フラグメントのビューをタッチするコードは、onActivityCreatedメソッドの実行直前に呼び出されるonViewCreatedメソッドでの実行に変更。その他の初期化コードは onCreate() 内での実行に変更。
+            ```
+            override fun onActivityCreated(...){
+                ...
+            }
+            ```
+            ↓
+            ```
+            override fun onViewCreated(...){
                 ...
             }
             ```
