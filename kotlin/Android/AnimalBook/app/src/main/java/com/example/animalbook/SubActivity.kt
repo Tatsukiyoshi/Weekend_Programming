@@ -2,15 +2,18 @@ package com.example.animalbook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_sub.*
+import com.example.animalbook.databinding.ActivitySubBinding
 
 class SubActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySubBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sub)
+        binding = ActivitySubBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        lionButton.setOnClickListener {
+        binding.lionButton.setOnClickListener {
             val fragment = LionFragment()
             val fragmentManager = this.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
@@ -19,7 +22,7 @@ class SubActivity : AppCompatActivity() {
                 .commit()
         }
 
-        hippoButton.setOnClickListener {
+        binding.hippoButton.setOnClickListener {
             val fragment = HippoFragment()
             val fragmentManager = this.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
@@ -28,7 +31,7 @@ class SubActivity : AppCompatActivity() {
                 .commit()
         }
 
-        giraffeButton.setOnClickListener {
+        binding.giraffeButton.setOnClickListener {
             val fragment = GiraffeFragment()
             val fragmentManager = this.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
@@ -37,7 +40,7 @@ class SubActivity : AppCompatActivity() {
                 .commit()
         }
 
-        val fragment = titleFragment as? TitleFragment
-        fragment?.setTitle("図鑑画面")
+        //val fragment = binding.titleFragment as? TitleFragment
+        //fragment?.setTitle("図鑑画面")
     }
 }
