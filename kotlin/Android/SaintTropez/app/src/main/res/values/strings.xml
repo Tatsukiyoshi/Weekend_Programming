@@ -11,4 +11,10 @@
     <string name="mailT">メールで予約</string>
     <string name="shareT">共有する</string>
     <string name="browseT">ブラウザで開く</string>
+    <string name="smsNumber">999-9999-9999</string>
+    <string name="emailAddress">nobody@example.com</string>
+    <string name="emailSubject">予約問い合わせ</string>
+    <string name="emailText">以下の通り予約希望します</string>
+    <string name="shareText">美味しいレストランを紹介します。</string>
+    <string name="browseUrl">http://www.yahoo.co.jp</string>
 </resources>
