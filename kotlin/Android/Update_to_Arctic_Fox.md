@@ -237,5 +237,16 @@
                 ...
             }
             ```
-        - SoundPool(Lollipopで非推奨) <BR>
+        - SoundPoolコンストラクタ(Lollipopで非推奨) <BR>
         https://developer.android.com/reference/kotlin/android/media/SoundPool?hl=en
+            ```
+            soundPool = SoundPool.Builder()
+                        .setMaxStreams(1)
+                        .setAudioAttributes(audioAttributes)
+                        .build()
+            ```
+        - PendingIntent.getBroadcast <BR>
+        lintでMuttable Flagを指定されていないと指摘されるため、指定するように変更
+        - SimpleDateFormat <BR>
+        lintでロケールを指定するよう指摘されるため、ロケールを指定するように変更
+
