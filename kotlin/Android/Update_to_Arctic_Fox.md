@@ -249,4 +249,44 @@
         lintでMuttable Flagを指定されていないと指摘されるため、指定するように変更
         - SimpleDateFormat <font color=red><strong>Update at 2021.8.25</strong></font><BR>
         lintでロケールを指定するよう指摘されるため、ロケールを指定するように変更
+    * Realm 環境の更新 <font color=red><strong>Update at 2021.8.28</strong></font><BR>
+        https://docs.mongodb.com/realm/sdk/android/install/
 
+        - build.gradle(project)
+            ```
+            buildscript {
+                repositories {
+                    google()
+                    mavenCentral()
+                    jcenter()
+                }
+                dependencies {
+                    classpath "com.android.tools.build:gradle:7.0.1"
+                    classpath "io.realm:realm-gradle-plugin:10.7.0"
+                }
+            }
+            allprojects {
+                repositories {
+                    google()
+                    mavenCentral()
+                    jcenter()
+                }
+                dependencies {
+                }
+            }
+            task clean(type: Delete) {
+                delete rootProject.buildDir
+            }
+            ```
+        - build.gradle(app)
+            ```
+            plugins {
+                id 'kotlin-kapt'
+                id 'realm-android'
+            }
+            ...
+            realm {
+                syncEnabled = true
+            }
+            ```
+    *             
