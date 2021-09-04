@@ -1,6 +1,6 @@
 - Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3) <font color=red><strong>Wrote first at 2021.8.20</strong></font>
     - 環境刷新
-        - Kotlln 1.5.30 <font color=red><strong>Wrote first at 2021.9.4</strong></font><BR>
+        - Kotlln 1.5.30 <font color=red><strong>Update at 2021.9.4</strong></font><BR>
         Build.gradleでKotlinバージョンを変更
         - Gradle V7.0 <BR>
         Project Referenceで使用するGradleのバージョンを変更
