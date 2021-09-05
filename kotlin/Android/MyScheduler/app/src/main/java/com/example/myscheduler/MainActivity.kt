@@ -2,36 +2,38 @@ package com.example.myscheduler
 
 import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myscheduler.databinding.ActivityMainBinding
+import com.example.myscheduler.databinding.ContentMainBinding
 import io.realm.Realm
-import io.realm.RealmObject
 import io.realm.kotlin.where
-
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var realm: Realm
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var contentBinding: ContentMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        var view = binding.root
+        setContentView(view)
+        setSupportActionBar(binding.toolbar)
         realm = Realm.getDefaultInstance()
+        contentBinding = ContentMainBinding.inflate(layoutInflater)
 
         // RecyclerView にアダプターとレイアウトマネージャを設定する
-        list.layoutManager = LinearLayoutManager(this)
+        contentBinding.list.layoutManager = LinearLayoutManager(this)
         val schedules = realm.where<Schedule>().findAll()
         val adapter = ScheduleAdapter(schedules)
-        list.adapter = adapter
+        contentBinding.list.adapter = adapter
 
         // Parameter 'view' is never used, could be renamed to _
         //fab.setOnClickListener { view ->
-        fab.setOnClickListener { _ ->
+        binding.fab.setOnClickListener { _ ->
             val intent = Intent(this, ScheduleEditActivity::class.java)
             startActivity(intent)
         }

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My Countdown Timer</string>
+    <string name="initialTimerText">3:00</string>
+    <string name="timerTextFormat">%1d:%2$02d</string>
+    <string name="finishTimerText">0:00</string>
 </resources>

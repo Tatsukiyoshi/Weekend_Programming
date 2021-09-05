@@ -5,21 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_image.*
+import com.example.myslideshow.databinding.FragmentImageBinding
 
-val IMG_RES_ID = "IMG_RES_ID"
+const val IMG_RES_ID = "IMG_RES_ID"
 
 /**
  * A simple [Fragment] subclass.
  */
 class ImageFragment : Fragment() {
+    private var _binding: FragmentImageBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_image, container, false)
+        _binding = FragmentImageBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     // コンパニオンオブジェクト
@@ -47,10 +56,10 @@ class ImageFragment : Fragment() {
     }
 
     // フラグメント作成後
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         imgResId?.let {
-            imageView.setImageResource(it)
+            binding.imageView.setImageResource(it)
         }
     }
 }

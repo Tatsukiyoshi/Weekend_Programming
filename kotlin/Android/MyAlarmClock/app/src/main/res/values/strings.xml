@@ -2,4 +2,5 @@
     <string name="app_name">My Alarm Clock</string>
     <string name="cancelAlarmText">アラームをキャンセルする</string>
     <string name="setAlarmText">アラームをセットする</string>
+    <string name="timeTextFormat">%1$02d:%2$02d</string>
 </resources>

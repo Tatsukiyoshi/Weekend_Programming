@@ -2,35 +2,36 @@ package com.example.janken
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.Preference
-import android.preference.PreferenceManager
-import kotlinx.android.synthetic.main.activity_result.*
+import androidx.preference.PreferenceManager
+import com.example.janken.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityResultBinding
     private val gu = 0
     private val choki = 1
     private val pa = 2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        binding = ActivityResultBinding.inflate(layoutInflater)
+        var view = binding.root
+        setContentView(view)
 
         // インテントから追加情報を取り出す
         val id = intent.getIntExtra("MY_HAND", 0)
 
         // when句による画像の切り替え
-        val myHand: Int
-        myHand = when(id){
+        val myHand: Int = when(id){
             R.id.gu -> {
-                myHandImage.setImageResource(R.drawable.gu)
+                binding.myHandImage.setImageResource(R.drawable.gu)
                 gu
             }
             R.id.choki -> {
-                myHandImage.setImageResource(R.drawable.choki)
+                binding.myHandImage.setImageResource(R.drawable.choki)
                 choki
             }
             R.id.pa -> {
-                myHandImage.setImageResource(R.drawable.pa)
+                binding.myHandImage.setImageResource(R.drawable.pa)
                 pa
             }
             else -> gu
@@ -40,21 +41,21 @@ class ResultActivity : AppCompatActivity() {
         // val comHand = (Math.random() * 3).toInt()
         val comHand = getHand()
         when(comHand) {
-            gu -> comHandImage.setImageResource(R.drawable.com_gu)
-            choki -> comHandImage.setImageResource(R.drawable.com_choki)
-            pa -> comHandImage.setImageResource(R.drawable.com_pa)
+            gu -> binding.comHandImage.setImageResource(R.drawable.com_gu)
+            choki -> binding.comHandImage.setImageResource(R.drawable.com_choki)
+            pa -> binding.comHandImage.setImageResource(R.drawable.com_pa)
         }
 
         //  勝敗を判定する
         val gameResult = (comHand - myHand + 3) % 3
         when(gameResult) {
-            0 -> resultLabel.setText(R.string.result_draw) // 引き分け
-            1 -> resultLabel.setText(R.string.result_win)  // 勝った場合
-            2 -> resultLabel.setText(R.string.result_lose) // 負けた場合
+            0 -> binding.resultLabel.setText(R.string.result_draw) // 引き分け
+            1 -> binding.resultLabel.setText(R.string.result_win)  // 勝った場合
+            2 -> binding.resultLabel.setText(R.string.result_lose) // 負けた場合
         }
 
         // 戻る処理を追加する
-        backButton.setOnClickListener { finish() }
+        binding.backButton.setOnClickListener { finish() }
 
         // じゃんけんの結果を保存する
         saveData(myHand, comHand, gameResult)

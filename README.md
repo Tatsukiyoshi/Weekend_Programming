@@ -72,6 +72,21 @@ exercism download --exercise=two-fer --track=kotlin
   - Hint of Challenges
     - [Tavern Challenge 19](https://forums.bignerdranch.com/t/tavern-challenge/15141/2)
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
+- Android Studio Arctic Fox | 2020.3.1 Patch 2 (based IntelliJ 2020.3)
+  ```
+  Build #AI-203.7717.56.2031.7678000, built on August 27, 2021
+  Runtime version: 11.0.10+0-b96-7249189 amd64
+  VM: OpenJDK 64-Bit Server VM by Oracle Corporation
+  Windows 10 10.0
+  GC: G1 Young Generation, G1 Old Generation
+  Memory: 1280M
+  Cores: 2
+  Registry: external.system.auto.import.disabled=true
+  Non-Bundled Plugins: org.jetbrains.kotlin
+  ```
+  - 非互換として吸収すべき課題 <BR>
+  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照
+- IntelliJ IDEA 2021.1.3
 
 ### JavaScript
 - Angular - 日経ソフトウェア 2019年5月号

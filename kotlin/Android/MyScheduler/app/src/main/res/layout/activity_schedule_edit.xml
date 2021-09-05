@@ -25,7 +25,9 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+        app:layout_constraintTop_toBottomOf="@+id/dateText"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/titleText"
@@ -49,7 +51,8 @@
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/detailText"
