@@ -136,7 +136,7 @@ exercism download --exercise=two-fer --track=kotlin
 - Eclipse IDE for Java Developers 2021-06
 
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
-  <strong>2021/07/04</strong>:Chapter 5.3 フォームを使ったプログラムの作成 finished
+  <strong>2021/09/12</strong>:Chapter 6 MVCモデルと処理の遷移 finished
 - Pleiades(Eclipse 2021-06＋プラグイン)
 
 ### .NET Framework / C++
