@@ -1,6 +1,34 @@
 # 独学によるプログラミング演習
 
-## [リポジトリ（Github）](https://github.com/taishow2019/Programming_study.git)
+## [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
+
+## 目次
+<!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [documentation](#documentation)
+- [Exercism](#exercismhttpsexercismiomytracks)
+- [Python](#python)
+- [Kotlin](#kotlin)
+  - [Arctic Fox 対応として吸収すべき課題 <BR>](#arctic-fox-対応として吸収すべき課題-br)
+  - [Android - はじめてのAndroidプログラミング @2019/10/12:My Scheduler(Chapter 12) [finished!]<BR>](#android-はじめてのandroidプログラミング-strong20191012my-schedulerchapter-12-finishedstrongbr)
+  - [Programming - Kotlinプログラミング @2019/11/13:Chapter 22(coroutines sample update for kotlin1.3)](#programming-kotlinプログラミング-strong20191113chapter-22coroutines-sample-update-for-kotlin13strong)
+- [JavaScript](#javascript)
+- [Java](#java)
+  - [Java本格入門 <BR>](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-br)
+  - [サーブレット＆JSP入門 <BR>](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-br)
+- [.NET Framework / C++](#net-framework-c)
+  - [C#](#c)
+  - [C++](#c-1)
+- [ObjectPascal](#objectpascal)
+- [Dart - flutter](#dart-flutter)
+- [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
+- [Swift](#swift)
+- [LLVM](#llvm)
+- [Unity](#unity)
+
+<!-- /code_chunk_output -->
 
 ### documentation
 - Markdown
@@ -62,9 +90,12 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android - はじめてのAndroidプログラミング <strong>@2019/10/12:My Scheduler(Chapter 12) [finished!]</strong><BR>
+#### Arctic Fox 対応として吸収すべき課題 <BR>
+  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照
+  
+#### Android - はじめてのAndroidプログラミング <strong>@2019/10/12:My Scheduler(Chapter 12) [finished!]</strong><BR>
 [サンプル](http://isbn.sbcr.jp/95815)
-- Programming - Kotlinプログラミング <strong>@2019/11/13:Chapter 22(coroutines sample update for kotlin1.3)</strong>
+#### Programming - Kotlinプログラミング <strong>@2019/11/13:Chapter 22(coroutines sample update for kotlin1.3)</strong>
   - Android
     - Chapter 22 coroutines
     - Chapter 21 [New Character UI](https://www.bignerdranch.com/assets/solutions/activity_new_character.xml)
@@ -84,8 +115,7 @@ exercism download --exercise=two-fer --track=kotlin
   Registry: external.system.auto.import.disabled=true
   Non-Bundled Plugins: org.jetbrains.kotlin
   ```
-  - 非互換として吸収すべき課題 <BR>
-  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照
+
 - IntelliJ IDEA 2021.1.3
 
 ### JavaScript
@@ -101,24 +131,24 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) <BR>
+  <strong>2021/09/12</strong>:Chapter 6 例外を極める finished
 - Eclipse IDE for Java Developers 2021-06
-- [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) <BR>
-  <strong>2021/05/21</strong>:Chapter 5 ストリーム処理を使いこなす finished
 
-- Pleiades(Eclipse 2021-06＋プラグイン)
-- [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
+#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
   <strong>2021/07/04</strong>:Chapter 5.3 フォームを使ったプログラムの作成 finished
+- Pleiades(Eclipse 2021-06＋プラグイン)
 
 ### .NET Framework / C++
 - Visual Studio 2022 Preview + .NET 5/6 Preview 
-- C#
+#### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)/[サポートページ](http://mana.on.coocan.jp/yasacs.html) <BR>
   <strong>2021/05/23</strong>:Lesson 6 イベント finished
   - ColorDialog
 - SQL
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
-- C++
+#### C++
   - [C++ プログラミング入門](http://examples.oreilly.com/core/)
     <strong>2021/06/05</strong>:Chapter 2 クラスを使用しないC++
 
