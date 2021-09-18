@@ -116,8 +116,6 @@ exercism download --exercise=two-fer --track=kotlin
   Non-Bundled Plugins: org.jetbrains.kotlin
   ```
 
-- IntelliJ IDEA 2021.1.3
-
 ### JavaScript
 - Angular - 日経ソフトウェア 2019年5月号
 - ml5 - 日経ソフトウェア 2019年5月号
@@ -134,6 +132,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) <BR>
   <strong>2021/09/12</strong>:Chapter 6 例外を極める finished
 - Eclipse IDE for Java Developers 2021-06
+- IntelliJ IDEA 2021.2.2 <strong>2021/09/19</strong> Updated!
 
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <BR>
   <strong>2021/09/12</strong>:Chapter 6 MVCモデルと処理の遷移 finished
