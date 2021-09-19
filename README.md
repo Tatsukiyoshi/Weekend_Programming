@@ -139,10 +139,10 @@ exercism download --exercise=two-fer --track=kotlin
 - Pleiades(Eclipse 2021-06＋プラグイン)
 
 ### .NET Framework / C++
-- Visual Studio 2022 Preview + .NET 5/6 Preview 
+- Visual Studio 2022 Preview 4 + .NET 5 Or .NET 6 Preview 
 #### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)/[サポートページ](http://mana.on.coocan.jp/yasacs.html) <BR>
-  <strong>2021/05/23</strong>:Lesson 6 イベント finished
+  <strong>2021/09/19</strong>:Lesson 7 コントロール studying
   - ColorDialog
 - SQL
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
