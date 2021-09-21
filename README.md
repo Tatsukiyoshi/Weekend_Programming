@@ -144,9 +144,9 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <strong>@2021/09/12</strong>:Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">finished</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 Preview 4 + .NET 5 Or .NET 6 Preview 
+- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 Preview @2021/09/22 <span style="color: red;">Updated!</span>
 #### C#
-##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) <strong>@2021/09/20</strong>:Lesson 7.6 ダイアログ <span style="color: red;">studying</span>
+##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) <strong>@2021/09/22</strong>:Lesson 7.6 ダイアログ <span style="color: red;">finished</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
 - ColorDialog
 - SQL
