@@ -37,8 +37,9 @@
             this.lb.AutoSize = true;
             this.lb.Dock = System.Windows.Forms.DockStyle.Top;
             this.lb.Location = new System.Drawing.Point(0, 0);
+            this.lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(111, 12);
+            this.lb.Size = new System.Drawing.Size(114, 15);
             this.lb.TabIndex = 0;
             this.lb.Text = "ありがとうございました。";
             // 
@@ -46,20 +47,22 @@
             // 
             this.bt.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.bt.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bt.Location = new System.Drawing.Point(0, 138);
+            this.bt.Location = new System.Drawing.Point(0, 172);
+            this.bt.Margin = new System.Windows.Forms.Padding(4);
             this.bt.Name = "bt";
-            this.bt.Size = new System.Drawing.Size(234, 23);
+            this.bt.Size = new System.Drawing.Size(273, 29);
             this.bt.TabIndex = 1;
             this.bt.Text = "OK";
             this.bt.UseVisualStyleBackColor = true;
             // 
             // SampleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 161);
+            this.ClientSize = new System.Drawing.Size(273, 201);
             this.Controls.Add(this.bt);
             this.Controls.Add(this.lb);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SampleForm";
             this.Text = "御礼";
             this.ResumeLayout(false);
