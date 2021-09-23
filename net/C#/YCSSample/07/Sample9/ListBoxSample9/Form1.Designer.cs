@@ -37,8 +37,9 @@
             this.lb.AutoSize = true;
             this.lb.Dock = System.Windows.Forms.DockStyle.Top;
             this.lb.Location = new System.Drawing.Point(0, 0);
+            this.lb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(85, 12);
+            this.lb.Size = new System.Drawing.Size(87, 15);
             this.lb.TabIndex = 0;
             this.lb.Text = "いらっしゃいませ。";
             // 
@@ -46,7 +47,7 @@
             // 
             this.lbx.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbx.FormattingEnabled = true;
-            this.lbx.ItemHeight = 12;
+            this.lbx.ItemHeight = 15;
             this.lbx.Items.AddRange(new object[] {
             "乗用車",
             "トラック",
@@ -60,19 +61,21 @@
             "飛行機",
             "ヘリコプター",
             "ロケット"});
-            this.lbx.Location = new System.Drawing.Point(0, 73);
+            this.lbx.Location = new System.Drawing.Point(0, 92);
+            this.lbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbx.Name = "lbx";
-            this.lbx.Size = new System.Drawing.Size(234, 88);
+            this.lbx.Size = new System.Drawing.Size(273, 109);
             this.lbx.TabIndex = 1;
             this.lbx.SelectedIndexChanged += new System.EventHandler(this.lbx_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 161);
+            this.ClientSize = new System.Drawing.Size(273, 201);
             this.Controls.Add(this.lbx);
             this.Controls.Add(this.lb);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "サンプル";
             this.ResumeLayout(false);

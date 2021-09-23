@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace RadioButtonSample7
+namespace Item2
 {
     internal static class Program
     {
@@ -11,9 +11,7 @@ namespace RadioButtonSample7
         [STAThread]
         static void Main()
         {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
     }

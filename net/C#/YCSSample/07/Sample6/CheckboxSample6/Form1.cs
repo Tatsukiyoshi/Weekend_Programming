@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CheckboxSample6
@@ -21,10 +14,11 @@ namespace CheckboxSample6
         {
             CheckBox tmp = (CheckBox)sender;
 
-            if(tmp.Checked == true)
+            if (tmp.Checked == true)
             {
                 lb.Text = tmp.Text + "を選びました。";
-            } else if(tmp.Checked == false)
+            }
+            else if (tmp.Checked == false)
             {
                 lb.Text = tmp.Text + "をやめました。";
             }

@@ -52,7 +52,7 @@
             this.rb1.Checked = true;
             this.rb1.Dock = System.Windows.Forms.DockStyle.Left;
             this.rb1.Location = new System.Drawing.Point(4, 20);
-            this.rb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rb1.Margin = new System.Windows.Forms.Padding(4);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(37, 46);
             this.rb1.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.radioButton1.Location = new System.Drawing.Point(269, 20);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(58, 46);
             this.radioButton1.TabIndex = 2;
@@ -80,9 +80,9 @@
             this.gb.Controls.Add(this.radioButton1);
             this.gb.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gb.Location = new System.Drawing.Point(0, 131);
-            this.gb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb.Margin = new System.Windows.Forms.Padding(4);
             this.gb.Name = "gb";
-            this.gb.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb.Padding = new System.Windows.Forms.Padding(4);
             this.gb.Size = new System.Drawing.Size(331, 70);
             this.gb.TabIndex = 3;
             this.gb.TabStop = false;
@@ -95,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(331, 201);
             this.Controls.Add(this.gb);
             this.Controls.Add(this.lb);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "サンプル";
             this.gb.ResumeLayout(false);
