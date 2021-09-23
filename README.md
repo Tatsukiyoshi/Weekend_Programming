@@ -20,7 +20,7 @@
   - [サーブレット＆JSP入門 @2021/09/12:Chapter 6 MVCモデルと処理の遷移 finished](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-strong20210912strongchapter-6-mvcモデルと処理の遷移-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [C#](#c)
-    - [やさしいＣ＃第３版 @2021/09/19:Lesson 7 コントロール studying](#やさしいc第3版httpsisbn2sbcrjp03922-strong20210919stronglesson-7-コントロール-span-stylecolor-redstudyingspan)
+    - [やさしいＣ＃第３版 @2021/09/23:Lesson 7 コントロール finished](#やさしいc第3版httpsisbn2sbcrjp03922-strong20210923stronglesson-7-コントロール-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
     - [C++ プログラミング入門 @2021/06/05 Chapter 2 クラスを使用しないC++](#c-プログラミング入門httpexamplesoreillycomcore-strong20210605strong-span-stylecolor-greenchapter-2-クラスを使用しないcspan)
 - [ObjectPascal](#objectpascal)
@@ -144,9 +144,9 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <strong>@2021/09/12</strong>:Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">finished</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 Preview @2021/09/22 <span style="color: red;">Updated!</span>
+- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 RC1 @2021/09/22 <span style="color: red;">Updated!</span>
 #### C#
-##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) <strong>@2021/09/22</strong>:Lesson 7.6 ダイアログ <span style="color: red;">finished</span>
+##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) <strong>@2021/09/23</strong>:Lesson 7 コントロール <span style="color: red;">finished</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
 - ColorDialog
 - SQL
