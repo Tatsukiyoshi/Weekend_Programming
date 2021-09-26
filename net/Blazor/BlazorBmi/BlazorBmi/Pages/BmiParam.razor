@@ -1,0 +1,55 @@
+﻿@page "/param"
+@page "/param/{Height}/{Weight}"
+<!-- 4.2.1 URLパラメータ -->
+<h3>パラメータを使った例</h3>
+<table class="table">
+    <tr>
+        <td>名前</td>
+        <td>@bmi.Name</td>
+    </tr>
+    <tr>
+        <td>身長</td>
+        <td>@bmi.Height</td>
+    </tr>
+    <tr>
+        <td>体重</td>
+        <td>@bmi.Weight</td>
+    </tr>
+</table>
+<div style="font-size: @fontSize">
+    計算結果は @bmi.Bmi.ToString("00.0") です。
+</div>
+@code {
+    [Parameter]
+    public string? Height { get; set; }
+    [Parameter]
+    public string? Weight{ get; set; }
+
+    private BmiItem? bmi; 
+    private string fontSize = "32px";
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(Height) && !string.IsNullOrEmpty(Weight))
+        {
+            this.bmi = new BmiItem()
+            {
+                Name = "匿名",
+                Height = double.Parse(Height),
+                Weight = double.Parse(Weight),
+            };
+        }
+        else
+        {
+            // パラメータの指定がない場合は、
+            // 適当な初期値を入れておく
+            this.bmi = new BmiItem()
+                {
+                    Name = "パラメータを指定してください",
+                    Height = 0,
+                    Weight = 0,
+                };
+        }
+    }
+}
+ 
