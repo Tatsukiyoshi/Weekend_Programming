@@ -3,6 +3,9 @@
 <h1>Counter</h1>
 <p role="status">Current count: @currentCount</p>
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<!-- 3.3.1 時刻を表示させる-->
+<p>現在時刻： @now</p>
 @code {
     private int currentCount = 0;
 
@@ -10,4 +13,6 @@
     {
         currentCount++;
     }
+
+    private DateTime now = DateTime.Now;
 }
