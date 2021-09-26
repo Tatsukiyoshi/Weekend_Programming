@@ -1,0 +1,30 @@
+﻿@page "/changefont3"
+<h3>スタイルでフォントサイズを変更</h3>
+<div class="form-group">
+    <label class="col-form-label">フォントサイズ</label>
+    <input type="text" @bind="fontSize" class="form-control" />
+</div>
+<div>
+    <label class="col-form-label">@fontSize</label>
+    <div @bind-style="fontSize" @bind-style:event="onchange">フォントサイズを変更</div>
+</div>
+<h3>フォントサイズを数値で変更</h3>
+<div class="form-group">
+    <label class="col-form-label">フォントサイズ</label>
+    <input type="number" @bind="fontSizeNum" class="form-control" />
+</div>
+<div>
+    <label class="col-form-label">@fontSizeNum</label>
+    <div class="fontsize">フォントサイズを変更</div>
+</div>
+<style>
+    div.fontsize {
+        color: green;
+        background-color: yellow;
+        font-size: @(fontSizeNum)pt;
+    }
+</style>
+@code {
+    private string fontSize { get; set; } = "font-size: 12pt";
+    private int fontSizeNum { get; set; } = 12;
+}

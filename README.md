@@ -146,7 +146,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### .NET Framework / C++
 - Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 RC1 @2021/09/22 <span style="color: red;">*Updated!*</span>
 #### Blazor
-##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*started*</span>
+##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
 ##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2021/09/23** : Lesson 7 コントロール <span style="color: red;">*finished*</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
