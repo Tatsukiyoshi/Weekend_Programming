@@ -16,13 +16,13 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 @2021/09/12 Chapter 6 例外を極める finished](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-strong20210912strong-chapter-6-例外を極める-span-stylecolor-redfinishedspan)
-  - [サーブレット＆JSP入門 @2021/09/12:Chapter 6 MVCモデルと処理の遷移 finished](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-strong20210912strongchapter-6-mvcモデルと処理の遷移-span-stylecolor-redfinishedspan)
+  - [Java本格入門 **@2021/09/12** Chapter 6 例外を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20210912-chapter-6-例外を極める-span-stylecolor-redfinishedspan)
+  - [サーブレット＆JSP入門 **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20210912-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [C#](#c)
-    - [やさしいＣ＃第３版 @2021/09/23:Lesson 7 コントロール finished](#やさしいc第3版httpsisbn2sbcrjp03922-strong20210923stronglesson-7-コントロール-span-stylecolor-redfinishedspan)
+    - [やさしいＣ＃第３版 **@2021/09/23** : Lesson 7 コントロール *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20210923-lesson-7-コントロール-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
-    - [C++ プログラミング入門 @2021/06/05 Chapter 2 クラスを使用しないC++](#c-プログラミング入門httpexamplesoreillycomcore-strong20210605strong-span-stylecolor-greenchapter-2-クラスを使用しないcspan)
+    - [C++ プログラミング入門 **@2021/06/05** Chapter 2 クラスを使用しないC++](#c-プログラミング入門httpexamplesoreillycomcore-20210605-span-stylecolor-greenchapter-2-クラスを使用しないcspan)
 - [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
 - [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
@@ -55,35 +55,35 @@ exercism download --exercise=two-fer --track=kotlin
 ```
 
 - kotlin
-  - [two-fer](https://exercism.io/my/solutions/aa2de6b105d34450b4750cae4938773a) <strong>@2019/11/17</strong>
-  - [Hello World](https://exercism.io/my/solutions/49b7155b034142da95bc5c44c17a8c36) <strong>@2019/11/17</strong>
-  - [Reverse String](https://exercism.io/my/solutions/cbdaaa17f5574fa58c552d37d635c681) <strong>@2019/11/17</strong>
-  - [Leap](https://exercism.io/my/solutions/775889fd51284ed69f224e352242d625) <strong>@2019/11/17</strong>
-  - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) <strong>@2019/11/20</strong>
+  - [two-fer](https://exercism.io/my/solutions/aa2de6b105d34450b4750cae4938773a) **@2019/11/17**
+  - [Hello World](https://exercism.io/my/solutions/49b7155b034142da95bc5c44c17a8c36) **@2019/11/17**
+  - [Reverse String](https://exercism.io/my/solutions/cbdaaa17f5574fa58c552d37d635c681) **@2019/11/17**
+  - [Leap](https://exercism.io/my/solutions/775889fd51284ed69f224e352242d625) **@2019/11/17**
+  - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
 ### Python
 - nsw
-  - 202005 : 日経ソフトウェア2020年5月号 <strong>@2020/8/10</strong>
+  - 202005 : 日経ソフトウェア2020年5月号 **@2020/8/10**
 
 - pygame2 : 5日でできる！Pythonでゲーム作成入門（日経ソフトウェア2020年5月号）
   - [ケニーのサイト](https://kenney.nl/assets/space-shooter-extension)
-  - ３日目：迷路 <strong>@2020/6/29 -> 2020/7/25</strong>
-  - ４日目：月面着陸ゲーム <strong>@2020/7/26 -> 2020/8/1 </strong>
-  - ５日目：シューティングゲーム <strong>@2020/8/10</strong>
+  - ３日目：迷路 **@2020/6/29 -> 2020/7/25**
+  - ４日目：月面着陸ゲーム **@2020/7/26 -> 2020/8/1**
+  - ５日目：シューティングゲーム **@2020/8/10**
 
 - pygame : Pygame Zero ゲームプログラミング入門（日経ソフトウェア2020年3月号）
-  - jumpgame <strong>@2020/4/11</strong>
-  - shooting <strong>@2020/4/12</strong>
+  - jumpgame **@2020/4/11**
+  - shooting **@2020/4/12**
 - reversi : PythonでAIと対戦できるリバーシを作ろう
   - データ構造とUI編（日経ソフトウェア2019年9月号）
-    <strong>@2019/9/28</strong>コンピュータが隅に優先して石を打つよう改良
-    <strong>@2019/10/4</strong>コンピュータが隅を優先して石を打つかを変更するチェックボックス追加
+    **@2019/9/28**コンピュータが隅に優先して石を打つよう改良
+    **@2019/10/4**コンピュータが隅を優先して石を打つかを変更するチェックボックス追加
   - AI(人工知能編)（日経ソフトウェア2019年11月号）<BR>
     - ミニマックス法
     - アルファベータ法
 
 - self-taught [独学プログラマー](http://theselftaughtprogrammer.io/)
-<strong>@2019/10/5:Chapter 22 <span style="color: red;">finished!</span></strong>
+**@2019/10/5:Chapter 22** <span style="color: red;">*finished!*</span>
 - ginza - Universal Dependenciesに基づくオープンソース日本語NLPライブラリ
   ```
   pip install "https://github.com/megagonlabs/ginza/releases/download/v1.0.2/ja_ginza_nopn-1.0.2.tgz"
@@ -111,10 +111,10 @@ exercism download --exercise=two-fer --track=kotlin
     Non-Bundled Plugins: org.jetbrains.kotlin
     ```
 #### Android - はじめてのAndroidプログラミング <br>
-  <strong>@2019/10/12</strong> My Scheduler(Chapter 12) <span style="color: red;">finished!</span>
+  **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
 #### Programming - Kotlinプログラミング <br>
-  <strong>@2019/11/13</strong> Chapter 22(coroutines sample update for kotlin1.3)
+  **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
   - Android
     - Chapter 22 coroutines
     - Chapter 21 [New Character UI](https://www.bignerdranch.com/assets/solutions/activity_new_character.xml)
@@ -136,28 +136,28 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### Java
 - Eclipse IDE for Java Developers 2021-06
-- IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">Updated!</span>
+- IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
 - Pleiades(Eclipse 2021-06＋プラグイン)
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) <strong>@2021/09/12</strong> Chapter 6 例外を極める <span style="color: red;">finished</span>
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/09/12** Chapter 6 例外を極める <span style="color: red;">*finished*</span>
 
-#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) <strong>@2021/09/12</strong>:Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">finished</span>
+#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 RC1 @2021/09/22 <span style="color: red;">Updated!</span>
+- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 RC1 @2021/09/22 <span style="color: red;">*Updated!*</span>
 #### C#
-##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) <strong>@2021/09/23</strong>:Lesson 7 コントロール <span style="color: red;">finished</span>
+##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2021/09/23** : Lesson 7 コントロール <span style="color: red;">*finished*</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
 - ColorDialog
 - SQL
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
 #### C++
-##### [C++ プログラミング入門](http://examples.oreilly.com/core/) <strong>@2021/06/05</strong> <span style="color: green;">Chapter 2 クラスを使用しないC++</span>
+##### [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/06/05** <span style="color: green;">Chapter 2 クラスを使用しないC++</span>
 
   - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
     - HelloWorld
-    - [Learn C++](https://www.learncpp.com/) <strong>@2019/10/22</strong> 1.5 Introduction to iostream
+    - [Learn C++](https://www.learncpp.com/) **@2019/10/22** 1.5 Introduction to iostream
 
 ### ObjectPascal
 - Delphi
@@ -192,7 +192,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [for Winfows](https://releases.llvm.org/download.html)
 - 「きつねさんでもわかるLLVM」で学習中
   - DummyCCompiler実践中
-    <strong>2021/01/11</strong>:Front-End(to Chapter 5.9) finished
+    **2021/01/11** : Front-End(to Chapter 5.9) finished
   - [きつねさんでもわかるLLVM公式リポジトリ](https://github.com/Kmotiko/DummyCCompiler)
 
 ### Unity
