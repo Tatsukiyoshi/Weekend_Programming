@@ -21,22 +21,22 @@
 </div>
 @code {
     [Parameter]
-    public string? Height { get; set; }
+    public double Height { get; set; }
     [Parameter]
-    public string? Weight{ get; set; }
+    public double Weight{ get; set; }
 
     private BmiItem? bmi; 
     private string fontSize = "32px";
 
     protected override void OnInitialized()
     {
-        if (!string.IsNullOrEmpty(Height) && !string.IsNullOrEmpty(Weight))
+        if (Height != 0.0 && Weight != 0.0)
         {
             this.bmi = new BmiItem()
             {
                 Name = "匿名",
-                Height = double.Parse(Height),
-                Weight = double.Parse(Weight),
+                Height = Height,
+                Weight = Weight,
             };
         }
         else
