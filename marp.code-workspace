@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "document\\marp"
+		}
+	],
+	"settings": {
+		"markdown.marp.themes": [
+			"./custom.css"
+		]
+	}
+}

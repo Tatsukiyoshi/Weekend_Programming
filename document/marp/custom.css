@@ -1,0 +1,9 @@
+/* @theme custom */
+@import 'uncover';
+
+section {
+    background-color: darkcyan;
+}
+h1 {
+    color: white;
+}
