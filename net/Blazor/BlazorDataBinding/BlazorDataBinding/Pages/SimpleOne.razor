@@ -1,0 +1,22 @@
+﻿@page "/sampleone"
+<h3>シンプルなバインド</h3>
+<div class="form-group">
+    <label class="col-form-label">タイトルを入力</label>
+    <input @bind="Title" class="form-control" />
+</div>
+<div>
+    <label class="col-form-label">フォーカスが外れたときに更新</label>
+    <div>@Title</div>
+</div>
+<div>
+    <label class="col-form-label">タイトルを入力</label>
+    <input @bind="Title2" @bind:event="oninput" class="form-control" />
+</div>
+<div>
+    <label class="col-form-label">随時更新</label>
+    <div>@Title2</div>
+</div>
+@code {
+    private string? Title { get; set;  }
+    private string? Title2 { get; set; }
+}

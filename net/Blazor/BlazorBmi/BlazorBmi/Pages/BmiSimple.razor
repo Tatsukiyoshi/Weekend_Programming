@@ -1,0 +1,30 @@
+﻿@page "/simple"
+<!-- 4.1.2 シンプルなコンポーネント-->
+<h3>シンプルな表示</h3>
+<table class="table">
+    <tr>
+        <td>名前</td>
+        <td>@name</td>
+    </tr>
+    <tr>
+        <td>身長</td>
+        <td>@height</td>
+    </tr>
+    <tr>
+        <td>体重</td>
+        <td>@weight</td>
+    </tr>
+</table>
+<div style="font-size: @fontSize">
+    計算結果は @bmi です。
+</div>
+@code {
+//    private string name = "マスダトモアキ";
+//    private const double height = 160.0;
+//    private const double weight = 62.0;
+    private string name = "辰聖";
+    private const double height = 166.0;
+    private const double weight = 57.4;
+    private double bmi = weight / ((height / 100.0) * (height / 100));
+    private string fontSize = "32px";
+}
