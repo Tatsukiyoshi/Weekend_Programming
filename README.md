@@ -44,6 +44,7 @@
   ```
   "markdown-pdf.StatusbarMessageTimeout": 60000
   ```
+- Marp for Visual Studio Code & Draw.io Integration
 
 ### [Exercism](https://exercism.io/my/tracks)
 
