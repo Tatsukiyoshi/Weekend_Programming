@@ -132,6 +132,8 @@ exercism download --exercise=two-fer --track=kotlin
 - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>
   - Expo Sample - Expoサンプルアプリ
   - AdditionCalc - 足し算アプリ
+- react
+  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html)
 - electron
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
