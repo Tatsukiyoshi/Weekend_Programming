@@ -133,7 +133,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Expo Sample - Expoサンプルアプリ
   - AdditionCalc - 足し算アプリ
 - react
-  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/09 <span style="color: red;">*Finished!*</span>
+  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - electron
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
