@@ -7,8 +7,7 @@ function Square(props) {  /* 関数コンポーネント */
     /* インタラクティブなコンポーネント */
     <button
       className="square"
-      onClick={() => props.onClick({value: "X"})}
-    >
+      onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -26,7 +25,6 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <div className="status">{status}</div>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -61,7 +59,7 @@ class Game extends React.Component {
   handleClick(i){
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
-    const squares = this.state.squares.slice();
+    const squares = current.squares.slice();
 
     /* 決着がついている場合や既に埋まっている場合は、即戻る */
     if(calculateWinner(squares) || squares[i]){
@@ -80,7 +78,7 @@ class Game extends React.Component {
   jumpTo(step){
     this.setState({
       stepNumber: step,
-      xIsNext: (step % 2) == 0,
+      xIsNext: (step % 2) === 0,
     });
   }
   render() {
@@ -111,7 +109,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board
             squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
+            onClick={i => this.handleClick(i)}
           />
         </div>
         <div className="game-info">
