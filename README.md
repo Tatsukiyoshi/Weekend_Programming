@@ -19,6 +19,8 @@
   - [Java本格入門 **@2021/09/12** Chapter 6 例外を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20210912-chapter-6-例外を極める-span-stylecolor-redfinishedspan)
   - [サーブレット＆JSP入門 **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20210912-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
+  - [Blazor](#blazor)
+    - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
   - [C#](#c)
     - [やさしいＣ＃第３版 **@2021/09/23** : Lesson 7 コントロール *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20210923-lesson-7-コントロール-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
@@ -125,6 +127,8 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
+- React (Node.js 14.18.0 + react 17.0.2)
+  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - Angular - 日経ソフトウェア 2019年5月号
 - ml5 - 日経ソフトウェア 2019年5月号
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
@@ -132,8 +136,6 @@ exercism download --exercise=two-fer --track=kotlin
 - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>
   - Expo Sample - Expoサンプルアプリ
   - AdditionCalc - 足し算アプリ
-- react
-  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - electron
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
