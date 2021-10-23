@@ -24,7 +24,7 @@
   - [C#](#c)
     - [やさしいＣ＃第３版 **@2021/09/23** : Lesson 7 コントロール *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20210923-lesson-7-コントロール-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
-    - [C++ プログラミング入門 **@2021/06/05** Chapter 2 クラスを使用しないC++](#c-プログラミング入門httpexamplesoreillycomcore-20210605-span-stylecolor-greenchapter-2-クラスを使用しないcspan)
+    - [C++ プログラミング入門 **@2021/10/06** Chapter 6.2 デストラクタ](#c-プログラミング入門httpexamplesoreillycomcore-20211006-span-stylecolor-greenchapter-62-デストラクタspan)
 - [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
 - [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
@@ -140,7 +140,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- Eclipse IDE for Java Developers 2021-06
+- Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
 - Pleiades(Eclipse 2021-06＋プラグイン)
 
@@ -149,7 +149,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 Preview 4.1 + .NET 5 Or .NET 6 RC1 @2021/09/22 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 Preview 5 + .NET 5 Or .NET 6 RC1 @2021/10/16 <span style="color: red;">*Updated!*</span>
 #### Blazor
 ##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
@@ -160,7 +160,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
 #### C++
-##### [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/06/05** <span style="color: green;">Chapter 2 クラスを使用しないC++</span>
+##### [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
 
   - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
     - HelloWorld
