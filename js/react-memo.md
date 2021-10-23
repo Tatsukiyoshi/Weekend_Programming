@@ -1,8 +1,8 @@
 * react スタートアップ
     - node.jsインストール
-        - 古いバージョンをアンインストールするなら、下記ディレクトリは整理
-            1.  npm
-            1.  npm-cache 
+        - 古いバージョンをアンインストールするなら、下記ディレクトリのライブラリ(node-modules)は整理した後で！（グローバルにインストールしていなければ、問題なし）
+            1.  ユーザディレクトリのAppData\Roaming\npm
+            1.  ユーザディレクトリのAppData\Roaming\npm-cache 
 
 * reactのトラブルシューティング
     - npx create-react-app "package-name"(npm install)でmissing dependenciesエラー <BR>
