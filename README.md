@@ -146,7 +146,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 #### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/09/12** Chapter 6 例外を極める <span style="color: red;">*finished*</span>
 
-#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*finished*</span>
+#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/10/24** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*redo finished*</span>
 
 ### .NET Framework / C++
 - Visual Studio 2022 Preview 5 + .NET 5 Or .NET 6 RC1 @2021/10/16 <span style="color: red;">*Updated!*</span>
