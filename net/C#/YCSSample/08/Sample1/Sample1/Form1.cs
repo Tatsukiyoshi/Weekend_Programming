@@ -19,7 +19,7 @@ namespace Sample1
         {
             InitializeComponent();
 
-            im = Image.FromFile(Directory.GetCurrentDirectory() + strImagePath + "car.bmp");
+            im = Image.FromFile(Directory.GetCurrentDirectory() + "\\" + strImagePath + "car.bmp");
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)

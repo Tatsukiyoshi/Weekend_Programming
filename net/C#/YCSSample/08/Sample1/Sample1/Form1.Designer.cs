@@ -9,7 +9,11 @@ namespace Sample1
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private const string strImagePath = "\\..\\..\\..\\..\\..\\data\\";
+#if(NET5_0_OR_GREATER)
+        private const string strImagePath = "..\\..\\..\\..\\..\\..\\data\\";
+#else
+        private const string strImagePath = "..\\..\\..\\..\\..\\data\\";
+#endif
 
         /// <summary>
         /// 使用中のリソースをすべてクリーンアップします。
