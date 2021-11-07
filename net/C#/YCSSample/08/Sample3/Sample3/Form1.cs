@@ -8,15 +8,15 @@ namespace Sample3
         private const string strImagePath = "..\\..\\..\\..\\..\\data\\";
 #endif
         private const string strImageFile = "car.bmp";
-        private string strFullImagePath = Directory.GetCurrentDirectory() + "\\" + strImagePath + strImageFile;
+        private string strImageFullPath = Directory.GetCurrentDirectory() + "\\" + strImagePath + strImageFile;
 
         public Form1()
         {
             InitializeComponent();
 
             i = 0;
-            bm1 = new Bitmap(strFullImagePath);
-            bm2 = new Bitmap(strFullImagePath);
+            bm1 = new Bitmap(strImageFullPath);
+            bm2 = new Bitmap(strImageFullPath);
 
             this.Click += new EventHandler(fm_Click);
             this.Paint += new PaintEventHandler(fm_Paint);
@@ -42,12 +42,12 @@ namespace Sample3
             {
                 for(int y = 0; y < bm1.Height; y++)
                 {
-                    Color cbm1 = bm1.GetPixel(x, y);    // ƒsƒNƒZƒ‹‚ÌF‚ðŽæ“¾
-                    int bm1rgb = cbm1.ToArgb();         // RGB’l‚É•ÏŠ·
-                    int bm1a = (bm1rgb >> 24) & 0xFF;   // “§–¾“x
-                    int bm1r = (bm1rgb >> 16) & 0xFF;   // Ô¬•ª                                                     
-                    int bm1g = (bm1rgb >> 8) & 0xFF;    // —Î¬•ª
-                    int bm1b = (bm1rgb >> 0) & 0xFF;    // Â¬•ª
+                    Color cbm1 = bm1.GetPixel(x, y);    // ï¿½sï¿½Nï¿½Zï¿½ï¿½ï¿½ÌFï¿½ï¿½ï¿½æ“¾
+                    int bm1rgb = cbm1.ToArgb();         // RGBï¿½lï¿½É•ÏŠï¿½
+                    int bm1a = (bm1rgb >> 24) & 0xFF;   // ï¿½ï¿½ï¿½ï¿½ï¿½x
+                    int bm1r = (bm1rgb >> 16) & 0xFF;   // ï¿½Ôï¿½ï¿½ï¿½                                                     
+                    int bm1g = (bm1rgb >> 8) & 0xFF;    // ï¿½Îï¿½ï¿½ï¿½
+                    int bm1b = (bm1rgb >> 0) & 0xFF;    // ï¿½Âï¿½ï¿½ï¿½
 
                     switch (i)
                     {
@@ -61,10 +61,10 @@ namespace Sample3
                             bm1b >>= 2;
                             break;
                     }
-                    // RGB’l‚É•ÏŠ·
+                    // RGBï¿½lï¿½É•ÏŠï¿½
                     bm1rgb = (bm1a << 24) | (bm1r << 16) | (bm1g << 8) | (bm1b << 0);
 
-                    // ƒsƒNƒZƒ‹‚ÌF‚ðÝ’è
+                    // ï¿½sï¿½Nï¿½Zï¿½ï¿½ï¿½ÌFï¿½ï¿½Ý’ï¿½
                     cbm1 = Color.FromArgb(bm1rgb);
                     bm2.SetPixel(x, y, cbm1);
                 }
