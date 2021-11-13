@@ -20,7 +20,7 @@ namespace Sample6
 
             Random rn = new Random();
 
-            for(int i=0; i < 30; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Ball bl = new Ball();
 
@@ -45,7 +45,7 @@ namespace Sample6
         {
             Graphics g = e.Graphics;
 
-            foreach(Ball bl in listBall)
+            foreach (Ball bl in listBall)
             {
                 Point p = bl.point;
                 Color c = bl.color;
