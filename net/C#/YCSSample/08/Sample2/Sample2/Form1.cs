@@ -2,7 +2,14 @@ namespace Sample2
 {
     public partial class Form1 : Form
     {
+#if(NET5_0_OR_GREATER)
         private const string strImagePath = "..\\..\\..\\..\\..\\..\\data\\";
+#else
+        private const string strImagePath = "..\\..\\..\\..\\..\\data\\";
+#endif
+        private const string strImageFile = "car.bmp";
+        private string strImageFullPath = Directory.GetCurrentDirectory() + "\\" + strImagePath + strImageFile;
+
         private Image im;
         private RadioButton rb1, rb2, rb3;
         private GroupBox gb;
@@ -12,29 +19,29 @@ namespace Sample2
         {
             InitializeComponent();
 
-            im = Image.FromFile(strImagePath + "car.bmp");
+            im = Image.FromFile(strImageFullPath);
 
             gb = new GroupBox();
-            gb.Text = "í—Ş";
+            gb.Text = "ï¿½ï¿½ï¿½";
             gb.Dock = DockStyle.Bottom;
             gb.Parent = this;
 
-            // Šg‘åEk¬‚Ì‘I‘ğƒ{ƒ^ƒ“
+            // ï¿½gï¿½ï¿½Eï¿½kï¿½ï¿½ï¿½Ì‘Iï¿½ï¿½ï¿½{ï¿½^ï¿½ï¿½
             rb1 = new RadioButton();
-            rb1.Text = "’Êí";
+            rb1.Text = "ï¿½Êï¿½";
             rb1.Dock = DockStyle.Bottom;
             rb1.Checked = true;
             rb1.Parent = gb;
             rb1.Click += new EventHandler(rb_Click);
 
             rb2 = new RadioButton();
-            rb2.Text = "Šg‘å";
+            rb2.Text = "ï¿½gï¿½ï¿½";
             rb2.Dock = DockStyle.Bottom;
             rb2.Parent = gb;
             rb2.Click += new EventHandler(rb_Click);
 
             rb3 = new RadioButton();
-            rb3.Text = "k¬";
+            rb3.Text = "ï¿½kï¿½ï¿½";
             rb3.Dock = DockStyle.Bottom;
             rb3.Parent = gb;
             rb3.Click += new EventHandler(rb_Click);

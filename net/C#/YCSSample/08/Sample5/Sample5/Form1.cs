@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
-namespace Sample1
+namespace Sample5
 {
     public partial class Form1 : Form
     {
@@ -21,26 +12,27 @@ namespace Sample1
         private const string strImageFile = "car.bmp";
         private string strImageFullPath = Directory.GetCurrentDirectory() + "\\" + strImagePath + strImageFile;
 
-        private Image im;
+        private readonly Image im;
 
         public Form1()
         {
             InitializeComponent();
 
             im = Image.FromFile(strImageFullPath);
+
+            this.Paint += new PaintEventHandler(fm_Paint);
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void fm_Paint(object? sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
+            GraphicsPath gp = new GraphicsPath();
 
-            g.DrawImage(im, 1, 1);
-        }
+            gp.AddEllipse(new Rectangle(0, 0, this.Width, this.Height));
+            Region rg = new Region(gp);
+            g.Clip = rg;
 
-        private void Form1_Click(object sender, EventArgs e)
-        {
-            im.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            this.Invalidate();
+            g.DrawImage(im, 0, 0, this.Width, this.Height);
         }
     }
 }
