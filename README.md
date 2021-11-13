@@ -16,13 +16,13 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/09/12** Chapter 6 例外を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20210912-chapter-6-例外を極める-span-stylecolor-redfinishedspan)
-  - [サーブレット＆JSP入門 **@2021/09/12** : Chapter 6 MVCモデルと処理の遷移 *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20210912-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redfinishedspan)
+  - [Java本格入門 **@2021/10/24** Chapter 7.1 文字列操作の基本 *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211024-chapter-71-文字列操作の基本-span-stylecolor-redfinishedspan)
+  - [サーブレット＆JSP入門 **@2021/10/24** : Chapter 6 MVCモデルと処理の遷移 *redo finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211024-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redredo-finishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [Blazor](#blazor)
     - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
   - [C#](#c)
-    - [やさしいＣ＃第３版 **@2021/09/23** : Lesson 7 コントロール *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20210923-lesson-7-コントロール-span-stylecolor-redfinishedspan)
+    - [やさしいＣ＃第３版 **@2021/10/31** : Lesson 8 グラフィック *started*](#やさしいc第3版httpsisbn2sbcrjp03922-20211031-lesson-8-グラフィック-span-stylecolor-redstartedspan)
   - [C++](#c-1)
     - [C++ プログラミング入門 **@2021/10/06** Chapter 6.2 デストラクタ](#c-プログラミング入門httpexamplesoreillycomcore-20211006-span-stylecolor-greenchapter-62-デストラクタspan)
 - [ObjectPascal](#objectpascal)
@@ -37,16 +37,17 @@
 --- 
 ### documentation
 - Markdown
+  - Markdown-PDF
+    PDFへの変換がタイムアウトする場合、時間を伸ばす（30000ms->60000ms）
+    ```
+    "markdown-pdf.StatusbarMessageTimeout": 60000
+    ```
+  - Marp for Visual Studio Code & Draw.io Integration
 - PlantUML
+  - GraphViz Ver2.38
 - mermaid
 - swagger
 - [機密データをリポジトリから削除する](https://docs.github.com/ja/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
-- Markdown-PDF
-  PDFへの変換がタイムアウトする場合、時間を伸ばす（30000ms->60000ms）
-  ```
-  "markdown-pdf.StatusbarMessageTimeout": 60000
-  ```
-- Marp for Visual Studio Code & Draw.io Integration
 
 ### [Exercism](https://exercism.io/my/tracks)
 
