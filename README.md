@@ -128,7 +128,7 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- React (Node.js 14.18.0 + react 17.0.2)
+- React (Node.js 16.13.0 + react 17.0.2) @2021/11/17 <span style="color: red;">*Updated!*</span>on Vivobook
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - Angular - 日経ソフトウェア 2019年5月号
 - ml5 - 日経ソフトウェア 2019年5月号
