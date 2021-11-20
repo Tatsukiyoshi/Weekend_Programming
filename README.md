@@ -147,7 +147,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 #### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/11/14** Chapter 7 文字列操作を極める <span style="color: red;">*finished*</span>
 
-#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/10/24** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*redo finished*</span>
+#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
 ### .NET Framework / C++
 - Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 @2021/11/9 <span style="color: red;">*Updated!*</span>
