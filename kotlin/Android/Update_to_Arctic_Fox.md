@@ -1,11 +1,11 @@
 - Android Studio Arctic Fox 2020.3.1 (based IntelliJ 2020.3) <font color=red><strong>Wrote first at 2021.8.20</strong></font>
     - 環境刷新
-        - Kotlln 1.5.30 <font color=red><strong>Update at 2021.9.4</strong></font><BR>
+        - Kotlln 1.6.0 <font color=red><strong>Update at 2021.11.23</strong></font><BR>
         Build.gradleでKotlinバージョンを変更
         - Gradle V7.0 <BR>
         Project Referenceで使用するGradleのバージョンを変更
-            - Android Gradle Plugin Version: 7.0.2 <font color=red><strong>Update at 2021.9.2</strong></font>
-            - Gradle Vercion: 7.0.2
+            - Android Gradle Plugin Version: 7.0.3 <font color=red><strong>Update at 2021.11.23</strong></font>
+            - Gradle Version: 7.0.2
         - JDK 11 <BR>
         Android Studioに含まれるJDKがJDK11に変更になり、同じJDKをGradle実行にも使用するため、Gradle SettingでAndroid Studioに含まれるJDKを使用するように変更する
 
