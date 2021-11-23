@@ -4,13 +4,13 @@
 
 ## ヘッドライン
 
-### 演習
+### 演習進捗
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 * 2021/11/20 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
-### トピック
-* 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span>on Vivobook
-* 2021/11/9 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span>
+### 環境アップデート
+* 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
+* 2021/11/09 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
