@@ -2,11 +2,23 @@
 
 ## [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
 
+## ヘッドライン
+
+### 演習
+* 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
+* 2021/11/20 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
+
+### トピック
+* 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span>on Vivobook
+* 2021/11/9 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span>
+
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
+- [演習](#演習)
+- [トピック](#トピック)
 - [documentation](#documentation)
 - [Exercism](#exercismhttpsexercismiomytracks)
 - [Python](#python)
@@ -16,13 +28,13 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/10/24** Chapter 7.1 文字列操作の基本 *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211024-chapter-71-文字列操作の基本-span-stylecolor-redfinishedspan)
-  - [サーブレット＆JSP入門 **@2021/10/24** : Chapter 6 MVCモデルと処理の遷移 *redo finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211024-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redredo-finishedspan)
+  - [Java本格入門 **@2021/11/14** Chapter 7 文字列操作を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211114-chapter-7-文字列操作を極める-span-stylecolor-redfinishedspan)
+  - [サーブレット＆JSP入門 **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 *ex6.2 finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211120-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redex62-finishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [Blazor](#blazor)
     - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
   - [C#](#c)
-    - [やさしいＣ＃第３版 **@2021/11/14** : Lesson 8 グラフィック *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20211114-lesson-8-グラフィック-span-stylecolor-redfinishedspan)
+    - [やさしいＣ＃第３版 **@2021/11/23** : Lesson 9 ゲーム *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20211123-lesson-9-ゲーム-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
     - [C++ プログラミング入門 **@2021/10/06** Chapter 6.2 デストラクタ](#c-プログラミング入門httpexamplesoreillycomcore-20211006-span-stylecolor-greenchapter-62-デストラクタspan)
 - [ObjectPascal](#objectpascal)
