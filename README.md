@@ -9,6 +9,7 @@
 * 2021/11/20 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
 ### 環境アップデート
+* 2021/11/23 Android Studio Arctic Fox | 2020.3.1 Patch 3 <span style="color: red;">*Updated!*</span> On Lavie
 * 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
 * 2021/11/09 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 
@@ -114,9 +115,9 @@ exercism download --exercise=two-fer --track=kotlin
 ### Kotlin
 #### Arctic Fox 対応として吸収すべき課題
   [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照
-  - Android Studio Arctic Fox | 2020.3.1 Patch 2 (based IntelliJ 2020.3)
+  - Android Studio Arctic Fox | 2020.3.1 Patch 3 (based IntelliJ 2020.3)
     ```
-    Build #AI-203.7717.56.2031.7678000, built on August 27, 2021
+    Build #AI-203.7717.56.2031.7784292, built on October 1, 2021
     Runtime version: 11.0.10+0-b96-7249189 amd64
     VM: OpenJDK 64-Bit Server VM by Oracle Corporation
     Windows 10 10.0
