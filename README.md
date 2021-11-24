@@ -114,7 +114,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### Kotlin
 #### Arctic Fox 対応として吸収すべき課題
-  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照
+  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
   - Android Studio Arctic Fox | 2020.3.1 Patch 3 (based IntelliJ 2020.3)
     ```
     Build #AI-203.7717.56.2031.7784292, built on October 1, 2021
