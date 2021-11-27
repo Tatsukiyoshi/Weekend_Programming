@@ -156,7 +156,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### Java
 - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
-- Pleiades(Eclipse 2021-06＋プラグイン)
+- [Pleiades All in One Eclipse 2021-06](https://mergedoc.osdn.jp/)
 
 #### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/11/14** Chapter 7 文字列操作を極める <span style="color: red;">*finished*</span>
 
