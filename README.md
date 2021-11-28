@@ -9,6 +9,7 @@
 * 2021/11/20 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
 ### 環境アップデート
+* 2021/11/28 Pleiades All in One Eclipse 2021-12 <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/11/23 Android Studio Arctic Fox | 2020.3.1 Patch 3 <span style="color: red;">*Updated!*</span> On Lavie
 * 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
 * 2021/11/09 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
@@ -18,8 +19,8 @@
 
 <!-- code_chunk_output -->
 
-- [演習](#演習)
-- [トピック](#トピック)
+- [演習進捗](#演習進捗)
+- [環境アップデート](#環境アップデート)
 - [documentation](#documentation)
 - [Exercism](#exercismhttpsexercismiomytracks)
 - [Python](#python)
@@ -29,7 +30,7 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/11/14** Chapter 7 文字列操作を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211114-chapter-7-文字列操作を極める-span-stylecolor-redfinishedspan)
+  - [Java本格入門 **@2021/11/28** Chapter 8 ファイル操作を極める *started*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211128-chapter-8-ファイル操作を極める-span-stylecolor-redstartedspan)
   - [サーブレット＆JSP入門 **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 *ex6.2 finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211120-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redex62-finishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [Blazor](#blazor)
@@ -154,11 +155,11 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- Eclipse IDE for Java Developers 2021-09
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
+  - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
-- [Pleiades All in One Eclipse 2021-06](https://mergedoc.osdn.jp/)
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/11/14** Chapter 7 文字列操作を極める <span style="color: red;">*finished*</span>
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/11/28** Chapter 8 ファイル操作を極める <span style="color: red;">*started*</span>
 
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
