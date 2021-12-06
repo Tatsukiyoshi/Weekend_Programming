@@ -5,6 +5,7 @@
 ## ヘッドライン
 
 ### 演習進捗
+* 2021/12/05 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 8 ファイル操作を極める <span style="color: red;">*finished*</span>
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 * 2021/11/20 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 
@@ -30,7 +31,7 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/11/28** Chapter 8 ファイル操作を極める *started*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211128-chapter-8-ファイル操作を極める-span-stylecolor-redstartedspan)
+  - [Java本格入門 **@2021/12/05** Chapter 8 ファイル操作を極](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211205-chapter-8-ファイル操作を極)
   - [サーブレット＆JSP入門 **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 *ex6.2 finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211120-chapter-6-mvcモデルと処理の遷移-span-stylecolor-redex62-finishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [Blazor](#blazor)
@@ -159,7 +160,9 @@ exercism download --exercise=two-fer --track=kotlin
   - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/11/28** Chapter 8 ファイル操作を極める <span style="color: red;">*started*</span>
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/05** Chapter 8 ファイル操作を極める <span style="color: red;">*finished*</span>
+
+- [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/11/20** : Chapter 6 MVCモデルと処理の遷移 <span style="color: red;">*ex6.2 finished*</span>
 

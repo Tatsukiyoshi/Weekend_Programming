@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<staffs>
+	<staff id="1024">
+		<name>
+			<firstname>Takuya</firstname>
+			<lastname>Okada</lastname>
+		</name>
+		<gender>male</gender>
+		<job>Engineer</job>
+	</staff>
+</staffs>
