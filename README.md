@@ -10,6 +10,7 @@
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2021/11/28 Pleiades All in One Eclipse 2021-12 <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/11/23 Android Studio Arctic Fox | 2020.3.1 Patch 3 <span style="color: red;">*Updated!*</span> On Lavie
 * 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
@@ -81,6 +82,8 @@ exercism download --exercise=two-fer --track=kotlin
   - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
 ### Python
+- [Django Tutorial](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/)
+  **@2021/12/16** その３ <span style="color: red;">*finished*</span>
 - nsw
   - 202005 : 日経ソフトウェア2020年5月号 **@2020/8/10**
 
