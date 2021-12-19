@@ -5,13 +5,13 @@
 ## ヘッドライン
 
 ### 演習進捗
+* 2021/12/19 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*started*</span>
 * 2021/12/13 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
-* 2021/12/05 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 8 ファイル操作を極める <span style="color: red;">*finished*</span>
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
-* 2021/11/28 Pleiades All in One Eclipse 2021-12 <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/11/23 Android Studio Arctic Fox | 2020.3.1 Patch 3 <span style="color: red;">*Updated!*</span> On Lavie
 * 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
 * 2021/11/09 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
@@ -163,7 +163,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/05** Chapter 8 ファイル操作を極める <span style="color: red;">*finished*</span>
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/19** Chapter 9 日付処理を極める <span style="color: red;">*started*</span>
 
 - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
