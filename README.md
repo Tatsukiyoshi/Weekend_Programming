@@ -5,7 +5,7 @@
 ## ヘッドライン
 
 ### 演習進捗
-* 2021/12/19 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*started*</span>
+* 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 * 2021/12/13 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
@@ -32,7 +32,7 @@
   - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/12/05** Chapter 8 ファイル操作を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211205-chapter-8-ファイル操作を極める-span-stylecolor-redfinishedspan)
+  - [Java本格入門 **@2021/12/22** Chapter 9 日付処理を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211222-chapter-9-日付処理を極める-span-stylecolor-redfinishedspan)
   - [サーブレット＆JSP入門 **@2021/12/13** : Chapter 7 リクエストスコープ *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211213-chapter-7-リクエストスコープ-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [Blazor](#blazor)
@@ -163,7 +163,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/19** Chapter 9 日付処理を極める <span style="color: red;">*started*</span>
+#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
