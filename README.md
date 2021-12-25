@@ -10,6 +10,7 @@
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2021/12/25 Flutter 2.8.1 <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2021/12/25 Android Studio Arctic Fox | 2020.3.1 Patch 4 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
@@ -195,7 +196,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- flutter dev [Get started](https://flutter.dev/docs/get-started/install)
+- flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
 
