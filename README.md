@@ -10,9 +10,10 @@
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2021/12/25 Flutter 2.8.1 <span style="color: red;">*Installed!*</span> On ExpertBook
+* 2021/12/25 Android Studio Arctic Fox | 2020.3.1 Patch 4 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
-* 2021/11/23 Android Studio Arctic Fox | 2020.3.1 Patch 3 <span style="color: red;">*Updated!*</span> On Lavie
 * 2021/11/17 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Vivobook
 * 2021/11/09 Visual Studio 2022 17.1 Preview 1 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 
@@ -120,15 +121,15 @@ exercism download --exercise=two-fer --track=kotlin
 ### Kotlin
 #### Arctic Fox 対応として吸収すべき課題
   [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
-  - Android Studio Arctic Fox | 2020.3.1 Patch 3 (based IntelliJ 2020.3)
+  - Android Studio Arctic Fox | 2020.3.1 Patch 4 (based IntelliJ 2020.3)
     ```
-    Build #AI-203.7717.56.2031.7784292, built on October 1, 2021
+    Build #AI-203.7717.56.2031.7935034, built on November 21, 2021
     Runtime version: 11.0.10+0-b96-7249189 amd64
     VM: OpenJDK 64-Bit Server VM by Oracle Corporation
     Windows 10 10.0
     GC: G1 Young Generation, G1 Old Generation
     Memory: 1280M
-    Cores: 2
+    Cores: 4
     Registry: external.system.auto.import.disabled=true
     Non-Bundled Plugins: org.jetbrains.kotlin
     ```
@@ -195,7 +196,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- flutter dev [Get started](https://flutter.dev/docs/get-started/install)
+- flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
 
