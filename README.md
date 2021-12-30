@@ -120,7 +120,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### Kotlin
 #### Arctic Fox 対応として吸収すべき課題
-  [Update_to_Arctic_Fox.md](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
+  [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
   - Android Studio Arctic Fox | 2020.3.1 Patch 4 (based IntelliJ 2020.3)
     ```
     Build #AI-203.7717.56.2031.7935034, built on November 21, 2021
@@ -231,3 +231,4 @@ exercism download --exercise=two-fer --track=kotlin
   - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
   - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 
+## [痕跡](Profile.md)
