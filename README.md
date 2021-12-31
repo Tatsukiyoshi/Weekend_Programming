@@ -10,6 +10,8 @@
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
+* 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2021/12/25 Flutter 2.8.1 <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2021/12/25 Android Studio Arctic Fox | 2020.3.1 Patch 4 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
@@ -147,6 +149,8 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
+- Svelte (Node.js 16.13.0 + svelte 3.0.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
+  - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 - React (Node.js 16.13.0 + react 17.0.2) @2021/11/17 <span style="color: red;">*Updated!*</span>on Vivobook
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - Angular - 日経ソフトウェア 2019年5月号
