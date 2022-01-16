@@ -10,7 +10,7 @@
         private System.ComponentModel.IContainer components = null;
 
         private TreeView tv;
-        private const String xmlPath = "..\\..\\..\\Sample.xml";
+        private const String xmlPath = "..\\..\\..\\..\\..\\..\\data\\Sample.xml";
 
         /// <summary>
         ///  Clean up any resources being used.

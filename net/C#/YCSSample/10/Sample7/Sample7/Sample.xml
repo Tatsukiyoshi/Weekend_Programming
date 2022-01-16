@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<cars><car id="1001" country="日本"><name>乗用車</name><price>150</price><description>5人まで乗車することができます。<em>家族用</em>の車です。</description><img file="car1.jpg"/></car><car id="2001" country="日本"><name>トラック</name><price>500</price><description><em>荷物の運搬</em>にご利用できます。<em>業務用</em>の車です。</description><img file="car2.jpg"/></car><car id="1005" country="USA"><name>オープンカー</name><price>200</price><description>晴天時には天窓を開閉できます。<em>レジャー用</em>に最適です。</description><img file="car3.jpg"/></car></cars>

@@ -12,7 +12,7 @@ namespace Sample6
 
         private DataSet ds;
         private DataGridView dg;
-        private const String xmlPath = "..\\..\\..\\Sample.xml";
+        private const String xmlPath = "..\\..\\..\\..\\..\\..\\data\\Sample.xml";
 
         /// <summary>
         ///  Clean up any resources being used.
