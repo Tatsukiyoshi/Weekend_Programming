@@ -10,7 +10,7 @@
 * 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/01/07 Visual Studio 2022 17.1 Preview 2.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
+* 2022/01/21 Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2021/12/25 Flutter 2.8.1 <span style="color: red;">*Installed!*</span> On ExpertBook
@@ -174,7 +174,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/12/13** : Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 17.1 Preview 2.0 + .NET 5 Or .NET 6 @2022/1/7 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 @2022/1/21 <span style="color: red;">*Updated!*</span>
 #### Blazor
 ##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
