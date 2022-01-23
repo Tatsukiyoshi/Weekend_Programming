@@ -5,9 +5,9 @@
 ## ヘッドライン
 
 ### 演習進捗
+* 2022/01/23 やさしいＣ＃ Lesson 10 ファイル <span style="color: red;">*finished*</span>
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 * 2021/12/13 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
-* 2021/11/23 やさしいＣ＃ Lesson 9 ゲーム <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
 * 2022/01/21 Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
@@ -178,7 +178,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### Blazor
 ##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
-##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2021/12/26** : Lesson 10 ファイル <span style="color: red;">*started*</span>
+##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/01/23** : Lesson 10 ファイル <span style="color: red;">*finished*</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
 - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
 - ColorDialog
