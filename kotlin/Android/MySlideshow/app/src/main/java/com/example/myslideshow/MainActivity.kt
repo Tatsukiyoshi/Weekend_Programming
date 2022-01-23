@@ -40,10 +40,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         binding.pager.adapter = MyAdapter(this)
 
-        Looper.prepare()
-        val handler = Looper.myLooper()?.let { Handler(it, null) }
+        val handler = Handler(Looper.getMainLooper())
         timer(period = 5000) {
-            handler?.post {
+            handler.post {
                 binding.pager.currentItem = (binding.pager.currentItem + 1) % 10
             }
         }
