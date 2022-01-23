@@ -5,9 +5,9 @@
 ## ヘッドライン
 
 ### 演習進捗
+* 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 * 2022/01/23 やさしいＣ＃ Lesson 10 ファイル <span style="color: red;">*finished*</span>
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
-* 2021/12/13 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
 * 2022/01/21 Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
@@ -171,7 +171,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
-#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2021/12/13** : Chapter 7 リクエストスコープ <span style="color: red;">*finished*</span>
+#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
 - Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 @2022/1/21 <span style="color: red;">*Updated!*</span>
