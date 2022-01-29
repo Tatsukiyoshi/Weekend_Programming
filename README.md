@@ -151,6 +151,8 @@ exercism download --exercise=two-fer --track=kotlin
 - Svelte (Node.js 16.13.0 + svelte 3.0.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 - React (Node.js 16.13.0 + react 17.0.2) @2021/11/17 <span style="color: red;">*Updated!*</span>on Vivobook
+  - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)
+  - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 - Angular - 日経ソフトウェア 2019年5月号
 - ml5 - 日経ソフトウェア 2019年5月号
