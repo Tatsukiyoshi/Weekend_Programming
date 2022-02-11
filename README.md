@@ -11,8 +11,8 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/02/05 Flutter 2.10 <span style="color: red;">*Updated!*</span> On ExpertBook
-* 2022/01/21 Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
+* 2022/02/11 Flutter 2.10 + Visual Studio 2022 17.1 Preview 6.0<span style="color: red;">*Updated!*</span> On ExpertBook
+* 2022/02/11 Visual Studio 2022 17.1 Preview 6.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2021/12/25 Android Studio Arctic Fox | 2020.3.1 Patch 4 <span style="color: red;">*Updated!*</span> On ExpertBook
