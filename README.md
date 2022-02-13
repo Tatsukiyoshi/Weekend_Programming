@@ -7,7 +7,7 @@
 ### 演習進捗
 * 2022/02/12 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 4 Reactの基本 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
-* 2022/01/23 やさしいＣ＃ Lesson 10 ファイル <span style="color: red;">*finished*</span>
+* 2022/01/23 [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) Lesson 10 ファイル <span style="color: red;">*finished*</span>
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
