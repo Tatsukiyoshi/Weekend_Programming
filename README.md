@@ -181,7 +181,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### Blazor
 ##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
-##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/01/23** : Lesson 10 ファイル <span style="color: red;">*finished*</span>
+##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
 - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
 - ColorDialog
