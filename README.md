@@ -11,11 +11,11 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/19 Flutter 2.10 + Visual Studio 2022 17.2 Preview 1.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/19 Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
-* 2021/12/25 Android Studio Arctic Fox | 2020.3.1 Patch 4 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
 
@@ -121,20 +121,21 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-#### Arctic Fox 対応として吸収すべき課題
-  [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
-  - Android Studio Arctic Fox | 2020.3.1 Patch 4 (based IntelliJ 2020.3)
+- Android Studio Bumblebee | 2021.1.1 Patch 1 @2022/02/19 <span style="color: red;">*Updated!*</span> On ExpertBook
+  - Android Studio Bumblebee | 2021.1.1 Patch 1
     ```
-    Build #AI-203.7717.56.2031.7935034, built on November 21, 2021
-    Runtime version: 11.0.10+0-b96-7249189 amd64
+    Build #AI-211.7628.21.2111.8139111, built on February 2, 2022
+    Runtime version: 11.0.11+9-b60-7590822 amd64
     VM: OpenJDK 64-Bit Server VM by Oracle Corporation
     Windows 10 10.0
     GC: G1 Young Generation, G1 Old Generation
     Memory: 1280M
     Cores: 4
     Registry: external.system.auto.import.disabled=true
-    Non-Bundled Plugins: org.jetbrains.kotlin
+    Non-Bundled Plugins: Dart (211.7798), org.jetbrains.kotlin (211-1.6.10-release-923-AS7442.40), io.flutter (64.1.2)
     ```
+#### Arctic Fox 対応として吸収すべき課題
+  [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 #### Android - はじめてのAndroidプログラミング <br>
   **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
@@ -177,7 +178,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 17.1 Preview 3.0 + .NET 5 Or .NET 6 @2022/1/21 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 @2022/2/19 <span style="color: red;">*Updated!*</span>
 #### Blazor
 ##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 #### C#
@@ -202,6 +203,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
+- Flutter 2.10 + Visual Studio 2022 17.2 Preview 1.0 @2022/02/19 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
