@@ -70,5 +70,14 @@ Bin/
 # VS Debug files
 Debug/
 
+# VS Backup files
+Backup/
+
+# VS Update Log files
+UpgradeLog.htm
+
 # Javascript Import Modules
 node_modules/
+
+# flutter Build files
+build/
