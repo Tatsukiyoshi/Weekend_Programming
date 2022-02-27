@@ -88,6 +88,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### Python
 - [Django Tutorial](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/)
   **@2021/12/16** その３ <span style="color: red;">*finished*</span>
+
 - nsw
   - 202005 : 日経ソフトウェア2020年5月号 **@2020/8/10**
 
@@ -100,6 +101,7 @@ exercism download --exercise=two-fer --track=kotlin
 - pygame : Pygame Zero ゲームプログラミング入門（日経ソフトウェア2020年3月号）
   - jumpgame **@2020/4/11**
   - shooting **@2020/4/12**
+
 - reversi : PythonでAIと対戦できるリバーシを作ろう
   - データ構造とUI編（日経ソフトウェア2019年9月号）
     **@2019/9/28**コンピュータが隅に優先して石を打つよう改良
@@ -110,11 +112,14 @@ exercism download --exercise=two-fer --track=kotlin
 
 - self-taught [独学プログラマー](http://theselftaughtprogrammer.io/)
 **@2019/10/5:Chapter 22** <span style="color: red;">*finished!*</span>
+
 - ginza - Universal Dependenciesに基づくオープンソース日本語NLPライブラリ
   ```
   pip install "https://github.com/megagonlabs/ginza/releases/download/v1.0.2/ja_ginza_nopn-1.0.2.tgz"
   ```
+
 - flask - 日経ソフトウェア 2019年3月号/5月号
+
 - opencv - ５日でわかるOpenCVプログラミング入門（日経ソフトウェア2019年3月号特別付録２）
   ```
   pip install opencv-python
@@ -137,9 +142,11 @@ exercism download --exercise=two-fer --track=kotlin
     ```
 #### Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
+
 #### Android - はじめてのAndroidプログラミング <br>
   **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
+
 #### Programming - Kotlinプログラミング <br>
   **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
   - Android
@@ -154,18 +161,25 @@ exercism download --exercise=two-fer --track=kotlin
 - Angular (Node.js 16.13.0 + angular 4.3.6) @2022/02/27 <span style="color: red;">*Installed!*</span>on Expertbook 
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/)
   - 日経ソフトウェア 2019年5月号
-- Svelte (Node.js 16.13.0 + svelte 3.0.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
-  - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
+
 - React (Node.js 16.13.0 + react 17.0.2) @2021/11/17 <span style="color: red;">*Updated!*</span>on Vivobook
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/02/13** Chapter 5 ReactとCSS <span style="color: red;">*startred*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
+
+- Svelte (Node.js 16.13.0 + svelte 3.0.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
+  - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
+
 - ml5 - 日経ソフトウェア 2019年5月号
+
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
+
 - vs-angular - VSCodeを使おう（日経ソフトウェア 2019年7月号）[Angularプロジェクトの作成](https://qiita.com/KaoruIto76/items/272c7724aa8bbc45d591)
+
 - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>
   - Expo Sample - Expoサンプルアプリ
   - AdditionCalc - 足し算アプリ
+
 - electron
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
@@ -182,8 +196,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### .NET Framework / C++
 - Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 @2022/2/19 <span style="color: red;">*Updated!*</span>
-#### Blazor
-##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
+
 #### C#
 ##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
   [サポートページ](http://mana.on.coocan.jp/yasacs.html)
@@ -192,6 +205,7 @@ exercism download --exercise=two-fer --track=kotlin
 - SQL
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
+
 #### C++
 ##### [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
 
@@ -199,9 +213,13 @@ exercism download --exercise=two-fer --track=kotlin
     - HelloWorld
     - [Learn C++](https://www.learncpp.com/) **@2019/10/22** 1.5 Introduction to iostream
 
+#### Blazor
+##### Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
+
 ### ObjectPascal
 - Delphi
   - CardPanelDemo
+
 - Lazarus(FreePascal) [Lazarus日本語情報トップページ](https://ja.osdn.net/projects/sfnet_lazarus/)/[Lazarus Tutorial](https://wiki.freepascal.org/Lazarus_Tutorial/ja)
   - Project1(Press Again)
 
@@ -231,6 +249,7 @@ exercism download --exercise=two-fer --track=kotlin
     apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev libc++1 libc++abi-dev libc++abi1 libclang-dev libclang1 liblldb-dev libllvm-ocaml-dev libomp-dev libomp5 lld lldb llvm-dev llvm-runtime llvm python-clang
     ```
   - [for Winfows](https://releases.llvm.org/download.html)
+
 - 「きつねさんでもわかるLLVM」で学習中
   - DummyCCompiler実践中
     **2021/01/11** : Front-End(to Chapter 5.9) finished
