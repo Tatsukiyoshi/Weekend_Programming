@@ -11,6 +11,7 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/19 Flutter 2.10 + Visual Studio 2022 17.2 Preview 1.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/19 Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
@@ -150,13 +151,15 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
+- Angular (Node.js 16.13.0 + angular 4.3.6) @2022/02/27 <span style="color: red;">*Installed!*</span>on Expertbook 
+  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/)
+  - 日経ソフトウェア 2019年5月号
 - Svelte (Node.js 16.13.0 + svelte 3.0.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 - React (Node.js 16.13.0 + react 17.0.2) @2021/11/17 <span style="color: red;">*Updated!*</span>on Vivobook
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/02/13** Chapter 5 ReactとCSS <span style="color: red;">*startred*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
-- Angular - 日経ソフトウェア 2019年5月号
 - ml5 - 日経ソフトウェア 2019年5月号
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
 - vs-angular - VSCodeを使おう（日経ソフトウェア 2019年7月号）[Angularプロジェクトの作成](https://qiita.com/KaoruIto76/items/272c7724aa8bbc45d591)
