@@ -9,6 +9,7 @@ import { StyledJsx} from "./components/StyledJsx";
 import { StyledComponents } from "./components/StyledComponents";
 // 5-5 Emotion
 import { Emotion } from "./components/Emotion";
+// 5-6 TailwindCss
 import { TailwindCss } from "./components/TailwindCss";
 
 export const App = () => {
