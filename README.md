@@ -11,9 +11,9 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/03/27 Flutter 2.10 + Visual Studio 2022 17.2 Preview 2.1<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
-* 2022/02/19 Flutter 2.10 + Visual Studio 2022 17.2 Preview 1.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/19 Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
@@ -224,7 +224,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- Flutter 2.10 + Visual Studio 2022 17.2 Preview 1.0 @2022/02/19 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 2.10 + Visual Studio 2022 17.2 Preview 2.1 @2022/03/27 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
