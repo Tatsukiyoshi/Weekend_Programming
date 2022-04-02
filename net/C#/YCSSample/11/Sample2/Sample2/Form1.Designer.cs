@@ -52,29 +52,32 @@
             this.tlp.Controls.Add(this.lb4, 1, 2);
             this.tlp.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlp.Location = new System.Drawing.Point(0, 0);
+            this.tlp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tlp.Name = "tlp";
             this.tlp.RowCount = 3;
             this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.89286F));
             this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.10714F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tlp.Size = new System.Drawing.Size(284, 132);
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tlp.Size = new System.Drawing.Size(406, 220);
             this.tlp.TabIndex = 0;
             // 
             // tb
             // 
             this.tb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tb.Location = new System.Drawing.Point(144, 3);
+            this.tb.Location = new System.Drawing.Point(205, 5);
+            this.tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb.Name = "tb";
-            this.tb.Size = new System.Drawing.Size(137, 23);
+            this.tb.Size = new System.Drawing.Size(197, 31);
             this.tb.TabIndex = 0;
             // 
             // lb0
             // 
             this.lb0.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb0.AutoSize = true;
-            this.lb0.Location = new System.Drawing.Point(25, 14);
+            this.lb0.Location = new System.Drawing.Point(31, 24);
+            this.lb0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb0.Name = "lb0";
-            this.lb0.Size = new System.Drawing.Size(90, 15);
+            this.lb0.Size = new System.Drawing.Size(138, 25);
             this.lb0.TabIndex = 1;
             this.lb0.Text = "入力してください。";
             this.lb0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -83,9 +86,10 @@
             // 
             this.lb1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb1.AutoSize = true;
-            this.lb1.Location = new System.Drawing.Point(41, 57);
+            this.lb1.Location = new System.Drawing.Point(56, 96);
+            this.lb1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(58, 15);
+            this.lb1.Size = new System.Drawing.Size(89, 25);
             this.lb1.TabIndex = 2;
             this.lb1.Text = "ホスト名：";
             this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,9 +98,10 @@
             // 
             this.lb2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb2.AutoSize = true;
-            this.lb2.Location = new System.Drawing.Point(193, 57);
+            this.lb2.Location = new System.Drawing.Point(274, 96);
+            this.lb2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(38, 15);
+            this.lb2.Size = new System.Drawing.Size(59, 25);
             this.lb2.TabIndex = 3;
             this.lb2.Text = "label2";
             this.lb2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,9 +110,10 @@
             // 
             this.lb3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb3.AutoSize = true;
-            this.lb3.Location = new System.Drawing.Point(38, 101);
+            this.lb3.Location = new System.Drawing.Point(51, 169);
+            this.lb3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb3.Name = "lb3";
-            this.lb3.Size = new System.Drawing.Size(64, 15);
+            this.lb3.Size = new System.Drawing.Size(99, 25);
             this.lb3.TabIndex = 4;
             this.lb3.Text = "IPアドレス：";
             // 
@@ -115,18 +121,20 @@
             // 
             this.lb4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb4.AutoSize = true;
-            this.lb4.Location = new System.Drawing.Point(193, 101);
+            this.lb4.Location = new System.Drawing.Point(274, 169);
+            this.lb4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb4.Name = "lb4";
-            this.lb4.Size = new System.Drawing.Size(38, 15);
+            this.lb4.Size = new System.Drawing.Size(59, 25);
             this.lb4.TabIndex = 5;
             this.lb4.Text = "label4";
             // 
             // bt
             // 
             this.bt.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bt.Location = new System.Drawing.Point(0, 138);
+            this.bt.Location = new System.Drawing.Point(0, 230);
+            this.bt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt.Name = "bt";
-            this.bt.Size = new System.Drawing.Size(284, 23);
+            this.bt.Size = new System.Drawing.Size(406, 38);
             this.bt.TabIndex = 1;
             this.bt.Text = "検索";
             this.bt.UseVisualStyleBackColor = true;
@@ -134,11 +142,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 161);
+            this.ClientSize = new System.Drawing.Size(406, 268);
             this.Controls.Add(this.bt);
             this.Controls.Add(this.tlp);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "サンプル";
             this.tlp.ResumeLayout(false);
