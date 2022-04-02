@@ -33,3 +33,16 @@ mysql> ALTER USER root@localhost IDENTIFIED BY "root";
 mysql> CREATE USER taish;
 mysql> ALTER USER taish@localhost IDENTIFIED BY "taishow";
 ```
+
+* MySQLをサービスに登録する
+
+```
+D:\mysql-8.0.28-winx64\bin\mysqld" --install MYSQL80
+```
+
+* MySQLのサービスを開始する
+
+```
+net start MYSQL80
+```
+
