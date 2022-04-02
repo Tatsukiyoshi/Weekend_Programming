@@ -3,7 +3,6 @@
 ## [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
 
 ## ヘッドライン
-
 ### 演習進捗
 * 2022/02/12 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 4 Reactの基本 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
@@ -11,10 +10,10 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/03/27 Visual Studio 2022 17.2 Preview 2.1 + .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/03/27 Flutter 2.10 + Visual Studio 2022 17.2 Preview 2.1<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
-* 2022/02/19 Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
@@ -24,7 +23,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
-
+- [演習進捗](#演習進捗)
 - [演習進捗](#演習進捗)
 - [環境アップデート](#環境アップデート)
 - [documentation](#documentation)
@@ -37,21 +36,21 @@
 - [JavaScript](#javascript)
 - [Java](#java)
   - [Java本格入門 **@2021/12/22** Chapter 9 日付処理を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211222-chapter-9-日付処理を極める-span-stylecolor-redfinishedspan)
-  - [サーブレット＆JSP入門 **@2021/12/13** : Chapter 7 リクエストスコープ *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20211213-chapter-7-リクエストスコープ-span-stylecolor-redfinishedspan)
+  - [サーブレット＆JSP入門 **@2022/01/23** : Chapter 8 セッションスコープ *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20220123-chapter-8-セッションスコープ-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
-  - [Blazor](#blazor)
-    - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
   - [C#](#c)
-    - [やさしいＣ＃第３版 **@2021/11/23** : Lesson 9 ゲーム *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20211123-lesson-9-ゲーム-span-stylecolor-redfinishedspan)
+    - [やさしいＣ＃第３版 **@2022/02/13** : Lesson 11.1 ネットワーク *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20220213-lesson-111-ネットワーク-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
     - [C++ プログラミング入門 **@2021/10/06** Chapter 6.2 デストラクタ](#c-プログラミング入門httpexamplesoreillycomcore-20211006-span-stylecolor-greenchapter-62-デストラクタspan)
+  - [Blazor](#blazor)
+    - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
 - [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
 - [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
 - [Swift](#swift)
 - [LLVM](#llvm)
 - [Unity](#unity)
-
+- [Unity](#unity)
 <!-- /code_chunk_output -->
 
 --- 
@@ -195,7 +194,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 17.2 Preview 1.0 + .NET 5 Or .NET 6 @2022/2/19 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.2 Preview 2.1 + .NET 6 @2022/3/27 <span style="color: red;">*Updated!*</span>
 
 #### C#
 ##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
