@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Child2 } from "./Child2";
 import { Child3 } from "./Child3";
 
@@ -7,7 +8,7 @@ const style = {
     padding: "8px"
 };
 
-export const Child1 = () => {
+export const Child1 = memo(() => {
     console.log("Child1レンダリング");
 
     return (
@@ -17,4 +18,4 @@ export const Child1 = () => {
             <Child3 />
         </div>
     );
-};
+});
