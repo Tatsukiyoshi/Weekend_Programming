@@ -8,12 +8,17 @@ const style = {
     padding: "8px"
 };
 
-export const Child1 = memo(() => {
+export const Child1 = memo((props) => {
     console.log("Child1レンダリング");
+
+    // propsから関数を展開（分割代入）
+    const { onClickReset } = props;
 
     return (
         <div style={style}>
             <p>Child1</p>
+            {/* 渡された関数を実行するボタンを設置 */}
+            <button onClick={onClickReset}>リセット</button>
             <Child2 />
             <Child3 />
         </div>
