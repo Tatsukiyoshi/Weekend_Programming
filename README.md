@@ -10,9 +10,8 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/04/13 Flutter 2.10 + Visual Studio 2022 17.2 Preview 3.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
-* 2022/03/27 Visual Studio 2022 17.2 Preview 2.1 + .NET 6 <span style="color: red;">*Updated!*</span> On TransBook
-* 2022/03/27 Flutter 2.10 + Visual Studio 2022 17.2 Preview 2.1<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
@@ -195,7 +194,7 @@ exercism download --exercise=two-fer --track=kotlin
 #### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 17.2 Preview 2.1 + .NET 6 @2022/3/27 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.2 Preview 3.0 + .NET 6 @2022/4/13 <span style="color: red;">*Updated!*</span>
 
 #### C#
 ##### [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
@@ -224,7 +223,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- Flutter 2.10 + Visual Studio 2022 17.2 Preview 2.1 @2022/03/27 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 2.10 + Visual Studio 2022 17.2 Preview 3.0 @2022/04/13 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
