@@ -139,14 +139,14 @@ exercism download --exercise=two-fer --track=kotlin
     Registry: external.system.auto.import.disabled=true
     Non-Bundled Plugins: Dart (211.7798), org.jetbrains.kotlin (211-1.6.10-release-923-AS7442.40), io.flutter (64.1.2)
     ```
-#### Arctic Fox 対応として吸収すべき課題
+- Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 
-#### Android - はじめてのAndroidプログラミング <br>
+- Android - はじめてのAndroidプログラミング <br>
   **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
 
-#### Programming - Kotlinプログラミング <br>
+- Programming - Kotlinプログラミング <br>
   **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
   - Android
     - Chapter 22 coroutines
@@ -185,13 +185,14 @@ exercism download --exercise=two-fer --track=kotlin
 ### Java
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
-- IntelliJ IDEA 2021.2.2 @2021/09/19 <span style="color: red;">*Updated!*</span>
+- IntelliJ IDEA 2022.1 @2021/04/13 <span style="color: red;">*Updated!*</span>
 
-#### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
+
+##### [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
-#### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
+##### [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
 - Visual Studio 2022 17.2 Preview 3.0 + .NET 6 @2022/4/13 <span style="color: red;">*Updated!*</span>
