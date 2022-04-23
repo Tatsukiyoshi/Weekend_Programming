@@ -11,6 +11,9 @@
 
 ### 環境アップデート
 * 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
+  ```
+  lsb_release -a
+  ```
 * 2022/04/23 Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2022/04/21 Flutter 2.10 + Visual Studio 2022 17.2 Preview 4.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
