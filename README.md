@@ -10,6 +10,8 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
+* 2022/04/23 Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2022/04/21 Flutter 2.10 + Visual Studio 2022 17.2 Preview 4.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
