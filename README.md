@@ -192,7 +192,6 @@ exercism download --exercise=two-fer --track=kotlin
 ### Java
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
-- IntelliJ IDEA 2022.1 @2021/04/13 <span style="color: red;">*Updated!*</span>
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
