@@ -10,15 +10,16 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/04/29 Visual Studio 2022 17.2 Preview 5.0 + .NET 6 <span style="color: red;">*Updated!*</span>
 * 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
   ```
   lsb_release -a
   ```
 * 2022/04/23 Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
-* 2022/04/21 Flutter 2.10 + Visual Studio 2022 17.2 Preview 4.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
+* 2022/02/05 Flutter 2.10 + Visual Studio 2022 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
@@ -199,7 +200,7 @@ exercism download --exercise=two-fer --track=kotlin
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 
 ### .NET Framework / C++
-- Visual Studio 2022 17.2 Preview 4.0 + .NET 6 @2022/4/21 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.2 Preview 5.0 + .NET 6 @2022/4/29 <span style="color: red;">*Updated!*</span>
 
 #### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
@@ -228,7 +229,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- Flutter 2.10 + Visual Studio 2022 17.2 Preview 4.0 @2022/04/21 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 2.10 @2022/02/05 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
