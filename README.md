@@ -10,6 +10,7 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/04/29 Android Studio Bumblebee | 2021.1.1 Patch 3 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/29 Visual Studio 2022 17.2 Preview 5.0 + .NET 6 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
   ```
@@ -19,7 +20,6 @@
 * 2022/04/13 IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span> on TransBook
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
-* 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/02/05 Flutter 2.10 + Visual Studio 2022 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/01/01 React (Node.js 16.13.0 + react 17.0.2) <span style="color: red;">*Updated!*</span> On Expertbook
 * 2022/01/01 Svelte (Node.js 16.13.0 + svelte 3.0.0) <span style="color: red;">*Updated!*</span> On Expertbook
@@ -133,19 +133,20 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Bumblebee | 2021.1.1 Patch 1 @2022/02/19 <span style="color: red;">*Updated!*</span> On ExpertBook
-  - Android Studio Bumblebee | 2021.1.1 Patch 1
-    ```
-    Build #AI-211.7628.21.2111.8139111, built on February 2, 2022
-    Runtime version: 11.0.11+9-b60-7590822 amd64
-    VM: OpenJDK 64-Bit Server VM by Oracle Corporation
-    Windows 10 10.0
-    GC: G1 Young Generation, G1 Old Generation
-    Memory: 1280M
-    Cores: 4
-    Registry: external.system.auto.import.disabled=true
-    Non-Bundled Plugins: Dart (211.7798), org.jetbrains.kotlin (211-1.6.10-release-923-AS7442.40), io.flutter (64.1.2)
-    ```
+- Android Studio Bumblebee | 2021.1.1 Patch 3 @2022/04/29 <span style="color: red;">*Updated!*</span> On ExpertBook
+
+  - Android Studio Bumblebee | 2021.1.1 Patch 3
+  ```
+  Build #AI-211.7628.21.2111.8309675, built on March 17, 2022
+  Runtime version: 11.0.11+9-b60-7590822 amd64
+  VM: OpenJDK 64-Bit Server VM by Oracle Corporation
+  Windows 10 10.0
+  GC: G1 Young Generation, G1 Old Generation
+  Memory: 1280M
+  Cores: 4
+  Registry: external.system.auto.import.disabled=true
+  Non-Bundled Plugins: Dart (211.7817), org.jetbrains.kotlin (211-1.6.21-release-334-AS7442.40), io.flutter (66.0.1)
+  ```
 - Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 
