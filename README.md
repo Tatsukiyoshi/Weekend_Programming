@@ -205,7 +205,7 @@ exercism download --exercise=two-fer --track=kotlin
 - Visual Studio 2022 17.2 Preview 5.0 + .NET 6 @2022/4/29 <span style="color: red;">*Updated!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/04/29** : Lesson 11.2 Web <span style="color: red;">*finished*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/04/29** : Lesson 11.4 スレッド <span style="color: red;">*finished*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
   - フリーアイコン
     - GO(https://www.flaticon.com/free-icon/go_652364)
