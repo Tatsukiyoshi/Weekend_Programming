@@ -16,6 +16,10 @@
   lsb_release -a
   ```
 * 2022/04/23 Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
+<<<<<<< HEAD
+=======
+* 2022/04/13 IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span> on TransBook
+>>>>>>> e0a127b2640deb3792c0781485dfad9d2f68e880
 * 2022/04/02 MySQL 8.0.28 <span style="color: red;">*Installed!*</span>on Expertbook
 * 2022/02/27 Angular (Node.js 16.13.0 + angular 4.3.6) <span style="color: red;">*Installed!*</span>on Expertbook 
 * 2022/02/19 Android Studio Bumblebee | 2021.1.1 Patch 1 <span style="color: red;">*Updated!*</span> On ExpertBook
@@ -192,6 +196,7 @@ exercism download --exercise=two-fer --track=kotlin
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
 - IntelliJ IDEA 2022.1 @2021/04/13 <span style="color: red;">*Updated!*</span>
+- IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
