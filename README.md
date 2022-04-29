@@ -203,8 +203,11 @@ exercism download --exercise=two-fer --track=kotlin
 - Visual Studio 2022 17.2 Preview 5.0 + .NET 6 @2022/4/29 <span style="color: red;">*Updated!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/02/13** : Lesson 11.1 ネットワーク <span style="color: red;">*finished*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/04/29** : Lesson 11.2 Web <span style="color: red;">*finished*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
+  - フリーアイコン
+    - GO(https://www.flaticon.com/free-icon/go_652364)
+    - GoBack(https://www.flaticon.com/free-icon/back-button_93634?term=back&page=1&position=6&page=1&position=6&related_id=93634&origin=search)
   - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
   - ColorDialog
   - SQL
