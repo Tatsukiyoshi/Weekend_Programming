@@ -18,14 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         // フラグメントの生成およびタイトル設定
         val fragment = TitleFragment()
-        fragment.setTitle("フラグメント動物図鑑")
+        // fragment.setTitle("フラグメント動物図鑑")
 
         // フラグメントマネージャーの取得
         val fragmentManager: FragmentManager = this.supportFragmentManager
 
         // アクティビティにフラグメントを追加
         fragmentManager.commit {
-            replace(R.id.container, fragment)
+//          replace(R.id.container, fragment)
             addToBackStack(null)
         }
 
