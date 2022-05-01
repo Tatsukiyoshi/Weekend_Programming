@@ -165,7 +165,8 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Angular (Node.js 16.13.0 + angular 4.3.6) @2022/02/27 <span style="color: red;">*Installed!*</span>on Expertbook 
+- Angular (Node.js 16.13.0 + angular 4.3.6) @2022/02/27 <span style="color: red;">*Installed!*</span>on Expertbook
+  - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/)
   - 日経ソフトウェア 2019年5月号
 
