@@ -8,7 +8,7 @@ class Hanoi
     {
         count = 0;
 
-        HanoiR(6, "Left", "Center", "Right");
+        HanoiR(5, "Left", "Center", "Right");
     }
 
     public static void HanoiR(int n, string from, string to, string work)
