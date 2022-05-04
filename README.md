@@ -4,6 +4,7 @@
 
 ## ヘッドライン
 ### 演習進捗
+* 2022/05/04 後悔しないためのSpring Boot入門書：Spring解体新書（第２版） ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 * 2022/01/23 [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) Lesson 10 ファイル <span style="color: red;">*finished*</span>
@@ -191,12 +192,14 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
+- [Spring Tool Suite](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on Expertbook
+- IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
-- IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
+
+- 後悔しないためのSpring Boot入門書：Spring解体新書（第２版）**@2022/05/04** ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
-
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
