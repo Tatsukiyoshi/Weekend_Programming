@@ -4,13 +4,16 @@
 
 ## ヘッドライン
 ### 演習進捗
-* 2022/05/04 後悔しないためのSpring Boot入門書：Spring解体新書（第２版） ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+* 2022/05/05 Spring解体新書（バッチ編） ３章 Hello World <span style="color: red;">*finished*</span>
+* 2022/05/04 Spring解体新書（第２版） ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 * 2022/01/23 [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) Lesson 10 ファイル <span style="color: red;">*finished*</span>
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on Expertbook
+* 2022/05/04 [Spring Tool Suite](https://spring.io/tools) <span style="color: red;">*Installed!*</span> on Expertbook
 * 2022/05/01 Angular 13.3 (Node.js 16.15.0) <span style="color: red;">*Updated!*</span>on Expertbook 
 * 2022/04/29 Android Studio Bumblebee | 2021.1.1 Patch 3 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/29 Visual Studio 2022 17.2 Preview 5.0 + .NET 6 <span style="color: red;">*Updated!*</span> On ExpertBook
@@ -192,12 +195,16 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
+- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on Expertbook
+  postgres/pgsuper
 - [Spring Tool Suite](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on Expertbook
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
 
-- 後悔しないためのSpring Boot入門書：Spring解体新書（第２版）**@2022/05/04** ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+- Spring解体新書（バッチ編）**@2022/05/05** ３章 Hello World <span style="color: red;">*finished*</span>
+
+- Spring解体新書（第２版）**@2022/05/04** ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
