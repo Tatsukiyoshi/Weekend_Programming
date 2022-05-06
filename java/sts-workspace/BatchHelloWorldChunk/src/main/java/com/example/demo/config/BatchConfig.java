@@ -1,7 +1,9 @@
 package com.example.demo.config;
 
 import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobExecutionListener;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.StepExecutionListener;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
@@ -36,6 +38,12 @@ public class BatchConfig {
 	@Autowired
 	private ItemWriter<String> writer;
 	
+	@Autowired
+	private JobExecutionListener jobListener;
+	
+	@Autowired
+	private StepExecutionListener stepListener;
+
 	/** ChunkのStepを生成 */
 	@Bean
 	public Step chunkStep() {
@@ -43,7 +51,8 @@ public class BatchConfig {
 				.<String, String>chunk(1)				// チャンクの設定
 				.reader(reader)							// readerセット
 				.processor(processor)					// processorセット
-				.writer(writer)							// writerdセット
+				.writer(writer)							// writerセット
+				.listener(stepListener) 				// StepListener
 				.build();								// Stepの生成
 	}
 
@@ -53,6 +62,7 @@ public class BatchConfig {
 		return jobBuilderFactory.get("Hello World")		// Builderの取得
 				.incrementer(new RunIdIncrementer())	// IDのインクリメント
 				.start(chunkStep())						// 最初のStep
+				.listener(jobListener) 					// JobListener
 				.build();								// Jobの生成
 	}
 }
