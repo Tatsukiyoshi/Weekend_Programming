@@ -4,17 +4,17 @@
 
 ## ヘッドライン
 ### 演習進捗
-* 2022/05/05 Spring解体新書（バッチ編） ３章 Hello World <span style="color: red;">*finished*</span>
-* 2022/05/04 Spring解体新書（第２版） ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+* 2022/05/07 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished*</span>
+* 2022/05/04 [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
 * 2022/01/23 [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) Lesson 10 ファイル <span style="color: red;">*finished*</span>
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on Expertbook
-* 2022/05/04 [Spring Tool Suite](https://spring.io/tools) <span style="color: red;">*Installed!*</span> on Expertbook
-* 2022/05/01 Angular 13.3 (Node.js 16.15.0) <span style="color: red;">*Updated!*</span>on Expertbook 
+* 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on ExpertBook
+* 2022/05/04 [Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span> on ExpertBook
+* 2022/05/01 Angular 13.3 (Node.js 16.15.0) <span style="color: red;">*Updated!*</span>on ExpertBook 
 * 2022/04/29 Android Studio Bumblebee | 2021.1.1 Patch 3 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/29 Visual Studio 2022 17.2 Preview 5.0 + .NET 6 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
@@ -24,8 +24,8 @@
 * 2022/04/23 Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
 * 2022/04/13 IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span> on TransBook
 * 2022/02/05 Flutter 2.10 + Visual Studio 2022 <span style="color: red;">*Updated!*</span> On ExpertBook
-* 2022/01/01 React 17.0.2 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span> On Expertbook
-* 2022/01/01 Svelte 3.0.0 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span> On Expertbook
+* 2022/01/01 React 17.0.2 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span> On ExpertBook
+* 2022/01/01 Svelte 3.0.0 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2021/12/18 Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span> On TransBook
 * 2021/12/15 Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span> On ExpertBook
 
@@ -168,17 +168,17 @@ exercism download --exercise=two-fer --track=kotlin
     - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Angular 13.3 (Node.js 16.15.0) @2022/05/01 <span style="color: red;">*Updated!*</span>on Expertbook
+- Angular 13.3 (Node.js 16.15.0) @2022/05/01 <span style="color: red;">*Updated!*</span>on ExpertBook
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/05/01** 第3章 データバインディング <span style="color: red;">*started*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
-- React 17.0.2 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook
+- React 17.0.2 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on ExpertBook
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/04/10** Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 
-- Svelte 3.0.0 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on Expertbook\
+- Svelte 3.0.0 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on ExpertBook
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 
 - ml5 - 日経ソフトウェア 2019年5月号
@@ -195,16 +195,16 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on Expertbook
+- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
   postgres/pgsuper
-- [Spring Tool Suite](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on Expertbook
+- [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
   - Eclipse IDE for Java Developers 2021-09
 
-- Spring解体新書（バッチ編）**@2022/05/05** ３章 Hello World <span style="color: red;">*finished*</span>
+- [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/07** 6章 バッチ実行 <span style="color: red;">*finished*</span>
 
-- Spring解体新書（第２版）**@2022/05/04** ３章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+- [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) **@2022/05/04** 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
