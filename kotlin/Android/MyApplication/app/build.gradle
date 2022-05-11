@@ -23,6 +23,7 @@ android {
         targetCompatibility "1.8"
     }
     buildToolsVersion '32.0.0'
+    namespace 'com.example.myapplication'
 }
 
 dependencies {
