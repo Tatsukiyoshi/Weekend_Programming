@@ -12,10 +12,10 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
+* 2022/05/11 Android Studio Chipmunk | 2021.2.1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on ExpertBook
 * 2022/05/04 [Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span> on ExpertBook
 * 2022/05/01 Angular 13.3 (Node.js 16.15.0) <span style="color: red;">*Updated!*</span>on ExpertBook 
-* 2022/04/29 Android Studio Bumblebee | 2021.1.1 Patch 3 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/29 Visual Studio 2022 17.2 Preview 5.0 + .NET 6 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/04/23 Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span> On ExpertBook
   ```
@@ -136,19 +136,17 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Bumblebee | 2021.1.1 Patch 3 @2022/04/29 <span style="color: red;">*Updated!*</span> On ExpertBook
-
-  - Android Studio Bumblebee | 2021.1.1 Patch 3
+- Android Studio Chipmunk | 2021.2.1 @2022/05/11 <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
-  Build #AI-211.7628.21.2111.8309675, built on March 17, 2022
-  Runtime version: 11.0.11+9-b60-7590822 amd64
+  Build #AI-212.5712.43.2112.8512546, built on April 29, 2022
+  Runtime version: 11.0.12+7-b1504.28-7817840 amd64
   VM: OpenJDK 64-Bit Server VM by Oracle Corporation
   Windows 10 10.0
   GC: G1 Young Generation, G1 Old Generation
   Memory: 1280M
   Cores: 4
   Registry: external.system.auto.import.disabled=true
-  Non-Bundled Plugins: Dart (211.7817), org.jetbrains.kotlin (211-1.6.21-release-334-AS7442.40), io.flutter (66.0.1)
+  Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.6.21-release-334-AS5457.46), io.flutter (67.1.2)
   ```
 - Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
