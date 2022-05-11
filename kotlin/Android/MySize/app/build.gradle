@@ -26,6 +26,7 @@ android {
     viewBinding {
         enabled = true
     }
+    namespace 'com.example.mysize'
 }
 
 dependencies {

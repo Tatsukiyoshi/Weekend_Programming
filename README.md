@@ -148,6 +148,8 @@ exercism download --exercise=two-fer --track=kotlin
   Registry: external.system.auto.import.disabled=true
   Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.6.21-release-334-AS5457.46), io.flutter (67.1.2)
   ```
+- Chipmunk 対応
+  - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
 - Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 

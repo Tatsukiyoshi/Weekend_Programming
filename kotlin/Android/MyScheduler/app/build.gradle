@@ -32,6 +32,7 @@ android {
     realm {
         syncEnabled = true
     }
+    namespace 'com.example.myscheduler'
 }
 
 dependencies {
