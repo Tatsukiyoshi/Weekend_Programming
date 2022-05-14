@@ -4,7 +4,8 @@
 
 ## ヘッドライン
 ### 演習進捗
-* 2022/05/07 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished*</span>
+* 2022/05/14 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 3.1 Tasklet <span style="color: red;">*finished* by Kotlin</span>
+* 2022/05/07 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished* by Java</span>
 * 2022/05/04 [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
 * 2022/01/23 [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
@@ -40,20 +41,12 @@
 - [Exercism](#exercismhttpsexercismiomytracks)
 - [Python](#python)
 - [Kotlin](#kotlin)
-  - [Arctic Fox 対応として吸収すべき課題](#arctic-fox-対応として吸収すべき課題)
-  - [Android - はじめてのAndroidプログラミング <br>](#android-はじめてのandroidプログラミング-br)
-  - [Programming - Kotlinプログラミング <br>](#programming-kotlinプログラミング-br)
 - [JavaScript](#javascript)
 - [Java](#java)
-  - [Java本格入門 **@2021/12/22** Chapter 9 日付処理を極める *finished*](#java本格入門httpsgihyojpbook2017978-4-7741-8909-3-20211222-chapter-9-日付処理を極める-span-stylecolor-redfinishedspan)
-  - [サーブレット＆JSP入門 **@2022/01/23** : Chapter 8 セッションスコープ *finished*](#サーブレットjsp入門httpssukkirijpbookssukkiri_servlet2-20220123-chapter-8-セッションスコープ-span-stylecolor-redfinishedspan)
 - [.NET Framework / C++](#net-framework-c)
   - [C#](#c)
-    - [やさしいＣ＃第３版 **@2022/02/13** : Lesson 11.1 ネットワーク *finished*](#やさしいc第3版httpsisbn2sbcrjp03922-20220213-lesson-111-ネットワーク-span-stylecolor-redfinishedspan)
   - [C++](#c-1)
-    - [C++ プログラミング入門 **@2021/10/06** Chapter 6.2 デストラクタ](#c-プログラミング入門httpexamplesoreillycomcore-20211006-span-stylecolor-greenchapter-62-デストラクタspan)
   - [Blazor](#blazor)
-    - [Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** *finished*](#blazor入門日経ソフトウェア-2021年9月号2021926-span-stylecolor-redfinishedspan)
 - [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
 - [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
@@ -119,8 +112,7 @@ exercism download --exercise=two-fer --track=kotlin
     - ミニマックス法
     - アルファベータ法
 
-- self-taught [独学プログラマー](http://theselftaughtprogrammer.io/)
-**@2019/10/5:Chapter 22** <span style="color: red;">*finished!*</span>
+- self-taught [独学プログラマー](http://theselftaughtprogrammer.io/) **@2019/10/5:Chapter 22** <span style="color: red;">*finished!*</span>
 
 - ginza - Universal Dependenciesに基づくオープンソース日本語NLPライブラリ
   ```
@@ -153,19 +145,27 @@ exercism download --exercise=two-fer --track=kotlin
 - Arctic Fox 対応として吸収すべき課題
   [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 
-- Android - はじめてのAndroidプログラミング <br>
-  **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
+- Android - はじめてのAndroidプログラミング **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
 
-- Programming - Kotlinプログラミング <br>
-  **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
-  - Android
-    - Chapter 22 coroutines
-    - Chapter 21 [New Character UI](https://www.bignerdranch.com/assets/solutions/activity_new_character.xml)
-  - [mavenでマニフェストを作成する方法](https://www.codeflow.site/ja/article/maven__how-to-create-a-manifest-file-with-maven)
-  - Hint of Challenges
-    - [Tavern Challenge 19](https://forums.bignerdranch.com/t/tavern-challenge/15141/2)
-    - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
+- Programming 
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/14** 3.1 Tasklet <span style="color: red;">*finished*</span>
+    - Intellij IDEA 2022.1
+    - Amazon Coretto 11.0.15 + 言語レベル 8
+    - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
+      ```
+      companion object {  // 
+          private val log: Logger = LoggerFactory.getLogger(this::class.java)
+      }
+      ```
+  - Kotlinプログラミング **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
+    - Android
+      - Chapter 22 coroutines
+      - Chapter 21 [New Character UI](https://www.bignerdranch.com/assets/solutions/activity_new_character.xml)
+    - [mavenでマニフェストを作成する方法](https://www.codeflow.site/ja/article/maven__how-to-create-a-manifest-file-with-maven)
+    - Hint of Challenges
+      - [Tavern Challenge 19](https://forums.bignerdranch.com/t/tavern-challenge/15141/2)
+      - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
 - Angular 13.3 (Node.js 16.15.0) @2022/05/01 <span style="color: red;">*Updated!*</span>on ExpertBook
