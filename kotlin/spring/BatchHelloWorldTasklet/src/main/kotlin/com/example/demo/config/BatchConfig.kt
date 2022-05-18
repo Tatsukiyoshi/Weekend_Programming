@@ -8,6 +8,7 @@ import org.springframework.batch.core.configuration.annotation.StepBuilderFactor
 import org.springframework.batch.core.launch.support.RunIdIncrementer
 import org.springframework.batch.core.step.tasklet.Tasklet
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
@@ -24,7 +25,13 @@ class BatchConfig {
 
     /** HelloTasklet */
     @Autowired
+    @Qualifier("HelloTasklet")
     private lateinit var helloTasklet: Tasklet
+
+    /** HelloTasklet2 */
+    @Autowired
+    @Qualifier("HelloTasklet2")
+    private lateinit var helloTasklet2: Tasklet
 
     /** TaskletのStepを生成 */
     @Bean
@@ -34,12 +41,21 @@ class BatchConfig {
             .build()
     }
 
+    /** TaskletのStepを生成 */
+    @Bean
+    fun taskletStep2(): Step {
+        return stepBuilderFactory.get("HelloTaskletStep2")
+            .tasklet(helloTasklet2)
+            .build()
+    }
+
     /** TaskletのJobを生成 */
     @Bean
     fun taskletJob(): Job? {
         return jobBuilderFactory.get("HelloWorldTaskletJob")
             .incrementer(RunIdIncrementer())
-            .start(taskletStep1())
+            .start(taskletStep1())  // 最初のStep
+            .next(taskletStep2())   // 次のStep
             .build()
     }
 }

@@ -6,10 +6,11 @@ import org.springframework.batch.core.StepContribution
 import org.springframework.batch.core.configuration.annotation.StepScope
 import org.springframework.batch.core.scope.context.ChunkContext
 import org.springframework.batch.core.step.tasklet.Tasklet
+import org.springframework.batch.item.ExecutionContext
 import org.springframework.batch.repeat.RepeatStatus
 import org.springframework.stereotype.Component
 
-@Component
+@Component("HelloTasklet")
 @StepScope
 class HelloTasklet: Tasklet {
     companion object {  // https://stackoverflow.com/questions/60419699
@@ -18,6 +19,18 @@ class HelloTasklet: Tasklet {
 
     override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus? {
         log.info("Hello World")
+
+        // JobExecutionContextの取得
+        val jobContext: ExecutionContext = contribution.stepExecution.jobExecution.executionContext
+
+        // Mapに値登録
+        jobContext.put("jobKey", "jobValue")
+
+        // StepExecutionContextの取得
+        val stepContext: ExecutionContext = contribution.stepExecution.executionContext
+
+        // Mapに値登録
+        stepContext.put("stepKey", "stepValue")
 
         return RepeatStatus.FINISHED
     }
