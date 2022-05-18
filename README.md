@@ -4,7 +4,7 @@
 
 ## ヘッドライン
 ### 演習進捗
-* 2022/05/15 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 3章 Hello World<span style="color: red;">*finished* by Kotlin</span>
+* 2022/05/18 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 4章 Listener<span style="color: red;">*finished* by Kotlin</span>
 * 2022/05/07 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished* by Java</span>
 * 2022/05/04 [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
@@ -149,7 +149,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/15** 3章 Hello World <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/18** 4章 Listener <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1
     - Amazon Coretto 11.0.15 + 言語レベル 8
     - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
