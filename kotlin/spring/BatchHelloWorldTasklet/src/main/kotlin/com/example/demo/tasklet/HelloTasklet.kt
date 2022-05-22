@@ -1,5 +1,6 @@
 package com.example.demo.tasklet
 
+import com.example.demo.property.SampleProperty
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.batch.core.StepContribution
@@ -8,6 +9,7 @@ import org.springframework.batch.core.scope.context.ChunkContext
 import org.springframework.batch.core.step.tasklet.Tasklet
 import org.springframework.batch.item.ExecutionContext
 import org.springframework.batch.repeat.RepeatStatus
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 
@@ -23,6 +25,9 @@ class HelloTasklet: Tasklet {
 
     @Value("#{jobParameters['option1']}")
     private val option1: Int = 0
+
+    @Autowired
+    private var sampleProperty: SampleProperty? = null
 
     override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus? {
         log.info("Hello World")
@@ -43,6 +48,8 @@ class HelloTasklet: Tasklet {
         log.info("require1={}", require1)
         log.info("option1={}", option1)
 
+        // プロパティの表示
+        log.info("sample.property={}", sampleProperty?.sampleProperty)
         return RepeatStatus.FINISHED
     }
 }
