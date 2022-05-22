@@ -13,7 +13,7 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/05/13 Flutter 3.00 + Visual Studio 2022 <span style="color: red;">*Updated!*</span> On ExpertBook
+* 2022/05/22 Flutter 3.01 + Visual Studio 2022 17.3 Preview 1.0<span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/05/12 Visual Studio 2022 17.3 Preview 1.0 + .NET 6 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/05/11 Android Studio Chipmunk | 2021.2.1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on ExpertBook
@@ -246,7 +246,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Project1(Press Again)
 
 ### Dart - flutter
-- Flutter 3.00 @2022/05/13 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 3.01 @2022/05/22 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
