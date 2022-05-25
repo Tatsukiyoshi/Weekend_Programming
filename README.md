@@ -4,7 +4,7 @@
 
 ## ヘッドライン
 ### 演習進捗
-* 2022/05/22 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished* by Kotlin</span>
+* 2022/05/22 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 7章 プロパティファイル <span style="color: red;">*finished* by Kotlin</span>
 * 2022/05/07 [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) 6章 バッチ実行 <span style="color: red;">*finished* by Java</span>
 * 2022/05/04 [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 * 2022/04/10 [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)  Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
@@ -13,8 +13,9 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/05/25 Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span> On ExpertBook
+* 2022/05/25 Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span> On\ ExpertBook
 * 2022/05/25 Visual Studio 2022 17.2.2 + .NET 6 <span style="color: red;">*Downgraded!*</span> On ExpertBook
+* 2022/05/22 [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on TransBook
 * 2022/05/11 Android Studio Chipmunk | 2021.2.1 <span style="color: red;">*Updated!*</span> On ExpertBook
 * 2022/05/05 [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on ExpertBook
 * 2022/05/04 [Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span> on ExpertBook
@@ -149,9 +150,11 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/22** 6章 バッチ実行 <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/22** 7章 プロパティファイル <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1
     - Amazon Coretto 11.0.15 + 言語レベル 8
+    - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/05/22 <span style="color: red;">*Installed*</span> on TransBook
+
     - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
       ```
       companion object {  // 
