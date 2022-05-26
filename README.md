@@ -13,7 +13,7 @@
 * 2021/12/22 [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
 
 ### 環境アップデート
-* 2022/05/25 Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span> On\ ExpertBook
+* 2022/05/25 Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span> On ExpertBook
 * 2022/05/25 Visual Studio 2022 17.2.2 + .NET 6 <span style="color: red;">*Downgraded!*</span> On ExpertBook
 * 2022/05/22 [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span> on TransBook
 * 2022/05/11 Android Studio Chipmunk | 2021.2.1 <span style="color: red;">*Updated!*</span> On ExpertBook
