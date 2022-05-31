@@ -4,8 +4,8 @@
 
 ## ヘッドライン
 ### 演習進捗＆環境アップデート
-|端末      |演習テキスト|@|進捗状況|ソフトウェア環境|更新状況|
-|----------|-----------|-|--------|---------------|-------|
+|端末      |演習テキスト|演習内容|演習進捗|ソフトウェア環境|更新状況|
+|----------|-----------|-------|-------|---------------|-------|
 |ExpertBook|[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|6章 バッチ実行|2022/05/07 <span style="color: red;">*finished* by Java</span>|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)|2022/05/05 <span style="color: red;">*Installed*</span>|
 |          |[Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)|3章 Hello World・・・簡単なサンプル|2022/05/04 <span style="color: red;">*finished*</span>|[Spring Tool Suite 4.14.1](https://spring.io/tools)|2022/05/04 <span style="color: red;">*Installed!*</span>|
 |          |[Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/)|第3章 データバインディング|2022/05/01 <span style="color: red;">*started*</span>|Angular 13.3 (Node.js 16.15.0)|2022/05/01 <span style="color: red;">*Updated!*</span>|
@@ -13,10 +13,12 @@
 |          |[やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)|Lesson 10 ファイル|2022/01/23 <span style="color: red;">*finished*</span>|Visual Studio 2022 17.2.2 + .NET 6|2022/05/25 <span style="color: red;">*Downgraded!*</span>
 |          ||||Flutter 3.01|2022/05/25 <span style="color: red;">*Updated!*</span>|
 |          ||||Android Studio Chipmunk 2021.2.1|2022/05/11 <span style="color: red;">*Updated!*</span>|
-|          ||||Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span><BR>Ubuntu 22.04 LTS|2022/04/23 <span style="color: red;">*Installed!*</span>|
+|          ||||Rust 1.60.0 on Ubuntu 22.04 LTS|2022/04/23 <span style="color: red;">*Installed!*</span>|
 |          ||||Svelte 3.0.0 (Node.js 16.13.0)|2022/01/01 <span style="color: red;">*Updated!*</span>|
 |          ||||Python 3.10.1 and Django 4.0|2021/12/15 <span style="color: red;">*Installed!*</span>|
-|TransBook |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|7章 プロパティファイル|2022/05/22 <span style="color: red;">*finished* by Kotlin</span>|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)<BR>IntelliJ IDEA 2022.1|2022/05/22 <span style="color: red;">*Installed*</span><BR>2022/04/13 <span style="color: red;">*Updated!*</span>|
+|TransBook |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8.1 JdbcBatchItemWriter|2022/06/01 <span style="color: red;">*under challenge* by Kotlin</span>|||
+|          ||7章 プロパティファイル|2022/05/22 <span style="color: red;">*finished* by Kotlin</span>|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)|2022/05/22 <span style="color: red;">*Installed*</span>|
+|          ||||IntelliJ IDEA 2022.1|2022/04/13 <span style="color: red;">*Updated!*</span>|
 |          |[サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2)|Chapter 8 セッションスコープ|2022/01/23 <span style="color: red;">*finished*</span>|Pleiades All in One Eclipse 2021-12 (Eclipse 4.22)|2021/12/18 <span style="color: red;">*Updated!*</span>|
 |          |[Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3)|Chapter 9 日付処理を極める|2021/12/22 <span style="color: red;">*finished*</span>|
 
@@ -25,8 +27,7 @@
 
 <!-- code_chunk_output -->
 - [演習進捗](#演習進捗)
-- [演習進捗](#演習進捗)
-- [環境アップデート](#環境アップデート)
+- [演習進捗＆環境アップデート](#演習進捗環境アップデート)
 - [documentation](#documentation)
 - [Exercism](#exercismhttpsexercismiomytracks)
 - [Python](#python)
@@ -39,7 +40,7 @@
   - [Blazor](#blazor)
 - [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
-- [Rust on WSL 2 Ubuntu 2020.04](#rust-on-wsl-2-ubuntu-202004)
+- [Rust on WSL 2 Ubuntu 2022.04](#rust-on-wsl-2-ubuntu-202204)
 - [Swift](#swift)
 - [LLVM](#llvm)
 - [Unity](#unity)
@@ -139,18 +140,20 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/22** 7章 プロパティファイル <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/01** 8.1 JdbcBatchItemWriter <span style="color: red;">*under challenge*</span>
     - Intellij IDEA 2022.1
     - Amazon Coretto 11.0.15 + 言語レベル 8
     - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/05/22 <span style="color: red;">*Installed*</span> on TransBook
 
-    - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
-      ```
-      companion object {  // 
-          private val log: Logger = LoggerFactory.getLogger(this::class.java)
-      }
-      ```
-    - [Spring Batch+Kotlinの事例](https://nulab.com/ja/blog/nulab/spring-boot-batch/)
+    - ノウハウ
+      - PgAdmin起動できない場合、サーバとの接続がタイムアウトしているため、タイムアウト時間を延ばす
+      - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
+        ```
+        companion object {  // 
+            private val log: Logger = LoggerFactory.getLogger(this::class.java)
+        }
+        ```
+      - [Spring Batch+Kotlinの事例](https://nulab.com/ja/blog/nulab/spring-boot-batch/)
 
   - Kotlinプログラミング **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
     - Android
