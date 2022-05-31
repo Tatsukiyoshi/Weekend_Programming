@@ -15,6 +15,18 @@
 			"**/.factorypath": true
 		},
 		"java.configuration.updateBuildConfiguration": "automatic",
-		"maven.view": "hierarchical"
+		"maven.view": "hierarchical",
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"database": "batch",
+				"username": "spring",
+				"name": "spring",
+				"password": "password"
+			}
+		]
 	}
 }
