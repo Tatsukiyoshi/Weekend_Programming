@@ -4,13 +4,14 @@ import lombok.Data
 
 @Data
 open class Employee {
-    private var id: Int? = 0
-    private lateinit var name: String
-    private var age: Int? = 0
-    private var gender: Int? = 0
-    private lateinit var genderString: String
+    var id: Int? = 0
+    var name: String? = null
+    var age: Int? = 0
+    var gender: Int? = 0
+    var genderString: String? = null
 
     /** 性別の文字列を数値に変換 */
+    @Throws(IllegalStateException::class)
     fun convertGenderStringToInt(){
         println(genderString)
 
@@ -23,7 +24,7 @@ open class Employee {
                 2
             }
             else -> {
-                val errorMsg: String = "Gender string is invalid:$genderString"
+                val errorMsg = "Gender string is invalid:$genderString"
                 throw IllegalStateException(errorMsg)
             }
         }
