@@ -16,8 +16,7 @@
 |          ||||Rust 1.60.0 on Ubuntu 22.04 LTS|2022/04/23 <span style="color: red;">*Installed!*</span>|
 |          ||||Svelte 3.0.0 (Node.js 16.13.0)|2022/01/01 <span style="color: red;">*Updated!*</span>|
 |          ||||Python 3.10.1 and Django 4.0|2021/12/15 <span style="color: red;">*Installed!*</span>|
-|TransBook |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8.1 JdbcBatchItemWriter|2022/06/01 <span style="color: red;">*under challenge* by Kotlin</span>|||
-|          ||7章 プロパティファイル|2022/05/22 <span style="color: red;">*finished* by Kotlin</span>|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)|2022/05/22 <span style="color: red;">*Installed*</span>|
+|TransBook |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8.1 JdbcBatchItemWriter|2022/06/01 <span style="color: red;">*finished* by Kotlin</span>|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)|2022/05/22 <span style="color: red;">*Installed*</span>|
 |          ||||IntelliJ IDEA 2022.1|2022/04/13 <span style="color: red;">*Updated!*</span>|
 |          |[サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2)|Chapter 8 セッションスコープ|2022/01/23 <span style="color: red;">*finished*</span>|Pleiades All in One Eclipse 2021-12 (Eclipse 4.22)|2021/12/18 <span style="color: red;">*Updated!*</span>|
 |          |[Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3)|Chapter 9 日付処理を極める|2021/12/22 <span style="color: red;">*finished*</span>|
@@ -140,7 +139,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/01** 8.1 JdbcBatchItemWriter <span style="color: red;">*under challenge*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/01** 8.1 JdbcBatchItemWriter <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1
     - Amazon Coretto 11.0.15 + 言語レベル 8
     - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/05/22 <span style="color: red;">*Installed*</span> on TransBook
