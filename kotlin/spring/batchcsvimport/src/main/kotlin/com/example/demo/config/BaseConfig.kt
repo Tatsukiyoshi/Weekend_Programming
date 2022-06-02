@@ -12,11 +12,13 @@ import org.springframework.batch.item.ItemProcessor
 import org.springframework.batch.item.file.FlatFileItemReader
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper
+import org.springframework.batch.item.support.CompositeItemProcessor
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.core.io.ClassPathResource
 import java.nio.charset.StandardCharsets
+import java.util.*
 
 @EnableBatchProcessing
 abstract class BaseConfig {
@@ -30,6 +32,11 @@ abstract class BaseConfig {
     @Autowired
     @Qualifier("GenderConvertProcessor")
     protected var genderConvertProcessor: ItemProcessor<Employee, Employee>? = null
+
+    /** データの存在をチェックするProcessor */
+    @Autowired
+    @Qualifier("ExistsCheckProcessor")
+    protected var existsCheckProcessor: ItemProcessor<Employee, Employee>? = null
 
     /** ReadListener */
     @Autowired
@@ -67,5 +74,19 @@ abstract class BaseConfig {
                 }
             })
             .build()
+    }
+
+    /** 複数のProcessor */
+    @Bean
+    @StepScope
+    open fun compositeProcessor(): ItemProcessor<Employee, Employee> {
+        val compositeProcessor: CompositeItemProcessor<Employee, Employee> =
+            CompositeItemProcessor<Employee, Employee>()
+
+        // ProcessorList
+        compositeProcessor.setDelegates(
+            listOf(this.existsCheckProcessor, this.genderConvertProcessor))
+
+        return compositeProcessor
     }
 }

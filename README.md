@@ -17,7 +17,7 @@
 |Spring Batch(Java)  |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|6章 バッチ実行|2022/05/07 <span style="color: red;">*finished* by Java</span>||[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)|2022/05/05 <span style="color: red;">*Installed*</span>|
 |Spring(Java)        |[Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)|3章 Hello World・・・簡単なサンプル|2022/05/04 <span style="color: red;">*finished*</span>|          |[Spring Tool Suite 4.14.1](https://spring.io/tools)|2022/05/04 <span style="color: red;">*Installed!*</span>|
 |Android(Kotlin)     |||||Android Studio Chipmunk 2021.2.1|2022/05/11 <span style="color: red;">*Updated!*</span>|
-|Spring Batch(Kotlin)|[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8.1 JdbcBatchItemWriter|2022/06/01 <span style="color: red;">*finished* by Kotlin</span>|TransBook |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)|2022/05/22 <span style="color: red;">*Installed*</span>|
+|Spring Batch(Kotlin)|[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8.2 複数のProcessor|2022/06/02 <span style="color: red;">*finished* by Kotlin</span>|TransBook |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)|2022/05/22 <span style="color: red;">*Installed*</span>|
 |                    |||||IntelliJ IDEA 2022.1|2022/04/13 <span style="color: red;">*Updated!*</span>|
 |Web(Java)           |[サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2)|Chapter 8 セッションスコープ|2022/01/23 <span style="color: red;">*finished*</span>|          |Pleiades All in One Eclipse 2021-12 (Eclipse 4.22)|2021/12/18 <span style="color: red;">*Updated!*</span>|
 |Java                |[Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3)|Chapter 9 日付処理を極める|2021/12/22 <span style="color: red;">*finished*</span>|
@@ -138,7 +138,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/01** 8.1 JdbcBatchItemWriter <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/02** 8.2 複数のProcessor <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1
     - Amazon Coretto 11.0.15 + 言語レベル 8
     - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/05/22 <span style="color: red;">*Installed*</span> on TransBook

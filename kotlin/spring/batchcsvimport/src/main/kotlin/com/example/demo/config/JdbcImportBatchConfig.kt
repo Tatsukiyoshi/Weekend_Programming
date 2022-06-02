@@ -45,7 +45,7 @@ class JdbcImportBatchConfig: BaseConfig() {
         return this.stepBuilderFactory!!.get("CsvImportJdbcStep")
             .chunk<Employee, Employee>(10)
             .reader(this.csvReader()).listener(readListener!!)
-            .processor(genderConvertProcessor!!).listener(processListener!!)
+            .processor(compositeProcessor()).listener(processListener!!)
             .writer(this.jdbcWriter()).listener(writeListener!!)
             .build()
     }
