@@ -17,6 +17,7 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/02|C#     |Visual Studio 2022 17.3.0 + .NET 6 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
 |2022/05/25|C#     |Visual Studio 2022 17.2.2 + .NET 6 <span style="color: red;">*Downgraded!*</span>|ExpertBook|
