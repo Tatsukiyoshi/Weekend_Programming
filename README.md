@@ -220,8 +220,8 @@ exercism download --exercise=two-fer --track=kotlin
 
 - [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2021/12/22** Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
-
-- [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/01/23** : Chapter 8 セッションスコープ <span style="color: red;">*finished*</span>
+- [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/06/04** : 3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>
+  - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 
 ### .NET Framework / C++
 - Visual Studio 2022 17.2.2 + .NET 6 @2022/5/25 <span style="color: red;">*Downgraded!*</span>
