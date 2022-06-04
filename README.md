@@ -211,8 +211,7 @@ exercism download --exercise=two-fer --track=kotlin
   postgres/pgsuper
 - [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
-- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2021-12 @2021/11/28 <span style="color: red;">*Updated!*</span>
-  - Eclipse IDE for Java Developers 2021-09
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/06/03 <span style="color: red;">*Updated!*</span>
 
 - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/07** 6章 バッチ実行 <span style="color: red;">*finished*</span>
 
@@ -223,8 +222,8 @@ exercism download --exercise=two-fer --track=kotlin
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/06/04** : 3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>
   - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 
-### .NET Framework / C++
-- Visual Studio 2022 17.2.2 + .NET 6 @2022/5/25 <span style="color: red;">*Downgraded!*</span>
+### .NET Framework / C# / C++
+- Visual Studio 2022 17.3.0 + .NET 6 @2022/06/02 <span style="color: red;">*Installed!*</span>
 
 #### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/04/29** : Lesson 11.4 スレッド <span style="color: red;">*finished*</span>
