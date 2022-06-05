@@ -1,11 +1,16 @@
 package com.example.demo.domain.model
 
 import lombok.Data
+import javax.validation.constraints.Min
+import javax.validation.constraints.NotNull
 
 @Data
 open class Employee {
+    @NotNull
     var id: Int? = 0
+    @NotNull
     var name: String? = null
+    @Min(20)
     var age: Int? = 0
     var gender: Int? = 0
     var genderString: String? = null
