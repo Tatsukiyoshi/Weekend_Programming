@@ -17,6 +17,8 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
+|2022/06/06|Android|Android SDK Platform 31 <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/05|Svelte |Svelte 3.44.3 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/05|Anguler|Angular 13.3.4 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/05|React  |React 18.1.0 <span style="color: red;">*Installed!*</span>|IdeaPad|
@@ -26,7 +28,6 @@
 |2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/02|C#     |Visual Studio 2022 17.3.0 + .NET 6 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
-|2022/05/25|C#     |Visual Studio 2022 17.2.2 + .NET 6 <span style="color: red;">*Downgraded!*</span>|ExpertBook|
 |2022/05/22|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|TransBook|
 |2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
@@ -221,6 +222,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 
 ### .NET Framework / C# / C++
+- Visual Studio 2022 17.3.0 + .NET 6 + MAUI + Android SDK Platform 31 @2022/06/06 <span style="color: red;">*Installed!*</span>
 - Visual Studio 2022 17.3.0 + .NET 6 @2022/06/02 <span style="color: red;">*Installed!*</span>
 
 #### C#
