@@ -18,8 +18,6 @@ open class Employee {
     /** 性別の文字列を数値に変換 */
     @Throws(IllegalStateException::class)
     fun convertGenderStringToInt(){
-        println(genderString)
-
         // 文字列を数値に変換
         gender = when (genderString) {
             "男性" -> {
