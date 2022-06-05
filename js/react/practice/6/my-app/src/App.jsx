@@ -1,3 +1,4 @@
+import { React } from "react";
 import { useState, memo, useCallback } from "react";
 import { Child1 } from "./components/Child1";
 import { Child4 } from "./components/Child4";
