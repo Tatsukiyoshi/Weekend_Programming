@@ -26,6 +26,8 @@
     *   YAML
 *   C/C++
 *   C#
+*   CMake
+*   CMake Tools
 *   Dart
 *   Flutter
 *   Java
@@ -36,6 +38,9 @@
     *   Project Manager for Java
     *   Test Runner for Java
 *   Juila
+*   Kotlin
+*   Kotlin Language
+*   LLVM
 *   Python
     *   Anaconda Extension Pack
     *   Jupyter
@@ -43,9 +48,12 @@
     *   jupyter Notebook Renderers
     *   Pylance
     *   Python
-*   Kotlin
-*   Kotlin Language
-*   LLVM
+*   Spring
+    *   Spring Boot Dashboard
+    *   Spring Boot Extension Pack
+    *   Spring Boot Tools
+    *   Spring Initializr Java Support
+*   Svelte for VS Code
 *   Swift Language
 
 
