@@ -13,12 +13,12 @@ import org.springframework.batch.item.file.FlatFileItemReader
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper
 import org.springframework.batch.item.support.CompositeItemProcessor
+import org.springframework.batch.item.validator.BeanValidatingItemProcessor
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.core.io.ClassPathResource
 import java.nio.charset.StandardCharsets
-import java.util.*
 
 @EnableBatchProcessing
 abstract class BaseConfig {
@@ -85,8 +85,22 @@ abstract class BaseConfig {
 
         // ProcessorList
         compositeProcessor.setDelegates(
-            listOf(this.existsCheckProcessor, this.genderConvertProcessor))
+            listOf(validationProcessor(),
+                this.existsCheckProcessor, this.genderConvertProcessor))
 
         return compositeProcessor
+    }
+
+    /** ValidationのProcessor */
+    @Bean
+    @StepScope
+    open fun validationProcessor(): BeanValidatingItemProcessor<Employee> {
+        val validationProcessor: BeanValidatingItemProcessor<Employee> = BeanValidatingItemProcessor()
+
+        // true: skip
+        // false: throw ValidationException
+        validationProcessor.setFilter(true)
+
+        return validationProcessor
     }
 }
