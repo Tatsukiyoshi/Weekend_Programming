@@ -17,9 +17,13 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
-|2022/06/04|Java   |Apache Tomcat 10.0.20|IdeaPad|
-|2022/06/04|Java   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)|IdeaPad|
-|2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Updated!*</span>|IdeaPad|
+|2022/06/05|Svelte |Svelte 3.44.3 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/05|Anguler|Angular 13.3.4 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/05|React  |React 18.1.0 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/05|React  |Node.js 16.15.1 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/04|Java   |Apache Tomcat 10.0.20  <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/04|Java   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/) <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/02|C#     |Visual Studio 2022 17.3.0 + .NET 6 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
 |2022/05/25|C#     |Visual Studio 2022 17.2.2 + .NET 6 <span style="color: red;">*Downgraded!*</span>|ExpertBook|
@@ -27,20 +31,16 @@
 |2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
 |2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/05/01|Anguler|Angular 13.3 (Node.js 16.15.0) <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/04/23|Rust   |Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/23|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/13|Kotlin |IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span>|TransBook|
-|2022/01/01|React  |React 17.0.2 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span>|ExpertBook|
-|2022/01/01|Svelte |Svelte 3.0.0 (Node.js 16.13.0) <span style="color: red;">*Updated!*</span>|ExpertBook|
-|2021/12/18|Java   |Pleiades All in One Eclipse 2021-12 (Eclipse 4.22) <span style="color: red;">*Updated!*</span>|TransBook|
 |2021/12/15|Python |Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span>|ExpertBook|
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
-- [演習進捗＆環境アップデート](#演習進捗環境アップデート)
+- [演習進捗](#演習進捗)
 - [演習進捗](#演習進捗)
 - [環境アップデート](#環境アップデート)
 - [documentation](#documentation)
@@ -49,7 +49,7 @@
 - [Kotlin](#kotlin)
 - [JavaScript](#javascript)
 - [Java](#java)
-- [.NET Framework / C++](#net-framework-c)
+- [.NET Framework / C# / C++](#net-framework-c-c)
   - [C#](#c)
   - [C++](#c-1)
   - [Blazor](#blazor)
@@ -180,17 +180,17 @@ exercism download --exercise=two-fer --track=kotlin
       - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Angular 13.3 (Node.js 16.15.0) @2022/05/01 <span style="color: red;">*Updated!*</span>on ExpertBook
+- Angular 13.3.4 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/05/01** 第3章 データバインディング <span style="color: red;">*started*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
-- React 17.0.2 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on ExpertBook
+- React 18.1.0 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/04/10** Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 
-- Svelte 3.0.0 (Node.js 16.13.0) @2022/01/01 <span style="color: red;">*Installed!*</span>on ExpertBook
+- Svelte 3.44.3 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 
 - ml5 - 日経ソフトウェア 2019年5月号
