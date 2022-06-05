@@ -4,6 +4,7 @@
     *   Code Runner
     *   Compare Folders
     *   Draw.io Integration
+    *   GitGraph
     *   Github Pull Requests and Issues
     *   Graphviz(dot)language support for Visual Studio Code
     *   Graphvis Preview
