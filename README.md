@@ -17,6 +17,8 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/06|Python |[Python 3.10.4](https://www.python.org/downloads/) <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/06|Python |[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/06|Android|Android SDK Platform 31 <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/05|Svelte |Svelte 3.44.3 <span style="color: red;">*Installed!*</span>|IdeaPad|
@@ -35,7 +37,6 @@
 |2022/04/23|Rust   |Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/23|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/13|Kotlin |IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span>|TransBook|
-|2021/12/15|Python |Python 3.10.1 and Django 4.0 <span style="color: red;">*Installed!*</span>|ExpertBook|
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
