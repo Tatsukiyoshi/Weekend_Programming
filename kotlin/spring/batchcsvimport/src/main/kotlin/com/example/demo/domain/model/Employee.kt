@@ -11,12 +11,12 @@ import javax.validation.constraints.NotNull
 open class Employee {
     @NotNull
     @Id
-    var id: Int? = 0
+    open var id: Int? = 0
     @NotNull
-    var name: String? = null
+    open var name: String? = null
     @Min(20)
-    var age: Int? = 0
-    var gender: Int? = 0
+    open var age: Int? = 0
+    open var gender: Int? = 0
     @Transient
     var genderString: String? = null
 
