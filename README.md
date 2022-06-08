@@ -17,6 +17,8 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/05/22|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
+|2022/06/08|Kotlin |IntelliJ IDEA 2022.1.2 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|Python |[Python 3.10.4](https://www.python.org/downloads/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|Python |[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
@@ -30,13 +32,11 @@
 |2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/02|C#     |Visual Studio 2022 17.3.0 + .NET 6 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
-|2022/05/22|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|TransBook|
 |2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
 |2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/23|Rust   |Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/04/23|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/04/13|Kotlin |IntelliJ IDEA 2022.1 <span style="color: red;">*Updated!*</span>|TransBook|
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
@@ -156,9 +156,9 @@ exercism download --exercise=two-fer --track=kotlin
 
 - Programming 
   - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/05** 8章 CSVからDBへインポート <span style="color: red;">*finished*</span>
-    - Intellij IDEA 2022.1
-    - Amazon Coretto 11.0.15 + 言語レベル 8
-    - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/05/22 <span style="color: red;">*Installed*</span> on TransBook
+    - Intellij IDEA 2022.1.2
+    - Amazon Coretto 17.0.3 + 言語レベル 8
+    - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/06/08 <span style="color: red;">*Installed*</span> on IdeaPad
 
     - ノウハウ
       - PgAdmin起動できない場合、サーバとの接続がタイムアウトしているため、タイムアウト時間を延ばす
