@@ -17,6 +17,8 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/09|Rust   |Rust 1.61.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/09|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/09|Python |[Python 3.10.5](https://www.python.org/downloads/) <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/09|Angular|Angular 14.0.1 <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/08|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
@@ -35,8 +37,6 @@
 |2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
 |2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/04/23|Rust   |Rust 1.60.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/04/23|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|ExpertBook|
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
