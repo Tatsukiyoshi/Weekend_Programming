@@ -34,7 +34,7 @@ public class SampleServlet extends HttpServlet {
 		String[] luckArray = {"超スッキリ", "スッキリ", "最悪"};
 		int index = (int)(Math.random() * 3);
 		String luck = luckArray[index];
-
+		
 		// 実行日を取得
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
