@@ -17,14 +17,14 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
-|2022/05/22|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
+|2022/06/09|Angular|Angular 14.0.1 <span style="color: red;">*Updated!*</span>|IdeaPad|
+|2022/06/08|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
 |2022/06/08|Kotlin |IntelliJ IDEA 2022.1.2 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|Python |[Python 3.10.4](https://www.python.org/downloads/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|Python |[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/06|Android|Android SDK Platform 31 <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/05|Svelte |Svelte 3.44.3 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/05|Anguler|Angular 13.3.4 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/05|React  |React 18.1.0 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/05|React  |Node.js 16.15.1 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/04|Java   |Apache Tomcat 10.0.20  <span style="color: red;">*Installed!*</span>|IdeaPad|
@@ -180,7 +180,7 @@ exercism download --exercise=two-fer --track=kotlin
       - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Angular 13.3.4 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
+- Angular 14.0.1 (Node.js 16.15.1) @2022/06/09 <span style="color: red;">*Updated!*</span>on IdeaPad
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/05/01** 第3章 データバインディング <span style="color: red;">*started*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
