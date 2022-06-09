@@ -17,10 +17,10 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/09|Python |[Python 3.10.5](https://www.python.org/downloads/) <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/09|Angular|Angular 14.0.1 <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/08|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
 |2022/06/08|Kotlin |IntelliJ IDEA 2022.1.2 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/06|Python |[Python 3.10.4](https://www.python.org/downloads/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|Python |[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
 |2022/06/06|Android|Android SDK Platform 31 <span style="color: red;">*Installed!*</span>|ExpertBook|
