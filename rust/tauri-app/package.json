@@ -8,5 +8,10 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0-rc.13"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Tauri First Application",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
