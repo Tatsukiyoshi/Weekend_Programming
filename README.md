@@ -17,6 +17,10 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Windows 11 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/11|Rust   |Rust 1.61.0 on Windows 11<span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/11|Rust   |React 18.1.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/09|Rust   |Rust 1.61.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/09|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/09|Python |[Python 3.10.5](https://www.python.org/downloads/) <span style="color: red;">*Updated!*</span>|IdeaPad|
@@ -261,7 +265,8 @@ exercism download --exercise=two-fer --track=kotlin
   - myapp - flutter demo
   - Startup namer
 
-### Rust on WSL 2 Ubuntu 2022.04
+### Rust on WSL 2 Ubuntu 2022.04(+Windows 11)
+- [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
 - ディストリビューションのバージョンを確認する
   ```
   lsb_release -a

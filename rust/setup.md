@@ -1,8 +1,8 @@
-*   Windows
+*   Windows 11
 
     1.  Start a New Tauri Project
         ```
-        yarn create tauri-app
+        npx create-tauri-app
         ```
 
     1.  Install Tauri CLI package as a dev dependency
@@ -70,4 +70,21 @@
     1.  Start Tauri Development Window
         ```
         cargo tauri dev
+        ```
+*   Ubuntu 22.04
+    1.  npmインストール
+        ```
+        $ sudo apt-get install npm -y
+        ```
+
+    1.  nodeインストール
+        ```
+        $ sudo npm install n -g
+        $ sudo n stable
+        $ node -v
+        ```
+
+    1.  yarnインストール
+        ```
+        $ sudo npm install yarn -g
         ```
