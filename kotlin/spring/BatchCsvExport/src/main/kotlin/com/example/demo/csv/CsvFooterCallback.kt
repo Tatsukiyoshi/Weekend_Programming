@@ -1,0 +1,20 @@
+package com.example.demo.csv
+
+import org.springframework.batch.core.StepExecution
+import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.item.file.FlatFileFooterCallback
+import org.springframework.beans.factory.annotation.Value
+import org.springframework.stereotype.Component
+import java.io.Writer
+
+@Component
+@StepScope
+class CsvFooterCallback : FlatFileFooterCallback{
+    @Value("#{StepExecution}")
+    private var stepExecution: StepExecution? = null
+
+    override fun writeFooter(writer: Writer) {
+        val writeString = "合計 = $stepExecution.writeCount$ 件"
+        writer.write(writeString)
+    }
+}

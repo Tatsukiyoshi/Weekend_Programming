@@ -6,13 +6,13 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/06/05|Kotlin |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|8章CSVからDBへインポート <span style="color: red;">*finished* by Kotlin</span>|
-|2022/06/04|Java   |[サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
-|2022/05/07|Java   |[Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
-|2022/05/04|Java   |[Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
-|2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
-|2022/01/23|C#     |[やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)|Lesson 10 ファイル <span style="color: red;">*finished*</span>|
-|2021/12/22|Java   |[Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3)|Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>|
+|2022/06/05|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|8章CSVからDBへインポート <span style="color: red;">*finished* by Kotlin</span>|
+|2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
+|2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
+|2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
+|2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
+|2022/01/23|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 10 ファイル <span style="color: red;">*finished*</span>|
+|2021/12/22|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 9 日付処理を極める <span style="color: red;">*finished*</span>|
 
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
