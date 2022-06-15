@@ -19,6 +19,16 @@
             "username": "spring",
             "password": "password",
             "database": "batch"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "readonly_user",
+            "database": "batch",
+            "username": "readonly_user"
         }
     ]
 }
