@@ -11,7 +11,7 @@ import java.io.Writer
 @StepScope
 class CsvFooterCallback : FlatFileFooterCallback{
     @Value("#{StepExecution}")
-    private var stepExecution: StepExecution? = null
+    private lateinit var stepExecution: StepExecution
 
     override fun writeFooter(writer: Writer) {
         val writeString = "合計 = $stepExecution.writeCount$ 件"

@@ -31,13 +31,13 @@ class JdbcCursorBatchConfig : BaseConfig() {
         val params = arrayOf(1)
 
         // RowMapper
-        val rowMapper: BeanPropertyRowMapper<Employee> = BeanPropertyRowMapper<Employee>()
+        val rowMapper: BeanPropertyRowMapper<Employee> = BeanPropertyRowMapper(Employee::class.java)
 
         return JdbcCursorItemReaderBuilder<Employee>()
             .dataSource(this.dataSource)
             .name("jdbcCursorItemReader")
             .sql(_selectEmployeeSql)
-            .queryArguments(params)
+            .queryArguments(*params)
             .rowMapper(rowMapper)
             .build()
     }
@@ -54,6 +54,7 @@ class JdbcCursorBatchConfig : BaseConfig() {
     }
 
     /** Jobの生成 */
+    @Bean("JdbcCursorJob")
     fun exportJdbcCursorJob(): Job {
         return this.jobBuilderFactory.get("ExportJdbcCursorJob")
             .incrementer(RunIdIncrementer())

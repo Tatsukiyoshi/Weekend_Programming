@@ -43,10 +43,10 @@ open class BaseConfig {
     lateinit var writeListener: ItemWriteListener<Employee>
 
     @Autowired
-    private var csvHeaderCallback: FlatFileHeaderCallback? = null
+    private lateinit var csvHeaderCallback: FlatFileHeaderCallback
 
     @Autowired
-    private var csvFooterCallback: FlatFileFooterCallback? = null
+    private lateinit var csvFooterCallback: FlatFileFooterCallback
 
     /** CSV出力のWriterを生成 */
     @Bean
@@ -70,8 +70,8 @@ open class BaseConfig {
             .resource(outputResource!!)
             .append(false)
             .lineAggregator(aggregator)
-            .headerCallback(csvHeaderCallback!!)
-            .footerCallback(csvFooterCallback!!)
+            .headerCallback(csvHeaderCallback)
+            .footerCallback(csvFooterCallback)
             .encoding(StandardCharsets.UTF_8.name())
             .build()
     }

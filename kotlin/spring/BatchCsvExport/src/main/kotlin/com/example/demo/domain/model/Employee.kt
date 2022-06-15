@@ -3,12 +3,12 @@ package com.example.demo.domain.model
 import lombok.Data
 
 @Data
-class Employee {
-    private var id: Int = 0
-    private var name: String? = null
-    private var age: Int = 0
-    private var gender: Int = 0
-    private var genderString: String? = null
+open class Employee {
+    open var id: Int = 0
+    open var name: String? = null
+    open var age: Int = 0
+    open var gender: Int = 0
+    open var genderString: String? = null
 
     /** 性別の数値を文字列に変換 */
     fun convertGenderIntToString(){
