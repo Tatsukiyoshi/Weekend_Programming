@@ -97,6 +97,13 @@ exercism download --exercise=two-fer --track=kotlin
   - [Leap](https://exercism.io/my/solutions/775889fd51284ed69f224e352242d625) **@2019/11/17**
   - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
+### Database & SQL
+- [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/06/08 <span style="color: red;">*Installed*</span> on IdeaPad
+- ノウハウ
+  - [Database関連](./sql/database.md)
+  - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
+  - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
+
 ### Python
 - [Django Tutorial](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/)
   **@2021/12/16** その３ <span style="color: red;">*finished*</span>
@@ -162,10 +169,9 @@ exercism download --exercise=two-fer --track=kotlin
   - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/05** 8章 CSVからDBへインポート <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1.2
     - Amazon Coretto 17.0.3 + 言語レベル 8
-    - [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/06/08 <span style="color: red;">*Installed*</span> on IdeaPad
+    - PostgreSQL 14.3
 
     - ノウハウ
-      - PgAdmin起動できない場合、サーバとの接続がタイムアウトしているため、タイムアウト時間を延ばす
       - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
         ```
         companion object {  // 
@@ -238,9 +244,6 @@ exercism download --exercise=two-fer --track=kotlin
     - GoBack(https://www.flaticon.com/free-icon/back-button_93634?term=back&page=1&position=6&page=1&position=6&related_id=93634&origin=search)
   - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
   - ColorDialog
-  - SQL
-    - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
-    - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
 
 #### C++
   - [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
@@ -251,13 +254,6 @@ exercism download --exercise=two-fer --track=kotlin
 
 #### Blazor
   - Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
-
-### ObjectPascal
-- Delphi
-  - CardPanelDemo
-
-- Lazarus(FreePascal) [Lazarus日本語情報トップページ](https://ja.osdn.net/projects/sfnet_lazarus/)/[Lazarus Tutorial](https://wiki.freepascal.org/Lazarus_Tutorial/ja)
-  - Project1(Press Again)
 
 ### Dart - flutter
 - Flutter 3.01 @2022/05/22 <span style="color: red;">*Updated!*</span> On ExpertBook
@@ -276,6 +272,13 @@ exercism download --exercise=two-fer --track=kotlin
   - プロジェクト作成 - cargo new --bin <プロジェクト名>
   - ビルド実行 - carg run
 - [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+
+### ObjectPascal
+- Delphi
+  - CardPanelDemo
+
+- Lazarus(FreePascal) [Lazarus日本語情報トップページ](https://ja.osdn.net/projects/sfnet_lazarus/)/[Lazarus Tutorial](https://wiki.freepascal.org/Lazarus_Tutorial/ja)
+  - Project1(Press Again)
 
 ### Swift
 - コンパイル
