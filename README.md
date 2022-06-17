@@ -203,6 +203,10 @@ exercism download --exercise=two-fer --track=kotlin
 - Svelte 3.44.3 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 
+- Prisma
+  - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
+  - [Start from scratch](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
+
 - ml5 - 日経ソフトウェア 2019年5月号
 
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
