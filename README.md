@@ -207,6 +207,9 @@ exercism download --exercise=two-fer --track=kotlin
   - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
   - [Start from scratch](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
 
+- Sequelize
+  - [Sequelizeを使用してデータベースを操作するための基本的な情報(2020.09更新）](https://qiita.com/mima_ita/items/014dcb42872f3a10855b)
+
 - ml5 - 日経ソフトウェア 2019年5月号
 
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
