@@ -17,7 +17,7 @@
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
-|2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Windows 11 <span style="color: red;">*Installed!*</span>|IdeaPad|
+|2022/06/17|Rust   |Tauri 1.0.0 on Windows 11 <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/11|Rust   |Rust 1.61.0 on Windows 11<span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/11|Rust   |React 18.1.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
