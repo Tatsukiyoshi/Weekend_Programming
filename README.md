@@ -6,7 +6,7 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/06/15|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.1.1 JdbcCursorItemReader <span style="color: red;">*finished* by Kotlin</span>|
+|2022/06/17|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.2.1 MyBatisCursorItemReader <span style="color: red;">*finished* by Kotlin</span>|
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
@@ -50,6 +50,7 @@
 - [環境アップデート](#環境アップデート)
 - [documentation](#documentation)
 - [Exercism](#exercismhttpsexercismiomytracks)
+- [Database & SQL](#database-sql)
 - [Python](#python)
 - [Kotlin](#kotlin)
 - [JavaScript](#javascript)
@@ -58,9 +59,9 @@
   - [C#](#c)
   - [C++](#c-1)
   - [Blazor](#blazor)
-- [ObjectPascal](#objectpascal)
 - [Dart - flutter](#dart-flutter)
-- [Rust on WSL 2 Ubuntu 2022.04](#rust-on-wsl-2-ubuntu-202204)
+- [Rust on WSL 2 Ubuntu 2022.04(+Windows 11)](#rust-on-wsl-2-ubuntu-202204windows-11)
+- [ObjectPascal](#objectpascal)
 - [Swift](#swift)
 - [LLVM](#llvm)
 - [Unity](#unity)
@@ -166,7 +167,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/15** 9.1.1 JdbcCursorItemReader <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/06/17** 9.2.1 MyBatisCursorItemReader <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1.2
     - Amazon Coretto 17.0.3 + 言語レベル 8
     - PostgreSQL 14.3
