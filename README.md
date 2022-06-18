@@ -6,17 +6,18 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
+|2022/06/18|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*started*</span>|
 |2022/06/18|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 10 オブジェクト指向をたしなむ <span style="color: red;">*started*</span>|
 |2022/06/17|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.2.1 MyBatisCursorItemReader <span style="color: red;">*finished* by Kotlin</span>|
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
 |2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
-|2022/01/23|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 10 ファイル <span style="color: red;">*finished*</span>|
 
 ### 環境アップデート
 |日付      |対象    |ソフトウェア|端末|
 |----------|-------|-----------|----|
+|2022/06/18|C#     |Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/17|Rust   |Tauri 1.0.0 on Windows 11 <span style="color: red;">*Updated!*</span>|IdeaPad|
 |2022/06/11|Rust   |Rust 1.61.0 on Windows 11<span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
@@ -36,13 +37,12 @@
 |2022/06/04|Java   |Apache Tomcat 10.0.20  <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/04|Java   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/) <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/02|C#     |Visual Studio 2022 17.3.0 + .NET 6 <span style="color: red;">*Installed!*</span>|IdeaPad|
 |2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
 |2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
 |2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
 
-- [VSCode拡張機能](./vscodeExtensions.md)
+#### [VSCode拡張機能](./vscodeExtensions.md)
 
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
@@ -243,11 +243,11 @@ exercism download --exercise=two-fer --track=kotlin
   - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 
 ### .NET Framework / C# / C++
-- Visual Studio 2022 17.3.0 + .NET 6 + MAUI + Android SDK Platform 31 @2022/06/06 <span style="color: red;">*Installed!*</span>
-- Visual Studio 2022 17.3.0 + .NET 6 @2022/06/02 <span style="color: red;">*Installed!*</span>
+- Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/06/18 <span style="color: red;">*Updated!*</span>
+- Visual Studio 2022 17.3.0 Preview 1.1 + .NET 6 + MAUI + Android SDK Platform 31 @2022/06/06 <span style="color: red;">*Installed!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/04/29** : Lesson 11.4 スレッド <span style="color: red;">*finished*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/06/18** : Lesson 12.1 LINQ <span style="color: red;">*finished*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
   - フリーアイコン
     - GO(https://www.flaticon.com/free-icon/go_652364)
@@ -271,7 +271,7 @@ exercism download --exercise=two-fer --track=kotlin
   - myapp - flutter demo
   - Startup namer
 
-### Rust on WSL 2 Ubuntu 2022.04(+Windows 11)
+### Rust
 - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
 - ディストリビューションのバージョンを確認する
   ```
