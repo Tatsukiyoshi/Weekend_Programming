@@ -36,6 +36,7 @@
     *   Language Support for Java by Red Hat
     *   Maven for Java
     *   Project Manager for Java
+    *   Spring Initializr Java Support
     *   Test Runner for Java
 *   Juila
 *   Kotlin

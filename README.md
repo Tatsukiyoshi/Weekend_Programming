@@ -42,6 +42,8 @@
 |2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
 |2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
 
+- [VSCode拡張機能](./vscodeExtensions.md)
+
 ## 目次
 <!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
 

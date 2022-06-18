@@ -21,6 +21,9 @@ namespace Sample2
                 lb2.Text = ih.HostName;
                 lb4.Text = ia.ToString();
             }
+            catch(System.Net.Sockets.SocketException ex) {
+                MessageBox.Show("ホストが見つかりませんでした:" + ex.Message);
+            }
             catch
             {
                 MessageBox.Show("エラーが発生しました。");
