@@ -31,6 +31,8 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsb1 = new System.Windows.Forms.ToolStripButton();
             this.tsb2 = new System.Windows.Forms.ToolStripButton();
+            this.tsb3 = new System.Windows.Forms.ToolStripButton();
+            this.tsb4 = new System.Windows.Forms.ToolStripButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.toolStrip1.SuspendLayout();
@@ -42,7 +44,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsb1,
-            this.tsb2});
+            this.tsb2,
+            this.tsb3,
+            this.tsb4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(578, 33);
@@ -68,6 +72,26 @@
             this.tsb2.Size = new System.Drawing.Size(34, 28);
             this.tsb2.Text = "←";
             this.tsb2.Click += new System.EventHandler(this.tsb2_Click);
+            // 
+            // tsb3
+            // 
+            this.tsb3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsb3.Image = global::Sample3.Properties.Resources.forward;
+            this.tsb3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb3.Name = "tsb3";
+            this.tsb3.Size = new System.Drawing.Size(34, 28);
+            this.tsb3.Text = "Forward";
+            this.tsb3.Click += new System.EventHandler(this.tsb3_Click);
+            // 
+            // tsb4
+            // 
+            this.tsb4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsb4.Image = global::Sample3.Properties.Resources.home;
+            this.tsb4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb4.Name = "tsb4";
+            this.tsb4.Size = new System.Drawing.Size(34, 28);
+            this.tsb4.Text = "Home";
+            this.tsb4.Click += new System.EventHandler(this.tsb4_Click);
             // 
             // textBox1
             // 
@@ -116,5 +140,7 @@
         private ToolStripButton tsb2;
         private TextBox textBox1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private ToolStripButton tsb3;
+        private ToolStripButton tsb4;
     }
 }

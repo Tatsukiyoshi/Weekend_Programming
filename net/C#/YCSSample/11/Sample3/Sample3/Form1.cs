@@ -63,5 +63,19 @@ namespace Sample3
                 webView21.GoBack();
             }
         }
+
+        private void tsb3_Click(object sender, EventArgs e)
+        {
+            if(webView21.CanGoForward)
+            {
+                webView21.GoForward();
+            }
+        }
+
+        private void tsb4_Click(object sender, EventArgs e)
+        {
+            // GoHome()Ç™Ç»Ç¢
+            MessageBox.Show("HomeÇ…ñﬂÇÍÇ‹ÇπÇÒÅB");
+        }
     }
 }
