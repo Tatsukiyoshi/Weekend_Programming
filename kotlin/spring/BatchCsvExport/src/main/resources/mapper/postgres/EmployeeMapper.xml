@@ -10,4 +10,14 @@
         </where>
         order by id
     </select>
+
+    <select id="findByGenderPaging" resultType="Employee">
+        select * from employee
+        <where>
+            gender = #{genderParam}
+        </where>
+        order by id
+        limit #{_pagesize}
+        offset #{_skiprows}
+    </select>
 </mapper>
