@@ -12,6 +12,7 @@
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
+|2022/05/01|Angular|[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)第3章 データバインディング <span style="color: red;">*started*</span>|
 |2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
 
 ### 環境アップデート
@@ -194,7 +195,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### JavaScript
 - Angular 14.0.1 (Node.js 16.15.1) @2022/06/09 <span style="color: red;">*Updated!*</span>on IdeaPad
-  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/05/01** 第3章 データバインディング <span style="color: red;">*started*</span>
+  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/06/20** 3.4 属性／クラス／スタイルバインディング <span style="color: red;">*finished*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
