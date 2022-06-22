@@ -1,6 +1,8 @@
 package com.programming.kotlin
 
-fun main(args: Array<String>) {
+import java.util.*
+
+fun main() {
     // プロパティと関数を、オブジェクト宣言に入れてカプセル化する（リスト：15-4）
     //val player = Player("Madrigal")
     //player.castFireball()
@@ -65,7 +67,7 @@ object Game {
         val argument = input.split(" ").getOrElse(1, { "" })
 
         // processCommand 関数を定義する（リスト：15-9）
-        fun processCommand() = when (command.toLowerCase()) {
+        fun processCommand() = when (command.lowercase(Locale.getDefault())) {
             else -> commandNotFound()
         }
 

@@ -1,13 +1,14 @@
 package com.programming.kotlin
 
 import java.io.File
+import java.util.*
 
 class Player (_name: String,
             var healthPoints: Int = 100,
             val isBlessed: Boolean,
             private val isImmortal: Boolean){
     var name = _name
-        get() = "${field.capitalize()} of $hometown"
+        get() = "${field.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }} of $hometown"
         private set(value) {
             field = value.trim()
         }
@@ -22,7 +23,7 @@ class Player (_name: String,
     constructor(name: String) : this(name,
         isBlessed = true,
         isImmortal = false) {
-            if (name.toLowerCase() == "kar") healthPoints = 40
+            if (name.lowercase(Locale.getDefault()) == "kar") healthPoints = 40
         }
 
     fun formatHealthStatus() =
