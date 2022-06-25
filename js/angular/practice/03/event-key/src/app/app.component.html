@@ -1,0 +1,9 @@
+<form>
+  <label for="key">キー入力</label>
+  <input id="key" name="key" (keydown)="show($event)" />
+</form>
+<div>キーコード：{{which}}</div>
+<!-- [Alt] [Ctrl] [Shift]が押されていない場合に非表示 -->
+<div [hidden]="!altKey">[Alt]</div>
+<div [hidden]="!ctrlKey">[Ctrl]</div>
+<div [hidden]="!shiftKey">[Shift]</div>
