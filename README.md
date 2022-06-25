@@ -16,32 +16,32 @@
 |2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
 
 ### 環境アップデート
-|日付      |対象    |ソフトウェア|端末|
-|----------|-------|-----------|----|
-|2022/06/18|C#     |Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview <span style="color: red;">*Updated!*</span>|IdeaPad|
-|2022/06/17|Rust   |Tauri 1.0.0 on Windows 11 <span style="color: red;">*Updated!*</span>|IdeaPad|
-|2022/06/11|Rust   |Rust 1.61.0 on Windows 11<span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/11|Rust   |Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/11|Rust   |React 18.1.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/09|Rust   |Rust 1.61.0 on Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/09|Rust   |Ubuntu 22.04 LTS <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/09|Python |[Python 3.10.5](https://www.python.org/downloads/) <span style="color: red;">*Updated!*</span>|IdeaPad|
-|2022/06/09|Angular|Angular 14.0.1 <span style="color: red;">*Updated!*</span>|IdeaPad|
-|2022/06/08|Kotlin |[PostgreSQL 14.3](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|IdeaPad|
-|2022/06/08|Kotlin |IntelliJ IDEA 2022.1.2 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/06|Python |[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/) <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/06|C#     |Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/06/06|Android|Android SDK Platform 31 <span style="color: red;">*Installed!*</span>|ExpertBook|
-|2022/06/05|Svelte |Svelte 3.44.3 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/05|React  |React 18.1.0 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/05|React  |Node.js 16.15.1 <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/04|Java   |Apache Tomcat 10.0.20  <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/04|Java   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/) <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/06/03|Java   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/) <span style="color: red;">*Installed!*</span>|IdeaPad|
-|2022/05/25|Flutter|Flutter 3.01 + Visual Studio 2022 17.2.2<span style="color: red;">*Downgraded!*</span>|ExpertBook|
-|2022/05/11|Android|Android Studio Chipmunk 2021.2.1 <span style="color: red;">*Updated!*</span>|ExpertBook|
-|2022/05/05|Java   |[PostgreSQL 14.2](https://www.postgresql.org/download/windows/) <span style="color: red;">*Installed*</span>|ExpertBook|
-|2022/05/04|Java   |[Spring Tool Suite 4.14.1](https://spring.io/tools) <span style="color: red;">*Installed!*</span>|ExpertBook|
+|ソフトウェア    |端末        |日付      |詳細    
+|---------------|-----------|-----------|----
+|Visual Studio  |IdeaPad    |2022/06/18|Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
+|               |ExpertBook |2022/06/06|Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI
+|               |           |2022/06/06|Android SDK Platform 31
+|Kotlin         |IdeaPad    |2022/06/08|IntelliJ IDEA 2022.1.2
+|               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
+|Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
+|               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
+|               |           |2022/06/04|Apache Tomcat 10.0.20
+|               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
+|               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
+|React          |IdeaPad    |2022/06/05|React 18.1.0
+|               |           |2022/06/05|Node.js 16.15.1
+|Svelte         |IdeaPad    |2022/06/05|Svelte 3.44.3
+|Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
+|Android Studio |ExpertBook |2022/05/11|Android Studio Chipmunk 2021.2.1
+|Flutter        |ExpertBook |2022/05/25|Flutter 3.01
+|Rust(Windows)  |IdeaPad    |2022/06/11|Rust 1.61.0 on Windows 11
+|               |           |2022/06/17|Tauri 1.0.0 on Windows 11
+|Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
+|               |           |2022/06/09|Rust 1.61.0 on Ubuntu 22.04 LTS
+|               |           |2022/06/11|Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS
+|               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
+|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
+|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
@@ -51,6 +51,7 @@
 <!-- code_chunk_output -->
 - [演習進捗](#演習進捗)
 - [環境アップデート](#環境アップデート)
+  - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
 - [documentation](#documentation)
 - [Exercism](#exercismhttpsexercismiomytracks)
 - [Database & SQL](#database-sql)
@@ -63,7 +64,7 @@
   - [C++](#c-1)
   - [Blazor](#blazor)
 - [Dart - flutter](#dart-flutter)
-- [Rust on WSL 2 Ubuntu 2022.04(+Windows 11)](#rust-on-wsl-2-ubuntu-202204windows-11)
+- [Rust](#rust)
 - [ObjectPascal](#objectpascal)
 - [Swift](#swift)
 - [LLVM](#llvm)
