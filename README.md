@@ -6,8 +6,8 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
+|2022/06/25|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*finished*</span>|
 |2022/06/19|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.2 MyBatis <span style="color: red;">*finished* by Kotlin</span>|
-|2022/06/18|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*started*</span>|
 |2022/06/18|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 10 オブジェクト指向をたしなむ <span style="color: red;">*started*</span>|
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
@@ -248,7 +248,7 @@ exercism download --exercise=two-fer --track=kotlin
 - Visual Studio 2022 17.3.0 Preview 1.1 + .NET 6 + MAUI + Android SDK Platform 31 @2022/06/06 <span style="color: red;">*Installed!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/06/18** : Lesson 12.1 LINQ <span style="color: red;">*finished*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/06/25** : Lesson 12 データの利用 <span style="color: red;">*finished*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
   - フリーアイコン
     - GO(https://www.flaticon.com/free-icon/go_652364)
