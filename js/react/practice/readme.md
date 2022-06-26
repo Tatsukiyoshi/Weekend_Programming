@@ -1,4 +1,8 @@
 *   モダンJavaScriptの基本から始めるReact実践の教科書
+    *   プロジェクト作成
+        ```
+        npx create-react-app <プロジェクト名>
+        ```
     *   reactのトラブルシューティング
         *   'React' must be in scope when using JSX
             *   先頭に下記一行を追加する
