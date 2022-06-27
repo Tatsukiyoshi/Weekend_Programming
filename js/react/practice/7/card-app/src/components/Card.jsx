@@ -12,14 +12,12 @@ const style = {
     alignItems: "center"
 };
 
-export const Card = props => {
-    // propsとして管理者フラグを受け取る
-    const { isAdmin } = props;
-
+// シンプルになった！
+export const Card = () => {
     return (
         <div style={style}>
             <p>山田太郎</p>
-            <EditButton isAdmin={isAdmin} />
+            <EditButton />
         </div>
     );
 };
