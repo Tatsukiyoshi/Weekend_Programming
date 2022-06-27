@@ -6,6 +6,7 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
+|2022/06/27|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 7 グローバルなState管理 <span style="color: red;">*finished*</span>|
 |2022/06/26|Angular|[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|第3章 データバインディング <span style="color: red;">*finished*</span>|
 |2022/06/25|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*finished*</span>|
 |2022/06/19|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.2 MyBatis <span style="color: red;">*finished* by Kotlin</span>|
@@ -13,7 +14,6 @@
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
-|2022/04/10|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>|
 
 ### 環境アップデート
 |ソフトウェア    |端末        |日付      |詳細    
@@ -201,7 +201,7 @@ exercism download --exercise=two-fer --track=kotlin
   - 日経ソフトウェア 2019年5月号
 
 - React 18.1.0 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
-  - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/04/10** Chapter 6 再レンダリングの仕組みと最適化 <span style="color: red;">*finished*</span>
+  - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/06/27** Chapter 7 グローバルなState管理 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 
