@@ -1,5 +1,5 @@
 {
-  "name": "ExpoSample",
+  "name": "expo_sample",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,19 +8,19 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "expo": "34.0.4",
-    "react": "16.8.6",
-    "react-native": "0.60.5"
+    "expo": "45.0.6",
+    "react": "17.0.0",
+    "react-native": "0.69.0"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/runtime": "7.5.5",
-    "@react-native-community/eslint-config": "0.0.3",
-    "babel-jest": "24.9.0",
+    "@babel/core": "7.18.6",
+    "@babel/runtime": "7.18.6",
+    "@react-native-community/eslint-config": "3.0.3",
+    "babel-jest": "28.1.1",
     "eslint": "6.2.1",
-    "jest": "24.9.0",
-    "metro-react-native-babel-preset": "0.54.1",
-    "react-test-renderer": "16.8.6"
+    "jest": "28.1.1",
+    "metro-react-native-babel-preset": "0.71.2",
+    "react-test-renderer": "17.0.0"
   },
   "jest": {
     "preset": "react-native"
