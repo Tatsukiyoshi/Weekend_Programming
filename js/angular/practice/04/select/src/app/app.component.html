@@ -1,0 +1,6 @@
+<ul>
+  <!-- 配列membersの内容を順に出力 -->
+  <li *ngFor="let m of members">
+    {{m.sex | i18nSelect :messages }}は{{m.name}}です。
+  </li>
+</ul>
