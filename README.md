@@ -196,7 +196,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### JavaScript
 - Angular 14.0.1 (Node.js 16.15.1) @2022/06/09 <span style="color: red;">*Updated!*</span>on IdeaPad
-  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/06/26** 3.6 双方向バインディング <span style="color: red;">*finished*</span>
+  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/06/29** 4.1 パイプ <span style="color: red;">*finished*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
