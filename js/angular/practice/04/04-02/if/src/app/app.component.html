@@ -1,0 +1,16 @@
+<form>
+  <label for="show">表示／非表示：</label>
+  <input id="show" name="show" type="checkbox"
+    [(ngModel)]="show" />
+</form>
+<div *ngIf="show; then trueContent; else elseContent">
+  この部分は無視される！
+</div>
+<ng-template #trueContent>
+  <p>WINGSプロジェクトは、当初、ライター山田祥寛のサポート（検証・査読・校正作業）集団という
+  位置づけで開始されたコミュニティでしたが、2002年12月にメンバを大幅に増強し、
+  本格的な執筆者プロジェクトとして生まれ変わりました。</p>
+</ng-template>
+<ng-template #elseContent>
+  <h3 style="color:red">非表示中です。</h3>
+</ng-template>
