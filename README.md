@@ -6,7 +6,7 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|Chapter 9 カスタムフック <span style="color: red;">*finished*</span>|
+|2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)| <span style="color: red;">*finished*</span>|
 |2022/06/26|Angular|[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|第3章 データバインディング <span style="color: red;">*finished*</span>|
 |2022/06/25|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*finished*</span>|
 |2022/06/19|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9.2 MyBatis <span style="color: red;">*finished* by Kotlin</span>|
@@ -28,7 +28,7 @@
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
 |               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
-|React          |IdeaPad    |2022/06/05|React 18.1.0
+|React          |IdeaPad    |2022/06/05|React 18.2.0
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/06/05|Svelte 3.44.3
 |Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
@@ -200,8 +200,8 @@ exercism download --exercise=two-fer --track=kotlin
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
-- React 18.1.0 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
-  - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/07/02** Chapter 9 カスタムフック <span style="color: red;">*finished*</span>
+- React 18.2.0 (Node.js 16.15.1) @2022/07/02 <span style="color: red;">*Updated!*</span>on IdeaPad
+  - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/07/02** Appendix React × TypeScript実践演習 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 
