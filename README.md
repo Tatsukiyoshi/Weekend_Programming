@@ -34,7 +34,7 @@
 |Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
 |Android Studio |ExpertBook |2022/05/11|Android Studio Chipmunk 2021.2.1
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
-|Rust(Windows)  |IdeaPad    |2022/06/11|Rust 1.61.0 on Windows 11
+|Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/06/17|Tauri 1.0.0 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
 |               |           |2022/06/09|Rust 1.61.0 on Ubuntu 22.04 LTS
