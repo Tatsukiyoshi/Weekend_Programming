@@ -1,13 +1,18 @@
 package com.example.demo.domain.model
 
 import lombok.Data
+import javax.persistence.Entity
+import javax.persistence.Id
 
 @Data
+@Entity
 open class Employee {
+    @Id
     open var id: Int = 0
     open var name: String? = null
     open var age: Int = 0
     open var gender: Int = 0
+    @Transient
     open var genderString: String? = null
 
     /** 性別の数値を文字列に変換 */
