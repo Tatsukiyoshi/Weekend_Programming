@@ -205,8 +205,11 @@ exercism download --exercise=two-fer --track=kotlin
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
   - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
 
-- Svelte 3.44.3 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span>on IdeaPad
+- Svelte 3.44.3 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span> on IdeaPad
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
+
+- [Deno](https://deno.land/) 1.23.3 @2022/07/07 <span style="color: red;">*Installed!*</span> on IdeaPad
+  - [試してみた](./js/deno.md)
 
 - Prisma
   - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
