@@ -32,7 +32,7 @@
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/06/05|Svelte 3.44.3
 |Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
-|Android Studio |ExpertBook |2022/05/11|Android Studio Chipmunk 2021.2.1
+|Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/06/17|Tauri 1.0.0 on Windows 11
@@ -152,9 +152,9 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Chipmunk | 2021.2.1 @2022/05/11 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Android Studio Chipmunk | 2021.2.1 Patch 1 @2022/07/09 <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
-  Build #AI-212.5712.43.2112.8512546, built on April 29, 2022
+  Build #AI-212.5712.43.2112.8609683, built on May 19, 2022
   Runtime version: 11.0.12+7-b1504.28-7817840 amd64
   VM: OpenJDK 64-Bit Server VM by Oracle Corporation
   Windows 10 10.0
@@ -162,7 +162,7 @@ exercism download --exercise=two-fer --track=kotlin
   Memory: 1280M
   Cores: 4
   Registry: external.system.auto.import.disabled=true
-  Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.6.21-release-334-AS5457.46), io.flutter (67.1.2)
+  Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (69.0.2)
   ```
 - Chipmunk 対応
   - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
