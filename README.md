@@ -35,10 +35,10 @@
 |Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
-|               |           |2022/06/17|Tauri 1.0.0 on Windows 11
+|               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
-|               |           |2022/06/09|Rust 1.61.0 on Ubuntu 22.04 LTS
-|               |           |2022/06/11|Tauri 1.0.0-rc.14 on Ubuntu 22.04 LTS
+|               |           |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
+|               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
 |               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
