@@ -18,9 +18,9 @@
 ### 環境アップデート
 |ソフトウェア    |端末        |日付      |詳細    
 |---------------|-----------|-----------|----
-|Visual Studio  |IdeaPad    |2022/06/18|Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
-|               |ExpertBook |2022/06/06|Visual Studio Community 2022 17.3.0 + .NET 6 + MAUI
-|               |           |2022/06/06|Android SDK Platform 31
+|Visual Studio  |IdeaPad    |2022/06/18|Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
+|               |ExpertBook |2022/07/09|Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview + MAUI
+|               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/07/05|IntelliJ IDEA 2022.1.3
 |               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
 |Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
@@ -50,6 +50,7 @@
 
 <!-- code_chunk_output -->
 - [演習進捗](#演習進捗)
+- [演習進捗](#演習進捗)
 - [環境アップデート](#環境アップデート)
   - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
 - [documentation](#documentation)
@@ -68,6 +69,7 @@
 - [ObjectPascal](#objectpascal)
 - [Swift](#swift)
 - [LLVM](#llvm)
+- [Unity](#unity)
 - [Unity](#unity)
 <!-- /code_chunk_output -->
 
@@ -248,8 +250,11 @@ exercism download --exercise=two-fer --track=kotlin
   - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 
 ### .NET Framework / C# / C++
-- Visual Studio 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/06/18 <span style="color: red;">*Updated!*</span>
-- Visual Studio 2022 17.3.0 Preview 1.1 + .NET 6 + MAUI + Android SDK Platform 31 @2022/06/06 <span style="color: red;">*Installed!*</span>
+- For .NET Core Preview
+  - Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/06/18 <span style="color: red;">*Updated!*</span>
+- For MAUI(Windows/Android) 
+  - Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview + 
+    Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 @2022/07/09 <span style="color: red;">*Installed!*</span>
 
 #### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/06/25** : Lesson 12 データの利用 <span style="color: red;">*finished*</span>
