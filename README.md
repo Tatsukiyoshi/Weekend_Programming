@@ -50,7 +50,6 @@
 
 <!-- code_chunk_output -->
 - [演習進捗](#演習進捗)
-- [演習進捗](#演習進捗)
 - [環境アップデート](#環境アップデート)
   - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
 - [documentation](#documentation)
@@ -69,7 +68,6 @@
 - [ObjectPascal](#objectpascal)
 - [Swift](#swift)
 - [LLVM](#llvm)
-- [Unity](#unity)
 - [Unity](#unity)
 <!-- /code_chunk_output -->
 
