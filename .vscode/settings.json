@@ -5,16 +5,6 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "spring",
-            "database": "spring",
-            "username": "spring",
-            "password": "password"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
             "name": "batch",
             "username": "spring",
             "password": "password",
@@ -29,6 +19,16 @@
             "name": "readonly_user",
             "database": "batch",
             "username": "readonly_user"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "prisma",
+            "database": "prismadb",
+            "username": "prisma"
         }
     ]
 }
