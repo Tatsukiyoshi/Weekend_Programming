@@ -255,7 +255,7 @@ exercism download --exercise=two-fer --track=kotlin
     Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 @2022/07/09 <span style="color: red;">*Installed!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/06/25** : Lesson 12 データの利用 <span style="color: red;">*finished*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/07/15** : Lesson 13 アプリケーションの作成 <span style="color: red;">*started*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
   - フリーアイコン
     - GO(https://www.flaticon.com/free-icon/go_652364)
