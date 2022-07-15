@@ -1,4 +1,7 @@
+using System.Runtime.Serialization;
+using System;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml;
 
 namespace DrawApp
 {
@@ -26,11 +29,17 @@ namespace DrawApp
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                BinaryFormatter bf = new();
                 FileStream fs = new(openFileDialog.FileName, FileMode.Open, FileAccess.Read);
 
                 shapeList?.Clear();
-                shapeList = (List<Shape>)bf.Deserialize(fs);
+
+                XmlDictionaryReader reader = XmlDictionaryReader.CreateTextReader(fs, new XmlDictionaryReaderQuotas());
+                DataContractSerializer ser = new(typeof(List<Shape>));
+
+                // Deserialize the data and read it from the instance.
+                shapeList = (List<Shape>?)ser.ReadObject(reader, true);
+                reader.Close();
+
                 fs.Close();
                 this.Invalidate();
             }
@@ -45,9 +54,9 @@ namespace DrawApp
 
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                BinaryFormatter bf = new();
                 FileStream fs = new(saveFileDialog.FileName, FileMode.OpenOrCreate, FileAccess.Write);
-                bf.Serialize(fs, shapeList);
+                DataContractSerializer ser = new(typeof(List<Shape>));
+                ser.WriteObject(fs, shapeList);
                 fs.Close();
             }
         }

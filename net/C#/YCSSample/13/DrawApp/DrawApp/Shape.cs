@@ -1,14 +1,26 @@
-﻿namespace DrawApp
+﻿using Microsoft.VisualBasic;
+using System.Runtime.Serialization;
+
+namespace DrawApp
 {
-    [Serializable]
+    [KnownType(typeof(Shape))]
+    [DataContract]
     abstract class Shape
     {
         public static int RECT = 0;
         public static int OVAL = 1;
         public static int LINE = 2;
 
-        protected int x1, y1, x2, y2;
-        protected Color color;
+        [DataMember]
+        public int x1;
+        [DataMember]
+        public int y1;
+        [DataMember]
+        public int x2;
+        [DataMember]
+        public int y2;
+        [DataMember]
+        public Color color;
 
         abstract public void Draw(Graphics g);
 

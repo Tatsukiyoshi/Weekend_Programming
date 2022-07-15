@@ -1,13 +1,16 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DrawApp
 {
-    [Serializable]
-    internal class Line : Shape
+    [KnownType(typeof(Line))]
+    [DataContract]
+    class Line : Shape
     {
         public override void Draw(Graphics g)
         {
