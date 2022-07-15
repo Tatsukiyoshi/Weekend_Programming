@@ -18,7 +18,7 @@
 ### 環境アップデート
 |ソフトウェア    |端末        |日付      |詳細    
 |---------------|-----------|-----------|----
-|Visual Studio  |IdeaPad    |2022/06/18|Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
+|Visual Studio  |IdeaPad    |2022/07/15|Visual Studio Community 2022 17.3.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
 |               |ExpertBook |2022/07/09|Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/07/05|IntelliJ IDEA 2022.1.3
@@ -249,7 +249,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### .NET Framework / C# / C++
 - For .NET Core Preview
-  - Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/06/18 <span style="color: red;">*Updated!*</span>
+  - Visual Studio Community 2022 17.3.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/07/15 <span style="color: red;">*Updated!*</span>
 - For MAUI(Windows/Android) 
   - Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview + 
     Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 @2022/07/09 <span style="color: red;">*Installed!*</span>
