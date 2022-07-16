@@ -4,6 +4,9 @@ using System.Runtime.Serialization;
 namespace DrawApp
 {
     [KnownType(typeof(Shape))]
+    [KnownType(typeof(Rect))]
+    [KnownType(typeof(Oval))]
+    [KnownType(typeof(Line))]
     [DataContract]
     abstract class Shape
     {
