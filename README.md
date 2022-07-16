@@ -6,10 +6,10 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
+|2022/07/16|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)| <span style="color: red;">*finished*</span>|
 |2022/07/05|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9章 DBからCSVへエクスポート <span style="color: red;">*finished* by Kotlin</span>|
 |2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)| <span style="color: red;">*finished*</span>|
 |2022/06/26|Angular|[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|第3章 データバインディング <span style="color: red;">*finished*</span>|
-|2022/06/25|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|Lesson 12 データの利用 <span style="color: red;">*finished*</span>|
 |2022/06/18|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 10 オブジェクト指向をたしなむ <span style="color: red;">*started*</span>|
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
@@ -255,7 +255,7 @@ exercism download --exercise=two-fer --track=kotlin
     Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 @2022/07/09 <span style="color: red;">*Installed!*</span>
 
 #### C#
-  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/07/15** : Lesson 13 アプリケーションの作成 <span style="color: red;">*started*</span>
+  - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/07/16** : Lesson 13 アプリケーションの作成 <span style="color: red;">*finished*</span>
     - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
   - フリーアイコン
     - GO(https://www.flaticon.com/free-icon/go_652364)
