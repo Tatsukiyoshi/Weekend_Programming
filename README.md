@@ -30,7 +30,7 @@
 |               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
 |React          |IdeaPad    |2022/06/05|React 18.2.0
 |               |           |2022/06/05|Node.js 16.15.1
-|Svelte         |IdeaPad    |2022/06/05|Svelte 3.44.3
+|Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
 |Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
