@@ -6,7 +6,7 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/07/17|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 10 オブジェクト指向をたしなむ <span style="color: red;">*finished*</span>|
+|2022/07/17|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 11 スレッドセーフをたしなむ <span style="color: red;">*finished*</span>|
 |2022/07/16|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)| <span style="color: red;">*finished*</span>|
 |2022/07/05|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|9章 DBからCSVへエクスポート <span style="color: red;">*finished* by Kotlin</span>|
 |2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)| <span style="color: red;">*finished*</span>|
@@ -232,17 +232,17 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/06/03 <span style="color: red;">*Updated!*</span>
+- [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
 - [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
   postgres/pgsuper
-- [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
-- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/06/03 <span style="color: red;">*Updated!*</span>
 
 - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/07** 6章 バッチ実行 <span style="color: red;">*finished*</span>
 
 - [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) **@2022/05/04** 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
-- [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2022/07/17** Chapter 10 オブジェクト指向をたしなむ<span style="color: red;">*finished*</span>
+- [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2022/07/17** Chapter 11 スレッドセーフをたしなむ<span style="color: red;">*finished*</span>
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/06/04** : 3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>
