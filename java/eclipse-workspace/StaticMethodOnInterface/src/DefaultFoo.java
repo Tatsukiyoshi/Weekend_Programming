@@ -1,8 +1,8 @@
 
-public class DefaultFoo implements Foo {
+class DefaultFoo implements Foo {
 	private String message;
 
-	public DefaultFoo(String message) {
+	DefaultFoo(String message) {
 		this.message = message;
 	}
 	
