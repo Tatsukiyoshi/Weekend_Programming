@@ -1,0 +1,37 @@
+@startuml Adapter1
+
+class Adaptee1 {
+    + oldMethod()
+}
+
+interface Target1 {
+    + requireMethod()
+}
+
+class Adapter1 {
+    + requireMethod()
+}
+
+Adapter1 ..|> Target1
+Adapter1 --|> Adaptee1
+
+@enduml
+
+@startuml Adapter2
+
+class Adaptee2 {
+    + oldMethod()
+}
+
+class Target2 {
+    + requireMethod()
+}
+
+class Adapter2 {
+    + requireMethod()
+}
+
+Adapter2 o--> Adaptee2
+Adapter2 --> Target2
+
+@enduml

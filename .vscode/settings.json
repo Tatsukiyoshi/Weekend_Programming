@@ -30,5 +30,6 @@
             "database": "prismadb",
             "username": "prisma"
         }
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

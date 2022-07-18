@@ -242,7 +242,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 - [Spring解体新書（第２版）](https://www.amazon.co.jp/gp/product/B08XPBPH9C/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) **@2022/05/04** 3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
-- [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2022/07/17** Chapter 11 スレッドセーフをたしなむ<span style="color: red;">*finished*</span>
+- [Java本格入門](https://gihyo.jp/book/2017/978-4-7741-8909-3) **@2022/07/17** Chapter 12-3 構造に関するパターン <span style="color: red;">*finished*</span>
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
 - [サーブレット＆JSP入門](https://sukkiri.jp/books/sukkiri_servlet2) **@2022/06/04** : 3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>

@@ -1,0 +1,23 @@
+@startuml Composite
+
+class Leaf {
+    + operation()
+}
+
+class Composite {
+    + add()
+    + remove()
+    + operation()
+}
+
+class Component {
+    + add()
+    + remove()
+    + operation()
+}
+
+Leaf --|> Component
+Composite --|> Component
+Composite "1" o--> "*" Component
+
+@enduml
