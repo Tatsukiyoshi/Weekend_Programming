@@ -1,0 +1,33 @@
+@startuml Observer
+
+class Subject {
+    - observerList
+    + addObserver()
+    + notifyObserver()
+    + removeObserver()
+    + done()
+}
+
+class ConcreteSubject1 {
+    + done()
+}
+
+class ConcreteSubject2 {
+    + done()
+}
+
+class Observer {
+    + update()
+}
+
+class ConcreteObserver {
+    + update
+}
+
+ConcreteSubject1 --|> Subject
+ConcreteSubject2 --|> Subject
+ConcreteObserver --|> Observer
+
+Subject o--> Observer
+
+@enduml
