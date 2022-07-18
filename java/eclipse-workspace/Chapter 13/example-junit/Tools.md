@@ -33,3 +33,5 @@
 *   FindBugs
     -   mvn clean package siteを実行すると、target\site\ディレクトリ配下にHTMLファイルが生成される。
 
+*   Jenkins
+    -   2.346.2のインストール時にローカルシステムでの実行を選択するも、開始できない模様。
