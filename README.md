@@ -23,6 +23,7 @@
 |               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/07/23|IntelliJ IDEA 2022.1.4
 |               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
+|               |           |2022/07/23|Amazon Coretto 17.0.4
 |Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
@@ -171,9 +172,9 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/23** 11.2.2 Chunk <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/23** 11.3.1 Tasklet <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1.4
-    - Amazon Coretto 17.0.3 + 言語レベル 8
+    - Amazon Coretto 17.0.4 + 言語レベル 8
     - PostgreSQL 14.3
 
     - ノウハウ
