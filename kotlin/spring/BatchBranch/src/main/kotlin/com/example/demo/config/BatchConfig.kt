@@ -7,6 +7,8 @@ import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
+import org.springframework.batch.core.job.flow.FlowExecutionStatus
+import org.springframework.batch.core.job.flow.JobExecutionDecider
 import org.springframework.batch.core.launch.support.RunIdIncrementer
 import org.springframework.batch.core.step.tasklet.Tasklet
 import org.springframework.beans.factory.annotation.Autowired
@@ -41,6 +43,13 @@ class BatchConfig {
     @Qualifier("TaskletStepListener")
     private lateinit var taskletStepListener: TaskletStepListener
 
+    @Autowired
+    @Qualifier("RandomTasklet")
+    private lateinit var randomTasklet: Tasklet
+
+    @Autowired
+    private lateinit var sampleDecider: JobExecutionDecider
+
     /** FirstStepを生成 */
     @Bean
     fun firstStep(): Step {
@@ -66,6 +75,15 @@ class BatchConfig {
             .build()
     }
 
+    /** RandomStepを生成 */
+    @Bean
+    fun randomStep(): Step {
+        return stepBuilderFactory.get("RandomStep")     // Builderの取得
+            .tasklet(randomTasklet)                     // Taskletのセット
+            .listener(taskletStepListener)              // listener
+            .build()                                    // Stepの生成
+    }
+
     /** Taskletの分岐Jobを生成 */
     @Bean
     fun taskletBranchJob(): Job {
@@ -79,5 +97,22 @@ class BatchConfig {
             .to(failStep())
             .end()
             .build()
+    }
+
+    /** RandomTaskletの分岐Jobを生成 */
+    @Bean
+    fun randomTaskletBranchJob(): Job {
+        return jobBuilderFactory.get("RandomTaskletBranchJob")
+            .incrementer(RunIdIncrementer())
+            .start(randomStep())    // 最初のStep
+            .next(sampleDecider)    // Deciderへ
+            .from(sampleDecider)    // Deciderへ戻る
+            .on(FlowExecutionStatus.COMPLETED.name)
+            .to(successStep())
+            .from(sampleDecider)    // Deciderへ戻る
+            .on(FlowExecutionStatus.FAILED.name)
+            .to(failStep())
+            .end()                  // 分岐終了
+            .build()                // Jobの生成
     }
 }
