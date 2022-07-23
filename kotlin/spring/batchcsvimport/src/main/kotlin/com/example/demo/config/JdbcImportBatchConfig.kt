@@ -42,18 +42,18 @@ class JdbcImportBatchConfig: BaseConfig() {
     /** Stepの生成(JDBC) */
     @Bean
     fun csvImportJdbcStep(): Step {
-        return this.stepBuilderFactory!!.get("CsvImportJdbcStep")
+        return this.stepBuilderFactory.get("CsvImportJdbcStep")
             .chunk<Employee, Employee>(10)
-            .reader(this.csvReader()).listener(readListener!!)
-            .processor(compositeProcessor()).listener(processListener!!)
-            .writer(this.jdbcWriter()).listener(writeListener!!)
+            .reader(this.csvReader()).listener(readListener)
+            .processor(compositeProcessor()).listener(processListener)
+            .writer(this.jdbcWriter()).listener(writeListener)
             .build()
     }
 
     /** Jobの生成(JDBC) */
     @Bean("JdbcJob")
     fun csvImportJdbcJob(): Job? {
-        return this.jobBuilderFactory!!.get("CsvImportJdbcJob")
+        return this.jobBuilderFactory.get("CsvImportJdbcJob")
             .incrementer(RunIdIncrementer())
             .start(csvImportJdbcStep())
             .build()

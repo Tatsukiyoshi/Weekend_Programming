@@ -29,20 +29,20 @@ class JpaImportBatchConfig : BaseConfig() {
     /** Stepの生成(JPA) */
     @Bean
     fun csvImportJpaStep(): Step {
-        return this.stepBuilderFactory?.get("CsvImportJpaStep")
-            ?.chunk<Employee, Employee>(10)
-            ?.reader(csvReader())?.listener(this.readListener!!)
-            ?.processor(compositeProcessor())?.listener(this.processListener!!)
-            ?.writer(jpaWriter())?.listener(this.writeListener!!)
-            ?.build()!!
+        return this.stepBuilderFactory.get("CsvImportJpaStep")
+            .chunk<Employee, Employee>(10)
+            .reader(csvReader()).listener(this.readListener)
+            .processor(compositeProcessor()).listener(this.processListener)
+            .writer(jpaWriter()).listener(this.writeListener)
+            .build()
     }
 
     /** Jobの生成(JPA) */
     @Bean("JpaJob")
     fun csvImportJpaJob(): Job {
-        return this.jobBuilderFactory?.get("CsvImportJpaJob")
-            ?.incrementer(RunIdIncrementer())
-            ?.start(csvImportJpaStep())
-            ?.build()!!
+        return this.jobBuilderFactory.get("CsvImportJpaJob")
+            .incrementer(RunIdIncrementer())
+            .start(csvImportJpaStep())
+            .build()
     }
 }

@@ -28,21 +28,21 @@ class MyBatisImportBatchConfig : BaseConfig() {
 
     /** Stepの生成(MyBatis) */
     @Bean
-    fun csvImportMybatisStep(): Step? {
-        return this.stepBuilderFactory?.get("CsvImportMybatisStep")
-            ?.chunk<Employee, Employee>(10)
-            ?.reader(csvReader())?.listener(this.readListener!!)
-            ?.processor(compositeProcessor())?.listener(this.processListener!!)
-            ?.writer(mybatisWriter())?.listener(this.writeListener!!)
-            ?.build()
+    fun csvImportMybatisStep(): Step {
+        return this.stepBuilderFactory.get("CsvImportMybatisStep")
+            .chunk<Employee, Employee>(10)
+            .reader(csvReader()).listener(this.readListener)
+            .processor(compositeProcessor()).listener(this.processListener)
+            .writer(mybatisWriter()).listener(this.writeListener)
+            .build()
     }
 
     /** Jobの生成(MyBatis) */
     @Bean("MybatisJob")
     fun csvImportMybatisJob(): Job? {
-        return this.jobBuilderFactory?.get("CsvImportMybatisJob")
-            ?.incrementer(RunIdIncrementer())
-            ?.start(csvImportMybatisStep()!!)
-            ?.build()
+        return this.jobBuilderFactory.get("CsvImportMybatisJob")
+            .incrementer(RunIdIncrementer())
+            .start(csvImportMybatisStep())
+            .build()
     }
 }

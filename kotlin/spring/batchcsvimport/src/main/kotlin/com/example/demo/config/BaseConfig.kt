@@ -23,35 +23,35 @@ import java.nio.charset.StandardCharsets
 @EnableBatchProcessing
 abstract class BaseConfig {
     @Autowired
-    protected var jobBuilderFactory: JobBuilderFactory? = null
+    protected lateinit var jobBuilderFactory: JobBuilderFactory
 
     @Autowired
-    protected var stepBuilderFactory: StepBuilderFactory? = null
+    protected lateinit var stepBuilderFactory: StepBuilderFactory
 
     /** 性別の文字列を数値に変換するProcessor */
     @Autowired
     @Qualifier("GenderConvertProcessor")
-    protected var genderConvertProcessor: ItemProcessor<Employee, Employee>? = null
+    protected lateinit var genderConvertProcessor: ItemProcessor<Employee, Employee>
 
     /** データの存在をチェックするProcessor */
     @Autowired
     @Qualifier("ExistsCheckProcessor")
-    protected var existsCheckProcessor: ItemProcessor<Employee, Employee>? = null
+    protected lateinit var existsCheckProcessor: ItemProcessor<Employee, Employee>
 
     /** ReadListener */
     @Autowired
-    protected var readListener: ItemReadListener<Employee>? = null
+    protected lateinit var readListener: ItemReadListener<Employee>
 
     /** ProcessListener */
     @Autowired
-    protected var processListener: ItemProcessListener<Employee, Employee>? = null
+    protected lateinit var processListener: ItemProcessListener<Employee, Employee>
 
     /** WriteListener */
     @Autowired
-    protected var writeListener: ItemWriteListener<Employee>? = null
+    protected lateinit var writeListener: ItemWriteListener<Employee>
 
     @Autowired
-    private var property: SampleProperty? = null
+    private lateinit var property: SampleProperty
 
     /** csvファイルのReader */
     @Bean
@@ -63,7 +63,7 @@ abstract class BaseConfig {
         // ファイル読み込み設定
         return FlatFileItemReaderBuilder<Employee>()
             .name("employeeCsvReader")
-            .resource(ClassPathResource(property?.csvPath.toString()))
+            .resource(ClassPathResource(property.csvPath.toString()))
             .linesToSkip(1)
             .encoding(StandardCharsets.UTF_8.name())
             .delimited()
