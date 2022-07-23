@@ -21,7 +21,7 @@
 |Visual Studio  |IdeaPad    |2022/07/15|Visual Studio Community 2022 17.3.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
 |               |ExpertBook |2022/07/09|Visual Studio Community 2022 17.3.0 Preview 2.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
-|Kotlin         |IdeaPad    |2022/07/05|IntelliJ IDEA 2022.1.3
+|Kotlin         |IdeaPad    |2022/07/23|IntelliJ IDEA 2022.1.4
 |               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
 |Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
@@ -171,8 +171,8 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/05** 9.3.2 JpaPagingItemReader <span style="color: red;">*finished*</span>
-    - Intellij IDEA 2022.1.3
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/23** 11.2.2 Chunk <span style="color: red;">*finished*</span>
+    - Intellij IDEA 2022.1.4
     - Amazon Coretto 17.0.3 + 言語レベル 8
     - PostgreSQL 14.3
 
