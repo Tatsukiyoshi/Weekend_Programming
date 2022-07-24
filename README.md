@@ -19,32 +19,58 @@
 |ソフトウェア    |端末        |日付      |詳細    
 |---------------|-----------|-----------|----
 |Visual Studio  |IdeaPad    |2022/07/24|Visual Studio Community 2022 17.3.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
-|^              |ExpertBook |2022/07/24|Visual Studio Community 2022 17.3.0 Preview 4.0 + .NET 6.0.400 Preview + MAUI
-|^              |^          |2022/07/09|Android SDK Platform 31
+|               |ExpertBook |2022/07/24|Visual Studio Community 2022 17.3.0 Preview 4.0 + .NET 6.0.400 Preview + MAUI
+|               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/07/23|IntelliJ IDEA 2022.1.4
-|^              |^          |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
-|^              |^          |2022/07/23|Amazon Coretto 17.0.4
+|               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
+|               |           |2022/07/23|Amazon Coretto 17.0.4
 |Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
-|^              |^          |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
-|^              |^          |2022/06/04|Apache Tomcat 10.0.20
-|^              |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
-|^              |^          |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
+|               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
+|               |           |2022/06/04|Apache Tomcat 10.0.20
+|               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
+|               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
 |React          |IdeaPad    |2022/06/05|React 18.2.0
-|^              |^          |2022/06/05|Node.js 16.15.1
+|               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/06/09|Angular 14.0.1
 |Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
-|^              |^          |2022/07/09|Tauri 1.0.3 on Windows 11
+|               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
-|^              |^          |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
-|^              |^          |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
-|^              |^          |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
+|               |           |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
+|               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
+|               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
-|^              |^          |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
+|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
+
+## 目次
+<!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+- [演習進捗](#演習進捗)
+- [環境アップデート](#環境アップデート)
+  - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
+- [documentation](#documentation)
+- [Exercism](#exercismhttpsexercismiomytracks)
+- [Database & SQL](#database-sql)
+- [Python](#python)
+- [Kotlin](#kotlin)
+- [JavaScript](#javascript)
+- [Java](#java)
+- [.NET Framework / C# / C++](#net-framework-c-c)
+  - [C#](#c)
+  - [C++](#c-1)
+  - [Blazor](#blazor)
+- [Dart - flutter](#dart-flutter)
+- [Rust](#rust)
+- [ObjectPascal](#objectpascal)
+- [Swift](#swift)
+- [LLVM](#llvm)
+- [Unity](#unity)
+<!-- /code_chunk_output -->
 
 --- 
 ### documentation
