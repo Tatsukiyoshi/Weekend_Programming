@@ -29,6 +29,16 @@
             "name": "prisma",
             "database": "prismadb",
             "username": "prisma"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "batch2",
+            "database": "batch2",
+            "username": "spring",
+            "password": "password"
         }
     ],
     "java.configuration.updateBuildConfiguration": "automatic"
