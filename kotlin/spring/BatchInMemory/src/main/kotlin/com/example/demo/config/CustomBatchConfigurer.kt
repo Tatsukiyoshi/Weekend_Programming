@@ -2,11 +2,11 @@ package com.example.demo.config
 
 import org.springframework.batch.core.configuration.annotation.BatchConfigurer
 import org.springframework.batch.core.explore.JobExplorer
-import org.springframework.batch.core.explore.support.JobExplorerFactoryBean
+import org.springframework.batch.core.explore.support.MapJobExplorerFactoryBean
 import org.springframework.batch.core.launch.JobLauncher
 import org.springframework.batch.core.launch.support.SimpleJobLauncher
 import org.springframework.batch.core.repository.JobRepository
-import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean
+import org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean
 import org.springframework.batch.support.transaction.ResourcelessTransactionManager
 import org.springframework.stereotype.Component
 import org.springframework.transaction.PlatformTransactionManager
@@ -21,7 +21,7 @@ class CustomBatchConfigurer: BatchConfigurer {
 
     @PostConstruct
     fun init() {
-        val jobRepositoryFactory = JobRepositoryFactoryBean()
+        val jobRepositoryFactory = MapJobRepositoryFactoryBean()
         try {
             // JobRepositoryの設定
             this.transactionManager = ResourcelessTransactionManager()
@@ -30,7 +30,7 @@ class CustomBatchConfigurer: BatchConfigurer {
             this.jobRepository = jobRepositoryFactory.`object`
 
             // JobExplorerの設定
-            val jobExplorerFactory = JobExplorerFactoryBean()
+            val jobExplorerFactory = MapJobExplorerFactoryBean(jobRepositoryFactory)
             jobExplorerFactory.afterPropertiesSet()
             this.jobExplorer = jobExplorerFactory.`object`
 
