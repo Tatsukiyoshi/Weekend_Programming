@@ -9,10 +9,12 @@ import org.springframework.batch.core.configuration.annotation.StepBuilderFactor
 import org.springframework.batch.core.configuration.annotation.StepScope
 import org.springframework.batch.core.launch.support.RunIdIncrementer
 import org.springframework.batch.item.ItemReader
+import org.springframework.batch.item.ItemWriter
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider
 import org.springframework.batch.item.database.JdbcBatchItemWriter
 import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import javax.sql.DataSource
@@ -32,6 +34,10 @@ class BatchConfig {
     /** DataSource(JDBCで必要) */
     @Autowired
     private lateinit var postgresDataSource: DataSource
+
+    @Autowired
+    @Qualifier("JpaWriter")
+    private lateinit var jpaWriter: ItemWriter<Employee>
 
     /** insert-sql(JDBC用) */
     private final val _insertEmployeeSql: String =
@@ -59,7 +65,7 @@ class BatchConfig {
         return this.stepBuilderFactory.get("InMemoryStep")
             .chunk<Employee, Employee>(1)
             .reader(employeeReader)
-            .writer(jdbcWriter())
+            .writer(jpaWriter)
             .build()
     }
 
