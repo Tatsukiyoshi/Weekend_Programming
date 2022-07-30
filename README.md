@@ -6,7 +6,7 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/07/24|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|12章 性能 <span style="color: red;">*finished* by Kotlin</span>|
+|2022/07/30|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|13章 データベース <span style="color: red;">*finished* by Kotlin</span>|
 |2022/07/18|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 12 デザインパターンをたしなむ <span style="color: red;">*finished*</span>|
 |2022/07/16|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)| <span style="color: red;">*finished*</span>|
 |2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)| <span style="color: red;">*finished*</span>|
@@ -172,7 +172,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [サンプル](http://isbn.sbcr.jp/95815)
 
 - Programming 
-  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/24** 12章 性能 <span style="color: red;">*finished*</span>
+  - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/07/30** 13章 データベース <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.1.4
     - Amazon Coretto 17.0.4 + 言語レベル 8
     - PostgreSQL 14.3
