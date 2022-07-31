@@ -268,6 +268,10 @@ exercism download --exercise=two-fer --track=kotlin
 #### C++
   - [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
 
+  - [carbon language](https://github.com/carbon-language/carbon-lang)
+    - carbon @2022/07/31 <span style="color: red;">*Install Failed!*</span>
+    - [ubuntu 2022.04 にインストール](./carbon/carbon.md)
+
   - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
     - HelloWorld
     - [Learn C++](https://www.learncpp.com/) **@2019/10/22** 1.5 Introduction to iostream
