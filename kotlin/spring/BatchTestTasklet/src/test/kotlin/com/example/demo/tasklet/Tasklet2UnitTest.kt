@@ -1,8 +1,6 @@
 package com.example.demo.tasklet
 
 import com.example.demo.component.SampleComponent
-import com.nhaarman.mockitokotlin2.any
-import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
@@ -11,7 +9,11 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
+import org.mockito.Mockito.mock
 import org.mockito.junit.jupiter.MockitoExtension
+import org.mockito.kotlin.any
+import org.mockito.kotlin.mock
+import org.mockito.kotlin.whenever
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.batch.repeat.RepeatStatus
@@ -34,10 +36,10 @@ class Tasklet2UnitTest {
     }
 
     @InjectMocks
-    private lateinit var tasklet2: Tasklet2
+    private var tasklet2 = mock<Tasklet2>()
 
     @Mock
-    private lateinit var component: SampleComponent
+    private var component = mock<SampleComponent>()
 
     @Test
     @DisplayName("RepeatStatus is FINISHED")
