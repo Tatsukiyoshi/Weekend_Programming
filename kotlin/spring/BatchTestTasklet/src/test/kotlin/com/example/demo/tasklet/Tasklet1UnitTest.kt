@@ -14,7 +14,6 @@ import org.springframework.batch.core.scope.context.StepContext
 import org.springframework.batch.repeat.RepeatStatus
 import org.springframework.batch.test.MetaDataInstanceFactory
 
-
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @DisplayName("UnitTest of Tasklet1")
 class Tasklet1UnitTest {
