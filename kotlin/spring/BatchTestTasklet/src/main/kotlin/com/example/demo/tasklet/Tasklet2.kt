@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component
 
 @Component("Tasklet2")
 @StepScope
-class Tasklet2: Tasklet {
+class Tasklet2(
+    @Autowired
+    private var component: SampleComponent
+) : Tasklet {
     companion object {
         private val log: Logger = LoggerFactory.getLogger(this::class.java)
     }
-
-    @Autowired
-    private lateinit var component: SampleComponent
 
     private var randomValue: Int = 0
 
