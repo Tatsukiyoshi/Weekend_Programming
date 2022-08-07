@@ -4,7 +4,6 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
-import org.mockito.kotlin.mock
 import org.springframework.batch.core.JobExecution
 import org.springframework.batch.core.JobParametersBuilder
 import org.springframework.batch.core.StepContribution
@@ -17,7 +16,7 @@ import org.springframework.batch.test.MetaDataInstanceFactory
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @DisplayName("UnitTest of Tasklet1")
 class Tasklet1UnitTest {
-    private var tasklet1: Tasklet1 = mock()
+    private var tasklet1 = Tasklet1("1")
 
     @Test
     @DisplayName("RepeatStatus is FINISHED")

@@ -1,9 +1,7 @@
 package com.example.demo.tasklet
 
 import com.example.demo.component.SampleComponent
-import io.micrometer.core.instrument.Timer.Sample
 import org.assertj.core.api.Assertions.assertThat
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
