@@ -13,15 +13,15 @@ import org.springframework.stereotype.Component
 
 @Component("Tasklet1")
 @StepScope
-class Tasklet1: Tasklet {
+class Tasklet1(
+    @Value("#{jobParameters['param']}")
+    private var param: String
+) : Tasklet {
     companion object {
         private val log: Logger = LoggerFactory.getLogger(this::class.java)
     }
 
-    @Value("#{jobParameters['param']}")
-    private lateinit var param: String
-
-    override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus? {
+    override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus {
         log.info("Tasklet1")
         log.info("param={}", param)
 
