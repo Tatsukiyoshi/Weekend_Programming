@@ -14,7 +14,8 @@ class CsvFooterCallback : FlatFileFooterCallback{
     private lateinit var stepExecution: StepExecution
 
     override fun writeFooter(writer: Writer) {
-        val writeString = "合計 = $stepExecution.writeCount$ 件"
+        val writeCount = stepExecution.writeCount
+        val writeString = "合計 = $writeCount 件"
         writer.write(writeString)
     }
 }
