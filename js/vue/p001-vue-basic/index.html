@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+  <h1>はじめてのVue</h1>
+  <!-- このdivの内部でVue.jsが動作 ...（1）-->
+  <div id="my-first-vue">
+    あなたの名前：<input v-model="name"><!-- テキストボックス ...（2）-->
+    <div>→あなたは{{ name }}さん</div><!-- 名前の表示 ...（3）-->
+    <button v-on:click="onButtonClicked()">あいさつ</button> <!-- ボタン ...（4）-->
+  </div>
+  <script src="https://unpkg.com/vue@3.0.11"></script><!-- Vue.jsを参照 ...（5）-->
+  <script src="index.js"></script><!-- これから実装するJavaScript ...（6）-->
+</body>
+</html>
