@@ -45,7 +45,9 @@
 |               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 |Vue.js         |VivoBook   |2022/08/08|Chrome OS Flex 104.0.5112.83（Official Build）
 |               |           |          |Node.js 16.16
+|               |           |          |vue 3.2.37
 |               |           |          |@vue/cli 5.0.8
+|               |           |          |vite 3.0.4
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
