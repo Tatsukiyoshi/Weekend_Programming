@@ -43,6 +43,9 @@
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
 |               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
+|Vue.js         |VivoBook   |2022/08/08|Chrome OS Flex 104.0.5112.83（Official Build）
+|               |           |          |Node.js 16.16
+|               |           |          |@vue/cli 5.0.8
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
@@ -196,6 +199,9 @@ exercism download --exercise=two-fer --track=kotlin
       - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
+- Vue.js @2022/08/08 <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
+  - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
+
 - Angular 14.0.1 (Node.js 16.15.1) @2022/06/09 <span style="color: red;">*Updated!*</span>on IdeaPad
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/07/01** 4.2 ディレクティブ <span style="color: red;">*started*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
