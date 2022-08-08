@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "tsinit": "tsc --init",
+        "build": "tsc",
+        "serve": "lite-server"
+    }
+}
