@@ -1,0 +1,5 @@
+<ng-container *ngFor="let article of articles">
+  <header>{{article.title}}</header>
+  <div>{{article.body}}</div>
+  <footer ng-repeat-end>({{article.author}})</footer>
+</ng-container>

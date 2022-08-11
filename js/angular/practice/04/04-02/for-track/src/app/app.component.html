@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let b of books; trackBy: trackFn">
+    {{b.title}}({{b.isbn}}</li>
+</ul>
+<input type="button" (click)="onclick()" value="更新" />

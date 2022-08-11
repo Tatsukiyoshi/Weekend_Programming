@@ -1,0 +1,16 @@
+<table class="table">
+  <tr>
+    <th>ISBNコード</th><th>書名</th><th>価格</th><th>出版社</th>
+  </tr>
+  <tr *ngFor="let b of books | slice: start: start+len">
+    <td>{{b.isbn}}</td><td>{{b.title}}</td><td>{{b.price}}</td><td></td>
+  </tr>
+</table>
+<table>
+  <tr class="pagination">
+    <td><a href="#" (click)="pager(0)">1</a></td>
+    <td><a href="#" (click)="pager(1)">2</a></td>
+    <td><a href="#" (click)="pager(2)">3</a></td>
+  </tr>
+</table>
+
