@@ -6,15 +6,13 @@
 ### 演習進捗
 |日付      |演習対象|テキスト|進捗状況|
 |----------|------ |-------|--------|
-|2022/08/08|Kotlin |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)| <span style="color: red;">*finished* by Kotlin</span>|
 |2022/07/18|Java   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)|Chapter 12 デザインパターンをたしなむ <span style="color: red;">*finished*</span>|
-|2022/07/16|C#     |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)| <span style="color: red;">*finished*</span>|
-|2022/07/02|React  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)| <span style="color: red;">*finished*</span>|
 |2022/06/26|Angular|[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|第3章 データバインディング <span style="color: red;">*finished*</span>|
 |2022/06/04|Java   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)|3章 サーブレットの基礎 <span style="color: red;">*redo finished*</span>|
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
 
+#### [演習完了したテキスト一覧へ](./Studyed.md)
 ### 環境アップデート
 |ソフトウェア    |端末        |日付      |詳細    
 |---------------|-----------|-----------|----
@@ -56,6 +54,8 @@
 
 <!-- code_chunk_output -->
 - [演習進捗](#演習進捗)
+- [演習進捗](#演習進捗)
+  - [演習完了したテキスト一覧へ](#演習完了したテキスト一覧へstudyedmd)
 - [環境アップデート](#環境アップデート)
   - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
 - [documentation](#documentation)
@@ -74,6 +74,7 @@
 - [ObjectPascal](#objectpascal)
 - [Swift](#swift)
 - [LLVM](#llvm)
+- [Unity](#unity)
 - [Unity](#unity)
 <!-- /code_chunk_output -->
 
