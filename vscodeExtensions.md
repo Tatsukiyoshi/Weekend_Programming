@@ -38,6 +38,11 @@
     *   Project Manager for Java
     *   Spring Initializr Java Support
     *   Test Runner for Java
+*   JavaScript
+    *   Angular
+    *   Vue
+        *   Volar
+    *   Svelte for VS Code
 *   Juila
 *   Kotlin
 *   Kotlin Language
@@ -54,7 +59,4 @@
     *   Spring Boot Extension Pack
     *   Spring Boot Tools
     *   Spring Initializr Java Support
-*   Svelte for VS Code
 *   Swift Language
-
-

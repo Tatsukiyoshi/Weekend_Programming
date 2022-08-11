@@ -49,35 +49,6 @@
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
-## 目次
-<!-- @import "[TOC]" {cmd="toc" depthFrom=3 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-- [演習進捗](#演習進捗)
-- [演習進捗](#演習進捗)
-  - [演習完了したテキスト一覧へ](#演習完了したテキスト一覧へstudyedmd)
-- [環境アップデート](#環境アップデート)
-  - [VSCode拡張機能](#vscode拡張機能vscodeextensionsmd)
-- [documentation](#documentation)
-- [Exercism](#exercismhttpsexercismiomytracks)
-- [Database & SQL](#database-sql)
-- [Python](#python)
-- [Kotlin](#kotlin)
-- [JavaScript](#javascript)
-- [Java](#java)
-- [.NET Framework / C# / C++](#net-framework-c-c)
-  - [C#](#c)
-  - [C++](#c-1)
-  - [Blazor](#blazor)
-- [Dart - flutter](#dart-flutter)
-- [Rust](#rust)
-- [ObjectPascal](#objectpascal)
-- [Swift](#swift)
-- [LLVM](#llvm)
-- [Unity](#unity)
-- [Unity](#unity)
-<!-- /code_chunk_output -->
-
 --- 
 ### documentation
 - Markdown
