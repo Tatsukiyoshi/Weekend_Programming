@@ -1,0 +1,19 @@
+<!-- テンプレートを準備 -->
+<ng-template #myTemp let-isbn="isbn" let-title="title" let-price="price" let-publisher="publisher">
+  <div>
+    <img src="https://wings.msn.to/books/{{isbn}}/{{isbn}}.jpg" />
+    <ul>
+      <li>{{title}}</li>
+      <li>{{publisher}}発行</li>
+      <li>定価 {{price}}円</li>
+    </ul>
+  </div>
+</ng-template>
+<!-- booksプロパティの情報をもとに選択ボックスを生成
+（選択値はtempに反映）-->
+<select name="temp" [(ngModel)]="temp">
+  <option *ngFor="let b of books; let i = index" [value]="i">
+    {{b.title}}
+  </option>
+</select>
+<ng-container *ngTemplateOutlet="myTemp; context: books[temp]"></ng-container>

@@ -1,0 +1,4 @@
+<ng-template #myTemp let-greet let-name="name">
+  <div>{{greet}}、{{name}}さん！</div>
+</ng-template>
+<ng-container *ngTemplateOutlet="myTemp; context: data"></ng-container>
