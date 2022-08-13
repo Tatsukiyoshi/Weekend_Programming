@@ -177,7 +177,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
 
 - Angular 14.1.2 (Node.js 16.15.1) @2022/08/12 <span style="color: red;">*Updated!*</span>on IdeaPad
-  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/12** 4.2 ディレクティブ <span style="color: red;">*finished*</span>
+  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 

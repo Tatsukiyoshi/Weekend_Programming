@@ -42,6 +42,22 @@
         node_modules/@types/node/index.d.ts(20,1): error TS1084: Invalid 'reference' directive syntax.
         ```
 
+1.  ビルドエラーに対する対策
+
+    1.  バリデーションチェックの記述
+        *   プロパティアクセスの記述が変更になり、古い記述だとエラーになる。
+            ```
+            error TS4111: Property 'minlength' comes from an index signature, so it must be accessed with ['minlength'].
+            ```
+            *   旧型式
+                ```
+                    <span *ngIf="mail.errors?.required">メールアドレスは必須です。</span>
+                ```
+            *   新形式
+                ```
+                    <span *ngIf="mail.errors?.['required']">メールアドレスは必須です。</span>
+                ```
+
 1.  depandapotによる依存関係更新後のビルド確認
 
     1.  パッケージ再インストール
