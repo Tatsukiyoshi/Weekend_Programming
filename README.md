@@ -19,9 +19,9 @@
 |Visual Studio  |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
-|Kotlin         |IdeaPad    |2022/08/07|IntelliJ IDEA 2022.2
+|Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
-|               |           |2022/07/23|Amazon Coretto 17.0.4
+|               |           |2022/08/20|Amazon Coretto 17.0.4.1
 |Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
@@ -150,8 +150,8 @@ exercism download --exercise=two-fer --track=kotlin
 
 - Programming 
   - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/08/08** 14章 テスト <span style="color: red;">*finished*</span>
-    - Intellij IDEA 2022.2
-    - Amazon Coretto 17.0.4 + 言語レベル 8
+    - Intellij IDEA 2022.2.1
+    - Amazon Coretto 17.0.4.1 + 言語レベル 8
     - PostgreSQL 14.3
 
     - ノウハウ
