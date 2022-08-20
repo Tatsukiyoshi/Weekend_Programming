@@ -26,7 +26,7 @@
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
-|               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
+|               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |React          |IdeaPad    |2022/06/05|React 18.2.0
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
@@ -215,7 +215,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### Java
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/08/20 <span style="color: red;">*Updated!*</span>
 - [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
-- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on ExpertBook
   postgres/pgsuper
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 
