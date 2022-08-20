@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // メニューの作成
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
