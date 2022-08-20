@@ -22,7 +22,7 @@
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
-|Java           |IdeaPad    |2022/06/03|[Pleiades All in One Eclipse Standard Edition 2022-06.20220515 (Eclipse 4.24.0 M2)](https://mergedoc.osdn.jp/)
+|Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
@@ -213,7 +213,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/06/03 <span style="color: red;">*Updated!*</span>
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/08/20 <span style="color: red;">*Updated!*</span>
 - [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
 - [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
   postgres/pgsuper
