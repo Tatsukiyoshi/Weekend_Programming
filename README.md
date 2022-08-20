@@ -31,7 +31,7 @@
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/06/09|Angular 14.1.2
-|Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
+|Android Studio |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
 |Flutter        |ExpertBook |2022/05/25|Flutter 3.01
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/07/09|Tauri 1.0.3 on Windows 11
@@ -128,9 +128,9 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Chipmunk | 2021.2.1 Patch 1 @2022/07/09 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Android Studio Chipmunk | 2021.2.1 Patch 2 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
-  Build #AI-212.5712.43.2112.8609683, built on May 19, 2022
+  Build #AI-212.5712.43.2112.8815526, built on July 11, 2022
   Runtime version: 11.0.12+7-b1504.28-7817840 amd64
   VM: OpenJDK 64-Bit Server VM by Oracle Corporation
   Windows 10 10.0
