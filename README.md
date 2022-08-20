@@ -20,13 +20,13 @@
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
-|               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
+|               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
 |Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/08/20|[Spring Tool Suite 4.15.3](https://spring.io/tools)
-|               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
+|               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |React          |IdeaPad    |2022/06/05|React 18.2.0
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
@@ -81,7 +81,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
 ### Database & SQL
-- [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/06/08 <span style="color: red;">*Installed*</span> on IdeaPad
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on IdeaPad
 - ノウハウ
   - [Database関連](./sql/database.md)
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
@@ -152,7 +152,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/08/08** 14章 テスト <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.2.1
     - Amazon Coretto 17.0.4.1 + 言語レベル 8
-    - PostgreSQL 14.3
+    - PostgreSQL 14.5
 
     - ノウハウ
       - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
@@ -215,7 +215,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### Java
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/08/20 <span style="color: red;">*Updated!*</span>
 - [Spring Tool Suite 4.15.3](https://spring.io/tools) @2022/08/20 <span style="color: red;">*Updated!*</span> on ExpertBook
-- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on ExpertBook
   postgres/pgsuper
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 
