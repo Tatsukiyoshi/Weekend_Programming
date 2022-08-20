@@ -32,7 +32,7 @@
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/06/09|Angular 14.1.2
 |Android Studio |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
-|Flutter        |ExpertBook |2022/05/25|Flutter 3.01
+|Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
@@ -260,7 +260,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 
 ### Dart - flutter
-- Flutter 3.01 @2022/05/22 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 3.05 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
