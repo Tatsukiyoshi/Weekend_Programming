@@ -45,7 +45,7 @@ class ScheduleEditActivity : AppCompatActivity() {
             binding.delete.visibility = View.INVISIBLE
         }
 
-        binding.save.setOnClickListener { wview: View ->
+        binding.save.setOnClickListener { workView: View ->
             // executeTransaction でトランザクションの開始、終了、キャンセル処理は自動！
             when(scheduleId) {
                 -1L -> {
@@ -58,7 +58,7 @@ class ScheduleEditActivity : AppCompatActivity() {
                         schedule.title = binding.titleEdit.text.toString()
                         schedule.detail = binding.detailEdit.text.toString()
                     }
-                    Snackbar.make(wview, "追加しました", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(workView, "追加しました", Snackbar.LENGTH_SHORT)
                         .setAction("戻る") { finish() }
                         .setActionTextColor(Color.YELLOW)
                         .show()
@@ -73,7 +73,7 @@ class ScheduleEditActivity : AppCompatActivity() {
                         schedule?.title = binding.titleEdit.text.toString()
                         schedule?.detail = binding.detailEdit.text.toString()
                     }
-                    Snackbar.make(wview, "修正しました", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(workView, "修正しました", Snackbar.LENGTH_SHORT)
                         .setAction("戻る") { finish() }
                         .setActionTextColor(Color.YELLOW)
                         .show()

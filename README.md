@@ -20,19 +20,19 @@
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
-|               |           |2022/06/08|[PostgreSQL 14.3](https://www.postgresql.org/download/windows/)
+|               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
 |Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
-|               |ExpertBook |2022/05/04|[Spring Tool Suite 4.14.1](https://spring.io/tools)
-|               |           |2022/05/05|[PostgreSQL 14.2](https://www.postgresql.org/download/windows/)
+|               |ExpertBook |2022/08/20|[Spring Tool Suite 4.15.3](https://spring.io/tools)
+|               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |React          |IdeaPad    |2022/06/05|React 18.2.0
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/06/09|Angular 14.1.2
-|Android Studio |ExpertBook |2022/07/09|Android Studio Chipmunk 2021.2.1 Patch 1
-|Flutter        |ExpertBook |2022/05/25|Flutter 3.01
+|Android Studio |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
+|Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
@@ -41,7 +41,7 @@
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
 |               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
-|Vue.js         |VivoBook   |2022/08/08|Chrome OS Flex 104.0.5112.83（Official Build）
+|Vue.js         |VivoBook   |2022/08/20|Chrome OS Flex 104.0.5112.105（Official Build）
 |               |           |          |Node.js 16.16
 |               |           |          |vue 3.2.37
 |               |           |          |@vue/cli 5.0.8
@@ -81,7 +81,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
 ### Database & SQL
-- [PostgreSQL 14.3](https://www.postgresql.org/download/windows/) @2022/06/08 <span style="color: red;">*Installed*</span> on IdeaPad
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on IdeaPad
 - ノウハウ
   - [Database関連](./sql/database.md)
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
@@ -128,9 +128,9 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Chipmunk | 2021.2.1 Patch 1 @2022/07/09 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Android Studio Chipmunk | 2021.2.1 Patch 2 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
-  Build #AI-212.5712.43.2112.8609683, built on May 19, 2022
+  Build #AI-212.5712.43.2112.8815526, built on July 11, 2022
   Runtime version: 11.0.12+7-b1504.28-7817840 amd64
   VM: OpenJDK 64-Bit Server VM by Oracle Corporation
   Windows 10 10.0
@@ -152,7 +152,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/08/08** 14章 テスト <span style="color: red;">*finished*</span>
     - Intellij IDEA 2022.2.1
     - Amazon Coretto 17.0.4.1 + 言語レベル 8
-    - PostgreSQL 14.3
+    - PostgreSQL 14.5
 
     - ノウハウ
       - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
@@ -214,8 +214,8 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### Java
 - [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/08/20 <span style="color: red;">*Updated!*</span>
-- [Spring Tool Suite 4.14.1](https://spring.io/tools) @2022/05/04 <span style="color: red;">*Installed!*</span> on ExpertBook
-- [PostgreSQL 14.2](https://www.postgresql.org/download/windows/) @2022/05/05 <span style="color: red;">*Installed*</span> on ExpertBook
+- [Spring Tool Suite 4.15.3](https://spring.io/tools) @2022/08/20 <span style="color: red;">*Updated!*</span> on ExpertBook
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on ExpertBook
   postgres/pgsuper
 - IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
 
@@ -260,7 +260,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
 
 ### Dart - flutter
-- Flutter 3.01 @2022/05/22 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 3.05 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
