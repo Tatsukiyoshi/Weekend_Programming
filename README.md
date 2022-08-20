@@ -41,7 +41,7 @@
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
 |               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
-|Vue.js         |VivoBook   |2022/08/08|Chrome OS Flex 104.0.5112.83（Official Build）
+|Vue.js         |VivoBook   |2022/08/20|Chrome OS Flex 104.0.5112.105（Official Build）
 |               |           |          |Node.js 16.16
 |               |           |          |vue 3.2.37
 |               |           |          |@vue/cli 5.0.8
