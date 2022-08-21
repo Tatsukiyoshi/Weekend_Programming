@@ -14,11 +14,8 @@
 
 #### [演習完了したテキスト一覧へ](./Studyed.md)
 ### 環境アップデート
-|ソフトウェア    |端末        |日付      |詳細    
-|---------------|-----------|-----------|----
-|Visual Studio  |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
-|               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
-|               |           |2022/07/09|Android SDK Platform 31
+|ソフトウェア   |端末       |日付      |詳細    
+|---------------|-----------|----------|----
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
@@ -27,25 +24,28 @@
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/08/20|[Spring Tool Suite 4.15.3](https://spring.io/tools)
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
-|React          |IdeaPad    |2022/06/05|React 18.2.0
-|               |           |2022/06/05|Node.js 16.15.1
-|Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
-|Angular        |IdeaPad    |2022/06/09|Angular 14.1.2
 |Android Studio |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
 |Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
-|Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
-|               |           |2022/07/09|Tauri 1.0.3 on Windows 11
-|Rust(Ubuntu)   |IdeaPad    |2022/06/09|Ubuntu 22.04 LTS
-|               |           |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
-|               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
-|               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
-|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
-|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
-|Vue.js         |VivoBook   |2022/08/20|Chrome OS Flex 104.0.5112.105（Official Build）
-|               |           |          |Node.js 16.16
-|               |           |          |vue 3.2.37
+|Vue.js         |VivoBook   |2022/08/20|vue 3.2.37
 |               |           |          |@vue/cli 5.0.8
 |               |           |          |vite 3.0.4
+|               |           |          |Node.js 16.16
+|               |           |          |Chrome OS Flex 104.0.5112.105（Official Build）
+|Angular        |IdeaPad    |2022/08/12|Angular 14.1.2
+|Visual Studio  |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
+|               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
+|               |           |2022/07/09|Android SDK Platform 31
+|Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
+|Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
+|               |           |2022/07/09|Tauri 1.0.3 on Windows 11
+|Rust(Ubuntu)   |IdeaPad    |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
+|               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
+|               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
+|               |           |2022/06/09|Ubuntu 22.04 LTS
+|React          |IdeaPad    |2022/07/02|React 18.2.0
+|               |           |2022/06/05|Node.js 16.15.1
+|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
+|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
@@ -81,7 +81,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [RNA Transcription](https://exercism.io/my/solutions/3ef66e48eb1d4e2b8766d443d34a0198) **@2019/11/20**
 
 ### Database & SQL
-- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on IdeaPad
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) **@2022/08/20** <span style="color: red;">*Updated*</span> on IdeaPad
 - ノウハウ
   - [Database関連](./sql/database.md)
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
@@ -92,27 +92,27 @@ exercism download --exercise=two-fer --track=kotlin
   **@2021/12/16** その３ <span style="color: red;">*finished*</span>
 
 - nsw
-  - 202005 : 日経ソフトウェア2020年5月号 **@2020/8/10**
+  - 202005 : 日経ソフトウェア2020年5月号 **@2020/08/10**
 
 - pygame2 : 5日でできる！Pythonでゲーム作成入門（日経ソフトウェア2020年5月号）
   - [ケニーのサイト](https://kenney.nl/assets/space-shooter-extension)
-  - ３日目：迷路 **@2020/6/29 -> 2020/7/25**
-  - ４日目：月面着陸ゲーム **@2020/7/26 -> 2020/8/1**
-  - ５日目：シューティングゲーム **@2020/8/10**
+  - ３日目：迷路 **@2020/06/29 -> 2020/07/25**
+  - ４日目：月面着陸ゲーム **@2020/07/26 -> 2020/08/01**
+  - ５日目：シューティングゲーム **@2020/08/10**
 
 - pygame : Pygame Zero ゲームプログラミング入門（日経ソフトウェア2020年3月号）
-  - jumpgame **@2020/4/11**
-  - shooting **@2020/4/12**
+  - jumpgame **@2020/04/11**
+  - shooting **@2020/04/12**
 
 - reversi : PythonでAIと対戦できるリバーシを作ろう
   - データ構造とUI編（日経ソフトウェア2019年9月号）
-    **@2019/9/28**コンピュータが隅に優先して石を打つよう改良
-    **@2019/10/4**コンピュータが隅を優先して石を打つかを変更するチェックボックス追加
+    - **@2019/09/28**コンピュータが隅に優先して石を打つよう改良
+    - **@2019/10/04**コンピュータが隅を優先して石を打つかを変更するチェックボックス追加
   - AI(人工知能編)（日経ソフトウェア2019年11月号）<BR>
     - ミニマックス法
     - アルファベータ法
 
-- self-taught [独学プログラマー](http://theselftaughtprogrammer.io/) **@2019/10/5:Chapter 22** <span style="color: red;">*finished!*</span>
+- self-taught [独学プログラマー](http://theselftaughtprogrammer.io/) **@2019/10/05** Chapter 22 <span style="color: red;">*finished!*</span>
 
 - ginza - Universal Dependenciesに基づくオープンソース日本語NLPライブラリ
   ```
@@ -128,7 +128,7 @@ exercism download --exercise=two-fer --track=kotlin
   [鎖プログラム](https://pg-chain.com/)
 
 ### Kotlin
-- Android Studio Chipmunk | 2021.2.1 Patch 2 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Android Studio Chipmunk | 2021.2.1 Patch 2 **@2022/08/20** <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
   Build #AI-212.5712.43.2112.8815526, built on July 11, 2022
   Runtime version: 11.0.12+7-b1504.28-7817840 amd64
@@ -173,23 +173,23 @@ exercism download --exercise=two-fer --track=kotlin
       - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Vue.js @2022/08/08 <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
+- Vue.js **@2022/08/08** <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
   - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
 
-- Angular 14.1.2 (Node.js 16.15.1) @2022/08/12 <span style="color: red;">*Updated!*</span>on IdeaPad
+- Angular 14.1.2 (Node.js 16.15.1) **@2022/08/12** <span style="color: red;">*Updated!*</span>on IdeaPad
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
   - 日経ソフトウェア 2019年5月号
 
-- React 18.2.0 (Node.js 16.15.1) @2022/07/02 <span style="color: red;">*Updated!*</span>on IdeaPad
+- React 18.2.0 (Node.js 16.15.1) **@2022/07/02** <span style="color: red;">*Updated!*</span>on IdeaPad
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/07/02** Appendix React × TypeScript実践演習 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
-  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) @2021/10/10 <span style="color: red;">*Finished!*</span>
+  - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) **@2021/10/10** <span style="color: red;">*Finished!*</span>
 
-- Svelte 3.44.3 (Node.js 16.15.1) @2022/06/05 <span style="color: red;">*Installed!*</span> on IdeaPad
+- Svelte 3.44.3 (Node.js 16.15.1) **@2022/06/05** <span style="color: red;">*Installed!*</span> on IdeaPad
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 
-- [Deno](https://deno.land/) 1.23.3 @2022/07/07 <span style="color: red;">*Installed!*</span> on IdeaPad
+- [Deno](https://deno.land/) 1.23.3 **@2022/07/07** <span style="color: red;">*Installed!*</span> on IdeaPad
   - [試してみた](./js/deno.md)
 
 - Prisma
@@ -213,11 +213,11 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 @2022/08/20 <span style="color: red;">*Updated!*</span>
-- [Spring Tool Suite 4.15.3](https://spring.io/tools) @2022/08/20 <span style="color: red;">*Updated!*</span> on ExpertBook
-- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) @2022/08/20 <span style="color: red;">*Updated*</span> on ExpertBook
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 **@2022/08/20** <span style="color: red;">*Updated!*</span>
+- [Spring Tool Suite 4.15.3](https://spring.io/tools) **@2022/08/20** <span style="color: red;">*Updated!*</span> on ExpertBook
+- [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) **@2022/08/20** <span style="color: red;">*Updated*</span> on ExpertBook
   postgres/pgsuper
-- IntelliJ IDEA 2022.1 @2022/04/13 <span style="color: red;">*Updated!*</span> on TransBook
+- IntelliJ IDEA 2022.1 **@2022/04/13** <span style="color: red;">*Updated!*</span> on TransBook
 
 - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/05/07** 6章 バッチ実行 <span style="color: red;">*finished*</span>
 
@@ -231,10 +231,10 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### .NET Framework / C# / C++
 - For .NET Core Preview
-  - Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview @2022/08/11 <span style="color: red;">*Updated!*</span>
+  - Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview **@2022/08/11** <span style="color: red;">*Updated!*</span>
 - For MAUI(Windows/Android) 
   - Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + 
-    Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 @2022/08/11 <span style="color: red;">*Updated!*</span>
+    Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10 **@2022/08/11** <span style="color: red;">*Updated!*</span>
 
 #### C#
   - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/07/16** : Lesson 13 アプリケーションの作成 <span style="color: red;">*finished*</span>
@@ -249,7 +249,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
 
   - [carbon language](https://github.com/carbon-language/carbon-lang)
-    - carbon @2022/07/31 <span style="color: red;">*Install Failed!*</span>
+    - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
     - [ubuntu 2022.04 にインストール](./carbon/carbon.md)
 
   - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
@@ -257,10 +257,10 @@ exercism download --exercise=two-fer --track=kotlin
     - [Learn C++](https://www.learncpp.com/) **@2019/10/22** 1.5 Introduction to iostream
 
 #### Blazor
-  - Blazor入門（日経ソフトウェア 2021年9月号）**2021/9/26** <span style="color: red;">*finished*</span>
+  - Blazor入門（日経ソフトウェア 2021年9月号）**@2021/09/26** <span style="color: red;">*finished*</span>
 
 ### Dart - flutter
-- Flutter 3.05 @2022/08/20 <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 3.05 **@2022/08/20** <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
@@ -300,7 +300,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 - 「きつねさんでもわかるLLVM」で学習中
   - DummyCCompiler実践中
-    **2021/01/11** : Front-End(to Chapter 5.9) finished
+    **@2021/01/11** : Front-End(to Chapter 5.9) finished
   - [きつねさんでもわかるLLVM公式リポジトリ](https://github.com/Kmotiko/DummyCCompiler)
 
 ### Unity
