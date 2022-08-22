@@ -14,38 +14,38 @@
 
 #### [演習完了したテキスト一覧へ](./Studyed.md)
 ### 環境アップデート
-|ソフトウェア   |端末       |日付      |詳細    
+|環境／FW       |端末       |日付      |詳細    
 |---------------|-----------|----------|----
+|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
+|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
+|Android        |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
+|React          |IdeaPad    |2022/07/02|React 18.2.0
+|               |           |2022/06/05|Node.js 16.15.1
+|Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
+|Angular        |IdeaPad    |2022/08/12|Angular 14.1.2
+|Vue            |VivoBook   |2022/08/20|vue 3.2.37
+|               |           |          |@vue/cli 5.0.8
+|               |           |          |vite 3.0.4
+|               |           |          |Node.js 16.16
+|               |           |          |Chrome OS Flex 104.0.5112.105（Official Build）
 |Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
 |               |ExpertBook |2022/08/20|[Spring Tool Suite 4.15.3](https://spring.io/tools)
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
-|Android Studio |ExpertBook |2022/08/20|Android Studio Chipmunk 2021.2.1 Patch 2
-|Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
-|Vue.js         |VivoBook   |2022/08/20|vue 3.2.37
-|               |           |          |@vue/cli 5.0.8
-|               |           |          |vite 3.0.4
-|               |           |          |Node.js 16.16
-|               |           |          |Chrome OS Flex 104.0.5112.105（Official Build）
-|Angular        |IdeaPad    |2022/08/12|Angular 14.1.2
-|Visual Studio  |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
+|.NET           |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
-|Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
+|Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
 |               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |               |           |2022/06/09|Ubuntu 22.04 LTS
-|React          |IdeaPad    |2022/07/02|React 18.2.0
-|               |           |2022/06/05|Node.js 16.15.1
-|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
-|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
 
 #### [VSCode拡張機能](./vscodeExtensions.md)
 
@@ -173,14 +173,6 @@ exercism download --exercise=two-fer --track=kotlin
       - [Challenge: Tavern.kt Part 2](https://forums.bignerdranch.com/t/challenge-tavern-kt-part-2/16695)
 
 ### JavaScript
-- Vue.js **@2022/08/08** <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
-  - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
-
-- Angular 14.1.2 (Node.js 16.15.1) **@2022/08/12** <span style="color: red;">*Updated!*</span>on IdeaPad
-  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
-  - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
-  - 日経ソフトウェア 2019年5月号
-
 - React 18.2.0 (Node.js 16.15.1) **@2022/07/02** <span style="color: red;">*Updated!*</span>on IdeaPad
   - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/07/02** Appendix React × TypeScript実践演習 <span style="color: red;">*finished*</span>
   - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
@@ -199,6 +191,14 @@ exercism download --exercise=two-fer --track=kotlin
 - Sequelize
   - [Sequelizeを使用してデータベースを操作するための基本的な情報(2020.09更新）](https://qiita.com/mima_ita/items/014dcb42872f3a10855b)
 
+- Angular 14.1.2 (Node.js 16.15.1) **@2022/08/12** <span style="color: red;">*Updated!*</span>on IdeaPad
+  - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
+  - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
+  - 日経ソフトウェア 2019年5月号
+
+- Vue.js **@2022/08/08** <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
+  - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
+
 - ml5 - 日経ソフトウェア 2019年5月号
 
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
@@ -213,7 +213,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [Electronでアプリケーションを作ってみよう](https://qiita.com/Quramy/items/a4be32769366cfe55778)
 
 ### Java
-- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 **@2022/08/20** <span style="color: red;">*Updated!*</span>
+- [Pleiades All in One Eclipse](https://mergedoc.osdn.jp/) 2022-06 **@2022/08/20** <span style="color: red;">*Updated!*</span> on IdeaPad
 - [Spring Tool Suite 4.15.3](https://spring.io/tools) **@2022/08/20** <span style="color: red;">*Updated!*</span> on ExpertBook
 - [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) **@2022/08/20** <span style="color: red;">*Updated*</span> on ExpertBook
   postgres/pgsuper
