@@ -1,0 +1,10 @@
+<form #myForm="ngForm">
+  <ng-container *ngFor="let item of data; index as i">
+    <label>
+      <input type="checkbox" name="animal{{i}}"
+        [(ngModel)]="data[i].selected"
+        [value]="item.value"
+        (change)="show()">{{item.label}}
+    </label><br />
+  </ng-container>
+</form>
