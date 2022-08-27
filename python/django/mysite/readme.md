@@ -1,6 +1,11 @@
 *   日本語に変える方法
     -   https://codor.co.jp/django/how-change-language
 
+*   Djangoのソースディレクトリを確認する方法
+    ```
+    python -c "import django; print(django.__path__)"
+    ```
+
 *   チュートリアル
     *   サーバ起動
         ```
