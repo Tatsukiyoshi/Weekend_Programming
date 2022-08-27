@@ -194,7 +194,11 @@ exercism download --exercise=two-fer --track=kotlin
 - Angular 14.1.2 (Node.js 16.15.1) **@2022/08/12** <span style="color: red;">*Updated!*</span>on IdeaPad
   - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
   - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
-  - 日経ソフトウェア 2019年5月号
+  - vs-angular
+    - VSCodeを使おう（日経ソフトウェア 2019年7月号）
+    - [Angularプロジェクトの作成](https://qiita.com/KaoruIto76/items/272c7724aa8bbc45d591)
+  - basic_20190223
+    - AngularによるモダンWeb開発 基礎編 第2版 ダイジェスト版（日経ソフトウェア 2019年5月号 付録）
 
 - Vue.js **@2022/08/08** <span style="color: red;">*Installed!*</span>on Chroms OS Flex on VivoBook
   - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
@@ -202,8 +206,6 @@ exercism download --exercise=two-fer --track=kotlin
 - ml5 - 日経ソフトウェア 2019年5月号
 
 - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
-
-- vs-angular - VSCodeを使おう（日経ソフトウェア 2019年7月号）[Angularプロジェクトの作成](https://qiita.com/KaoruIto76/items/272c7724aa8bbc45d591)
 
 - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>
   - Expo Sample - Expoサンプルアプリ
