@@ -89,7 +89,7 @@ exercism download --exercise=two-fer --track=kotlin
 
 ### Python
 - [Django Tutorial](https://docs.djangoproject.com/ja/4.1/intro/tutorial01/)
-  **@2022/08/27** その５ 自動テストの導入 <span style="color: red;">*finished*</span>
+  **@2022/08/27** その６ アプリ の構造をカスタマイズする <span style="color: red;">*finished*</span>
 
 - nsw
   - 202005 : 日経ソフトウェア2020年5月号 **@2020/08/10**
