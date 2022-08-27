@@ -17,7 +17,7 @@
 |環境／FW       |端末       |日付      |詳細    
 |---------------|-----------|----------|----
 |Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
-|               |           |2022/06/06|[Django 4.0.5](https://docs.djangoproject.com/ja/4.0/intro/install/)
+|               |           |2022/08/27|[Django 4.1](https://docs.djangoproject.com/ja/4.1)
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
 |               |           |2022/08/20|Amazon Coretto 17.0.4.1
@@ -88,7 +88,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
 
 ### Python
-- [Django Tutorial](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/)
+- [Django Tutorial](https://docs.djangoproject.com/ja/4.1/intro/tutorial01/)
   **@2021/12/16** その３ <span style="color: red;">*finished*</span>
 
 - nsw
