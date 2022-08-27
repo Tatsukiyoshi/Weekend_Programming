@@ -1,49 +1,32 @@
 //(1)パッケージのインポート
-import {
-  AfterContentChecked,
-  AfterContentInit,
-  AfterViewChecked,
-  AfterViewInit,
-  Component,
-  DoCheck,
-  OnChanges,
-  OnDestroy,
-  OnInit
-} from "@angular/core";
-import {StoreService} from "./store.service";
-import {NavigationStart, Router} from "@angular/router";
+import { Component } from '@angular/core';
+import { AfterContentChecked } from '@angular/core';
+import { AfterContentInit } from '@angular/core';
+import { AfterViewChecked } from '@angular/core';
+import { AfterViewInit } from '@angular/core';
+import { DoCheck } from '@angular/core';
+import { OnChanges } from '@angular/core';
+import { OnDestroy } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { StoreService } from './store.service';
+import { NavigationStart } from '@angular/router';
+import { Router } from '@angular/router';
 
 //(2)デコレーター
 @Component({
-
   //(3)出力先タグ名
-  selector: "app-root",
-
+  selector: 'app-root',
   //(4)HTMLテンプレート
-  template: `
-    <div class="header">
-      ルートコンポーネント 閲覧回数
-      {{storeService.getCounter()}}回
-    </div>
-    <router-outlet></router-outlet>`,
-
+  templateUrl: './app.component.html',
   //(5)CSS
-  styles: [
-      `.header {
-      display: flex;
-      background-color: steelblue;
-      color: white;
-      font-weight: bold;
-      height: 3em;
-      align-items: center;
-      justify-content: center
-    }`
-  ]
+  styleUrls: ['./app.component.css']
 })
 //(6)クラス定義
-export class RootComponent implements OnChanges, OnInit,
+export class AppComponent implements OnChanges, OnInit,
   DoCheck, AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked, OnDestroy {
+
+  title = 'sample02';
 
   //(7)ページ切り替え通知の予約
   subscription;

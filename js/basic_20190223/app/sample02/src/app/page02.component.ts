@@ -40,7 +40,7 @@ export class Page02Component implements OnChanges, OnInit,
   AfterViewChecked, OnDestroy {
 
   //(7)前ページで入力された金額
-  value02;
+  value02: number;
 
   //(8)コンストラクタ(サービスのDI)
   constructor(
@@ -49,6 +49,9 @@ export class Page02Component implements OnChanges, OnInit,
     private router: Router
   ) {
     console.log("@@@constructor");
+
+    //サービスが保存している入力金額を取得
+    this.value02 = this.storeService.getStore();
   }
 
   //(9)初期化処理
@@ -56,13 +59,11 @@ export class Page02Component implements OnChanges, OnInit,
     console.log("@@@ngOnInit");
     //ページタイトルの設定
     this.title.setTitle("page02");
-    //サービスが保存している入力金額を取得
-    this.value02 = this.storeService.getStore();
   }
 
   //(10)1ページ目へ戻るボタン
-  clickButton(event) {
-    console.log("■■■" + event.target.tagName);
+  clickButton(event: MouseEvent) {
+    //console.log("■■■" + event.target.tagName);
     this.router.navigate(["page01"]);
   }
 
@@ -94,5 +95,4 @@ export class Page02Component implements OnChanges, OnInit,
   ngOnDestroy() {
     console.log("@@@ngOnDestroy");
   }
-
 }

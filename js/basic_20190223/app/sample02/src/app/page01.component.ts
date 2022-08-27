@@ -44,7 +44,7 @@ export class Page01Component implements OnChanges, OnInit,
   AfterViewChecked, OnDestroy {
 
   //(7)フォームコントロール
-  myForm;
+  myForm: FormControl<number | null>;
 
   //(8)コンストラクタ(サービスのDI)
   constructor(
@@ -53,6 +53,10 @@ export class Page01Component implements OnChanges, OnInit,
     private title: Title
   ) {
     console.log("@@@constructor");
+
+    //サービスが保存している入力金額を取得
+    //フォームコントロールを初期値を設定して生成
+    this.myForm = new FormControl(this.storeService.getStore());    
   }
 
   //(9)初期化処理
@@ -60,16 +64,14 @@ export class Page01Component implements OnChanges, OnInit,
     console.log("@@@ngOnInit");
     //ページタイトルの設定
     this.title.setTitle("page01");
-    //サービスが保存している入力金額を取得
-    let value = this.storeService.getStore();
-    //フォームコントロールを初期値を設定して生成
-    this.myForm = new FormControl(value);
   }
 
   //(10)2ページ目に進むボタンのクリック
-  clickButton(event) {
-    console.log("■■■" + event.target.tagName);
-    this.storeService.setStore(this.myForm.value);
+  clickButton(event: MouseEvent) {
+    //console.log("■■■" + event.target?.tagName);
+    if(this.myForm.value != null){
+      this.storeService.setStore(this.myForm.value);
+    }
     this.router.navigate(["page02"]);
   }
 

@@ -38,7 +38,7 @@ export class ChildComponent implements OnChanges, OnInit, DoCheck, AfterContentI
   AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   //(7)親コンポーネントから受け取るプロパティ
-  @Input() childValue: number;
+  @Input() childValue: number = 0;
 
   //(8)コンストラクタ
   constructor() {
