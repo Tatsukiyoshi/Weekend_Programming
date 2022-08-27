@@ -14,9 +14,9 @@
 
 #### [演習完了したテキスト一覧へ](./Studyed.md)
 ### 環境アップデート
-|環境／FW       |端末       |日付      |詳細    
+|環境／FW       |端末       |日付      |詳細
 |---------------|-----------|----------|----
-|Python         |IdeaPad    |2022/06/09|[Python 3.10.5](https://www.python.org/downloads/)
+|Python         |IdeaPad    |2022/08/27|[Python 3.10.6](https://www.python.org/downloads/)
 |               |           |2022/08/27|[Django 4.1](https://docs.djangoproject.com/ja/4.1)
 |Kotlin         |IdeaPad    |2022/08/20|IntelliJ IDEA 2022.2.1
 |               |           |2022/08/20|[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)
