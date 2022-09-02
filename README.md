@@ -30,7 +30,7 @@
 |               |           |          |@vue/cli 5.0.8
 |               |           |          |vite 3.0.4
 |               |           |          |Node.js 16.16
-|               |           |          |Chrome OS Flex 104.0.5112.105（Official Build）
+|               |           |2022/09/02|Chrome OS Flex 104.0.5112.110（Official Build）
 |Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
 |               |           |2022/06/04|[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)
 |               |           |2022/06/04|Apache Tomcat 10.0.20
