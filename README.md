@@ -26,9 +26,9 @@
 |               |           |2022/06/05|Node.js 16.15.1
 |Svelte         |IdeaPad    |2022/07/16|Svelte 3.49.0
 |Angular        |IdeaPad    |2022/08/12|Angular 14.1.2
-|Vue            |VivoBook   |2022/08/20|vue 3.2.37
+|Vue            |VivoBook   |2022/09/02|vue 3.2.38
 |               |           |          |@vue/cli 5.0.8
-|               |           |          |vite 3.0.4
+|               |           |          |vite 3.0.9
 |               |           |          |Node.js 16.16
 |               |           |          |Chrome OS Flex 104.0.5112.105（Official Build）
 |Java           |IdeaPad    |2022/08/20|[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)
