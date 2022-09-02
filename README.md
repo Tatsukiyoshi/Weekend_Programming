@@ -39,7 +39,7 @@
 |.NET           |IdeaPad    |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
-|Flutter        |ExpertBook |2022/08/20|[Flutter 3.05](https://docs.flutter.dev/get-started/install)
+|Flutter        |ExpertBook |2022/09/02|[Flutter 3.3](https://docs.flutter.dev/get-started/install)
 |Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
 |               |           |2022/07/09|Tauri 1.0.3 on Windows 11
 |Rust(Ubuntu)   |IdeaPad    |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
@@ -262,7 +262,7 @@ exercism download --exercise=two-fer --track=kotlin
   - Blazor入門（日経ソフトウェア 2021年9月号）**@2021/09/26** <span style="color: red;">*finished*</span>
 
 ### Dart - flutter
-- Flutter 3.05 **@2022/08/20** <span style="color: red;">*Updated!*</span> On ExpertBook
+- Flutter 3.3 **@2022/09/02** <span style="color: red;">*Updated!*</span> On ExpertBook
 - flutter dev [Get started](https://docs.flutter.dev/get-started/install)
   - myapp - flutter demo
   - Startup namer
