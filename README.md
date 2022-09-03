@@ -40,8 +40,9 @@
 |               |ExpertBook |2022/08/11|Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI
 |               |           |2022/07/09|Android SDK Platform 31
 |Flutter        |ExpertBook |2022/09/02|[Flutter 3.3](https://docs.flutter.dev/get-started/install)
-|Rust(Windows)  |IdeaPad    |2022/07/05|Rust 1.62.0 on Windows 11
-|               |           |2022/07/09|Tauri 1.0.3 on Windows 11
+|Rust(Windows)  |IdeaPad    |2022/09/03|Rust 1.63.0 on Windows 11
+|               |           |2022/09/03|Tauri 1.0.5
+|               |           |2022/09/03|Svelte 3.50.0
 |Rust(Ubuntu)   |IdeaPad    |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
 |               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
