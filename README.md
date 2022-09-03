@@ -131,14 +131,14 @@ exercism download --exercise=two-fer --track=kotlin
 - Android Studio Chipmunk | 2021.2.1 Patch 2 **@2022/08/20** <span style="color: red;">*Updated!*</span> On ExpertBook
   ```
   Build #AI-212.5712.43.2112.8815526, built on July 11, 2022
-  Runtime version: 11.0.12+7-b1504.28-7817840 amd64
+  ランタイム・バージョン: 11.0.12+7-b1504.28-7817840 amd64
   VM: OpenJDK 64-Bit Server VM by Oracle Corporation
   Windows 10 10.0
   GC: G1 Young Generation, G1 Old Generation
   Memory: 1280M
   Cores: 4
   Registry: external.system.auto.import.disabled=true
-  Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (69.0.2)
+  Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (70.0.2)
   ```
 - Chipmunk 対応
   - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
