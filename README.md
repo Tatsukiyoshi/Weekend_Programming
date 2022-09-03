@@ -12,7 +12,7 @@
 |2022/05/07|Java   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|6章 バッチ実行 <span style="color: red;">*finished* by Java</span>|
 |2022/05/04|Java   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>|
 
-#### [演習完了したテキスト一覧へ](./Studyed.md)
+#### [演習完了したテキスト一覧へ](_sub/Studyed.md)
 ### 環境アップデート
 |環境／FW       |端末       |日付      |詳細
 |---------------|-----------|----------|----
@@ -47,7 +47,7 @@
 |               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
 |               |           |2022/06/09|Ubuntu 22.04 LTS
 
-#### [VSCode拡張機能](./vscodeExtensions.md)
+#### [VSCode拡張機能](_sub/vscodeExtensions.md)
 
 --- 
 ### documentation
@@ -83,7 +83,7 @@ exercism download --exercise=two-fer --track=kotlin
 ### Database & SQL
 - [PostgreSQL 14.5](https://www.postgresql.org/download/windows/) **@2022/08/20** <span style="color: red;">*Updated*</span> on IdeaPad
 - ノウハウ
-  - [Database関連](./sql/database.md)
+  - [Database関連](sql/database.md)
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
 
@@ -143,7 +143,7 @@ exercism download --exercise=two-fer --track=kotlin
 - Chipmunk 対応
   - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
 - Arctic Fox 対応として吸収すべき課題
-  [更新時の修正事項詳細](./kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
+  [更新時の修正事項詳細](kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
 
 - Android - はじめてのAndroidプログラミング **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
   - [サンプル](http://isbn.sbcr.jp/95815)
@@ -182,7 +182,7 @@ exercism download --exercise=two-fer --track=kotlin
   - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
 
 - [Deno](https://deno.land/) 1.23.3 **@2022/07/07** <span style="color: red;">*Installed!*</span> on IdeaPad
-  - [試してみた](./js/deno.md)
+  - [試してみた](js/deno.md)
 
 - Prisma
   - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
@@ -252,7 +252,7 @@ exercism download --exercise=two-fer --track=kotlin
 
   - [carbon language](https://github.com/carbon-language/carbon-lang)
     - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
-    - [ubuntu 2022.04 にインストール](./carbon/carbon.md)
+    - [ubuntu 2022.04 にインストール](carbon/carbon.md)
 
   - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
     - HelloWorld
@@ -357,4 +357,4 @@ exercism download --exercise=two-fer --track=kotlin
   - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
   - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 
-## [痕跡](Profile.md)
+## [痕跡](_sub/Profile.md)
