@@ -1,31 +1,25 @@
 *   Windows 11
-
     1.  Start a New Tauri Project
         ```
         npx create-tauri-app
         ```
-
     1.  Install Tauri CLI package as a dev dependency
         ```
         npm init
         npm install -D @tauri-apps/cli
         ```
-
     1.  install Tauri CLI as a cargo subcommand
         ```
         cargo install tauri-cli --locked --version "^1.0.0-rc"
         ```
-
     1.  Install Tauri API Package as a Dependency (optional)
         ```
         npm install @tauri-apps/api
         ```
-
     1.  Initialize Tauri in Your App
         ```
         cargo tauri init
         ```
-
     1.  Check tauri info to Make Sure Everything Is Set up Properly
         ```
         cargo tauri info
@@ -66,7 +60,6 @@
         ├─ node_modules
         └─ src-tauri
         ```
-        
     1.  Start Tauri Development Window
         ```
         cargo tauri dev
@@ -76,15 +69,24 @@
         ```
         $ sudo apt-get install npm -y
         ```
-
     1.  nodeインストール
         ```
         $ sudo npm install n -g
         $ sudo n stable
         $ node -v
         ```
-
     1.  yarnインストール
         ```
         $ sudo npm install yarn -g
+        ```
+*   Chrome OS Flex
+    1.  npmインストール
+        ```
+        $ sudo apt install npm -y
+        ```
+    1.  nodeインストール
+        ```
+        $ sudo npm install n -g
+        $ sudo n stable
+        $ node -v
         ```

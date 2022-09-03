@@ -43,10 +43,9 @@
 |Rust(Windows)  |IdeaPad    |2022/09/03|Rust 1.63.0 on Windows 11
 |               |           |2022/09/03|Tauri 1.0.5
 |               |           |2022/09/03|Svelte 3.50.0
-|Rust(Ubuntu)   |IdeaPad    |2022/07/09|Rust 1.62.0 on Ubuntu 22.04 LTS
-|               |           |2022/07/09|Tauri 1.0.3 on Ubuntu 22.04 LTS
-|               |           |2022/06/11|React 18.1.0 on Ubuntu 22.04 LTS
-|               |           |2022/06/09|Ubuntu 22.04 LTS
+|Rust(Chrome OS)|VivoBook   |2022/09/03|Rust 1.63.0
+|               |           |2022/09/03|Tauri 1.0.5
+|               |           |2022/09/03|React 18.2.0
 
 #### [VSCode拡張機能](_sub/vscodeExtensions.md)
 
