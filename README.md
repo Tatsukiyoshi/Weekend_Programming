@@ -1,11 +1,7 @@
 # 独学によるプログラミング演習
 
-## [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
+- [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
-
-日頃、いろんな言語について、雑誌やテキストを購入するなどして、独学に励んでおります。
-
-打ち込んで試した内容をそのまま公開しておりますので、同じテキストに取り組まれている方の参考になれば幸いです。
 
 VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
 
