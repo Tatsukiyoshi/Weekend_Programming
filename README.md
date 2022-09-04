@@ -2,8 +2,13 @@
 
 ## [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
-- [演習完了したテキスト一覧へ](_sub/Studyed.md)
-- [VSCode拡張機能](_sub/vscodeExtensions.md)
+
+日頃、いろんな言語について、雑誌やテキストを購入するなどして、独学に励んでおります。
+
+打ち込んで試した内容をそのまま公開しておりますので、同じテキストに取り組まれている方の参考になれば幸いです。
+
+VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
+
 --- 
 **documentation**
   - Markdown
@@ -49,6 +54,10 @@
 ---
 **Python**
 
+  |テキスト  |日付
+  |----------|------
+  |[独学プログラマー](http://theselftaughtprogrammer.io/)|2019/10/05
+
   |環境／FW                                                   |端末       |日付      
   |-----------------------------------------------------------|-----------|----------
   |[Python 3.10.6](https://www.python.org/downloads/)         |IdeaPad    |2022/08/27
@@ -73,7 +82,6 @@
     - AI(人工知能編)（日経ソフトウェア2019年11月号）<BR>
       - ミニマックス法
       - アルファベータ法
-  - self-taught [独学プログラマー](http://theselftaughtprogrammer.io/) **@2019/10/05** Chapter 22 <span style="color: red;">*finished!*</span>
   - ginza - Universal Dependenciesに基づくオープンソース日本語NLPライブラリ
     ```
     pip install "https://github.com/megagonlabs/ginza/releases/download/v1.0.2/ja_ginza_nopn-1.0.2.tgz"
@@ -86,6 +94,12 @@
   - [鎖プログラム](https://pg-chain.com/)
 ---
 **Kotlin**
+
+  |テキスト                                                                                   |日付
+  |-------------------------------------------------------------------------------------------|----------
+  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/08/08
+  |Kotlinプログラミング                                                                       |2019/11/13
+  |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12
 
   |環境／FW                                                       |端末       |日付      
   |---------------------------------------------------------------|-----------|----------
@@ -110,15 +124,13 @@
       - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
     - Arctic Fox 対応として吸収すべき課題
       [更新時の修正事項詳細](kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
-    - はじめてのAndroidプログラミング **@2019/10/12** My Scheduler(Chapter 12) <span style="color: red;">*finished!*</span>
-      - [サンプル](http://isbn.sbcr.jp/95815)
 
   - Kotlin 
-    - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1) **@2022/08/08** 14章 テスト <span style="color: red;">*finished*</span>
+    - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
       - Intellij IDEA 2022.2.1
       - Amazon Coretto 17.0.4.1 + 言語レベル 8
       - PostgreSQL 14.5
-    - Kotlinプログラミング **@2019/11/13** Chapter 22(coroutines sample update for kotlin1.3)
+    - Kotlinプログラミング
       - Android
         - Chapter 22 coroutines
         - Chapter 21 [New Character UI](https://www.bignerdranch.com/assets/solutions/activity_new_character.xml)
@@ -129,7 +141,7 @@
     - ノウハウ
       - [Lombokを利用する方法](https://stackoverflow.com/questions/60419699)
         ```
-        companion object {  // 
+        companion object {
             private val log: Logger = LoggerFactory.getLogger(this::class.java)
         }
         ```
@@ -137,9 +149,10 @@
 ---
 **JavaScript**
 
-  |テキスト                                                                                              |日付      |進捗状況
-  |------------------------------------------------------------------------------------------------------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/08/12|第4章 標準パイプ／ディレクティブ <span style="color: red;">*finished*</span>
+  |テキスト|日付      |進捗状況
+  |--------|----------|-------
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)            |2022/08/12|第4章 標準パイプ／ディレクティブ <span style="color: red;">*finished*</span>
+  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02
 
 1.  Windows
     |FW             |端末       |日付      
@@ -159,7 +172,6 @@
     |@vue/cli 5.0.8|           |
 
   - React
-    - [モダンJavaScriptの基本から始めるReact実践の教科書](https://isbn2.sbcr.jp/10722/) **@2022/07/02** Appendix React × TypeScript実践演習 <span style="color: red;">*finished*</span>
     - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
     - [Tutorial](https://ja.reactjs.org/tutorial/tutorial.html) **@2021/10/10** <span style="color: red;">*Finished!*</span>
   - Svelte
@@ -172,7 +184,6 @@
   - Sequelize
     - [Sequelizeを使用してデータベースを操作するための基本的な情報(2020.09更新）](https://qiita.com/mima_ita/items/014dcb42872f3a10855b)
   - Angular
-    - [Angularアプリケーションプログラミング](http://www.wings.msn.to/index.php/-/A-03/978-4-7741-9130-0/) **@2022/08/14** 5.1 フォーム開発の基本 <span style="color: red;">*finished*</span>
     - [Angular日本語ドキュメンテーション―ローカル環境とワークスペースのセットアップ](https://angular.jp/guide/setup-local)
     - vs-angular
       - VSCodeを使おう（日経ソフトウェア 2019年7月号）
@@ -211,6 +222,10 @@
 ---
 **.NET**
 
+  |テキスト                                                                           |日付
+  |-----------------------------------------------------------------------------------|----------
+  |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16
+
   |環境／FW                                                                                   |端末       |日付
   |-------------------------------------------------------------------------------------------|-----------|----------
   |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview|IdeaPad    |2022/08/11
@@ -218,7 +233,7 @@
   |Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                 |           |2022/07/09
 
   - C#
-    - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/) **@2022/07/16** : Lesson 13 アプリケーションの作成 <span style="color: red;">*finished*</span>
+    - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
     - フリーアイコン
       - GO(https://www.flaticon.com/free-icon/go_652364)
@@ -355,4 +370,5 @@
     - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
     - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 ---
+
 ## [痕跡](_sub/Profile.md)
