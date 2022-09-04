@@ -1,3 +1,9 @@
 # 独学によるプログラミング演習
 
-日頃、独学した内容は、本リポジトリに公開しております。詳細は、[Wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)へ！
+日頃、いろんな言語について、雑誌やテキストを購入するなどして、独学に励んでおります。
+
+打ち込んで試した内容をそのまま公開しております。
+
+同じテキストを取り組まれている方の参考になれば幸いです。
+
+詳細は、[Wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)へ！
