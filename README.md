@@ -250,17 +250,17 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
 ---
 **Dart/flutter**
 
-  |環境／FW                                                   |端末       |日付
-  |-----------------------------------------------------------|-----------|----------
-  |[Flutter 3.3](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/02
+  |環境／FW                                                     |端末       |日付
+  |-------------------------------------------------------------|-----------|----------
+  |[Flutter 3.3.1](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/09
 
   - flutter doctorの出力
     ```
-    [√] Flutter (Channel stable, 3.3.0, on Microsoft Windows [Version 10.0.22000.856], locale ja-JP)
-        • Flutter version 3.3.0 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.1, on Microsoft Windows [Version 10.0.22000.856], locale ja-JP)
+        • Flutter version 3.3.1 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision ffccd96b62 (4 days ago), 2022-08-29 17:28:57 -0700
-        • Engine revision 5e9e0e0aa8
+        • Framework revision 4f9d92fbbd (3 days ago), 2022-09-06 17:54:53 -0700
+        • Engine revision 3efdf03e73
         • Dart version 2.18.0
         • DevTools version 2.15.0
 
@@ -277,7 +277,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
     [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 1.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
         • Visual Studio Community 2022 version 17.4.32804.182
-        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.      
+        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22000.0
 
     [√] Android Studio (version 2021.2)
@@ -293,10 +293,11 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
         • Flutter extension can be installed from:
           https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
 
-    [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.856]
-        • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 104.0.1293.70
+    [√] Connected device (4 available)
+        • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 11 (API 30) (emulator)
+        • Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Version 10.0.22000.856]    
+        • Chrome (web)                       • chrome        • web-javascript • Google Chrome 105.0.5195.102
+        • Edge (web)                         • edge          • web-javascript • Microsoft Edge 105.0.1343.27
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
