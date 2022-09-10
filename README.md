@@ -222,11 +222,11 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
   |-----------------------------------------------------------------------------------|----------
   |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16
 
-  |環境／FW                                                                                   |端末       |日付
-  |-------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.100 Preview|IdeaPad    |2022/08/11
-  |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI              |ExpertBook |2022/08/11
-  |Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                 |           |2022/07/09
+  |環境／FW                                                                                           |端末       |日付
+  |---------------------------------------------------------------------------------------------------|-----------|----------
+  |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6|IdeaPad    |2022/09/11
+  |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI                      |ExpertBook |2022/08/11
+  |Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                         |           |2022/07/09
 
   - C#
     - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
