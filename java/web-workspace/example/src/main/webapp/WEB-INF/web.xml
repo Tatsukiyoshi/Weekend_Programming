@@ -21,4 +21,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FormSampleServlet</display-name>
+    <servlet-name>FormSampleServlet</servlet-name>
+    <servlet-class>servlet.FormSampleServlet</servlet-class>
+  </servlet>
+  <!--
+  <servlet-mapping>
+    <servlet-name>FormSampleServlet</servlet-name>
+    <url-pattern>/FormSampleServlet</url-pattern>
+  </servlet-mapping>
+  -->
 </web-app>
