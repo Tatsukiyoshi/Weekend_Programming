@@ -6,9 +6,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>練習4-1</title>
+<title>練習4-2</title>
 </head>
 <body>
-<p>IDは<%= employee.getId() %>、名前は<%= employee.getName() %>です</p>
+<% for(int i = 0; i < 10; i++ ){ %>
+<% if(i % 3 == 0){ %>
+<p style="color: red">
+<% } else { %>
+<p>
+<% } %>
+	IDは<%= employee.getId() %>、名前は<%= employee.getName() %>です
+</p>
+<% } %>
 </body>
 </html>

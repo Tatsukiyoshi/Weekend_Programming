@@ -9,7 +9,7 @@ String luck = luckArray[index];
 
 // 実行日を取得
 Date date = new Date();
- sdf = new SimpleDateFormat("MM月dd日");
+SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
 String today = sdf.format(date);
 %>
 <!DOCTYPE html>
