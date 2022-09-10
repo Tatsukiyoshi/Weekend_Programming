@@ -6,16 +6,17 @@ class ScaffoldEndDrawer extends StatelessWidget{
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(
-				title: Text("タイトル"),
+				title: const Text("タイトル"),
 			),
 			body: Center(
 					child: TextButton(
-						child: Text("BODY"),
+						child: const Text("BODY"),
+						onPressed: () => print('Clicked'),
 					)
 			),
 			endDrawer: Drawer(
 				child: ListView(
-					children: [
+					children: const [
 						DrawerHeader(child: Text("Header")),
 						ListTile(
 							title: Text("Item 1"),
@@ -27,7 +28,7 @@ class ScaffoldEndDrawer extends StatelessWidget{
 				),
 			),
 			bottomNavigationBar: BottomNavigationBar(
-				items: [
+				items: const [
 					BottomNavigationBarItem(
 							icon: Icon(Icons.home),
 							label: "ホーム",

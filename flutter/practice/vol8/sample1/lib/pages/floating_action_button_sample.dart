@@ -9,15 +9,16 @@ class FloatingActionButtonSample extends StatelessWidget{
 		return Scaffold(
 			body: Center(
 					child: TextButton(
-						child: Text("BODY"),
+						child: const Text("BODY"),
+						onPressed: () => print('Clicked'),
 					)
 			),
 			floatingActionButton: FloatingActionButton(
-				child: Icon(Icons.apps),
 				tooltip: "メニューを開く",
 				onPressed: (){
 
 				},
+				child: const Icon(Icons.apps),
 			),
 			floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 

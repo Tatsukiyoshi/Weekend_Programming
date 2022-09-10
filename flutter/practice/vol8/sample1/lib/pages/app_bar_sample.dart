@@ -60,9 +60,10 @@ class _AppBarSample extends State<AppBarSample>
 					],
 				),
 			),
-			body: const Center(
+			body: Center(
 					child: TextButton(
-						child: Text("BODY"),
+						child: const Text("BODY"),
+						onPressed: () => print('Clicked')
 					)
 			)
 		);

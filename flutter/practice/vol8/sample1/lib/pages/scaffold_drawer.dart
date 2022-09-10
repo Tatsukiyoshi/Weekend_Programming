@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ScaffoldDrawer extends StatelessWidget{
+  const ScaffoldDrawer({super.key});
 
 	@override
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(
-				title: Text("タイトル"),
+				title: const Text("タイトル"),
 				leading: Builder(
 					builder: (context) => IconButton(
-						icon: Icon(Icons.menu),
+						icon: const Icon(Icons.menu),
 						onPressed: (){
 							Scaffold.of(context).openDrawer();
 						}
@@ -17,18 +18,19 @@ class ScaffoldDrawer extends StatelessWidget{
 				),
 				//	右アイコン
 				actions: [
-					IconButton(icon: Icon(Icons.list_alt), onPressed: (){}),
-					IconButton(icon: Icon(Icons.add_shopping_cart), onPressed: (){})
+					IconButton(icon: const Icon(Icons.list_alt), onPressed: (){}),
+					IconButton(icon: const Icon(Icons.add_shopping_cart), onPressed: (){})
 				],
 			),
 			body: Center(
 					child: TextButton(
-						child: Text("BODY"),
+						child: const Text("BODY"),
+						onPressed: () => print('Clicked'),
 					)
 			),
 			drawer: Drawer(
 				child: ListView(
-					children: [
+					children: const [
 						DrawerHeader(child: Text("Header")),
 						ListTile(
 							title: Text("Item 1"),
@@ -40,7 +42,7 @@ class ScaffoldDrawer extends StatelessWidget{
 				),
 			),
 			bottomNavigationBar: BottomNavigationBar(
-				items: [
+				items: const [
 					BottomNavigationBarItem(
 							icon: Icon(Icons.home),
 							label: "ホーム",

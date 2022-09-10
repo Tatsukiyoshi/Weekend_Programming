@@ -9,9 +9,9 @@ class ScaffoldBottomSheet extends StatelessWidget{
 
 		return Scaffold(
 			appBar: AppBar(
-				title: Text("APP BAR Sample 1"),
+				title: const Text("APP BAR Sample 1"),
 				leading: IconButton(
-					icon: Icon(Icons.menu),
+					icon: const Icon(Icons.menu),
 					onPressed: (){
 
 					},
@@ -21,7 +21,7 @@ class ScaffoldBottomSheet extends StatelessWidget{
 			body: Center(
 					child: Builder(
 						builder: (context) => TextButton(
-								child: Text("Open Bottom Sheet"),
+								child: const Text("Open Bottom Sheet"),
 								onPressed: (){
 									Scaffold.of(context).showBottomSheet<void>((BuildContext context) {
 										return Container(
@@ -29,7 +29,7 @@ class ScaffoldBottomSheet extends StatelessWidget{
 											color: Colors.amber,
 											child: Center(
 												child: TextButton(
-													child: Text("Bottom Sheet"),
+													child: const Text("Bottom Sheet"),
 													onPressed: (){
 														Navigator.pop(context);
 													},
@@ -42,7 +42,7 @@ class ScaffoldBottomSheet extends StatelessWidget{
 					)
 			),
 			bottomNavigationBar: BottomNavigationBar(
-				items: [
+				items: const [
 					BottomNavigationBarItem(
 							icon: Icon(Icons.home),
 							label: "HOME",
@@ -58,11 +58,11 @@ class ScaffoldBottomSheet extends StatelessWidget{
 				],
 			),
 			floatingActionButton: FloatingActionButton(
-				child: Icon(Icons.add),
 				tooltip: "追加する",
 				onPressed: (){
 
 				},
+				child: const Icon(Icons.add),
 			),
 		);
 	}

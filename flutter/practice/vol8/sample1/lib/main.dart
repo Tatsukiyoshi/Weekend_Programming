@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:sample1/pages/AppBarSample.dart';
-import 'package:sample1/pages/FloatingActionButtonSample.dart';
-import 'package:sample1/pages/ScaffoldBottomSheet.dart';
-import 'package:sample1/pages/ScaffoldDrawer.dart';
-import 'package:sample1/pages/ScaffoldEndDrawer.dart';
-import 'package:sample1/pages/ScaffoldSample.dart';
-import 'package:sample1/pages/ScaffoldSnackBar.dart';
+import 'package:sample1/pages/app_bar_sample.dart';
+import 'package:sample1/pages/floating_action_button_sample.dart';
+import 'package:sample1/pages/scaffold_bottom_sheet.dart';
+import 'package:sample1/pages/scaffold_drawer.dart';
+import 'package:sample1/pages/scaffold_end_drawer.dart';
+import 'package:sample1/pages/scaffold_sample.dart';
+import 'package:sample1/pages/scaffold_snack_bar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ScaffoldBottomSheet()
+      home: const ScaffoldBottomSheet()
     );
   }
 }

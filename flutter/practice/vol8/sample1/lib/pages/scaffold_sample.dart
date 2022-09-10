@@ -19,7 +19,8 @@ class ScaffoldSample extends StatelessWidget{
 			),
 			body: Center(
 					child: TextButton(
-						child: Text("BODY"),
+						child: const Text("BODY"),
+						onPressed: () => print('Clicked'),
 					)
 			),
 			bottomNavigationBar: BottomNavigationBar(
