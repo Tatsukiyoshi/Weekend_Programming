@@ -1,17 +1,6 @@
 *   Pleiades 2022-06およびTomcat 10.0.20での対応
-    - サーブレット等の作成は、[新規]-[その他]から行う。
-    - WebServeletアノテーションを指定する場合、web.xmlでのマッピングは不要。
-
-    ```java
-    @WebServlet("/SampleServlet")
-    ```
-
-    ```xml
-    <servlet-mapping>
-      <servlet-name>SampleServlet</servlet-name>
-      <url-pattern>/SampleServlet</url-pattern>
-    </servlet-mapping>
-    ```
+    -   サーブレット等の作成は、[新規]-[その他]から行う。
+    -   その他サーブレットやJSPについては、[別ドキュメント](servlet_jsp.md)参照。 
 
 * バージョン移行
     1.  新しいバージョンをダウンロードする
