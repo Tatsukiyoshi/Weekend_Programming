@@ -33,4 +33,10 @@
     <servlet-name>RedirectSampleServlet</servlet-name>
     <servlet-class>servlet.RedirectSampleServlet</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>HealthCheck</display-name>
+    <servlet-name>HealthCheck</servlet-name>
+    <servlet-class>servlet.HealthCheck</servlet-class>
+  </servlet>
 </web-app>

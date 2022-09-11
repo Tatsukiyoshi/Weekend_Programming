@@ -15,4 +15,10 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FruitServlet</display-name>
+    <servlet-name>FruitServlet</servlet-name>
+    <servlet-class>ex.FruitServlet</servlet-class>
+  </servlet>
 </web-app>
