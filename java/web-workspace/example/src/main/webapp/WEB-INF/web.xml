@@ -6,12 +6,6 @@
     <servlet-name>SampleServlet</servlet-name>
     <servlet-class>servlet.SampleServlet</servlet-class>
   </servlet>
-  <!-- 
-  <servlet-mapping>
-    <servlet-name>SampleServlet</servlet-name>
-    <url-pattern>/SampleServlet</url-pattern>
-  </servlet-mapping>
-  -->
   <display-name>example</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -27,10 +21,16 @@
     <servlet-name>FormSampleServlet</servlet-name>
     <servlet-class>servlet.FormSampleServlet</servlet-class>
   </servlet>
-  <!--
-  <servlet-mapping>
-    <servlet-name>FormSampleServlet</servlet-name>
-    <url-pattern>/FormSampleServlet</url-pattern>
-  </servlet-mapping>
-  -->
+  <servlet>
+    <description></description>
+    <display-name>ForwardSampleServlet</display-name>
+    <servlet-name>ForwardSampleServlet</servlet-name>
+    <servlet-class>servlet.ForwardSampleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>RedirectSampleServlet</display-name>
+    <servlet-name>RedirectSampleServlet</servlet-name>
+    <servlet-class>servlet.RedirectSampleServlet</servlet-class>
+  </servlet>
 </web-app>
