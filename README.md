@@ -224,7 +224,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
 
   |環境／FW                                                                                           |端末       |日付
   |---------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6|IdeaPad    |2022/09/11
+  |Visual Studio Community 2022 17.4.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6|IdeaPad    |2022/09/16
   |Visual Studio Community 2022 17.4.0 Preview 1.0 + .NET 6.0.400 Preview + MAUI                      |ExpertBook |2022/08/11
   |Android SDK Platform 31 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                         |           |2022/07/09
 
