@@ -159,7 +159,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
     |Angular 14.1.2 |IdeaPad    |2022/08/12
     |Deno 1.23.3    |IdeaPad    |2022/07/07
 
-1.  Chrome OS Flex 105.0.5195.112（Official Build）
+1.  Chrome OS Flex 105.0.5195.134（Official Build）
     |FW            |端末       |日付      
     |--------------|-----------|----------
     |Node.js 16.16 |VivoBook   |2022/09/02
@@ -317,7 +317,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
       |Tauri 1.0.5  |           |2022/09/03
       |Svelte 3.50.0|           |2022/09/03
 
-  1. Chrome OS Flex 105.0.5195.112（Official Build）
+  1. Chrome OS Flex 105.0.5195.134（Official Build）
 
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
