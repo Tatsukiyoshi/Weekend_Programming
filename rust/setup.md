@@ -65,6 +65,14 @@
         cargo tauri dev
         ```
 *   Ubuntu 22.04
+    1.  必須パッケージインストール
+        ```
+        sudo apt -y install build-essential
+        sudo apt -y install libdbus-1-dev
+        sudo apt -y install libssl-dev
+        sudo apt -y install libgtk-3-dev
+        sudo apt -y install libwebkit2gtk-4.0-dev
+        ```
     1.  npmインストール
         ```
         $ sudo apt-get install npm -y
