@@ -39,4 +39,10 @@
     <servlet-name>HealthCheck</servlet-name>
     <servlet-class>servlet.HealthCheck</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>RegisterUser</display-name>
+    <servlet-name>RegisterUser</servlet-name>
+    <servlet-class>servlet.RegisterUser</servlet-class>
+  </servlet>
 </web-app>
