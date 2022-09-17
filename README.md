@@ -330,7 +330,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.63.0  |VivoBook   |2022/09/03
-      |Tauri 1.0.5  |           |2022/09/03
+      |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/03
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
