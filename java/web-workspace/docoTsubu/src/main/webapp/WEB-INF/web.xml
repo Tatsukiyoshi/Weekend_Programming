@@ -6,6 +6,12 @@
     <servlet-name>Login</servlet-name>
     <servlet-class>servlet.Login</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>Main</display-name>
+    <servlet-name>Main</servlet-name>
+    <servlet-class>servlet.Main</servlet-class>
+  </servlet>
   <display-name>docoTsubu</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
