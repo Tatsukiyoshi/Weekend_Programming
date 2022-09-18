@@ -12,6 +12,12 @@
     <servlet-name>Main</servlet-name>
     <servlet-class>servlet.Main</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>servlet.Logout</servlet-class>
+  </servlet>
   <display-name>docoTsubu</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
