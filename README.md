@@ -3,7 +3,10 @@
 - [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
-VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
+**共通**
+  - Visual Studio Code 1.71.2
+    エディタはmVSCodeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
+  - GitHub Desktop 3.0.8
 
 --- 
 **documentation**
@@ -201,7 +204,7 @@ VSCodeを中心に使っており、拡張機能の一覧は、[VSCode拡張機�
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/07/18|Chapter 12 デザインパターンをたしなむ <span style="color: red;">*finished*</span>
-  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/09/18|9章 アプリケーションスコープ <span style="color: red;">*finished*</span>
+  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/09/18|10章 アプリケーション作成 <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
