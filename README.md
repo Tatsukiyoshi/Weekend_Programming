@@ -150,7 +150,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/08/12|第4章 標準パイプ／ディレクティブ <span style="color: red;">*finished*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/09/18|第5章 フォーム開発 <span style="color: red;">*finished*</span>
   |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
 
   1.  Windows
@@ -159,7 +159,7 @@
       |Node.js 16.15.1|IdeaPad    |2022/06/05
       |React 18.2.0   |IdeaPad    |2022/07/02
       |Svelte 3.49.0  |IdeaPad    |2022/07/16
-      |Angular 14.1.2 |IdeaPad    |2022/08/12
+      |Angular 14.2.2 |IdeaPad    |2022/09/18
       |Deno 1.23.3    |IdeaPad    |2022/07/07
 
   1.  Chrome OS Flex 105.0.5195.134（Official Build）
