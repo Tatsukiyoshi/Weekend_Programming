@@ -1,0 +1,12 @@
+<form #myForm="ngForm">
+  <select name="animal" [(ngModel)]="selected" (change)="show()">
+    <option value="">ペットを選択してください</option>
+    <optgroup *ngFor="let group of keys(data)"
+      label="{{group}}">
+      <option *ngFor="let item of data[group]"
+        [value]="item.value" [disabled]="item.disabled"
+        [selected]="item.value === selected">{{item.label}}
+      </option>
+    </optgroup>
+  </select>
+</form>

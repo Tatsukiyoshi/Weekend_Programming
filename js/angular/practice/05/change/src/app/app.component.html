@@ -1,0 +1,5 @@
+<form>
+  <textarea cols="70" rows="5" name="tweet" [(ngModel)]="tweet"
+    (input)="setcolor()"></textarea>
+  <div [ngStyle]="myStyle">{{count}}</div>
+</form>

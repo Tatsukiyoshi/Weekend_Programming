@@ -53,9 +53,9 @@
 ---
 **Python**
 
-  |テキスト  |日付
-  |----------|------
-  |[独学プログラマー](http://theselftaughtprogrammer.io/)|2019/10/05
+  |テキスト                                             |日付      |進捗状況
+  |-----------------------------------------------------|----------|----
+  |[独学プログラマー](http://theselftaughtprogrammer.io/)|2019/10/05|<span style="color: red;">*finished*</span>
 
   |環境／FW                                                   |端末       |日付      
   |-----------------------------------------------------------|-----------|----------
@@ -94,11 +94,11 @@
 ---
 **Kotlin**
 
-  |テキスト                                                                                   |日付
-  |-------------------------------------------------------------------------------------------|----------
-  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/08/08
-  |Kotlinプログラミング                                                                       |2019/11/13
-  |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12
+  |テキスト                                                                                   |日付      |進捗状況
+  |------------------------------------------------------------------------------------------|----------|---
+  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/08/08|<span style="color: red;">*finished*</span>
+  |Kotlinプログラミング                                                                       |2019/11/13|<span style="color: red;">*finished*</span>
+  |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12|<span style="color: red;">*finished*</span>
 
   |環境／FW                                                       |端末       |日付      
   |---------------------------------------------------------------|-----------|----------
@@ -150,25 +150,25 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)            |2022/08/12|第4章 標準パイプ／ディレクティブ <span style="color: red;">*finished*</span>
-  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/09/18|第5章 フォーム開発 <span style="color: red;">*finished*</span>
+  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
 
-1.  Windows
-    |FW             |端末       |日付      
-    |---------------|-----------|----------
-    |Node.js 16.15.1|IdeaPad    |2022/06/05
-    |React 18.2.0   |IdeaPad    |2022/07/02
-    |Svelte 3.49.0  |IdeaPad    |2022/07/16
-    |Angular 14.1.2 |IdeaPad    |2022/08/12
-    |Deno 1.23.3    |IdeaPad    |2022/07/07
+  1.  Windows
+      |FW             |端末       |日付      
+      |---------------|-----------|----------
+      |Node.js 16.15.1|IdeaPad    |2022/06/05
+      |React 18.2.0   |IdeaPad    |2022/07/02
+      |Svelte 3.49.0  |IdeaPad    |2022/07/16
+      |Angular 14.2.2 |IdeaPad    |2022/09/18
+      |Deno 1.23.3    |IdeaPad    |2022/07/07
 
-1.  Chrome OS Flex 105.0.5195.134（Official Build）
-    |FW            |端末       |日付      
-    |--------------|-----------|----------
-    |Node.js 16.16 |VivoBook   |2022/09/02
-    |vite 3.0.9    |           |
-    |vue 3.2.38    |           |        
-    |@vue/cli 5.0.8|           |
+  1.  Chrome OS Flex 105.0.5195.134（Official Build）
+      |FW            |端末       |日付      
+      |--------------|-----------|----------
+      |Node.js 16.16 |VivoBook   |2022/09/02
+      |vite 3.0.9    |           |
+      |vue 3.2.38    |           |        
+      |@vue/cli 5.0.8|           |
 
   - React
     - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
@@ -221,9 +221,9 @@
 ---
 **.NET**
 
-  |テキスト                                                                           |日付
-  |-----------------------------------------------------------------------------------|----------
-  |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16
+  |テキスト                                                                           |日付     |進捗状況
+  |-----------------------------------------------------------------------------------|---------|---
+  |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                           |端末       |日付
   |---------------------------------------------------------------------------------------------------|-----------|----------
@@ -313,7 +313,6 @@
 **Rust**
 
   1. Windows 11
-
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.63.0  |IdeaPad    |2022/09/03
@@ -321,7 +320,6 @@
       |Svelte 3.50.1|           |2022/09/17
 
   1. Ubuntu 20.04 on Windows 11
-
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.63.0  |IdeaPad    |2022/09/17
@@ -329,7 +327,6 @@
       |React 18.2.0 |           |2022/09/17
 
   1. Chrome OS Flex 105.0.5195.134（Official Build）
-
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.63.0  |VivoBook   |2022/09/03

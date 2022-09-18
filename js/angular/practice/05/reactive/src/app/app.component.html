@@ -1,0 +1,29 @@
+<form [formGroup]="myForm" (ngSubmit)="show()">
+  <div>
+    <label for="mail">メールアドレス：</label><br />
+    <input id="mail" name="mail" type="email" [formControl]="mail" />
+    <span *ngIf="mail.errors?.['required']">メールアドレスは必須です。</span>
+    <span *ngIf="mail.errors?.['email']">メールアドレスを正しい形式で入力してください。</span>
+  </div>
+  <div>
+    <label for="passwd">パスワード：</label><br />
+    <input id="passwd" name="passwd" type="password" [formControl]="passwd" />
+    <span *ngIf="passwd.errors?.['required']">パスワードは必須です。</span>
+    <span *ngIf="passwd.errors?.['minlength']">パスワードは６文字以上で入力してください。</span>
+  </div>
+  <div>
+    <label for="name">名前（漢字）：</label><br />
+    <input id="name" name="name" type="text" [formControl]="name" />
+    <span *ngIf="name.errors?.['required']">名前（漢字）は必須です。</span>
+    <span *ngIf="name.errors?.['minlength']">名前（漢字）は３文字以上で入力してください。</span>
+    <span *ngIf="name.errors?.['maxlength']">名前（漢字）は１０文字以内で入力してください。</span>
+  </div>
+  <div>
+    <label for="memo">備考：</label><br />
+    <textarea id="memo" name="memo" rows="5" cols="30" [formControl]="memo"></textarea>
+    <span *ngIf="memo.errors?.['maxlength']">備考は１０文字以内で入力してください。</span>
+  </div>
+  <div>
+    <input type="submit" value="送信" [disabled]="myForm.invalid" />
+  </div>
+</form>
