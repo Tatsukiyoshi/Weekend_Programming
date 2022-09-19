@@ -49,7 +49,9 @@ export class AppComponent {
       }
     }
     // 選択された書籍情報を空に（＝フォームを非表示にする）
-    // this.selected = null;
     this.selected.isbn = "";
+    this.selected.title = "";
+    this.selected.price = 0;
+    this.selected.publisher = "";
   }
 }
