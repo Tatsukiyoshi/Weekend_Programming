@@ -1,0 +1,7 @@
+<div>
+  <span *ngFor="let b of books">
+    [<a href="#" (click)="onclick(b)">{{b.title}}</a>]
+  </span>
+</div>
+<hr />
+<detail-book [item]="selected"></detail-book>
