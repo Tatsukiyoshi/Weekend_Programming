@@ -1,0 +1,7 @@
+<div>
+  <label>表示／非表示
+    <input type="checkbox" (change)="onchange()" checked />
+  </label>
+</div>
+<!-- showプロパティがtrueの場合にだけ、子コンポーネントを表示 -->
+<my-child [time]="current" *ngIf="show"></my-child>
