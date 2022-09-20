@@ -24,6 +24,12 @@ export class ChildComponent implements OnChanges,
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log('[child] ngOnChanges');
+
+    // すべての変更を順に取得
+    for(let prop in changes){
+      let change = changes[prop];
+      console.log(`${prop} : ${change.previousValue} => ${change.currentValue}`);
+    }
   }
       
   ngDoCheck(): void {
