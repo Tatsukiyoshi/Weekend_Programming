@@ -4,8 +4,8 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.71.2
-    エディタはmVSCodeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
+  - Visual Studio Code 1.71.2 <BR />
+    エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.0.8
 
 --- 
