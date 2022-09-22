@@ -1,0 +1,9 @@
+h2 {
+    font-size: 150%;
+    text-decoration: underline;
+    color: #369;
+}
+p {
+    background-color: yellow;
+    color: red;
+}
