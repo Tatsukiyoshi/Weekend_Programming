@@ -1,12 +1,12 @@
 1.  コマンド
-    *   ng <command>
+    *   ng &lt;command&gt;
         - Commands:
             |Command | |
             |-|-|
-            |ng analytics                  |Configures the gathering of Angular CLI usage metrics. <BR>See https://angular.io/cli/usage-analytics-gathering|
+            |ng analytics                  |Configures the gathering of Angular CLI usage metrics. &lt;BR&gt;See https://angular.io/cli/usage-analytics-gathering|
             |ng completion                 |Set up Angular CLI autocompletion for your terminal.
             |ng config [json-path] [value] |Retrieves or sets Angular configuration values in the angular.json file for the workspace.
-            |ng doc <keyword>              |Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.  [aliases: d]
+            |ng doc &lt;keyword&gt;              |Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.  [aliases: d]
             |ng new [name]                 |Creates a new Angular workspace.  [aliases: n]
             |ng version                    |Outputs Angular CLI version.  [aliases: v]
 
@@ -62,8 +62,18 @@
         node_modules/@types/node/index.d.ts(20,1): error TS1084: Invalid 'reference' directive syntax.
         ```
 
-1.  ビルドエラーに対する対策
+1.  gitでの資産管理
+    1.  .gitignore
+        .angular/cache 配下が除外されていないので、修正する。
+        ```
+        /.angular/cache
+        ```
+        ↓
+        ```
+        .angular/cache
+        ```
 
+1.  ビルドエラーに対する対策
     1.  バリデーションチェックの記述
         *   プロパティアクセスの記述が変更になり、古い記述だとエラーになる。
             ```
@@ -80,27 +90,30 @@
 
 1.  depandapotによる依存関係更新後のビルド確認
 
-    1.  パッケージ再インストール
-        - そもそも、Windows 10の再セットアップ後、@angularをセットアップしていなかったので、再セットアップ
-            ---
+    1.  パッケージ再インストール <BR />
+
+        そもそも、Windows 10の再セットアップ後、@angularをセットアップしていなかったので、再セットアップ
+            ```
             npm install -g @angular/xxx
-            ---
+            ```
 
     1.  ビルド実行
-        ---
+        ```
         > ng build
         You seem to not be depending on "@angular/core" and/or "rxjs". This is an error.
-        ---
+        ```
+
     1.  ビルドエラーに対する対策
         https://stackoverflow.com/questions/49537782/you-seem-to-not-be-depending-on-angular-core
-        ---
+        ```
         > npm update @angular/core
-        ---
+        ```
         > npm install -g webpack-dev-server
-        ---
+        ```
         > npm install -g webpack
-        ---
+        ```
     1.  キャッシュのクリア
+        ```
         >npm cache clean
         npm ERR! As of npm@5, the npm cache self-heals from corruption issues and data extracted from the cache is guaranteed to be valid. If you want to make sure everything is consistent, use 'npm cache verify' instead. On the other hand, if you're debugging an issue with the installer, you can use `npm install --cache /tmp/empty-cache` to use a temporary cache instead of nuking the actual one.
         npm ERR!
@@ -111,11 +124,14 @@
         >npm\ cache clean --force
         npm WARN using --force I sure hope you know what you are doing.
         [..................] / : WARN using --force I sure hope you know what you are doing.                                    
+        ```
 
     1.  ビルド後の確認
         1.  http-serverのインストール
-            ---
+            ```
             > npm install -g http-server
-            ---
+            ```
         1.  http-serverの起動
+            ```
             > http-server .\dist\vs-angular -p3000 -c-1 -o
+            ```
