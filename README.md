@@ -102,9 +102,9 @@
 
   |環境／FW                                                       |端末       |日付      
   |---------------------------------------------------------------|-----------|----------
-  |IntelliJ IDEA 2022.2.1                                         |IdeaPad    |2022/08/20
+  |IntelliJ IDEA 2022.2.2                                         |IdeaPad    |2022/09/23
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|           |2022/08/20
-  |Amazon Coretto 17.0.4.1                                        |           |2022/08/20
+  |Amazon Coretto 17.0.4.9.1                                      |           |2022/09/23
   |Android Studio Chipmunk 2021.2.1 Patch 2                       |ExpertBook |2022/08/20
 
   - Android
@@ -126,9 +126,12 @@
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
-      - Intellij IDEA 2022.2.1
-      - Amazon Coretto 17.0.4.1 + 言語レベル 8
+      - Intellij IDEA 2022.2.2
+      - Kotlin 1.7.10
+      - Amazon Coretto 17.0.4.9.1 + 言語レベル 17
+      - Graal VM Java17-22.2.0
       - PostgreSQL 14.5
+      - Spring Framework 2.7.2
     - Kotlinプログラミング
       - Android
         - Chapter 22 coroutines
