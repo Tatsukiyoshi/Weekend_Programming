@@ -1,0 +1,8 @@
+<!-- クリック時にshowプロパティを反転 -->
+<label for="show">表示／非表示：</label>
+<input id="show" name="show" type="checkbox" [(ngModel)]="show" />
+<!-- showプロパティの真偽に応じて表示／非表示を切り替え -->
+<h2 *ngIf="show" [@labelState]="'active'"
+  (@labelState.start)="onanim($event)"
+  (@labelState.done)="onanim($event)">
+  こんにちは、Angular！</h2>
