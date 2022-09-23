@@ -117,8 +117,10 @@
     Memory: 1280M
     Cores: 4
     Registry: external.system.auto.import.disabled=true
-    Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (70.0.2)
+    Non-Bundled Plugins: org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), Dart (212.5744), io.flutter (70.0.2)
     ```
+    - Dolphin 対応
+      [アップデート後起動時例外発生](kotlin/Android/Update_to_Dolphin.md) **@2022/09/24**
     - Chipmunk 対応
       - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
     - Arctic Fox 対応として吸収すべき課題
