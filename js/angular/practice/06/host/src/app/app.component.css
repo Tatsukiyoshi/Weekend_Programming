@@ -1,0 +1,6 @@
+:host(.disable) {
+    display: block;
+    border: 1px solid #aaa;
+    color: #fff;
+    background-color: #ccc;
+}

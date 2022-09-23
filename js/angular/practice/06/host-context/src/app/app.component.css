@@ -1,0 +1,5 @@
+:host-context(.summer-theme) p {
+    background-color: #0ff;
+    color: #f00;
+    font-weight: bold;
+}
