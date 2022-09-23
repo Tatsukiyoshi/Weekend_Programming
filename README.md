@@ -117,8 +117,10 @@
     Memory: 1280M
     Cores: 4
     Registry: external.system.auto.import.disabled=true
-    Non-Bundled Plugins: Dart (212.5744), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (70.0.2)
+    Non-Bundled Plugins: org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), Dart (212.5744), io.flutter (70.0.2)
     ```
+    - Dolphin 対応
+      [アップデート後起動時例外発生](kotlin/Android/Update_to_Dolphin.md) **@2022/09/24**
     - Chipmunk 対応
       - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
     - Arctic Fox 対応として吸収すべき課題
@@ -231,9 +233,39 @@
   |環境／FW                                                                                           |端末       |日付
   |---------------------------------------------------------------------------------------------------|-----------|----------
   |Visual Studio Community 2022 17.4.0 Preview 2.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6|IdeaPad    |2022/09/16
-  |Visual Studio Community 2022 17.4.0 Preview 2.0 + .NET 6.0.400 Preview + .NET MAUI                 |ExpertBook |2022/09/16
+  |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview + .NET MAUI                 |ExpertBook |2022/09/23
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                         |           |2022/07/09
 
+  - .NET 環境情報
+    ```
+    dotnet --info
+    ```
+    ```
+    .NET SDK:
+    Version:   7.0.100-rc.1.22431.12
+    Commit:    f1cf61e1c0
+
+    ランタイム環境:
+    OS Name:     Windows
+    OS Version:  10.0.22000
+    OS Platform: Windows
+    RID:         win10-x64
+    Base Path:   C:\Program Files\dotnet\sdk\7.0.100-rc.1.22431.12\
+    Other architectures found:
+      x86   [C:\Program Files (x86)\dotnet]
+
+    Environment variables:
+      Not set
+
+    global.json file:
+      Not found
+
+    Learn more:
+      https://aka.ms/dotnet/info
+
+    Download .NET:
+      https://aka.ms/dotnet/download
+    ```
   - C#
     - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
@@ -258,16 +290,21 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.1](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/09
+  |[Flutter 3.3.2](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/23
 
-  - flutter doctorの出力
+  - flutterの更新
     ```
-    [√] Flutter (Channel stable, 3.3.1, on Microsoft Windows [Version 10.0.22000.856], locale ja-JP)
-        • Flutter version 3.3.1 on channel stable at D:\flutter
+    flutter upgrade
+    ```
+
+  - flutter doctor -vの出力
+    ```
+    [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.856], locale ja-JP)
+        • Flutter version 3.3.2 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision 4f9d92fbbd (3 days ago), 2022-09-06 17:54:53 -0700
-        • Engine revision 3efdf03e73
-        • Dart version 2.18.0
+        • Framework revision e3c29ec00c (9 days ago), 2022-09-14 08:46:55 -0500
+        • Engine revision a4ff2c53d8
+        • Dart version 2.18.1
         • DevTools version 2.15.0
 
     [√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
@@ -280,9 +317,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 1.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 2.1)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.32804.182
+        • Visual Studio Community 2022 version 17.4.32916.344
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22000.0
 
@@ -294,16 +331,15 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.12+7-b1504.28-7817840)
 
-    [√] VS Code (version 1.71.0)
+    [√] VS Code (version 1.71.2)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension can be installed from:
           https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
 
-    [√] Connected device (4 available)
-        • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 11 (API 30) (emulator)
-        • Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Version 10.0.22000.856]    
-        • Chrome (web)                       • chrome        • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)                         • edge          • web-javascript • Microsoft Edge 105.0.1343.27
+    [√] Connected device (3 available)
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.856]
+        • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 105.0.1343.42
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
