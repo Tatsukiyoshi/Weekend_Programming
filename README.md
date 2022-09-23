@@ -234,6 +234,36 @@
   |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview + .NET MAUI                 |ExpertBook |2022/09/23
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                         |           |2022/07/09
 
+  - .NET 環境情報
+    ```
+    dotnet --info
+    ```
+    ```
+    .NET SDK:
+    Version:   7.0.100-rc.1.22431.12
+    Commit:    f1cf61e1c0
+
+    ランタイム環境:
+    OS Name:     Windows
+    OS Version:  10.0.22000
+    OS Platform: Windows
+    RID:         win10-x64
+    Base Path:   C:\Program Files\dotnet\sdk\7.0.100-rc.1.22431.12\
+    Other architectures found:
+      x86   [C:\Program Files (x86)\dotnet]
+
+    Environment variables:
+      Not set
+
+    global.json file:
+      Not found
+
+    Learn more:
+      https://aka.ms/dotnet/info
+
+    Download .NET:
+      https://aka.ms/dotnet/download
+    ```
   - C#
     - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
