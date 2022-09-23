@@ -1,1 +1,1 @@
-rootProject.name = "batchcsvimport"
+rootProject.name = "BatchCsvImport"

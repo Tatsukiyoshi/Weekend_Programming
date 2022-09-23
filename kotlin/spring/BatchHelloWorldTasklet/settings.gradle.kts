@@ -1,1 +1,1 @@
-rootProject.name = "batchhelloworldtasklet"
+rootProject.name = "BatchHelloWorldTasklet"

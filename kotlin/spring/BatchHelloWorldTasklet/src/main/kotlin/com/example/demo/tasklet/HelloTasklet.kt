@@ -21,13 +21,13 @@ class HelloTasklet: Tasklet {
     }
 
     @Value("#{jobParameters['require1']}")
-    private val require1: String? = null
+    private val require1: String = ""
 
     @Value("#{jobParameters['option1']}")
     private val option1: Int = 0
 
     @Autowired
-    private var sampleProperty: SampleProperty? = null
+    private lateinit var sampleProperty: SampleProperty
 
     override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus? {
         log.info("Hello World")
