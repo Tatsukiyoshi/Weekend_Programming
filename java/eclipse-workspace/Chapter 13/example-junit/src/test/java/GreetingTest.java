@@ -1,14 +1,31 @@
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 /**
  * Greeting テストクラス
  */
 public class GreetingTest {
+	/**
+	 * コンストラクタ
+	 */
+	public GreetingTest() {}
+	
     private Greeting target = new Greeting();
 
     /**
+	 * 夜の挨拶テスト
+	 */
+	@Test
+	public void getMessage_夜開始(){
+	    // 実行
+	    String message = this.target.getMessage(17);
+	
+	    // 検証
+	    assertEquals(message, "こんばんは");
+	}
+
+	/**
      * 朝の挨拶テスト
      */
     @Test
@@ -17,7 +34,8 @@ public class GreetingTest {
         String message = this.target.getMessage(5);
 
         // 検証
-        assertThat(message, is("おはようございます"));
+        assertEquals(message, "おはようございます");
+        //assertThat(message, is("おはようございます"));
     }
 
     /**
@@ -29,18 +47,6 @@ public class GreetingTest {
         String message = this.target.getMessage(11);
 
         // 検証
-        assertThat(message, is("こんにちは"));
-    }
-
-    /**
-     * 夜の挨拶テスト
-     */
-    @Test
-    public void getMessage_夜開始(){
-        // 実行
-        String message = this.target.getMessage(17);
-
-        // 検証
-        assertThat(message, is("こんばんは"));
+        assertEquals(message, "こんにちは");
     }
 }

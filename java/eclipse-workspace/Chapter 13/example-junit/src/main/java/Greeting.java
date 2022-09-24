@@ -1,11 +1,16 @@
 /**
- * 時間帯に応じたメッセージを出力するクラス
+ * メッセージを出力するクラス
  */
 public class Greeting {
 	/**
-	 * メッセージを出力する
-	 * @param hour
-	 * @return String
+	 * コンストラクタ
+	 */
+	public Greeting() {}
+	
+	/**
+	 * 時間帯（朝／昼／晩）に応じたメッセージを出力する
+	 * @param hour 時間
+	 * @return メッセージ
 	 */
 	public String getMessage(int hour) {
 		/** メッセージ */
