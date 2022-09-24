@@ -1,6 +1,17 @@
 *   Java
     -   [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
 
+    -   [【Java】カレントディレクトリの取得方法](https://qiita.com/mushroominger/items/89e60847879b7e9a3ad0)
+    -   [String、Date、LocalDateの変換](https://qiita.com/hryshtk/items/43991beaabbb9d587360)
+    -   [Java List.add() UnsupportedOperationException](https://stackoverflow.com/questions/5755477/java-list-add-unsupportedoperationexception)<BR />
+        ```java
+        List<Employee> employeeList = Collections.emptyList();
+        ```
+        クラス名を指定せず、リストを初期化すると、リストへ追加する際にそのオブジェクトが妥当が判断できず、サポートしていないという例外が発生する。
+        やっぱり、リストは、クラス名を指定して、初期化しなきゃいけないってこと。
+        ```java
+        List<Employee> employeeList = new ArrayList<Employee>();
+        ```
     *   Servlet
         -   WebServeletアノテーションを指定する場合、web.xmlでのマッピングは不要。
             -   [itmedia](https://atmarkit.itmedia.co.jp/ait/articles/1104/12/news134.html)の記事にある通り、JSR-315仕様に準じた対応となる模様。

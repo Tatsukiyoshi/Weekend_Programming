@@ -4,14 +4,16 @@
   <artifactId>Apache-Commons-Sample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>UseApacheCommons</name>
-  <dependency>
-  	<groupId>org.apache.commons</groupId>
-  	<artifactId>common-lang3</artifactId>
-  	<version>3.12</version>
-  </dependency>
-  <dependency>
-  	<groupId>org.apache.commons</groupId>
-  	<artifactId>common-beanutils</artifactId>
-  	<version>1.9.4</version>
-  </dependency>
+  <dependencies>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+ 		<version>3.12.0</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-beanutils</groupId>
+		<artifactId>common-beanutils</artifactId>
+		<version>1.9.4</version>
+    </dependency>
+  </dependencies>
 </project>
