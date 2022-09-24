@@ -165,7 +165,8 @@
       |React 18.2.0   |IdeaPad    |2022/07/02
       |Svelte 3.49.0  |IdeaPad    |2022/07/16
       |Angular 14.2.3 |IdeaPad    |2022/09/23
-      |Deno 1.23.3    |IdeaPad    |2022/07/07
+      |Deno 1.25.4    |IdeaPad    |2022/09/24
+      |Fresh 1.1.1    |IdeaPad    |2022/09/24
 
   1.  Chrome OS Flex 105.0.5195.134（Official Build）
       |FW            |端末       |日付      
@@ -181,7 +182,7 @@
   - Svelte
     - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
   - [Deno](https://deno.land/)
-    - [試してみた](js/deno.md)
+    - [Deno & fresh 試してみた](js/deno.md)
   - Prisma
     - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
     - [Start from scratch](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
