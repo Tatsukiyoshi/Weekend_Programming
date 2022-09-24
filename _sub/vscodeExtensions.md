@@ -40,6 +40,7 @@
     *   Test Runner for Java
 *   JavaScript
     *   Angular
+    *   Deno
     *   Vue
         *   Volar
     *   Svelte for VS Code
