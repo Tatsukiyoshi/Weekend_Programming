@@ -166,7 +166,7 @@
       |Svelte 3.49.0  |IdeaPad    |2022/07/16
       |Angular 14.2.3 |IdeaPad    |2022/09/23
       |Deno 1.25.4    |IdeaPad    |2022/09/24
-      |Fresh 1.1.1    |IdeaPad    |2022/09/24
+      |fresh 1.1.1    |IdeaPad    |2022/09/24
 
   1.  Chrome OS Flex 105.0.5195.134（Official Build）
       |FW            |端末       |日付      
