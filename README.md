@@ -208,14 +208,14 @@
 **Java**
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
-  |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/07/18|Chapter 12 デザインパターンをたしなむ <span style="color: red;">*finished*</span>
+  |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/24|Chapter 13 周辺ツールで品質を上げる <span style="color: red;">*finished*</span>
   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/09/18|10章 アプリケーション作成 <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                      |端末       |日付
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
-  |[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/08/20
+  |[Pleiades All in One Eclipse Standard Edition 2022-09.20220914 (Eclipse 4.25.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/09/24
   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)                                 |           |2022/06/04
   |[Apache Tomcat 10.0.23](https://tomcat.apache.org/download-10.cgi)                                            |           |2022/09/24
   |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
