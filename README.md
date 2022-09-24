@@ -217,10 +217,15 @@
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
   |[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/08/20
   |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)                                 |           |2022/06/04
-  |Apache Tomcat 10.0.20                                                                                         |           |2022/06/04
+  |[Apache Tomcat 10.0.23](https://tomcat.apache.org/download-10.cgi)                                            |           |2022/09/24
+  |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
+  |Apache Maven 3.8.6                                                                                            |           |2022/06/23
+  |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
   |[Spring Tool Suite 4.15.3](https://spring.io/tools)                                                           |ExpertBook |2022/08/20
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
 
+  - [Jenkins備忘録](java/jenkins.md)
+  - [Tomcat備忘録](java/tomcat.md)
   - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
   - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
 ---
