@@ -105,26 +105,7 @@
   |IntelliJ IDEA 2022.2.2                                         |IdeaPad    |2022/09/23
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|           |2022/08/20
   |Amazon Coretto 17.0.4.9.1                                      |           |2022/09/23
-  |Android Studio Chipmunk 2021.2.1 Patch 2                       |ExpertBook |2022/08/20
-
-  - Android
-    ```
-    Build #AI-212.5712.43.2112.8815526, built on July 11, 2022
-    ランタイム・バージョン: 11.0.12+7-b1504.28-7817840 amd64
-    VM: OpenJDK 64-Bit Server VM by Oracle Corporation
-    Windows 10 10.0
-    GC: G1 Young Generation, G1 Old Generation
-    Memory: 1280M
-    Cores: 4
-    Registry: external.system.auto.import.disabled=true
-    Non-Bundled Plugins: org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), Dart (212.5744), io.flutter (70.0.2)
-    ```
-    - Dolphin 対応
-      [アップデート後起動時例外発生](kotlin/Android/Update_to_Dolphin.md) **@2022/09/24**
-    - Chipmunk 対応
-      - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
-    - Arctic Fox 対応として吸収すべき課題
-      [更新時の修正事項詳細](kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
+  |Android Studio Dolphin | 2021.3.1                              |ExpertBook |2022/09/25
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
@@ -150,6 +131,33 @@
         }
         ```
       - [Spring Batch+Kotlinの事例](https://nulab.com/ja/blog/nulab/spring-boot-batch/)
+
+  - Android
+    ```
+    Build #AI-213.7172.25.2113.9014738, built on September 1, 2022
+    Runtime version: 11.0.13+0-b1751.21-8125866 amd64
+    VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+    Windows 11 10.0
+    GC: G1 Young Generation, G1 Old Generation
+    Memory: 1280M
+    Cores: 4
+    Registry:
+        external.system.auto.import.disabled=true
+        ide.text.editor.with.preview.show.floating.toolbar=false
+
+    Non-Bundled Plugins:
+        com.intellij.ja (213.370)
+        Dart (213.7371)
+        io.flutter (70.0.3)
+    ```
+    - Dolphin 対応
+      - Gradle 7.4.2 and Android Gradle Plugin 7.3.0
+      - [アップデート対応](kotlin/Android/Update_to_Dolphin.md) **@2022/09/25**
+    - Chipmunk 対応
+      - Gradle 7.3.3 and Android Gradle Plugin 7.2.0
+    - Arctic Fox 対応として吸収すべき課題
+      [更新時の修正事項詳細](kotlin/Android/Update_to_Arctic_Fox.md)を参照 **@2021/11/23** <span style="color: red;">*updated!*</span>
+
 ---
 **JavaScript**
 
@@ -303,10 +311,10 @@
 
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.856], locale ja-JP)
+    [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.978], locale ja-JP)
         • Flutter version 3.3.2 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision e3c29ec00c (9 days ago), 2022-09-14 08:46:55 -0500
+        • Framework revision e3c29ec00c (11 days ago), 2022-09-14 08:46:55 -0500
         • Engine revision a4ff2c53d8
         • Dart version 2.18.1
         • DevTools version 2.15.0
@@ -315,7 +323,7 @@
         • Android SDK at C:\Users\taish\AppData\Local\Android\sdk
         • Platform android-33, build-tools 33.0.0
         • Java binary at: D:\Program Files\Android\Android Studio\jre\bin\java
-        • Java version OpenJDK Runtime Environment (build 11.0.12+7-b1504.28-7817840)
+        • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
         • All Android licenses accepted.
 
     [√] Chrome - develop for the web
@@ -325,15 +333,15 @@
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
         • Visual Studio Community 2022 version 17.4.32916.344
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
-        • Windows 10 SDK version 10.0.22000.0
+        • Windows 10 SDK version 10.0.22621.0
 
-    [√] Android Studio (version 2021.2)
+    [√] Android Studio (version 2021.3)
         • Android Studio at D:\Program Files\Android\Android Studio
         • Flutter plugin can be installed from:
           https://plugins.jetbrains.com/plugin/9212-flutter
         • Dart plugin can be installed from:
           https://plugins.jetbrains.com/plugin/6351-dart
-        • Java version OpenJDK Runtime Environment (build 11.0.12+7-b1504.28-7817840)
+        • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
     [√] VS Code (version 1.71.2)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
@@ -341,9 +349,9 @@
           https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.856]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.978]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 105.0.1343.42
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 105.0.1343.50
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
