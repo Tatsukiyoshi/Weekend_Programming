@@ -82,3 +82,12 @@
     Your JRE: 11.0.13+0-b1751.21-8125866 amd64 (JetBrains s.r.o.)
     D:\Program Files\Android\Android Studio\jre
     ```
+*   原因
+    非推奨になった日本語化パッケージを適用していたため
+*   対策
+    -   一旦、旧バージョンに戻し、公式情報に従って、日本語化パッケージを無効化
+        [IntelliJ IDEA 日本語化マニュアル](https://pleiades.io/pages/pleiades_jetbrains_manual.html)
+    -   アンインストールのうえ、ユーザフォルダ配下にあるファイルを削除
+    -   新規インストールを行い、起動確認
+    -   JetBrainsの日本語化パッケージを適用
+        [Android Studio Dolphin 日本語化を行いました（Mac）](https://zenn.dev/kurayasu/articles/c2d3bd2a046596)
