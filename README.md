@@ -165,7 +165,8 @@
       |React 18.2.0   |IdeaPad    |2022/07/02
       |Svelte 3.49.0  |IdeaPad    |2022/07/16
       |Angular 14.2.3 |IdeaPad    |2022/09/23
-      |Deno 1.23.3    |IdeaPad    |2022/07/07
+      |Deno 1.25.4    |IdeaPad    |2022/09/24
+      |fresh 1.1.1    |IdeaPad    |2022/09/24
 
   1.  Chrome OS Flex 105.0.5195.134（Official Build）
       |FW            |端末       |日付      
@@ -181,7 +182,7 @@
   - Svelte
     - [SvelteとReactの基本を比較](https://www.twilio.com/blog/react-svelte-comparing-basics-jp)
   - [Deno](https://deno.land/)
-    - [試してみた](js/deno.md)
+    - [Deno & fresh 試してみた](js/deno.md)
   - Prisma
     - [Visual Studio Code で TypeScript の開発環境を構築する](https://maku.blog/p/ak7u3h3/)
     - [Start from scratch](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
@@ -208,21 +209,24 @@
 **Java**
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
-  |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/07/18|Chapter 12 デザインパターンをたしなむ <span style="color: red;">*finished*</span>
+  |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/25|Chapter 14 ライブラリで効率を上げる <span style="color: red;">*finished*</span>
   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/09/18|10章 アプリケーション作成 <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                      |端末       |日付
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
-  |[Pleiades All in One Eclipse Standard Edition 2022-06.20220619 (Eclipse 4.24.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/08/20
-  |[OpenJDK JDK 18.0.1.1 General-Availability Release](https://jdk.java.net/18/)                                 |           |2022/06/04
-  |Apache Tomcat 10.0.20                                                                                         |           |2022/06/04
+  |[Pleiades All in One Eclipse Standard Edition 2022-09.20220914 (Eclipse 4.25.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/09/24
+  |[OpenJDK JDK 19 General-Availability Release](https://jdk.java.net/19/)                                       |           |2022/09/24
+  |[Apache Tomcat 10.0.23](https://tomcat.apache.org/download-10.cgi)                                            |           |2022/09/24
+  |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
+  |Apache Maven 3.8.6                                                                                            |           |2022/06/23
+  |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
   |[Spring Tool Suite 4.15.3](https://spring.io/tools)                                                           |ExpertBook |2022/08/20
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
 
-  - [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
-  - [Pleiades 2022-06 & Tomcat 10.0.20での対応](java/pleiades.md)
+  * [ノウハウ＋備忘録](java/Java.md)
+
 ---
 **.NET**
 
