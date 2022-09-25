@@ -8,6 +8,8 @@ import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.supercsv.cellprocessor.FmtDate;
 import org.supercsv.cellprocessor.Optional;
 import org.supercsv.cellprocessor.ParseDate;
@@ -26,6 +28,8 @@ import org.supercsv.prefs.CsvPreference;
  *
  */
 public class SuperCSVSample {
+	private static final Logger logger = LoggerFactory.getLogger(SuperCSVSample.class);
+
 	/**
 	 * CSVデータを読み込む（SuperCSV）
 	 * @param csvFile CSVファイル名
@@ -39,8 +43,8 @@ public class SuperCSVSample {
 				new StrRegEx("[a-z0-9\\._]+@[a-z0-9\\.]+"),
 				new Optional()
 		};
-			
-		System.out.println("pwd = " + System.getProperty("user.dir"));
+
+		logger.info("pwd = {}", System.getProperty("user.dir"));
 
 		Path path = Paths.get(csvFile);
 			
@@ -50,11 +54,11 @@ public class SuperCSVSample {
 			Employee employee;
 			
 			while((employee = beanReader.read(Employee.class, header, processors)) != null) {
-				System.out.println(employee.getName());
-				System.out.println(employee.getAge().toString());
-				System.out.println(employee.getBirth().toString());
-				System.out.println(employee.getEmail());
-				System.out.println(employee.getNote());
+				logger.info(employee.getName());
+				logger.info(employee.getAge().toString());
+				logger.info(employee.getBirth().toString());
+				logger.info(employee.getEmail());
+				logger.info(employee.getNote());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

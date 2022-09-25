@@ -42,8 +42,6 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/JavaLib/commons-lang3-3.12.0/commons-lang3-3.12.0.jar"/>
-	<classpathentry kind="lib" path="C:/JavaLib/commons-beanutils-1.9.4/commons-beanutils-1.9.4.jar"/>
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="optional" value="true"/>
