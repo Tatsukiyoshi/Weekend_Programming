@@ -18,7 +18,8 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/CounterServlet")
 public class CounterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private Integer count;	// 訪問回数
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -34,7 +35,7 @@ public class CounterServlet extends HttpServlet {
 
 		// 訪問回数を表すIntegerインスタンスを新規作成し、
 		// アプリケーションスコープに保存
-		Integer count = 0;
+		count = 0;
 		ServletContext application = config.getServletContext();
 		application.setAttribute("count", count);
 		
