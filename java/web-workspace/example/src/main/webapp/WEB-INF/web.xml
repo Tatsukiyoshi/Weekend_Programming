@@ -51,4 +51,10 @@
     <servlet-name>MinatoIndex</servlet-name>
     <servlet-class>servlet.MinatoIndex</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CounterServlet</display-name>
+    <servlet-name>CounterServlet</servlet-name>
+    <servlet-class>servlet.CounterServlet</servlet-class>
+  </servlet>
 </web-app>
