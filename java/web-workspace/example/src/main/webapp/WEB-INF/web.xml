@@ -57,4 +57,7 @@
     <servlet-name>CounterServlet</servlet-name>
     <servlet-class>servlet.CounterServlet</servlet-class>
   </servlet>
+  <listener>
+    <listener-class>listener.ListenerSample</listener-class>
+  </listener>
 </web-app>

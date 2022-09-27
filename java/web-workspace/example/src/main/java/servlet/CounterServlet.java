@@ -3,8 +3,6 @@ package servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import jakarta.servlet.Servlet;
-import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,7 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/CounterServlet")
 public class CounterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private Integer count;	// 訪問回数
 
     /**
      * @see HttpServlet#HttpServlet()
@@ -26,28 +23,6 @@ public class CounterServlet extends HttpServlet {
     public CounterServlet() {
         super();
     }
-
-	/**
-	 * @see Servlet#init(ServletConfig)
-	 */
-	public void init(ServletConfig config) throws ServletException {
-		super.init(config);
-
-		// 訪問回数を表すIntegerインスタンスを新規作成し、
-		// アプリケーションスコープに保存
-		count = 0;
-		ServletContext application = config.getServletContext();
-		application.setAttribute("count", count);
-		
-		System.out.println("init() is executed");
-	}
-
-	/**
-	 * @see Servlet#destroy()
-	 */
-	public void destroy() {
-		System.out.println("destroy() is executed");
-	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -79,5 +54,4 @@ public class CounterServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }
