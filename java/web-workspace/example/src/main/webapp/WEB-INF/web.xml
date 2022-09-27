@@ -69,4 +69,7 @@
     <filter-name>FilterSample</filter-name>
     <url-pattern>/FilterSample</url-pattern>
   </filter-mapping>
+  <listener>
+    <listener-class>listener.NoAppScopeListener</listener-class>
+  </listener>
 </web-app>
