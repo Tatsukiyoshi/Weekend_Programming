@@ -300,15 +300,22 @@
 ---
 **Dart/flutter**
 
+  |コンテンツ                                                                |日付     |進捗状況
+  |--------------------------------------------------------------------------|---------|---
+  |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/09/28|第10回 Flutter2の新しい画面遷移「Navigator 2.0」を使ったページ遷移を理解しよう <span style="color: red;">*finished*</span>
+
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
   |[Flutter 3.3.2](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/23
 
+  - flutter dev
+    -  [Get started](https://docs.flutter.dev/get-started/install)
+    -  myapp - flutter demo
+    -  Startup namer
   - flutterの更新
     ```
     flutter upgrade
     ```
-
   - flutter doctor -vの出力
     ```
     [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.978], locale ja-JP)
@@ -356,10 +363,6 @@
     [√] HTTP Host Availability
         • All required HTTP hosts are available
     ```
-  - flutter dev
-    -  [Get started](https://docs.flutter.dev/get-started/install)
-    -  myapp - flutter demo
-    -  Startup namer
 ---
 **Rust**
 
