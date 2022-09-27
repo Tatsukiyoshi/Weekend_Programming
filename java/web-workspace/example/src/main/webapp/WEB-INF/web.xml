@@ -60,4 +60,13 @@
   <listener>
     <listener-class>listener.ListenerSample</listener-class>
   </listener>
+  <filter>
+    <display-name>FilterSample</display-name>
+    <filter-name>FilterSample</filter-name>
+    <filter-class>filter.FilterSample</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FilterSample</filter-name>
+    <url-pattern>/FilterSample</url-pattern>
+  </filter-mapping>
 </web-app>
