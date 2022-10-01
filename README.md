@@ -147,8 +147,8 @@
 
     Non-Bundled Plugins:
         com.intellij.ja (213.370)
-        Dart (213.7371)
-        io.flutter (70.0.3)
+        Dart (213.7433)
+        io.flutter (70.2.3)
     ```
     - Dolphin 対応
       - Gradle 7.4.2 and Android Gradle Plugin 7.3.0
@@ -308,7 +308,7 @@
 
   |コンテンツ                                                                |日付     |進捗状況
   |--------------------------------------------------------------------------|---------|---
-  |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/09/28|第10回 Flutter2の新しい画面遷移「Navigator 2.0」を使ったページ遷移を理解しよう <span style="color: red;">*finished*</span>
+  |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/10/01|第11回 Flutterの基本的なレイアウトの考え方・仕組みを学ぼう <span style="color: red;">*finished*</span>
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
