@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layouts/AlignWidget.dart';
-import 'package:flutter_layouts/AspectRatioWidget.dart';
-import 'package:flutter_layouts/CenterWidget.dart';
-import 'package:flutter_layouts/ColumnWidget.dart';
-import 'package:flutter_layouts/ContainerWidget.dart';
-import 'package:flutter_layouts/PaddingWidget.dart';
-import 'package:flutter_layouts/RowWidget.dart';
-import 'package:flutter_layouts/WrapWidget.dart';
+import 'package:vol11/AlignWidget.dart';
+import 'package:vol11/AspectRatioWidget.dart';
+import 'package:vol11/CenterWidget.dart';
+import 'package:vol11/ColumnWidget.dart';
+import 'package:vol11/ContainerWidget.dart';
+import 'package:vol11/PaddingWidget.dart';
+import 'package:vol11/RowWidget.dart';
+import 'package:vol11/WrapWidget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -22,13 +24,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Layouts'),
+      home: const MyHomePage(title: 'Flutter Layouts'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
