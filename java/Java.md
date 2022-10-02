@@ -64,3 +64,7 @@
 
 *   Tomcat
     -   [WindowsでインストールしたTomcatの起動ポートを変更する](https://mr-star.hatenablog.com/entry/tomcat/005)
+
+*   H2 Database
+    -   環境変数H2DRIVERSまたはCLASSPATHにH2*.jarを登録する。
+    -   データベースは、"H2 Console"で作成する。ただし、Embeddedモードでしか作成できない。

@@ -236,6 +236,7 @@
   |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
   |Apache Maven 3.8.6                                                                                            |           |2022/06/23
   |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
+  |[H2 Database 2.1.214](https://www.h2database.com/html/main.html)                                              |           |2022/10/02
   |[Spring Tool Suite 4.15.3](https://spring.io/tools)                                                           |ExpertBook |2022/08/20
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
 
