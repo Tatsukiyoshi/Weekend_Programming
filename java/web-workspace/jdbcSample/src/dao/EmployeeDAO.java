@@ -46,4 +46,22 @@ public class EmployeeDAO {
 		
 		return empList;
 	}
+	
+	public boolean remove(String id) {
+				// データベースへ接続
+		try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
+			
+			// DELETE文を準備
+			String sql = "DELETE FROM EMPLOYEE WHERE ID=?";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setString(1, id);
+			
+			int result = pStmt.executeUpdate();
+			return (result == 1);
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
 }
