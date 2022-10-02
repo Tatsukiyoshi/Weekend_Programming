@@ -224,7 +224,7 @@
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/25|Chapter 14 ライブラリで効率を上げる <span style="color: red;">*finished*</span>
-  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/02|12章 アクションタグとEL式 <span style="color: red;">*finished*</span>
+  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/03|13章 JDBCプログラムとDAOパターン <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
 
@@ -236,6 +236,7 @@
   |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
   |Apache Maven 3.8.6                                                                                            |           |2022/06/23
   |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
+  |[H2 Database 2.1.214](https://www.h2database.com/html/main.html)                                              |           |2022/10/02
   |[Spring Tool Suite 4.15.3](https://spring.io/tools)                                                           |ExpertBook |2022/08/20
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
 
