@@ -1,0 +1,2 @@
+INSERT INTO MUTTER (NAME, TEXT) VALUES ('湊', '今日は休みだ');
+INSERT INTO MUTTER (NAME, TEXT) VALUES ('綾部', 'いいな～');
