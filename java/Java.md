@@ -1,8 +1,10 @@
 *   Java
-    -   [JSTLを用いたjspで起こるエラーを解決したい](https://teratail.com/questions/350891)
-    -   [「http://java.sun.com/jsp/jstl/core」のタグライブラリ記述子が見つかりません　の解決方法](https://qiita.com/cuore623/items/d894ab8f986904786f12)
-    -   [JSTL 1.2.5](https://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl/1.2.5)
-    -   [JSTL coreタグライブラリの利用](https://qiita.com/sculptcat/items/53d1a3a2d3b973354085)
+    -   JSTLを利用する場合、ビルドバスにJARファイルの登録が必要
+        ![ビルドパスへの登録](../images/eclipse/jstl_taglib.png)
+        -   [JSTLを用いたjspで起こるエラーを解決したい](https://teratail.com/questions/350891)
+        -   [「http://java.sun.com/jsp/jstl/core」のタグライブラリ記述子が見つかりません　の解決方法](https://qiita.com/cuore623/items/d894ab8f986904786f12)
+        -   [JSTL 1.2.5](https://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl/1.2.5)
+        -   [JSTL coreタグライブラリの利用](https://qiita.com/sculptcat/items/53d1a3a2d3b973354085)
     -   [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
     -   [【Java】カレントディレクトリの取得方法](https://qiita.com/mushroominger/items/89e60847879b7e9a3ad0)
     -   [String、Date、LocalDateの変換](https://qiita.com/hryshtk/items/43991beaabbb9d587360)
