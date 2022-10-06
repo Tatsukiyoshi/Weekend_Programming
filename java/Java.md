@@ -53,6 +53,9 @@
         -   日本語を入出力する際、実行構成の設定を行う。
             ![実行構成](../images/eclipse/eclipse_encode.png)
             -   共通タブのエンコードにて、その他を選択し、ドロップダウンリストから"MS932"を選択する。
+    *   Tomcat 実行構成
+        -   起動時のメッセージが日本語のため、エンコードを「システム・エンコーディングを使用」を選択する。
+            ![実行構成](../images/eclipse/tomcat_configuration.png)
 
 *   Jenkins
     -   Jenkinsのセットアップ
