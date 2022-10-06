@@ -53,6 +53,9 @@
         -   日本語を入出力する際、実行構成の設定を行う。
             ![実行構成](../images/eclipse/eclipse_encode.png)
             -   共通タブのエンコードにて、その他を選択し、ドロップダウンリストから"MS932"を選択する。
+    *   Tomcat 実行構成
+        -   起動時のメッセージが日本語のため、エンコードを「システム・エンコーディングを使用」を選択する。
+            ![実行構成](../images/eclipse/tomcat_configuration.png)
 
 *   Jenkins
     -   Jenkinsのセットアップ
@@ -64,6 +67,8 @@
 
 *   Tomcat
     -   [WindowsでインストールしたTomcatの起動ポートを変更する](https://mr-star.hatenablog.com/entry/tomcat/005)
+    -   LifecycleExceptionで起動できない
+        Eclipseで起動する場合、関連する動的Webプロジェクトはすべてオープンしていないと発生するので、注意。
 
 *   H2 Database
     -   環境変数H2DRIVERSまたはCLASSPATHにH2*.jarを登録する。
