@@ -64,6 +64,8 @@
 
 *   Tomcat
     -   [WindowsでインストールしたTomcatの起動ポートを変更する](https://mr-star.hatenablog.com/entry/tomcat/005)
+    -   LifecycleExceptionで起動できない
+        Eclipseで起動する場合、関連する動的Webプロジェクトはすべてオープンしていないと発生するので、注意。
 
 *   H2 Database
     -   環境変数H2DRIVERSまたはCLASSPATHにH2*.jarを登録する。
