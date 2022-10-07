@@ -1,20 +1,22 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+@immutable
 class MainContent extends StatelessWidget{
 
-  Function onPressed;
-  MainContent(this.onPressed);
+  final Function onPressed;
+  const MainContent(this.onPressed, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        const SizedBox(
           height: 20,
           child : Align(
             alignment: Alignment.centerLeft,
             child: Padding(
+                padding: EdgeInsets.all(2),
                 child: FittedBox(
                   fit: BoxFit.contain,
                   child: Text("タイトル",
@@ -24,8 +26,7 @@ class MainContent extends StatelessWidget{
                         fontWeight: FontWeight.normal
                     ),
                   ),
-                ),
-                padding: EdgeInsets.all(2)
+                )
             ),
           )
         ),
@@ -37,30 +38,31 @@ class MainContent extends StatelessWidget{
         ),
         Container(
           height: 20,
-          padding: EdgeInsets.symmetric( horizontal: 5, vertical: 2),
+          padding: const EdgeInsets.symmetric( horizontal: 5, vertical: 2),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ElevatedButton(
                   onPressed: () => { onPressed() },
-                  child: Padding(
-                      child: FittedBox(
-                        fit: BoxFit.contain,
-                        child: Text("詳細を見る"),
-                      ),
-                    padding: EdgeInsets.all(2)
-                  ),
                   style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
                       foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
-                              side: BorderSide(color: Colors.red)
+                              side: const BorderSide(color: Colors.red)
                           )
+                      )
+                  ),
+                  child: const Padding(
+                      padding: EdgeInsets.all(2),
+                      child: FittedBox(
+                        fit: BoxFit.contain,
+                        child: Text("詳細を見る"),
                       )
                   )
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(top: 5),
                 child: FittedBox(
                   fit: BoxFit.fitHeight,
@@ -74,7 +76,6 @@ class MainContent extends StatelessWidget{
                 )
               )
             ],
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
           ),
         )
       ],

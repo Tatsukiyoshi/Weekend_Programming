@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:layout_sample/list/CouponListItem.dart';
+import 'package:vol12/list/CouponListItem.dart';
 
 class CouponListView extends StatelessWidget{
 
-  Function onPressed;
-  CouponListView(this.onPressed);
+  final Function onPressed;
+  CouponListView(this.onPressed, {super.key});
 
   @override
   Widget build(BuildContext context) {

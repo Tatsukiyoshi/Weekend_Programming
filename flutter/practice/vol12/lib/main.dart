@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:layout_sample/MainPageWidget.dart';
+import 'package:vol12/MainPageWidget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPageWidget()
+      home: const MainPageWidget()
     );
   }
 }

@@ -1,27 +1,28 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+@immutable
 class CouponDetail extends StatelessWidget {
 
-  Function closeAction;
-  CouponDetail(this.closeAction);
+  final Function closeAction;
+  const CouponDetail(this.closeAction, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Color.fromRGBO(0, 0, 0, 0.5),
+        color: const Color.fromRGBO(0, 0, 0, 0.5),
         child: Center(
             child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
 
           //  外枠を表示
           child: Container(
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
-                boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 5)]),
+                boxShadow: const [BoxShadow(color: Colors.grey, blurRadius: 5)]),
             //  コンテンツの中身を表示
             child: mainContent(),
           ),
@@ -44,7 +45,7 @@ class CouponDetail extends StatelessWidget {
   Widget mainCenterContent(){
 
     return Container(
-      margin: EdgeInsets.only(top: 10),
+      margin: const EdgeInsets.only(top: 10),
       height: 80,
       color: Colors.grey,
     );
@@ -52,23 +53,17 @@ class CouponDetail extends StatelessWidget {
 
   Widget mainBottomContent(){
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Center(
         child: Row(
           children: [
-            Spacer(
+            const Spacer(
               flex: 1,
             ),
             Expanded(
                 flex: 2,
                 child: ElevatedButton(
                     onPressed: () => {closeAction()},
-                    child: Padding(
-                        child: FittedBox(
-                          fit: BoxFit.contain,
-                          child: Text("閉じる"),
-                        ),
-                        padding: EdgeInsets.all(2)),
                     style: ButtonStyle(
                         backgroundColor:
                         MaterialStateProperty.all<Color>(
@@ -81,9 +76,15 @@ class CouponDetail extends StatelessWidget {
                             RoundedRectangleBorder(
                                 borderRadius:
                                 BorderRadius.circular(5.0),
-                                side: BorderSide(
-                                    color: Colors.red)))))),
-            Spacer(
+                                side: const BorderSide(
+                                    color: Colors.red)))),
+                    child: const Padding(
+                        padding: EdgeInsets.all(2),
+                        child: FittedBox(
+                          fit: BoxFit.contain,
+                          child: Text("閉じる"),
+                        )))),
+            const Spacer(
               flex: 1,
             )
           ],
