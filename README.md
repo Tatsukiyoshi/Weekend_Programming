@@ -313,7 +313,7 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.2](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/23
+  |[Flutter 3.3.4](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/07
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -325,12 +325,12 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.978], locale ja-JP)
-        • Flutter version 3.3.2 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.608], locale ja-JP)
+        • Flutter version 3.3.4 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision e3c29ec00c (11 days ago), 2022-09-14 08:46:55 -0500
-        • Engine revision a4ff2c53d8
-        • Dart version 2.18.1
+        • Framework revision eb6d86ee27 (2 days ago), 2022-10-04 22:31:45 -0700
+        • Engine revision c08d7d5efc
+        • Dart version 2.18.2
         • DevTools version 2.15.0
 
     [√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
@@ -357,15 +357,15 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.71.2)
+    [√] VS Code (version 1.72.0)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension can be installed from:
           https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.978]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.608]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 105.0.1343.50
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.34
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
