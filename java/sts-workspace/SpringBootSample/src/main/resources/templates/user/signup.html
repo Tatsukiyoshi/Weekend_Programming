@@ -9,34 +9,34 @@
 	<!-- JS読込 -->
 	<script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
 	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
-	<title>ユーザ登録</title>
+	<title th:text="#{user.signup.title}"></title>
 </head>
 <body class="bg-light">
 	<form id="signup-form" method="post" action="/user/signup" class="form-signup">
-	<h1 class="text-center">ユーザ登録</h1>
+	<h1 class="text-center" th:text="#{user.signup.title}"></h1>
 	<!-- ユーザID -->
 	<div class="form-group">
-		<label for="userId">ユーザID</label>
+		<label for="userId" th:text="#{userId}"></label>
 		<input type="text" class="form-control" />
 	</div>
 	<!-- パスワード -->
 	<div class="form-group">
-		<label for="password">パスワード</label>
+		<label for="password" th:text="#{password}"></label>
 		<input type="text" class="form-control" />
 	</div>
 	<!-- ユーザ名 -->
 	<div class="form-group">
-		<label for="userName">ユーザ名</label>
+		<label for="userName" th:text="#{userName}"></label>
 		<input type="text" class="form-control" />
 	</div>
 	<!-- 誕生日 -->
 	<div class="form-group">
-		<label for="birthday">誕生日</label>
+		<label for="birthday" th:text="#{birthday}"></label>
 		<input type="text" class="form-control" />
 	</div>
 	<!-- 年齢 -->
 	<div class="form-group">
-		<label for="age">年齢</label>
+		<label for="age" th:text="#{age}"></label>
 		<input type="text" class="form-control" />
 	</div>
 	<!-- 性別 -->
@@ -47,7 +47,7 @@
 		</div>
 	</div>
 	<!-- 登録ボタン -->
-	<input type="submit" value="ユーザ登録" class="btn btn-primary w-100 mt-3" />
+	<input type="submit" th:value="#{user.signup.btn}" class="btn btn-primary w-100 mt-3" />
 	</form>
 </body>
 </html>
