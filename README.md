@@ -226,7 +226,7 @@
   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/25|Chapter 14 ライブラリで効率を上げる <span style="color: red;">*finished*</span>
   |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/07|14章 Webアプリケーションの設計 <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
-  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/08|6章 バインド＆バリデーション（入力チェック） <span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                      |端末       |日付
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
