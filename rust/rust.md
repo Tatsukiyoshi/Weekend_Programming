@@ -1,6 +1,43 @@
 *   [セットアップについて](./setup.md)
+
+*   アップデートについて
+    ```
+    rustup update
+    ```
+
 *   環境情報
+    ```
+    % cargo --version
+    % rustup show
+    ```
+
     1.  Windows 11
+        ```
+        Default host: x86_64-pc-windows-msvc
+        stable-x86_64-pc-windows-msvc (default)
+        rustc 1.64.0 (a55dd71d5 2022-09-19)
+        ```
+
+        ```
+        tauri-app@1.0.0
+        ├── @rollup/plugin-commonjs@17.1.0
+        ├── @rollup/plugin-node-resolve@11.2.1
+        ├── @rollup/plugin-typescript@8.5.0
+        ├── @tauri-apps/api@1.1.0
+        ├── @tauri-apps/cli@1.1.1
+        ├── @tsconfig/svelte@2.0.1
+        ├── rollup-plugin-css-only@3.1.0
+        ├── rollup-plugin-livereload@2.0.5
+        ├── rollup-plugin-svelte@7.1.0
+        ├── rollup-plugin-terser@7.0.2
+        ├── rollup@2.79.1
+        ├── sirv-cli@2.0.2
+        ├── svelte-check@2.9.1
+        ├── svelte-preprocess@4.10.7
+        ├── svelte@3.50.1
+        ├── tslib@2.4.0
+        └── typescript@4.8.4
+        ```
     1.  ubuntu 20.04 on Windows 11
     1.  Chrome OS Flex
         ```
