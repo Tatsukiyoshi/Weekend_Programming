@@ -390,9 +390,10 @@
   1. Chrome OS Flex 105.0.5195.134（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.63.0  |VivoBook   |2022/09/03
+      |Rust 1.64.0  |VivoBook   |2022/10/08
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/03
+      |Vite 3.1.6   |           |2022/10/08
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
@@ -404,6 +405,8 @@
     - プロジェクト作成 - cargo new --bin <プロジェクト名>
     - ビルド実行 - carg run
   - [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+  - [ノウハウ＋備忘録](rust/rust.md)
+
 ---
 **ObjectPascal**
   - Delphi
