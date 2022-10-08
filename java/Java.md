@@ -37,6 +37,9 @@
     *   JavaDoc
         -   [@paramタグ](https://www.javadrive.jp/javadoc/tag/index7.html)
 
+    *   spring
+        -   [lombok 1.18.24](https://projectlombok.org/)
+
 *   Pleiades
     *   Pleiades 2022-06およびTomcat 10.0.20での対応
         -   サーブレット等の作成は、[新規]-[その他]から行う。
