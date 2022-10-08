@@ -33,7 +33,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -48,7 +47,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.24</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -73,6 +71,11 @@
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator</artifactId>
 			<version>0.40</version>
+		</dependency>
+		<!-- validator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 	</dependencies>
 
