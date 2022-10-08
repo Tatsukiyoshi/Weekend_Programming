@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- CSS読込 -->
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{/css/user/signup.css}">
+	<!-- JS読込 -->
+	<script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+	<title th:text="#{user.signup.title}"></title>
+</head>
+<body class="bg-light">
+	<form id="signup-form" method="post" action="/user/signup" class="form-signup" th:object="${signupForm}">
+	<h1 class="text-center" th:text="#{user.signup.title}"></h1>
+	<!-- ユーザID -->
+	<div class="form-group">
+		<label for="userId" th:text="#{userId}"></label>
+		<input type="text" class="form-control" th:field="*{userId}" th:errorclass="is-invalid" />
+		<div class="invalid-feedback" th:errors="*{userId}"></div>
+	</div>
+	<!-- パスワード -->
+	<div class="form-group">
+		<label for="password" th:text="#{password}"></label>
+		<input type="text" class="form-control" th:field="*{password}" th:errorclass="is-invalid" />
+		<div class="invalid-feedback" th:errors="*{password}"></div>
+	</div>
+	<!-- ユーザ名 -->
+	<div class="form-group">
+		<label for="userName" th:text="#{userName}"></label>
+		<input type="text" class="form-control" th:field="*{userName}" th:errorclass="is-invalid" />
+		<div class="invalid-feedback" th:errors="*{userName}"></div>
+	</div>
+	<!-- 誕生日 -->
+	<div class="form-group">
+		<label for="birthday" th:text="#{birthday}"></label>
+		<input type="text" class="form-control" placeholder="yyyy/MM/dd" th:field="*{birthday}" th:errorclass="is-invalid" />
+		<div class="invalid-feedback" th:errors="*{birthday}"></div>
+	</div>
+	<!-- 年齢 -->
+	<div class="form-group">
+		<label for="age" th:text="#{age}"></label>
+		<input type="text" class="form-control" th:field="*{age}" th:errorclass="is-invalid" />
+		<div class="invalid-feedback" th:errors="*{age}"></div>
+	</div>
+	<!-- 性別 -->
+	<div class="form-group">
+		<div th:each="item : ${genderMap}" class="form-check-inline">
+		<input type="radio" class="form-check-input" th:value="${item.value}" th:field="*{gender}" th:errorclass="is-invalid" />
+		<label class="form-check-label" th:text="${item.key}"></label>
+		</div>
+		<div class="text-danger" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"></div>
+	</div>
+	<!-- 登録ボタン -->
+	<input type="submit" th:value="#{user.signup.btn}" class="btn btn-primary w-100 mt-3" />
+	</form>
+</body>
+</html>
+

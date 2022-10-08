@@ -4,7 +4,7 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.71.2 <BR />
+  - Visual Studio Code 1.72 <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.0.8
 
@@ -224,9 +224,9 @@
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
   |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/25|Chapter 14 ライブラリで効率を上げる <span style="color: red;">*finished*</span>
-  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/03|13章 JDBCプログラムとDAOパターン <span style="color: red;">*finished*</span>
+  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/07|14章 Webアプリケーションの設計 <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
-  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/05/04|3章 Hello World・・・簡単なサンプル <span style="color: red;">*finished*</span>
+  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/08|6章 バインド＆バリデーション（入力チェック） <span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                      |端末       |日付
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
@@ -237,7 +237,7 @@
   |Apache Maven 3.8.6                                                                                            |           |2022/06/23
   |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
   |[H2 Database 2.1.214](https://www.h2database.com/html/main.html)                                              |           |2022/10/02
-  |[Spring Tool Suite 4.15.3](https://spring.io/tools)                                                           |ExpertBook |2022/08/20
+  |[Spring Tool Suite 4.16.0](https://spring.io/tools)                                                           |ExpertBook |2022/10/08
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
 
   * [ノウハウ＋備忘録](java/Java.md)
@@ -313,7 +313,7 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.2](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/09/23
+  |[Flutter 3.3.4](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/07
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -325,12 +325,12 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.2, on Microsoft Windows [Version 10.0.22000.978], locale ja-JP)
-        • Flutter version 3.3.2 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.608], locale ja-JP)
+        • Flutter version 3.3.4 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision e3c29ec00c (11 days ago), 2022-09-14 08:46:55 -0500
-        • Engine revision a4ff2c53d8
-        • Dart version 2.18.1
+        • Framework revision eb6d86ee27 (2 days ago), 2022-10-04 22:31:45 -0700
+        • Engine revision c08d7d5efc
+        • Dart version 2.18.2
         • DevTools version 2.15.0
 
     [√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
@@ -357,15 +357,15 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.71.2)
+    [√] VS Code (version 1.72.0)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension can be installed from:
           https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22000.978]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.608]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 105.0.1343.50
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.34
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
@@ -376,23 +376,24 @@
   1. Windows 11
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.63.0  |IdeaPad    |2022/09/03
+      |Rust 1.64.0  |IdeaPad    |2022/10/08
       |Tauri 1.1.1  |           |2022/09/17
       |Svelte 3.50.1|           |2022/09/17
 
   1. Ubuntu 20.04 on Windows 11
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.63.0  |IdeaPad    |2022/09/17
+      |Rust 1.64.0  |IdeaPad    |2022/10/08
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
   1. Chrome OS Flex 105.0.5195.134（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.63.0  |VivoBook   |2022/09/03
+      |Rust 1.64.0  |VivoBook   |2022/10/08
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/03
+      |Vite 3.1.6   |           |2022/10/08
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
@@ -404,6 +405,8 @@
     - プロジェクト作成 - cargo new --bin <プロジェクト名>
     - ビルド実行 - carg run
   - [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+  - [ノウハウ＋備忘録](rust/rust.md)
+
 ---
 **ObjectPascal**
   - Delphi
