@@ -5,9 +5,7 @@ import { UseService } from "./use.service";
     selector: 'my-use',
     
     // サービスインスタンスの生成方法を宣言
-    providers: [
-        {provide: UseService, useValue: new UseService() }
-    ],
+    providers: [],
     template: `<li>UseService : {{current}}</li>`
 })
 export class UseComponent {
