@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'multi';
 
   // KEYWORDSサービスを注入し、その値をログ表示
-  constructor(@Inject(KEYWORDS) private keywords: string) {
+  constructor(@Inject(KEYWORDS) private keywords: string[]) {
     console.log(keywords);
   }
 }

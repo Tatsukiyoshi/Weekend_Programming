@@ -12,8 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule
   ],
   providers: [
-    { provide: KEYWORDS, useValue: 'TypeScript' },
-    { provide: KEYWORDS, useValue: 'Angular'}
+    { provide: KEYWORDS, useValue: 'TypeScript', multi: true },
+    { provide: KEYWORDS, useValue: 'Angular', multi: true }
   ],
   bootstrap: [AppComponent]
 })
