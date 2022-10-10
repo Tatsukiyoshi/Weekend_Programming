@@ -51,4 +51,25 @@
     <servlet-name>MinatoIndex</servlet-name>
     <servlet-class>servlet.MinatoIndex</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CounterServlet</display-name>
+    <servlet-name>CounterServlet</servlet-name>
+    <servlet-class>servlet.CounterServlet</servlet-class>
+  </servlet>
+  <listener>
+    <listener-class>listener.ListenerSample</listener-class>
+  </listener>
+  <filter>
+    <display-name>FilterSample</display-name>
+    <filter-name>FilterSample</filter-name>
+    <filter-class>filter.FilterSample</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FilterSample</filter-name>
+    <url-pattern>/FilterSample</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>listener.NoAppScopeListener</listener-class>
+  </listener>
 </web-app>

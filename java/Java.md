@@ -1,6 +1,11 @@
 *   Java
+    -   JSTLを利用する場合、ビルドバスにJARファイルの登録が必要
+        ![ビルドパスへの登録](../images/eclipse/jstl_taglib.png)
+        -   [JSTLを用いたjspで起こるエラーを解決したい](https://teratail.com/questions/350891)
+        -   [「http://java.sun.com/jsp/jstl/core」のタグライブラリ記述子が見つかりません　の解決方法](https://qiita.com/cuore623/items/d894ab8f986904786f12)
+        -   [JSTL 1.2.5](https://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl/1.2.5)
+        -   [JSTL coreタグライブラリの利用](https://qiita.com/sculptcat/items/53d1a3a2d3b973354085)
     -   [Java 9以降でJAXBを使用するには、外部JARが必要](https://github.com/acroquest/javabook-support/issues/49)
-
     -   [【Java】カレントディレクトリの取得方法](https://qiita.com/mushroominger/items/89e60847879b7e9a3ad0)
     -   [String、Date、LocalDateの変換](https://qiita.com/hryshtk/items/43991beaabbb9d587360)
     -   [Java List.add() UnsupportedOperationException](https://stackoverflow.com/questions/5755477/java-list-add-unsupportedoperationexception)<BR />
@@ -32,6 +37,9 @@
     *   JavaDoc
         -   [@paramタグ](https://www.javadrive.jp/javadoc/tag/index7.html)
 
+    *   spring
+        -   [lombok 1.18.24](https://projectlombok.org/)
+
 *   Pleiades
     *   Pleiades 2022-06およびTomcat 10.0.20での対応
         -   サーブレット等の作成は、[新規]-[その他]から行う。
@@ -48,6 +56,9 @@
         -   日本語を入出力する際、実行構成の設定を行う。
             ![実行構成](../images/eclipse/eclipse_encode.png)
             -   共通タブのエンコードにて、その他を選択し、ドロップダウンリストから"MS932"を選択する。
+    *   Tomcat 実行構成
+        -   起動時のメッセージが日本語のため、エンコードを「システム・エンコーディングを使用」を選択する。
+            ![実行構成](../images/eclipse/tomcat_configuration.png)
 
 *   Jenkins
     -   Jenkinsのセットアップ
@@ -59,3 +70,9 @@
 
 *   Tomcat
     -   [WindowsでインストールしたTomcatの起動ポートを変更する](https://mr-star.hatenablog.com/entry/tomcat/005)
+    -   LifecycleExceptionで起動できない
+        Eclipseで起動する場合、関連する動的Webプロジェクトはすべてオープンしていないと発生するので、注意。
+
+*   H2 Database
+    -   環境変数H2DRIVERSまたはCLASSPATHにH2*.jarを登録する。
+    -   データベースは、"H2 Console"で作成する。ただし、Embeddedモードでしか作成できない。
