@@ -249,10 +249,10 @@
   |-----------------------------------------------------------------------------------|---------|---
   |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
 
-  |環境／FW                                                                                                         |端末       |日付
-  |-----------------------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6              |IdeaPad    |2022/10/02
-  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22477.23 + .NET MAUI |ExpertBook |2022/10/12
+  |環境／FW                                                                                                             |端末       |日付
+  |---------------------------------------------------------------------------------------------------------------------|-----------|----------
+  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/12
+  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/12
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
 
   - .NET 環境情報
