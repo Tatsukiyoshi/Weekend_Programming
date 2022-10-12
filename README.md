@@ -347,7 +347,7 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.608], locale ja-JP)
+    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.674], locale ja-JP)
         • Flutter version 3.3.4 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
         • Framework revision eb6d86ee27 (7 days ago), 2022-10-04 22:31:45 -0700
@@ -365,9 +365,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 2.1)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 3.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.32916.344
+        • Visual Studio Community 2022 version 17.4.33006.217
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
@@ -384,7 +384,7 @@
         • Flutter extension version 3.50.0
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.608]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.674]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
         • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.42
 
