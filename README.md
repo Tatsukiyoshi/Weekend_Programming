@@ -4,7 +4,7 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.72 <BR />
+  - Visual Studio Code 1.72.1 <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.0.8
 
@@ -328,7 +328,7 @@
     [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.608], locale ja-JP)
         • Flutter version 3.3.4 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision eb6d86ee27 (2 days ago), 2022-10-04 22:31:45 -0700
+        • Framework revision eb6d86ee27 (7 days ago), 2022-10-04 22:31:45 -0700
         • Engine revision c08d7d5efc
         • Dart version 2.18.2
         • DevTools version 2.15.0
@@ -357,15 +357,14 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.72.0)
+    [√] VS Code (version 1.72.1)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
-        • Flutter extension can be installed from:
-          https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+        • Flutter extension version 3.50.0
 
     [√] Connected device (3 available)
         • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.608]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.34
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.42
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
