@@ -249,11 +249,11 @@
   |-----------------------------------------------------------------------------------|---------|---
   |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
 
-  |環境／FW                                                                                           |端末       |日付
-  |---------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6|IdeaPad    |2022/10/02
-  |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview + .NET MAUI                 |ExpertBook |2022/09/23
-  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                         |           |2022/07/09
+  |環境／FW                                                                                                         |端末       |日付
+  |-----------------------------------------------------------------------------------------------------------------|-----------|----------
+  |Visual Studio Community 2022 17.4.0 Preview 2.1 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22375.6              |IdeaPad    |2022/10/02
+  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.0-preview.7.22477.23 + .NET MAUI |ExpertBook |2022/10/12
+  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
 
   - .NET 環境情報
     ```
@@ -261,17 +261,39 @@
     ```
     ```
     .NET SDK:
-    Version:   7.0.100-rc.1.22431.12
-    Commit:    f1cf61e1c0
+    Version:   7.0.100-rc.2.22477.23
+    Commit:    0a5360315a
 
     ランタイム環境:
     OS Name:     Windows
-    OS Version:  10.0.22000
+    OS Version:  10.0.22621
     OS Platform: Windows
     RID:         win10-x64
-    Base Path:   C:\Program Files\dotnet\sdk\7.0.100-rc.1.22431.12\
+    Base Path:   C:\Program Files\dotnet\sdk\7.0.100-rc.2.22477.23\
+
+    Host:
+      Version:      7.0.0-rc.2.22472.3
+      Architecture: x64
+      Commit:       550605cc93
+
+    .NET SDKs installed:
+      7.0.100-rc.2.22477.23 [C:\Program Files\dotnet\sdk]
+
+    .NET runtimes installed:
+      Microsoft.AspNetCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+      Microsoft.AspNetCore.App 7.0.0-rc.2.22476.2 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+      Microsoft.NETCore.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+      Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+      Microsoft.NETCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+      Microsoft.NETCore.App 7.0.0-rc.2.22472.3 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+      Microsoft.WindowsDesktop.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+      Microsoft.WindowsDesktop.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+      Microsoft.WindowsDesktop.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+      Microsoft.WindowsDesktop.App 7.0.0-rc.2.22472.13 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
     Other architectures found:
       x86   [C:\Program Files (x86)\dotnet]
+        registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
 
     Environment variables:
       Not set
