@@ -70,7 +70,7 @@
             this.UnicodeFormD.TabStop = true;
             this.UnicodeFormD.Text = "正規形D";
             this.UnicodeFormD.UseVisualStyleBackColor = true;
-            this.UnicodeFormD.CheckedChanged += new System.EventHandler(this.UnicodeFormD_CheckedChanged);
+            this.UnicodeFormD.CheckedChanged += new System.EventHandler(this.Form_CheckedChanged);
             // 
             // UnicodeFormC
             // 
@@ -82,7 +82,7 @@
             this.UnicodeFormC.TabStop = true;
             this.UnicodeFormC.Text = "正規形C";
             this.UnicodeFormC.UseVisualStyleBackColor = true;
-            this.UnicodeFormC.CheckedChanged += new System.EventHandler(this.UnicodeFormC_CheckedChanged);
+            this.UnicodeFormC.CheckedChanged += new System.EventHandler(this.Form_CheckedChanged);
             // 
             // OutputLabel
             // 
@@ -117,7 +117,7 @@
             this.InstanceMethod.TabStop = true;
             this.InstanceMethod.Text = "Instance";
             this.InstanceMethod.UseVisualStyleBackColor = true;
-            this.InstanceMethod.CheckedChanged += new System.EventHandler(this.InstanceMethod_CheckedChanged);
+            this.InstanceMethod.CheckedChanged += new System.EventHandler(this.Method_CheckedChanged);
             // 
             // StaticMethod
             // 
@@ -129,7 +129,7 @@
             this.StaticMethod.TabStop = true;
             this.StaticMethod.Text = "Static";
             this.StaticMethod.UseVisualStyleBackColor = true;
-            this.StaticMethod.CheckedChanged += new System.EventHandler(this.StaticMethod_CheckedChanged);
+            this.StaticMethod.CheckedChanged += new System.EventHandler(this.Method_CheckedChanged);
             // 
             // Form1
             // 
