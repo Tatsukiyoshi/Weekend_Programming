@@ -4,7 +4,7 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.72.1 <BR />
+  - Visual Studio Code 1.72.2 <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.0.8
 
@@ -102,15 +102,15 @@
 
   |環境／FW                                                       |端末       |日付      
   |---------------------------------------------------------------|-----------|----------
-  |IntelliJ IDEA 2022.2.2                                         |IdeaPad    |2022/09/23
+  |IntelliJ IDEA 2022.2.3                                         |IdeaPad    |2022/10/15
   |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|           |2022/08/20
   |Amazon Coretto 17.0.4.9.1                                      |           |2022/09/23
   |Android Studio Dolphin | 2021.3.1                              |ExpertBook |2022/09/25
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
-      - Intellij IDEA 2022.2.2
-      - Kotlin 1.7.10
+      - Intellij IDEA 2022.2.3
+      - Kotlin 1.7.20
       - Amazon Coretto 17.0.4.9.1 + 言語レベル 17
       - Graal VM Java17-22.2.0
       - PostgreSQL 14.5
