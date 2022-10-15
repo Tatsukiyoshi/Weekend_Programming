@@ -20,7 +20,7 @@
 			{
 				"previewLimit": 50,
 				"server": "localhost",
-				"port": 5432,
+				"port": 5433,
 				"driver": "PostgreSQL",
 				"database": "batch",
 				"username": "spring",
@@ -30,7 +30,7 @@
 			{
 				"previewLimit": 50,
 				"server": "localhost",
-				"port": 5432,
+				"port": 5433,
 				"driver": "PostgreSQL",
 				"name": "batch2",
 				"database": "batch2",

@@ -7,7 +7,7 @@ spring:
       schema: classpath:org/springframework/batch/core/schema-postgresql.sql
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/batch
+    url: jdbc:postgresql://localhost:5433/batch
     username: spring
     password: password
 

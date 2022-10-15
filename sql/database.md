@@ -1,4 +1,9 @@
 *   PostgreSQL
+    -   PostgreSQL 15
+        -   [リリース間移行](https://www.postgresql.jp/docs/9.0/migration.html)
+            ```
+            pg_dumpall -p 5432 --username=postgres | psql -d postgres -p 5433 --username=postgres
+            ```
     -   タイムアウト時間の設定（マシン性能の問題等で、PgAdminを起動できない場合の対応）
         -   サーバとの接続がタイムアウトしているため、タイムアウト時間を延ばす
     -   コマンドラインでのSQL
