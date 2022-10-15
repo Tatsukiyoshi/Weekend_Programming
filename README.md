@@ -182,7 +182,7 @@
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 105.0.5195.134（Official Build）
+  1.  Chrome OS Flex 106.0.5249.113（Official Build）
       |FW            |端末       |日付      
       |--------------|-----------|----------
       |Node.js 16.16 |VivoBook   |2022/09/02
@@ -408,7 +408,7 @@
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
-  1. Chrome OS Flex 105.0.5195.134（Official Build）
+  1. Chrome OS Flex 106.0.5249.113（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.64.0  |VivoBook   |2022/10/08
