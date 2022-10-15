@@ -164,7 +164,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/09/23|第6章 コンポーネント開発 <span style="color: red;">*finished*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/16|第7章 サービス開発 <span style="color: red;">*finished?*</span>
   |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
 
   1.  Windows
