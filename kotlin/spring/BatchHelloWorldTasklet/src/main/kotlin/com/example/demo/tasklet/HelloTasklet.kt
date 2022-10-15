@@ -24,7 +24,9 @@ class HelloTasklet: Tasklet {
     private val require1: String = ""
 
     @Value("#{jobParameters['option1']}")
-    private val option1: Int = 0
+    private val option1var: String = ""
+
+    private var option1: Int = 0
 
     @Autowired
     private lateinit var sampleProperty: SampleProperty
@@ -46,10 +48,15 @@ class HelloTasklet: Tasklet {
 
         // JobParameterの確認
         log.info("require1={}", require1)
+        option1 = if(option1var.isEmpty()){
+            0
+        } else {
+            option1var.toInt()
+        }
         log.info("option1={}", option1)
 
         // プロパティの表示
-        log.info("sample.property={}", sampleProperty?.sampleProperty)
+        log.info("sample.property={}", sampleProperty.sampleProperty)
         return RepeatStatus.FINISHED
     }
 }

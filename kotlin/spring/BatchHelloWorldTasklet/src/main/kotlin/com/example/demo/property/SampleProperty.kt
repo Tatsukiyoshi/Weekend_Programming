@@ -12,5 +12,5 @@ import org.springframework.stereotype.Component
 @ToString
 class SampleProperty {
     @Value("\${sample.property}")
-    var sampleProperty: String? = null
+    var sampleProperty: String = ""
 }
