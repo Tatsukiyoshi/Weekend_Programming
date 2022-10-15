@@ -41,9 +41,9 @@
 ---
 **Database & SQL**
 
-  |環境／FW                                                       |端末      |日付      
-  |---------------------------------------------------------------|----------|----------
-  |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|IdeaPad   |2022/08/20
+  |環境／FW                                                     |端末      |日付      
+  |-------------------------------------------------------------|----------|----------
+  |[PostgreSQL 15](https://www.postgresql.org/download/windows/)|IdeaPad   |2022/10/15
 
   - PostgreSQL
     - postgres/pgsuper
@@ -100,12 +100,12 @@
   |Kotlinプログラミング                                                                       |2019/11/13|<span style="color: red;">*finished*</span>
   |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12|<span style="color: red;">*finished*</span>
 
-  |環境／FW                                                       |端末       |日付      
-  |---------------------------------------------------------------|-----------|----------
-  |IntelliJ IDEA 2022.2.3                                         |IdeaPad    |2022/10/15
-  |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|           |2022/08/20
-  |Amazon Coretto 17.0.4.9.1                                      |           |2022/09/23
-  |Android Studio Dolphin | 2021.3.1                              |ExpertBook |2022/09/25
+  |環境／FW                                                     |端末       |日付      
+  |-------------------------------------------------------------|-----------|----------
+  |IntelliJ IDEA 2022.2.3                                       |IdeaPad    |2022/10/15
+  |[PostgreSQL 15](https://www.postgresql.org/download/windows/)|           |2022/10/15
+  |Amazon Coretto 17.0.4.9.1                                    |           |2022/09/23
+  |Android Studio Dolphin | 2021.3.1                            |ExpertBook |2022/09/25
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
@@ -113,7 +113,7 @@
       - Kotlin 1.7.20
       - Amazon Coretto 17.0.4.9.1 + 言語レベル 17
       - Graal VM Java17-22.2.0
-      - PostgreSQL 14.5
+      - PostgreSQL 15
       - Spring Framework 2.7.2
     - Kotlinプログラミング
       - Android
