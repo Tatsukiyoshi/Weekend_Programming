@@ -135,3 +135,5 @@
             ```
             > http-server .\dist\vs-angular -p3000 -c-1 -o
             ```
+1.  Angular in-memory-web-api
+    -   [Angular in-memory-web-api を使う](https://watermargin.net/programming/angular/in-memory-web-api/)
