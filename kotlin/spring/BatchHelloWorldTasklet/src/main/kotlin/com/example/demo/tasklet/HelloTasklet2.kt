@@ -19,10 +19,10 @@ class HelloTasklet2: Tasklet {
 
     // 基底型はnull許容し、nullで初期化するのが妥当
     @Value("#{JobExecutionContext['jobKey']}")
-    private var jobValue: String? = null
+    private var jobValue: String = ""
 
     @Value("#{StepExecutionContext['stepKey']}")
-    private var stepValue: String? = null
+    private var stepValue: String = ""
 
     override fun execute(contribution: StepContribution, chunkContext: ChunkContext): RepeatStatus? {
         log.info("Hello World2")

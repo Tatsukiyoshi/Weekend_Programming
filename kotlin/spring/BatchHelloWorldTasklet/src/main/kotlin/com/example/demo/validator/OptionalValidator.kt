@@ -18,7 +18,7 @@ class OptionalValidator: JobParametersValidator {
 
         // 型チェック
         try {
-            option1?.toIntOrNull() // 文字列から数字への変換
+            option1?.toInt() // 文字列から数字への変換
         } catch (e: NumberFormatException){
             val errorMsg = "Not Number: value=$option1"
             throw JobParametersInvalidException(errorMsg)
