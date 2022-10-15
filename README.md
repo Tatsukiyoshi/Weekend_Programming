@@ -41,12 +41,13 @@
 ---
 **Database & SQL**
 
-  |環境／FW                                                       |端末      |日付      
-  |---------------------------------------------------------------|----------|----------
-  |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|IdeaPad   |2022/08/20
+  |環境／FW                                                     |端末      |日付      
+  |-------------------------------------------------------------|----------|----------
+  |[PostgreSQL 15](https://www.postgresql.org/download/windows/)|IdeaPad   |2022/10/15
 
   - PostgreSQL
     - postgres/pgsuper
+    - PgAdmin 6.14
   - [ノウハウ](sql/database.md)
   - [データベースを作成し、テーブルを追加する](https://docs.microsoft.com/ja-jp/visualstudio/data-tools/create-a-sql-database-by-using-a-designer?view=vs-2019)
   - [大量データの作成、日付の加工](https://www.excellence-blog.com/2017/06/01/sql-server%E3%81%B8%E5%A4%A7%E9%87%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E9%AB%98%E9%80%9F%E3%81%A7%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/)
@@ -100,12 +101,12 @@
   |Kotlinプログラミング                                                                       |2019/11/13|<span style="color: red;">*finished*</span>
   |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12|<span style="color: red;">*finished*</span>
 
-  |環境／FW                                                       |端末       |日付      
-  |---------------------------------------------------------------|-----------|----------
-  |IntelliJ IDEA 2022.2.3                                         |IdeaPad    |2022/10/15
-  |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)|           |2022/08/20
-  |Amazon Coretto 17.0.4.9.1                                      |           |2022/09/23
-  |Android Studio Dolphin | 2021.3.1                              |ExpertBook |2022/09/25
+  |環境／FW                                                     |端末       |日付      
+  |-------------------------------------------------------------|-----------|----------
+  |IntelliJ IDEA 2022.2.3                                       |IdeaPad    |2022/10/15
+  |[PostgreSQL 15](https://www.postgresql.org/download/windows/)|           |2022/10/15
+  |Amazon Coretto 17.0.4.9.1                                    |           |2022/09/23
+  |Android Studio Dolphin | 2021.3.1                            |ExpertBook |2022/09/25
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
@@ -113,7 +114,7 @@
       - Kotlin 1.7.20
       - Amazon Coretto 17.0.4.9.1 + 言語レベル 17
       - Graal VM Java17-22.2.0
-      - PostgreSQL 14.5
+      - PostgreSQL 15
       - Spring Framework 2.7.2
     - Kotlinプログラミング
       - Android
@@ -238,7 +239,7 @@
   |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
   |[H2 Database 2.1.214](https://www.h2database.com/html/main.html)                                              |           |2022/10/02
   |[Spring Tool Suite 4.16.0](https://spring.io/tools)                                                           |ExpertBook |2022/10/08
-  |[PostgreSQL 14.5](https://www.postgresql.org/download/windows/)                                               |           |2022/08/20
+  |[PostgreSQL 15](https://www.postgresql.org/download/windows/)                                                 |           |2022/10/15
 
   * [ノウハウ＋備忘録](java/Java.md)
 
