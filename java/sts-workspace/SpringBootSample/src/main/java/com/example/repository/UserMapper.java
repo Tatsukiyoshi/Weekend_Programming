@@ -1,5 +1,7 @@
 package com.example.repository;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import com.example.domain.user.model.MUser;
@@ -8,4 +10,7 @@ import com.example.domain.user.model.MUser;
 public interface UserMapper {
     /** ユーザ登録 */
     public int insertOne(MUser user);
+    
+    /** ユーザ取得 */
+    public List<MUser> findMany();
 }
