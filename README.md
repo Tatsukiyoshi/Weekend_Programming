@@ -167,6 +167,10 @@
   |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/16|第7章 サービス開発 <span style="color: red;">*finished?*</span>
   |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
 
+  |コンテンツ|日付      |進捗状況
+  |--------|----------|-------
+  |[TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/corner/878)|2022/08/13|第6回 Vue.jsでWebページをつくる際の肝！「コンポーネント」をTypeScriptで活用しよう <span style="color: red;">*finished*</span>
+
   1.  Windows
       |FW             |端末       |日付      
       |---------------|-----------|----------
