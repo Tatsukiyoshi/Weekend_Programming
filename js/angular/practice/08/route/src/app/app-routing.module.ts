@@ -6,6 +6,7 @@ import { MainComponent } from './main.component';
 import { ArticleComponent } from './article.component';
 import { ParamComponent } from './param.component';
 import { DataComponent } from './data.component';
+import { SearchComponent } from './search.component';
 
 const routes: Routes = [
   { path: 'exam', component: ExampleComponent },
@@ -14,6 +15,11 @@ const routes: Routes = [
   { path: 'param', component: ParamComponent },
   { path: 'data', component: DataComponent,
     data: { category: 'Angular'}},
+  { path: 'search',
+    children: [
+      { path: '**', component: SearchComponent }
+    ]
+  },
   { path: '**', redirectTo: '/' },
 ];
 
