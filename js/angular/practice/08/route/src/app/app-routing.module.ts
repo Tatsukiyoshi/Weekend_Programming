@@ -7,8 +7,15 @@ import { ArticleComponent } from './article.component';
 import { ParamComponent } from './param.component';
 import { DataComponent } from './data.component';
 import { SearchComponent } from './search.component';
+import { ContentComponent } from './content.component';
+import { ChildComponent } from './child.component';
 
 const routes: Routes = [
+  { path: 'contents/:id', component: ContentComponent,
+    children: [
+      { path: 'pages/:page', component: ChildComponent }
+    ]
+  },
   { path: 'exam', component: ExampleComponent },
   { path: 'main', component: MainComponent},
   { path: 'article/:id', component: ArticleComponent },
