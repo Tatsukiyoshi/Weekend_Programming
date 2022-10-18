@@ -1,6 +1,5 @@
 <ul>
-  <li><a routerLink="/" routerLinkActive="current"
-     [routerLinkActiveOptions]="{ exact: true }">メインページ</a></li>
+  <li><a [routerLink]="[{ outlets: { primary: ['main'], other: ['search', 'Angular']}}]">メインページ</a></li>
   <li><a routerLink="/article/13" routerLinkActive="current">記事No.13</a></li>
   <li><a routerLink="/article/108" routerLinkActive="current">記事No.108</a></li>
   <li><a routerLink="param" routerLinkActive="current"
@@ -11,3 +10,6 @@
 </ul>
 <hr />
 <router-outlet></router-outlet>
+<hr />
+<router-outlet name="other"></router-outlet>
+

@@ -10,16 +10,15 @@ import { SearchComponent } from './search.component';
 
 const routes: Routes = [
   { path: 'exam', component: ExampleComponent },
-  { path: '', component: MainComponent},
+  { path: 'main', component: MainComponent},
   { path: 'article/:id', component: ArticleComponent },
   { path: 'param', component: ParamComponent },
   { path: 'data', component: DataComponent,
     data: { category: 'Angular'}},
-  { path: 'search',
-    children: [
-      { path: '**', component: SearchComponent }
-    ]
-  },
+  { path: 'search/:id', component: SearchComponent,
+    outlet: 'other' },
+  { path: '', redirectTo: '/main(other:search/Angular)',
+    pathMatch: 'full' },
   { path: '**', redirectTo: '/' },
 ];
 
