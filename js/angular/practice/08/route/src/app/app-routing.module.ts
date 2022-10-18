@@ -9,6 +9,7 @@ import { DataComponent } from './data.component';
 import { SearchComponent } from './search.component';
 import { ContentComponent } from './content.component';
 import { ChildComponent } from './child.component';
+import { TimeGuard } from './time.guard';
 
 const routes: Routes = [
   { path: 'contents/:id', component: ContentComponent,
@@ -18,7 +19,8 @@ const routes: Routes = [
   },
   { path: 'exam', component: ExampleComponent },
   { path: 'main', component: MainComponent},
-  { path: 'article/:id', component: ArticleComponent },
+  { path: 'article/:id', component: ArticleComponent,
+    canActivate: [ TimeGuard ] },
   { path: 'param', component: ParamComponent },
   { path: 'data', component: DataComponent,
     data: { category: 'Angular'}},
@@ -31,6 +33,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+  providers: [ TimeGuard ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
