@@ -164,7 +164,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/16|第7章 サービス開発 <span style="color: red;">*finished?*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/19|第8章 ルーティング <span style="color: red;">*finished?*</span>
   |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
 
   |コンテンツ|日付      |進捗状況
@@ -177,7 +177,7 @@
       |Node.js 16.15.1|IdeaPad    |2022/06/05
       |React 18.2.0   |           |2022/07/02
       |Svelte 3.49.0  |           |2022/07/16
-      |Angular 14.2.3 |           |2022/09/23
+      |Angular 14.2.6 |           |2022/10/16
       |Deno 1.25.4    |           |2022/09/24
       |fresh 1.1.1    |           |2022/09/24
 
