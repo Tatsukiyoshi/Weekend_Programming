@@ -252,7 +252,7 @@
 
   |テキスト                                                                           |日付     |進捗状況
   |----------------------------------------------------------------------------------|----------|---
-  |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/06|Chapter 6.2 デストラクタ<span style="color: red;">*finished*</span>
+  |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/17|Chapter 6 コンストラクタおよびデストラクタを用いた優れた抽象化<span style="color: red;">*finished*</span>
   |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                             |端末       |日付
