@@ -10,4 +10,7 @@ public interface UserService {
     
     /** ユーザ取得 */
     public List<MUser> getUsers();
+    
+    /** ユーザ取得（１件） */
+    public MUser getUserOne(String userId);
 }

@@ -3,6 +3,17 @@
 
 <!-- Mapperとxmlのマッピング -->
 <mapper namespace="com.example.repository.UserMapper">
+<!-- マッピング定義（ユーザ） -->
+<resultMap id="user" type="com.example.domain.user.model.MUser">
+	<id column="user_id" property="userId" />
+	<result column="password" property="password" />
+	<result column="user_name" property="userName" />
+	<result column="birthday" property="birthday" />
+	<result column="age" property="age" />
+	<result column="gender" property="gender" />
+	<result column="department_id" property="departmentId" />
+	<result column="role" property="role" />
+</resultMap>
 <insert id="insertOne">
 	insert into m_user(
 		user_id
@@ -31,5 +42,13 @@
 		*
 	from
 		m_user
+</select>
+<select id="findOne" resultMap="user">
+	select
+		*
+	from
+		m_user
+	where
+		user_id = #{userId}
 </select>
 </mapper>
