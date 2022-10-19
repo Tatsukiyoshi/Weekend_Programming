@@ -251,7 +251,8 @@
 **.NET**
 
   |テキスト                                                                           |日付     |進捗状況
-  |-----------------------------------------------------------------------------------|---------|---
+  |----------------------------------------------------------------------------------|----------|---
+  |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/17|Chapter 6 コンストラクタおよびデストラクタを用いた優れた抽象化<span style="color: red;">*finished*</span>
   |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
 
   |環境／FW                                                                                                             |端末       |日付
@@ -321,7 +322,6 @@
     - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
     - ColorDialog
   - C++
-    - [C++ プログラミング入門](http://examples.oreilly.com/core/) **@2021/10/06** <span style="color: green;">Chapter 6.2 デストラクタ</span>
     - [carbon language](https://github.com/carbon-language/carbon-lang)
       - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
       - [ubuntu 2022.04 にインストール](carbon/carbon.md)
