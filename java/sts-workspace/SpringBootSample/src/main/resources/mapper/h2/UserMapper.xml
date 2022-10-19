@@ -51,4 +51,21 @@
 	where
 		user_id = #{userId}
 </select>
+<!-- ユーザ１件更新 -->
+<update id="updateOne">
+	update
+		m_user
+	set
+		password = #{password}
+		,user_name = #{userName}
+	where
+		user_id = #{userId}
+</update>
+<!-- ユーザ１件削除 -->
+<delete id="deleteOne">
+	delete from
+		m_user
+	where
+		user_id = #{userId}
+</delete>
 </mapper>
