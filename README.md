@@ -95,11 +95,11 @@
 ---
 **Kotlin**
 
-  |テキスト                                                                                   |日付      |進捗状況
-  |------------------------------------------------------------------------------------------|----------|---
-  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/08/08|<span style="color: red;">*finished*</span>
-  |Kotlinプログラミング                                                                       |2019/11/13|<span style="color: red;">*finished*</span>
-  |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815)                               |2019/10/12|<span style="color: red;">*finished*</span>
+  |テキスト                                                    |日付      |進捗状況
+  |------------------------------------------------------------|----------|---
+  |Spring解体新書（バッチ編）                                   |2022/08/08|*finished*
+  |Kotlinプログラミング                                         |2019/11/13|*finished*
+  |[はじめてのAndroidプログラミング](http://isbn.sbcr.jp/95815) |2019/10/12|*finished*
 
   |環境／FW                                                     |端末       |日付      
   |-------------------------------------------------------------|-----------|----------
@@ -165,7 +165,7 @@
   |テキスト|日付      |進捗状況
   |--------|----------|-------
   |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/19|第8章 ルーティング <span style="color: red;">*finished?*</span>
-  |[モダンJavaScriptの基本から始めるReact実践の教科書](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/12)|2022/07/02|<span style="color: red;">*finished*</span>
+  |モダンJavaScriptの基本から始めるReact実践の教科書|2022/07/02|*finished*
 
   |コンテンツ|日付      |進捗状況
   |--------|----------|-------
@@ -228,11 +228,11 @@
 **Java**
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
-  |[Java本格入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/14)              |2022/09/25|Chapter 14 ライブラリで効率を上げる <span style="color: red;">*finished*</span>
-  |[サーブレット＆JSP入門](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/15)     |2022/10/07|14章 Webアプリケーションの設計 <span style="color: red;">*finished*</span>
-  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/16|7章 画面レイアウト <span style="color: red;">*finished*</span>
-
+  |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
+  |サーブレット＆JSP入門                                                                     |2022/10/07|*finished*
+  |Java本格入門                                                                              |2022/09/25|*finished*
+  
   |環境／FW                                                                                                      |端末       |日付
   |--------------------------------------------------------------------------------------------------------------|-----------|----------
   |[Pleiades All in One Eclipse Standard Edition 2022-09.20220914 (Eclipse 4.25.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/09/24
@@ -253,7 +253,7 @@
   |テキスト                                                                           |日付     |進捗状況
   |----------------------------------------------------------------------------------|----------|---
   |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/17|Chapter 6 コンストラクタおよびデストラクタを用いた優れた抽象化<span style="color: red;">*finished*</span>
-  |[やさしいＣ＃第３版](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/18)|2022/07/16|<span style="color: red;">*finished*</span>
+  |[やさしいＣ＃第３版]                                                               |2022/07/16|*finished*
 
   |環境／FW                                                                                                             |端末       |日付
   |---------------------------------------------------------------------------------------------------------------------|-----------|----------
