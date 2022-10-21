@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-    name: 'grep'
+    name: 'grep',
+    pure: false
 })
 export class GrepPipe implements PipeTransform {
     transform(values: any[], callback: (item: any) => boolean) {
