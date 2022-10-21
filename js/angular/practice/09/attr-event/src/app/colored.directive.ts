@@ -10,7 +10,8 @@ export class ColoredDirective {
 
     }
 
-    @HostListener('mouseenter') onmouseenter(){
+    @HostListener('mouseenter', ['$event.target']) onmouseenter(span: any){
+        console.log(span);
         this.el.nativeElement.style.backgroundColor = this.color;
     }
 
