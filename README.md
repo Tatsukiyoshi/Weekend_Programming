@@ -228,7 +228,7 @@
 **Java**
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
-  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/16|7章 画面レイアウト <span style="color: red;">*finished*</span>
+  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/23|8章 MyBatis <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |サーブレット＆JSP入門                                                                     |2022/10/07|*finished*
   |Java本格入門                                                                              |2022/09/25|*finished*

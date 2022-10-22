@@ -8,7 +8,52 @@
 <body>
 <div layout:fragment="content">
 	<div class="header border-bottom">
-	<h1 class="h2">ユーザ一覧画面</h1>
+		<h1 class="h2">ユーザ一覧画面</h1>
+	</div>
+	<!-- 検索 -->
+	<div class="mb-4">
+		<form id="user-search-form" method="post" th:action="@{/user/list}" class="form-inline" th:object="${userListForm}">
+		<div class="form-group">
+			<label for="userId" class="mr-2">ユーザID</label>
+			<input type="text" class="form-control" th:field="*{userId}" />
+		</div>
+		<div class="form-group mx-sm-3">
+			<label for="userName" class="mr-2">ユーザ名</label>
+			<input type="text" class="form-control" th:field="*{userName}" />
+		</div>
+		<button class="btn btn-primary" type="submit">
+		検索
+		</button>
+		</form>
+	</div>
+	<!-- 一覧表示 -->
+	<div>
+		<table class="table table-striped table-bordered table-hover">
+			<thead class="thead-light">
+				<tr>
+					<th class="th-width">ユーザID</th>
+					<th class="th-width">ユーザ名</th>
+					<th class="th-width">誕生日</th>
+					<th class="th-width">年齢</th>
+					<th class="th-width">性別</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="item: ${userList}">
+					<td th:text="${item.userId}"></td>
+					<td th:text="${item.userName}"></td>
+					<td th:text="${#dates.format(item.birthday, 'YYYY/MM/dd')}"></td>
+					<td th:text="${item.age}"></td>
+					<td th:text="${item.gender == 1} ? '男性' : '女性'"></td>
+					<td>
+						<a class="btn btn-primary" th:href="@{'/user/detail/' + ${item.userId}}">
+						詳細
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 </body>
