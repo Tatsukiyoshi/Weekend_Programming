@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vol12/detail/CouponDetail.dart';
-import 'package:vol12/list/CouponListView.dart';
+import 'package:layout_sample/detail/CouponDetail.dart';
+import 'package:layout_sample/list/CouponListView.dart';
 
 class MainPageWidget extends StatefulWidget{
   const MainPageWidget({super.key});
