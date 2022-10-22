@@ -13,6 +13,12 @@
 	<result column="gender" property="gender" />
 	<result column="department_id" property="departmentId" />
 	<result column="role" property="role" />
+	<association property="department" resultMap="department" />
+</resultMap>
+<!-- マッピング定義（部署） -->
+<resultMap id="department" type="com.example.domain.user.model.Department">
+	<id column="department_id" property="departmentId" />
+	<result column="department_name" property="departmentName" />
 </resultMap>
 <insert id="insertOne">
 	insert into m_user(
@@ -57,6 +63,8 @@
 		*
 	from
 		m_user
+		left join m_department
+		 	on m_user.department_id = m_department.department_id
 	where
 		user_id = #{userId}
 </select>
