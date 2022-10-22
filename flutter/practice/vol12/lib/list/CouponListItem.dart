@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vol12/list/MainContent.dart';
+import 'package:layout_sample/list/MainContent.dart';
 
 class CouponListItem extends StatelessWidget {
 
