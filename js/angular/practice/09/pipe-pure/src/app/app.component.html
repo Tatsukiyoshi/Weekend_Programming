@@ -1,0 +1,9 @@
+<form>
+  <label>キーワード：
+    <input #txt type="text" size="15" />
+  </label>
+  <input type="button" (click)="onclick(txt.value)" value="追加" />
+  <ul>
+    <li *ngFor="let d of (data | grep: myFilter)">{{d}}</li>
+  </ul>
+</form>
