@@ -106,7 +106,7 @@
   |IntelliJ IDEA 2022.2.3                                       |IdeaPad    |2022/10/15
   |[PostgreSQL 15](https://www.postgresql.org/download/windows/)|           |2022/10/15
   |Amazon Coretto 17.0.4.9.1                                    |           |2022/09/23
-  |Android Studio Dolphin | 2021.3.1                            |ExpertBook |2022/09/25
+  |Android Studio Dolphin 2021.3.1 Patch 1                      |ExpertBook |2022/10/22
 
   - Kotlin 
     - [Spring解体新書（バッチ編）](https://www.amazon.co.jp/gp/product/B09D3ZTJTB/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i1)
@@ -135,7 +135,7 @@
 
   - Android
     ```
-    Build #AI-213.7172.25.2113.9014738, built on September 1, 2022
+    Build #AI-213.7172.25.2113.9123335, built on September 30, 2022
     Runtime version: 11.0.13+0-b1751.21-8125866 amd64
     VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
     Windows 11 10.0
@@ -352,10 +352,10 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.674], locale ja-JP)
+    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
         • Flutter version 3.3.4 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision eb6d86ee27 (7 days ago), 2022-10-04 22:31:45 -0700
+        • Framework revision eb6d86ee27 (2 weeks ago), 2022-10-04 22:31:45 -0700
         • Engine revision c08d7d5efc
         • Dart version 2.18.2
         • DevTools version 2.15.0
@@ -373,7 +373,7 @@
     [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 3.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
         • Visual Studio Community 2022 version 17.4.33006.217
-        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
+        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.       
         • Windows 10 SDK version 10.0.22621.0
 
     [√] Android Studio (version 2021.3)
@@ -384,14 +384,16 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.72.1)
+    [√] VS Code (version 1.72.2)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension version 3.50.0
 
-    [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.674]
-        • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.42
+    [√] Connected device (4 available)
+        • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 11 (API 30) (emulator)
+        • Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Version
+          10.0.22621.675]
+        • Chrome (web)                       • chrome        • web-javascript • Google Chrome 105.0.5195.102
+        • Edge (web)                         • edge          • web-javascript • Microsoft Edge 106.0.1370.52
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
