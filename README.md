@@ -257,8 +257,8 @@
 
   |環境／FW                                                                                                             |端末       |日付
   |---------------------------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/12
-  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/12
+  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/23
+  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/23
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
 
   - .NET 環境情報
@@ -340,7 +340,7 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.4](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/07
+  |[Flutter 3.3.5](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/23
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -352,11 +352,11 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
-        • Flutter version 3.3.4 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
+        • Flutter version 3.3.5 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision eb6d86ee27 (2 weeks ago), 2022-10-04 22:31:45 -0700
-        • Engine revision c08d7d5efc
+        • Framework revision d9111f6402 (4 days ago), 2022-10-19 12:27:13 -0700
+        • Engine revision 3ad69d7be3
         • Dart version 2.18.2
         • DevTools version 2.15.0
 
@@ -370,10 +370,10 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 3.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 4.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.33006.217
-        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.       
+        • Visual Studio Community 2022 version 17.4.33015.44
+        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
     [√] Android Studio (version 2021.3)
@@ -388,12 +388,10 @@
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension version 3.50.0
 
-    [√] Connected device (4 available)
-        • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 11 (API 30) (emulator)
-        • Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Version
-          10.0.22621.675]
-        • Chrome (web)                       • chrome        • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)                         • edge          • web-javascript • Microsoft Edge 106.0.1370.52
+    [√] Connected device (3 available)
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.675]
+        • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.52
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
