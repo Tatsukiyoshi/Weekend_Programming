@@ -340,7 +340,7 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.4](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/07
+  |[Flutter 3.3.5](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/23
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
