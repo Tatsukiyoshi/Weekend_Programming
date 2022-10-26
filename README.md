@@ -187,10 +187,10 @@
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 106.0.5249.113（Official Build）
+  1.  Chrome OS Flex 106.0.5249.134（Official Build）
       |FW            |端末       |日付      
       |--------------|-----------|----------
-      |Node.js 16.16 |VivoBook   |2022/09/02
+      |Node.js 18.12 |VivoBook   |2022/10/26
       |vite 3.0.9    |           |
       |vue 3.2.38    |           |        
       |@vue/cli 5.0.8|           |
