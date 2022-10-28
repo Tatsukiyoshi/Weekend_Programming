@@ -1,0 +1,3 @@
+<textarea [(ngModel)]="memo" cols="50" rows="7"></textarea>
+<div>{{memo | truncate }}</div>
+<div>{{memo | truncate: 20: '～'}}</div>

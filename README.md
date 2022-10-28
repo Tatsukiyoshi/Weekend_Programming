@@ -164,7 +164,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/19|第8章 ルーティング <span style="color: red;">*finished?*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/22|第9章 パイプ／ディレクティブの自作 <span style="color: red;">*finished*</span>
   |モダンJavaScriptの基本から始めるReact実践の教科書|2022/07/02|*finished*
 
   |コンテンツ|日付      |進捗状況
@@ -174,7 +174,7 @@
   1.  Windows
       |FW             |端末       |日付      
       |---------------|-----------|----------
-      |Node.js 16.15.1|IdeaPad    |2022/06/05
+      |Node.js 18.12  |IdeaPad    |2022/10/26
       |React 18.2.0   |           |2022/07/02
       |Svelte 3.49.0  |           |2022/07/16
       |Angular 14.2.6 |           |2022/10/16
@@ -183,14 +183,14 @@
 
       |FW                  |端末       |日付      
       |--------------------|-----------|----------
-      |Node.js 16.17.1     |ExpertBook |2022/10/01
+      |Node.js 18.12       |ExpertBook |2022/10/26
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 106.0.5249.113（Official Build）
+  1.  Chrome OS Flex 106.0.5249.134（Official Build）
       |FW            |端末       |日付      
       |--------------|-----------|----------
-      |Node.js 16.16 |VivoBook   |2022/09/02
+      |Node.js 18.12 |VivoBook   |2022/10/26
       |vite 3.0.9    |           |
       |vue 3.2.38    |           |        
       |@vue/cli 5.0.8|           |
@@ -228,7 +228,7 @@
 **Java**
   |テキスト                                                                                   |日付      |進捗状況
   |-------------------------------------------------------------------------------------------|----------|--------
-  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/16|7章 画面レイアウト <span style="color: red;">*finished*</span>
+  |[Spring解体新書（第２版）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/17)  |2022/10/23|8章 MyBatis <span style="color: red;">*finished*</span>
   |[Spring解体新書（バッチ編）](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/16)|2022/05/07|6章 バッチ実行 <span style="color: red;">*finished*</span>
   |サーブレット＆JSP入門                                                                     |2022/10/07|*finished*
   |Java本格入門                                                                              |2022/09/25|*finished*
@@ -257,8 +257,8 @@
 
   |環境／FW                                                                                                             |端末       |日付
   |---------------------------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/12
-  |Visual Studio Community 2022 17.4.0 Preview 3.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/12
+  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/23
+  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/23
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
 
   - .NET 環境情報
@@ -336,11 +336,11 @@
 
   |コンテンツ                                                                |日付     |進捗状況
   |--------------------------------------------------------------------------|---------|---
-  |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/10/01|第11回 Flutterの基本的なレイアウトの考え方・仕組みを学ぼう <span style="color: red;">*finished*</span>
+  |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/10/23|第13回  Flutterではマテリアルデザインを用いたコンポーネントをどう使うのか【テキスト編】 <span style="color: red;">*finished*</span>
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.4](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/07
+  |[Flutter 3.3.5](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/23
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -352,11 +352,11 @@
     ```
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.4, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
-        • Flutter version 3.3.4 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
+        • Flutter version 3.3.5 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision eb6d86ee27 (2 weeks ago), 2022-10-04 22:31:45 -0700
-        • Engine revision c08d7d5efc
+        • Framework revision d9111f6402 (4 days ago), 2022-10-19 12:27:13 -0700
+        • Engine revision 3ad69d7be3
         • Dart version 2.18.2
         • DevTools version 2.15.0
 
@@ -370,10 +370,10 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 3.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 4.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.33006.217
-        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.       
+        • Visual Studio Community 2022 version 17.4.33015.44
+        • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
     [√] Android Studio (version 2021.3)
@@ -388,12 +388,10 @@
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension version 3.50.0
 
-    [√] Connected device (4 available)
-        • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 11 (API 30) (emulator)
-        • Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Version
-          10.0.22621.675]
-        • Chrome (web)                       • chrome        • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)                         • edge          • web-javascript • Microsoft Edge 106.0.1370.52
+    [√] Connected device (3 available)
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.675]
+        • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.52
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available

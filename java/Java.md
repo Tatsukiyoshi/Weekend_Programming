@@ -39,6 +39,11 @@
 
     *   spring
         -   [lombok 1.18.24](https://projectlombok.org/)
+        -   H2 DataBaseは、SQLを作成していることで操作する。データを直接操作することはない。
+            アプリケーションを実行した後の結果は、コンソールで確認する。
+            ```
+            localhost:8080/h2-console
+            ```
 
 *   Pleiades
     *   Pleiades 2022-06およびTomcat 10.0.20での対応
