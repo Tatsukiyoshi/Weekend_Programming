@@ -1,31 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TruncatePipe } from './truncate.pipe';
 
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+describe('trucateパイプのテスト', () => {
+  let pipe = new TruncatePipe();
+  let msg = '12345678901234567890123456789012345678901234567890123456789012345';
+
+  // パラメータをすべて省略した場合の挙動を確認
+  it('デフォルトの挙動', () =>{
+    expect(pipe.transform(msg)).toEqual(
+      '12345678901234567890123456789012345678901234567890...');
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'pipe-param'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('pipe-param');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('pipe-param app is running!');
+  // パラメータを指定した場合の挙動を確認
+  it('パラメータの確認', () => {
+    expect(pipe.transform(msg, 5, '～')).toEqual('12345～');
   });
 });

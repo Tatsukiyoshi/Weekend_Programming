@@ -140,3 +140,7 @@
 
 1.  rxjs
     -   [【Rxjs基礎講座】RxJSのMap系メソッドをコーディングしながら具体的にどう違うか考えてみる](https://deep.tacoskingdom.com/blog/53)
+
+1.  Karma + Jasmine
+    -   結果サンプル
+        ![パイプのテスト](../images/angular/pipe-param-test.png)
