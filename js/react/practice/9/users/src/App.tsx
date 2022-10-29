@@ -8,6 +8,7 @@ function App() {
   // カスタムフックの使用
   // 関数を実行し返却値を分割代入で受け取る
   const { userList, isLoading, isError, onClickFetchUser } = useFetchUsers();
+  return <h2>Hello World</h2>
 }
 
 export default App;
