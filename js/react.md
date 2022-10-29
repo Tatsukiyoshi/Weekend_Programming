@@ -18,4 +18,3 @@
         ```
         npm config set scripts-prepend-node-path true
         ```
-    -   \\
