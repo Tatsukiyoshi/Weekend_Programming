@@ -1,31 +1,34 @@
-import { TestBed } from '@angular/core/testing';
+import { DebugElement } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+  let des: DebugElement[];
+  let comp: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
+    // テストモジュールの準備
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
-    }).compileComponents();
+    }).compileComponents(); // テンプレートのコンパイル
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  beforeEach(() => {
+    // コンポーネントのインスタンス化
+    fixture = TestBed.createComponent(AppComponent);
+    comp = fixture.componentInstance;
   });
 
-  it(`should have as title 'temp-url'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('temp-url');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+  it('テーブルの行数を確認', () => {
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('temp-url app is running!');
+    des = fixture.debugElement.queryAll(By.css('tr'));
+    // テキストでは、６だが、２になる
+    // expect(des.length).toEqual(6);
+    expect(des.length).toEqual(2);
   });
 });

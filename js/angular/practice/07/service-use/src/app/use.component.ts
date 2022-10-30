@@ -3,9 +3,9 @@ import { UseService } from "./use.service";
 
 @Component({
     selector: 'my-use',
-    
-    // サービスインスタンスの生成方法を宣言
-    providers: [],
+    providers: [
+        { provide: UseService, useClass: UseService }
+    ],
     template: `<li>UseService : {{current}}</li>`
 })
 export class UseComponent {
