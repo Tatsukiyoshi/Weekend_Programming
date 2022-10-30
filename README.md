@@ -164,7 +164,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/22|第9章 パイプ／ディレクティブの自作 <span style="color: red;">*finished*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/30|第10章 テスト <span style="color: red;">*finished*</span>
   |モダンJavaScriptの基本から始めるReact実践の教科書|2022/07/02|*finished*
 
   |コンテンツ|日付      |進捗状況

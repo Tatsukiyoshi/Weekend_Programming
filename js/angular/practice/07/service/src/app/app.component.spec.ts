@@ -1,31 +1,19 @@
-import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { BookService } from './book.service';
 
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+describe('BookServiceのテスト', () => {
+  let service: BookService;
+
+  beforeEach(() => {
+    service = new BookService();
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  it('getBooksメソッドの動作', () => {
+    let books = service.getBooks();
 
-  it(`should have as title 'service'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('service');
-  });
+    // 取得したデータ件数を検証
+    expect(books.length).toEqual(5);
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('service app is running!');
+    // １件目の署名を検証
+    expect(books[0].title).toEqual('改訂新版JavaScript本格入門');
   });
 });
