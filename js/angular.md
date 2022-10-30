@@ -140,7 +140,9 @@
 
 1.  rxjs
     -   [【Rxjs基礎講座】RxJSのMap系メソッドをコーディングしながら具体的にどう違うか考えてみる](https://deep.tacoskingdom.com/blog/53)
+    -   [Property 'of' does not exist on type 'typeof Observable [duplicate]](https://stackoverflow.com/questions/38067580/property-of-does-not-exist-on-type-typeof-observable)
 
 1.  Karma + Jasmine
     -   結果サンプル
         ![パイプのテスト](../images/angular/pipe-param-test.png)
+
