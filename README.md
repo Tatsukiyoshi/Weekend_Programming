@@ -255,11 +255,11 @@
   |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/17|Chapter 6 コンストラクタおよびデストラクタを用いた優れた抽象化<span style="color: red;">*finished*</span>
   |[やさしいＣ＃第３版]                                                               |2022/07/16|*finished*
 
-  |環境／FW                                                                                                             |端末       |日付
-  |---------------------------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/23
-  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/23
-  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
+  |環境／FW                                                                                             |端末       |日付
+  |-----------------------------------------------------------------------------------------------------|-----------|----------
+  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23             |IdeaPad    |2022/10/31
+  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23 + .NET MAUI |ExpertBook |2022/10/31
+  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                           |           |2022/07/09
 
   - .NET 環境情報
     ```
@@ -348,7 +348,7 @@
     [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
         • Flutter version 3.3.5 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision d9111f6402 (4 days ago), 2022-10-19 12:27:13 -0700
+        • Framework revision d9111f6402 (11 days ago), 2022-10-19 12:27:13 -0700
         • Engine revision 3ad69d7be3
         • Dart version 2.18.2
         • DevTools version 2.15.0
@@ -363,9 +363,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 4.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 5.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.33015.44
+        • Visual Studio Community 2022 version 17.4.33020.496
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
@@ -384,7 +384,7 @@
     [√] Connected device (3 available)
         • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.675]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.52
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.24
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available

@@ -4,3 +4,4 @@
 -   [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
 -   ColorDialog
 -   [Using custom fonts on a Label on Winforms](https://stackoverflow.com/questions/1297264/using-custom-fonts-on-a-label-on-winforms)
+    ![LINE Seed JP](../images/Windows/LINESeedJP.png)
