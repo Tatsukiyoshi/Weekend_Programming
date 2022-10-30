@@ -316,11 +316,7 @@
   - C#
     - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
-    - フリーアイコン
-      - GO(https://www.flaticon.com/free-icon/go_652364)
-      - GoBack(https://www.flaticon.com/free-icon/back-button_93634?term=back&page=1&position=6&page=1&position=6&related_id=93634&origin=search)
-    - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
-    - ColorDialog
+    - [ノウハウ](net/dotnet.md)
   - C++
     - [carbon language](https://github.com/carbon-language/carbon-lang)
       - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
@@ -346,10 +342,7 @@
     -  [Get started](https://docs.flutter.dev/get-started/install)
     -  myapp - flutter demo
     -  Startup namer
-  - flutterの更新
-    ```
-    flutter upgrade
-    ```
+  - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
     [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)

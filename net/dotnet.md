@@ -1,0 +1,6 @@
+-   フリーアイコン
+    -   GO(https://www.flaticon.com/free-icon/go_652364)
+    -   GoBack(https://www.flaticon.com/free-icon/back-button_93634?term=back&page=1&position=6&page=1&position=6&related_id=93634&origin=search)
+-   [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
+-   ColorDialog
+-   [Using custom fonts on a Label on Winforms](https://stackoverflow.com/questions/1297264/using-custom-fonts-on-a-label-on-winforms)
