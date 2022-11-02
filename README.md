@@ -58,11 +58,12 @@
   |-----------------------------------------------------|----------|----
   |[独学プログラマー](http://theselftaughtprogrammer.io/)|2019/10/05|<span style="color: red;">*finished*</span>
 
-  |環境／FW                                                   |端末       |日付      
-  |-----------------------------------------------------------|-----------|----------
-  |[Python 3.10.6](https://www.python.org/downloads/)         |IdeaPad    |2022/08/27
-  |[Django 4.1](https://docs.djangoproject.com/ja/4.1)        |           |2022/08/27
+  |環境／FW                                                 |端末       |日付      
+  |---------------------------------------------------------|-----------|----------
+  |[Python 3.11](https://www.python.org/downloads/)         |IdeaPad    |2022/10/28
+  |[Django 4.1.3](https://docs.djangoproject.com/ja/4.1)    |           |2022/11/03
 
+  - [ノウハウ](python/python.md)
   - [Django Tutorial](https://docs.djangoproject.com/ja/4.1/intro/tutorial01/)
     **@2022/08/27** その７ adminフォームのカスタマイズ <span style="color: red;">*finished*</span>
   - nsw
