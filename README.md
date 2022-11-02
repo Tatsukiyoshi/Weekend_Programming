@@ -164,7 +164,7 @@
 
   |テキスト|日付      |進捗状況
   |--------|----------|-------
-  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/22|第9章 パイプ／ディレクティブの自作 <span style="color: red;">*finished*</span>
+  |[Angularアプリケーションプログラミング](https://github.com/Tatsukiyoshi/Weekend_Programming/issues/13)|2022/10/30|第10章 テスト <span style="color: red;">*finished*</span>
   |モダンJavaScriptの基本から始めるReact実践の教科書|2022/07/02|*finished*
 
   |コンテンツ|日付      |進捗状況
@@ -255,11 +255,11 @@
   |[C++ プログラミング入門](http://examples.oreilly.com/core/)                        |2021/10/17|Chapter 6 コンストラクタおよびデストラクタを用いた優れた抽象化<span style="color: red;">*finished*</span>
   |[やさしいＣ＃第３版]                                                               |2022/07/16|*finished*
 
-  |環境／FW                                                                                                             |端末       |日付
-  |---------------------------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23             |IdeaPad    |2022/10/23
-  |Visual Studio Community 2022 17.4.0 Preview 4.0 + .NET 6.0.400 Preview/.NET 7.0.100-preview.7.2.22477.23 + .NET MAUI |ExpertBook |2022/10/23
-  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                                       |           |2022/07/09
+  |環境／FW                                                                                             |端末       |日付
+  |-----------------------------------------------------------------------------------------------------|-----------|----------
+  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23             |IdeaPad    |2022/10/31
+  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23 + .NET MAUI |ExpertBook |2022/10/31
+  |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                           |           |2022/07/09
 
   - .NET 環境情報
     ```
@@ -316,11 +316,7 @@
   - C#
     - [やさしいＣ＃第３版](https://isbn2.sbcr.jp/03922/)
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
-    - フリーアイコン
-      - GO(https://www.flaticon.com/free-icon/go_652364)
-      - GoBack(https://www.flaticon.com/free-icon/back-button_93634?term=back&page=1&position=6&page=1&position=6&related_id=93634&origin=search)
-    - [アプリケーション構成ファイル](https://www.fenet.jp/dotnet/column/language/9654/)
-    - ColorDialog
+    - [ノウハウ](net/dotnet.md)
   - C++
     - [carbon language](https://github.com/carbon-language/carbon-lang)
       - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
@@ -346,16 +342,13 @@
     -  [Get started](https://docs.flutter.dev/get-started/install)
     -  myapp - flutter demo
     -  Startup namer
-  - flutterの更新
-    ```
-    flutter upgrade
-    ```
+  - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
     [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
         • Flutter version 3.3.5 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision d9111f6402 (4 days ago), 2022-10-19 12:27:13 -0700
+        • Framework revision d9111f6402 (11 days ago), 2022-10-19 12:27:13 -0700
         • Engine revision 3ad69d7be3
         • Dart version 2.18.2
         • DevTools version 2.15.0
@@ -370,9 +363,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 4.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 5.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.33015.44
+        • Visual Studio Community 2022 version 17.4.33020.496
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
@@ -391,7 +384,7 @@
     [√] Connected device (3 available)
         • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.675]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 106.0.1370.52
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.24
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available

@@ -1,0 +1,27 @@
+name: line_fonts
+description: An example of how to use LINE fonts with Flutter
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Desktop
+      fonts:
+        - asset: fonts/Desktop/LINESeedJP_TTF_Rg.ttf
+        - asset: fonts/Desktop/LINESeedJP_TTF_Bd.ttf
+          weight: 700
+    - family: Application
+      fonts:
+        - asset: fonts/App/LINESeedJP_A_TTF_Rg.ttf
+        - asset: fonts/App/LINESeedJP_A_TTF_Bd.ttf
+          weight: 700
+  uses-material-design: true

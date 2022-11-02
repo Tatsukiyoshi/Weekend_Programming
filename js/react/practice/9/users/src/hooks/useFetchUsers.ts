@@ -18,7 +18,7 @@ export const useFetchUsers = () => {
             .get("https://example.com/users")
             .then(result => {
                 // 苗字と名前を結合するように変換
-                const users = result.data.map(user => ({
+                const users = result.data.map((user: { id: any; lastname: any; firstname: any; age: any; }) => ({
                     id: user.id,
                     name: `${user.lastname} ${user.firstname}`,
                     age: user.age
