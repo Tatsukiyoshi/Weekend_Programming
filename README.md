@@ -170,6 +170,7 @@
 
   |コンテンツ|日付      |進捗状況
   |--------|----------|-------
+  |[Vercel＋Next.jsを活用したWebアプリケーション開発入門](https://codezine.jp/article/corner/925)      |2022/11/03|第1回 手軽に高速にWebサイトを公開！ Webホスティングサービス「Vercel」の概要と使い方
   |[TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/corner/878)|2022/08/13|第6回 Vue.jsでWebページをつくる際の肝！「コンポーネント」をTypeScriptで活用しよう <span style="color: red;">*finished*</span>
 
   1.  Windows
@@ -217,6 +218,8 @@
       - AngularによるモダンWeb開発 基礎編 第2版 ダイジェスト版（日経ソフトウェア 2019年5月号 付録）
   - Vue.js
     - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
+  - Next.js / Vercel
+    - [Vercel](https://vercel.com/tatsukiyoshi/)
   - ml5 - 日経ソフトウェア 2019年5月号
   - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
   - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>
