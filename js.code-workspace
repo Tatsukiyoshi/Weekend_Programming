@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "js"
+		},
+		{
+			"path": "../nextjs"
 		}
 	],
 	"settings": {
