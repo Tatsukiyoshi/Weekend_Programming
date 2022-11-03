@@ -262,7 +262,7 @@
 
   |環境／FW                                                                                             |端末       |日付
   |-----------------------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23             |IdeaPad    |2022/10/31
+  |Visual Studio Community 2022 17.4.0 Preview 6.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23             |IdeaPad    |2022/11/04
   |Visual Studio Community 2022 17.4.0 Preview 6.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23 + .NET MAUI |ExpertBook |2022/11/04
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                           |           |2022/07/09
 
