@@ -263,7 +263,7 @@
   |環境／FW                                                                                             |端末       |日付
   |-----------------------------------------------------------------------------------------------------|-----------|----------
   |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23             |IdeaPad    |2022/10/31
-  |Visual Studio Community 2022 17.4.0 Preview 5.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23 + .NET MAUI |ExpertBook |2022/10/31
+  |Visual Studio Community 2022 17.4.0 Preview 6.0 + .NET 6.0.10/.NET 7.0.100-rc.2.22477.23 + .NET MAUI |ExpertBook |2022/11/04
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10                           |           |2022/07/09
 
   - .NET 環境情報
@@ -368,9 +368,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 5.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.4.0 Preview 6.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.4.33020.496
+        • Visual Studio Community 2022 version 17.4.33027.239
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
