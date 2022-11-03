@@ -341,7 +341,7 @@
 
   |環境／FW                                                     |端末       |日付
   |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.5](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/10/23
+  |[Flutter 3.3.7](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/11/04
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -350,12 +350,12 @@
   - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.5, on Microsoft Windows [Version 10.0.22621.675], locale ja-JP)
-        • Flutter version 3.3.5 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.7, on Microsoft Windows [Version 10.0.22621.755], locale ja-JP)
+        • Flutter version 3.3.7 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision d9111f6402 (2 weeks ago), 2022-10-19 12:27:13 -0700
-        • Engine revision 3ad69d7be3
-        • Dart version 2.18.2
+        • Framework revision e99c9c7cd9 (2 days ago), 2022-11-01 16:59:00 -0700
+        • Engine revision 857bd6b74c
+        • Dart version 2.18.4
         • DevTools version 2.15.0
 
     [√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
@@ -387,7 +387,7 @@
         • Flutter extension version 3.52.0
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.675]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.755]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
         • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.26
 
