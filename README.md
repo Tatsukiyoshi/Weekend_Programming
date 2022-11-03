@@ -170,7 +170,7 @@
 
   |コンテンツ|日付      |進捗状況
   |--------|----------|-------
-  |[Vercel＋Next.jsを活用したWebアプリケーション開発入門](https://codezine.jp/article/corner/925)      |2022/11/03|第2回 VercelにNext.jsアプリケーションをデプロイする～Vercel上でNext.jsを動かす利点も紹介
+  |[Vercel＋Next.jsを活用したWebアプリケーション開発入門](https://codezine.jp/article/corner/925)      |2022/11/03|第3回 ブログを作りながら学ぶ、Next.jsの便利な5つのコンポーネント（Link、Image、Head、Script、レイアウト）
   |[TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/corner/878)|2022/08/13|第6回 Vue.jsでWebページをつくる際の肝！「コンポーネント」をTypeScriptで活用しよう <span style="color: red;">*finished*</span>
 
   1.  Windows
