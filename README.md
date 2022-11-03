@@ -220,6 +220,7 @@
     - [TypeScriptで学ぶJavaScriptフレームワーク「Vue.js」の利用法](https://codezine.jp/article/detail/14451)
   - Next.js / Vercel
     - [Vercel](https://vercel.com/tatsukiyoshi/)
+    - [Nextjs-blog](https://github.com/Tatsukiyoshi/nextjs-blog)
   - ml5 - 日経ソフトウェア 2019年5月号
   - jskanji - VSCodeを使おう（日経ソフトウェア 2019年7月号）
   - react-native - React Nativeでスマホアプリ開発（日経ソフトウェア 2019年7月号）<BR>

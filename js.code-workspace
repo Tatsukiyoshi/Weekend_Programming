@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../nextjs"
+		},
+		{
+			"path": "../nextjs-blog"
 		}
 	],
 	"settings": {
