@@ -18,6 +18,10 @@
         npx create-next-app nextjs13-sample --ts --experimental-app --use-npm
         ```
         [（参考）Next.js 13 で開発方法はどう変わる？](https://zenn.dev/jtakahashi64/articles/a9d2ae3285ceb6)
+
+        *   Error対策
+            -   https://nextjs.org/docs/messages/link-no-children
+            -   https://nextjs.org/docs/messages/react-hydration-error
     *   TurboPack
         ```
         npx create-next-app --ts --example with-turbopack
