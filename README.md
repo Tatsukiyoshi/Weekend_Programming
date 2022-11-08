@@ -400,24 +400,24 @@
   1. Windows 11
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.64.0  |IdeaPad    |2022/10/08
+      |Rust 1.65.0  |IdeaPad    |2022/11/08
       |Tauri 1.1.1  |           |2022/09/17
-      |Svelte 3.50.1|           |2022/09/17
+      |Svelte 3.52.0|           |2022/11/08
 
   1. Ubuntu 20.04 on Windows 11
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.64.0  |IdeaPad    |2022/10/08
+      |Rust 1.65.0  |IdeaPad    |2022/11/09
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
-  1. Chrome OS Flex 106.0.5249.113（Official Build）
+  1. Chrome OS Flex 107.0.5304.92（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.64.0  |VivoBook   |2022/10/08
+      |Rust 1.65.0  |VivoBook   |2022/11/08
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/03
-      |Vite 3.1.6   |           |2022/10/08
+      |Vite 3.2.3   |           |2022/11/08
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
