@@ -432,6 +432,15 @@
   - [ノウハウ＋備忘録](rust/rust.md)
 
 ---
+**Go**
+
+  |環境／FW     |端末       |日付
+  |-------------|-----------|----------
+  |Go 1.19.3    |IdeaPad    |2022/11/12
+
+  - [GOでLINE風リアルタイムチャットアプリを作ってみよう](https://www.cetus-media.info/article/2021/line-chat/)
+
+---
 **ObjectPascal**
   - Delphi
     - CardPanelDemo
