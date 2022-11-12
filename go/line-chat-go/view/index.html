@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>LINE</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+  </head>
+
+  <body>
+
+    <div class="line">
+      <div id="room" class="line-header">Join Room</div>
+      <div id="chat" class="line-container"></div>
+      <div class="line-form">
+        <input placeholder="room" id="channel" type="text">
+        <input placeholder="user name" id="user" type="text">
+        <button id="join" class="line-form-button" onclick="send_data()">Join</button>
+      </div>
+    </div>
+
+    <script>
+      const chan = document.getElementById("channel");
+      const join = document.getElementById("join");
+      const user = document.getElementById("user");
+
+      join.onclick = function () {
+        if (chan.value != "") {
+		    localStorage.setItem("user",user.value)
+            window.location = "/room/" + chan.value;
+        }
+      };
+
+    </script>
+  </body>
+</html>
