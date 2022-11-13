@@ -323,9 +323,6 @@
       - [サポートページ](http://mana.on.coocan.jp/yasacs.html)
     - [ノウハウ](net/dotnet.md)
   - C++
-    - [carbon language](https://github.com/carbon-language/carbon-lang)
-      - carbon **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
-      - [ubuntu 2022.04 にインストール](carbon/carbon.md)
     - C11/C++17 - [C++環境設定](https://code.visualstudio.com/docs/cpp/config-msvc)
       - HelloWorld
       - [Learn C++](https://www.learncpp.com/) **@2019/10/22** 1.5 Introduction to iostream
@@ -454,23 +451,38 @@
     swiftc -target x86_64-unknown-windows-msvc -sdk %SDKROOT% -I %SDKROOT%/usr/lib/swift -L %SDKROOT%/usr/lib/swift/windows helloworld.swift -o helloworld.exe
     ```
 ---
-**LLVM**
+**Unity**
+  - Unity Hub 2.4.2 and Unity 2020.2.5f1
+    - 「Unityによるモバイルゲーム開発」で学習中
+    - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
+    - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
+---
+**Ubuntu on Windows**
+  |環境／FW     |端末       |日付
+  |-------------|-----------|----------
+  |Carbon       |IdeaPad    |***
+  |LLVM 15.0.4  |IdeaPad    |2022/11/13
+
+  ***Carbon***
+  - [carbon language](https://github.com/carbon-language/carbon-lang)
+    - [環境構築メモ](carbon/carbon.md)
+      1.  carbon on ubuntu 22.04 **@2022/07/31** <span style="color: red;">*Install Failed!*</span>
+      1.  carbon on ubuntu 20.04 **@2022/11/13** <span style="color: red;">*Install Failed!*</span>
+
+  ***LLVM***
+  - LLVM 15.0.4
+    Carbon環境構築にLLVMが必要なため、インストール。最新は、15.0.4。
   - LLVM 12.0
     - [for Ubuntu](https://apt.llvm.org/)
       ```
       apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev libc++1 libc++abi-dev libc++abi1 libclang-dev libclang1 liblldb-dev libllvm-ocaml-dev libomp-dev libomp5 lld lldb llvm-dev llvm-runtime llvm python-clang
       ```
     - [for Winfows](https://releases.llvm.org/download.html)
+
   - 「きつねさんでもわかるLLVM」で学習中
     - DummyCCompiler実践中
       **@2021/01/11** : Front-End(to Chapter 5.9) finished
     - [きつねさんでもわかるLLVM公式リポジトリ](https://github.com/Kmotiko/DummyCCompiler)
----
-**Unity**
-  - Unity Hub 2.4.2 and Unity 2020.2.5f1
-    - 「Unityによるモバイルゲーム開発」で学習中
-    - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
-    - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 ---
 
 ## [痕跡](_sub/Profile.md)
