@@ -159,5 +159,8 @@
     |karma-jasmine-html-reporter|2.0.0
     |typescript                 |4.8.2
 
-1.  Bootstrap
-    [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/documentation#getting-started)
+1.  [ngx-bootstrap](https://valor-software.com/ngx-bootstrap)
+    [Get Started](https://valor-software.com/ngx-bootstrap/#/documentation#getting-started)
+
+1.  [ng2-validation](https://github.com/yuyang041060120/ng2-validation)
+
