@@ -16,4 +16,9 @@
     ```
     -   プロジェクト名を入力
     -   vueを選択
-    -   vue-tsを選択
+    -   TypeScriptを選択
+
+*   Denoでのプロジェクト作成
+    ```
+    $ deno run -A npm:create-vite-extra --template deno-vue
+    ```

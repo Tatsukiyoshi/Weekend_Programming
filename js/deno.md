@@ -1,9 +1,14 @@
 *   Denoを試してみる
     -   インストール
-        ```
-        iwr https://deno.land/install.ps1 -useb | iex
-        ```
-        ![インストール結果](../images/Deno_install.png)
+        *   Windows
+            ```
+            iwr https://deno.land/install.ps1 -useb | iex
+            ```
+            ![インストール結果](../images/Deno_install.png)
+        *   Chrome OS Flex
+            ```
+            curl -fsSL https://deno.land/x/install/install.sh | sh
+            ```
 *   Deno更新
     ```
     deno upgrade
