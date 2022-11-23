@@ -158,3 +158,13 @@
     |karma-jasmine              |5.1.0
     |karma-jasmine-html-reporter|2.0.0
     |typescript                 |4.8.2
+
+    *   ECMA Version
+        tsconfig.jsonにて、targetをES2022にしていない場合、
+        ```json
+        "target": "es2020",
+        ```
+        実行時（ng serve）に下記警告メッセージが出力される。
+        ```
+        TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browerslist configuration. For more information, see https://angular.io/guide/build#configuring-browser-compatibility
+        ```
