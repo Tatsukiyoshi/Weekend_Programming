@@ -22,3 +22,7 @@
     ```
     $ deno run -A npm:create-vite-extra --template deno-vue
     ```
+*   nuxt.jsでのプロジェクト作成
+    ```
+    npx create-nuxt-app <project-name>
+    ```
