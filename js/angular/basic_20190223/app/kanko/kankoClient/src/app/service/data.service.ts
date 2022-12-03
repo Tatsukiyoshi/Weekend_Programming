@@ -4,7 +4,7 @@ import {DbService} from './db.service';
 import {MyEvent, StateService} from './state.service';
 import {COUNT_TABLE} from '../app.countTable';
 import {MAX_FAVORITE, REMOTEDB_URL} from '../app.config';
-import {MatSnackBar, MatSnackBarVerticalPosition} from '@angular/material';
+import {MatSnackBar, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
 import {HttpClient} from '@angular/common/http';
 import {Catch} from '../class/log.class';
 

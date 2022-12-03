@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit, ViewChild} from "@angular/core";
 import {Router} from "@angular/router";
 import {FormControl, FormGroup} from "@angular/forms";
-import {MatVerticalStepper} from "@angular/material";
+import {MatStepperModule} from "@angular/material/stepper";
 import {ScrollService} from "../../service/scroll.service";
 import {StateService} from "../../service/state.service";
 import {DataService} from "../../service/data.service";
@@ -13,7 +13,7 @@ import {Catch} from '../../class/log.class';
   styleUrls: ["./search.component.css"]
 })
 export class SearchComponent implements OnInit, OnDestroy {
-  @ViewChild("mystepper") stepper: MatVerticalStepper;
+  @ViewChild("mystepper") stepper: MatStepperModule;
 
   AREA_FORM = AREA_FORM;
   GENRE_FORM = GENRE_FORM;
@@ -29,8 +29,8 @@ export class SearchComponent implements OnInit, OnDestroy {
   constructor(
     public router: Router,
     public scrollService: ScrollService,
-    public    stateService: StateService,
-    public    dataService: DataService,
+    public stateService: StateService,
+    public dataService: DataService,
   ) {
   }
 
@@ -52,10 +52,12 @@ export class SearchComponent implements OnInit, OnDestroy {
       this.checkBoxGroup.patchValue({[code]: true});
     });
 
+    /*
     if (this.stateService.state.areas.length
       && this.stateService.state.genres.length) {
       this.stepper.selectedIndex = 1;
     }
+    */
 
     // 選択の変更検知関数を登録
     this.checkBoxGroup.valueChanges.subscribe(v => this.update());
