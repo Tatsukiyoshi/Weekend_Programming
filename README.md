@@ -4,7 +4,7 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.73.1 <BR />
+  - Visual Studio Code 1.74 <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.1.2
 
@@ -348,10 +348,10 @@
   - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.8, on Microsoft Windows [Version 10.0.22621.819], locale ja-JP)
+    [√] Flutter (Channel stable, 3.3.8, on Microsoft Windows [Version 10.0.22621.900], locale ja-JP)
         • Flutter version 3.3.8 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision 52b3dc25f6 (2 days ago), 2022-11-09 12:09:26 +0800
+        • Framework revision 52b3dc25f6 (4 weeks ago), 2022-11-09 12:09:26 +0800
         • Engine revision 857bd6b74c
         • Dart version 2.18.4
         • DevTools version 2.15.0
@@ -380,14 +380,14 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.73.1)
+    [√] VS Code (version 1.74.0)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
-        • Flutter extension version 3.52.0
+        • Flutter extension version 3.54.0
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.819]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.900]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.35
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.56
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
