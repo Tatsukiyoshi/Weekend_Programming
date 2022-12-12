@@ -189,10 +189,10 @@
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 107.0.5304.110（Official Build）
+  1.  Chrome OS Flex 108.0.5359.75（Official Build）
       |FW            |端末       |日付      
       |--------------|-----------|----------
-      |Node.js 18.12 |VivoBook   |2022/11/23
+      |Node.js 18.12 |TransBook  |2022/12/12
       |Deno 1.28.1   |           |
       |vite 3.2.4    |           |
       |vue 3.2.45    |           |        
@@ -409,10 +409,10 @@
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
-  1. Chrome OS Flex 107.0.5304.92（Official Build）
+  1. Chrome OS Flex 108.0.5359.75（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.65.0  |VivoBook   |2022/11/08
+      |Rust 1.65.0  |TransBook  |2022/12/12
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/03
       |Vite 3.2.3   |           |2022/11/08
