@@ -418,10 +418,10 @@
   1. Chrome OS Flex 108.0.5359.111（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.65.0  |TransBook  |2022/12/12
-      |Tauri 1.1.1  |           |2022/09/17
+      |Rust 1.65.0  |TransBook  |2022/12/13
+      |Tauri 1.2.2  |           |2022/12/13
       |React 18.2.0 |           |2022/09/03
-      |Vite 3.2.3   |           |2022/11/08
+      |Vite 3.2.5   |           |2022/12/13
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
