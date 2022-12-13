@@ -189,7 +189,7 @@
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 108.0.5359.75（Official Build）
+  1.  Chrome OS Flex 108.0.5359.111（Official Build）
       |FW            |端末       |日付      
       |--------------|-----------|----------
       |Node.js 18.12 |TransBook  |2022/12/12
@@ -409,7 +409,7 @@
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
-  1. Chrome OS Flex 108.0.5359.75（Official Build）
+  1. Chrome OS Flex 108.0.5359.111（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.65.0  |TransBook  |2022/12/12
