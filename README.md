@@ -189,14 +189,20 @@
       |React Native 0.70.1 |           |2022/10/01
       |Metro 0.72.3        |           |2022/10/01
 
-  1.  Chrome OS Flex 107.0.5304.110（Official Build）
-      |FW            |端末       |日付      
-      |--------------|-----------|----------
-      |Node.js 18.12 |VivoBook   |2022/11/23
-      |Deno 1.28.1   |           |
-      |vite 3.2.4    |           |
-      |vue 3.2.45    |           |        
-      |@vue/cli 5.0.8|           |
+  1.  Chrome OS Flex 108.0.5359.111（Official Build）
+      |FW              |端末       |日付      
+      |----------------|-----------|----------
+      |Node.js 18.12.1 |TransBook  |2022/12/13
+      |Deno 1.28.3     |           |
+      |vite 4.0.1      |           |
+      |vue 3.2.45      |           |        
+      |@vue/cli 5.0.8  |           |
+
+      |FW              |端末       |日付      
+      |----------------|-----------|----------
+      |Node.js 16.18.1 |TransBook  |2022/12/13
+      |Nuxt 2.15.8     |           |
+      |vue 2.7.14      |           |
 
   - React
     - モダンJavaScriptの基礎から始める挫折しないためのReact入門＠Udemy
@@ -409,13 +415,13 @@
       |Tauri 1.1.1  |           |2022/09/17
       |React 18.2.0 |           |2022/09/17
 
-  1. Chrome OS Flex 107.0.5304.92（Official Build）
+  1. Chrome OS Flex 108.0.5359.111（Official Build）
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
-      |Rust 1.65.0  |VivoBook   |2022/11/08
-      |Tauri 1.1.1  |           |2022/09/17
+      |Rust 1.65.0  |TransBook  |2022/12/13
+      |Tauri 1.2.2  |           |2022/12/13
       |React 18.2.0 |           |2022/09/03
-      |Vite 3.2.3   |           |2022/11/08
+      |Vite 3.2.5   |           |2022/12/13
 
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
