@@ -4,7 +4,7 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 **共通**
-  - Visual Studio Code 1.74 <BR />
+  - Visual Studio Code 1.74.1 <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
   - GitHub Desktop 3.1.2
 
@@ -269,8 +269,8 @@
 
   |環境／FW                                                                             |端末       |日付
   |-------------------------------------------------------------------------------------|-----------|----------
-  |Visual Studio Community 2022 17.5.0 Preview 1.0 + .NET 6.0.11/.NET 7.0.0             |IdeaPad    |2022/11/09
-  |Visual Studio Community 2022 17.5.0 Preview 1.0 + .NET 6.0.11/.NET 7.0.0 + .NET MAUI |ExpertBook |2022/11/11
+  |Visual Studio Community 2022 17.5.0 Preview 2.0 + .NET 6.0.11/.NET 7.0.0             |IdeaPad    |2022/12/15
+  |Visual Studio Community 2022 17.5.0 Preview 2.0 + .NET 6.0.11/.NET 7.0.0 + .NET MAUI |ExpertBook |2022/12/15
   |Android SDK Platform 33 / Platform-Tools 33.0.2 / Android Emulator 31.2.10           |           |2022/07/09
 
   - .NET 環境情報
@@ -300,11 +300,11 @@
     .NET runtimes installed:
       Microsoft.AspNetCore.App 6.0.11 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
       Microsoft.AspNetCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-      Microsoft.NETCore.App 3.1.31 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+      Microsoft.NETCore.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
       Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
       Microsoft.NETCore.App 6.0.11 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
       Microsoft.NETCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-      Microsoft.WindowsDesktop.App 3.1.31 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+      Microsoft.WindowsDesktop.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
       Microsoft.WindowsDesktop.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
       Microsoft.WindowsDesktop.App 6.0.11 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
       Microsoft.WindowsDesktop.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
@@ -354,10 +354,10 @@
   - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.8, on Microsoft Windows [Version 10.0.22621.900], locale ja-JP)
+    [√] Flutter (Channel stable, 3.3.8, on Microsoft Windows [Version 10.0.22621.963], locale ja-JP)
         • Flutter version 3.3.8 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision 52b3dc25f6 (4 weeks ago), 2022-11-09 12:09:26 +0800
+        • Framework revision 52b3dc25f6 (5 weeks ago), 2022-11-09 12:09:26 +0800
         • Engine revision 857bd6b74c
         • Dart version 2.18.4
         • DevTools version 2.15.0
@@ -372,9 +372,9 @@
     [√] Chrome - develop for the web
         • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
 
-    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.5.0 Preview 1.0)
+    [√] Visual Studio - develop for Windows (Visual Studio Community 2022 17.5.0 Preview 2.0)
         • Visual Studio at D:\Program Files\Microsoft Visual Studio\2022\Preview
-        • Visual Studio Community 2022 version 17.5.33103.201
+        • Visual Studio Community 2022 version 17.5.33209.295
         • The current Visual Studio installation is a pre-release version. It may not be supported by Flutter yet.
         • Windows 10 SDK version 10.0.22621.0
 
@@ -386,14 +386,14 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.74.0)
+    [√] VS Code (version 1.74.1)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
         • Flutter extension version 3.54.0
 
     [√] Connected device (3 available)
-        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.900]
+        • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.963]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 107.0.1418.56
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 108.0.1462.42
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
