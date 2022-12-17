@@ -79,3 +79,13 @@
         rustc 1.64.0 (a55dd71d5 2022-09-19)
         ```
         [yarn list](./tauri-app-wsl2/tauri-app/yarn.list)
+
+*   [Bevy](https://bevyengine.org/)
+    *   [Installing Linux dependencies](https://github.com/bevyengine/bevy/blob/main/docs/linux_dependencies.md)
+        ```
+        sudo apt-get install g++ pkg-config libx11-dev libasound2-dev libudev-dev
+        ```
+    *   [alsa-sys](https://github.com/Spotifyd/spotifyd/issues/1046)
+        ```
+        sudo apt-get install -y -qq libasound2-dev libssl-dev libpulse-dev libdbus-1-dev portaudio19-dev
+        ```

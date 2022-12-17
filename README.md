@@ -422,7 +422,9 @@
       |Tauri 1.2.2  |           |2022/12/13
       |React 18.2.0 |           |2022/09/03
       |Vite 3.2.5   |           |2022/12/13
+      |Bevy 0.9.1   |           |2022/12/17
 
+  - [Bevy](https://bevyengine.org/)
   - [Build smaller, faster, and more secure desktop applications with a web frontend](https://tauri.studio/)
   - ディストリビューションのバージョンを確認する
     ```
