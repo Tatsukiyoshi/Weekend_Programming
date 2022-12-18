@@ -459,10 +459,14 @@
     ```
 ---
 **Unity**
-  - Unity Hub 2.4.2 and Unity 2020.2.5f1
-    - 「Unityによるモバイルゲーム開発」で学習中
-    - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
-    - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
+  |環境／FW           |端末       |日付
+  |-------------------|-----------|----------
+  |Unity Hub 3.4.1    |IdeaPad    |2022/12/18
+  |Unity 2021.3.16f1  |IdeaPad    |2022/12/18
+
+  - 「Unityによるモバイルゲーム開発」で学習中
+  - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
+  - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 ---
 **Ubuntu on Windows**
   |環境／FW     |端末       |日付
