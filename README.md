@@ -250,7 +250,7 @@
   |[Pleiades All in One Eclipse Standard Edition 2022-09.20220914 (Eclipse 4.25.0 GA)](https://mergedoc.osdn.jp/)|IdeaPad    |2022/09/24
   |[OpenJDK JDK 19 General-Availability Release](https://jdk.java.net/19/)                                       |           |2022/09/24
   |[Apache Tomcat 10.0.23](https://tomcat.apache.org/download-10.cgi)                                            |           |2022/09/24
-  |[Jenkins LTS 2.361.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/09/24
+  |[Jenkins LTS 2.375.1](https://www.jenkins.io/download/lts/)                                                   |           |2022/12/20
   |Apache Maven 3.8.6                                                                                            |           |2022/06/23
   |Graal VM Java17-22.2.0                                                                                        |           |2022/09/23
   |[H2 Database 2.1.214](https://www.h2database.com/html/main.html)                                              |           |2022/10/02
