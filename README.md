@@ -343,9 +343,9 @@
   |--------------------------------------------------------------------------|---------|---
   |[Flutterで始めるモバイルアプリ開発](https://codezine.jp/article/corner/830)|2022/10/23|第13回  Flutterではマテリアルデザインを用いたコンポーネントをどう使うのか【テキスト編】 <span style="color: red;">*finished*</span>
 
-  |環境／FW                                                     |端末       |日付
-  |-------------------------------------------------------------|-----------|----------
-  |[Flutter 3.3.8](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/11/11
+  |環境／FW                                                      |端末       |日付
+  |--------------------------------------------------------------|-----------|----------
+  |[Flutter 3.3.10](https://docs.flutter.dev/get-started/install)|ExpertBook |2022/12/21
 
   - flutter dev
     -  [Get started](https://docs.flutter.dev/get-started/install)
@@ -354,12 +354,12 @@
   - [ノウハウ](./flutter/flutter.md)
   - flutter doctor -vの出力
     ```
-    [√] Flutter (Channel stable, 3.3.8, on Microsoft Windows [Version 10.0.22621.963], locale ja-JP)
-        • Flutter version 3.3.8 on channel stable at D:\flutter
+    [√] Flutter (Channel stable, 3.3.10, on Microsoft Windows [Version 10.0.22621.963], locale ja-JP)
+        • Flutter version 3.3.10 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision 52b3dc25f6 (5 weeks ago), 2022-11-09 12:09:26 +0800
-        • Engine revision 857bd6b74c
-        • Dart version 2.18.4
+        • Framework revision 135454af32 (5 days ago), 2022-12-15 07:36:55 -0800
+        • Engine revision 3316dd8728
+        • Dart version 2.18.6
         • DevTools version 2.15.0
 
     [√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
