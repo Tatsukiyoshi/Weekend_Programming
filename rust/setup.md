@@ -87,6 +87,16 @@
         ```
         $ sudo npm install yarn -g
         ```
+    1.  create tauri-app
+        ```
+        yarn create tauri-app
+        ```
+    1.  start tauri-app
+        ```
+        cd tauri-app
+        yarn
+        yarn tauri dev
+        ```
 *   Chrome OS Flex
     1.  npmインストール
         ```
