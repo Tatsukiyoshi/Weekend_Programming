@@ -405,14 +405,15 @@
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.65.0  |IdeaPad    |2022/11/08
-      |Tauri 1.1.1  |           |2022/09/17
-      |Svelte 3.52.0|           |2022/11/08
+      |Tauri 1.2.2  |           |2022/12/20
+      |Svelte 3.55.0|           |2022/12/20
 
   1. Ubuntu 20.04 on Windows 11
       |環境／FW     |端末       |日付
       |-------------|-----------|----------
       |Rust 1.65.0  |IdeaPad    |2022/11/09
-      |Tauri 1.1.1  |           |2022/09/17
+      |Tauri 1.2.2  |           |2022/12/20
+      |Vite 4.0.2   |           |2022/12/20
       |React 18.2.0 |           |2022/09/17
 
   1. Chrome OS Flex 108.0.5359.111（Official Build）
@@ -461,10 +462,14 @@
     ```
 ---
 **Unity**
-  - Unity Hub 2.4.2 and Unity 2020.2.5f1
-    - 「Unityによるモバイルゲーム開発」で学習中
-    - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
-    - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
+  |環境／FW           |端末       |日付
+  |-------------------|-----------|----------
+  |Unity Hub 3.4.1    |IdeaPad    |2022/12/18
+  |Unity 2021.3.16f1  |IdeaPad    |2022/12/18
+
+  - 「Unityによるモバイルゲーム開発」で学習中
+  - [Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)
+  - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 ---
 **Ubuntu on Windows**
   |環境／FW     |端末       |日付
