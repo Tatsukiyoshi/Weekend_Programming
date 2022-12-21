@@ -357,7 +357,7 @@
     [√] Flutter (Channel stable, 3.3.10, on Microsoft Windows [Version 10.0.22621.963], locale ja-JP)
         • Flutter version 3.3.10 on channel stable at D:\flutter
         • Upstream repository https://github.com/flutter/flutter.git
-        • Framework revision 135454af32 (5 days ago), 2022-12-15 07:36:55 -0800
+        • Framework revision 135454af32 (6 days ago), 2022-12-15 07:36:55 -0800
         • Engine revision 3316dd8728
         • Dart version 2.18.6
         • DevTools version 2.15.0
@@ -386,14 +386,14 @@
           https://plugins.jetbrains.com/plugin/6351-dart
         • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
 
-    [√] VS Code (version 1.74.1)
+    [√] VS Code (version 1.74.2)
         • VS Code at C:\Users\taish\AppData\Local\Programs\Microsoft VS Code
-        • Flutter extension version 3.54.0
+        • Flutter extension version 3.56.0
 
     [√] Connected device (3 available)
         • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.22621.963]
         • Chrome (web)      • chrome  • web-javascript • Google Chrome 105.0.5195.102
-        • Edge (web)        • edge    • web-javascript • Microsoft Edge 108.0.1462.42
+        • Edge (web)        • edge    • web-javascript • Microsoft Edge 108.0.1462.54
 
     [√] HTTP Host Availability
         • All required HTTP hosts are available
