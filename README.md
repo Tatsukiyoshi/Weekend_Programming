@@ -438,6 +438,8 @@
   - [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
   - [ノウハウ＋備忘録](rust/rust.md)
 
+  - [LifeLogApp](https://github.com/Tatsukiyoshi/LifeLogApp)
+
 ---
 **Go**
 
