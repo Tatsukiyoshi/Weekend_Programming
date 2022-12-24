@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "rust"
+		},
+		{
+			"path": "../LifeLogApp"
 		}
 	],
 	"settings": {
