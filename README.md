@@ -466,14 +466,14 @@
 **Unity**
   |テキスト                                                                                                         |日付      |進捗状況
   |-----------------------------------------------------------------------------------------------------------------|----------|--------
-  |[Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)  |2022/12/30|4.2 プロジェクトの作成とアセットのインポート
+  |[Unityによるモバイルゲーム開発リポジトリ](https://github.com/oreilly-japan/mobile-game-development-with-unity-ja)  |2022/12/30|4.3 ノームの制作 <span style="color: red;">*finished*</span>
 
   |環境／FW           |端末       |日付
   |-------------------|-----------|----------
   |Unity Hub 3.4.1    |IdeaPad    |2022/12/18
   |Unity 2021.3.16f1  |IdeaPad    |2022/12/18
 
-  - 「Unityによるモバイルゲーム開発」で学習リスタート
+  - 「Unityによるモバイルゲーム開発」で学習リスタート(https://github.com/Tatsukiyoshi/GnomesWell)
     - [アセット](https://www.oreilly.co.jp/pub/9784873118505/MobileGameDevWithUnity1stEd-master.zip)
     - [アスペクト比や解像度に合わせてUIの位置とサイズを固定する方法](https://pengoya.net/unity/ui-fix/)
 ---
