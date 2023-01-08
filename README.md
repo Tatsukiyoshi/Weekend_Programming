@@ -463,9 +463,9 @@
     swiftc -target x86_64-unknown-windows-msvc -sdk %SDKROOT% -I %SDKROOT%/usr/lib/swift -L %SDKROOT%/usr/lib/swift/windows helloworld.swift -o helloworld.exe
     ```
 ---
-**Unity(https://github.com/Tatsukiyoshi/GnomesWell)**
+**Unity**
   - 「Unityによるモバイルゲーム開発」で学習中
-    - 2D「Gnomes's Well」をひとまず完了。
+    - [2D「Gnomes's Well」](https://github.com/Tatsukiyoshi/GnomesWell)をひとまず完了。
 
 ---
 **Ubuntu on Windows**
