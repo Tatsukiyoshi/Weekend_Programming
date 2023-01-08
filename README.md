@@ -34,7 +34,7 @@
 
 ##  [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
 
-##  [Unity](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#unity)
+##  [Unity](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Unity)
 
 ##  [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others)
 
