@@ -13,7 +13,8 @@
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/) Build 25276
     ![デスクトップ](./images/Windows/20230114_Windows11_Build25276.png)
-  - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others)
+  - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
+    ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.94
     ![Chrome OS Flexバージョン情報](./images/20230114_chrome_os_109.0.5414.94.png)
 ---
