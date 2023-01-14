@@ -11,6 +11,7 @@
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
   - GitHub Desktop 3.1.3
 ### OS
+  - [Windows Insider](https://insider.windows.com/ja-jp/) Build 25276
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.94
     ![Chrome OS Flexバージョン情報](./images/20230114_chrome_os_109.0.5414.94.png)
