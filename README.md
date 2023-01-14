@@ -4,9 +4,15 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 ##  共通
-  - Visual Studio Code 1.74.2 <BR />
-    エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。
+  - Visual Studio Code 1.74.3 <BR />
+    エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
+    - Chrome OS Flexではコマンドでアップデート
+    ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
   - GitHub Desktop 3.1.3
+
+## OS
+  - Chrome OS Flex 109.0.5414.94
+    ![](./images/20230114_chrome_os_109.0%2C5414%2C94.png)
 
 ##  [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
 
