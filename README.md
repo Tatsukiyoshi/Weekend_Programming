@@ -12,7 +12,7 @@
 
 ## OS
   - Chrome OS Flex 109.0.5414.94
-    ![](./images/20230114_chrome_os_109.0%2C5414%2C94.png)
+    ![Chrome OS Flexバージョン情報](./images/20230114_chrome_os_109.0.5414.94.png)
 
 ##  [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
 
