@@ -62,6 +62,7 @@
             ![実行構成](../images/eclipse/eclipse_encode.png)
             -   共通タブのエンコードにて、その他を選択し、ドロップダウンリストから"MS932"を選択する。
     *   Tomcat 実行構成
+        -   [Eclipseのサーバーランタイム環境を設定する](https://java-reference.com/java_env_eclipsetomcat.html)
         -   起動時のメッセージが日本語のため、エンコードを「システム・エンコーディングを使用」を選択する。
             ![実行構成](../images/eclipse/tomcat_configuration.png)
 
