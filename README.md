@@ -29,7 +29,7 @@
 ##  [Python](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Python)
 ##  [Pascal](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#pascal)
 ##  [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
-##  [Carbon](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#carbon)
+##  [Carbon](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Carbon)
 ##  [LLVM](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#llvm)
 ---
 ##  [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
