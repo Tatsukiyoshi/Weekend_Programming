@@ -11,8 +11,11 @@
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
   - GitHub Desktop 3.1.3
 ### OS
-  - [Windows Insider](https://insider.windows.com/ja-jp/) Build 25276
-    ![デスクトップ](./images/Windows/20230114_Windows11_Build25276.png)
+  - [Windows Insider](https://insider.windows.com/ja-jp/) Build 25281
+    - 背景にWindowsスポットライトを設定してみた！
+    ![デスクトップ](./images/Windows/20230121_Windows11_Build25281_with_Spotlight.png)
+    - メモ帳にタブがついた！
+    ![メモ帳](./images/Windows/20230121_Notepad_with_Tab.png)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.94
