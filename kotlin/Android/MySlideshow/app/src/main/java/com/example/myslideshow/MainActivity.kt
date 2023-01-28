@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun createFragment(position: Int): Fragment {
-            TODO("Not yet implemented")
+            return ImageFragment.newInstance(resources[position])
         }
     }
 
