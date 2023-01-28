@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".SubActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/titleFragment"
-        android:name="com.example.animalbook.TitleFragment"
+    <FrameLayout
+        android:id="@+id/titleFrame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_title" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/lionButton"
@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toStartOf="@id/hippoButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleFragment" />
+        app:layout_constraintTop_toBottomOf="@id/titleFrame" />
 
     <Button
         android:id="@+id/hippoButton"
