@@ -49,7 +49,7 @@ class ScheduleEditActivity : AppCompatActivity() {
             // executeTransaction でトランザクションの開始、終了、キャンセル処理は自動！
             when(scheduleId) {
                 -1L -> {
-                    realm.executeTransaction { db: Realm ->
+                    realm.executeTransactionAsync { db: Realm ->
                         val maxId = db.where<Schedule>().max("id")
                         val nextId = (maxId?.toLong() ?: 0L) + 1
                         val schedule = db.createObject<Schedule>(nextId)
@@ -64,7 +64,7 @@ class ScheduleEditActivity : AppCompatActivity() {
                         .show()
                 }
                 else -> {
-                    realm.executeTransaction { db: Realm ->
+                    realm.executeTransactionAsync { db: Realm ->
                         val schedule = db.where<Schedule>()
                             .equalTo("id", scheduleId).findFirst()
                         val date = binding.dateEdit.text.toString()
@@ -83,7 +83,7 @@ class ScheduleEditActivity : AppCompatActivity() {
 
         // 削除処理を実装する
         binding.delete.setOnClickListener { wview: View ->
-            realm.executeTransaction { db: Realm ->
+            realm.executeTransactionAsync { db: Realm ->
                 db.where<Schedule>().equalTo("id", scheduleId)
                     ?.findFirst()
                     ?.deleteFromRealm()
