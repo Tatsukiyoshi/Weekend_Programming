@@ -20,8 +20,8 @@
       ![メモ帳](./images/Windows/20230121_Notepad_with_Tab.png)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.94
-    ![Chrome OS Flexバージョン情報](./images/20230114_chrome_os_109.0.5414.94.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.125
+    ![Chrome OS Flexバージョン情報](./images/20230202_Chrome_OS_109.0.5414.125.png)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
