@@ -12,12 +12,11 @@
   - GitHub Desktop 3.1.3
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/)
-    - Build 25284
-      ![デスクトップ](./images/Windows/20230126_Windows11_Build25284.png)
-    - Build 25281
-      - 背景にWindowsスポットライトを設定してみた！
-      - メモ帳にタブがついた！
-      ![メモ帳](./images/Windows/20230121_Notepad_with_Tab.png)
+    - Build 25290
+      ![デスクトップ](./images/Windows/20230204_Windows11_Build25290.png)
+      - ウイジェットにSportifyやPhoneLinkが追加
+      ![ウイジェット](./images/Windows/20230204_Windows11_Build25290_with_widget.png)
+    - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.125
