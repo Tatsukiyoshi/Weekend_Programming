@@ -28,7 +28,7 @@ namespace LineFonts
             System.IntPtr data;
 
             // LINE Font(Regular) 
-            { 
+            {
                 // 1: Select your font from the resources.
                 fontLength = Properties.Resources.LINESeedJP_TTF_Rg.Length;
 
