@@ -34,13 +34,13 @@ class MainActivity : AppCompatActivity() {
         // Parameter 'view' is never used, could be renamed to _
         //fab.setOnClickListener { view ->
         binding.fab.setOnClickListener { _ ->
-            val intent = Intent(this, ScheduleEditActivity::class.java)
+            val intent = Intent(this, ScheduleEditFragment::class.java)
             startActivity(intent)
         }
 
         // コールバックを実装し、画面遷移を行う
         adapter.setOnItemClickListener {id ->
-            val intent = Intent(this, ScheduleEditActivity::class.java)
+            val intent = Intent(this, ScheduleEditFragment::class.java)
                 .putExtra("schedule_id", id)
             startActivity(intent)
         }
