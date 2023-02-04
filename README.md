@@ -5,7 +5,7 @@
 
 ##  共通
 ### ツール  
-  - Visual Studio Code 1.74.3 <BR />
+  - [Visual Studio Code 1.75.0](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
