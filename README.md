@@ -29,7 +29,7 @@
 ##  [Java](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Java)
 ##  [Dart/flutter](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Flutter)
 ##  [TypeScript/JavaScript](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/TypeScript)
-##  [Go](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#go)
+##  [Go](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Go)
 ##  [Python](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Python)
 ##  [Pascal](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#pascal)
 ##  [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
