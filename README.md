@@ -5,10 +5,12 @@
 
 ##  共通
 ### ツール  
-  - [Visual Studio Code 1.75.0](https://code.visualstudio.com/) <BR />
+  - [Visual Studio Code 1.75.1](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
+      - 1.75.0以降、コマンドだと更新できない。
+        ![Update with File](./images/20230213_code_1.75.1.png)
   - GitHub Desktop 3.1.3
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/)
@@ -19,7 +21,7 @@
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/) 109.0.5414.125
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 109.0.5414.125
     ![Chrome OS Flexバージョン情報](./images/20230202_Chrome_OS_109.0.5414.125.png)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
