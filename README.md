@@ -9,6 +9,8 @@
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
+      - 1.75.0以降、コマンドだと更新できない。
+        ![Update with File](./images/20230213_code_1.75.1.png)
   - GitHub Desktop 3.1.3
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/)
