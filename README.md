@@ -4,6 +4,16 @@
 - [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
 
 ##  共通
+### OS
+  - [Windows Insider](https://insider.windows.com/ja-jp/)
+    - Build 25295
+      ![デスクトップ](./images/Windows/20230215_Windows11_Build25295.png)
+      ![タスクバーの設定](./images/Windows/20230215_Taskbar_Setting_Build25295.png)
+    - [履歴](./windows/history.md)
+  - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
+    ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 109.0.5414.125
+    ![Chrome OS Flexバージョン情報](./images/20230202_Chrome_OS_109.0.5414.125.png)
 ### ツール  
   - [Visual Studio Code 1.75.1](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
@@ -12,17 +22,6 @@
       - 1.75.0以降、コマンドだと更新できない。
         ![Update with File](./images/20230213_code_1.75.1.png)
   - GitHub Desktop 3.1.3
-### OS
-  - [Windows Insider](https://insider.windows.com/ja-jp/)
-    - Build 25290
-      ![デスクトップ](./images/Windows/20230204_Windows11_Build25290.png)
-      - ウイジェットにSportifyやPhoneLinkが追加
-      ![ウイジェット](./images/Windows/20230204_Windows11_Build25290_with_widget.png)
-    - [履歴](./windows/history.md)
-  - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
-    ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 109.0.5414.125
-    ![Chrome OS Flexバージョン情報](./images/20230202_Chrome_OS_109.0.5414.125.png)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
