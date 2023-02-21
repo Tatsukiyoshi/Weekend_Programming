@@ -6,9 +6,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/)
-    - Build 25295
-      ![デスクトップ](./images/Windows/20230215_Windows11_Build25295.png)
-      ![タスクバーの設定](./images/Windows/20230215_Taskbar_Setting_Build25295.png)
+    - Build 25300
+      ![デスクトップ](./images/Windows/20230218_Windows11_Build25300.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
