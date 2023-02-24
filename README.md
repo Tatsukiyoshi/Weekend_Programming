@@ -13,6 +13,7 @@
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 110.0.5481.112
     ![Chrome OS Flexバージョン情報](./images/20230216_Chrome_OS_110.0.5481.112.png)
+  - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.75.1](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
