@@ -1,8 +1,4 @@
 # 独学によるプログラミング演習
-
-- [リポジトリ（Github）](https://github.com/Tatsukiyoshi/Weekend_Programming.git)
-- [wiki](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki)
-
 ##  共通
 ### OS
   - [Windows Insider](https://insider.windows.com/ja-jp/)
@@ -21,7 +17,7 @@
     ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
       - 1.75.0以降、コマンドだと更新できない。
         ![Update with File](./images/20230213_code_1.75.1.png)
-  - GitHub Desktop 3.1.3
+  - [GitHub Desktop 3.2.0](https://desktop.github.com/release-notes/)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
