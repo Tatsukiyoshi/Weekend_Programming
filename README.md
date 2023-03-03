@@ -14,9 +14,7 @@
   - [Visual Studio Code 1.76](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230114_code_1.74.3.png)
-      - 1.75.0以降、コマンドだと更新できない。
-        ![Update with File](./images/20230213_code_1.75.1.png)
+    ![Upgrade on Chrome OS Flex](./images/20230303_code_1.76.png)
   - [GitHub Desktop 3.2.0](https://desktop.github.com/release-notes/)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
