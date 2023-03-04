@@ -1,4 +1,6 @@
 -   Windows Insider History
+    - Build 25300
+      ![デスクトップ](./images/Windows/20230218_Windows11_Build25300.png)
     - Build 25295
       ![デスクトップ](../images/Windows/20230215_Windows11_Build25295.png)
       ![タスクバーの設定](../images/Windows/20230215_Taskbar_Setting_Build25295.png)
