@@ -2,14 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
-    - Build 25309
-      ![デスクトップ](./images/Windows/20230304_Windows11_Build25309.png)
-      - 音量ミキサーが新しくなった（Windows＋CTRL＋Vというショートカットも）
-        ![Mixer](./images/Windows/Mixer_20230304_223358.png)
-      - アプリの色を自動的に管理
-        ![ACM](./images/Windows/ACM_20230304_221528.png)
-      - iPhoneとリンクできるようになる（予告）
-        ![PhoneLink](./images/Windows/PhoneLink_20230301_193359.png)
+    - Build 25314
+      ![デスクトップ](./images/Windows/20230310_Windows11_Build25314.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
