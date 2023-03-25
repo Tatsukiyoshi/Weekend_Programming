@@ -1,8 +1,8 @@
 # 独学によるプログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider](https://blogs.windows.com/windows-insider/)
-    - Build 25314
+  - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
+    - Build 25324
       ![デスクトップ](./images/Windows/20230310_Windows11_Build25314.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5

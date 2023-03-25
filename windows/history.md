@@ -1,14 +1,18 @@
--   Windows Insider History
+- Windows Insider History
+  - Canary Channel
+    - Build 25314
+      ![デスクトップ](../images/Windows/20230310_Windows11_Build25314.png)
+  - Dev Channel
     - Build 25309
-      ![デスクトップ](./images/Windows/20230304_Windows11_Build25309.png)
+      ![デスクトップ](../images/Windows/20230304_Windows11_Build25309.png)
       - 音量ミキサーが新しくなった（Windows＋CTRL＋Vというショートカットも）
-        ![Mixer](./images/Windows/Mixer_20230304_223358.png)
+        ![Mixer](../images/Windows/Mixer_20230304_223358.png)
       - アプリの色を自動的に管理
-        ![ACM](./images/Windows/ACM_20230304_221528.png)
+        ![ACM](../images/Windows/ACM_20230304_221528.png)
       - iPhoneとリンクできるようになる（予告）
-        ![PhoneLink](./images/Windows/PhoneLink_20230301_193359.png)
+        ![PhoneLink](../images/Windows/PhoneLink_20230301_193359.png)
     - Build 25300
-      ![デスクトップ](./images/Windows/20230218_Windows11_Build25300.png)
+      ![デスクトップ](../images/Windows/20230218_Windows11_Build25300.png)
     - Build 25295
       ![デスクトップ](../images/Windows/20230215_Windows11_Build25295.png)
       ![タスクバーの設定](../images/Windows/20230215_Taskbar_Setting_Build25295.png)
