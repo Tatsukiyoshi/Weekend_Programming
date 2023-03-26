@@ -36,9 +36,9 @@ else
 {
     XElement xml = XElement.Load(resourceFileName);
 
-    var resources = xml.Elements("data");
+    IEnumerable<XElement> resources = xml.Elements("data");
 
-    foreach (var resource in resources)
+    foreach (XElement resource in resources)
     {
         Console.WriteLine("{0},{1},{2}", resource.Attribute("name"), resource.Attribute("type"), resource.Element("value"));
     }
