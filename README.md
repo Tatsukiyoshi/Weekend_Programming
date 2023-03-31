@@ -11,7 +11,7 @@
     ![Chrome OS Flexバージョン情報](./images/20230324_Chrome_OS_111.0.5563.100.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.76.2](https://code.visualstudio.com/) <BR />
+  - [Visual Studio Code 1.77.0](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230316_code_1.76.2.png)
