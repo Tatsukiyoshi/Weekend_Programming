@@ -11,10 +11,10 @@
     ![Chrome OS Flexバージョン情報](./images/20230401_Chrome_OS_Flex_111.0.5563.150.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.77.0](https://code.visualstudio.com/) <BR />
+  - [Visual Studio Code 1.77.1](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230401_code_1.77.png)
+    ![Upgrade on Chrome OS Flex](./images/20230408_code_1.77.1.png)
   - [GitHub Desktop 3.2.0](https://desktop.github.com/release-notes/)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
