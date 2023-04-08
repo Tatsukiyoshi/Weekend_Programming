@@ -2,8 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25330
-      ![デスクトップ](./images/Windows/20230401_Windows11_Build25330.png)
+    - Build 25336
+      ![デスクトップ](./images/Windows/20230408_Windows11_Build25336.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
