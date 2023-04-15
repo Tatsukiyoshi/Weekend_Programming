@@ -1,7 +1,5 @@
-﻿namespace LineFonts
-{
-    partial class Form1
-    {
+﻿namespace LineFonts {
+    partial class Form1 {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -11,10 +9,8 @@
         ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,47 +22,73 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            this.RegularLabel = new System.Windows.Forms.Label();
-            this.BoldLabel = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+        private void InitializeComponent() {
+            RegularLabel = new Label();
+            BoldLabel = new Label();
+            dotnetVersionText = new Label();
+            dotnetVersionLabel = new Label();
+            SuspendLayout();
             // 
             // RegularLabel
             // 
-            this.RegularLabel.AutoSize = true;
-            this.RegularLabel.Location = new System.Drawing.Point(31, 30);
-            this.RegularLabel.Name = "RegularLabel";
-            this.RegularLabel.Size = new System.Drawing.Size(118, 25);
-            this.RegularLabel.TabIndex = 0;
-            this.RegularLabel.Text = "Regular Label";
+            RegularLabel.AutoSize = true;
+            RegularLabel.Location = new Point(36, 87);
+            RegularLabel.Name = "RegularLabel";
+            RegularLabel.Size = new Size(118, 25);
+            RegularLabel.TabIndex = 0;
+            RegularLabel.Text = "Regular Label";
             // 
             // BoldLabel
             // 
-            this.BoldLabel.AutoSize = true;
-            this.BoldLabel.Location = new System.Drawing.Point(35, 96);
-            this.BoldLabel.Name = "BoldLabel";
-            this.BoldLabel.Size = new System.Drawing.Size(94, 25);
-            this.BoldLabel.TabIndex = 1;
-            this.BoldLabel.Text = "Bold Label";
+            BoldLabel.AutoSize = true;
+            BoldLabel.Location = new Point(36, 145);
+            BoldLabel.Name = "BoldLabel";
+            BoldLabel.Size = new Size(94, 25);
+            BoldLabel.TabIndex = 1;
+            BoldLabel.Text = "Bold Label";
+            // 
+            // dotnetVersionText
+            // 
+            dotnetVersionText.AutoSize = true;
+            dotnetVersionText.Location = new Point(179, 29);
+            dotnetVersionText.Name = "dotnetVersionText";
+            dotnetVersionText.Size = new Size(123, 25);
+            dotnetVersionText.TabIndex = 2;
+            dotnetVersionText.Text = "dotnetVersion";
+            // 
+            // dotnetVersionLabel
+            // 
+            dotnetVersionLabel.AutoSize = true;
+            dotnetVersionLabel.Location = new Point(36, 29);
+            dotnetVersionLabel.Name = "dotnetVersionLabel";
+            dotnetVersionLabel.Size = new Size(118, 25);
+            dotnetVersionLabel.TabIndex = 3;
+            dotnetVersionLabel.Text = ".NET バージョン";
+            dotnetVersionLabel.Click += label1_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BoldLabel);
-            this.Controls.Add(this.RegularLabel);
-            this.Name = "Form1";
-            this.Text = "LINE Seed JP";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dotnetVersionLabel);
+            Controls.Add(dotnetVersionText);
+            Controls.Add(BoldLabel);
+            Controls.Add(RegularLabel);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Form1";
+            Text = "LINE Seed JP";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Label RegularLabel;
         private Label BoldLabel;
+        private Label dotnetVersionText;
+        private Label dotnetVersionLabel;
     }
 }
