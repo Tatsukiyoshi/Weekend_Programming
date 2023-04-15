@@ -15,7 +15,7 @@
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230413_code_1.77.3.png)
-  - [GitHub Desktop 3.2.0](https://desktop.github.com/release-notes/)
+  - [GitHub Desktop 3.2.1](https://desktop.github.com/release-notes/)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
