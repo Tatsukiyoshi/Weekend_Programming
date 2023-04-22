@@ -7,8 +7,8 @@
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 112.0.5615.62
-    ![Chrome OS Flexバージョン情報](./images/20230413_Chrome_OS_Flex_112.0.5615.62.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 112.0.5615.134
+    ![Chrome OS Flexバージョン情報](./images/20230422_Chrome_OS_Flex_112.0.5615.134.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.77.3](https://code.visualstudio.com/) <BR />
