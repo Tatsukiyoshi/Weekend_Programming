@@ -7,6 +7,20 @@
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 20.04.5
     ![ターミナル](./images/20230114_ubuntu_20.04.5.png)
+    ```
+    NAME="Ubuntu"
+    VERSION="20.04.5 LTS (Focal Fossa)"
+    ID=ubuntu
+    ID_LIKE=debian
+    PRETTY_NAME="Ubuntu 20.04.5 LTS"
+    VERSION_ID="20.04"
+    HOME_URL="https://www.ubuntu.com/"
+    SUPPORT_URL="https://help.ubuntu.com/"
+    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+    VERSION_CODENAME=focal
+    UBUNTU_CODENAME=focal
+    ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 112.0.5615.134
     ![Chrome OS Flexバージョン情報](./images/20230422_Chrome_OS_Flex_112.0.5615.134.png)
