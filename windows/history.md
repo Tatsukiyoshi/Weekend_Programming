@@ -1,5 +1,7 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25346
+      ![デスクトップ](../images/Windows/20230422_Windows11_Build25346.png)
     - Build 25336
       ![デスクトップ](../images/Windows/20230408_Windows11_Build25336.png)
     - Build 25330
