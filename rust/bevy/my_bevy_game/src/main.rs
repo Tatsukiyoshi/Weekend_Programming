@@ -1,5 +1,11 @@
 use bevy::prelude::*;
+
+// for Windows Size
 use bevy::window::WindowResolution;
+
+// for Windows Icon
+use bevy::window::PrimaryWindow;
+//use winit::window::Icon;
 
 // Component
 #[derive(Component)]
@@ -37,18 +43,43 @@ fn greet_people(
     }
 }
 
+fn set_window_icon(
+    // we have to use `NonSend` here
+    primary_query: Query<&Window, With<PrimaryWindow>>,
+) {
+    let Ok(primary) = primary_query.get_single() else {
+        return;
+    };
+
+    // here we use the `image` crate to load our icon data from a png file
+    // this is not a very bevy-native solution, but it will do
+    let (icon_rgba, icon_width, icon_height) = {
+        let image = image::open("emo_emoji_smile_smiley_happy_emoticon_face_icon_152131.png")
+            .expect("Failed to open icon path")
+            .into_rgba8();
+        let (width, height) = image.dimensions();
+        let rgba = image.into_raw();
+        (rgba, width, height)
+    };
+
+    let icon = Icon::from_rgba(icon_rgba, icon_width, icon_height).unwrap();
+
+    primary.set_window_icon(Some(icon));
+}
+
 fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             // * 0.9.1: Initalize Window Size
             // * 0.10.1: Rename WindowDescriptor to Window and so on.
             primary_window: Some(Window { 
-                title: "My Bevy Game".to_string(),
-                resolution: WindowResolution::new(140.0, 140.0),
+                title: "My Bevy App".to_string(),
+                resolution: WindowResolution::new(250.0, 250.0),
                 ..default()
             }),
             ..default()
         }))
+        .add_startup_system(set_window_icon)
         .add_plugin(HelloPlugin)
         .run();
 }
