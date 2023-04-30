@@ -1,4 +1,5 @@
 use bevy::prelude::*;
+use bevy::window::WindowResolution;
 
 // Component
 #[derive(Component)]
@@ -39,13 +40,13 @@ fn greet_people(
 fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(WindowPlugin {
-            // Initalize Window Size
-            window: WindowDescriptor { 
-                width: 140.0,
-                height:140.0,
-                title: "Game of Life".to_string(),
+            // * 0.9.1: Initalize Window Size
+            // * 0.10.1: Rename WindowDescriptor to Window and so on.
+            primary_window: Some(Window { 
+                title: "My Bevy Game".to_string(),
+                resolution: WindowResolution::new(140.0, 140.0),
                 ..default()
-            },
+            }),
             ..default()
         }))
         .add_plugin(HelloPlugin)
