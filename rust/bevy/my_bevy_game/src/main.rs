@@ -39,7 +39,7 @@ fn greet_people(
 fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(WindowPlugin {
-            // Windowing: WindowDescriptor renamed to Window.
+            // Initalize Window Size
             window: WindowDescriptor { 
                 width: 140.0,
                 height:140.0,
