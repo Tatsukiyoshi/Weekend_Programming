@@ -38,7 +38,16 @@ fn greet_people(
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            // Windowing: WindowDescriptor renamed to Window.
+            window: WindowDescriptor { 
+                width: 140.0,
+                height:140.0,
+                title: "Game of Life".to_string(),
+                ..default()
+            },
+            ..default()
+        }))
         .add_plugin(HelloPlugin)
         .run();
 }
