@@ -10,11 +10,13 @@ pub fn calc_amount(price: i32) -> i32 {
     result as i32   // f32型からi32型に変換して結果を返す
 }
 
-/// ### リスト3.7 ミュータブルな静的変数の宣言
+/// ### リスト3.8 unsafeブロックの利用
 static mut TOTAL_VALUE: i32 = 0;
-/// ### リスト3.7 ミュータブルな静的変数の利用
+/// ### リスト3.8 unsafeブロックの利用
 #[allow(dead_code)]
 pub fn calc_total(value: i32){
-    TOTAL_VALUE += value;
-    println!("TOTAL_VALUE = {}", TOTAL_VALUE);
+    unsafe {
+        TOTAL_VALUE += value;
+        println!("TOTAL_VALUE = {}", TOTAL_VALUE);
+    }
 }
