@@ -37,7 +37,7 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.2.1](https://desktop.github.com/release-notes/)
+  - [GitHub Desktop 3.2.3](https://desktop.github.com/release-notes/)
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
