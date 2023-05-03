@@ -13,3 +13,18 @@ pub fn declar_mutable_variables(){
     x = x + 100;
     println!("x = {}", x);
 }
+
+/// ### リスト3.3 シャドーイング
+#[allow(dead_code)]
+pub fn shadowing(){
+    // 変数の上書き
+    let value1: i32 = 100;  // 変数value1(i32型)を宣言する
+    println!("value1 = {}", value1);
+    let value1: i32 = 10;   // 変数が上書きされる
+    println!("value1 = {}", value1);
+    // シャドーイング
+    let value2: f32 = 100.1;    // 変数value2(f32型)を宣言する
+    println!("value2 = {}", value2);
+    let value2: i32 = 100;      // 変数value2(i32型)を宣言する
+    println!("value2 = {}", value2);
+}
