@@ -1,5 +1,9 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25352
+      ![デスクトップ](../images/Windows/20230429_Windows11_Build25352.png)
+    - iPhoneとのスマートフォン連携が公開
+      ![ウィジェットに表示](../images/Windows/20230429_Link_to_iPhone.png)
     - Build 25346
       ![デスクトップ](../images/Windows/20230422_Windows11_Build25346.png)
     - Build 25336
