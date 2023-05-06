@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Weekend_Programming.wiki"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5433,
+				"driver": "PostgreSQL",
+				"name": "batch",
+				"username": "spring",
+				"password": "password",
+				"database": "batch"
+			},
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5433,
+				"askForPassword": true,
+				"driver": "PostgreSQL",
+				"name": "readonly_user",
+				"database": "batch",
+				"username": "readonly_user"
+			},
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5433,
+				"askForPassword": true,
+				"driver": "PostgreSQL",
+				"name": "prisma",
+				"database": "prismadb",
+				"username": "prisma"
+			},
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5433,
+				"driver": "PostgreSQL",
+				"name": "batch2",
+				"database": "batch2",
+				"username": "spring",
+				"password": "password"
+			}
+		],
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

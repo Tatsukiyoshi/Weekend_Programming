@@ -4,11 +4,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titleImageDescription">titleImage</string>
-    <string name="titleText">TextView</string>
+    <string name="titleText">フラグメント動物図鑑</string>
     <string name="lionButtonText">ライオン</string>
     <string name="hippoButtonText">カバ</string>
     <string name="giraffeButtonText">キリン</string>
     <string name="lionImageDescription">ライオン</string>
     <string name="hippoImageDescription">カバ</string>
     <string name="giraffeImageDescription">キリン</string>
+    <string name="nextCaption">次へ</string>
+    <string name="mainImageViewDescription">MainImageView</string>
 </resources>
