@@ -25,7 +25,7 @@
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 113.0.5672.114
-    ![Chrome OS Flexバージョン情報](./images/20230510_Chrome_OS_Flex_13.0.5672.114.png)
+    ![Chrome OS Flexバージョン情報](./images/20230510_Chrome_OS_Flex_113.0.5672.114.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.78](https://code.visualstudio.com/) <BR />
