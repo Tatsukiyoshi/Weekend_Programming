@@ -2,10 +2,10 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25352
-      ![デスクトップ](./images/Windows/20230429_Windows11_Build25352.png)
-    - iPhoneとのスマートフォン連携が公開
-      ![ウィジェットに表示](./images/Windows/20230429_Link_to_iPhone.png)
+    - Build 25357
+      ![デスクトップ](./images/Windows/20230506_Windows11_Build25357.png)
+    - FacebookMessengerのウィジェットがプレビュー公開
+      ![ウィジェットに表示](./images/Windows/20230506_MessangerWidget.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
@@ -24,14 +24,14 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 112.0.5615.134
-    ![Chrome OS Flexバージョン情報](./images/20230422_Chrome_OS_Flex_112.0.5615.134.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 113.0.5672.114
+    ![Chrome OS Flexバージョン情報](./images/20230510_Chrome_OS_Flex_113.0.5672.114.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.77.3](https://code.visualstudio.com/) <BR />
+  - [Visual Studio Code 1.78.2](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230413_code_1.77.3.png)
+    ![Upgrade on Chrome OS Flex](./images/20230513_code_1.78.2.png)
   - [Git 2.40.1](https://git-scm.com/download)
     - Windowsでの更新
       ```
