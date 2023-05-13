@@ -13,6 +13,7 @@ pub fn char_literal(){
 #[allow(dead_code)]
 pub fn char_constant(){
     println!("MAX = {}", char::MAX.escape_unicode());
+    println!("MAX = {:x}", char::MAX as u32);
     println!("UNICODE_VERSION = {:?}", char::UNICODE_VERSION);
 }
 
