@@ -12,8 +12,10 @@ pub fn char_literal(){
 /// ### リスト4.11 文字型の定数
 #[allow(dead_code)]
 pub fn char_constant(){
-    println!("MAX = {}", char::MAX.escape_unicode());
-    println!("MAX = {:x}", char::MAX as u32);
+    // NG:文字化けする
+    println!("MAX = {} <- 文字化けする", char::MAX);
+    println!("MAX.escape_unicode() = {}", char::MAX.escape_unicode());
+    println!("MAX:x = {:x}", char::MAX as u32);
     println!("UNICODE_VERSION = {:?}", char::UNICODE_VERSION);
 }
 

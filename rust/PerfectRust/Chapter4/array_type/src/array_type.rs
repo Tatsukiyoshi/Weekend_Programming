@@ -37,7 +37,7 @@ pub fn methods(){
     println!("contains(&6) = {}", array_a.contains(&6));    // [引数は値の参照(&付き)で指定する]
     println!("first() = {}", array_a.first().unwrap());     // 先頭の値を取得する
     println!("last() = {}", array_a.last().unwrap());       // 最後の値を取得する
-    array_a.reverse();  // 逆順に出力する
+    array_a.reverse();  // 逆順に出力する(NG:逆順にソートはしない)
     println!("reverse = {:?}", array_a);
     array_a.sort();     // ソートする
     println!("sort = {:?}", array_a);
