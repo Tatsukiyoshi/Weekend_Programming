@@ -1,7 +1,7 @@
 /// ## 4-8 文字列型
 /// ### リスト4.29 文字列リテラル
 #[allow(dead_code)]
-pub fn declar(){
+pub fn declare(){
     let str = "Hello Rust.";
     println!("value = {:?}, ptr = {:p}, len = {}", str, str, str.len());
 }

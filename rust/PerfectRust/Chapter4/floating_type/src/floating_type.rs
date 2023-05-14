@@ -1,3 +1,4 @@
+/// ## 4-2 浮動小数点型
 /// ### リスト4.5 浮動小数点リテラル
 #[allow(dead_code)]
 pub fn floating_literal(){
@@ -7,6 +8,7 @@ pub fn floating_literal(){
     println!("d = {}", -10.5_f64);
 }
 
+/// ## 4-2 浮動小数点型
 /// ### リスト4.6 浮動小数点型の定数
 #[allow(dead_code)]
 pub fn floating_constant(){
@@ -26,6 +28,7 @@ pub fn floating_constant(){
     println!("NEG_INFINITY = {}", f32::NEG_INFINITY);
 }
 
+/// ## 4-2 浮動小数点型
 /// ### リスト4.7 浮動小数点型の主なメソッド
 /// #### foor()は、floor()の誤記
 #[allow(dead_code)]

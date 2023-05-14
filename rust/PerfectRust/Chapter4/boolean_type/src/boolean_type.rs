@@ -1,3 +1,4 @@
+/// ## 4-3 論理型
 /// ### リスト4.8 論理型の利用
 #[allow(dead_code)]
 pub fn is_adult(age: i32) -> bool {
@@ -9,6 +10,7 @@ pub fn is_adult(age: i32) -> bool {
     }
 }
 
+/// ## 4-3 論理型
 /// ### リスト4.9 論理型のメソッド
 #[allow(dead_code)]
 pub fn method(age: i32) -> String {

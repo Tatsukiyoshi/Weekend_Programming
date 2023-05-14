@@ -2,7 +2,7 @@ mod str_type;
 
 fn main() {
     println!("文字列リテラル");
-    str_type::declar();
+    str_type::declare();
     println!("文字列の連結");
     str_type::binding();
     println!("文字列の変換");

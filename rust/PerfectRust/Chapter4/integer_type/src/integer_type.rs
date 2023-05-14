@@ -1,3 +1,4 @@
+/// ## 4-1 整数型
 /// ### リスト4.1 整数リテラル
 #[allow(dead_code)]
 pub fn integer_literal(){
@@ -9,6 +10,7 @@ pub fn integer_literal(){
     println!("f = {}", 123_456_789);
 }
 
+/// ## 4-1 整数型
 /// ### リスト4.2 バイトリテラル
 #[allow(dead_code)]
 pub fn byte_literal(){
@@ -17,6 +19,7 @@ pub fn byte_literal(){
     println!("c = {}", b'\x1D');
 }
 
+/// ## 4-1 整数型
 /// ### リスト4.3 i32型の定数
 #[allow(dead_code)]
 pub fn i32_constant(){
@@ -25,6 +28,7 @@ pub fn i32_constant(){
     println!("MAX  = {}", i32::MAX);
 }
 
+/// ## 4-1 整数型
 /// ### リスト4.4 整数型の主なメソッド
 #[allow(dead_code)]
 pub fn methods(){
