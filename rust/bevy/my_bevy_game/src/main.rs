@@ -44,7 +44,7 @@ fn main() {
             // * 0.10.1: Rename WindowDescriptor to Window and so on.
             primary_window: Some(Window { 
                 title: "My Bevy Game".to_string(),
-                resolution: WindowResolution::new(140.0, 140.0),
+                resolution: WindowResolution::new(300.0, 200.0),
                 ..default()
             }),
             ..default()
