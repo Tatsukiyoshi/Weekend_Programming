@@ -2,10 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25357
-      ![デスクトップ](./images/Windows/20230506_Windows11_Build25357.png)
-    - FacebookMessengerのウィジェットがプレビュー公開
-      ![ウィジェットに表示](./images/Windows/20230506_MessangerWidget.png)
+    - Build 25370
+      ![デスクトップ](./images/Windows/20230524_Windows11_Build25370.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)

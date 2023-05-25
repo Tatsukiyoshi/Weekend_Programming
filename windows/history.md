@@ -1,5 +1,9 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25357
+      ![デスクトップ](../images/Windows/20230506_Windows11_Build25357.png)
+    - FacebookMessengerのウィジェットがプレビュー公開
+      ![ウィジェットに表示](../images/Windows/20230506_MessangerWidget.png)
     - Build 25352
       ![デスクトップ](../images/Windows/20230429_Windows11_Build25352.png)
     - iPhoneとのスマートフォン連携が公開
