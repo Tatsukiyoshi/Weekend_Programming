@@ -1,5 +1,7 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25370
+      ![デスクトップ](../images/Windows/20230524_Windows11_Build25370.png)
     - Build 25357
       ![デスクトップ](../images/Windows/20230506_Windows11_Build25357.png)
     - FacebookMessengerのウィジェットがプレビュー公開
