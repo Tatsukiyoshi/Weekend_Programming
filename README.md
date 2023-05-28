@@ -4,6 +4,8 @@
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
     - Build 25375
       ![デスクトップ](./images/Windows/20230528_Windows11_Build25375.png)
+      - Facebookのウィジェットが追加できた！
+      ![ウィジェットに表示](./images/Windows/20230528_FacebookWidget.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
