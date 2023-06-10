@@ -24,14 +24,14 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 113.0.5672.134
-    ![Chrome OS Flexバージョン情報](./images/20230527_Chrome_OS_Flex_113.0.5672.134.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 114.0.5735.119
+    ![Chrome OS Flexバージョン情報](./images/20230610_Chrome_OS_Flex_114.0.5735.119.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.78.2](https://code.visualstudio.com/) <BR />
+  - [Visual Studio Code 1.79](https://code.visualstudio.com/) <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230513_code_1.78.2.png)
+    ![Upgrade on Chrome OS Flex](./images/20230610_code_1.79.png)
   - [Git 2.40.1](https://git-scm.com/download)
     - Windowsでの更新
       ```
