@@ -24,8 +24,8 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 113.0.5672.134
-    ![Chrome OS Flexバージョン情報](./images/20230527_Chrome_OS_Flex_113.0.5672.134.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 114.0.5735.119
+    ![Chrome OS Flexバージョン情報](./images/20230610_Chrome_OS_Flex_114.0.5735.119.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.79](https://code.visualstudio.com/) <BR />
