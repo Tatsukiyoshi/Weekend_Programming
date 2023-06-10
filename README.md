@@ -2,10 +2,10 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25375
-      ![デスクトップ](./images/Windows/20230528_Windows11_Build25375.png)
-      - Facebookのウィジェットが追加できた！
-      ![ウィジェットに表示](./images/Windows/20230528_FacebookWidget.png)
+    - Build 25387
+      ![アップデート](./images/Windows/20230610_Windows11_Update_Build25387.png)
+      - 更新直後は、背景画像が初期状態になったので、再度スポットライトを選択。
+        ![デスクトップ](./images/Windows/20230611_Windows11_Build25387.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)

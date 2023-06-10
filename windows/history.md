@@ -1,5 +1,9 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25375
+      ![デスクトップ](../images/Windows/20230528_Windows11_Build25375.png)
+      - Facebookのウィジェットが追加できた！
+      ![ウィジェットに表示](../images/Windows/20230528_FacebookWidget.png)
     - Build 25370
       ![デスクトップ](../images/Windows/20230524_Windows11_Build25370.png)
     - Build 25357
