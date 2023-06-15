@@ -2,7 +2,7 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25387 <span style="color: red;">*2023/6/11 updated from 25375*</span>
+    - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
       ![アップデート](./images/Windows/20230610_Windows11_Update_Build25387.png)
       - 更新直後は、背景画像が初期状態になったので、再度スポットライトを選択。
         ![デスクトップ](./images/Windows/20230611_Windows11_Build25387.png)
@@ -24,15 +24,15 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 114.0.5735.119 <span style="color: red;">*2023/6/10 updated from 113.0.5672.134*</span>
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 114.0.5735.119 <span style="color: red;">*<<2023/6/10 updated from 113.0.5672.134>>*</span>
     ![Chrome OS Flexバージョン情報](./images/20230610_Chrome_OS_Flex_114.0.5735.119.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.79](https://code.visualstudio.com/) <span style="color: red;">*2023/6/10 updated from 1.78.2*</span> <BR />
+  - [Visual Studio Code 1.79.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/6/15 updated from 1.79.0>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230610_code_1.79.png)
-  - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*2023/6/11 updated from 2.40.1*</span>
+    ![Upgrade on Chrome OS Flex](./images/20230615_code_1.79.1.png)
+  - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
     - Windowsでの更新
       ```
       git update-git-for-windows
