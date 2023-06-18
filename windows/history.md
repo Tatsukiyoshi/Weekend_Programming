@@ -1,5 +1,9 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
+      ![アップデート](../images/Windows/20230610_Windows11_Update_Build25387.png)
+      - 更新直後は、背景画像が初期状態になったので、再度スポットライトを選択。
+        ![デスクトップ](../images/Windows/20230611_Windows11_Build25387.png)
     - Build 25375
       ![デスクトップ](../images/Windows/20230528_Windows11_Build25375.png)
       - Facebookのウィジェットが追加できた！

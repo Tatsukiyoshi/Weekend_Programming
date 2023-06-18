@@ -2,10 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
-      ![アップデート](./images/Windows/20230610_Windows11_Update_Build25387.png)
-      - 更新直後は、背景画像が初期状態になったので、再度スポットライトを選択。
-        ![デスクトップ](./images/Windows/20230611_Windows11_Build25387.png)
+    - Build 25393 <span style="color: red;">*<<2023/6/17 updated from 25389>>*</span>
+      ![デスクトップ](./images/Windows/20230617_Windows11_Build25393.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
@@ -28,10 +26,10 @@
     ![Chrome OS Flexバージョン情報](./images/20230610_Chrome_OS_Flex_114.0.5735.119.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.79.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/6/15 updated from 1.79.0>>*</span> <BR />
+  - [Visual Studio Code 1.79.2](https://code.visualstudio.com/) <span style="color: red;">*<<2023/6/17 updated from 1.79.1>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230615_code_1.79.1.png)
+    ![Upgrade on Chrome OS Flex](./images/20230617_code_1.79.2.png)
   - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
     - Windowsでの更新
       ```
