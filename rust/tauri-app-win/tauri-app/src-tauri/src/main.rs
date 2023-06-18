@@ -14,8 +14,10 @@ use tauri::SystemTrayEvent;
 // This command must be async so that it doesn't run on the main thread.
 #[tauri::command]
 async fn close_splashscreen(window: tauri::Window) {
+  println!("Closing SplashScreen.");
   // Close splashscreen
   if let Some(splashscreen) = window.get_window("splashscreen") {
+    println!("Close SplashScreen.");
     splashscreen.close().unwrap();
   }
 }
@@ -31,8 +33,8 @@ fn main() {
       .add_native_item(SystemTrayMenuItem::Separator)
       .add_item(hide);
   tauri::Builder::default()
-    .invoke_handler(tauri::generate_handler![close_splashscreen])
-    .setup(|app| {
+  .invoke_handler(tauri::generate_handler![close_splashscreen])
+  .setup(|app| {
       // Set Icon for System Tray
       app.tray_handle().set_icon(tauri::Icon::Raw(include_bytes!("../icons/icon.ico").to_vec())).unwrap();
       // we perform the initialization code on a new task so the app doesn't freeze
