@@ -35,6 +35,8 @@ fn main() {
   tauri::Builder::default()
   .invoke_handler(tauri::generate_handler![close_splashscreen])
   .setup(|app| {
+      let splashscreen_window = app.get_window("splashscreen").unwrap();
+      //let main_window = app.get_window("main").unwrap();
       // Set Icon for System Tray
       app.tray_handle().set_icon(tauri::Icon::Raw(include_bytes!("../icons/icon.ico").to_vec())).unwrap();
       // we perform the initialization code on a new task so the app doesn't freeze
@@ -43,6 +45,10 @@ fn main() {
         println!("Initializing...");
         std::thread::sleep(std::time::Duration::from_secs(2));
         println!("Done initializing.");
+
+        // After it's done, close the splashscreen and display the main window
+        splashscreen_window.close().unwrap();
+        // main_window.show().unwrap();
       });
       Ok(())
     })
