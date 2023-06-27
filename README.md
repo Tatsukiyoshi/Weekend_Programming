@@ -35,7 +35,8 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.2.3](https://desktop.github.com/release-notes/)
+  - [GitHub Desktop 3.2.6](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/6/27 updated from 3.2.3>>*</span>
+    - アップデートがうまくいかず、アンインストール＋インストールで解決。
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
