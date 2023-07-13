@@ -2,8 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25393 <span style="color: red;">*<<2023/6/17 updated from 25389>>*</span>
-      ![デスクトップ](./images/Windows/20230617_Windows11_Build25393.png)
+    - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
+      ![デスクトップ](./images/Windows/20230713_Windows11_Build25905.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
