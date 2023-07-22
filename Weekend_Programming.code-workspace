@@ -50,6 +50,7 @@
 				"password": "password"
 			}
 		],
-		"java.configuration.updateBuildConfiguration": "automatic"
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"dotnet.defaultSolution": "Weekend_Programming/net/MAUI/MauiApp1/MauiApp1.sln"
 	}
 }
