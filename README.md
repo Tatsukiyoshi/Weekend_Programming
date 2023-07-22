@@ -22,8 +22,10 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 114.0.5735.205 <span style="color: red;">*<<2023/7/1 updated from 114.0.5735.143>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/20230701_Chrome_OS_Flex_114.0.5735.205.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.131 <span style="color: red;">*<<2023/7/22 updated from 114.0.5735.205>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/20230722_Chrome_OS_Flex_115.0.5790.131.png)
+    - スマートフォンハブが使える
+      ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.80.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/7/16 updated from 1.80>>*</span> <BR />
