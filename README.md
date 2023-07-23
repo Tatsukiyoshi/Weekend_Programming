@@ -4,6 +4,9 @@
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
     - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
       ![デスクトップ](./images/Windows/20230713_Windows11_Build25905.png)
+      - WSL起動できない問題発生
+        ![VSCodeでWSLに接続できない](./images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
+        ![WSLが起動できない](./images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
