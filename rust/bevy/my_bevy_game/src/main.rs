@@ -4,8 +4,9 @@ use bevy::prelude::*;
 use bevy::window::WindowResolution;
 
 // for Windows Icon
+use bevy::winit::WinitWindows;
 use bevy::window::PrimaryWindow;
-//use winit::window::Icon;
+use winit::window::Icon;
 
 // Component
 #[derive(Component)]
@@ -43,16 +44,12 @@ fn greet_people(
     }
 }
 
-fn set_window_icon(
-    // we have to use `NonSend` here
-    primary_query: Query<&Window, With<PrimaryWindow>>,
+pub fn set_window_icon(
+    main_window: Query<Entity, With<PrimaryWindow>>,
+    windows: NonSend<WinitWindows>,
 ) {
-    let Ok(primary) = primary_query.get_single() else {
-        return;
-    };
+    let Some(primary) = windows.get_window(main_window.single()) else {return};
 
-    // here we use the `image` crate to load our icon data from a png file
-    // this is not a very bevy-native solution, but it will do
     let (icon_rgba, icon_width, icon_height) = {
         let image = image::open("emo_emoji_smile_smiley_happy_emoticon_face_icon_152131.png")
             .expect("Failed to open icon path")
@@ -63,7 +60,6 @@ fn set_window_icon(
     };
 
     let icon = Icon::from_rgba(icon_rgba, icon_width, icon_height).unwrap();
-
     primary.set_window_icon(Some(icon));
 }
 
