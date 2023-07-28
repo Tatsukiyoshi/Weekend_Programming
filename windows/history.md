@@ -1,5 +1,10 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
+      ![デスクトップ](../images/Windows/20230713_Windows11_Build25905.png)
+      - WSL起動できない問題発生
+      ![VSCodeでWSLに接続できない](./images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
+      ![WSLが起動できない](./images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
     - Build 25393 <span style="color: red;">*<<2023/6/17 updated from 25389>>*</span>
       ![デスクトップ](../images/Windows/20230617_Windows11_Build25393.png)
     - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
