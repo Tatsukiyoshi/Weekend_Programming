@@ -4,7 +4,8 @@
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
     - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
       ![デスクトップ](./images/Windows/20230728_Windows11_Build25915.png)
-      ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
+      - WSLが起動できない問題解消
+        ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
