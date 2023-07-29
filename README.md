@@ -2,11 +2,10 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
-      ![デスクトップ](./images/Windows/20230713_Windows11_Build25905.png)
-      - WSL起動できない問題発生
-        ![VSCodeでWSLに接続できない](./images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
-        ![WSLが起動できない](./images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
+    - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
+      ![デスクトップ](./images/Windows/20230728_Windows11_Build25915.png)
+      - WSLが起動できない問題解消
+        ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
@@ -31,10 +30,10 @@
       ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.80.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/7/16 updated from 1.80>>*</span> <BR />
+  - [Visual Studio Code 1.80.2](https://code.visualstudio.com/) <span style="color: red;">*<<2023/7/28 updated from 1.80.1>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230716_code_1.80.1.png)
+    ![Upgrade on Chrome OS Flex](./images/20230729_code_1.80.2.png)
   - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
     - Windowsでの更新
       ```
