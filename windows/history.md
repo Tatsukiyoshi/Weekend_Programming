@@ -1,5 +1,34 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
+      ![デスクトップ](../images/Windows/20230713_Windows11_Build25905.png)
+      - WSL起動できない問題発生
+      ![VSCodeでWSLに接続できない](./images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
+      ![WSLが起動できない](./images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
+    - Build 25393 <span style="color: red;">*<<2023/6/17 updated from 25389>>*</span>
+      ![デスクトップ](../images/Windows/20230617_Windows11_Build25393.png)
+    - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
+      ![アップデート](../images/Windows/20230610_Windows11_Update_Build25387.png)
+      - 更新直後は、背景画像が初期状態になったので、再度スポットライトを選択。
+        ![デスクトップ](../images/Windows/20230611_Windows11_Build25387.png)
+    - Build 25375
+      ![デスクトップ](../images/Windows/20230528_Windows11_Build25375.png)
+      - Facebookのウィジェットが追加できた！
+      ![ウィジェットに表示](../images/Windows/20230528_FacebookWidget.png)
+    - Build 25370
+      ![デスクトップ](../images/Windows/20230524_Windows11_Build25370.png)
+    - Build 25357
+      ![デスクトップ](../images/Windows/20230506_Windows11_Build25357.png)
+    - FacebookMessengerのウィジェットがプレビュー公開
+      ![ウィジェットに表示](../images/Windows/20230506_MessangerWidget.png)
+    - Build 25352
+      ![デスクトップ](../images/Windows/20230429_Windows11_Build25352.png)
+    - iPhoneとのスマートフォン連携が公開
+      ![ウィジェットに表示](../images/Windows/20230429_Link_to_iPhone.png)
+    - Build 25346
+      ![デスクトップ](../images/Windows/20230422_Windows11_Build25346.png)
+    - Build 25336
+      ![デスクトップ](../images/Windows/20230408_Windows11_Build25336.png)
     - Build 25330
       ![デスクトップ](../images/Windows/20230401_Windows11_Build25330.png)
     - Build 25324

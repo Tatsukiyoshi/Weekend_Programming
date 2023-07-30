@@ -26,6 +26,7 @@
     *   YAML
 *   C/C++
 *   C#
+*   C# Dev Kit
 *   CMake
 *   CMake Tools
 *   Dart
