@@ -30,7 +30,7 @@
       ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.80.2](https://code.visualstudio.com/) <span style="color: red;">*<<2023/7/28 updated from 1.80.1>>*</span> <BR />
+  - [Visual Studio Code 1.81](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/4 updated from 1.80.2>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230729_code_1.80.2.png)
