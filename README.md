@@ -24,8 +24,8 @@
     UBUNTU_CODENAME=jammy
     ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.131 <span style="color: red;">*<<2023/7/22 updated from 114.0.5735.205>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/20230722_Chrome_OS_Flex_115.0.5790.131.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.160 <span style="color: red;">*<<2023/8/5 updated from 115.0.5790.131>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/20230805_Chrome_OS_Flex_115.0.5790.160.png)
     - スマートフォンハブが使える
       ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
@@ -33,7 +33,7 @@
   - [Visual Studio Code 1.81](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/4 updated from 1.80.2>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230729_code_1.80.2.png)
+    ![Upgrade on Chrome OS Flex](./images/20230805_code_1.81.png)
   - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
     - Windowsでの更新
       ```
