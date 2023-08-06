@@ -1,5 +1,9 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
+      ![デスクトップ](./images/Windows/20230728_Windows11_Build25915.png)
+      - WSLが起動できない問題解消
+        ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
     - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
       ![デスクトップ](../images/Windows/20230713_Windows11_Build25905.png)
       - WSL起動できない問題発生
