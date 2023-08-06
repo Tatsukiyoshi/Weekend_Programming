@@ -2,13 +2,11 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
-      ![デスクトップ](./images/Windows/20230728_Windows11_Build25915.png)
-      - WSLが起動できない問題解消
-        ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
+    - Build 25921 <span style="color: red;">*<<2023/08/06 updated from 25915>>*</span>
+      ![デスクトップ](./images/Windows/20230806_Windows11_Build25921.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
-    ![ターミナル](./images/20230427_ubuntu_22.04.2.png)
+    ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
     ```
     PRETTY_NAME="Ubuntu 22.04.2 LTS"
     NAME="Ubuntu"
