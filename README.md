@@ -2,8 +2,8 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25921 <span style="color: red;">*<<2023/08/06 updated from 25915>>*</span>
-      ![デスクトップ](./images/Windows/20230806_Windows11_Build25921.png)
+    - Build 25926 <span style="color: red;">*<<2023/08/11 updated from 25921>>*</span>
+      ![デスクトップ](./images/Windows/20230811_Windows11_Build25926.png)
     - [履歴](./windows/history.md)
   - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
     ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
@@ -28,7 +28,7 @@
       ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
-  - [Visual Studio Code 1.81](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/4 updated from 1.80.2>>*</span> <BR />
+  - [Visual Studio Code 1.81.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/11 updated from 1.81>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/20230805_code_1.81.png)

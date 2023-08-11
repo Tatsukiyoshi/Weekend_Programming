@@ -1,14 +1,16 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25921 <span style="color: red;">*<<2023/08/06 updated from 25915>>*</span>
+      ![デスクトップ](../images/Windows/20230806_Windows11_Build25921.png)
     - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
-      ![デスクトップ](./images/Windows/20230728_Windows11_Build25915.png)
+      ![デスクトップ](../images/Windows/20230728_Windows11_Build25915.png)
       - WSLが起動できない問題解消
-        ![WSL起動できた](./images/Windows/20230728_Windows11_Build25915_WSL.png)
+        ![WSL起動できた](../images/Windows/20230728_Windows11_Build25915_WSL.png)
     - Build 25905 <span style="color: red;">*<<2023/7/13 updated from 25393>>*</span>
       ![デスクトップ](../images/Windows/20230713_Windows11_Build25905.png)
       - WSL起動できない問題発生
-      ![VSCodeでWSLに接続できない](./images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
-      ![WSLが起動できない](./images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
+      ![VSCodeでWSLに接続できない](../images/Windows/20230723_Windows11_Build25905_VSCode_WSL_Error.png)
+      ![WSLが起動できない](../images/Windows/20230723_Windows11_Build25905_WSL_Error.png)
     - Build 25393 <span style="color: red;">*<<2023/6/17 updated from 25389>>*</span>
       ![デスクトップ](../images/Windows/20230617_Windows11_Build25393.png)
     - Build 25387 <span style="color: red;">*<<2023/6/11 updated from 25375>>*</span>
