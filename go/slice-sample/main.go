@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
+	fmt.Println(unsafe.StringData("Hello"))
+
 	var slice1 []int
 	fmt.Printf("%v", slice1)
 
@@ -14,7 +16,9 @@ func main() {
 
 	slice3 := []int{1, 2, 3, 4, 5}
 	fmt.Printf("%v", slice3)
-
-	fmt.Println(unsafe.StringData("Hello"))
 	fmt.Println(unsafe.SliceData(slice3))
+
+	// V1.21: New function clear
+	clear(slice3)
+	fmt.Printf("%v", slice3)
 }
