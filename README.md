@@ -1,26 +1,29 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider](https://blogs.windows.com/windows-insider/) Canary Channel
-    - Build 25926 <span style="color: red;">*<<2023/08/11 updated from 25921>>*</span>
+  - [Windows Insider](https://blogs.windows.com/windows-insider/)
+    - Dev Channel Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
       ![デスクトップ](./images/Windows/20230811_Windows11_Build25926.png)
     - [履歴](./windows/history.md)
-  - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
-    ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
-    ```
-    PRETTY_NAME="Ubuntu 22.04.2 LTS"
-    NAME="Ubuntu"
-    VERSION_ID="22.04"
-    VERSION="22.04.2 LTS (Jammy Jellyfish)"
-    VERSION_CODENAME=jammy
-    ID=ubuntu
-    ID_LIKE=debian
-    HOME_URL="https://www.ubuntu.com/"
-    SUPPORT_URL="https://help.ubuntu.com/"
-    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-    UBUNTU_CODENAME=jammy
-    ```
+    - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
+    - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
+  - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+    - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
+      ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
+      ```
+      PRETTY_NAME="Ubuntu 22.04.2 LTS"
+      NAME="Ubuntu"
+      VERSION_ID="22.04"
+      VERSION="22.04.2 LTS (Jammy Jellyfish)"
+      VERSION_CODENAME=jammy
+      ID=ubuntu
+      ID_LIKE=debian
+      HOME_URL="https://www.ubuntu.com/"
+      SUPPORT_URL="https://help.ubuntu.com/"
+      BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+      PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+      UBUNTU_CODENAME=jammy
+      ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.160 <span style="color: red;">*<<2023/8/5 updated from 115.0.5790.131>>*</span>
     ![Chrome OS Flexバージョン情報](./images/20230805_Chrome_OS_Flex_115.0.5790.160.png)
