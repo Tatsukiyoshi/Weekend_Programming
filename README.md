@@ -3,7 +3,7 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
-      ![デスクトップ](./images/Windows/20230811_Windows11_Build25926.png)
+      ![デスクトップ](./images/Windows/20230817_Windows11_Build23521.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
