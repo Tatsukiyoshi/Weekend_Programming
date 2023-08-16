@@ -1,5 +1,7 @@
 - Windows Insider History
   - Canary Channel
+    - Build 25926 <span style="color: red;">*<<2023/08/11 updated from 25921>>*</span>
+      ![デスクトップ](../images/Windows/20230811_Windows11_Build25926.png)
     - Build 25921 <span style="color: red;">*<<2023/08/06 updated from 25915>>*</span>
       ![デスクトップ](../images/Windows/20230806_Windows11_Build25921.png)
     - Build 25915 <span style="color: red;">*<<2023/7/28 updated from 25905>>*</span>
