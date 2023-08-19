@@ -1,4 +1,7 @@
 - Windows Insider History
+  - Dev Channel
+    - Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
+      ![デスクトップ](../images/Windows/20230817_Windows11_Build23521.png)
   - Canary Channel
     - Build 25926 <span style="color: red;">*<<2023/08/11 updated from 25921>>*</span>
       ![デスクトップ](../images/Windows/20230811_Windows11_Build25926.png)

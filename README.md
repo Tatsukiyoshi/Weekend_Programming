@@ -2,13 +2,14 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
-    - Dev Channel Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
-      ![デスクトップ](./images/Windows/20230817_Windows11_Build23521.png)
+    - Dev Channel
+      - Build 23526 <span style="color: red;">*<<2023/08/19 updated from 23521>>*</span>
+        ![デスクトップ](./images/Windows/20230819_Windows11_Build23526.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
-    - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
+    - [Ubuntu](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
       ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
       ```
       PRETTY_NAME="Ubuntu 22.04.2 LTS"
@@ -25,10 +26,10 @@
       UBUNTU_CODENAME=jammy
       ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.160 <span style="color: red;">*<<2023/8/5 updated from 115.0.5790.131>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/20230805_Chrome_OS_Flex_115.0.5790.160.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.182 <span style="color: red;">*<<2023/8/19 updated from 115.0.5790.160>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/20230819_Chrome_OS_Flex_115.0.5790.182.png)
     - スマートフォンハブが使える
-      ![スマートフォンハブ(Galaxy flip3)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
+      ![スマートフォンハブ(Galaxy Z Flip3 5G)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.81.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/11 updated from 1.81>>*</span> <BR />
