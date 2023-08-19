@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee                       https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+--><web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -107,8 +107,10 @@
   <!--                                                                      -->
   <!--   allowPartialPut     Should the server treat an HTTP PUT request    -->
   <!--                       with a Range header as a partial PUT? Note     -->
-  <!--                       that RFC 7233 clarified that Range headers are -->
-  <!--                       only valid for GET requests. [true]            -->
+  <!--                       that while RFC 7233 clarified that Range       -->
+  <!--                       headers only valid for GET requests, RFC 9110  -->
+  <!--                       (which obsoletes RFC 7233) now allows partial  -->
+  <!--                       puts. [true]                                   -->
 
     <servlet>
         <servlet-name>default</servlet-name>
@@ -148,9 +150,9 @@
   <!--                       pages.  See the jasper documentation for more  -->
   <!--                       information.                                   -->
   <!--                                                                      -->
-  <!--   compilerSourceVM    Compiler source VM. [1.8]                      -->
+  <!--   compilerSourceVM    Compiler source VM. [11]                      -->
   <!--                                                                      -->
-  <!--   compilerTargetVM    Compiler target VM. [1.8]                      -->
+  <!--   compilerTargetVM    Compiler target VM. [11]                      -->
   <!--                                                                      -->
   <!--   development         Is Jasper used in development mode? If true,   -->
   <!--                       the frequency at which JSPs are checked for    -->
@@ -189,10 +191,6 @@
   <!--                       Should text strings be generated as char       -->
   <!--                       arrays, to improve performance in some cases?  -->
   <!--                       [false]                                        -->
-  <!--                                                                      -->
-  <!--   ieClassId           The class-id value to be sent to Internet      -->
-  <!--                       Explorer when using <jsp:plugin> tags.         -->
-  <!--                       [clsid:8AD9C840-044E-11D1-B3E9-00805F499D93]   -->
   <!--                                                                      -->
   <!--   javaEncoding        Java file encoding to use for generating java  -->
   <!--                       source files. [UTF8]                           -->
@@ -360,7 +358,7 @@
   <!--                        the arguments to the OS. See the CGI How-To   -->
   <!--                        for more details. The default varies by       -->
   <!--                        platform.                                     -->
-  <!--                        Windows: [[a-zA-Z0-9\Q-_.\\/:\E]+]            -->
+  <!--                        Windows: [[\w\Q-.\\/:\E]+]            -->
   <!--                        Others:  [.*]                                 -->
   <!--                        Note that internally the CGI Servlet treats   -->
   <!--                        [.*] as a special case to improve performance -->
@@ -371,7 +369,7 @@
   <!--                        command line arguments must match else the    -->
   <!--                        request will be rejected. The default matches -->
   <!--                        the allowed values defined by RFC3875.        -->
-  <!--                        [[a-zA-Z0-9\Q%;/?:@&,$-_.!~*'()\E]+]          -->
+  <!--                        [[\w\Q%;/?:@&,$-.!~*'()\E]+]          -->
   <!--                                                                      -->
   <!--   enableCmdLineArguments                                             -->
   <!--                        Are command line parameters generated from    -->
@@ -2121,7 +2119,7 @@
     </mime-mapping>
     <mime-mapping>
         <extension>js</extension>
-        <mime-type>application/javascript</mime-type>
+        <mime-type>text/javascript</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>jsf</extension>
