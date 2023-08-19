@@ -2,13 +2,14 @@
 ##  共通
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
-    - Dev Channel Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
-      ![デスクトップ](./images/Windows/20230817_Windows11_Build23521.png)
+    - Dev Channel
+      - Build 23526 <span style="color: red;">*<<2023/08/19 updated from 23521>>*</span>
+        ![デスクトップ](./images/Windows/20230819_Windows11_Build23526.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
-    - [Ubuntu on Windows](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
+    - [Ubuntu](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
       ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
       ```
       PRETTY_NAME="Ubuntu 22.04.2 LTS"
