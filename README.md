@@ -30,14 +30,14 @@
   - [Visual Studio Code 1.81.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/11 updated from 1.81>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230812_code_1.81.1.png)
-  - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20230812_code_1.81.1.png)
+  - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.2.7](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/8/1 updated from 3.2.6>>*</span>
-    サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
+  - [GitHub Desktop 3.2.9](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/8/261 updated from 3.2.7>>*</span>
+    - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
