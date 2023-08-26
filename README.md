@@ -3,46 +3,41 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 23526 <span style="color: red;">*<<2023/08/19 updated from 23521>>*</span>
-        ![デスクトップ](./images/Windows/20230819_Windows11_Build23526.png)
+      - Build 23531 <span style="color: red;">*<<2023/08/26 updated from 23526>>*</span>
+        ![デスクトップ](./images/Windows/20230826_Windows11_Build23531.png)
+        - Build 23531適用前に表示されたオンラインサービスエクスペリエンスパックって何？
+          ![OnlineServiceExpriencePack](./images/Windows/20230826_OnlineServiceExperiencePack.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
-    - [Ubuntu](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others) 22.04.2
-      ![ターミナル](./images/Windows/20230806_ubuntu_22.04.2.png)
+    - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
+      ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
+    - [履歴](./wsl/history.md)
+    - ディストリビューションのバージョンを確認する
       ```
-      PRETTY_NAME="Ubuntu 22.04.2 LTS"
-      NAME="Ubuntu"
-      VERSION_ID="22.04"
-      VERSION="22.04.2 LTS (Jammy Jellyfish)"
-      VERSION_CODENAME=jammy
-      ID=ubuntu
-      ID_LIKE=debian
-      HOME_URL="https://www.ubuntu.com/"
-      SUPPORT_URL="https://help.ubuntu.com/"
-      BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-      PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-      UBUNTU_CODENAME=jammy
+      lsb_release -a
       ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) 115.0.5790.182 <span style="color: red;">*<<2023/8/19 updated from 115.0.5790.160>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/20230819_Chrome_OS_Flex_115.0.5790.182.png)
-    - スマートフォンハブが使える
-      ![スマートフォンハブ(Galaxy Z Flip3 5G)](./images/20230722_SmartPhoneHub_GalaxyFlip3.png)
+  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex)
+    - 116.0.5845.120 <span style="color: red;">*<<2023/8/26 updated from 115.0.5790.182>>*</span>
+      ![Chrome OS Flexバージョン情報](./images/Chrome/20230826_Chrome_OS_Flex_116.0.5845.120.png)
+      - メニューからVimを起動できるようになった
+        ![Vim](./images/Chrome/20230826_Vim.png)
+    - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール  
   - [Visual Studio Code 1.81.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/11 updated from 1.81>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/20230812_code_1.81.1.png)
-  - [Git 2.41](https://git-scm.com/download) <span style="color: red;">*<<2023/6/11 updated from 2.40.1>>*</span>
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20230812_code_1.81.1.png)
+  - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.2.7](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/8/1 updated from 3.2.6>>*</span>
-    サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
+  - [GitHub Desktop 3.2.9](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/8/261 updated from 3.2.7>>*</span>
+    - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
 ##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
