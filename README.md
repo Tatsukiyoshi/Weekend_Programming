@@ -3,19 +3,21 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 23526 <span style="color: red;">*<<2023/08/19 updated from 23521>>*</span>
-        ![デスクトップ](./images/Windows/20230819_Windows11_Build23526.png)
+      - Build 23531 <span style="color: red;">*<<2023/08/26 updated from 23526>>*</span>
+        ![デスクトップ](./images/Windows/20230826_Windows11_Build23531.png)
+        - Build 23531適用前に表示されたオンラインサービスエクスペリエンスパックって何？
+          ![OnlineServiceExpriencePack](./images/Windows/20230826_OnlineServiceExperiencePack.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
     - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
-      - ディストリビューションのバージョンを確認する
-        ```
-        lsb_release -a
-        ```
-        ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
-      - [履歴](./wsl/history.md)
+      ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
+    - [履歴](./wsl/history.md)
+    - ディストリビューションのバージョンを確認する
+      ```
+      lsb_release -a
+      ```
     - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex)
     - 116.0.5845.120 <span style="color: red;">*<<2023/8/26 updated from 115.0.5790.182>>*</span>
