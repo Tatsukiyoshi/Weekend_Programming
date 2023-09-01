@@ -1,5 +1,9 @@
 - Windows Insider History
   - Dev Channel
+    - Build 23531 <span style="color: red;">*<<2023/08/26 updated from 23526>>*</span>
+      ![デスクトップ](../images/Windows/20230826_Windows11_Build23531.png)
+      - Build 23531適用前に表示されたオンラインサービスエクスペリエンスパックって何？
+        ![OnlineServiceExpriencePack](../images/Windows/20230826_OnlineServiceExperiencePack.png)
     - Build 23526 <span style="color: red;">*<<2023/08/19 updated from 23521>>*</span>
       ![デスクトップ](../images/Windows/20230819_Windows11_Build23526.png)
     - Build 23521 <span style="color: red;">*<<2023/08/17 installed>>*</span>
