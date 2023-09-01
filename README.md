@@ -3,10 +3,8 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 23531 <span style="color: red;">*<<2023/08/26 updated from 23526>>*</span>
-        ![デスクトップ](./images/Windows/20230826_Windows11_Build23531.png)
-        - Build 23531適用前に表示されたオンラインサービスエクスペリエンスパックって何？
-          ![OnlineServiceExpriencePack](./images/Windows/20230826_OnlineServiceExperiencePack.png)
+      - Build 23536 <span style="color: red;">*<<2023/09/01 updated from 23531>>*</span>
+        ![デスクトップ](./images/Windows/20230901_Windows11_Build23536.png)
     - [履歴](./windows/history.md)
     - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
     - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
@@ -36,7 +34,7 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.2.9](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/8/261 updated from 3.2.7>>*</span>
+  - [GitHub Desktop 3.3.1](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/9/1 updated from 3.2.9>>*</span>
     - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 ---
 ##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
