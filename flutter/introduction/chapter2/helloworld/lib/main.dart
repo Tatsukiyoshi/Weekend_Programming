@@ -90,9 +90,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: const Column(children: [
-          Text("HelloWorld"),
-          Text("ハローワールド"),
+        body: Column(children: [
+          const Text("HelloWorld"),
+          const Text("ハローワールド"),
+          TextButton(
+            // ignore: avoid_print
+            onPressed: () => {print("ボタンが押されたよ")},
+            child: const Text("テキストボタン"),
+          )
         ]));
   }
 }
