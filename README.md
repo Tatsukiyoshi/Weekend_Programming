@@ -31,6 +31,11 @@
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20230812_code_1.81.1.png)
   - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
+    - ユーザ設定
+      ```
+      $ git config --global user.name "John Doe"
+      $ git config --global user.email johndoe@example.com
+      ```
     - Windowsでの更新
       ```
       git update-git-for-windows
