@@ -3,7 +3,7 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 235341 <span style="color: red;">*<<2023/09/09 updated from 23536>>*</span>
+      - Build 23541 <span style="color: red;">*<<2023/09/09 updated from 23536>>*</span>
         ![デスクトップ](./images/Windows/20230910_Windows11_Build23541.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
