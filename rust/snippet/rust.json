@@ -110,14 +110,14 @@
 	"fn1": {
 		"prefix": "fn",
 		"body": [
-			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0",
+			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0"
 		],
 		"description": "Insert function"
 	},
 	"fn2": {
 		"prefix": "function",
 		"body": [
-			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0",
+			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0"
 		],
 		"description": "Insert function"
 	},
@@ -202,14 +202,14 @@
 	"macro_use": {
 		"prefix": "macro_use",
 		"body": [
-			"#[macro_use]$0",
+			"#[macro_use]$0"
 		],
 		"description": "Insert macro_use"
 	},
 	"main": {
 		"prefix": "main",
 		"body": [
-			"fn main() $0",
+			"fn main() $0"
 		],
 		"description": "Insert main function"
 	},
