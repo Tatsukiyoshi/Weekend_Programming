@@ -3,11 +3,9 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 23536 <span style="color: red;">*<<2023/09/01 updated from 23531>>*</span>
-        ![デスクトップ](./images/Windows/20230901_Windows11_Build23536.png)
+      - Build 235341 <span style="color: red;">*<<2023/09/09 updated from 23536>>*</span>
+        ![デスクトップ](./images/Windows/20230910_Windows11_Build23541.png)
     - [履歴](./windows/history.md)
-    - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
-    - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
     - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
       ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -16,20 +14,16 @@
       ```
       lsb_release -a
       ```
-    - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
-    - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex)
-    - 116.0.5845.120 <span style="color: red;">*<<2023/8/26 updated from 115.0.5790.182>>*</span>
-      ![Chrome OS Flexバージョン情報](./images/Chrome/20230826_Chrome_OS_Flex_116.0.5845.120.png)
-      - メニューからVimを起動できるようになった
-        ![Vim](./images/Chrome/20230826_Vim.png)
+    - 116.0.5845.168 <span style="color: red;">*<<2023/9/10 updated from 116.0.5845.120>>*</span>
+      ![Chrome OS Flexバージョン情報](./images/Chrome/20230910_Chrome_OS_Flex_116.0.5845.168.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
-### ツール  
-  - [Visual Studio Code 1.81.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/8/11 updated from 1.81>>*</span> <BR />
+### ツール
+  - [Visual Studio Code 1.82](https://code.visualstudio.com/) <span style="color: red;">*<<2023/9/08 updated from 1.81.1>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/Chrome/20230812_code_1.81.1.png)
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20230910_code_1.82.png)
   - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
       ```
@@ -37,24 +31,70 @@
       ```
   - [GitHub Desktop 3.3.1](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/9/1 updated from 3.2.9>>*</span>
     - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
----
-##  [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
-##  [Docker](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
-##  [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
-##  [Rust](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Rust)
-##  [Kotlin](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Kotlin)
-##  [Java](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Java)
-##  [Dart/flutter](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Flutter)
-##  [TypeScript/JavaScript](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/TypeScript)
-##  [Go](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Go)
-##  [Python](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Python)
-##  [Pascal](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#pascal)
-##  [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
-##  [Carbon](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Carbon)
-##  [LLVM](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#llvm)
----
-##  [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
-##  [Unity](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Unity)
-##  [Exercism](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Exercism)
+
+##  言語別ページ
+### [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
+### [Docker](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
+### [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
+### [Rust](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Rust)
+### [Kotlin](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Kotlin)
+### [Java](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Java)
+### [Dart/flutter](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Flutter)
+### [TypeScript/JavaScript](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/TypeScript)
+### [Go](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Go)
+### [Python](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Python)
+### [Pascal](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#pascal)
+### [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
+### [Carbon](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Carbon)
+### [LLVM](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#llvm)
+### [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
+### [Unity](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Unity)
+### [Exercism](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Exercism)
+
+##  ノウハウ
+### Windows
+  - [USBメモリの復旧](https://jp.easeus.com/partition-manager/fix-usb-drive-incorrect-size.html)
+  - [Dev Channelへの変更](https://mitomoha.hatenablog.com/entry/2023/08/11/010623)
+  - PowerShell
+    - [文字エンコードについて](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.3)
+      - PowerShell上でUTF-8(BOMなし)に変更する
+        ```shell
+        $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+        ```
+      - VSCodeでPowerShellを開くときに変更するよう設定する
+        ```json
+            "terminal.integrated.profiles.windows": {
+                "PowerShell": {
+                    "source": "PowerShell",
+                    "icon": "terminal-powershell",
+                    "args": [
+                        "-Command",
+                        "$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'"
+                    ]
+                },
+                "Command Prompt": {
+                    "path": [
+                        "${env:windir}\\Sysnative\\cmd.exe",
+                        "${env:windir}\\System32\\cmd.exe"
+                    ],
+                    "args": [],
+                    "icon": "terminal-cmd"
+                },
+                "Git Bash": {
+                    "source": "Git Bash"
+                }
+            },
+        ```
+
+### WSL
+  - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
+  - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
+
+### Git
+  - ユーザ設定
+    ```
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
+    ```
 ---
 ##  [痕跡](_sub/Profile.md)
