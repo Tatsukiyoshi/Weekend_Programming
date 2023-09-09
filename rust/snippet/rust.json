@@ -238,12 +238,19 @@
 		],
 		"description": "Insert move closure"
 	},
-	"ok": {
+	"ok1": {
 		"prefix": "Ok",
 		"body": [
 			"Ok($1)$0"
 		],
-		"description": "Insert ok variant"
+		"description": "Insert Ok variant"
+	},
+	"ok2": {
+		"prefix": "ok",
+		"body": [
+			"ok($1)$0"
+		],
+		"description": "Insert ok method"
 	},
 	"option": {
 		"prefix": "Option",
@@ -251,6 +258,13 @@
 			"Option<${1:T}>$0"
 		],
 		"description": "Insert option"
+	},
+	"print": {
+		"prefix": "print",
+		"body": [
+			"print!(\"${1:{${2|:?,}{|}\\}}\", $3)${4|;,\\,|}$0"
+		],
+		"description": "Insert print macro"
 	},
 	"println": {
 		"prefix": "println",
