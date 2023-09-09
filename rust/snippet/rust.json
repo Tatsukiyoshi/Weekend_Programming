@@ -1,0 +1,378 @@
+{
+	"allow": {
+		"prefix": "allow",
+		"body": [
+			"#[allow(${1|unused_imports,dead_code,unused_variables,non_snake_case|})]$0"
+		],
+		"description": "Insert allow"
+	},
+	"as": {
+		"prefix": "as",
+		"body": [
+			"as ${1|u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,usize,isize|}$0"
+		],
+		"description": "Casting between types"
+	},
+	"assert": {
+		"prefix": "assert",
+		"body": [
+			"assert!($1);$0"
+		],
+		"description": "Insert assert macro"
+	},
+	"assert_eq": {
+		"prefix": "assert_eq",
+		"body": [
+			"assert_eq!($1, $2);$0"
+		],
+		"description": "Insert assert equal macro"
+	},
+	"break": {
+		"prefix": "break",
+		"body": [
+			"break;$0"
+		],
+		"description": "Insert break"
+	},
+	"cfg": {
+		"prefix": "cfg",
+		"body": [
+			"#[cfg($1)]$0"
+		],
+		"description": "Insert cfg attribute"
+	},
+	"closure": {
+		"prefix": "closure",
+		"body": [
+			"|$1| {",
+			"\t$2",
+			"}$0"
+		],
+		"description": "Insert closure"
+	},
+	"const": {
+		"prefix": "const",
+		"body": [
+			"const $1: $2 = $3;$0"
+		],
+		"description": "Insert constant variable"
+	},
+	"continue": {
+		"prefix": "continue",
+		"body": [
+			"continue;$0"
+		],
+		"description": "Insert continue"
+	},
+	"derive": {
+		"prefix": "derive",
+		"body": ["#[derive(${1|Debug,Copy,Clone,Default,Eq,Hash,Ord,PartialEq,PartialOrd|})]$0"],
+		"description": "Insert derive(Clone, Copy, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd) attribute"
+	},
+	"dyn": {
+		"prefix": "dyn",
+		"body": "dyn ${1:TraitName}$0",
+		"description": "Insert dyn trait"
+	},
+	"else if": {
+		"prefix": "elif",
+		"body": [
+			"else if ${1:condition} {",
+			"\t$2",
+			"}$0"
+		],
+		"description": "Insert else if"
+	},
+	"else": {
+		"prefix": "else",
+		"body": ["else {",
+			"\t$1",
+			"}$0"
+		],
+		"description": "Insert else"
+	},
+	"enum": {
+		"prefix": "enum",
+		"body": ["enum ${1:Name} {",
+			"\t${2:Value0},",
+			"\t${3:Value1},$0",
+			"}"
+		],
+		"description": "Insert enumeration"
+	},
+	"err": {
+		"prefix": "Err",
+		"body": [
+			"Err($1)$0"
+		],
+		"description": "Insert error variant"
+	},
+	"fn1": {
+		"prefix": "fn",
+		"body": [
+			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0",
+		],
+		"description": "Insert function"
+	},
+	"fn2": {
+		"prefix": "function",
+		"body": [
+			"fn ${1:fn_name}(${2:arg}) ${3:-> ${4:return} }$0",
+		],
+		"description": "Insert function"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for ${1:element} in ${2:range} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert for loop"
+	},
+	"format": {
+		"prefix": "format",
+		"body": [
+			"format!(\"${1:{${2|:?,}{|}\\}}\", $3)${4|;,\\,|}$0"
+		],
+		"description": "Insert format macro"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ${1:condition} {",
+			"\t$2",
+			"}$0"
+		],
+		"description": "Insert if"
+	},
+	"if let option": {
+		"prefix": "if let",
+		"body": [
+			"if let Some(${1:param}) = ${2:compare_to_param} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Unwrap Option with if let"
+	},
+	"impl": {
+		"prefix": "impl",
+		"body": [
+			"impl ${1:TraitName} ${2:for ${3:Type} }{",
+			"\t$0",
+			"}"
+		],
+		"description": "Implement generics"
+	},
+	"let statement": {
+		"prefix": "let",
+		"body": ["let $1 = $2;"],
+		"description": "Insert variable"
+	},
+	"let mut statement1": {
+		"prefix": "lm",
+		"body": ["let mut $1 = $2;"],
+		"description": "Insert mutable variable"
+	},
+	"let mut statement2": {
+		"prefix": "lem",
+		"body": ["let mut $1 = $2;"],
+		"description": "Insert mutable variable"
+	},
+	"loop": {
+		"prefix": "loop",
+		"body": [
+			"loop {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert infinite loop"
+	},
+	"macro_rules": {
+		"prefix": "macro_rules",
+		"body": [
+			"macro_rules! ${1:macro_name} {",
+			"\t(${2:captures}) => {",
+			"\t\t$0",
+			"\t};",
+			"}"
+		],
+		"description": "Insert macro rules"
+	},
+	"macro_use": {
+		"prefix": "macro_use",
+		"body": [
+			"#[macro_use]$0",
+		],
+		"description": "Insert macro_use"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"fn main() $0",
+		],
+		"description": "Insert main function"
+	},
+	"match": {
+		"prefix": "match",
+		"body": [
+			"match $1 {",
+			"\t$2 => $0",
+			"}"
+		],
+		"description": "Insert match"
+	},
+	"mod": {
+		"prefix": "mod",
+		"body": [
+			"mod $0"
+		],
+		"description": "Insert module"
+	},
+	"move closure": {
+		"prefix": "move",
+		"body": [
+			"move |$1| {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert move closure"
+	},
+	"ok": {
+		"prefix": "Ok",
+		"body": [
+			"Ok($1)$0"
+		],
+		"description": "Insert ok variant"
+	},
+	"option": {
+		"prefix": "Option",
+		"body": [
+			"Option<${1:T}>$0"
+		],
+		"description": "Insert option"
+	},
+	"println": {
+		"prefix": "println",
+		"body": [
+			"println!(\"${1:{${2|:?,}{|}\\}}\", $3)${4|;,\\,|}$0"
+		],
+		"description": "Insert print line macro"
+	},
+	"result": {
+		"prefix": "Result",
+		"body": [
+			"Result<${1:T}, ${2:E}>$0"
+		],
+		"description": "Insert result"
+	},
+	"some": {
+		"prefix": "some",
+		"body": [
+			"Some($1)$0"
+		],
+		"description": "Insert some"
+	},
+	"static": {
+		"prefix": "static",
+		"body": [
+			"static $1: $2 = $3;$0"
+		],
+		"description": "Insert static variable"
+	},
+	"static ref": {
+		"prefix": "sr",
+		"body": [
+			"static ref $1: $2 = $3;$0"
+		],
+		"description": "Insert static ref"
+	},
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"struct ${1:Name} {",
+			"\t${2:label}: ${3:type},$0",
+			"}"
+		],
+		"description": "Insert structure"
+	},
+	"test": {
+		"prefix": "test",
+		"body": "#[test]",
+		"description": "Insert test block"
+	},
+	"trait": {
+		"prefix": "trait",
+		"body": [
+			"trait ${1:TraitName} {",
+			"\t$0",
+			"}"
+		]
+	},
+	"type": {
+		"prefix": "type",
+		"body": ["${1|u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,usize,isize|}$0"],
+		"description": "Insert type"
+	},
+	"union": {
+		"prefix": "union",
+		"body": ["union ${1:Name} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert union"
+	},
+	"unsafe": {
+		"prefix": "unsafe",
+		"body": [
+			"unsafe {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert unsafe block"
+	},
+	"use": {
+		"prefix": "use",
+		"body": [
+			"use $1;$0"
+		],
+		"description": "Insert use"
+	},
+	"Vec": {
+		"prefix": "Vec",
+		"body": [
+			"Vec${1:<${2|u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,usize,isize|}>}$0"
+		],
+		"description": "Insert vector constractor"
+	},
+	"vec!": {
+		"prefix": "vec!",
+		"body": [
+			"vec![$1];$0"
+		],
+		"description": "Insert vector macro"
+	},
+	"where": {
+		"prefix": "where",
+		"body": "where ${1:T}: ${2:TraitName}$0",
+		"description": "Insert where"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while ${1:condition} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert while loop"
+	},
+	"while let option": {
+		"prefix": "while let",
+		"body": [
+			"while let Some(${1:param}) = ${2:compare_to_param} {",
+			"\t$0",
+			"}"
+		],
+		"description": "Unwrap Option with while let"
+	}
+}
