@@ -3,8 +3,8 @@
 ### OS
   - [Windows Insider](https://blogs.windows.com/windows-insider/)
     - Dev Channel
-      - Build 23541 <span style="color: red;">*<<2023/09/09 updated from 23536>>*</span>
-        ![デスクトップ](./images/Windows/20230910_Windows11_Build23541.png)
+      - Build 23545 <span style="color: red;">*<<2023/09/14 updated from 23541>>*</span>
+        ![デスクトップ](./images/Windows/20230914_Windows11_Build23545.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
     - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
@@ -20,7 +20,7 @@
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
-  - [Visual Studio Code 1.82](https://code.visualstudio.com/) <span style="color: red;">*<<2023/9/08 updated from 1.81.1>>*</span> <BR />
+  - [Visual Studio Code 1.82.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/9/14 updated from 1.82.0>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20230910_code_1.82.png)
