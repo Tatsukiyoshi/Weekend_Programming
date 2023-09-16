@@ -81,3 +81,7 @@ node_modules/
 
 # flutter Build files
 build/
+
+# IntelliJ IDEA / RustRover files
+.idea/**/workspace.xml
+.idea/**/tasks.xml
