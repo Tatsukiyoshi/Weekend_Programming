@@ -15,15 +15,15 @@
       lsb_release -a
       ```
   - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex)
-    - 116.0.5845.168 <span style="color: red;">*<<2023/9/10 updated from 116.0.5845.120>>*</span>
-      ![Chrome OS Flexバージョン情報](./images/Chrome/20230910_Chrome_OS_Flex_116.0.5845.168.png)
+    - 116.0.5845.210 <span style="color: red;">*<<2023/9/16 updated from 116.0.5845.168>>*</span>
+      ![Chrome OS Flexバージョン情報](./images/Chrome/20230916_Chrome_OS_Flex_116.0.5845.210.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
   - [Visual Studio Code 1.82.2](https://code.visualstudio.com/) <span style="color: red;">*<<2023/9/15 updated from 1.82.1>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/Chrome/20230910_code_1.82.png)
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20230916_code_1.82.2.png)
   - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
       ```
