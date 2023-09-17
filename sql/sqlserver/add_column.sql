@@ -1,3 +1,4 @@
+-- SHIFT-JIS
 -- ①ユーザーテーブルのデータをテンポラリテーブルにバックアップ
 SELECT * INTO #Temp FROM [MainDatabase].[dbo].[employee]
  
