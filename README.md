@@ -1,22 +1,18 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider](https://blogs.windows.com/windows-insider/)
-    - Dev Channel
-      - Build 23545 <span style="color: red;">*<<2023/09/14 updated from 23541>>*</span>
-        ![デスクトップ](./images/Windows/20230914_Windows11_Build23545.png)
+  - [Windows Insider Dev Channel Build 23545](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/09/14 updated from 23541>>*</span>
+    ![デスクトップ](./images/Windows/20230914_Windows11_Build23545.png)
     - [履歴](./windows/history.md)
-  - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
-    - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
-      ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
+  - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
+    ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
     - [履歴](./wsl/history.md)
     - ディストリビューションのバージョンを確認する
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex)
-    - 116.0.5845.210 <span style="color: red;">*<<2023/9/16 updated from 116.0.5845.168>>*</span>
-      ![Chrome OS Flexバージョン情報](./images/Chrome/20230916_Chrome_OS_Flex_116.0.5845.210.png)
+  - [Chrome OS Flex 116.0.5845.210](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/9/16 updated from 116.0.5845.168>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20230916_Chrome_OS_Flex_116.0.5845.210.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
