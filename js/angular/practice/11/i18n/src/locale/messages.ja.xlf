@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5669282625271939591" datatype="html">
+        <source>Hello <x id="INTERPOLATION" equiv-text="{{name}}"/></source>
+        <target>こんにちは <x id="INTERPOLATION" equiv-text="{{name}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4825099372678206489" datatype="html">
+        <source>WINGS Project Logo</source>
+        <target>WINGSプロジェクトロゴ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2542733800214178970" datatype="html">
+        <source>This is i18n sample</source>
+        <target>国際化対応サンプルです</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
