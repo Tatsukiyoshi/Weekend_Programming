@@ -1,20 +1,20 @@
-<form #myForm="ngForm" (ngSubmit)="show()">
+<form [formGroup]="myForm" (ngSubmit)="show()">
   <div>
     <label for="url">URL：</label><br />
-    <input id="url" name="url" type="url" [(ngModel)]="user.url" #url="ngModel" required url />
-    <span *ngIf="url.errors?.['required']">URLは必須です。</span>
-    <span *ngIf="url.errors?.['url']">URLを正しい形式で入力してください。</span>
+    <input id="url" name="url" type="url" formControlName="url" />
+    <span *ngIf="myForm.controls.url.errors?.['required']">URLは必須です。</span>
+    <span *ngIf="myForm.controls.url.errors?.['url']">URLを正しい形式で入力してください。</span>
   </div>
   <div>
     <label for="mail">メールアドレス：</label><br />
-    <input id="mail" name="mail" type="email" [(ngModel)]="user.mail" #mail="ngModel" required email />
-    <span *ngIf="mail.errors?.['required']">メールアドレスは必須です。</span>
-    <span *ngIf="mail.errors?.['email']">メールアドレスを正しい形式で入力してください。</span>
+    <input id="mail" name="mail" type="email" formControlName="mail" />
+    <span *ngIf="myForm.controls.mail.errors?.['required']">メールアドレスは必須です。</span>
+    <span *ngIf="myForm.controls.mail.errors?.['email']">メールアドレスを正しい形式で入力してください。</span>
   </div>
   <div>
     <label for="mail_confirm">メールアドレス（確認）：</label><br />
-    <input id="mail_confirm" name="mail_confirm" type="email" [(ngModel)]="user.mail_confirm" [equal]="mail" #mail_confirm="ngModel" />
-    <span *ngIf="mail_confirm.errors?.['equalTo']">メールアドレス同士が等しくなければなりません。</span>
+    <input id="mail_confirm" name="mail_confirm" type="email" formControlName="mail_confirm" />
+    <span *ngIf="myForm.controls.mail_confirm.errors?.['equalTo']">メールアドレス同士が等しくなければなりません。</span>
   </div>
   <div>
     <input type="submit" value="送信" [disabled]="myForm.invalid" />
