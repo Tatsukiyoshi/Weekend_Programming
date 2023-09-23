@@ -3,6 +3,7 @@
 	<name>docoTsubu</name>
 	<comment></comment>
 	<projects>
+		<project>Servers</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

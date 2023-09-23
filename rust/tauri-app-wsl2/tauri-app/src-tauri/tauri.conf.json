@@ -1,14 +1,13 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
+    "beforeDevCommand": "yarn dev",
     "beforeBuildCommand": "yarn build",
-    "beforeDevCommand": "yarn start",
-    "devPath": "http://localhost:3000",
-    "distDir": "../build"
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
   },
   "package": {
     "productName": "tauri-app",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "tauri": {
     "allowlist": {
@@ -58,7 +57,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "Tauri App",
+        "title": "tauri-app",
         "width": 800
       }
     ]

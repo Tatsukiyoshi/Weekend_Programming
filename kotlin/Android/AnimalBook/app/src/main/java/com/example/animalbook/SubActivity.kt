@@ -6,6 +6,7 @@ import com.example.animalbook.databinding.ActivitySubBinding
 
 class SubActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySubBinding
+    private lateinit var title: TitleFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,33 +15,38 @@ class SubActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.lionButton.setOnClickListener {
-            val fragment = LionFragment()
-            val fragmentManager = this.supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.container, fragment)
-                .addToBackStack(null)
-                .commit()
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.container, LionFragment())
+                addToBackStack(null)
+                commit()
+            }
         }
 
         binding.hippoButton.setOnClickListener {
-            val fragment = HippoFragment()
-            val fragmentManager = this.supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.container, fragment)
-                .addToBackStack(null)
-                .commit()
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.container, HippoFragment())
+                addToBackStack(null)
+                commit()
+            }
         }
 
         binding.giraffeButton.setOnClickListener {
-            val fragment = GiraffeFragment()
-            val fragmentManager = this.supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.container, fragment)
-                .addToBackStack(null)
-                .commit()
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.container, GiraffeFragment())
+                addToBackStack(null)
+                commit()
+            }
         }
 
-        //val fragment = binding.titleFragment as? TitleFragment
-        //fragment?.setTitle("図鑑画面")
+        title = TitleFragment()
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.titleFrame, title)
+            commit()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        title.setTitle("サブ画面")
     }
 }

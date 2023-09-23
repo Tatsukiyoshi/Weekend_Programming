@@ -48,7 +48,7 @@ export class ChildComponent implements OnChanges, OnInit, DoCheck, AfterContentI
   //(9)税込み金額計算
   addTax(value: number) {
     console.log("■■■addTax");
-    value *= 1.08; //税込み金額計算;
+    value *= 1.1; //税込み金額計算;
     return Math.floor(value);
   }
 

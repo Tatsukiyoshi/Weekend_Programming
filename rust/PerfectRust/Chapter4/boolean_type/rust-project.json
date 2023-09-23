@@ -1,0 +1,10 @@
+{
+    "sysroot": "C:\\Users\\taish\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc",
+    "crates": [
+        {
+            "root_module": "src\\main.rs",
+            "edition": "2021",
+            "deps": []
+        }
+    ]
+}

@@ -28,7 +28,7 @@ namespace LineFonts
             System.IntPtr data;
 
             // LINE Font(Regular) 
-            { 
+            {
                 // 1: Select your font from the resources.
                 fontLength = Properties.Resources.LINESeedJP_TTF_Rg.Length;
 
@@ -53,6 +53,14 @@ namespace LineFonts
                 Marshal.Copy(fontData, 0, data, fontLength);
                 pfc.AddMemoryFont(data, fontLength);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // .NET Framework
+            //string clrVersionBuildTime = System.Reflection.Assembly.GetExecutingAssembly().ImageRuntimeVersion;
+            //dotnetVersionLabel.Text = clrVersionBuildTime;
+            dotnetVersionText.Text = RuntimeInformation.FrameworkDescription;
         }
     }
 }

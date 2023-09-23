@@ -1,7 +1,7 @@
 import {ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {DataService} from '../../service/data.service';
 import {Router} from '@angular/router';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {DetailDialogComponent} from '../detail/detail.dialog';
 import {MyEvent, StateService} from '../../service/state.service';
 import {Subscription} from 'rxjs';
