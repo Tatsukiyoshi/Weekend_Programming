@@ -1,8 +1,8 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23545](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/09/14 updated from 23541>>*</span>
-    ![デスクトップ](./images/Windows/20230914_Windows11_Build23545.png)
+  - [Windows Insider Dev Channel Build 23550](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/09/24 updated from 23545>>*</span>
+    ![デスクトップ](./images/Windows/20230924_Windows11_Build23550.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -11,8 +11,8 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 116.0.5845.210](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/9/16 updated from 116.0.5845.168>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20230916_Chrome_OS_Flex_116.0.5845.210.png)
+  - [Chrome OS Flex 117.0.5938.115](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/9/27 updated from 116.0.5845.210>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20230927_Chrome_OS_Flex_117.0.5938.115.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
