@@ -1,3 +1,5 @@
+- 116.0.5845.210 <span style="color: red;">*<<2023/9/16 updated from 116.0.5845.168>>*</span>
+  ![Chrome OS Flexバージョン情報](../images/Chrome/20230916_Chrome_OS_Flex_116.0.5845.210.png)
 - 116.0.5845.168 <span style="color: red;">*<<2023/9/10 updated from 116.0.5845.120>>*</span>
   ![Chrome OS Flexバージョン情報](../images/Chrome/20230910_Chrome_OS_Flex_116.0.5845.168.png)
 - 116.0.5845.120 <span style="color: red;">*<<2023/8/26 updated from 115.0.5790.182>>*</span>
