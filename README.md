@@ -102,5 +102,10 @@
     $ git config --global user.name "John Doe"
     $ git config --global user.email johndoe@example.com
     ```
+
+### Chrome OS Flex
+  - Could not create Moklist: Volume Full と出て起動できない
+    - 何らかの原因でSecure Bootできなくなったことから、Bios / Secure Boot menuで、Delete all Secure Boot variablesを選択する 
+
 ---
 ##  [痕跡](_sub/Profile.md)
