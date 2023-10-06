@@ -1,8 +1,8 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23555](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/09/29 updated from 23550>>*</span>
-    ![デスクトップ](./images/Windows/20230929_Windows11_Build23555.png)
+  - [Windows Insider Dev Channel Build 23560](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/06 updated from 23555>>*</span>
+    ![デスクトップ](./images/Windows/20231006_Windows11_Build23560.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -11,15 +11,15 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 117.0.5938.115](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/9/27 updated from 116.0.5845.210>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20230927_Chrome_OS_Flex_117.0.5938.115.png)
+  - [Chrome OS Flex 117.0.5938.144](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/10/06 updated from 117.0.5938.115>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20231006_Chrome_OS_Flex_117.0.5938.144.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
-  - [Visual Studio Code 1.82.2](https://code.visualstudio.com/) <span style="color: red;">*<<2023/9/15 updated from 1.82.1>>*</span> <BR />
+  - [Visual Studio Code 1.83](https://code.visualstudio.com/) <span style="color: red;">*<<2023/10/6 updated from 1.82.2>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/Chrome/20230916_code_1.82.2.png)
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20231006_code_1.83.png)
     - 1.82で発生していたデバッグコンソールがクリアできなくなった問題は、1.82.2で解消
   - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
