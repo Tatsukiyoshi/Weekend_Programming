@@ -11,8 +11,8 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 117.0.5938.144](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/10/06 updated from 117.0.5938.115>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20231006_Chrome_OS_Flex_117.0.5938.144.png)
+  - [Chrome OS Flex 117.0.5938.157](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/10/07 updated from 117.0.5938.144>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20231007_Chrome_OS_Flex_117.0.5938.157.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
