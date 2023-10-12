@@ -21,7 +21,7 @@
   - [Visual Studio Code 1.83.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/10/12 updated from 1.83>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/Chrome/20231006_code_1.83.png)
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20231012_code_1.83.1.png)
     - 1.82で発生していたデバッグコンソールがクリアできなくなった問題は、1.82.2で解消
   - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
     - Windowsでの更新
