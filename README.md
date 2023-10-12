@@ -1,8 +1,10 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23560](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/06 updated from 23555>>*</span>
-    ![デスクトップ](./images/Windows/20231006_Windows11_Build23560.png)
+  - [Windows Insider Dev Channel Build 23565](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/12 updated from 23560>>*</span>
+    ![デスクトップ](./images/Windows/20231012_Windows11_Build23565.png)
+    - Windowsアップデートと並行して、Visual StudioのPreviewもアップデートしていたら、完了後再起動したにもかかわらず、背景の表記は古いまま（アップデート失敗した模様。しかし、履歴は完了になっていた）
+      ![アップデート失敗](./images/Windows/20231012_Windows11_Build23565_Failed.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -16,7 +18,7 @@
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
-  - [Visual Studio Code 1.83](https://code.visualstudio.com/) <span style="color: red;">*<<2023/10/6 updated from 1.82.2>>*</span> <BR />
+  - [Visual Studio Code 1.83.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/10/12 updated from 1.83>>*</span> <BR />
     エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20231006_code_1.83.png)
@@ -26,7 +28,7 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.3.1](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/9/1 updated from 3.2.9>>*</span>
+  - [GitHub Desktop 3.3.3](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/10/12 updated from 3.3.1>>*</span>
     - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 
 ##  言語別ページ

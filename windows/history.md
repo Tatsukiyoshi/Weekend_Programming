@@ -1,5 +1,7 @@
 - Windows Insider History
   - Dev Channel
+    - Build 23560 <span style="color: red;">*<<2023/10/06 updated from 23555>>*</span>
+      ![デスクトップ](../images/Windows/20231006_Windows11_Build23560.png)
     - Build 23555 <span style="color: red;">*<<2023/09/29 updated from 23550>>*</span>
       ![デスクトップ](../images/Windows/20230929_Windows11_Build23555.png)
     - Build 23550 <span style="color: red;">*<<2023/09/24 updated from 23545>>*</span>
