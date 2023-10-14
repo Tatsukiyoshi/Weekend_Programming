@@ -88,3 +88,7 @@ build/
 
 # LaTeX
 *.synctex.gz
+
+# Vite work files
+vite.config.ts.timestamp*
+
