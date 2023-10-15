@@ -8,10 +8,11 @@ import org.springframework.stereotype.Component
 @Component
 @StepScope
 class SamplePartitioner: Partitioner {
+    @OptIn(ExperimentalStdlibApi::class)
     override fun partition(gridSize: Int): MutableMap<String, ExecutionContext> {
         val map = mutableMapOf<String, ExecutionContext>()
 
-        for(i in 0 until gridSize) {
+        for(i in 0..<gridSize) {
             val context = ExecutionContext()
             context.put("sampleKey", "sampleValue$i")
             map["partition$i"] =  context

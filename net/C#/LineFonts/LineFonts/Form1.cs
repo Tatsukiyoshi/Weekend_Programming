@@ -1,12 +1,15 @@
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 
-namespace LineFonts {
-    public partial class Form1 : Form {
+namespace LineFonts
+{
+    public partial class Form1 : Form
+    {
         //Create your private font collection object.
         PrivateFontCollection pfc = new();
 
-        public Form1() {
+        public Form1()
+        {
             InitializeComponent();
 
             InitCustomLabelFont();
@@ -18,7 +21,8 @@ namespace LineFonts {
             BoldLabel.Text = "‘¾ŽšƒtƒHƒ“ƒg";
         }
 
-        public void InitCustomLabelFont() {
+        public void InitCustomLabelFont()
+        {
             int fontLength;
             byte[] fontData;
             System.IntPtr data;
@@ -51,15 +55,12 @@ namespace LineFonts {
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        private void Form1_Load(object sender, EventArgs e)
+        {
             // .NET Framework
             //string clrVersionBuildTime = System.Reflection.Assembly.GetExecutingAssembly().ImageRuntimeVersion;
             //dotnetVersionLabel.Text = clrVersionBuildTime;
             dotnetVersionText.Text = RuntimeInformation.FrameworkDescription;
-        }
-
-        private void label1_Click(object sender, EventArgs e) {
-
         }
     }
 }
