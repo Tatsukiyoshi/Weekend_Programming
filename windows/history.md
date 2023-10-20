@@ -1,5 +1,9 @@
 - Windows Insider History
   - Dev Channel
+    - Build 23565 <span style="color: red;">*<<2023/10/12 updated from 23560>>*</span>
+      ![デスクトップ](../images/Windows/20231012_Windows11_Build23565.png)
+      - Windowsアップデートと並行して、Visual StudioのPreviewもアップデートしていたら、完了後再起動したにもかかわらず、背景の表記は古いまま（アップデート失敗した模様。しかし、履歴は完了になっていた）
+        ![アップデート失敗](../images/Windows/20231012_Windows11_Build23565_Failed.png)
     - Build 23560 <span style="color: red;">*<<2023/10/06 updated from 23555>>*</span>
       ![デスクトップ](../images/Windows/20231006_Windows11_Build23560.png)
     - Build 23555 <span style="color: red;">*<<2023/09/29 updated from 23550>>*</span>

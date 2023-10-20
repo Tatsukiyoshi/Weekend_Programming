@@ -1,10 +1,8 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23565](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/12 updated from 23560>>*</span>
-    ![デスクトップ](./images/Windows/20231012_Windows11_Build23565.png)
-    - Windowsアップデートと並行して、Visual StudioのPreviewもアップデートしていたら、完了後再起動したにもかかわらず、背景の表記は古いまま（アップデート失敗した模様。しかし、履歴は完了になっていた）
-      ![アップデート失敗](./images/Windows/20231012_Windows11_Build23565_Failed.png)
+  - [Windows Insider Dev Channel Build 23570](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/20 updated from 23565>>*</span>
+    ![デスクトップ](./images/Windows/20231020_Windows11_Build23570.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -13,8 +11,8 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 117.0.5938.157](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/10/07 updated from 117.0.5938.144>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20231007_Chrome_OS_Flex_117.0.5938.157.png)
+  - [Chrome OS Flex 118.0.5993.86](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/10/20 updated from 117.0.5938.157>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20231020_Chrome_OS_Flex_118.0.5993.86.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
