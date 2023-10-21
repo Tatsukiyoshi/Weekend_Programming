@@ -122,8 +122,4 @@ pub fn use_try_from(){
     } else {
         println!("try_from() = {:?}", customer.unwrap_err());
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/feature/perfect_rust_chapter8
