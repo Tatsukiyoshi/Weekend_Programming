@@ -13,7 +13,12 @@ use crate::traits::{CsvReader, JsonReader};
 pub struct CsvReaderImpl<T>{
     phantom: PhantomData<T> // 幽霊フィールド
 }
-
+impl<T> CsvReaderImpl<T> {
+    /// ### リスト10.16 コンストラクタ
+    pub fn new() -> Self {
+        Self{phantom: PhantomData}
+    }
+}
 impl<T> CsvReader<T> for CsvReaderImpl<T> where T:DeserializeOwned {
     /// ### リスト10.10 CSVをデシリアライズする
     /// ### 引数 file_path: ファイルパス
@@ -41,7 +46,13 @@ impl<T> CsvReader<T> for CsvReaderImpl<T> where T:DeserializeOwned {
 pub struct JsonReaderImpl<T>{
     phantom: PhantomData<T> // 幽霊フィールド
 }
-
+impl<T> JsonReaderImpl<T> {
+    /// ## 10-5.抽象化
+    /// ### リスト10.16 コンストラクタ
+    pub fn new() -> Self {
+        Self{phantom: PhantomData}
+    }
+}
 impl<T> JsonReader<T> for JsonReaderImpl<T> where T:DeserializeOwned {
     /// ### リスト10.11 JSONのデシリアライズ
     /// ### 引数 file_path: ファイルパス
