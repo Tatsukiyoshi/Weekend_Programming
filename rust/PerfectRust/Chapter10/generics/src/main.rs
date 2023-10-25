@@ -1,6 +1,6 @@
 use crate::try_out::use_generics_method;
 
-mod r#trait;
+mod traits;
 mod traits_impl;
 mod entities;
 mod try_out;

@@ -1,5 +1,5 @@
 use crate::entities::Product;
-use crate::r#trait::{CsvReader, JsonReader};
+use crate::traits::{CsvReader, JsonReader};
 use crate::traits_impl::{CsvReaderImpl, JsonReaderImpl};
 
 /// ## 10-3.メソッドの実装

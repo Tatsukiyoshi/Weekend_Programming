@@ -5,7 +5,7 @@ use std::path::PathBuf;
 use anyhow::Result;
 use csv::ReaderBuilder;
 use serde::de::DeserializeOwned;
-use crate::r#trait::{CsvReader, JsonReader};
+use crate::traits::{CsvReader, JsonReader};
 
 /// ## 10-2 ジェネリックトレイト
 /// ### リスト10.7 ジェネリックトレイトの実装
