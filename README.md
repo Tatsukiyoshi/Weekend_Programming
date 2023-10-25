@@ -26,7 +26,7 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.3.3](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/10/12 updated from 3.3.1>>*</span>
+  - [GitHub Desktop 3.3.4](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/10/25 updated from 3.3.3>>*</span>
     - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 
 ##  言語別ページ
