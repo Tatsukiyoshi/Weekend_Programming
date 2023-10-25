@@ -1,7 +1,8 @@
 use anyhow::Result;
 use serde::de::DeserializeOwned;
-use crate::traits_impl::{CsvReaderImpl, JsonReaderImpl};
-use crate::traits::{CsvReader, JsonReader};
+use crate::sub::{CsvReader, CsvReaderImpl};
+use crate::traits_impl::JsonReaderImpl;
+use crate::traits::JsonReader;
 /// ## 10-5.抽象化
 /// ### リスト10.17 トレイトを集約する構造体
 pub struct ReadService<T> {
@@ -11,7 +12,7 @@ pub struct ReadService<T> {
     json_reader: Box<dyn JsonReader<T>>
 }
 
-impl<T:DeserializeOwned + 'static> ReadService<T> {
+impl<T:DeserializeOwned + 'static + Send + Sync> ReadService<T> {
     /// ### リスト10.18 new()関数とメソッドの実装
     /// ### コンストラクタ
     pub fn new() -> Self {

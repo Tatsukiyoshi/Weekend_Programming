@@ -5,6 +5,7 @@ mod traits_impl;
 mod entities;
 mod try_out;
 mod services;
+mod sub;
 
 fn main() {
     println!("use_generics_method()");

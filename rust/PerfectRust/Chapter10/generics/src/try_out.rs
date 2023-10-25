@@ -1,7 +1,8 @@
 use crate::entities::Product;
 use crate::services::ReadService;
-use crate::traits::{CsvReader, JsonReader};
-use crate::traits_impl::{CsvReaderImpl, JsonReaderImpl};
+use crate::sub::{CsvReader, CsvReaderImpl};
+use crate::traits::JsonReader;
+use crate::traits_impl::JsonReaderImpl;
 
 /// ## 10-3.メソッドの実装
 /// ### リスト10.12 メソッドの実行
