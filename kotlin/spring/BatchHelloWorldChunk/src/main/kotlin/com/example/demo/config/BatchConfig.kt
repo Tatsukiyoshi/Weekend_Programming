@@ -5,27 +5,21 @@ import org.springframework.batch.core.JobExecutionListener
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.StepExecutionListener
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
-import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
-import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.ItemProcessor
 import org.springframework.batch.item.ItemReader
 import org.springframework.batch.item.ItemWriter
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
 @EnableBatchProcessing
-class BatchConfig {
-    /** JobBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var jobBuilderFactory: JobBuilderFactory
-
-    /** StepBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var stepBuilderFactory: StepBuilderFactory
-
+class BatchConfig(val transactionManager: PlatformTransactionManager) {
     /** HelloReader */
     @Autowired
     private lateinit var reader: ItemReader<String>
@@ -46,9 +40,9 @@ class BatchConfig {
 
     /** ChunkのStepを生成 */
     @Bean
-    fun chunkStep(): Step {
-        return stepBuilderFactory.get("HelloWorldChunkStep")
-            .chunk<String, String>(1)
+    fun chunkStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("HelloWorldChunkStep", jobRepository)
+            .chunk<String, String>(1, transactionManager)
             .reader(reader)
             .processor(processor)
             .writer(writer)
@@ -58,10 +52,10 @@ class BatchConfig {
 
     /** Jobを生成 */
     @Bean
-    fun chunkJob(): Job {
-        return jobBuilderFactory.get("HelloWorldChunkJob")
+    fun chunkJob(jobRepository: JobRepository): Job {
+        return JobBuilder("HelloWorldChunkJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(chunkStep())
+            .start(chunkStep(jobRepository, transactionManager))
             .listener(jobListener)
             .build()
     }
