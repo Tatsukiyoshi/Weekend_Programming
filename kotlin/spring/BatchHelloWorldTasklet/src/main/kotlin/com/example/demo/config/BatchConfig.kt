@@ -6,28 +6,22 @@ import org.springframework.batch.core.Job
 import org.springframework.batch.core.JobParametersValidator
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
-import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
-import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
 import org.springframework.batch.core.job.CompositeJobParametersValidator
 import org.springframework.batch.core.job.DefaultJobParametersValidator
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.core.step.tasklet.Tasklet
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
 @EnableBatchProcessing
-class BatchConfig {
-    /** JobBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var jobBuilderFactory: JobBuilderFactory
-
-    /** StepBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var stepBuilderFactory: StepBuilderFactory
-
+class BatchConfig(val transactionManager: PlatformTransactionManager) {
     /** HelloTasklet */
     @Autowired
     @Qualifier("HelloTasklet")
@@ -73,27 +67,27 @@ class BatchConfig {
 
     /** TaskletのStepを生成 */
     @Bean
-    fun taskletStep1(): Step {
-        return stepBuilderFactory.get("HelloTaskletStep1")
-            .tasklet(helloTasklet)
+    fun taskletStep1(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("HelloTaskletStep1", jobRepository)
+            .tasklet(helloTasklet, transactionManager)
             .build()
     }
 
     /** TaskletのStepを生成 */
     @Bean
-    fun taskletStep2(): Step {
-        return stepBuilderFactory.get("HelloTaskletStep2")
-            .tasklet(helloTasklet2)
+    fun taskletStep2(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("HelloTaskletStep2", jobRepository)
+            .tasklet(helloTasklet2, transactionManager)
             .build()
     }
 
     /** TaskletのJobを生成 */
     @Bean
-    fun taskletJob(): Job? {
-        return jobBuilderFactory.get("HelloWorldTaskletJob")
+    fun taskletJob(jobRepository: JobRepository): Job? {
+        return JobBuilder("HelloWorldTaskletJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(taskletStep1())  // 最初のStep
-            .next(taskletStep2())   // 次のStep
+            .start(taskletStep1(jobRepository, transactionManager))  // 最初のStep
+            .next(taskletStep2(jobRepository, transactionManager))   // 次のStep
             .validator(compositeValidator())
             .build()
     }
