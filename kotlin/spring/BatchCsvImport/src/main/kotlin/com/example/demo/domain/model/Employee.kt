@@ -1,10 +1,10 @@
 package com.example.demo.domain.model
 
+import jakarta.persistence.Entity
+import jakarta.persistence.Id
+import jakarta.validation.constraints.Min
+import jakarta.validation.constraints.NotNull
 import lombok.Data
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.validation.constraints.Min
-import javax.validation.constraints.NotNull
 
 @Data
 @Entity

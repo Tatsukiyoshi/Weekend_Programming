@@ -2,17 +2,21 @@ package com.example.demo.config.jpa
 
 import com.example.demo.config.BaseConfig
 import com.example.demo.domain.model.Employee
+import jakarta.persistence.EntityManagerFactory
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.database.JpaPagingItemReader
 import org.springframework.batch.item.database.builder.JpaPagingItemReaderBuilder
 import org.springframework.batch.item.database.orm.JpaNativeQueryProvider
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import javax.persistence.EntityManagerFactory
+import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
 class JpaPagingBatchConfig: BaseConfig() {
@@ -45,9 +49,9 @@ class JpaPagingBatchConfig: BaseConfig() {
     }
 
     /** JpaPagingItemReaderを使用するStepの生成 */
-    fun exportJpaPagingStep(): Step {
-        return this.stepBuilderFactory.get("ExportJpaPagingStep")
-            .chunk<Employee, Employee>(10)
+    fun exportJpaPagingStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("ExportJpaPagingStep", jobRepository)
+            .chunk<Employee, Employee>(10, transactionManager)
             .reader(jpaPagingReader()).listener(readListener)
             .processor(this.genderConvertProcessor)
             .writer(csvWriter()).listener(writeListener)
@@ -56,10 +60,10 @@ class JpaPagingBatchConfig: BaseConfig() {
 
     /** JpaPagingItemReaderを使用するJobの生成 */
     @Bean("JpaPagingJob")
-    fun exportJpaPagingJob(): Job {
-        return this.jobBuilderFactory.get("ExportJpaPagingJob")
+    fun exportJpaPagingJob(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Job {
+        return JobBuilder("ExportJpaPagingJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(exportJpaPagingStep())
+            .start(exportJpaPagingStep(jobRepository, transactionManager))
             .build()
     }
 }

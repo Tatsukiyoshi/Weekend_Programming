@@ -8,10 +8,14 @@ import org.mybatis.spring.batch.builder.MyBatisPagingItemReaderBuilder
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
 class MybatisPagingBatchConfig: BaseConfig() {
@@ -37,9 +41,9 @@ class MybatisPagingBatchConfig: BaseConfig() {
 
     /** MybatisPagingItemReaderを使用するStepの生成 */
     @Bean
-    fun exportMybatisPagingStep(): Step {
-        return this.stepBuilderFactory.get("ExportMybatisPagingStep")
-            .chunk<Employee, Employee>(10)
+    fun exportMybatisPagingStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("ExportMybatisPagingStep", jobRepository)
+            .chunk<Employee, Employee>(10, transactionManager)
             .reader(mybatisPagingReader()).listener(readListener)
             .processor(this.genderConvertProcessor)
             .writer(csvWriter()).listener(writeListener)
@@ -48,10 +52,10 @@ class MybatisPagingBatchConfig: BaseConfig() {
 
     /** MybatisPagingItemReaderを使用するJobの生成 */
     @Bean("MybatisPagingJob")
-    fun exportMybatisPagingJob(): Job {
-        return this.jobBuilderFactory.get("ExportMybatisPagingJob")
+    fun exportMybatisPagingJob(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Job {
+        return JobBuilder("ExportMybatisPagingJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(exportMybatisPagingStep())
+            .start(exportMybatisPagingStep(jobRepository, transactionManager))
             .build()
     }
 }
