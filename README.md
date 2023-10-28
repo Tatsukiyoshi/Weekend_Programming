@@ -31,6 +31,7 @@
 
 ##  言語別ページ
 ### [Database & SQL](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Database)
+### [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
 ### [Docker](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
 ### [.NET](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/.NET)
 ### [Rust](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Rust)
@@ -44,7 +45,6 @@
 ### [Swift](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#swift)
 ### [Carbon](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Carbon)
 ### [LLVM](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Others#llvm)
-### [Documentation](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Documentation)
 ### [Unity](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Unity)
 ### [Exercism](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Exercism)
 
