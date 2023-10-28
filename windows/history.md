@@ -1,5 +1,7 @@
 - Windows Insider History
   - Dev Channel
+    - Build 23570 <span style="color: red;">*<<2023/10/20 updated from 23565>>*</span>
+      ![デスクトップ](../images/Windows/20231020_Windows11_Build23570.png)
     - Build 23565 <span style="color: red;">*<<2023/10/12 updated from 23560>>*</span>
       ![デスクトップ](../images/Windows/20231012_Windows11_Build23565.png)
       - Windowsアップデートと並行して、Visual StudioのPreviewもアップデートしていたら、完了後再起動したにもかかわらず、背景の表記は古いまま（アップデート失敗した模様。しかし、履歴は完了になっていた）

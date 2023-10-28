@@ -1,8 +1,8 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23570](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/20 updated from 23565>>*</span>
-    ![デスクトップ](./images/Windows/20231020_Windows11_Build23570.png)
+  - [Windows Insider Dev Channel Build 23575](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/28 updated from 23570>>*</span>
+    ![デスクトップ](./images/Windows/20231028_Windows11_Build23575.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
