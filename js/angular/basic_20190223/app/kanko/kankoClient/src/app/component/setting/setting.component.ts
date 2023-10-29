@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {MatBottomSheet, MatBottomSheetRef} from '@angular/material';
+import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 import {MyEvent, StateService} from '../../service/state.service';
 import {FormControl, FormGroup} from '@angular/forms';
 import {ScrollService} from '../../service/scroll.service';

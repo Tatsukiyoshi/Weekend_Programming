@@ -2,7 +2,7 @@ import {HostListener, Injectable} from '@angular/core';
 import {Subject, Subscription, Observable} from 'rxjs';
 import {map, filter} from 'rxjs/operators';
 import {AREA_FORM, GENRE_FORM} from '../app.config';
-import {MatSnackBar, MatSnackBarVerticalPosition} from '@angular/material';
+import {MatSnackBar, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
 import {Catch} from '../class/log.class';
 
 export enum MyEvent {

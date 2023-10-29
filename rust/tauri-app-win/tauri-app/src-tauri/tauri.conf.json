@@ -3,7 +3,7 @@
   "build": {
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
-    "devPath": "http://localhost:8080",
+    "devPath": "http://localhost:8083",
     "distDir": "../public"
   },
   "package": {
@@ -57,10 +57,25 @@
       {
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
+        "closable": false,
+        "resizable": false,
+        "minimizable": false,
+        "maximizable": false,
         "title": "Tauri App",
-        "width": 800
+        "width": 800,
+        "visible": false
+      },
+      {
+        "width": 400,
+        "height": 200,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen"
       }
-    ]
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    }
   }
 }

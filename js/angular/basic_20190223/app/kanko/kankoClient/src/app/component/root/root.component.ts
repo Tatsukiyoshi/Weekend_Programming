@@ -2,10 +2,11 @@ import {ChangeDetectorRef, Component, HostListener, OnDestroy, OnInit, ViewChild
 import {DataService} from '../../service/data.service';
 import {Router} from '@angular/router';
 import {MyEvent, StateService} from '../../service/state.service';
-import {ListComponent} from '../list/list.component';
+//import {ListComponent} from '../list/list.component';
 import {ScrollService} from '../../service/scroll.service';
 import {Subscription} from 'rxjs';
-import {MatBottomSheet, MatProgressSpinner} from '@angular/material';
+import {MatBottomSheet} from '@angular/material/bottom-sheet';
+//import {MatProgressSpinner} from '@angular/material/progress-spinner';
 import {SettingComponent} from '../setting/setting.component';
 import {Catch} from '../../class/log.class';
 
