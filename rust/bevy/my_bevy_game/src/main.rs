@@ -1,5 +1,13 @@
 use bevy::prelude::*;
 
+// for Windows Size
+use bevy::window::WindowResolution;
+
+// for Windows Icon
+use bevy::winit::WinitWindows;
+use bevy::window::PrimaryWindow;
+use winit::window::Icon;
+
 // Component
 #[derive(Component)]
 struct Person;
@@ -14,8 +22,8 @@ pub struct HelloPlugin;
 impl Plugin for HelloPlugin {
     fn build(&self, app: &mut App) {
         app.insert_resource(GreetTimer(Timer::from_seconds(2.0, TimerMode::Repeating)))
-            .add_startup_system(add_people)
-            .add_system(greet_people);
+            .add_systems(Startup, add_people)
+            .add_systems(Update, greet_people);
     }
 }
 
@@ -36,9 +44,38 @@ fn greet_people(
     }
 }
 
+pub fn set_window_icon(
+    main_window: Query<Entity, With<PrimaryWindow>>,
+    windows: NonSend<WinitWindows>,
+) {
+    let Some(primary) = windows.get_window(main_window.single()) else {return};
+
+    let (icon_rgba, icon_width, icon_height) = {
+        let image = image::open("emo_emoji_smile_smiley_happy_emoticon_face_icon_152131.png")
+            .expect("Failed to open icon path")
+            .into_rgba8();
+        let (width, height) = image.dimensions();
+        let rgba = image.into_raw();
+        (rgba, width, height)
+    };
+
+    let icon = Icon::from_rgba(icon_rgba, icon_width, icon_height).unwrap();
+    primary.set_window_icon(Some(icon));
+}
+
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
-        .add_plugin(HelloPlugin)
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            // * 0.9.1: Initalize Window Size
+            // * 0.10.1: Rename WindowDescriptor to Window and so on.
+            primary_window: Some(Window { 
+                title: "My Bevy Game".to_string(),
+                resolution: WindowResolution::new(300.0, 200.0),
+                ..default()
+            }),
+            ..default()
+        }))
+        .add_systems(Startup, set_window_icon)
+        .add_plugins(HelloPlugin)
         .run();
 }

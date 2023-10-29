@@ -1,0 +1,7 @@
+go 1.21.0
+
+use (
+	./go/line-chat-go
+	./go/min_and_max
+	./go/slice-sample
+)
