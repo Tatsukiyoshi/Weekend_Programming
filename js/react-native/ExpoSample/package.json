@@ -1,28 +1,24 @@
 {
-  "name": "expo_sample",
-  "version": "0.0.1",
-  "private": true,
+  "name": "exposample",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint ."
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "45.0.6",
-    "react": "17.0.0",
-    "react-native": "0.69.0"
+    "expo": "~49.0.15",
+    "expo-status-bar": "~1.6.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-web": "~0.19.6",
+    "react-dom": "18.2.0",
+    "@expo/webpack-config": "^19.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.6",
-    "@babel/runtime": "7.18.6",
-    "@react-native-community/eslint-config": "3.0.3",
-    "babel-jest": "28.1.1",
-    "eslint": "6.2.1",
-    "jest": "28.1.1",
-    "metro-react-native-babel-preset": "0.71.2",
-    "react-test-renderer": "17.0.0"
+    "@babel/core": "^7.20.0"
   },
-  "jest": {
-    "preset": "react-native"
-  }
+  "private": true
 }
