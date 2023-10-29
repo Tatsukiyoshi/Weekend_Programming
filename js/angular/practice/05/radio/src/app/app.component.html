@@ -1,4 +1,6 @@
-<!-- <form #myForm="ngForm">
+<!-- Normal Angular Form -->
+<!--
+<form #myForm="ngForm">
   <ng-container *ngFor="let item of data; index as i">
     <label>
       <input type="radio" name="animal" [(ngModel)]="selected" [value]="item.value"
@@ -7,14 +9,16 @@
   </ng-container>
 </form>
  -->
+<!-- Angular Material -->
 <label id="example-radio-group-label">Pick your favorite animal</label>
 <mat-radio-group
   aria-labelledby="example-radio-group-label"
   class="example-radio-group"
   [(ngModel)]="selected">
-  <mat-radio-button class="example-radio-button" *ngFor="let item of data; index as i" [value]="item.value"
+  <mat-radio-button class="example-radio-button"
+    *ngFor="let item of data; index as i" [value]="item.value" [color]="color"
     [checked]="selected == item.value" (change)="show(i)">
-    {{item.label}}
+    <span class="radio-label">{{item.label}}</span>
   </mat-radio-button>
 </mat-radio-group>
 <div>Your favorite animal is: {{this.selected}}</div>
