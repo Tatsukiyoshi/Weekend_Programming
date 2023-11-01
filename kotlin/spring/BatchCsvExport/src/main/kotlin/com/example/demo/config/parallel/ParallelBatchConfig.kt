@@ -16,6 +16,7 @@ import org.springframework.core.task.SimpleAsyncTaskExecutor
 import org.springframework.core.task.TaskExecutor
 import org.springframework.transaction.PlatformTransactionManager
 
+@Suppress("removal")
 @Configuration
 class ParallelBatchConfig: BaseConfig() {
     @Autowired

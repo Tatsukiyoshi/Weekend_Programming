@@ -3,7 +3,6 @@ package com.example.demo.config
 import com.example.demo.domain.Employee
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.configuration.annotation.StepScope
 import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
@@ -22,7 +21,6 @@ import org.springframework.transaction.PlatformTransactionManager
 import javax.sql.DataSource
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig {
     @Autowired
     private lateinit var employeeReader: ItemReader<Employee>

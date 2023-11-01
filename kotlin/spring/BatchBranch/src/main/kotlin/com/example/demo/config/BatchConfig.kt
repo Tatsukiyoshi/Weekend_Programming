@@ -4,7 +4,6 @@ import com.example.demo.listener.TaskletStepListener
 import org.springframework.batch.core.ExitStatus
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.job.flow.FlowExecutionStatus
 import org.springframework.batch.core.job.flow.JobExecutionDecider
@@ -19,7 +18,6 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig {
     @Autowired
     @Qualifier("FirstTasklet")

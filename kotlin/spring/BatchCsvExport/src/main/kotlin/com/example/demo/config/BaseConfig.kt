@@ -19,7 +19,6 @@ import org.springframework.core.io.FileSystemResource
 import org.springframework.core.io.Resource
 import java.nio.charset.StandardCharsets
 
-@EnableBatchProcessing
 open class BaseConfig {
     /** 性別の数値を文字列に変換するProcessor */
     @Autowired

@@ -5,7 +5,6 @@ import com.example.demo.validator.RequiredValidator
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.JobParametersValidator
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.job.CompositeJobParametersValidator
 import org.springframework.batch.core.job.DefaultJobParametersValidator
 import org.springframework.batch.core.job.builder.JobBuilder
@@ -20,7 +19,6 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig(val transactionManager: PlatformTransactionManager) {
     /** HelloTasklet */
     @Autowired

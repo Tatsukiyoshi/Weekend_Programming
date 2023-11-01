@@ -5,7 +5,6 @@ import com.example.demo.tasklet.SecondTasklet
 import com.example.demo.tasklet.ThirdTasklet
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.job.builder.FlowBuilder
 import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.job.flow.Flow
@@ -23,7 +22,6 @@ import org.springframework.core.task.TaskExecutor
 import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig {
     @Autowired
     @Qualifier("FirstTasklet")

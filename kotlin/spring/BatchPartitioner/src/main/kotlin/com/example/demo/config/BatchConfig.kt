@@ -4,7 +4,6 @@ import com.example.demo.partitioner.SamplePartitioner
 import com.example.demo.worker.WorkerTasklet
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
 import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.partition.support.Partitioner
 import org.springframework.batch.core.repository.JobRepository
@@ -18,7 +17,6 @@ import org.springframework.core.task.TaskExecutor
 import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig {
     @Autowired
     private lateinit var samplePartitioner: Partitioner

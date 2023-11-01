@@ -14,7 +14,7 @@ class TransactionConfig {
     @Autowired
     private lateinit var entityManagerFactory: EntityManagerFactory
 
-    @Bean
+    @Bean("transactionManager")
     @Primary
     fun jpaTransactionManager(): PlatformTransactionManager {
         return JpaTransactionManager(entityManagerFactory)
