@@ -4,6 +4,7 @@ import com.example.demo.domain.model.Employee
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.batch.core.ItemWriteListener
+import org.springframework.batch.item.Chunk
 import org.springframework.stereotype.Component
 import java.lang.Exception
 
@@ -14,15 +15,15 @@ class WriteListener : ItemWriteListener<Employee> {
         private var log: Logger = LoggerFactory.getLogger(this::class.java)
     }
 
-    override fun beforeWrite(items: MutableList<out Employee>) {
+    override fun beforeWrite(chunk: Chunk<out Employee>) {
         // Do Nothing
     }
 
-    override fun afterWrite(items: MutableList<out Employee>) {
-        log.debug("AfterWrite: count={}", items.size)
+    override fun afterWrite(chunk: Chunk<out Employee>) {
+        log.debug("AfterWrite: count={}", chunk.items.size)
     }
 
-    override fun onWriteError(exception: Exception, items: MutableList<out Employee>) {
+    override fun onWriteError(exception: Exception, chunk: Chunk<out Employee>) {
         log.error("WriteError: errorMessage={}", exception.message, exception)
     }
 }

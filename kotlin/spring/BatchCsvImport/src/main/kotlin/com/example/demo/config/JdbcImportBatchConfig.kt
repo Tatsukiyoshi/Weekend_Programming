@@ -4,17 +4,21 @@ import com.example.demo.domain.model.Employee
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider
 import org.springframework.batch.item.database.JdbcBatchItemWriter
 import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.transaction.PlatformTransactionManager
 import javax.sql.DataSource
 
 @Configuration
-class JdbcImportBatchConfig: BaseConfig() {
+class JdbcImportBatchConfig(val transactionManager: PlatformTransactionManager) : BaseConfig() {
     /** DataSource(JDBCで必着) */
     @Autowired
     private lateinit var datasource: DataSource
@@ -41,9 +45,9 @@ class JdbcImportBatchConfig: BaseConfig() {
 
     /** Stepの生成(JDBC) */
     @Bean
-    fun csvImportJdbcStep(): Step {
-        return this.stepBuilderFactory.get("CsvImportJdbcStep")
-            .chunk<Employee, Employee>(10)
+    fun csvImportJdbcStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("CsvImportJdbcStep", jobRepository)
+            .chunk<Employee, Employee>(10, transactionManager)
             .reader(this.csvReader()).listener(readListener)
             .processor(compositeProcessor()).listener(processListener)
             .writer(this.jdbcWriter()).listener(writeListener)
@@ -52,10 +56,10 @@ class JdbcImportBatchConfig: BaseConfig() {
 
     /** Jobの生成(JDBC) */
     @Bean("JdbcJob")
-    fun csvImportJdbcJob(): Job? {
-        return this.jobBuilderFactory.get("CsvImportJdbcJob")
+    fun csvImportJdbcJob(jobRepository: JobRepository): Job? {
+        return JobBuilder("CsvImportJdbcJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(csvImportJdbcStep())
+            .start(csvImportJdbcStep(jobRepository, transactionManager))
             .build()
     }
 }

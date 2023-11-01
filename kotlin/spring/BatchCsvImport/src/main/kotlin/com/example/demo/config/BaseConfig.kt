@@ -4,9 +4,6 @@ import com.example.demo.domain.model.Employee
 import org.springframework.batch.core.ItemProcessListener
 import org.springframework.batch.core.ItemReadListener
 import org.springframework.batch.core.ItemWriteListener
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
-import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
-import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepScope
 import org.springframework.batch.item.ItemProcessor
 import org.springframework.batch.item.file.FlatFileItemReader
@@ -20,14 +17,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.core.io.ClassPathResource
 import java.nio.charset.StandardCharsets
 
-@EnableBatchProcessing
 abstract class BaseConfig {
-    @Autowired
-    protected lateinit var jobBuilderFactory: JobBuilderFactory
-
-    @Autowired
-    protected lateinit var stepBuilderFactory: StepBuilderFactory
-
     /** 性別の文字列を数値に変換するProcessor */
     @Autowired
     @Qualifier("GenderConvertProcessor")

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 @Component
 @StepScope
 class SamplePartitioner: Partitioner {
-    @OptIn(ExperimentalStdlibApi::class)
+    // @OptIn(ExperimentalStdlibApi::class)
     override fun partition(gridSize: Int): MutableMap<String, ExecutionContext> {
         val map = mutableMapOf<String, ExecutionContext>()
 

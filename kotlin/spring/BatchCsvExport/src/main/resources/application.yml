@@ -1,7 +1,7 @@
 spring:
   batch:
     job:
-      names: ExportParallelJob
+      name: ExportParallelJob
     jdbc:
       initialize-schema: always
       schema: classpath:org/springframework/batch/core/schema-postgresql.sql
