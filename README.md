@@ -1,8 +1,8 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23575](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/10/28 updated from 23570>>*</span>
-    ![デスクトップ](./images/Windows/20231028_Windows11_Build23575.png)
+  - [Windows Insider Dev Channel Build 23580](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/11/02 updated from 23575>>*</span>
+    ![デスクトップ](./images/Windows/20231102_Windows11_Build23580.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -16,8 +16,8 @@
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
-  - [Visual Studio Code 1.83.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/10/12 updated from 1.83>>*</span> <BR />
-    エディタはVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
+  - [Visual Studio Code 1.84](https://code.visualstudio.com/) <span style="color: red;">*<<2023/11/02 updated from 1.83.1>>*</span> <BR />
+    開発環境はVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20231012_code_1.83.1.png)
     - 1.82で発生していたデバッグコンソールがクリアできなくなった問題は、1.82.2で解消
@@ -26,7 +26,7 @@
       ```
       git update-git-for-windows
       ```
-  - [GitHub Desktop 3.3.4](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/10/25 updated from 3.3.3>>*</span>
+  - [GitHub Desktop 3.3.5](https://desktop.github.com/release-notes/) <span style="color: red;">*<<2023/11/02 updated from 3.3.4>>*</span>
     - サイトでのリリース通知があってから、アップデートできるまでにはタイムラグがありそう
 
 ##  言語別ページ
