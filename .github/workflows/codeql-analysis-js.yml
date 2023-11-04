@@ -13,6 +13,9 @@ name: "CodeQL_JS"
 
 on:
   push:
+    paths:
+      - '**.js'
+      - '**.ts'
     branches: [ "main" ]
   pull_request:
     # The branches below must be a subset of the branches above
