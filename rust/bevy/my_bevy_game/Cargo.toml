@@ -8,5 +8,5 @@ rust-version = "1.73"
 
 [dependencies]
 bevy = "0.12"
-image = "0.24.6"
-winit = "0.28.6"
+image = "0.24.7"
+winit = "0.28.7"
