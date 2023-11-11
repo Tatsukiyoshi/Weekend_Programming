@@ -108,7 +108,7 @@ impl Summary {
 
     /// ### リスト12.9 WaitGroup構造体を利用した終了の同期化
     #[allow(dead_code)]
-    pub fn use_wait_grroup(&self){
+    pub fn use_wait_group(&self){
         thread::scope(|scope|{
             let mut handles = Vec::with_capacity(3);
             let wait_group = WaitGroup::new();  // WaitGroupの生成
@@ -153,5 +153,5 @@ pub fn thread_controller_1(){
     s.use_barrier();
 
     println!("use_wait_group()");
-    s.use_wait_grroup();
+    s.use_wait_group();
 }
