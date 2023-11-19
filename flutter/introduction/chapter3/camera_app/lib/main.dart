@@ -62,20 +62,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // カメラから写真を取得するメソッド
   Future getImageFromCamera() async {
-    final PickedFile = await imagePicker.pickImage(source: ImageSource.camera);
+    final pickedFile = await imagePicker.pickImage(source: ImageSource.camera);
     setState(() {
-      if (PickedFile != null) {
-        _image = XFile(PickedFile.path);
+      if (pickedFile != null) {
+        _image = XFile(pickedFile.path);
       }
     });
   }
 
   // ギャラリーから写真を取得するメソッド
   Future getImageFromGarally() async {
-    final PickedFile = await imagePicker.pickImage(source: ImageSource.gallery);
+    final pickedFile = await imagePicker.pickImage(source: ImageSource.gallery);
     setState(() {
-      if (PickedFile != null) {
-        _image = XFile(PickedFile.path);
+      if (pickedFile != null) {
+        _image = XFile(pickedFile.path);
       }
     });
   }
