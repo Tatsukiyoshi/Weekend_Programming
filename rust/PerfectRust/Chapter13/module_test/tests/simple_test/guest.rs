@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod simple_test {
-    use crate::target::{Guest, SampleError};
+    use module_test::target::{Guest, SampleError};
     use simple_test_case::test_case;
 
     #[test_case( 0, false,   0 ; "case01 age: 0 campaign: false expected: 0")]
