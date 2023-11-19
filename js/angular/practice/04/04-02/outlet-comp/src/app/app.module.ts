@@ -14,9 +14,10 @@ import { WingsComponent } from './wings.component';
   imports: [
     BrowserModule
   ],
-  entryComponents: [
-    BookComponent, EventComponent, WingsComponent
-  ],
+  // entryComponents deprecated from Angular 9
+  //entryComponents: [
+  // BookComponent, EventComponent, WingsComponent
+  //],
   providers: [],
   bootstrap: [AppComponent]
 })
