@@ -137,7 +137,8 @@ export class MaterialModule {
     RouterModule.forRoot(appRoutes),
     ServiceWorkerModule.register("/ngsw-worker.js", {enabled: environment.production}),
   ],
-  entryComponents: [DetailDialogComponent,SettingComponent],
+  // entryComponents deprecated from Angular 9
+  //entryComponents: [DetailDialogComponent,SettingComponent],
   declarations: [FavoriteComponent,DetailDialogComponent, ListComponent, RootComponent, ListComponent, SearchComponent,SettingComponent],
   bootstrap: [RootComponent],
   providers: [DataService, ScrollService, DbService, StateService]
