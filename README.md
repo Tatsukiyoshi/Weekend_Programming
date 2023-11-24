@@ -86,7 +86,7 @@
   - PowerShell
     - 環境変数の確認
       ```shell
-      $env:Path.Split(;)
+      $env:Path.Split(";")
       ```
     - [文字エンコードについて](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.3)
       - PowerShell上でUTF-8(BOMなし)に変更する
