@@ -22,7 +22,8 @@
 
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23590](https://blogs.windows.com/windows-insider/) <span style="color: red;">*<<2023/11/16 updated from 23585>>*</span>
+  - [Windows Insider Dev Channel Build 23590](https://aka.ms/DevLatest)
+ <span style="color: red;">*<<2023/11/16 updated from 23585>>*</span>
     ![デスクトップ](./images/Windows/20231116_Windows11_Build23590.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
