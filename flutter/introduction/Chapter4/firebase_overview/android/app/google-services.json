@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "929188211333",
+    "project_id": "taishow-firebase-overview",
+    "storage_bucket": "taishow-firebase-overview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929188211333:android:66dad384807ffe4f1ed7ec",
+        "android_client_info": {
+          "package_name": "com.example.firebase_overview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrTQXbvGOBU9k6X33GsuB0OBHi65WJtGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
