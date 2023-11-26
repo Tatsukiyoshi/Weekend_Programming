@@ -1,0 +1,14 @@
+[package]
+name = "postgresql"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+postgres = "0.19.7"
+r2d2 = "0.8.10"
+r2d2_postgres = "0.18.1"
+anyhow = "1.0.75"
+lombok = "0.4.0"
+once_cell = "1.18.0"
