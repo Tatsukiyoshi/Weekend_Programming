@@ -6,7 +6,7 @@ pub trait Repository<T, PK, UPD> {
     fn select_all(&mut self) -> Result<Vec<T>> {
         todo!()
     }
-    // 指定された主キー値に一致するレコードを取得する
+    // 指定された主キーに一致するレコードを取得する
     fn select_by_id(&mut self, _id: PK) -> Result<T> {
         todo!()
     }
@@ -14,11 +14,11 @@ pub trait Repository<T, PK, UPD> {
     fn insert(&mut self, _row: T) -> Result<UPD> {
         todo!()
     }
-    // 指定された主キー値に一致するレコードを更新する
+    // 指定された主キーに一致するレコードを更新する
     fn update_by_id(&mut self, _id: PK) -> Result<UPD> {
         todo!()
     }
-    // 指定された主キー値に一致するレコードを削除する
+    // 指定された主キーに一致するレコードを削除する
     fn delete_by_id(&mut self, _id: PK) -> Result<UPD> {
         todo!()
     }
