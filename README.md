@@ -22,9 +22,9 @@
 
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23590](https://aka.ms/DevLatest)
- <span style="color: red;">*<<2023/11/16 updated from 23585>>*</span>
-    ![デスクトップ](./images/Windows/20231116_Windows11_Build23590.png)
+  - [Windows Insider Dev Channel Build 23595](https://aka.ms/DevLatest)
+ <span style="color: red;">*<<2023/11/30 updated from 23590>>*</span>
+    ![デスクトップ](./images/Windows/20231130_Windows11_Build23595.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
@@ -33,8 +33,8 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 119.0.6045.158](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/11/16 updated from 118.0.5993.124>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20231116_Chrome_OS_Flex_119.0.6045.158.png)
+  - [Chrome OS Flex 119.0.6045.192](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2023/11/30 updated from 119.0.6045.158>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20231130_Chrome_0S_Flex_119.0.6045.192.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
@@ -43,7 +43,7 @@
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20231110_code_1.84.2.png)
     - 1.82で発生していたデバッグコンソールがクリアできなくなった問題は、1.82.2で解消
-  - [Git 2.42](https://git-scm.com/download) <span style="color: red;">*<<2023/8/26 updated from 2.41.3>>*</span>
+  - [Git 2.43](https://git-scm.com/download) <span style="color: red;">*<<2023/11/30 updated from 2.42>>*</span>
     - Windowsでの更新
       ```
       git update-git-for-windows
