@@ -1,4 +1,6 @@
 # Chrome OS Flex
+- 119.0.6045.158 <span style="color: red;">*<<2023/11/16 updated from 118.0.5993.124>>*</span>
+  ![Chrome OS Flexバージョン情報](../images/Chrome/20231116_Chrome_OS_Flex_119.0.6045.158.png)
 - 118.0.5993.124 <span style="color: red;">*<<2023/11/02 updated from 118.0.5993.86>>*</span>
   ![Chrome OS Flexバージョン情報](../images/Chrome/20231102_Chrome_OS_Flex_118.0.5993.124.png)
 - 118.0.5993.86 <span style="color: red;">*<<2023/10/20 updated from 117.0.5938.157>>*</span>
