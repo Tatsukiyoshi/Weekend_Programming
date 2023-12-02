@@ -624,6 +624,7 @@ dependencies = [
  "r2d2_postgres",
  "tokio",
  "tokio-postgres",
+ "yaml-rust",
 ]
 
 [[package]]

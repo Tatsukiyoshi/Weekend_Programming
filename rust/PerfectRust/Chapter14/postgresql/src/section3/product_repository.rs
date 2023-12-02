@@ -21,8 +21,9 @@ impl AsyncRepository<Product, i32, bool> for ProductRepository<'_, '_> {
     /// ### リスト14.24 AsyncRepositoryトレイトの実装
     /// ### 全件取得
     async fn select_all(&mut self) -> Result<Vec<Product>> {
-        let sql = "SELECT id, name, price, category_id FROM product";
-        let rows = self.transaction.query(sql, &[]).await?;
+        use crate::section4::sql::get_sql;
+        let sql = get_sql("product", "select_all").await?;
+        let rows = self.transaction.query(sql.as_str(), &[]).await?;
         let mut products = Vec::<Product>::new();
         for row in rows.iter() {
             products.push(Product::new(row.get("id"), row.get("name"), row.get("price"), row.get("category_id"), None));
