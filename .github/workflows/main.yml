@@ -13,6 +13,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Check pr label name
+        uses: agaroot-technologies/action-restrict-pr-label@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -20,11 +21,13 @@ jobs:
             main <- feature/* [feature]
 
       - name: Check head branch name
+        uses: agaroot-technologies/action-restrict-head-branch@v1
         with:
           rules: |
             feature/* dependabot/*
 
       - name: Check base branch name
+        uses: agaroot-technologies/action-restrict-base-branch@v1
         with:
           rules: |
             main <- feature/* dependabot/* 
