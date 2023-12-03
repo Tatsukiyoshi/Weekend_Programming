@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "162013296430",
+    "project_id": "taishow-firebase-overview2023",
+    "storage_bucket": "taishow-firebase-overview2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162013296430:android:9dadb5194a978bcd47acbf",
+        "android_client_info": {
+          "package_name": "com.example.firebase_overview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162013296430-knctqdoski38imit7dvl4bc8cmr173b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_3TD50piPbyZZMdM0eiQeJzbsl1ivCPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162013296430-knctqdoski38imit7dvl4bc8cmr173b1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "162013296430-1ubon3857sdhcldjja6eb9p75fsnrkus.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseOverview.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162013296430:android:6cbed1d1beaeecb947acbf",
+        "android_client_info": {
+          "package_name": "com.example.google_signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162013296430-knctqdoski38imit7dvl4bc8cmr173b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_3TD50piPbyZZMdM0eiQeJzbsl1ivCPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162013296430-knctqdoski38imit7dvl4bc8cmr173b1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "162013296430-1ubon3857sdhcldjja6eb9p75fsnrkus.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseOverview.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
