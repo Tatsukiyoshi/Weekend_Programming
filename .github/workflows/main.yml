@@ -18,7 +18,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           rules: |
-            main <- *Update* [Update]
+            main <- *Update* *update* [Update]
             main <- feature/* [Feature]
 
       - name: Check head branch name
