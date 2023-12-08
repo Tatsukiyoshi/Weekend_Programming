@@ -18,8 +18,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           rules: |
-            main <- *Update* [update]
-            main <- feature/* [feature]
+            main <- *Update* [Update]
+            main <- feature/* [Feature]
 
       - name: Check head branch name
         uses: agaroot-technologies/action-restrict-head-branch@v1.0.0
