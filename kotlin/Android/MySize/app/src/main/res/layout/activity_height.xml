@@ -8,26 +8,35 @@
         tools:context=".HeightActivity">
 
     <TextView
-            android:text="@string/height"
+            android:id="@+id/height"
             android:layout_width="100dp"
             android:layout_height="48dp"
-            android:id="@+id/height"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="36sp"
-            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/height"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     <TextView
             android:text="@string/tall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView2" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
+
     <Spinner
-            android:layout_width="100dp"
+            android:id="@+id/spinner"
+            android:layout_width="112dp"
             android:layout_height="48dp"
-            android:id="@+id/spinner" android:entries="@array/txt_height_arr"
-            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/height"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:entries="@array/txt_height_arr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
     <SeekBar
             android:layout_width="0dp"
             android:layout_height="24dp"
@@ -42,22 +51,32 @@
             app:layout_constraintTop_toBottomOf="@+id/seekBar" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp">
+
         <RadioButton
-                android:text="@string/height1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/height1" android:layout_weight="1"/>
+                android:id="@+id/height1"
+                android:layout_width="75dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/height1" />
+
         <RadioButton
-                android:text="@string/height2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/height2" android:layout_weight="1"/>
+                android:id="@+id/height2"
+                android:layout_width="75dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/height2" />
+
         <RadioButton
-                android:text="@string/height3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/height3"/>
+                android:id="@+id/height3"
+                android:layout_width="73dp"
+                android:layout_height="48dp"
+                android:text="@string/height3" />
+
         <RadioButton
-                android:text="@string/height4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/height4" android:layout_weight="1"/>
+                android:id="@+id/height4"
+                android:layout_width="75dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/height4" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
