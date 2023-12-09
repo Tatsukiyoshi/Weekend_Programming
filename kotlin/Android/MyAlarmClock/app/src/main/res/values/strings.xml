@@ -3,4 +3,5 @@
     <string name="cancelAlarmText">アラームをキャンセルする</string>
     <string name="setAlarmText">アラームをセットする</string>
     <string name="timeTextFormat">%1$02d:%2$02d</string>
+    <string name="AlarmDescription">アラーム</string>
 </resources>
