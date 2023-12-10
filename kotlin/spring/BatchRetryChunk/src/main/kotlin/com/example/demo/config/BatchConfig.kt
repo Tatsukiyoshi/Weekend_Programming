@@ -2,10 +2,10 @@ package com.example.demo.config
 
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
-import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
-import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.ItemProcessor
 import org.springframework.batch.item.ItemReader
 import org.springframework.batch.item.ItemWriter
@@ -14,21 +14,13 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.retry.RetryListener
+import org.springframework.transaction.PlatformTransactionManager
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig(
     @Value("\${retry.num}")
     private var retryNum: Int
 ) {
-    /** StepBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var stepBuilderFactory: StepBuilderFactory
-
-    /** JobBuilderのFactoryクラス */
-    @Autowired
-    private lateinit var jobBuilderFactory: JobBuilderFactory
-
     @Autowired
     private lateinit var reader: ItemReader<String>
 
@@ -43,9 +35,9 @@ class BatchConfig(
 
     /** Stepを生成 */
     @Bean
-    fun retryChunkStep(): Step {
-        return stepBuilderFactory.get("RetryChunkStep")
-            .chunk<String, String>(10)
+    fun retryChunkStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("RetryChunkStep", jobRepository)
+            .chunk<String, String>(10, transactionManager)
             .reader(this.reader)
             .processor(this.processor)
             .writer(this.writer)
@@ -58,10 +50,10 @@ class BatchConfig(
 
     /** Jobを生成 */
     @Bean
-    fun retryTaskletJob(): Job {
-        return jobBuilderFactory.get("RetryChunkJob")
+    fun retryTaskletJob(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Job {
+        return JobBuilder("RetryChunkJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(retryChunkStep())
+            .start(retryChunkStep(jobRepository, transactionManager))
             .build()
     }
 }

@@ -4,7 +4,7 @@ spring:
       initialize-schema: never
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/batch2
+    url: jdbc:postgresql://localhost:5432/batch
     username: spring
     password: password
   jpa:

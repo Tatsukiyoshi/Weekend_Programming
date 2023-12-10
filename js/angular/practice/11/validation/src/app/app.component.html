@@ -1,0 +1,22 @@
+<form [formGroup]="myForm" (ngSubmit)="show()">
+  <div>
+    <label for="url">URL：</label><br />
+    <input id="url" name="url" type="url" formControlName="url" />
+    <span *ngIf="myForm.controls.url.errors?.['required']">URLは必須です。</span>
+    <span *ngIf="myForm.controls.url.errors?.['url']">URLを正しい形式で入力してください。</span>
+  </div>
+  <div>
+    <label for="mail">メールアドレス：</label><br />
+    <input id="mail" name="mail" type="email" formControlName="mail" />
+    <span *ngIf="myForm.controls.mail.errors?.['required']">メールアドレスは必須です。</span>
+    <span *ngIf="myForm.controls.mail.errors?.['email']">メールアドレスを正しい形式で入力してください。</span>
+  </div>
+  <div>
+    <label for="mail_confirm">メールアドレス（確認）：</label><br />
+    <input id="mail_confirm" name="mail_confirm" type="email" formControlName="mail_confirm" />
+    <span *ngIf="myForm.controls.mail_confirm.errors?.['equalTo']">メールアドレス同士が等しくなければなりません。</span>
+  </div>
+  <div>
+    <input type="submit" value="送信" [disabled]="myForm.invalid" />
+  </div>
+</form>

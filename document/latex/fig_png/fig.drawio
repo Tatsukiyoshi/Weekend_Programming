@@ -1,0 +1,22 @@
+<mxfile host="65bd71144e">
+    <diagram id="KOAk2h8xQ7xHjTsEFXpv" name="ページ1">
+        <mxGraphModel dx="1002" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Window" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="項目" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+                    <mxGeometry x="20" y="85" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="OK" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="2">
+                    <mxGeometry x="65" y="200" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Line 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=" vertex="1" parent="2">
+                    <mxGeometry x="80" y="85" width="150" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

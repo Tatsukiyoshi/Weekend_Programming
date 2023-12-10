@@ -19,15 +19,15 @@
     <EditText
         android:id="@+id/dateEdit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:autofillHints=""
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateText"
-        android:autofillHints=""
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
 
     <TextView
         android:id="@+id/titleText"
@@ -42,17 +42,17 @@
     <EditText
         android:id="@+id/titleEdit"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleText"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <TextView
         android:id="@+id/detailText"

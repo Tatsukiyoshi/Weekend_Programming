@@ -5,7 +5,10 @@ import com.example.demo.domain.model.Employee
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
 import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.database.JdbcPagingItemReader
 import org.springframework.batch.item.database.builder.JdbcPagingItemReaderBuilder
 import org.springframework.batch.item.database.support.SqlPagingQueryProviderFactoryBean
@@ -14,6 +17,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.jdbc.core.BeanPropertyRowMapper
 import org.springframework.jdbc.core.RowMapper
+import org.springframework.transaction.PlatformTransactionManager
 import javax.sql.DataSource
 
 @Configuration
@@ -60,9 +64,9 @@ class JdbcPagingBatchConfig : BaseConfig() {
 
     /** JdbcPagingItemReaderを使用するStepの生成 */
     @Bean
-    fun exportJdbcPagingStep(): Step {
-        return this.stepBuilderFactory.get("ExportJdbcPagingStep")
-            .chunk<Employee, Employee>(10)
+    fun exportJdbcPagingStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("ExportJdbcPagingStep", jobRepository)
+            .chunk<Employee, Employee>(10, transactionManager)
             .reader(jdbcPagingReader()).listener(readListener)
             .processor(this.genderConvertProcessor)
             .writer(csvWriter()).listener(writeListener)
@@ -71,10 +75,10 @@ class JdbcPagingBatchConfig : BaseConfig() {
 
     /** JdbcPagingItemReaderを使用するJobの生成 */
     @Bean("JdbcPagingJob")
-    public fun exportJdbcPagingJob(): Job {
-        return this.jobBuilderFactory.get("ExportJdbcPagingJob")
+    public fun exportJdbcPagingJob(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Job {
+        return JobBuilder("ExportJdbcPagingJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(exportJdbcPagingStep())
+            .start(exportJdbcPagingStep(jobRepository, transactionManager))
             .build()
     }
 }

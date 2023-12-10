@@ -3,11 +3,11 @@ package com.example.demo.config
 import com.example.demo.domain.Employee
 import org.springframework.batch.core.Job
 import org.springframework.batch.core.Step
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
-import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
-import org.springframework.batch.core.configuration.annotation.StepBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepScope
+import org.springframework.batch.core.job.builder.JobBuilder
 import org.springframework.batch.core.launch.support.RunIdIncrementer
+import org.springframework.batch.core.repository.JobRepository
+import org.springframework.batch.core.step.builder.StepBuilder
 import org.springframework.batch.item.ItemReader
 import org.springframework.batch.item.ItemWriter
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider
@@ -17,17 +17,11 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.transaction.PlatformTransactionManager
 import javax.sql.DataSource
 
 @Configuration
-@EnableBatchProcessing
 class BatchConfig {
-    @Autowired
-    private lateinit var jobBuilderFactory: JobBuilderFactory
-
-    @Autowired
-    private lateinit var stepBuilderFactory: StepBuilderFactory
-
     @Autowired
     private lateinit var employeeReader: ItemReader<Employee>
 
@@ -61,9 +55,9 @@ class BatchConfig {
 
     /** Stepの生成 */
     @Bean
-    fun inMemoryStep(): Step {
-        return this.stepBuilderFactory.get("InMemoryStep")
-            .chunk<Employee, Employee>(1)
+    fun inMemoryStep(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Step {
+        return StepBuilder("InMemoryStep", jobRepository)
+            .chunk<Employee, Employee>(1, transactionManager)
             .reader(employeeReader)
             .writer(jpaWriter)
             .build()
@@ -71,10 +65,10 @@ class BatchConfig {
 
     /** Jobの生成 */
     @Bean
-    fun inMemoryJob(): Job {
-        return this.jobBuilderFactory.get("InMemoryJob")
+    fun inMemoryJob(jobRepository: JobRepository, transactionManager: PlatformTransactionManager): Job {
+        return JobBuilder("InMemoryJob", jobRepository)
             .incrementer(RunIdIncrementer())
-            .start(inMemoryStep())
+            .start(inMemoryStep(jobRepository, transactionManager))
             .build()
     }
 }

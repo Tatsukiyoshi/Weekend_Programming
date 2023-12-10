@@ -12,17 +12,7 @@
 			{
 				"previewLimit": 50,
 				"server": "localhost",
-				"port": 5433,
-				"driver": "PostgreSQL",
-				"name": "batch",
-				"username": "spring",
-				"password": "password",
-				"database": "batch"
-			},
-			{
-				"previewLimit": 50,
-				"server": "localhost",
-				"port": 5433,
+				"port": 5432,
 				"askForPassword": true,
 				"driver": "PostgreSQL",
 				"name": "readonly_user",
@@ -32,7 +22,7 @@
 			{
 				"previewLimit": 50,
 				"server": "localhost",
-				"port": 5433,
+				"port": 5432,
 				"askForPassword": true,
 				"driver": "PostgreSQL",
 				"name": "prisma",
@@ -42,7 +32,17 @@
 			{
 				"previewLimit": 50,
 				"server": "localhost",
-				"port": 5433,
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"name": "batch",
+				"username": "spring",
+				"password": "password",
+				"database": "batch"
+			},
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
 				"driver": "PostgreSQL",
 				"name": "batch2",
 				"database": "batch2",
@@ -51,6 +51,6 @@
 			}
 		],
 		"java.configuration.updateBuildConfiguration": "automatic",
-		"dotnet.defaultSolution": "Weekend_Programming/net/MAUI/MauiApp1/MauiApp1.sln"
+		"dotnet.defaultSolution": "Weekend_Programming/net/Web/WebApp1/HelloWorld.sln"
 	}
 }
