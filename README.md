@@ -22,9 +22,9 @@
 
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23601](https://aka.ms/DevLatest)
- <span style="color: red;">*<<2023/12/08 updated from 23595>>*</span>
-    ![デスクトップ](./images/Windows/20231208_Windows11_Build23601.png)
+  - [Windows Insider Dev Channel Build 23606](https://aka.ms/DevLatest)
+    <span style="color: red;">*<<2023/12/14 updated from 23601>>*</span>
+    ![デスクトップ](./images/Windows/20231214_Windows11_Build23606.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
     ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
