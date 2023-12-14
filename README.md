@@ -38,7 +38,7 @@
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
-  - [Visual Studio Code 1.85](https://code.visualstudio.com/) <span style="color: red;">*<<2023/12/08 updated from 1.84.2>>*</span> <BR />
+  - [Visual Studio Code 1.85.1](https://code.visualstudio.com/) <span style="color: red;">*<<2023/12/14 updated from 1.85>>*</span> <BR />
     開発環境はVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
     ![Upgrade on Chrome OS Flex](./images/Chrome/20231208_code_1.85.png)
