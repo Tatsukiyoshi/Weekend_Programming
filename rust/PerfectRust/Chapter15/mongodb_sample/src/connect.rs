@@ -10,10 +10,10 @@ pub struct SampleMongoClient {
     database:   Database
 }
 impl SampleMongoClient {
-    /// ## Client構造体のbarabse()メソッドを利用した接続
+    /// ## Client構造体のdatabase()メソッドを利用した接続
     /// ### リスト15.2 データベース接続機能の実装
     /// ### 引数 uri: 接続URI
-    /// ### 戻り値 name: 接続データベース名
+    /// ### 引数 name: 接続データベース名
     pub async fn new(uri: &str, name: &str) -> Result<Self, Error> {
         // MongoDBに接続してClientを取得する
         let cli = Client::with_uri_str(uri).await?;
