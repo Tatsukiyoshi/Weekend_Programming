@@ -1,0 +1,298 @@
+{
+  "project_info": {
+    "project_number": "163776987535",
+    "project_id": "taishow2006-firebase-overview",
+    "storage_bucket": "taishow2006-firebase-overview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:610223227529d7cb834bfa",
+        "android_client_info": {
+          "package_name": "com.example.cloud_messaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:329c8e425f3a5428834bfa",
+        "android_client_info": {
+          "package_name": "com.example.firebase_overview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:0741f89bee2e12b5834bfa",
+        "android_client_info": {
+          "package_name": "com.example.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:790883962f8131f9834bfa",
+        "android_client_info": {
+          "package_name": "com.example.functions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:2569d21db7769372834bfa",
+        "android_client_info": {
+          "package_name": "com.example.google_signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:a89fcfd7c79df4fb834bfa",
+        "android_client_info": {
+          "package_name": "com.example.in_app_messaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:18ed136fb395899e834bfa",
+        "android_client_info": {
+          "package_name": "com.example.machine_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163776987535:android:ae6f95610a88989a834bfa",
+        "android_client_info": {
+          "package_name": "com.example.storage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZaIYEXVVh3pyyBL23f3_LYhEuT1oBSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163776987535-4lbfnf6p73rtpchpc3diptn420q2g8jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "163776987535-5iibrn49f7etej4b027uk7nd2slgpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cloudMessaging"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
