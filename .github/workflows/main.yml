@@ -19,15 +19,16 @@ jobs:
         with:
           rules: |
             main <- *Update* *update* [Update]
+            main <- *feature* [Feature]
 
       - name: Check head branch name
         uses: agaroot-technologies/action-restrict-head-branch@v1.0.0
         with:
           rules: |
-            feature/* dependabot/*
+            feature/* dependabot/* update/*
 
       - name: Check base branch name
         uses: agaroot-technologies/action-restrict-base-branch@v1.0.0
         with:
           rules: |
-            main <- feature/* dependabot/* 
+            main <- feature/* dependabot/* update/*
