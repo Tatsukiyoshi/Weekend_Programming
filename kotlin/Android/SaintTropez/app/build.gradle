@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
         applicationId "com.example.sainttropez"
@@ -28,7 +28,7 @@ android {
         enabled = true
     }
     namespace 'com.example.sainttropez'
-    buildToolsVersion '33.0.0'
+    buildToolsVersion '34.0.0'
 }
 
 dependencies {
@@ -36,7 +36,7 @@ dependencies {
     //noinspection GradleDependency
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'

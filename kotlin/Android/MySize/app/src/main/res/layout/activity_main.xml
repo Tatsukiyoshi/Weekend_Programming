@@ -22,7 +22,7 @@
 
     <EditText
             android:id="@+id/neck"
-            android:layout_width="70dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="198dp"
@@ -31,7 +31,6 @@
             android:ems="10"
             android:hint="@string/neckHint"
             android:inputType="numberDecimal"
-            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
             app:layout_constraintBottom_toTopOf="@+id/waist"
             app:layout_constraintEnd_toEndOf="@+id/waist"
@@ -40,7 +39,7 @@
 
     <EditText
             android:id="@+id/sleeve"
-            android:layout_width="69dp"
+            android:layout_width="80dp"
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -59,8 +58,8 @@
 
     <EditText
             android:id="@+id/inseam"
-            android:layout_width="71dp"
-            android:layout_height="46dp"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="@string/inseamHint"
@@ -72,7 +71,7 @@
 
     <EditText
             android:id="@+id/waist"
-            android:layout_width="91dp"
+            android:layout_width="80dp"
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
@@ -94,7 +93,7 @@
     <ImageButton
             android:id="@+id/heightButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/heightDescription"

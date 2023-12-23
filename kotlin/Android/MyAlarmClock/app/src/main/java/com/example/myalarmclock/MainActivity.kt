@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener,
     override fun onSelected(year: Int, month: Int, date: Int) {
         val c = Calendar.getInstance()
         c.set(year, month, date)
-        binding.dateText.text = DateFormat.format("yyyy/mm/dd", c)
+        binding.dateText.text = DateFormat.format("yyyy/MM/dd", c)
     }
 
     override fun onSelected(hourOfDay: Int, minute: Int) {
@@ -63,8 +63,6 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener,
             val dialog = TimeAlertDialog()
             dialog.show(supportFragmentManager, "alert_dialog")
         }
-
-        setContentView(R.layout.activity_main)
 
         binding.setAlarm.setOnClickListener {
             //val calendar = Calendar.getInstance()
