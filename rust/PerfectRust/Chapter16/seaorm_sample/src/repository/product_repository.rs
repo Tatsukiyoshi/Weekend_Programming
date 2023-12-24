@@ -2,7 +2,8 @@ use anyhow::{Error, Result};
 use async_trait::async_trait;
 use sea_orm::{ActiveModelTrait, ColumnTrait, DatabaseTransaction, EntityTrait, IntoActiveModel, QueryFilter, QueryOrder};
 use sea_orm::ActiveValue::Set;
-use crate::models::prelude::Product;
+use crate::models::prelude::{Product, ProductCategory};
+use crate::models::{product, product_category};
 use crate::models::product::Model;
 use crate::repository::repository::Repository;
 
@@ -80,6 +81,15 @@ impl Repository for ProductRepository {
         let delete_row = target.unwrap().into_active_model();
         let delete_result = delete_row.delete(tran).await?;
         Ok(delete_result.rows_affected)
+    }
+
+    /// ### リスト16.17 1:1結合
+    async fn select_by_id_join_product_category(&self, tran: &DatabaseTransaction, id: i32)
+        -> Result<Vec<(product::Model, Option<product_category::Model>)>> {
+        let product_and_category = Product::find_by_id(id)
+            .find_also_related(ProductCategory)
+            .all(tran).await?;
+        Ok(product_and_category)
     }
 }
 
@@ -213,6 +223,19 @@ mod tests {
         println!("{:?}", errmsg);
         assert_eq!(errmsg, expected);
         transaction.rollback().await?;
+        Ok(())
+    }
+
+    /// select_by_id_join_product_category()メソッドのテスト
+    #[tokio::test]
+    async fn select_by_id_join_product_category() -> Result<()> {
+        env_logger::builder().filter_level(log::LevelFilter::Debug).init();
+        let pool = SamplePool::get().await?;
+        let transaction = pool.begin().await?;
+        let repository = ProductRepository::new();
+
+        let product = repository.select_by_id_join_product_category(&transaction, 1).await?;
+        println!("{:?}", product);
         Ok(())
     }
 }

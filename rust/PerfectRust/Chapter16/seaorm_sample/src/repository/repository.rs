@@ -1,5 +1,8 @@
 use anyhow::Result;
 use async_trait::async_trait;
+use sea_orm::DatabaseTransaction;
+use crate::models::{product, product_category};
+
 /// ## 16-4.CRUD操作の準備
 /// ### リスト16.6 Repositoryトレイト
 #[async_trait]
@@ -12,4 +15,6 @@ pub trait Repository {
     async fn insert(&self, tran: &Self::T, row: Self::M) -> Result<Self::M>;
     async fn update_by_id(&self, tran: &Self::T, row: Self::M) -> Result<Self::M>;
     async fn delete_by_id(&self, tran: &Self::T, id: i32) -> Result<u64>;
+    async fn select_by_id_join_product_category(&self, tran: &DatabaseTransaction, id: i32)
+                                                -> Result<Vec<(product::Model, Option<product_category::Model>)>>;
 }
