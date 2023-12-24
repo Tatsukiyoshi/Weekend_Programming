@@ -1,6 +1,6 @@
 use anyhow::{Error, Result};
 use async_trait::async_trait;
-use sea_orm::{ActiveModelTrait, ColumnTrait, DatabaseTransaction, EntityTrait, IntoActiveModel, QueryFilter, QueryOrder};
+use sea_orm::{ActiveModelTrait, ColumnTrait, ConnectionTrait, DatabaseTransaction, DbBackend, EntityTrait, IntoActiveModel, QueryFilter, QueryOrder, Statement};
 use sea_orm::ActiveValue::Set;
 use crate::models::prelude::{Product, ProductCategory};
 use crate::models::{product, product_category};
@@ -90,6 +90,32 @@ impl Repository for ProductRepository {
             .find_also_related(ProductCategory)
             .all(tran).await?;
         Ok(product_and_category)
+    }
+
+    /// ### リスト16.18 問い合わせの実装
+    async fn select_by_id_stmt(&self, tran: &DatabaseTransaction, id: i32) -> Result<Model> {
+        let stmt = Statement::from_sql_and_values(
+            DbBackend::Postgres,    // データベースの種類を設定する
+            // 利用するSQLステートメントを設定
+            "SELECT id, name, price, category_id FROM product WHERE id = $1",
+            vec![id.into()]);   // プレースホルダにマッピングする値を設定する
+        let result = Product::find().from_raw_sql(stmt).one(tran).await?;
+        match result {
+            Some(r) => Ok(r),
+            None => Err(Error::msg(format!("id:{}に一致する商品が見つかりません。", id)))
+        }
+    }
+
+    /// ### リスト16.19 更新系SQLの実行
+    async fn insert_stmt(&self, tran: &DatabaseTransaction, row: Model) -> Result<u64> {
+        let stmt = Statement::from_sql_and_values(
+            DbBackend::Postgres,    // データベースの種類を設定
+            // 利用するSQLステートメントを設定
+            "INSERT INTO product (name, price, category_id) VALUES ($1, $2, $3)",
+            // プレースホルダにマッピングする値を設定する
+            vec![row.name.into(), row.price.into(), row.category_id.into()]);
+        let result = tran.execute(stmt).await?;
+        Ok(result.rows_affected())
     }
 }
 
@@ -236,6 +262,34 @@ mod tests {
 
         let product = repository.select_by_id_join_product_category(&transaction, 1).await?;
         println!("{:?}", product);
+        Ok(())
+    }
+
+    /// select_by_id_stmt()メソッドのテスト
+    #[tokio::test]
+    async fn select_by_id_stmt() -> Result<()> {
+        env_logger::builder().filter_level(log::LevelFilter::Debug).init();
+        let pool = SamplePool::get().await?;
+        let transaction = pool.begin().await?;
+        let repository = ProductRepository::new();
+
+        let result = repository.select_by_id_stmt(&transaction, 10).await?;
+        println!("{:?}", result);
+        Ok(())
+    }
+
+    /// ### insert_stmt()メソッドのテスト
+    #[tokio::test]
+    async fn insert_stmt() -> Result<()> {
+        env_logger::builder().filter_level(log::LevelFilter::Debug).init();
+        let pool = SamplePool::get().await?;
+        let transaction = pool.begin().await?;
+        let repository = ProductRepository::new();
+        let new_product = Model{id: 0, name: Some("商品ーLMNO".to_owned()), price: Some(200), category_id: Some(1)};
+        let inserted_count = repository.insert_stmt(&transaction, new_product).await?;
+        assert_eq!(1, inserted_count);
+        println!("{:?}件追加しました。", inserted_count);
+        transaction.rollback().await?;
         Ok(())
     }
 }
