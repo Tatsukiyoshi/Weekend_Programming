@@ -9,7 +9,7 @@ pub trait Repository {
     async fn select_all(&self, tran: &Self::T) -> Result<Vec<Self::M>>;
     async fn select_by_id(&self, tran: &Self::T, id: i32) -> Result<Self::M>;
     async fn select_by_name_like(&self, tran: &Self::T, keyword: &str) -> Result<Vec<Self::M>>;
-    async fn insert(&self, tran: &Self::T, row: &Self::M) -> Result<Self::M>;
-    async fn update_by_id(&self, tran: &Self::T, row: &Self::M) -> Result<Self::M>;
+    async fn insert(&self, tran: &Self::T, row: Self::M) -> Result<Self::M>;
+    async fn update_by_id(&self, tran: &Self::T, row: Self::M) -> Result<Self::M>;
     async fn delete_by_id(&self, tran: &Self::T, id: i32) -> Result<u64>;
 }
