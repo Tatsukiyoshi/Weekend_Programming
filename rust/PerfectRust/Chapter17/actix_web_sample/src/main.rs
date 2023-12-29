@@ -53,5 +53,10 @@ fn set_configure(cfg: &mut ServiceConfig) -> () {
                 resource("/usepool")
                     .route(web::get().to(handler_func::use_pool))
                     .route(web::post().to(handler_func::use_pool))
+            )
+            .service(
+                resource("/calc5")
+                    .route(web::get().to(handler_func::calc_5))
+                    .route(web::post().to(handler_func::calc_5))
             ));
 }

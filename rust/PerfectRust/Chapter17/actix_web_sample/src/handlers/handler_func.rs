@@ -90,3 +90,12 @@ pub async fn use_pool(pool: web::Data<DatabaseConnection>,
     info!("{:?}", value.to_string());
     HttpResponse::Ok().content_type(mime::TEXT_PLAIN).body(value.to_string())
 }
+
+/// ## 17-6 レスポンス生成
+/// ### リスト17.16 JSONボディの生成
+pub async fn calc_5(jvalue: web::Json<AddCalc>) -> impl Responder {
+    let mut value = jvalue.into_inner();
+    value.calc();
+    info!("{:?}", value.to_string());
+    HttpResponse::Ok().content_type(mime::APPLICATION_JSON).json(value)
+}
