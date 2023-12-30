@@ -1,3 +1,4 @@
+use std::fmt::Display;
 use actix_web::{get, HttpResponse, Responder, web};
 use log::info;
 use sea_orm::{DatabaseConnection, TransactionTrait};
@@ -25,8 +26,8 @@ pub struct AddCalc {
 impl AddCalc {
     // 加算処理
     pub fn calc(&mut self){
-        let func = |v: &String| {
-            if v.eq(""){
+        let func = |v: &String| -> i32 {
+            if v.eq("") {
                 return 0;
             } else {
                 v.parse::<i32>().unwrap()
@@ -39,10 +40,11 @@ impl AddCalc {
         self.answer = Some((value1 + value2).to_string());
     }
 }
-impl ToString for AddCalc {
-    fn to_string(&self) -> String {
-        format!("{} + {} = {}", self.value1.as_ref().unwrap(),
-        self.value2.as_ref().unwrap(), self.answer.as_ref().unwrap())
+impl Display for AddCalc {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let str = format!("{} + {} = {}", self.value1.as_ref().unwrap(),
+                          self.value2.as_ref().unwrap(), self.answer.as_ref().unwrap());
+        write!(f, "{}", str)
     }
 }
 
