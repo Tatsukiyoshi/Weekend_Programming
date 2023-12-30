@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<div id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Actix Web サンプル 簡単な計算機能</a>
+            <ul class="nav">
+                <li class="nav-item"></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div id="content">
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
