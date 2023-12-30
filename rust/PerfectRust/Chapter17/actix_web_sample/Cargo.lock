@@ -190,6 +190,7 @@ dependencies = [
  "anyhow",
  "dotenv",
  "env_logger",
+ "http",
  "log",
  "mime",
  "sea-orm",

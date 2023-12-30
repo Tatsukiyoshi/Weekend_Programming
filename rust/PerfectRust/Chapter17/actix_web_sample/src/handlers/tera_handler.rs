@@ -56,3 +56,66 @@ pub async fn calc_post(form: web::Form<CalcForm>, tera: web::Data<Tera>) -> impl
         .map_err(|err| error::ErrorInternalServerError(err.to_string())).unwrap();
     HttpResponse::Ok().content_type(mime::TEXT_HTML).body(resp_body)
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::tera_handler::CalcForm;
+    use http::StatusCode;
+    use actix_web::dev::ServiceResponse;
+    use actix_web::{App, Error, test, web};
+    use actix_web::web::resource;
+    use tera::Tera;
+
+    /// ## 17-7 リクエストハンドラのテスト
+    /// ### リスト17.24 テスト用サービスの生成
+    async fn test_service() -> impl actix_web::dev::Service<actix_http::Request,
+        Response = ServiceResponse, Error = Error> {
+        // teraを生成する
+        let tera = Tera::new(concat!(env!("CARGO_MANIFEST_DIR"), "/views/**/*")).unwrap();
+        // テスト用サービスを生成する
+        let test_service = test::init_service(
+            App::new()
+                .app_data(web::Data::new(tera.clone()))
+                .service(
+                    web::scope("/sample")
+                        .service(
+                            resource("/calc_form")
+                            .route(web::get().to(super::calc_get))
+                            .route(web::post().to(super::calc_post)))
+                )
+        ).await;
+        test_service
+    }
+
+    /// ### リスト17.25 GETリクエストのテスト
+    #[actix_web::test]
+    async fn test_get_request(){
+        let test_service = test_service().await;
+        let enter_request = test::TestRequest::get().uri("/sample/calc_form").to_request();
+        // リクエストハンドラenter()を実行する
+        let response = test::call_service(&test_service, enter_request).await;
+        println!("{:?}", response.headers());
+        println!("{:?}", response.response().body());
+        assert_eq!(response.status(), StatusCode::OK);
+    }
+
+    /// ### リスト17.25 POSTリクエストのテスト
+    #[actix_web::test]
+    async fn test_post_request() -> () {
+        let test_service = test_service().await;
+        // 入力データを準備する
+        let calc_form = CalcForm{
+            value1: Some("100".to_owned()),
+            value2: Some("200".to_owned()),
+            opt: Some("1".to_owned())
+        };
+        // CalcFormを格納したPostリクエストを生成する
+        let answer_request = test::TestRequest::post()
+            .uri("/sample/calc_form").set_form(&calc_form).to_request();
+        // リクエストハンドラcalc_post()を実行する
+        let response = test::call_service(&test_service, answer_request).await;
+        println!("{:?}", response.headers());
+        println!("{:?}", response.response().body());
+        assert_eq!(response.status(), StatusCode::OK);
+    }
+}

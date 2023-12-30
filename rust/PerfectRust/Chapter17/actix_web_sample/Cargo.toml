@@ -16,3 +16,4 @@ anyhow = "1.0.77"
 dotenv = "0.15.0"
 serde = {version = "1.0.193", features = ["derive"]}
 sea-orm = { version = "0.12.10" , features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
+http = "0.2.11"
