@@ -1,2 +1,2 @@
 pub mod error;
-mod ProductRegisterHandler;
+mod product_register_handler;

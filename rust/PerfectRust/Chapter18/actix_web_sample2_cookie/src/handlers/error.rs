@@ -1,10 +1,10 @@
 use std::fmt::{Display, Formatter};
 use thiserror::Error;
 use actix_web::{HttpResponse, ResponseError , http::StatusCode};
-use log::{error,info};
-use lib::error::AppError;
+use log::{error, info};
+use crate::lib::error::AppError;
 use crate::helpers::UiHelper;
-use crate::Result;
+pub type Result<T> = anyhow::Result<T , WebAppError>;
 ///
 /// Webアプリケーションエラー型
 ///
