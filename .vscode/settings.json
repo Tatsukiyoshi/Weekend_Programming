@@ -4,16 +4,6 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 5433,
-            "driver": "PostgreSQL",
-            "name": "batch",
-            "username": "spring",
-            "password": "password",
-            "database": "batch"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5433,
             "askForPassword": true,
             "driver": "PostgreSQL",
             "name": "readonly_user",
@@ -33,7 +23,17 @@
         {
             "previewLimit": 50,
             "server": "localhost",
-            "port": 5433,
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "batch",
+            "username": "spring",
+            "password": "password",
+            "database": "batch"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
             "driver": "PostgreSQL",
             "name": "batch2",
             "database": "batch2",
@@ -46,5 +46,6 @@
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~4",
     "azureFunctions.preDeployTask": "publish (functions)",
-    "azureFunctions.projectSubpath": "net\\Azure\\HttpExample"
+    "azureFunctions.projectSubpath": "net\\Azure\\HttpExample",
+    "php.version": "v8.3"
 }
