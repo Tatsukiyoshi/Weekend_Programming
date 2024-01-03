@@ -1,10 +1,10 @@
-/// ## 18-2 validatorクレート
-/// ### リスト18.8 関数を利用した検証の実装
 use std::collections::HashMap;
 use serde::{de, Deserialize, Serialize};
 use validator::{validate_length, validate_range, validate_required};
-use crate::validation_error::{AppValidator, ValidationError};
+use crate::web::forms::validation_error::{AppValidator, ValidationError};
 
+/// ## 18-2 validatorクレート
+/// ### リスト18.8 関数を利用した検証の実装
 /// リスト18.10 空の文字列の場合はNoneにする
 pub fn empty_string_as_none<'de, T, D>(deserializer: D) -> Result<Option<T>, D::Error>
     where T: de::Deserialize<'de>, D: de::Deserializer<'de> {

@@ -2,9 +2,9 @@ use std::fmt::{Display, Formatter};
 use thiserror::Error;
 use actix_web::{HttpResponse, ResponseError , http::StatusCode};
 use log::{error, info};
-use crate::lib::error::AppError;
-use crate::helpers::UiHelper;
-pub type Result<T> = anyhow::Result<T , WebAppError>;
+use crate::service::error::AppError;
+use crate::web::handlers::UiHelper;
+pub type Result<T> = anyhow::Result<T , WebAppError>;   // カスタムResult型
 ///
 /// Webアプリケーションエラー型
 ///

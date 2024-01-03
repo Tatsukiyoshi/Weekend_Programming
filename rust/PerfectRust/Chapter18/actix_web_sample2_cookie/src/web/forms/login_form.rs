@@ -1,8 +1,6 @@
 use std::collections::HashMap;
-
 use serde::{Deserialize, Serialize};
-
-use crate::validation_error::{AppValidator, ValidationError};
+use crate::web::forms::validation_error::{AppValidator, ValidationError};
 
 /// ## 18-2 validatorクレート
 /// ### リスト18.7 検証定義と実装

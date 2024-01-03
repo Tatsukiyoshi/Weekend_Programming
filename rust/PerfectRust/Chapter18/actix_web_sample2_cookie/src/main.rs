@@ -1,9 +1,6 @@
-mod helpers;
-mod handlers;
-mod validation_error;
-mod login_form;
-mod product_regist_form;
-mod product_search_form;
+mod web;
+mod api;
+mod service;
 
 use actix_web::{App, HttpServer, middleware};
 use actix_web::cookie::time::Duration;

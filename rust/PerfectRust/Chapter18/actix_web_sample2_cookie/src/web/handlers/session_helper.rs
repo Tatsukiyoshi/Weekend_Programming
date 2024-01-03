@@ -1,8 +1,7 @@
 use actix_session::Session;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
-use crate::handlers::error::WebAppError;
-pub type Result<T> = anyhow::Result<T , WebAppError>;
+use crate::web::handlers::error::{Result, WebAppError};
 
 /// ## 18-1 actix-sessionクレート
 /// ### リスト18.3 Session操作ヘルパ

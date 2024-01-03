@@ -1,11 +1,10 @@
-/// ## 18-1 actix-sessionクレート
-/// ### リスト18.4 Session操作ヘルパの利用
 use actix_session::Session;
 use actix_web::Responder;
-use crate::handlers::error::WebAppError;
-use crate::helpers::session_helper;
-pub type Result<T> = anyhow::Result<T , WebAppError>;
+use crate::web::handlers::error::{Result, WebAppError};
+use crate::web::handlers::session_helper;
 
+/// ## 18-1 actix-sessionクレート
+/// ### リスト18.4 Session操作ヘルパの利用
 // 商品登録リクエストハンドラ
 pub struct ProductRegisterHandler;
 

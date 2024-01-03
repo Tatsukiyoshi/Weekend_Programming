@@ -1,9 +1,9 @@
-/// ## 18-2 validatorクレート
-/// ### リスト18.9 任意の関数の割り当て
 use std::borrow::Cow;
 use serde::Deserialize;
-use crate::validation_error::ValidationError;
+use crate::web::forms::validation_error::ValidationError;
 
+/// ## 18-2 validatorクレート
+/// ### リスト18.9 任意の関数の割り当て
 /// 商品検索用構造体
 #[derive(Deserialize, Validate, Debug)]
 pub struct ProductSearchForm {

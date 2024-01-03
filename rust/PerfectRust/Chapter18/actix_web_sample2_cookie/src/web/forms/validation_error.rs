@@ -1,10 +1,10 @@
-/// ## 18-2 validatorクレート
-/// ### リスト18.6 検証エラーと検証トレイト
 use std::collections::HashMap;
 use std::fmt::{Display, Formatter};
 use anyhow::Result;
 use thiserror::Error;
 
+/// ## 18-2 validatorクレート
+/// ### リスト18.6 検証エラーと検証トレイト
 // 入力値検証エラー
 #[derive(Debug, Error)]
 pub struct ValidationError {
