@@ -8,7 +8,6 @@ use thiserror::Error;
 use crate::service::error::AppError;
 
 pub type Result<T> = anyhow::Result<T , ApiAppError>;   // カスタムResult型
-
 /// ## 18-4 jsonwebtokenクレート
 /// ### リスト18.20 エラーレスポンスの送信
 /// エラー情報構造体

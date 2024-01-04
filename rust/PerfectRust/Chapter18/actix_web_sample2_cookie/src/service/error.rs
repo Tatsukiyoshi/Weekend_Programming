@@ -1,10 +1,8 @@
 use sea_orm::DbErr;
 use thiserror::Error;
-
 /// ## 18-5 アプリケーションの構成
 /// ### リスト18.33 Result型
 pub type Result<T> = anyhow::Result<T, AppError>;
-
 /// ## 18-5 アプリケーションの構成
 /// ### リスト18.33 サービス層（ドメイン層、インフラストラクチャ層、アプリケーション層で利用するエラー型
 #[derive(Debug, Error)]
