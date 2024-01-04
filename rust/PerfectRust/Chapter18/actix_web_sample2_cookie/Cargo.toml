@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 actix-web = { version = "4.4.1", features = ["openssl"] }
-actix-session = {version = "0.8.0", features = ["cookie-session"]}
+actix-session = { version = "0.8.0", features = ["cookie-session"] }
 actix-http = "3.5.1"
 tera = "1.19.1"
 mime = "0.3.17"
@@ -15,11 +15,14 @@ env_logger = "0.10.1"
 log = "0.4.20"
 anyhow = "1.0.77"
 dotenv = "0.15.0"
-serde = {version = "1.0.193", features = ["derive"]}
+serde = { version = "1.0.193", features = ["derive"] }
 sea-orm = { version = "0.12.10" , features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
 http = "1.0.0"
 thiserror = "1.0.53"
-validator = "0.16.1"
-openssl = {version = "0.10.62", features = ["v110"] }
+validator = {version = "0.16.1", features = ["derive"]}
+openssl = { version = "0.10.62", features = ["v110"] }
 jsonwebtoken = "9.2.0"
 chrono = "0.4.31"
+uuid = { version = "1.6.1", features = ["v4", "fast-rng", "macro-diagnostics"] }
+easy-hasher = "2.2.1"
+async-trait = "0.1.76"

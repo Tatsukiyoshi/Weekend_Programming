@@ -1,20 +1,28 @@
-mod web;
+mod view;
 mod api;
 mod service;
 
-use actix_web::{App, HttpServer, middleware};
+use actix_web::{App, HttpServer, middleware, web};
 use actix_web::cookie::time::Duration;
 use actix_session::config::BrowserSession;
 use actix_session::SessionMiddleware;
 use actix_session::storage::CookieSessionStore;
 use openssl::ssl::{SslAcceptor, SslAcceptorBuilder, SslFiletype, SslMethod};
+use crate::service::application::service_provider::ServiceProvider;
+use crate::service::infrastructure::pool_sea_orm::{Pool, PoolSeaOrm};
 
 /// ## 18-1 actix-sessionクレート
 /// ### リスト18.1 CookieSessionStoreを利用するSessionMiddlewareの生成と登録
 #[actix_web::main]
 async fn main() -> std::io::Result<()>{
+    // ロガーの初期化
+    env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
     // ランダムな署名/暗号化キーを生成
     let key = actix_web::cookie::Key::generate();
+    // SeaORMのDatabaseConnectionの取得
+    let pool = PoolSeaOrm::get().await.unwrap();
+    // ServiceProviderの取得
+    let provider = ServiceProvider::new();
     // サーバー実行
     HttpServer::new(move || {
         App::new()
@@ -29,6 +37,8 @@ async fn main() -> std::io::Result<()>{
                     )
                     .cookie_name("rsessionid".to_string()).build()
             )
+            .app_data(web::Data::new(pool.clone()))// SeaORMのDatabeseConnectionの登録
+            .app_data(web::Data::new(provider.clone()))        // ServiceProviderの登録
     }).bind_openssl("127.0.0.1:8080", create_ssl_acceptor_builder())?.run().await
 }
 

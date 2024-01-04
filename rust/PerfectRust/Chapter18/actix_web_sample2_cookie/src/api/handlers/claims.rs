@@ -6,7 +6,7 @@ use chrono::Duration;
 use serde::{Deserialize, Serialize};
 use crate::api::handlers::app_error::{ApiAppError, ApiErrorInfo, Result};
 use crate::api::handlers::jwt::ApiJwt;
-use crate::web::handlers::jwt::{ClaimsGenerator, JwtDecoder};
+use crate::view::handlers::jwt::{ClaimsGenerator, JwtDecoder};
 
 /// ## 18-4 jsonwebtokenクレート
 /// ### リスト18.16 Claims実装
@@ -21,7 +21,7 @@ pub struct ApiClaims {
     user_name:  String  // ユーザ名
 }
 impl ClaimsGenerator<UserDto> for ApiClaims {
-    fn generate(_: &UserDto) -> Self {
+    fn generate(user: &UserDto) -> Self {
         let now = chrono::Utc::now();
         let iat = now.timestamp();
         Self {

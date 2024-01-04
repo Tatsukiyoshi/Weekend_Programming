@@ -4,8 +4,8 @@ use serde::{Deserialize, Serialize};
 use crate::api::handlers::app_error::{ApiAppError, Result};
 use crate::api::handlers::claims::ApiClaims;
 use crate::api::handlers::jwt::ApiJwt;
-use crate::web::forms::login_form::LoginForm;
-use crate::web::handlers::jwt::JwtEncoder;
+use crate::view::forms::login_form::LoginForm;
+use crate::view::handlers::jwt::{ClaimsGenerator, JwtEncoder};
 
 /// ## 18-4 jsonwebtokenクレート
 /// ### リスト18.19 認証要求への応答

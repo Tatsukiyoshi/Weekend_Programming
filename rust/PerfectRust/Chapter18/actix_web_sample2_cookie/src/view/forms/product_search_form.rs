@@ -1,6 +1,7 @@
 use std::borrow::Cow;
 use serde::Deserialize;
-use crate::web::forms::validation_error::ValidationError;
+use validator::Validate;
+use crate::view::forms::validation_error::ValidationError;
 
 /// ## 18-2 validatorクレート
 /// ### リスト18.9 任意の関数の割り当て

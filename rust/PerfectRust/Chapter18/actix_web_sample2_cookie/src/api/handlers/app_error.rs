@@ -6,6 +6,7 @@ use mime::APPLICATION_JSON;
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 use crate::service::error::AppError;
+
 pub type Result<T> = anyhow::Result<T , ApiAppError>;   // カスタムResult型
 
 /// ## 18-4 jsonwebtokenクレート

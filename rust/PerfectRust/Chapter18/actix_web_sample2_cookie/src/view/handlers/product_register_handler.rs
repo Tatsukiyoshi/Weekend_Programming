@@ -1,7 +1,7 @@
 use actix_session::Session;
 use actix_web::Responder;
-use crate::web::handlers::error::{Result, WebAppError};
-use crate::web::handlers::session_helper;
+use crate::view::handlers::error::{Result, WebAppError};
+use crate::view::handlers::session_helper;
 
 /// ## 18-1 actix-sessionクレート
 /// ### リスト18.4 Session操作ヘルパの利用

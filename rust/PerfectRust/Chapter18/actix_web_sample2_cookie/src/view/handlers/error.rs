@@ -3,7 +3,7 @@ use thiserror::Error;
 use actix_web::{HttpResponse, ResponseError , http::StatusCode};
 use log::{error, info};
 use crate::service::error::AppError;
-use crate::web::handlers::UiHelper;
+use crate::view::handlers::UiHelper;
 pub type Result<T> = anyhow::Result<T , WebAppError>;   // カスタムResult型
 ///
 /// Webアプリケーションエラー型

@@ -1,7 +1,7 @@
 use actix_web::HttpRequest;
 use crate::api::handlers::app_error::{ApiAppError, ApiErrorInfo, Result};
 use crate::api::handlers::claims::ApiClaims;
-use crate::web::handlers::jwt::{JWT_HEADER_KEY, JwtDecoder, JwtEncoder};
+use crate::view::handlers::jwt::{JWT_HEADER_KEY, JwtDecoder, JwtEncoder};
 
 /// ## 18-4 jsonwebtokenクレート
 /// ### リスト18.17 トークンの取得
