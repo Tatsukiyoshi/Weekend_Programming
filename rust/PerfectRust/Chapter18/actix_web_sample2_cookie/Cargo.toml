@@ -26,3 +26,5 @@ chrono = "0.4.31"
 uuid = { version = "1.6.1", features = ["v4", "fast-rng", "macro-diagnostics"] }
 easy-hasher = "2.2.1"
 async-trait = "0.1.76"
+tokio = {version = "1.35.1", features = ["full"]}
+rusty-money = "0.4.1"

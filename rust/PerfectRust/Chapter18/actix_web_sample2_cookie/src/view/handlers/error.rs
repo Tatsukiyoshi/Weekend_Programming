@@ -3,8 +3,9 @@ use thiserror::Error;
 use actix_web::{HttpResponse, ResponseError , http::StatusCode};
 use log::{error, info};
 use crate::service::error::AppError;
-use crate::view::handlers::UiHelper;
-pub type Result<T> = anyhow::Result<T , WebAppError>;   // カスタムResult型
+use crate::view::handlers::view_helper::UiHelper;
+// カスタムResult型
+pub type Result<T> = anyhow::Result<T , WebAppError>;
 ///
 /// Webアプリケーションエラー型
 ///

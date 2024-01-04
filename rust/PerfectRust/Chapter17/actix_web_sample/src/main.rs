@@ -15,7 +15,7 @@ use handlers::{handler_func, tera_handler};
 async fn main() -> std::io::Result<()> {
     // ロガーを初期化する
     env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
-    // Template Endine Teraを生成する
+    // Template Engine Teraを生成する
     let tera = Tera::new(concat!(env!("CARGO_MANIFEST_DIR"), "/views/**/*")).unwrap();
     // SeaORMのコネクションプールの登録（16章参照）
     let pool = SamplePool::get().await.expect("接続プールを取得できません");

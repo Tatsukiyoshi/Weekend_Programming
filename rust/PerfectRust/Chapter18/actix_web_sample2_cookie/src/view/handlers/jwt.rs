@@ -1,42 +1,62 @@
-use jsonwebtoken::{DecodingKey, EncodingKey, TokenData, Validation};
-use serde::de::DeserializeOwned;
-use serde::Serialize;
-
-/// ## 18-4 jsonwebtokenクレート
-/// ### リスト18.15 トークンのエンコードとデコード
-pub const JWT_SECRET_KEY: &str = "app-secret";
-pub const JWT_HEADER_KEY: &str = "Authorization";
-pub const JWT_COOKIE_KEY: &str = "Authorization";
-
-// Claimsの生成
-pub trait ClaimsGenerator<T> {
-    fn generate(_: &T) -> Self;
+use std::future::Future;
+use std::pin::Pin;
+use actix_web::{FromRequest, HttpRequest , dev::Payload};
+use serde::{Serialize, Deserialize};
+use chrono::Duration;
+use crate::service::commons::dtos::UserDto;
+use crate::service::commons::jwt::{ClaimsGenerator,JwtDecoder,JWT_COOKIE_KEY};
+use crate::view::handlers::error::{Result,WebAppError};
+/// クレーム(認証に必要な個人情報)
+/// JWTトークンのPayload
+#[derive(Debug, Serialize, Deserialize)]
+pub struct WebClaims {
+    iat:        i64 ,      //  Token取得日時
+    exp:        i64 ,      //  Tokenの有効期限
+    sub:        String ,   //  リソースオーナーの識別子
+    user_id:    String ,   //  ユーザーId(Uuid)
 }
-// トークンエンコード
-pub trait JwtEncoder {
-    // トークン生成
-    fn encode<T: Serialize>(claims: &T) -> String {
-        // Headerの生成
-        let mut header = jsonwebtoken::Header::default();
-        header.typ = Some(String::from("JWT")); // typeの設定
-        header.alg = jsonwebtoken::Algorithm::HS256;    // アルゴリズムの設定
-        // HeaderとClaimsでトークンを生成
-        jsonwebtoken::encode(&header, &claims, &EncodingKey::from_secret(JWT_SECRET_KEY.as_ref())).unwrap()
+impl ClaimsGenerator<UserDto> for WebClaims {
+    fn generate(user: &UserDto) -> Self {
+        let now =  chrono::Utc::now();
+        let _iat =  now.timestamp();
+        // クレーム(Payload)の生成
+        Self {
+            iat: _iat , // 取得日時の設定
+            exp: (now + Duration::minutes(5)).timestamp() , // 有効期限を5分に設定
+            sub: String::from("M.Furukawa") , // オーナー識別子を設定
+            user_id: user.user_id.clone() ,   // ユーザーidを設定
+        }
     }
 }
+///
+/// リクエスト受信時の前処理
+///
+impl FromRequest for WebClaims {
+    type Error = WebAppError;
+    type Future = Pin<Box<dyn Future<Output = anyhow::Result<Self, Self::Error>>>>;
 
-// トークンデコード
-pub trait JwtDecoder<T: DeserializeOwned, E, R> {
-    // ヘッダーの解析
-    fn parse_header(&self, request: &R) -> Result<String, E>;
-    // トークンの検証とデコード
-    fn decode(&self, token: &str) -> Result<TokenData<T>, jsonwebtoken::errors::Error> {
-        match jsonwebtoken::decode::<T> (
-            // シークレットキーでデコード
-            token, &DecodingKey::from_secret(JWT_SECRET_KEY.as_ref()),
-            &Validation::default()) {
-            Ok(token) => Ok(token),
-            Err(error) => Err(error)
+    fn from_request(req: &HttpRequest, _payload: &mut Payload) -> Self::Future {
+        let request = req.clone();
+        Box::pin(async move {
+            let decoder = WebJwtDecoder::default();
+            let token = decoder.decode_header(&request)?;
+            match decoder.decode_jwt_token(token.as_str()) {
+                Ok(token_data) =>  Ok(token_data.claims),
+                Err(error) => Err(WebAppError::AuthorizationError(error.to_string()))
+            }
+        })
+    }
+}
+///
+/// Web用Jwtトークンのデコード
+///
+#[derive(Default)]
+pub struct WebJwtDecoder;
+impl JwtDecoder<WebClaims , WebAppError, HttpRequest> for WebJwtDecoder{
+    fn decode_header(&self , request: &HttpRequest) -> Result<String> {
+        match request.cookie(JWT_COOKIE_KEY) {
+            Some(header) => Ok(String::from(header.name_value().1)) ,
+            None => return Err(WebAppError::AuthorizationError(String::from("認証情報がない")))
         }
     }
 }
