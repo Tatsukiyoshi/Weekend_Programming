@@ -9,7 +9,7 @@ android {
         vectorDrawables.useSupportLibrary = true
         applicationId "com.example.sainttropez"
         minSdk 30
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -21,14 +21,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
     viewBinding {
         enabled = true
     }
     namespace 'com.example.sainttropez'
-    buildToolsVersion '34.0.0'
 }
 
 dependencies {
