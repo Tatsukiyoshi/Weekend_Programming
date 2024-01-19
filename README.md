@@ -12,15 +12,15 @@
       ```
       lsb_release -a
       ```
-  - [Chrome OS Flex 120.0.6099.203](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2024/01/11 updated from 119.0.6045.214>>*</span>
-    ![Chrome OS Flexバージョン情報](./images/Chrome/20240111_Chrome_OS_Flex_120.0.6099.203.png)
+  - [Chrome OS Flex 120.0.6099.235](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2024/01/19 updated from 120.0.6099.203>>*</span>
+    ![Chrome OS Flexバージョン情報](./images/Chrome/20240119_Chrome_OS_Flex_120.0.6099.235.png)
     - [履歴](./chrome/history.md)
   - [Oracle Cloud](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/OracleCloud)
 ### ツール
   - [Visual Studio Code 1.85.2](https://code.visualstudio.com/) <span style="color: red;">*<<2024/01/19 updated from 1.85.1>>*</span> <BR />
     開発環境はVisual Studio Codeを中心に使っており、インストールしている拡張機能の一覧は、[VSCode拡張機能](_sub/vscodeExtensions.md)にまとめてあります。<BR />
     - Chrome OS Flexではコマンドでアップデート
-    ![Upgrade on Chrome OS Flex](./images/Chrome/20231216_code_1.85.1.png)
+    ![Upgrade on Chrome OS Flex](./images/Chrome/20240119_code_1.85.2.png)
     - 1.82で発生していたデバッグコンソールがクリアできなくなった問題は、1.82.2で解消
   - [Git 2.43](https://git-scm.com/download) <span style="color: red;">*<<2023/11/30 updated from 2.42>>*</span>
     - Windowsでの更新
