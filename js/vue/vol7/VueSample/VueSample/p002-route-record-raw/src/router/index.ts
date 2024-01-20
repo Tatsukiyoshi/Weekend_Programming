@@ -41,6 +41,7 @@ const router = createRouter({
         Footer: FooterView
       }
     },
+    // RouteRecordMultipleViewsWithChildren：1つのパスにn個のコンポーネントとm個の子要素
     {
       path: '/multiple-with-children',
       components: {
@@ -59,6 +60,11 @@ const router = createRouter({
         }
       ]
     },
+    // RouteRecordRedirect：1つのパスに別のパスへのリダイレクト
+    {
+      path: '/',
+      redirect: '/single'
+    }
   ]
 })
 export default router
