@@ -59,6 +59,11 @@ const router = createRouter({
         }
       ]
     },
+    // RouteRecordRedirect：1つのパスに別のパスへのリダイレクト
+    {
+      path: '/',
+      redirect: '/single'
+    }
   ]
 })
 export default router

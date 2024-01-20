@@ -46,6 +46,11 @@ import HelloWorld from './components/HelloWorld.vue'
         n個のコンポーネントとm個の子要素（/multiple-with-children/child2）
       </RouterLink>
     </li>
+    <li>
+      <RouterLink to="/">
+        別のパスへのリダイレクト（「/」から「/single」へ）
+      </RouterLink>
+    </li>
   </ul>
   <h3>Vue Routerの出力結果</h3>
   <div style="border:solid 1px black; padding: 10px;">
