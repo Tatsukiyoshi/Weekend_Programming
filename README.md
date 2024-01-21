@@ -5,13 +5,24 @@
     <span style="color: red;">*<<2024/01/19 updated from 23615>>*</span>
     ![デスクトップ](./images/Windows/20240119_Windows11_Build23619.png)
     - [履歴](./windows/history.md)
-  - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install) [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
-    ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
-    - [履歴](./wsl/history.md)
-    - ディストリビューションのバージョンを確認する
+  - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+    - WSLバージョンを確認する
       ```
-      lsb_release -a
+      wsl --version
       ```
+    - WSLを更新する
+      ```
+      wsl --update
+      ``` 
+    - [Ubuntu 22.04.3](https://www.releases.ubuntu.com/jammy/)
+      ![22.04.3 LTS](./images/Windows/20230826_WSL_Ubuntu22.04.3.png)
+      - [履歴](./wsl/history.md)
+      - ディストリビューションのバージョンを確認する
+        ```
+        lsb_release -a
+        ```
+    - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
+    - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex 120.0.6099.235](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2024/01/19 updated from 120.0.6099.203>>*</span>
     ![Chrome OS Flexバージョン情報](./images/Chrome/20240119_Chrome_OS_Flex_120.0.6099.235.png)
     - [履歴](./chrome/history.md)
@@ -97,10 +108,6 @@
                 }
             },
         ```
-
-### WSL
-  - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
-  - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
 
 ### Git
   - ユーザ設定
