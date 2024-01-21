@@ -21,8 +21,6 @@
         ```
         lsb_release -a
         ```
-    - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
-    - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
   - [Chrome OS Flex 120.0.6099.235](https://chromereleases.googleblog.com/search/label/ChromeOS%20Flex) <span style="color: red;">*<<2024/01/19 updated from 120.0.6099.203>>*</span>
     ![Chrome OS Flexバージョン情報](./images/Chrome/20240119_Chrome_OS_Flex_120.0.6099.235.png)
     - [履歴](./chrome/history.md)
@@ -108,13 +106,9 @@
                 }
             },
         ```
-
-### Git
-  - ユーザ設定
-    ```
-    $ git config --global user.name "John Doe"
-    $ git config --global user.email johndoe@example.com
-    ```
+### WSL
+  - [Docker導入](https://github.com/Tatsukiyoshi/Weekend_Programming/wiki/Docker)
+  - [【WSL2】Ubuntu 20.04.4 LTS を 22.04 LTS へアップグレードした](https://zenn.dev/ryuu/articles/upgrade-ubuntu2204-wsl)
 
 ### Chrome OS Flex
   - [VS Codeで日本語入力できるようにする](https://gotoblog.org/chromebook-vscode-japanese/)
@@ -122,5 +116,11 @@
     - 何らかの原因でSecure Bootできなくなったことから、Bios / Secure Boot menuで、Delete all Secure Boot variablesを選択する
     - 起動できた後、安易にEnroll all Factory Default Keys しないほうが良い。 
 
+### Git
+  - ユーザ設定
+    ```
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
+    ```
 ---
 ##  [痕跡](_sub/Profile.md)
