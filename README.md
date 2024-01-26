@@ -1,9 +1,9 @@
 # 独学プログラミング演習
 ##  共通
 ### OS
-  - [Windows Insider Dev Channel Build 23619](https://aka.ms/DevLatest)
-    <span style="color: red;">*<<2024/01/19 updated from 23615>>*</span>
-    ![デスクトップ](./images/Windows/20240119_Windows11_Build23619.png)
+  - [Windows Insider Dev Channel Build 23620](https://aka.ms/DevLatest)
+    <span style="color: red;">*<<2024/01/26 updated from 23619>>*</span>
+    ![デスクトップ](./images/Windows/20240126_Windows11_Build23620.png)
     - [履歴](./windows/history.md)
   - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
     - WSLバージョンを確認する
