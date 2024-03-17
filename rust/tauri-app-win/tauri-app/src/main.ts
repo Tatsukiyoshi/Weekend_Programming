@@ -1,7 +1,7 @@
 import App from './App.svelte';
 
 // With the Tauri API npm package:
-import { invoke } from '@tauri-apps/api/tauri'
+import { invoke } from '@tauri-apps/api/core'
 
 const app = new App({
 	target: document.body,
