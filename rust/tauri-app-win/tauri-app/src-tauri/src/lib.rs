@@ -6,8 +6,8 @@
 use tauri::Manager;
 use tauri::CustomMenuItem;
 use tauri::SystemTray;
-use tauri::SystemTrayMenu;
-use tauri::SystemTrayMenuItem;
+use tauri::menu::Menu;
+use tauri::menu::PredefinedMenuItem;
 use tauri::SystemTrayEvent;
 
 // Create the command:
