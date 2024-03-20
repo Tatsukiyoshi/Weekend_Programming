@@ -1419,6 +1419,7 @@ dependencies = [
  "byteorder",
  "color_quant",
  "num-traits",
+ "png",
 ]
 
 [[package]]
@@ -3036,6 +3037,7 @@ dependencies = [
  "gtk",
  "heck",
  "http",
+ "image",
  "jni",
  "libc",
  "log",

@@ -38,7 +38,7 @@ pub fn run() {
       let tray = TrayIconBuilder::new()
         .menu(&tray_menu)
         // Set Icon for System Tray
-        //.icon(tauri::image::Image::from_path("../icons/icon.ico")?)
+        .icon(tauri::image::Image::from_path("../icons/icon.ico")?)
         .on_menu_event(move |app, event| match event.id().as_ref() {
             // "Show" : show the main window and change the caption from "Show" to "Hide"
             //          [toggle the check of the visibility of the main window]
