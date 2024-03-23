@@ -332,13 +332,6 @@
           ]
         },
         {
-          "description": "image:allow-height -> Enables the height command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "image:allow-height"
-          ]
-        },
-        {
           "description": "image:allow-new -> Enables the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
@@ -353,10 +346,10 @@
           ]
         },
         {
-          "description": "image:allow-width -> Enables the width command without any pre-configured scope.",
+          "description": "image:allow-size -> Enables the size command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "image:allow-width"
+            "image:allow-size"
           ]
         },
         {
@@ -374,13 +367,6 @@
           ]
         },
         {
-          "description": "image:deny-height -> Denies the height command without any pre-configured scope.",
-          "type": "string",
-          "enum": [
-            "image:deny-height"
-          ]
-        },
-        {
           "description": "image:deny-new -> Denies the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
@@ -395,10 +381,10 @@
           ]
         },
         {
-          "description": "image:deny-width -> Denies the width command without any pre-configured scope.",
+          "description": "image:deny-size -> Denies the size command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "image:deny-width"
+            "image:deny-size"
           ]
         },
         {
@@ -864,10 +850,24 @@
           ]
         },
         {
+          "description": "tray:allow-get-by-id -> Enables the get_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-get-by-id"
+          ]
+        },
+        {
           "description": "tray:allow-new -> Enables the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
             "tray:allow-new"
+          ]
+        },
+        {
+          "description": "tray:allow-remove-by-id -> Enables the remove_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-remove-by-id"
           ]
         },
         {
@@ -927,10 +927,24 @@
           ]
         },
         {
+          "description": "tray:deny-get-by-id -> Denies the get_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-get-by-id"
+          ]
+        },
+        {
           "description": "tray:deny-new -> Denies the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
             "tray:deny-new"
+          ]
+        },
+        {
+          "description": "tray:deny-remove-by-id -> Denies the remove_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-remove-by-id"
           ]
         },
         {
