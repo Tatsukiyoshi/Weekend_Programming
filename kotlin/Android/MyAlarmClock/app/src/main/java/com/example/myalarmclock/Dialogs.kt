@@ -55,7 +55,8 @@ class DatePickerFragment : DialogFragment(),
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val c = Calendar.getInstance()
+        // Get Calender by JST
+        val c = Calendar.getInstance(TimeZone.getTimeZone("Asia/Tokyo"))
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
         val date = c.get(Calendar.DAY_OF_MONTH)
@@ -85,7 +86,8 @@ class TimePickerFragment : DialogFragment(),
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val c = Calendar.getInstance()
+        // Get Calender by JST
+        val c = Calendar.getInstance(TimeZone.getTimeZone("Asia/Tokyo"))
         val hour = c.get(Calendar.HOUR_OF_DAY)
         val minute = c.get(Calendar.MINUTE)
         return TimePickerDialog(context, this, hour, minute, true)
