@@ -59,8 +59,7 @@ pub async fn calc_post(form: web::Form<CalcForm>, tera: web::Data<Tera>) -> impl
 
 #[cfg(test)]
 mod tests {
-    use crate::tera_handler::CalcForm;
-    use http::StatusCode;
+    use crate::handlers::tera_handler::CalcForm;
     use actix_web::dev::ServiceResponse;
     use actix_web::{App, Error, test, web};
     use actix_web::web::resource;
@@ -96,7 +95,7 @@ mod tests {
         let response = test::call_service(&test_service, enter_request).await;
         println!("{:?}", response.headers());
         println!("{:?}", response.response().body());
-        assert_eq!(response.status(), StatusCode::OK);
+        assert_eq!(response.status(), actix_http::StatusCode::OK);
     }
 
     /// ### リスト17.25 POSTリクエストのテスト
@@ -116,6 +115,6 @@ mod tests {
         let response = test::call_service(&test_service, answer_request).await;
         println!("{:?}", response.headers());
         println!("{:?}", response.response().body());
-        assert_eq!(response.status(), StatusCode::OK);
+        assert_eq!(response.status(), actix_http::StatusCode::OK);
     }
 }
