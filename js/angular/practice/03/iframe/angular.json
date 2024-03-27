@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "iframe"
+  "defaultProject": "iframe",
+  "cli": {
+    "analytics": false
+  }
 }
