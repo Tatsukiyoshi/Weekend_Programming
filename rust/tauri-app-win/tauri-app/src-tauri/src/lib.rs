@@ -56,14 +56,18 @@ pub fn run() {
         .on_tray_icon_event(|tray, event| {
             // System tray event handling (left-click, right-click, double-click)
             if event.click_type == ClickType::Left {
-              println!("system tray received a left click");
+              let app = tray.app_handle();
+              if let Some(webview_window) = app.get_webview_window("main") {
+                let _ = webview_window.show();
+                let _ = webview_window.set_focus();
+              }
             }
-            if event.click_type == ClickType::Right {
-              println!("system tray received a right click");
-            }
-            if event.click_type == ClickType::Double {
-              println!("system tray received a double click");
-            }
+            //if event.click_type == ClickType::Right {
+            //  println!("system tray received a right click");
+            //}
+            //if event.click_type == ClickType::Double {
+            //  println!("system tray received a double click");
+            //}
         })
         .build(app)?;
       let splashscreen_window = app.get_webview_window("splashscreen").unwrap();
