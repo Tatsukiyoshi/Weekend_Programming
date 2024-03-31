@@ -5,7 +5,7 @@
 
 use tauri::Manager;
 use tauri::{
-  menu::{MenuBuilder, MenuItemBuilder, PredefinedMenuItem},
+  menu::{MenuBuilder, CheckMenuItemBuilder, PredefinedMenuItem},
   tray::{ClickType, TrayIconBuilder},
 };
 
@@ -29,25 +29,29 @@ pub fn run() {
     .setup(|app| {
       // Change the window visibility and Exit the application From system tray.
       // Menu item as follows:
-      //  1. "Show" or "Hide" : To change the visibility of the main window
-      //     ["Show" : Toggle Switch for the visibility of the main window]
+      //  1. "Show" : Toggle Switch for the visibility of the main window
       //  2. Separator
       //  3. "Quit" : To exit this application
-      let toggle = MenuItemBuilder::with_id("toggle", "Toggle").build(app)?;
-      let tray_menu = MenuBuilder::new(app).items(&[&toggle]).build()?;
+      let show = CheckMenuItemBuilder::new("Show").build(app)?;
+      let tray_menu = MenuBuilder::new(app)
+        .item(&show)
+        .item(&PredefinedMenuItem::separator(app)?)
+        .item(&PredefinedMenuItem::quit(app, None)?)
+        .build()?;
       let tray = TrayIconBuilder::new()
         .menu(&tray_menu)
         // Set Icon for System Tray
         .icon(tauri::image::Image::from_bytes(include_bytes!("../icons/icon.ico"))?)
-        .on_menu_event(move |app, event| match event.id().as_ref() {
-            // "Show" : show the main window and change the caption from "Show" to "Hide"
-            //          [toggle the check of the visibility of the main window]
-            // "Hide" : hide the main window and change the caption from "Hide" to "Show"
+        .on_menu_event(move |app, event|  {
+            // "Show" : toggle the check of the visibility of the main window
             // "Quit" : exit this application
-            "toggle" => {
-                println!("toggle clicked");
+            if event.id() == show.id() {
+              if show.is_checked().unwrap() {
+                println!("show is checked");
+              } else {
+                println!("show is not checked");
+              }
             }
-            _ => (),
         })
         .on_tray_icon_event(|tray, event| {
             // System tray event handling (left-click, right-click, double-click)
