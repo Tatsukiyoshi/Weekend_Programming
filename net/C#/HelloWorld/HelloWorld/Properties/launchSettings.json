@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HelloWorld (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "HelloWorld (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
