@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.mygeminiapplication"
-    compileSdkPreview = "UpsideDownCakePrivacySandbox"
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.mygeminiapplication"
@@ -42,7 +42,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {

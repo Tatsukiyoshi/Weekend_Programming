@@ -18,7 +18,8 @@ class BakingViewModel : ViewModel() {
         _uiState.asStateFlow()
 
     private val generativeModel = GenerativeModel(
-        modelName = "gemini-pro-vision",
+//      modelName = "gemini-pro-vision",
+        modelName = "gemini-1.5-pro-latest",
         apiKey = BuildConfig.apiKey
         // apiKey=AIzaSyCWqiwEQYQCwqZ0fjJRnLW2xQxM8LeLiAg
     )
