@@ -1,7 +1,7 @@
 <ul>
   <li>デフォルト：{{price | currency}}</li>
   <li>コード：{{price | currency: 'JPY'}}</li>
-  <li>単位（円）：{{price | currency: 'JPY': true }}</li>
-  <li>単位（コード）：{{price | currency: 'EUR': true}}</li>
-  <li>桁数指定：{{price | currency: 'JPY': true: '1.0-1' }}</li>
+  <li>単位（円）：{{price | currency: 'JPY': 'symbol' }}</li>
+  <li>単位（コード）：{{price | currency: 'EUR': 'symbol'}}</li>
+  <li>桁数指定：{{price | currency: 'JPY': 'symbol': '1.0-1' }}</li>
 </ul>
