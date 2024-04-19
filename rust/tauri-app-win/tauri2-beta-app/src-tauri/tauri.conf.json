@@ -1,6 +1,6 @@
 {
-  "productName": "tauri-app2-beta",
-  "version": "0.0.0",
+  "productName": "tauri2-beta-app",
+  "version": "0.1.0",
   "identifier": "com.tauri.dev",
   "build": {
     "beforeDevCommand": "yarn dev",
@@ -10,7 +10,7 @@
   },
   "app": {"windows": [
       {
-        "title": "tauri-app2-beta",
+        "title": "tauri2-beta-app",
         "width": 800,
         "height": 600
       }
