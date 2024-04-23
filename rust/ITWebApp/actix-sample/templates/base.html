@@ -12,6 +12,12 @@
     <hr />
     <div id="container">
     {% block content %}
+        {% if success %}
+            <div class="alert alert-info">{{success}}</div>
+        {% endif %}
+        {% if error %}
+            <div class="alert alert-danger">{{error}}</div>
+        {% endif %}
     {% endblock content %}
 </div>
     <hr />
