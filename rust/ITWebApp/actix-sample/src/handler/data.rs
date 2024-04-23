@@ -46,3 +46,23 @@ pub fn create(mut message: Message) -> Message {
   let _ = fs::write(DATA_FILENAME, json_str);
   json_data.pop().unwrap()
 }
+
+/// ##  データ更新関数
+pub fn update(message: &Message) {
+  let file = fs::read_to_string(DATA_FILENAME).unwrap();
+  let mut json_data: Vec<Message> = serde_json::from_str(&file).unwrap();
+  if let Some(index) = json_data.iter().position(|item| item.id == message.id) {
+    json_data[index] = message.clone();
+    let json_str = serde_json::to_string(&json_data).unwrap();
+    let _ = fs::write(DATA_FILENAME, json_str);
+  }
+}
+
+/// ##  データ削除関数
+pub fn remove(id: i32) {
+  let file = fs::read_to_string(DATA_FILENAME).unwrap();
+  let mut json_data: Vec<Message> = serde_json::from_str(&file).unwrap();
+  json_data.retain(|item| item.id != id);
+  let json_str = serde_json::to_string(&json_data).unwrap();
+  let _ = fs::write(DATA_FILENAME, json_str);
+}
