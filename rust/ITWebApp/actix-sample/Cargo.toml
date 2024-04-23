@@ -15,4 +15,4 @@ serde_json = "1.0.116"
 chrono = "0.4.38"
 tera = { version = "1.19.1", default-features = false}
 actix-session = { version = "0.6.2", default-features = false, features = ["cookie-session"] }
-actix-web-flash-messages = { version = "0.4.2", features = ["sessions"] }
+actix-web-flash-messages = { version = "0.4.2", features = ["sessions", "cookies"] }

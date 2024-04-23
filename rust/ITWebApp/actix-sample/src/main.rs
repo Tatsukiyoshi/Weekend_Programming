@@ -9,6 +9,7 @@ use actix_session::storage::CookieSessionStore;
 use actix_session::SessionMiddleware;
 use actix_web_flash_messages::FlashMessagesFramework;
 use actix_web_flash_messages::storage::SessionMessageStore;
+use actix_web_flash_messages::storage::CookieMessageStore;
 use env_logger::Env;
 use crate::handler::{create, destroy, edit, index, new, show, update};
 use tera::Tera;
@@ -25,7 +26,9 @@ async fn main() -> Result<()> {
 	//	クッキーのキー生成
 	let key = Key::generate();
 	//	メッセージストアおよびフレームワークインスタンス生成
-	let message_store = SessionMessageStore::default();
+	// let message_store = SessionMessageStore::default();
+	// メッセージストアにクッキーを使う場合
+	let message_store = CookieMessageStore::builder(key.clone()).build();
 	let message_framework = FlashMessagesFramework::builder(message_store).build();
 	HttpServer::new(move || {
 		let tera = Tera::new("templates/**/*.html").unwrap();
