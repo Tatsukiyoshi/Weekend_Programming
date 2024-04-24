@@ -1,7 +1,7 @@
 mod data;
 
 use log::info;
-use actix_web::{Responder, HttpResponse, web, get, post};
+use actix_web::{Responder, HttpResponse, web, get, put, post, delete};
 use actix_session::Session;
 use serde::{Serialize, Deserialize};
 use chrono::{DateTime, Local, Duration};
@@ -145,3 +145,112 @@ pub async fn destroy(info: web::Path<i32>) -> impl Responder {
   web::Redirect::to("/posts").see_other()
 }
 
+/// ##  レスポンス構造体
+#[derive(Serialize, Debug)]
+enum ResponseContent {
+  Items(Vec<data::Message>),
+  Item(data::Message),
+  Reason(String),
+  None,
+}
+
+#[derive(Serialize, Debug)]
+struct ApiResponse {
+  status: String,
+  result: ResponseContent,
+}
+
+#[derive(Deserialize)]
+struct Queries {
+  format: Option<String>,
+}
+
+/// ##  デフォルトページAPI
+pub async fn api_not_found() -> impl Responder {
+  let response = ApiResponse {
+    status: "Error".to_string(),
+    result: ResponseContent::Reason("API not found".to_string()),
+  };
+  HttpResponse::Ok().json(response)
+}
+
+/// ##  一覧表示API
+#[get("/posts")]
+pub async fn api_index() -> impl Responder {
+  info!("Called index API");
+  let posts = data::get_all();
+  let mut ary = Vec::new();
+  for item in &posts {
+    ary.push(item.clone());
+  }
+  let response = ApiResponse {
+    status: "OK".to_string(),
+    result: ResponseContent::Items(ary),
+  };
+  HttpResponse::Ok().json(response)
+}
+
+/// ##  投稿表示API
+#[get("/posts/{id}")]
+pub async fn api_show(info: web::Path<i32>, query: web::Query<Queries>) -> impl Responder {
+  info!("Called show API");
+  let info = info.into_inner();
+  let param = query.into_inner();
+  let post = data::get(info);
+  let response = ApiResponse {
+    status: "OK".to_string(),
+    result: ResponseContent::Item(post),
+  };
+  HttpResponse::Ok().json(response)
+}
+
+/// ##  投稿登録API
+#[post("/posts/create")]
+pub async fn api_create(params: web::Json<data::Message>) -> impl Responder {
+  info!("Called create API");
+  let now: DateTime<Local> = Local::now();
+  let mut message = data::Message {
+    id: 0,
+    posted: now.format("%Y-%m-%d %H:%M:%S").to_string(),
+    sender: params.sender.clone(),
+    content: params.content.clone()
+  };
+  message = data::create(message);
+  let response = ApiResponse {
+    status: "OK".to_string(),
+    result: ResponseContent::Item(message),
+  };
+  HttpResponse::Ok().json(response)
+}
+
+/// ##  投稿更新API
+#[put("/posts/update")]
+pub async fn api_update(params: web::Json<data::Message>, query: web::Query<Queries>) -> impl Responder {
+  info!("Called update API");
+  let message = data::Message {
+    id: params.id,
+    posted: params.posted.clone(),
+    sender: params.sender.clone(),
+    content: params.content.clone()
+  };
+  data::update(&message);
+  let response = ApiResponse {
+    status: "OK".to_string(),
+    result: ResponseContent::Item(message),
+  };
+  HttpResponse::Ok().json(response)
+}
+
+/// ##  投稿削除API
+#[delete("/posts/{id}/delete")]
+pub async fn api_destroy(info: web::Path<i32>, query: web::Query<Queries>) -> impl Responder {
+  info!("Called destroy API");
+  let info = info.into_inner();
+  let param = query.into_inner();
+  data::remove(info);
+  let response = ApiResponse {
+    status: "OK".to_string(),
+    result: ResponseContent::None,
+  };
+  HttpResponse::Ok().json(response)
+}
