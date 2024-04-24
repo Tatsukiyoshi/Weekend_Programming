@@ -37,11 +37,19 @@ pub async fn index(tmpl: web::Data<tera::Tera>, messages: IncomingFlashMessages)
 
 /// ##  投稿表示
 #[get("/posts/{id}")]
-pub async fn show(tmpl: web::Data<tera::Tera>, info: web::Path<i32>) -> impl Responder {
+pub async fn show(tmpl: web::Data<tera::Tera>, info: web::Path<i32>, messages: IncomingFlashMessages)
+                  -> impl Responder {
   info!("Called show");
   let info = info.into_inner();
   let post = data::get(info);
   let mut context = Context::new();
+  for message in messages.iter() {
+    match message.level() {
+      Level::Success => context.insert("success", &message.content()),
+      Level::Error => context.insert("error", &message.content()),
+      _ => (),
+    }
+  }
   context.insert("post", &post);
   let body_str = tmpl.render("show.html", &context).unwrap();
   HttpResponse::Ok().content_type("text/html; charset=utf-8").body(body_str)
