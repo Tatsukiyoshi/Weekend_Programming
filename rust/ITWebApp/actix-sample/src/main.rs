@@ -41,6 +41,15 @@ async fn main() -> Result<()> {
 			.service(edit)
 			.service(update)
 			.service(destroy)
+			.service(
+				web::scope("/api")	//	API用ルーティングルール追加
+					.service(handler::api_index)
+					.service(handler::api_show)
+					.service(handler::api_create)
+					.service(handler::api_update)
+					.service(handler::api_destroy)
+					.default_service(web::to(handler::api_not_found))
+			)
 			.default_service(web::to(handler::not_found))
 			.wrap(Logger::default())	// Loggerの追加
 			.wrap(message_framework.clone())
