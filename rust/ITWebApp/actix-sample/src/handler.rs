@@ -9,6 +9,23 @@ use tera::Context;
 use actix_web_flash_messages::{
   FlashMessage, IncomingFlashMessages, Level,
 };
+use serde_xml_rs::{from_str, to_string};
+
+/// ##  レスポンス生成
+fn build_response(value: &Option<String>, response: &ApiResponse)
+  -> impl Responder {
+  if let Some(format) = value {
+    match format.as_str() {
+      "xml" => {
+        HttpResponse::Ok().content_type("application/xml; charset=utf-8")
+        .body(serde_xml_rs::to_string(&response).unwrap())
+      },
+      _ => HttpResponse::Ok().json(response),
+    }
+  } else {
+    HttpResponse::Ok().json(response)
+  }
+}
 
 /// ##  デフォルトページ
 pub async fn not_found() -> impl Responder {
@@ -160,6 +177,7 @@ struct ApiResponse {
   result: ResponseContent,
 }
 
+/// ##  クエリーパラメータ構造体
 #[derive(Deserialize)]
 struct Queries {
   format: Option<String>,
@@ -176,8 +194,9 @@ pub async fn api_not_found() -> impl Responder {
 
 /// ##  一覧表示API
 #[get("/posts")]
-pub async fn api_index() -> impl Responder {
+pub async fn api_index(query: web::Query<Queries>) -> impl Responder {
   info!("Called index API");
+  let param = query.into_inner();
   let posts = data::get_all();
   let mut ary = Vec::new();
   for item in &posts {
@@ -187,7 +206,7 @@ pub async fn api_index() -> impl Responder {
     status: "OK".to_string(),
     result: ResponseContent::Items(ary),
   };
-  HttpResponse::Ok().json(response)
+  build_response(&param.format, &response)
 }
 
 /// ##  投稿表示API
@@ -201,7 +220,7 @@ pub async fn api_show(info: web::Path<i32>, query: web::Query<Queries>) -> impl 
     status: "OK".to_string(),
     result: ResponseContent::Item(post),
   };
-  HttpResponse::Ok().json(response)
+  build_response(&param.format, &response)
 }
 
 /// ##  投稿登録API
@@ -252,5 +271,5 @@ pub async fn api_destroy(info: web::Path<i32>, query: web::Query<Queries>) -> im
     status: "OK".to_string(),
     result: ResponseContent::None,
   };
-  HttpResponse::Ok().json(response)
+  build_response(&param.format, &response)
 }
