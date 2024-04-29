@@ -26,5 +26,5 @@ pub struct ApiResponse {
 
 pub async fn call_index() -> Result<ApiResponse, reqwest::Error> {
     let url = format!("{}", BASE_API_URL);
-    reqwest::get(&url).await?.json::<ApiResponse>().await
+    reqwest::get(&url).await.unwrap().json::<ApiResponse>().await
 }
