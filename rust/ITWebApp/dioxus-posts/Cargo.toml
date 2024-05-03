@@ -1,6 +1,6 @@
 [package]
-name = "dioxus-posts5"
-version = "0.1.0"
+name = "dioxus-posts"
+version = "0.2.0"
 authors = ["Shinya Watanabe <48684470+Tatsukiyoshi@users.noreply.github.com>"]
 edition = "2021"
 
