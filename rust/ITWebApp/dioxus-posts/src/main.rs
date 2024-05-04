@@ -1,13 +1,15 @@
+#![allow(non_snake_case)]
 /// ##	https://github.com/wateryinhare62/atmarkit_rust_adv
+
 mod data;
 
 use dioxus::prelude::*;
-use dioxus::launch;
 use tracing::{Level, info};
 use data::{ResponseContent};
 
 fn main() {
-	dioxus_logger::init(Level::INFO).unwrap();
+  // Init logger
+  dioxus_logger::init(Level::INFO).expect("failed to init logger");
 	launch(app);
 }
 

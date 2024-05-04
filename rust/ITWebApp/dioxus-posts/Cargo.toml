@@ -1,6 +1,6 @@
 [package]
 name = "dioxus-posts"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Shinya Watanabe <48684470+Tatsukiyoshi@users.noreply.github.com>"]
 edition = "2021"
 
@@ -8,7 +8,7 @@ edition = "2021"
 
 [dependencies]
 
-dioxus = { version = "0.5", features = ["web", "router"] }
+dioxus = { version = "0.5.1", features = ["web"] }
 
 # Debug
 tracing = "0.1.40"
@@ -18,5 +18,5 @@ dioxus-web = "0.5.1"
 log = "0.4.21"
 im-rc = "15.1.0"
 reqwest = { version = "0.12.4", features = ["json"] }
-serde = { version = "1.0.197", features = ["derive"] }
-serde_json = "1.0.114"
+serde = { version = "1.0.200", features = ["derive"] }
+serde_json = "1.0.116"
