@@ -1,7 +1,7 @@
 {
   "name": "tauri-app",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,17 +10,17 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.5.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@tauri-apps/api": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.11",
+    "@tauri-apps/cli": "^1.5.12",
     "@types/node": "^18.7.10",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.6"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
   }
 }
