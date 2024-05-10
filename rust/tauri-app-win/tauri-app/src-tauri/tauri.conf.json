@@ -7,7 +7,7 @@
     "frontendDist": "../public"
   },
   "productName": "tauri-app",
-  "version": "0.1.0",
+  "version": "0.6.5",
   "bundle": {
     "active": true,
     "category": "DeveloperTool",
@@ -59,7 +59,7 @@
       {
         "fullscreen": false,
         "height": 600,
-        "closable": false,
+        "closable": true,
         "resizable": false,
         "minimizable": false,
         "maximizable": false,

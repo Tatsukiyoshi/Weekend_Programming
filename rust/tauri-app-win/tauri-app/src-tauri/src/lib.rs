@@ -43,15 +43,19 @@ pub fn run() {
         // Set Icon for System Tray
         .icon(tauri::image::Image::from_bytes(include_bytes!("../icons/icon.ico"))?)
         .on_menu_event(move |app, event|  {
-            // "Show" : toggle the check of the visibility of the main window
-            // "Quit" : exit this application
-            if event.id() == show.id() {
-              if show.is_checked().unwrap() {
-                println!("show is checked");
-              } else {
-                println!("show is not checked");
-              }
-            }
+          // "Show" : toggle the check of the visibility of the main window
+          // "Quit" : exit this application
+          let webview_window = app.get_webview_window("main").unwrap();
+          if webview_window.is_visible().unwrap(){
+            println!("show is not checked");
+            let _ = webview_window.hide();
+            let _ = show.set_checked(false);
+          } else {
+            println!("show is checked");
+            let _ = webview_window.show();
+            let _ = webview_window.set_focus();
+            let _ = show.set_checked(true);
+          }
         })
         .on_tray_icon_event(|tray, event| {
             // System tray event handling (left-click, right-click, double-click)
