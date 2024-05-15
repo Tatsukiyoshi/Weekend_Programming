@@ -1,27 +1,35 @@
+#![allow(non_snake_case)]
 /// ##	https://github.com/wateryinhare62/atmarkit_rust_adv
+
 mod data;
 
 use dioxus::prelude::*;
-use log::info;
+use tracing::{Level, info};
 use data::{ResponseContent};
 
 fn main() {
-	dioxus_logger::init(log::LevelFilter::Info).unwrap();
-	dioxus_web::launch(app);
+  // Init logger
+  dioxus_logger::init(Level::INFO).expect("failed to init logger");
+	launch(app);
 }
 
-fn app(cx: Scope) -> Element {
+fn app() -> Element {
   info!("Called App");
 
-  let posts_source = use_future(cx, (), |_| data::call_index());
-  cx.render(
-    match posts_source.value() {
+  // https://dioxuslabs.com/learn/0.5/reference/use_resource
+  let posts_source = use_resource(|| async move {
+    data::call_index().await
+  });
+
+  rsx! {
+    match &*posts_source.read_unchecked() {
       Some(Ok(res)) => {
+        rsx! { div { "hello" } };
         match &res.result {
           ResponseContent::Items(items) => {
             rsx! {
               for item in items {
-                rsx! { div { "{serde_json::to_string(&item).unwrap()}" } }
+                div { "{serde_json::to_string(&item).unwrap()}" }
               }
             }
           },
@@ -34,5 +42,5 @@ fn app(cx: Scope) -> Element {
       Some(Err(err)) => rsx! { div { "初期データの読み込みに失敗しました：{err}" } },
       None => rsx! { div { "データを読み込んでいます..." } }
     }
-  )
+  }
 }

@@ -2,6 +2,7 @@
 mod handler;
 
 use std::io::Result;
+use actix_cors::Cors;
 use actix_web::{App, HttpServer, Responder, HttpResponse, get, web,
 				middleware::Logger};
 use actix_web::cookie::{Key};
@@ -32,8 +33,11 @@ async fn main() -> Result<()> {
 	let message_framework = FlashMessagesFramework::builder(message_store).build();
 	HttpServer::new(move || {
 		let tera = Tera::new("templates/**/*.html").unwrap();
+		let cors = Cors::default()
+		    .allowed_origin("localhost:8080");
 		App::new()
 			.app_data(web::Data::new(tera))
+			.wrap(cors)
 			.service(index)	// handler登録
 			.service(new)
 			.service(create)

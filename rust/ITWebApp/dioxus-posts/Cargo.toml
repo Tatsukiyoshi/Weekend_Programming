@@ -1,16 +1,22 @@
 [package]
 name = "dioxus-posts"
-version = "0.1.0"
+version = "0.2.1"
+authors = ["Shinya Watanabe <48684470+Tatsukiyoshi@users.noreply.github.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dioxus = "0.4.3"
-dioxus-logger = "0.4.1"
-dioxus-web = "0.4.3"
+
+dioxus = { version = "0.5.1", features = ["web"] }
+
+# Debug
+tracing = "0.1.40"
+dioxus-logger = "0.5.0"
+
+dioxus-web = "0.5.1"
 log = "0.4.21"
 im-rc = "15.1.0"
-reqwest = { version = "0.11.26", features = ["json"] }
-serde = { version = "1.0.197", features = ["derive"] }
-serde_json = "1.0.114"
+reqwest = { version = "0.12.4", features = ["json"] }
+serde = { version = "1.0.200", features = ["derive"] }
+serde_json = "1.0.116"
