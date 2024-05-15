@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from "@angular/router";
 
 @Component({
     templateUrl: './content.component.html',
-    styles: ['.current { backgroud-color: #ff0; }']
+    styles: ['.current { background-color: #ff0; }']
 })
 export class ContentComponent {
     id = '';
