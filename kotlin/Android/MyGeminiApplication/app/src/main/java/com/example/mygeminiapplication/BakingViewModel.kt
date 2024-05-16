@@ -19,13 +19,10 @@ class BakingViewModel : ViewModel() {
 
     private val generativeModel = GenerativeModel(
         //  gemini 1.0
-    //  modelName = "gemini-pro-vision",
-    //  apiKey = BuildConfig.apiKey
+        //  modelName = "gemini-pro-vision",
         //  gemini 1.5
         modelName = "gemini-1.5-pro-latest",
-        apiKey= buildString {
-            append("AIzaSyCWqiwEQYQCwqZ0fjJRnLW2xQxM8LeLiAg")
-        }
+        apiKey = BuildConfig.apiKey
     )
 
     fun sendPrompt(
