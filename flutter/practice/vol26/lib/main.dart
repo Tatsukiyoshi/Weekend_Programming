@@ -63,6 +63,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     logger.d("------- start -------");
     return LoggerWidget(
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
         log : logger,
         child: MaterialApp.router(
             debugShowCheckedModeBanner: false,
