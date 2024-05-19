@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/src/material/theme_data.dart';
 import 'package:logger/logger.dart';
 
 class LoggerWidget extends StatelessWidget{
@@ -10,7 +11,7 @@ class LoggerWidget extends StatelessWidget{
   const LoggerWidget({
     required this.child,
     required this.log,
-    super.key});
+    super.key, required ThemeData theme});
 
   @override
   Widget build(BuildContext context) => child;
