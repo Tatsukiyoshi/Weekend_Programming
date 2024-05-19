@@ -1,4 +1,3 @@
-//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 @immutable
@@ -45,9 +44,9 @@ class MainContent extends StatelessWidget{
               ElevatedButton(
                   onPressed: () => { onPressed() },
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                      foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      backgroundColor: WidgetStateProperty.all<Color>(Colors.red),
+                      foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
+                      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
                               side: const BorderSide(color: Colors.red)

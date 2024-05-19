@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContainerWidget extends StatelessWidget {
+  const ContainerWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return customDecorationContainer();
@@ -13,39 +15,34 @@ class ContainerWidget extends StatelessWidget {
         color: Colors.green,
 
         child: Container(
-          child: Container( color: Colors.white ),
-
           color: Colors.blue,
           width: 300,
           height: 300,
-          padding: EdgeInsets.all(30),
-          margin: EdgeInsets.all(50),
+          padding: const EdgeInsets.all(30),
+          margin: const EdgeInsets.all(50),
           alignment: Alignment.center,
+          child: Container( color: Colors.white ),
     ));
   }
 
   Container borderContainer() {
     return Container(
-        child: Text("Hello"),
-        // (1) 色の指定はできません
-        // color : Colors.white,
         width: 300,
         height: 300,
         alignment: Alignment.center,
         decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(width: 15.0, color: Colors.blue)));
+            border: Border.all(width: 15.0, color: Colors.blue)),
+        child: const Text("Hello"));
   }
 
   Container customDecorationContainer() {
     return Container(
-        child: Text("Hello"),
-        // (1) 色の指定はできません
-        // color : Colors.white,
         width: 300,
         height: 300,
         alignment: Alignment.center,
-        decoration: roundBoxDecoration()
+        decoration: roundBoxDecoration(),
+        child: const Text("Hello")
     );
   }
 
@@ -56,24 +53,24 @@ class ContainerWidget extends StatelessWidget {
         color: Colors.green,
 
         child: Container(
-          child: Container( color: Colors.white ),
           color: Colors.blue,
           width: 300,
           height: 300,
           padding: createPadding(),
           margin: createMargin(),
           alignment: Alignment.center,
+          child: Container( color: Colors.white ),
         ));
   }
 
   // 上下右左を個別に指定する
   EdgeInsets createMargin() {
-    return EdgeInsets.only(left: 10.0, top: 20.0, right: 30.0, bottom: 40.0);
+    return const EdgeInsets.only(left: 10.0, top: 20.0, right: 30.0, bottom: 40.0);
   }
 
   //
   EdgeInsets createPadding() {
-    return EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0);
+    return const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0);
   }
 
   ///  背景と枠を表示する
@@ -89,7 +86,7 @@ class ContainerWidget extends StatelessWidget {
         color: Colors.white,
         border: Border.all(width: 5.0, color: Colors.blue),
         borderRadius: BorderRadius.circular(50),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(blurRadius: 20)
         ]);
   }
@@ -100,6 +97,6 @@ class ContainerWidget extends StatelessWidget {
         color: Colors.white,
         shape: BoxShape.circle,
         border: Border.all(width: 5.0, color: Colors.blue),
-        boxShadow: [BoxShadow(blurRadius: 20)]);
+        boxShadow: const [BoxShadow(blurRadius: 20)]);
   }
 }

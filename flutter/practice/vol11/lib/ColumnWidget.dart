@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ColumnWidget extends StatelessWidget{
+  const ColumnWidget({super.key});
+
 
 	@override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class ColumnWidget extends StatelessWidget{
 
   Widget childContainer(double width,double height){
 		return Container(
-			margin: EdgeInsets.all(10),
+			margin: const EdgeInsets.all(10),
 			width: width,
 			height: height,
 			color: Colors.blue,

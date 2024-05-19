@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Text3Widget extends StatelessWidget{
+  const Text3Widget({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class Text3Widget extends StatelessWidget{
 
     return Container(
         color: Colors.white,
-        child : DefaultTextStyle(
+        child : const DefaultTextStyle(
           style: textStyle,
           child: Column (
             mainAxisAlignment: MainAxisAlignment.center,

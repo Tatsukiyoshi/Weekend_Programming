@@ -66,12 +66,12 @@ class CouponDetail extends StatelessWidget {
                     onPressed: () => {closeAction()},
                     style: ButtonStyle(
                         backgroundColor:
-                        MaterialStateProperty.all<Color>(
+                        WidgetStateProperty.all<Color>(
                             Colors.red),
                         foregroundColor:
-                        MaterialStateProperty.all<Color>(
+                        WidgetStateProperty.all<Color>(
                             Colors.white),
-                        shape: MaterialStateProperty.all<
+                        shape: WidgetStateProperty.all<
                             RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                                 borderRadius:

@@ -2,7 +2,7 @@
 // パス情報
 //
 class AppRoutePath {
-  final String id;
+  final String? id;
 
   AppRoutePath.list() : id = null;
 

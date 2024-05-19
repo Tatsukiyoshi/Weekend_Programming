@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:vol10/AppRoutePath.dart';
 import 'package:vol10/page/ProductItemPage.dart';
@@ -7,9 +8,10 @@ import 'package:vol10/ProductItem.dart';
 // (1) RouterDelegateの実装クラスを作成する
 class ItemRouterDelegate extends RouterDelegate<AppRoutePath>
     with ChangeNotifier, PopNavigatorRouterDelegateMixin<AppRoutePath> {
+  @override
   final GlobalKey<NavigatorState> navigatorKey;
 
-  ProductItem _selectedItem;
+  ProductItem? _selectedItem;
 
   List<ProductItem> items = [
     ProductItem("id1", "商品A"),
@@ -31,13 +33,15 @@ class ItemRouterDelegate extends RouterDelegate<AppRoutePath>
       key: navigatorKey,
       pages: [
         MaterialPage(
-            key: ValueKey('ProductListPage'),
+            key: const ValueKey('ProductListPage'),
             child: ProductListPage(items, _onTapItem)),
         if (_selectedItem != null)
-          MaterialPage(child: ProductItemPage(_selectedItem))
+          MaterialPage(child: ProductItemPage(_selectedItem!))
       ],
       onPopPage: (route, result) {
-        print('on pop page');
+        if (kDebugMode) {
+          print('on pop page');
+        }
         if (!route.didPop(result)) {
           return false;
         }
@@ -51,16 +55,17 @@ class ItemRouterDelegate extends RouterDelegate<AppRoutePath>
 
   //	(5) 新しいパスが設定されたとき
   @override
-  Future<void> setNewRoutePath(AppRoutePath path) async {
-    if (path.isItemPage) {
+  Future<void> setNewRoutePath(AppRoutePath configuration) async {
+    if (configuration.isItemPage) {
       //	パスに従った詳細ページ用のデータを設定する
-      _selectedItem = items.firstWhere((element) => element.id == path.id);
+      _selectedItem = items.firstWhere((element) => element.id == configuration.id);
     }
     return;
   }
 
   //	(6) 現在の状態をパスで表現した場合
+  @override
   AppRoutePath get currentConfiguration => _selectedItem == null
       ? AppRoutePath.list()
-      : AppRoutePath.item(_selectedItem.id);
+      : AppRoutePath.item(_selectedItem!.id);
 }
