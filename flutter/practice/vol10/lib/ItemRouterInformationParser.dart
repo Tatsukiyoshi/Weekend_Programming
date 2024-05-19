@@ -7,22 +7,22 @@ class ItemRouterInformationParser extends RouteInformationParser<AppRoutePath> {
   Future<AppRoutePath> parseRouteInformation(
       RouteInformation routeInformation) async {
 
-    if (routeInformation.location == '/') {
+    if (routeInformation.uri.toString() == '/') {
       return AppRoutePath.list();
     } else {
     	// (2) /id1 のような入力になるので、最初の"/"をとる
-      var id = routeInformation.location.substring(1);
+      var id = routeInformation.uri.toString().substring(1);
       return AppRoutePath.item(id);
     }
   }
 
   //	(3) 状態が変わったときに、パスを反映する処理
   @override
-  RouteInformation restoreRouteInformation(AppRoutePath path) {
-    if (path.id != null) {
+  RouteInformation restoreRouteInformation(AppRoutePath configuration) {
+    if (configuration.id != null) {
       //	(4) アイテムが設定されている場合のURLを設定する
-      return RouteInformation(location: '/' + path.id);
+      return RouteInformation(uri: '/${configuration.id}');
     }
-    return RouteInformation(location: '/');
+    return const RouteInformation(location: '/');
   }
 }

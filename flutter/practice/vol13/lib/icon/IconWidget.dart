@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class IconWidget extends StatelessWidget {
+  const IconWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
 
     return Container(
       color: Colors.white,
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(

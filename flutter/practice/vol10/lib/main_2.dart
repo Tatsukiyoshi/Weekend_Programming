@@ -15,8 +15,8 @@ class MainApp2 extends StatefulWidget{
 
 class _MainApp2 extends State<MainApp2>{
 
-  ItemRouterDelegate _routerDelegate = ItemRouterDelegate();
-  ItemRouterInformationParser _routerInformationParser = ItemRouterInformationParser();
+  final ItemRouterDelegate _routerDelegate = ItemRouterDelegate();
+  final ItemRouterInformationParser _routerInformationParser = ItemRouterInformationParser();
 
   @override
   Widget build(BuildContext context) {

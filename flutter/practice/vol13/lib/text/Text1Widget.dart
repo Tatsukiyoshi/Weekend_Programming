@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Text1Widget extends StatelessWidget{
+  const Text1Widget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class Text1Widget extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'Hello World',
             textAlign: TextAlign.center,
             style: textStyle,
@@ -34,7 +35,7 @@ class Text1Widget extends StatelessWidget{
           RichText(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            text: TextSpan(
+            text: const TextSpan(
               children: [
                 TextSpan(text : 'さあ', style: textStyle),
                 TextSpan(text : 'Flutter', style: boldStyle),

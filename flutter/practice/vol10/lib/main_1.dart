@@ -4,13 +4,15 @@ import 'package:vol10/page/ProductItemPage.dart';
 import 'package:vol10/page/ProductListPage.dart';
 
 class MainApp1 extends StatefulWidget {
+  const MainApp1({super.key});
+
   @override
   State<StatefulWidget> createState() => _MainApp1();
 }
 
 class _MainApp1 extends State<MainApp1> {
   //	(1) 詳細画面として表示する場合のデータ
-  ProductItem _selectedItem;
+  late ProductItem? _selectedItem;
 
   //  (2) ProductListPageでListをタップしたときに呼ばれるメソッド
   void _onTapItem(ProductItem item) {
@@ -37,10 +39,9 @@ class _MainApp1 extends State<MainApp1> {
         home: Navigator(
           // (5) 表示する画面スタック
           pages: [
-            MaterialPage(child: ProductListPage(this.items, _onTapItem)),
+            MaterialPage(child: ProductListPage(items, _onTapItem)),
             //	(6) 詳細画面を表示する時には、画面を追加する
-            if (_selectedItem != null)
-              MaterialPage(child: ProductItemPage(_selectedItem)),
+            MaterialPage(child: ProductItemPage(_selectedItem!)),
           ],
           //  (7) popが呼ばれたときの処理 ( pages[]を指定したら、必ず必要です )
           onPopPage: (route, result) {

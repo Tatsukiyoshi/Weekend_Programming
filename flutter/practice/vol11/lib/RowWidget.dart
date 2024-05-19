@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RowWidget extends StatelessWidget {
+  const RowWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,7 +19,7 @@ class RowWidget extends StatelessWidget {
 
   Widget childContainer(double width, double height) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       width: width,
       height: height,
       color: Colors.blue,
