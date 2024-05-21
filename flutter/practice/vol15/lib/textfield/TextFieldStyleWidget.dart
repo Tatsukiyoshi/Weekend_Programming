@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 
 class TextFieldStyleWidget extends StatefulWidget {
+  const TextFieldStyleWidget({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _TextFieldStyleWidget();
@@ -14,7 +16,7 @@ class _TextFieldStyleWidget extends State<TextFieldStyleWidget> {
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -27,7 +29,7 @@ class _TextFieldStyleWidget extends State<TextFieldStyleWidget> {
     return TextFormField(
       maxLength: 10,
         textAlign: TextAlign.right,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.bold,
           letterSpacing: 10
         ),
@@ -35,7 +37,7 @@ class _TextFieldStyleWidget extends State<TextFieldStyleWidget> {
           FilteringTextInputFormatter.digitsOnly,
           NumberInputFormatter()
         ],
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           suffixText: "円",
           filled: true,
           labelText: "指定金額",

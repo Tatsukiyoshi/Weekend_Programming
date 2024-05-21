@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'textfield/TextFieldWidget.dart';
-//import 'textfield/TextFieldPasswordWidget.dart';
-//import 'textfield/TextFieldValueWidget.dart';
+//import 'package:vol15/textfield/TextFieldWidget.dart';
+import 'package:vol15/textfield/TextFieldStyleWidget.dart';
+//import 'package:vol15/textfield/TextFieldValueWidget.dart';
 
 // No sample code is presented for the following:
 //import 'package:ui_samples/textfield/TextFieldFocusWidget.dart';
@@ -20,43 +20,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(
-              color: Colors.black54,
-              fontWeight: FontWeight.normal,
-              fontStyle: FontStyle.normal,
-              decoration: TextDecoration.none,
-              fontSize: 20
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          textTheme: const TextTheme(
+            bodyLarge: TextStyle(
+                color: Colors.black54,
+                fontWeight: FontWeight.normal,
+                fontStyle: FontStyle.normal,
+                decoration: TextDecoration.none,
+                fontSize: 20),
+            bodyMedium: TextStyle(decoration: TextDecoration.none),
+            labelLarge: TextStyle(fontSize: 15, letterSpacing: 2.0),
           ),
-          bodyMedium: TextStyle(
-              decoration: TextDecoration.none
+          inputDecorationTheme: const InputDecorationTheme(
+            border: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.black38)),
+            focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.black54)),
           ),
-          labelLarge: TextStyle(
-            fontSize: 15,
-                letterSpacing: 2.0
-          ),
+          useMaterial3: true,
         ),
-        inputDecorationTheme: const InputDecorationTheme(
-          border: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: Colors.black38
-            )
-          ),
-          focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                  color: Colors.black54
-              )
-          ),
-        )
-      ),
-      home: const Scaffold(
-        //body: TextFieldValidationWidget()
-        body: TextFieldWidget()
-      )
-    );
+        home: const Scaffold(
+            //body: TextFieldValidationWidget()
+            //body: TextFieldWidget()
+            body: TextFieldStyleWidget()));
   }
 }

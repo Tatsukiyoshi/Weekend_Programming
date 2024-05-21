@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-//import 'switch/SwitchWidget.dart';
-//import 'slider/SliderWidget.dart';
-//import 'chip/InputChipWidget.dart';
-//import 'chip/ChoiceChipWidget.dart';
-import 'chip/FilterChipWidget.dart';
+//import 'package:vol17/switch/SwitchWidget.dart';
+//import 'package:vol17/slider/SliderWidget.dart';
+//import 'package:vol17/chip/InputChipWidget.dart';
+//import 'package:vol17/chip/ChoiceChipWidget.dart';
+import 'package:vol17/chip/FilterChipWidget.dart';
 
 void main() {
   runApp(const MyApp());
