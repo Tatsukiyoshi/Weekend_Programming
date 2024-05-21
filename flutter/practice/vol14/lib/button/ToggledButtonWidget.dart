@@ -6,8 +6,6 @@ class ToggledButtonWidget extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    final isSelected = <bool>[true, false, false];
-
     return MaterialApp(
       home: Scaffold(
         body: Column(
