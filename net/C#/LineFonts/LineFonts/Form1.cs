@@ -15,10 +15,10 @@ namespace LineFonts
             InitCustomLabelFont();
 
             RegularLabel.Font = new Font(pfc.Families[0], RegularLabel.Font.Size, FontStyle.Regular);
-            RegularLabel.Text = "•W€ƒtƒHƒ“ƒg";
+            RegularLabel.Text = "æ¨™æº–ãƒ•ã‚©ãƒ³ãƒˆ";
 
             BoldLabel.Font = new Font(pfc.Families[1], BoldLabel.Font.Size, FontStyle.Bold);
-            BoldLabel.Text = "‘¾šƒtƒHƒ“ƒg";
+            BoldLabel.Text = "å¤ªå­—ãƒ•ã‚©ãƒ³ãƒˆ";
         }
 
         public void InitCustomLabelFont()
