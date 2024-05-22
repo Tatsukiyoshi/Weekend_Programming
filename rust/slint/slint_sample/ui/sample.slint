@@ -1,0 +1,10 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export component App {
+    in property <int> counter: 1;
+    callback clicked <=> btn.clicked;
+    VerticalBox {
+        Text { text: "Hello World:" + counter; }
+        btn := Button { text: "yay"; }
+    }    
+}

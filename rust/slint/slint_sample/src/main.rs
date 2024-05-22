@@ -1,16 +1,7 @@
-slint::slint! {
-    import { Button, VerticalBox } from "std-widgets.slint";
+slint::include_modules!();
 
-    export component App {
-        in property <int> counter: 1;
-        callback clicked <=> btn.clicked;
-        VerticalBox {
-            Text { text: "Hello World:" + counter; }
-            btn := Button { text: "yay"; }
-        }    
-    }
-}
-
+/// ### Slint App Main
+/// https://releases.slint.dev/1.6.0/docs/rust/slint/
 fn main() {
     let app = App::new().unwrap();
     let weak = app.as_weak();
