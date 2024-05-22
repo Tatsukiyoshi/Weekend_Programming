@@ -2,14 +2,21 @@ slint::slint! {
     import { Button, VerticalBox } from "std-widgets.slint";
 
     export component App {
-        property <int> counter: 1;
+        in property <int> counter: 1;
+        callback clicked <=> btn.clicked;
         VerticalBox {
             Text { text: "Hello World:" + counter; }
-            Button { text: "yay"; clicked => { counter += 1; } }
+            btn := Button { text: "yay"; }
         }    
     }
 }
 
 fn main() {
-    App::new().unwrap().run().unwrap();
+    let app = App::new().unwrap();
+    let weak = app.as_weak();
+    app.on_clicked(move || {
+        let app = weak.upgrade().unwrap();
+        app.set_counter(app.get_counter() + 1);
+    });
+    app.run().unwrap();
 }
