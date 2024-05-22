@@ -1,0 +1,26 @@
+{
+  "name": "p002-option-stores",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^18.18.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^6.2.0",
+    "typescript": "~5.4.5",
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.19"
+  }
+}
