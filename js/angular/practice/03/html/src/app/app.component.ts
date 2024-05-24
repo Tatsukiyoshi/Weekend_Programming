@@ -3,8 +3,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  template: `<div [innerHTML]="msg"></div>`
-//  template: `<div>{{msg}}</div>`
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   safeMsg: SafeHtml;

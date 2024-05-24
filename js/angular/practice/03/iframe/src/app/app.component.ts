@@ -3,9 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <iframe [src]="safeUrl"></iframe>
-  `,
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   safeUrl: SafeResourceUrl;
