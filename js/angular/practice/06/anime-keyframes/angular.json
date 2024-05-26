@@ -52,7 +52,6 @@
             "development": {
               "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -64,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "anime-keyframes:build:production"
+              "buildTarget": "anime-keyframes:build:production"
             },
             "development": {
-              "browserTarget": "anime-keyframes:build:development"
+              "buildTarget": "anime-keyframes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "anime-keyframes:build"
+            "buildTarget": "anime-keyframes:build"
           }
         },
         "test": {

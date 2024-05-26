@@ -9,6 +9,7 @@ import { FormGroup, FormControl,
 })
 export class AppComponent {
   title = 'reactive';
+  myForm!: FormGroup;
 
   // 個々の入力要素（初期値と検証ルール）を宣言
   mail = new FormControl('hoge@example.com', [
@@ -31,16 +32,16 @@ export class AppComponent {
     Validators.maxLength(10)
   ]);
 
-  // FormGroupオブジェクトを生成
-  myForm = this.builder.group({
-    mail: this.mail,
-    passwd: this.passwd,
-    name: this.name,
-    memo: this.memo
-  });
-
   // FormBuilderオブジェクトを生成
-  constructor(private builder: FormBuilder){}
+  constructor(private builder: FormBuilder){
+    // FormGroupオブジェクトを生成
+    this.myForm = this.builder.group({
+      mail: this.mail,
+      passwd: this.passwd,
+      name: this.name,
+      memo: this.memo
+    });
+  }
 
   // サブミット時に入力値を反映
   show(){

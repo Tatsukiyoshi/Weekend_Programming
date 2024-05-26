@@ -56,7 +56,6 @@
             "development": {
               "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -68,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "safe:build:production"
+              "buildTarget": "safe:build:production"
             },
             "development": {
-              "browserTarget": "safe:build:development"
+              "buildTarget": "safe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "safe:build"
+            "buildTarget": "safe:build"
           }
         },
         "test": {
