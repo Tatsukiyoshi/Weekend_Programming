@@ -21,7 +21,10 @@ class BakingViewModel : ViewModel() {
         //  gemini 1.0
         //  modelName = "gemini-pro-vision",
         //  gemini 1.5
-        modelName = "gemini-1.5-pro-latest",
+        //  modelName = "gemini-1.5-pro-latest",
+        // The Gemini 1.5 models are versatile and work with most use cases
+        modelName = "gemini-1.5-flash",
+        // Access your API key as a Build Configuration variable (see "Set up your API key" above)
         apiKey = BuildConfig.apiKey
     )
 

@@ -60,6 +60,8 @@ composeCompiler {
 }
 
 dependencies {
+    // add the dependency for the Google AI client SDK for Android
+    implementation(libs.generativeai.v060)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
