@@ -1,15 +1,15 @@
 [versions]
-agp = "8.5.0-beta02"
-kotlin = "1.9.23"
+agp = "8.5.0-rc01"
+kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.8.0"
-lifecycleViewmodelCompose = "2.8.0"
+lifecycleRuntimeKtx = "2.8.1"
+lifecycleViewmodelCompose = "2.8.1"
 activityCompose = "1.9.0"
 composeBom = "2024.05.00"
-generativeai = "0.6.0"
+generativeai = "0.7.0"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 
 [libraries]
@@ -34,4 +34,5 @@ generativeai = { group = "com.google.ai.client.generativeai", name = "generative
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 google-android-libraries-mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleAndroidLibrariesMapsplatformSecretsGradlePlugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
