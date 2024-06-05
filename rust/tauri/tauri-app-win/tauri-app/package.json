@@ -1,6 +1,6 @@
 {
   "name": "tauri-app",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "private": true,
   "scripts": {
     "build": "rollup -c",
@@ -10,25 +10,25 @@
     "tauri": "tauri"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "@rollup/plugin-typescript": "^8.0.0",
-    "@tauri-apps/cli": ">=2.0.0-beta.18",
-    "@tsconfig/svelte": "^5.0.2",
-    "rollup": "^2.76.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@tauri-apps/cli": "^2.0.0-beta.20",
+    "@tsconfig/svelte": "^5.0.4",
+    "rollup": "^2.79.1",
     "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^4.2.12",
-    "svelte-check": "^3.6.8",
-    "svelte-preprocess": "^5.1.3",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.3"
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-svelte": "^7.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^4.2.17",
+    "svelte-check": "^3.8.0",
+    "svelte-preprocess": "^5.1.4",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@tauri-apps/api": ">=2.0.0-beta.12",
-    "@tauri-apps/plugin-shell": ">=2.0.0-beta.4",
+    "@tauri-apps/api": "^2.0.0-beta.13",
+    "@tauri-apps/plugin-shell": "^2.0.0-beta.6",
     "sirv-cli": "^2.0.2"
   }
 }
