@@ -6,7 +6,7 @@
 use tauri::Manager;
 use tauri::{
   menu::{MenuBuilder, CheckMenuItemBuilder, PredefinedMenuItem},
-  tray::{ClickType, TrayIconBuilder},
+  tray::{TrayIconBuilder, TrayIconEvent, MouseButton},
 };
 
 // Create the command:
@@ -59,7 +59,10 @@ pub fn run() {
         })
         .on_tray_icon_event(|tray, event| {
             // System tray event handling (left-click, right-click, double-click)
-            if event.click_type == ClickType::Left {
+            if let TrayIconEvent::Click {
+              button: MouseButton::Left, ..
+            } = event
+            {
               let app = tray.app_handle();
               if let Some(webview_window) = app.get_webview_window("main") {
                 let _ = webview_window.show();
