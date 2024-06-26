@@ -1,6 +1,8 @@
-use time::PrimitiveDateTime as DateTime;
+use std::ops::Add;
+use time::{Duration, PrimitiveDateTime as DateTime};
 
-// Returns a DateTime one billion seconds after start.
+/// 10億秒を加算する（加算する引数はDurationで）
 pub fn after(start: DateTime) -> DateTime {
-    todo!("What time is a gigasecond later than {start}");
+    let after_date: DateTime = start.add(Duration::seconds(1000000000));
+    after_date
 }
