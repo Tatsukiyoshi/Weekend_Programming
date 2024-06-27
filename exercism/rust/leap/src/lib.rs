@@ -1,3 +1,18 @@
+/// 閏年判定
+/// １）４の倍数かつ1000の倍数でない
+/// ２）400の倍数
 pub fn is_leap_year(year: u64) -> bool {
-    todo!("true if {year} is a leap year")
+    if year % 4 == 0 {
+        if year % 100 == 0 {
+            if year % 400 == 0 {
+                true
+            } else {
+                false
+            }
+        } else {
+            true
+        }
+    } else {
+        false
+    }
 }
