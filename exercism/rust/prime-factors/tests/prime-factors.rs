@@ -8,7 +8,6 @@ fn no_factors() {
 }
 
 #[test]
-#[ignore]
 fn prime_number() {
     let factors = factors(2);
     let expected = [2];
@@ -16,7 +15,6 @@ fn prime_number() {
 }
 
 #[test]
-#[ignore]
 fn another_prime_number() {
     let factors = factors(3);
     let expected = [3];
@@ -24,7 +22,6 @@ fn another_prime_number() {
 }
 
 #[test]
-#[ignore]
 fn square_of_a_prime() {
     let factors = factors(9);
     let expected = [3, 3];
@@ -32,7 +29,6 @@ fn square_of_a_prime() {
 }
 
 #[test]
-#[ignore]
 fn product_of_first_prime() {
     let factors = factors(4);
     let expected = [2, 2];
@@ -40,7 +36,6 @@ fn product_of_first_prime() {
 }
 
 #[test]
-#[ignore]
 fn cube_of_a_prime() {
     let factors = factors(8);
     let expected = [2, 2, 2];
@@ -48,7 +43,6 @@ fn cube_of_a_prime() {
 }
 
 #[test]
-#[ignore]
 fn product_of_second_prime() {
     let factors = factors(27);
     let expected = [3, 3, 3];
@@ -56,7 +50,6 @@ fn product_of_second_prime() {
 }
 
 #[test]
-#[ignore]
 fn product_of_third_prime() {
     let factors = factors(625);
     let expected = [5, 5, 5, 5];
@@ -64,7 +57,6 @@ fn product_of_third_prime() {
 }
 
 #[test]
-#[ignore]
 fn product_of_first_and_second_prime() {
     let factors = factors(6);
     let expected = [2, 3];
@@ -72,7 +64,6 @@ fn product_of_first_and_second_prime() {
 }
 
 #[test]
-#[ignore]
 fn product_of_primes_and_non_primes() {
     let factors = factors(12);
     let expected = [2, 2, 3];
@@ -80,7 +71,6 @@ fn product_of_primes_and_non_primes() {
 }
 
 #[test]
-#[ignore]
 fn product_of_primes() {
     let factors = factors(901255);
     let expected = [5, 17, 23, 461];
@@ -88,7 +78,6 @@ fn product_of_primes() {
 }
 
 #[test]
-#[ignore]
 fn factors_include_a_large_prime() {
     let factors = factors(93819012551);
     let expected = [11, 9539, 894119];
