@@ -4,6 +4,13 @@ pub enum Error {
     GameComplete,
 }
 
+/// ボーリングスコア集計
+/// - 現在のフレームおよび投球回数
+/// - 直前のフレームの結果
+///   - 直近のストライクの回数（０～２）
+///   - スペアかどうか
+/// - 現在のフレームの結果
+///   - 一投目の本数（Or 残りの本数）→スペア判定
 pub struct BowlingGame {}
 
 impl BowlingGame {
