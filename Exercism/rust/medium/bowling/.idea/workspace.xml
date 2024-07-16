@@ -7,10 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c918f4ba-4efd-4d0a-9c38-e1ca34887d6f" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c918f4ba-4efd-4d0a-9c38-e1ca34887d6f" name="変更" comment="Add: Tested Bowling (#1676)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +46,7 @@
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "feature/update__rust__exercism__medium",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Repository/Weekend_Programming/Exercism/rust/medium/dot-dsl",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -68,11 +66,35 @@
       <option name="presentableId" value="Default" />
       <updated>1721090627277</updated>
       <workItem from="1721090629280" duration="38000" />
-      <workItem from="1721090804072" duration="10279000" />
+      <workItem from="1721090804072" duration="12392000" />
     </task>
+    <task id="LOCAL-00001" summary="Add: Tested Bowling (#1676)">
+      <option name="closed" value="true" />
+      <created>1721108326155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721108326155</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add: Tested Bowling (#1676)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add: Tested Bowling (#1676)" />
   </component>
 </project>

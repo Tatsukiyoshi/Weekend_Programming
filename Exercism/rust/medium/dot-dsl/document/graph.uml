@@ -1,0 +1,35 @@
+@startuml graph
+
+class Graph {
+  {field} String name 
+  {field} Vec<Node> nodes
+  {field} Vec<Attribute> attrs
+  {field} Vec<Relation> relations
+}
+
+Graph "1" *-- "many" Node : contains
+
+class Node {
+  {field} String name
+  {field} Vec<Attribute> attrs
+}
+
+Graph "1" *-- "many" Attribute : contains
+Node "1" *-- "many" Attribute : contains
+
+class Attribute {
+  {field} String name
+  {field} String value
+}
+
+Graph "1" *-- "many" Relation : contains
+
+class Relation {
+  {field} Node[] nodes
+  {field} Vec<Attribute> attrs
+}
+
+Relation "1" *-- "2" Node : contains
+Relation "1" *-- "many" Attribute : contains 
+
+@enduml
