@@ -1,35 +1,34 @@
 @startuml graph
 
 class Graph {
-  {field} String name 
-  {field} Vec<Node> nodes
-  {field} Vec<Attribute> attrs
-  {field} Vec<Relation> relations
+  {field} nodes: Vec<Node>
+  {field} edges: Vec<Edge>
+  {field} attrs: HashMzap<String, String>
+  {method} new() -> Self
+  {method} with_attrs(&self, &[(&str, &str)]) -> Self
+  {method} with_nodes(&self, &Vec<Node>) -> Self
+  {method} with_edges(&self, Vec<Edge>) -> Self
+  {method} node(&self, &str) -> Node
 }
 
 Graph "1" *-- "many" Node : contains
 
 class Node {
   {field} String name
-  {field} Vec<Attribute> attrs
+  {field} HashMap attrs
+  {method} new(&str) -> Self
+  {method} with_attrs(&[(&str, &str)]) -> Self
+  {method} attr(&str) -> &str
 }
 
-Graph "1" *-- "many" Attribute : contains
-Node "1" *-- "many" Attribute : contains
+Graph "1" *-- "many" Edge : contains
 
-class Attribute {
-  {field} String name
-  {field} String value
-}
-
-Graph "1" *-- "many" Relation : contains
-
-class Relation {
+class Edge {
   {field} Node[] nodes
-  {field} Vec<Attribute> attrs
+  {field} HashMap attrs
+  {method} new(&str) -> Self
+  {method} with_attrs(&[(&str, &str)]) -> Self
+  {method} attr(&str) -> &str
 }
-
-Relation "1" *-- "2" Node : contains
-Relation "1" *-- "many" Attribute : contains 
 
 @enduml
