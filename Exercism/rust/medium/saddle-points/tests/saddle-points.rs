@@ -14,7 +14,6 @@ fn can_identify_single_saddle_point() {
 }
 
 #[test]
-#[ignore]
 fn can_identify_that_empty_matrix_has_no_saddle_points() {
     let input = &[vec![]];
     let output = find_sorted_saddle_points(input);
@@ -23,7 +22,6 @@ fn can_identify_that_empty_matrix_has_no_saddle_points() {
 }
 
 #[test]
-#[ignore]
 fn can_identify_lack_of_saddle_points_when_there_are_none() {
     let input = &[vec![1, 2, 3], vec![3, 1, 2], vec![2, 3, 1]];
     let output = find_sorted_saddle_points(input);
@@ -32,7 +30,6 @@ fn can_identify_lack_of_saddle_points_when_there_are_none() {
 }
 
 #[test]
-#[ignore]
 fn can_identify_multiple_saddle_points_in_a_column() {
     let input = &[vec![4, 5, 4], vec![3, 5, 5], vec![1, 5, 4]];
     let output = find_sorted_saddle_points(input);
