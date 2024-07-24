@@ -9,7 +9,6 @@ fn empty_rna_sequence() {
 }
 
 #[test]
-#[ignore]
 fn rna_complement_of_cytosine_is_guanine() {
     let input = "C";
     let output = Dna::new(input).unwrap().into_rna();
@@ -18,7 +17,6 @@ fn rna_complement_of_cytosine_is_guanine() {
 }
 
 #[test]
-#[ignore]
 fn rna_complement_of_guanine_is_cytosine() {
     let input = "G";
     let output = Dna::new(input).unwrap().into_rna();
@@ -27,7 +25,6 @@ fn rna_complement_of_guanine_is_cytosine() {
 }
 
 #[test]
-#[ignore]
 fn rna_complement_of_thymine_is_adenine() {
     let input = "T";
     let output = Dna::new(input).unwrap().into_rna();
@@ -36,7 +33,6 @@ fn rna_complement_of_thymine_is_adenine() {
 }
 
 #[test]
-#[ignore]
 fn rna_complement_of_adenine_is_uracil() {
     let input = "A";
     let output = Dna::new(input).unwrap().into_rna();
@@ -45,7 +41,6 @@ fn rna_complement_of_adenine_is_uracil() {
 }
 
 #[test]
-#[ignore]
 fn rna_complement() {
     let input = "ACGTGGTCTTAA";
     let output = Dna::new(input).unwrap().into_rna();
@@ -54,7 +49,6 @@ fn rna_complement() {
 }
 
 #[test]
-#[ignore]
 fn invalid_dna_input() {
     let input = "U";
     let output = Dna::new(input);
@@ -63,7 +57,6 @@ fn invalid_dna_input() {
 }
 
 #[test]
-#[ignore]
 fn invalid_dna_input_at_offset() {
     let input = "ACGTUXXCTTAA";
     let output = Dna::new(input);
@@ -72,7 +65,6 @@ fn invalid_dna_input_at_offset() {
 }
 
 #[test]
-#[ignore]
 fn invalid_rna_input() {
     let input = "T";
     let output = Rna::new(input);
@@ -81,7 +73,6 @@ fn invalid_rna_input() {
 }
 
 #[test]
-#[ignore]
 fn invalid_rna_input_at_offset() {
     let input = "ACGTUXXCTTAA";
     let output = Rna::new(input);
