@@ -1,9 +1,10 @@
 /// 鞍点を探す
-/// 同一行に複数の最大値がある場合の想定が必要
+/// 同一行の最大値が複数の列にある場合の想定が必要
+/// 列および行番号はすべてusize型
 pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {
     let mut points: Vec<(usize, usize)> = Vec::new();
-    let mut founded = false;
-    let mut saddle_columns: Vec<i32> = Vec::new();
+    let mut founded: bool;
+    let mut saddle_columns: Vec<usize> = Vec::new();
 
     println!("input = {:?}", input);
     for row1 in 0..input.len() {
@@ -13,8 +14,9 @@ pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {
         if input[row1].get(0).is_none() == true {
             break;
         }
-        largest = input[row1].get(0).unwrap();
+        largest = input[row1].get(0).unwrap();  // 最大値の仮置き
 
+        // 仮置き含め、最大値の列を見つける
         for column1 in 0..input[row1].len() {
             let value: &u64 = input[row1].get(column1).unwrap();
             if value >= largest {
@@ -22,7 +24,7 @@ pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {
                     largest = value;
                     saddle_columns.clear();
                 }
-                saddle_columns.push(column1 as i32);
+                saddle_columns.push(column1);
             }
         }
 
@@ -31,9 +33,10 @@ pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {
         // 行内の最大値が同一列の最小値か？
         for idx in 0..saddle_columns.len() {
             founded = true;
-            let saddle_column: usize = *saddle_columns.get(idx).unwrap() as usize;
+            let saddle_column = *saddle_columns.get(idx).unwrap();
             for row2 in 0..input.len() {
                 println!("{} : {}", input[row2].get(saddle_column).unwrap(), input[row1].get(saddle_column).unwrap());
+                // 同一列に行内の最大値より小さい値があった場合、鞍点ではない！
                 if input[row2].get(saddle_column).unwrap() < input[row1].get(saddle_column).unwrap() {
                     founded = false;
                     break;
