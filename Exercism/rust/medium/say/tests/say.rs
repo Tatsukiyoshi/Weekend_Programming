@@ -9,7 +9,6 @@ fn zero() {
 }
 
 #[test]
-#[ignore]
 fn one() {
     let input = 1;
     let output = encode(input);
@@ -18,7 +17,6 @@ fn one() {
 }
 
 #[test]
-#[ignore]
 fn fourteen() {
     let input = 14;
     let output = encode(input);
@@ -27,7 +25,6 @@ fn fourteen() {
 }
 
 #[test]
-#[ignore]
 fn twenty() {
     let input = 20;
     let output = encode(input);
@@ -36,7 +33,6 @@ fn twenty() {
 }
 
 #[test]
-#[ignore]
 fn twenty_two() {
     let input = 22;
     let output = encode(input);
@@ -45,7 +41,6 @@ fn twenty_two() {
 }
 
 #[test]
-#[ignore]
 fn thirty() {
     let input = 30;
     let output = encode(input);
@@ -54,7 +49,6 @@ fn thirty() {
 }
 
 #[test]
-#[ignore]
 fn ninety_nine() {
     let input = 99;
     let output = encode(input);
@@ -63,7 +57,6 @@ fn ninety_nine() {
 }
 
 #[test]
-#[ignore]
 fn one_hundred() {
     let input = 100;
     let output = encode(input);
@@ -72,7 +65,6 @@ fn one_hundred() {
 }
 
 #[test]
-#[ignore]
 fn one_hundred_twenty_three() {
     let input = 123;
     let output = encode(input);
@@ -81,7 +73,6 @@ fn one_hundred_twenty_three() {
 }
 
 #[test]
-#[ignore]
 fn two_hundred() {
     let input = 200;
     let output = encode(input);
@@ -90,7 +81,6 @@ fn two_hundred() {
 }
 
 #[test]
-#[ignore]
 fn nine_hundred_ninety_nine() {
     let input = 999;
     let output = encode(input);
@@ -99,7 +89,6 @@ fn nine_hundred_ninety_nine() {
 }
 
 #[test]
-#[ignore]
 fn one_thousand() {
     let input = 1000;
     let output = encode(input);
@@ -108,7 +97,6 @@ fn one_thousand() {
 }
 
 #[test]
-#[ignore]
 fn one_thousand_two_hundred_thirty_four() {
     let input = 1234;
     let output = encode(input);
@@ -126,7 +114,6 @@ fn one_million() {
 }
 
 #[test]
-#[ignore]
 fn one_million_two_thousand_three_hundred_forty_five() {
     let input = 1002345;
     let output = encode(input);
@@ -135,7 +122,6 @@ fn one_million_two_thousand_three_hundred_forty_five() {
 }
 
 #[test]
-#[ignore]
 fn one_billion() {
     let input = 1000000000;
     let output = encode(input);
@@ -144,7 +130,6 @@ fn one_billion() {
 }
 
 #[test]
-#[ignore]
 fn a_big_number() {
     let input = 987654321123;
     let output = encode(input);
@@ -153,7 +138,6 @@ fn a_big_number() {
 }
 
 #[test]
-#[ignore]
 fn max_i64() {
     let input = 9223372036854775807;
     let output = encode(input);
@@ -162,7 +146,6 @@ fn max_i64() {
 }
 
 #[test]
-#[ignore]
 fn max_u64() {
     let input = 18446744073709551615;
     let output = encode(input);
