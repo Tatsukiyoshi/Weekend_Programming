@@ -9,7 +9,6 @@ fn no_primes_under_two() {
 }
 
 #[test]
-#[ignore]
 fn find_first_prime() {
     let input = 2;
     let output = primes_up_to(input);
@@ -18,7 +17,6 @@ fn find_first_prime() {
 }
 
 #[test]
-#[ignore]
 fn find_primes_up_to_10() {
     let input = 10;
     let output = primes_up_to(input);
@@ -27,7 +25,6 @@ fn find_primes_up_to_10() {
 }
 
 #[test]
-#[ignore]
 fn limit_is_prime() {
     let input = 13;
     let output = primes_up_to(input);
@@ -36,7 +33,6 @@ fn limit_is_prime() {
 }
 
 #[test]
-#[ignore]
 fn find_primes_up_to_1000() {
     let input = 1000;
     let output = primes_up_to(input);
