@@ -105,7 +105,6 @@ fn one_thousand_two_hundred_thirty_four() {
 }
 
 #[test]
-#[ignore]
 fn one_million() {
     let input = 1000000;
     let output = encode(input);
