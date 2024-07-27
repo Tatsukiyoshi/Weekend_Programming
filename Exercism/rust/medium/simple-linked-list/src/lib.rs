@@ -1,12 +1,22 @@
+/// Node構造体（from HINTS.md）
+struct Node<T> {
+    data: T,
+    next: Option<Box<Node<T>>>,
+}
+
+impl<T> Node<T> {
+    pub fn new(_data: T) -> Self {
+        Node { data: _data, next: None }
+    }
+}
+
 pub struct SimpleLinkedList<T> {
-    // Delete this field
-    // dummy is needed to avoid unused parameter error during compilation
-    dummy: ::std::marker::PhantomData<T>,
+    head: Option<Box<Node<T>>>,
 }
 
 impl<T> SimpleLinkedList<T> {
     pub fn new() -> Self {
-        todo!()
+        SimpleLinkedList { head: None }
     }
 
     // You may be wondering why it's necessary to have is_empty()
@@ -15,11 +25,19 @@ impl<T> SimpleLinkedList<T> {
     // whereas is_empty() is almost always cheap.
     // (Also ask yourself whether len() is expensive for SimpleLinkedList)
     pub fn is_empty(&self) -> bool {
-        todo!()
+        self.head.is_none()
     }
 
+    /// 長さの取得
+    /// Emptyの場合、０
+    /// Emptyでなければ、headから順にNodeをたどる（head -> next -> next ...）
     pub fn len(&self) -> usize {
-        todo!()
+        let mut length = 0;
+        match self.is_empty() {
+            true => {},
+            false => {}
+        }
+        length
     }
 
     pub fn push(&mut self, _element: T) {
