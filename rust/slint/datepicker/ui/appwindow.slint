@@ -1,0 +1,40 @@
+import { DatePickerPopup, Button } from "std-widgets.slint";
+export component Example inherits Window {
+    width: 600px;
+    height: 600px;
+
+    date-picker-button := Button {
+        text: @tr("Open Date Picker");
+
+        clicked => {
+            date-picker.show();
+        }
+    }
+
+    date-picker := DatePickerPopup {
+        width: 360px;
+        height: 524px;
+        close-on-click: false;
+
+        accepted(date) => {
+            date-text.text = date.year + "/" + date.month + "/" + date.day;
+            date-picker.close();
+        }
+    }
+
+    date-label := Text {
+        text: "Date:";
+        x: 200px;
+        y: 250px;
+    }
+
+    date-text := TextInput {
+        read-only: true;
+        single-line: true;
+        text: "1970/01/01";
+        x: 280px;
+        y: 250px;
+        width: 100px;
+        height: 20px;
+    }
+}
