@@ -1,12 +1,12 @@
 [package]
 name = "my_bevy_game"
-version = "0.2.5"
+version = "0.2.6"
 edition = "2021"
-rust-version = "1.76"
+rust-version = "1.80"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = "0.13.0"
-image = "0.25.0"
-winit = "0.29.15"
+bevy = "0.14.0"
+image = "0.25.2"
+winit = "0.30.4"
