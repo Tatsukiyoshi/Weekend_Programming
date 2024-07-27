@@ -1,8 +1,9 @@
 [package]
-name = "slint_sample"
-version = "0.2.1"
-build = "build.rs"
+name = "datepicker"
+version = "0.1.0"
+authors = ["Shinya Watanabe <48684470+Tatsukiyoshi@users.noreply.github.com>"]
 edition = "2021"
+build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
