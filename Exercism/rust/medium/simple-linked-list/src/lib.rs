@@ -71,26 +71,29 @@ impl<T: Clone + Debug + Display> SimpleLinkedList<T> {
 
     /// 末端 Node の取得
     pub fn pop(&mut self) -> Option<T> {
-        todo!()
-        /*
         let data: Option<T>;
+        let mut work_node;
         let mut node = &mut self.head;
-        let mut work_node = node.as_mut().unwrap().next;
+
+        // head = None なので、結果も None
         if node.is_none() {
             None
         } else {
+            // head -> next をたどって、末端の値を返す
+            // 末端を破棄し、直前のNodeのnextをNoneにする
+            // sizeを1デクリメントする
             loop {
-                work_node = node.as_mut().unwrap().next;
-                if work_node.unwrap().next.is_none() {
-                    data = Option::from(work_node.unwrap().data.clone());
+                work_node = node.as_mut().unwrap();
+                if work_node.next.is_none() {
+                    data = Some(work_node.data.clone());
+                    work_node.next = None;
                     self.size -= 1;
                     break;
                 }
-                node = &mut work_node.unwrap().next;
+                node = &mut work_node.next;
             }
             data
         }
-        */
     }
 
     pub fn peek(&self) -> Option<&T> {
