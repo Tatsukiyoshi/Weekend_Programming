@@ -1,22 +1,27 @@
+use std::fmt::{Debug, Display};
+
 /// Node構造体（from HINTS.md）
+#[derive(Debug)]
 struct Node<T> {
     data: T,
     next: Option<Box<Node<T>>>,
 }
 
-impl<T> Node<T> {
+impl<T: Clone> Node<T> {
     pub fn new(_data: T) -> Self {
         Node { data: _data, next: None }
     }
 }
 
+#[derive(Debug)]
 pub struct SimpleLinkedList<T> {
     head: Option<Box<Node<T>>>,
+    size: usize
 }
 
-impl<T> SimpleLinkedList<T> {
+impl<T: Clone + Debug + Display> SimpleLinkedList<T> {
     pub fn new() -> Self {
-        SimpleLinkedList { head: None }
+        SimpleLinkedList { head: None, size: 0 }
     }
 
     // You may be wondering why it's necessary to have is_empty()
@@ -25,27 +30,67 @@ impl<T> SimpleLinkedList<T> {
     // whereas is_empty() is almost always cheap.
     // (Also ask yourself whether len() is expensive for SimpleLinkedList)
     pub fn is_empty(&self) -> bool {
-        self.head.is_none()
+        self.size == 0
     }
 
     /// 長さの取得
     /// Emptyの場合、０
     /// Emptyでなければ、headから順にNodeをたどる（head -> next -> next ...）
     pub fn len(&self) -> usize {
-        let mut length = 0;
-        match self.is_empty() {
-            true => {},
-            false => {}
-        }
-        length
+        self.size
     }
 
+    /// 末端への Node の追加
+    /// - 入力
+    ///   - 追加要素
+    /// - Reference
+    ///   - [Code on Stackoverflow](https://stackoverflow.com/questions/37643310/error-cannot-move-out-of-borrowed-content-for-self-field)
     pub fn push(&mut self, _element: T) {
-        todo!()
+        let node = &mut self.head;
+        if node.is_none() {
+            let new_node = Node::new(_element);
+            //println!("first node = {:?}", new_node);
+            self.head = Option::from(Box::new(new_node));
+            self.size += 1;
+        } else {
+            let mut last_node = node.as_mut().unwrap();
+            loop {
+                if last_node.next.is_none() {
+                    let new_node = Node::new(_element.clone());
+                    //let next = std::mem::replace(last_node, Box::new(new_node));
+                    let next = Box::new(new_node);
+                    last_node.next = Option::from(next);
+                    self.size += 1;
+                    break;
+                } else {
+                    last_node = last_node.next.as_mut().unwrap();
+                }
+            }
+        }
     }
 
+    /// 末端 Node の取得
     pub fn pop(&mut self) -> Option<T> {
         todo!()
+        /*
+        let data: Option<T>;
+        let mut node = &mut self.head;
+        let mut work_node = node.as_mut().unwrap().next;
+        if node.is_none() {
+            None
+        } else {
+            loop {
+                work_node = node.as_mut().unwrap().next;
+                if work_node.unwrap().next.is_none() {
+                    data = Option::from(work_node.unwrap().data.clone());
+                    self.size -= 1;
+                    break;
+                }
+                node = &mut work_node.unwrap().next;
+            }
+            data
+        }
+        */
     }
 
     pub fn peek(&self) -> Option<&T> {
