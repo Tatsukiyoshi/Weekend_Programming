@@ -20,11 +20,10 @@ pub const INITIAL_VALUE: u32 = 0;
 pub fn spiral_matrix(size: u32) -> Vec<Vec<u32>> {
     let volume: usize = size as usize;
     let mut result: Vec<Vec<u32>> = Vec::new();
-    let x = 0; // 周回数
     let mut data = 1; // マトリックスに埋める数値
-    let mut work: Vec<u32> = Vec::new();
+    let mut start = 1;
+    let mut end = volume;
 
-    //println!("size = {:?}", volume);
     // マトリックスサイズが０の場合、空を返す
     if size == 0 {
         return result;
@@ -33,39 +32,70 @@ pub fn spiral_matrix(size: u32) -> Vec<Vec<u32>> {
     // マトリックスの初期化
     result = Vec::with_capacity(volume * volume);
 
-    // 上側
-    for _column in 1..=volume {
-        work.push(data);
-        data = data + 1;
-    }
-    result.insert(x, work);
-
-    // 右側
-    for row in 1..=volume {
-        let mut work = result.get(row - 1);
-        //println!("row = {:?}, vector = {:?}", row, work);
-        if work.is_none() {
-            let mut vec_work: Vec<u32> = Vec::with_capacity(volume);
-            for column in 1..=volume {
-                if column == volume {
-                    vec_work.insert(column - 1, data);
-                } else {
-                    vec_work.insert(column - 1, INITIAL_VALUE);
+    loop {
+        // 上側
+        if start == 1 {
+            let mut vec_work: Vec<u32> = Vec::new();
+            for _column in start..=end {
+                vec_work.push(data);
+                data += 1;
+            }
+            result.insert(start - 1, vec_work);
+        } else {
+            let work = result.get_mut(start - 1).unwrap();
+            for column in start..=end {
+                let value = work.get_mut(column - 1).unwrap();
+                if *value == INITIAL_VALUE {
+                    *value = data;
+                    data += 1;
                 }
             }
-            result.insert(row - 1, vec_work);
-            data = data + 1;
         }
-    }
 
-    // 下側
-    let mut work = result.get_mut(volume - 1).unwrap();
-    for column in (1..volume).rev() {
-        let mut value = work.get_mut(column - 1).unwrap();
-        if *value == INITIAL_VALUE {
-            *value = data;
-            data = data + 1;
+        // 右側
+        for row in start..=end {
+            let mut work = result.get(row - 1);
+            if work.is_none() {
+                let mut vec_work: Vec<u32> = Vec::with_capacity(volume);
+                for column in start..=end {
+                    if column == end {
+                        vec_work.insert(column - 1, data);
+                    } else {
+                        vec_work.insert(column - 1, INITIAL_VALUE);
+                    }
+                }
+                result.insert(row - 1, vec_work);
+                data += 1;
+            }
         }
+
+        // 下側
+        let work = result.get_mut(end - 1).unwrap();
+        for column in (start..end).rev() {
+            let value = work.get_mut(column - 1).unwrap();
+            if *value == INITIAL_VALUE {
+                *value = data;
+                data += 1;
+            }
+        }
+
+        // 左側
+        for row in (start..end).rev() {
+            let work = result.get_mut(row - 1).unwrap();
+            let value = work.get_mut(start - 1).unwrap();
+            if *value == INITIAL_VALUE {
+                *value = data;
+                data += 1;
+            }
+        }
+
+        if start != end {
+            start += 1;
+        }
+        if start == end {
+            break;
+        }
+        end -= 1;
     }
 
     result
