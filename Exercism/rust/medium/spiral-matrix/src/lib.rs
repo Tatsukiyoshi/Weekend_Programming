@@ -54,7 +54,7 @@ pub fn spiral_matrix(size: u32) -> Vec<Vec<u32>> {
 
         // 右側
         for row in start..=end {
-            let mut work = result.get(row - 1);
+            let work = result.get_mut(row - 1);
             if work.is_none() {
                 let mut vec_work: Vec<u32> = Vec::with_capacity(volume);
                 for column in start..=end {
@@ -66,6 +66,12 @@ pub fn spiral_matrix(size: u32) -> Vec<Vec<u32>> {
                 }
                 result.insert(row - 1, vec_work);
                 data += 1;
+            } else {
+                let value = work.unwrap().get_mut(end - 1).unwrap();
+                if *value == INITIAL_VALUE {
+                    *value = data;
+                    data += 1;
+                }
             }
         }
 

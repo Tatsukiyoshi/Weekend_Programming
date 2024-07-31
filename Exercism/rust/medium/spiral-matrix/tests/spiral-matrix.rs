@@ -33,7 +33,6 @@ fn spiral_of_size_3() {
 }
 
 #[test]
-#[ignore]
 fn spiral_of_size_4() {
     let input = 4;
     let output = spiral_matrix(input);
