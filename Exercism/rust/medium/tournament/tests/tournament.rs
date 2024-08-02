@@ -24,7 +24,6 @@ fn a_win_is_three_points_a_loss_is_zero_points() {
 }
 
 #[test]
-#[ignore]
 fn a_win_can_also_be_expressed_as_a_loss() {
     let input: &[&str] = &["Blithering Badgers;Allegoric Alaskans;loss"];
     let input = input.join("\n");
@@ -39,7 +38,6 @@ fn a_win_can_also_be_expressed_as_a_loss() {
 }
 
 #[test]
-#[ignore]
 fn a_different_team_can_win() {
     let input: &[&str] = &["Blithering Badgers;Allegoric Alaskans;win"];
     let input = input.join("\n");
@@ -54,7 +52,6 @@ fn a_different_team_can_win() {
 }
 
 #[test]
-#[ignore]
 fn a_draw_is_one_point_each() {
     let input: &[&str] = &["Allegoric Alaskans;Blithering Badgers;draw"];
     let input = input.join("\n");
@@ -69,7 +66,6 @@ fn a_draw_is_one_point_each() {
 }
 
 #[test]
-#[ignore]
 fn there_can_be_more_than_one_match() {
     let input: &[&str] = &[
         "Allegoric Alaskans;Blithering Badgers;win",
@@ -87,7 +83,6 @@ fn there_can_be_more_than_one_match() {
 }
 
 #[test]
-#[ignore]
 fn there_can_be_more_than_one_winner() {
     let input: &[&str] = &[
         "Allegoric Alaskans;Blithering Badgers;loss",
@@ -105,7 +100,6 @@ fn there_can_be_more_than_one_winner() {
 }
 
 #[test]
-#[ignore]
 fn there_can_be_more_than_two_teams() {
     let input: &[&str] = &[
         "Allegoric Alaskans;Blithering Badgers;win",
@@ -125,7 +119,6 @@ fn there_can_be_more_than_two_teams() {
 }
 
 #[test]
-#[ignore]
 fn typical_input() {
     let input: &[&str] = &[
         "Allegoric Alaskans;Blithering Badgers;win",
@@ -149,7 +142,6 @@ fn typical_input() {
 }
 
 #[test]
-#[ignore]
 fn incomplete_competition_not_all_pairs_have_played() {
     let input: &[&str] = &[
         "Allegoric Alaskans;Blithering Badgers;loss",
@@ -171,7 +163,6 @@ fn incomplete_competition_not_all_pairs_have_played() {
 }
 
 #[test]
-#[ignore]
 fn ties_broken_alphabetically() {
     let input: &[&str] = &[
         "Courageous Californians;Devastating Donkeys;win",
@@ -195,7 +186,6 @@ fn ties_broken_alphabetically() {
 }
 
 #[test]
-#[ignore]
 fn ensure_points_sorted_numerically() {
     let input: &[&str] = &[
         "Devastating Donkeys;Blithering Badgers;win",
