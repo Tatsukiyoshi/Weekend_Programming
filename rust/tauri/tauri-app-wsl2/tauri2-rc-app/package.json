@@ -1,7 +1,7 @@
 {
-  "name": "tauri2-beta-app",
+  "name": "tauri2-rc-app",
   "private": true,
-  "version": "0.2.7",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,6 +21,6 @@
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.5.4",
     "vite": "^5.3.5",
-    "@tauri-apps/cli": "^2.0.0-rc.0"
+    "@tauri-apps/cli": "^2.0.0-rc.1"
   }
 }
