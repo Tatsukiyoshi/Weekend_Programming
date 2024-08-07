@@ -1,4 +1,0 @@
-[package]
-edition = "2021"
-name = "grains"
-version = "1.2.0"
