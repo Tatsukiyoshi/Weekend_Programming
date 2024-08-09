@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="115dp">
 
     <ImageView
             android:id="@+id/droidImage"
@@ -17,25 +18,8 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.304"
+            app:layout_constraintVertical_bias="0.433"
             app:srcCompat="@drawable/ic_mysize" />
-
-    <EditText
-            android:id="@+id/neck"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="198dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="60dp"
-            android:ems="10"
-            android:hint="@string/neckHint"
-            android:inputType="numberDecimal"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-            app:layout_constraintBottom_toTopOf="@+id/waist"
-            app:layout_constraintEnd_toEndOf="@+id/waist"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
             android:id="@+id/sleeve"
@@ -60,41 +44,70 @@
             android:id="@+id/inseam"
             android:layout_width="80dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="166dp"
             android:ems="10"
             android:hint="@string/inseamHint"
             android:inputType="numberDecimal"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintEnd_toEndOf="@+id/droidImage"
-            app:layout_constraintStart_toStartOf="@+id/droidImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/droidImage" />
 
     <EditText
             android:id="@+id/waist"
             android:layout_width="80dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
             android:ems="10"
             android:hint="@string/waistHint"
             android:inputType="numberDecimal"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toBottomOf="@+id/droidImage"
-            app:layout_constraintEnd_toStartOf="@+id/droidImage" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neck" />
+
+    <EditText
+            android:id="@+id/neck"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:hint="@string/neckHint"
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            app:layout_constraintBottom_toTopOf="@+id/waist"
+            app:layout_constraintEnd_toEndOf="@+id/waist"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.982" />
 
     <Button
-            android:text="@string/saveButtonText"
+            android:id="@+id/save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/save" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/saveButtonText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
             android:id="@+id/heightButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="128dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/heightDescription"
             app:layout_constraintEnd_toEndOf="parent"
