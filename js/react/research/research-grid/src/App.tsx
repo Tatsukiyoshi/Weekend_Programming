@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.tsx
+import * as React from "react";
+import { render } from "react-dom";
+import { ReactGrid, Column, Row } from "@silevis/reactgrid";
+import "@silevis/reactgrid/styles.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+// Define some data to display in the grid
+interface Person {
+  name: string;
+  surname: string;
 }
 
-export default App
+const getPeople = (): Person[] => [
+  { name: "Thomas", surname: "Goldman" },
+  { name: "Susie", surname: "Quattro" },
+  { name: "", surname: "" }
+];
+
+const getColumns = (): Column[] => [
+  { columnId: "name", width: 150 },
+  { columnId: "surname", width: 150 }
+];
+
+const headerRow: Row = {
+  rowId: "header",
+  cells: [
+    { type: "header", text: "Name" },
+    { type: "header", text: "Surname" }
+  ]
+};
+
+// Generate your rows
+const getRows = (people: Person[]): Row[] => [
+  headerRow,
+  ...people.map<Row>((person, idx) => ({
+    rowId: idx,
+    cells: [
+      { type: "text", text: person.name },
+      { type: "text", text: person.surname }
+    ]
+  }))
+];
+
+// Pass the data to ReactGrid
+export function App() {
+  const [people] = React.useState<Person[]>(getPeople());
+
+  const rows = getRows(people);
+  const columns = getColumns();
+
+  return <ReactGrid rows={rows} columns={columns} />;
+}
+
+render(<App />, document.getElementById("root"));
