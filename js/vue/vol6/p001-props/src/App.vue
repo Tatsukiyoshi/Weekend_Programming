@@ -4,7 +4,7 @@
     <Phone1 name="Galaxy S22" vendor="Samsung" :price="125030"></Phone1>
     <Phone1 name="AQUOS sense6" vendor="SHARP" :price="57024"></Phone1>
     <!-- Phone2コンポーネントの描画 ...（2）-->
-    <div v-for="phone in phoneDataArray" v-bind:id="phone.name">
+    <div v-for="phone in phoneDataArray" v-bind:key="phone.name">
       <Phone2 :phoneData="phone"></Phone2>
     </div>
   </div>

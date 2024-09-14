@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="phone in phoneDataArray" v-bind:id="phone.name">
+    <div v-for="phone in phoneDataArray" v-bind:key="phone.name">
       <PhoneWithBuy :phoneData="phone"
         @onBuy="onBuyFromComponent"><!-- onBuyイベントを設定 ...（1）-->
       </PhoneWithBuy>
