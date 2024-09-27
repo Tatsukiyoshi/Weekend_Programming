@@ -3,13 +3,13 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "3.2.0"
 	id("io.spring.dependency-management") version "1.1.3"
-	kotlin("jvm") version "1.9.24"
+	kotlin("jvm") version "2.0.20"
 	kotlin("plugin.spring") version "1.8.10"
 }
 
 group = "com.example"
-version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_21
+version = "0.0.2-SNAPSHOT"
+java.sourceCompatibility = JavaVersion.VERSION_22
 
 configurations {
 	compileOnly {
@@ -35,10 +35,10 @@ dependencies {
 	testImplementation("org.springframework.batch:spring-batch-test")
 }
 
-tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "21"
+tasks.named("compileKotlin", org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask::class.java) {
+	compilerOptions {
+		freeCompilerArgs.add("-Xjsr305=strict")
+		apiVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_0)
 	}
 }
 
