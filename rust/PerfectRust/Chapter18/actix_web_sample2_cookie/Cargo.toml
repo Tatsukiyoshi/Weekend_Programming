@@ -1,30 +1,31 @@
 [package]
 name = "actix_web_sample2_cookie"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = { version = "4.4.1", features = ["openssl"] }
-actix-session = { version = "0.9.0", features = ["cookie-session"] }
-actix-http = "3.5.1"
-tera = "1.19.1"
+actix-web = { version = "4.9.0", features = ["openssl"] }
+actix-session = { version = "0.10.1", features = ["cookie-session"] }
+actix-http = "3.9.0"
+tera = "1.20.0"
 mime = "0.3.17"
-env_logger = "0.11.0"
-log = "0.4.20"
-anyhow = "1.0.79"
+env_logger = "0.11.5"
+log = "0.4.22"
+anyhow = "1.0.89"
 dotenv = "0.15.0"
-serde = { version = "1.0.195", features = ["derive"] }
-sea-orm = { version = "0.12.11" , features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
-http = "1.0.0"
-thiserror = "1.0.56"
-validator = {version = "0.16.1", features = ["derive"]}
-openssl = { version = "0.10.63", features = ["v110"] }
-jsonwebtoken = "9.2.0"
-chrono = "0.4.31"
-uuid = { version = "1.7.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+serde = { version = "1.0.210", features = ["derive"] }
+sea-orm = { version = "1.1.0-rc.1", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
+http = "1.1.0"
+thiserror = "1.0.64"
+validator = {version = "0.18.1", features = ["derive"]}
+openssl = { version = "0.10.66", features = ["v110"] }
+jsonwebtoken = "9.3.0"
+chrono = "0.4.38"
+uuid = { version = "1.10.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
 easy-hasher = "2.2.1"
-async-trait = "0.1.77"
-tokio = {version = "1.35.1", features = ["full"]}
+async-trait = "0.1.83"
+tokio = {version = "1.40.0", features = ["full"]}
 rusty-money = "0.4.1"
+time = "0.3.36"

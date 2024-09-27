@@ -1,19 +1,20 @@
 [package]
 name = "actix_web_sample"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = "4.4.1"
-actix-http = "3.5.1"
-tera = "1.19.1"
+actix-web = "4.9.0"
+actix-http = "3.9.0"
+tera = "1.20.0"
 mime = "0.3.17"
-env_logger = "0.11.0"
-log = "0.4.20"
-anyhow = "1.0.79"
+env_logger = "0.11.5"
+log = "0.4.22"
+anyhow = "1.0.89"
 dotenv = "0.15.0"
-serde = {version = "1.0.195", features = ["derive"]}
-sea-orm = { version = "0.12.11" , features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
-http = "1.0.0"
+serde = {version = "1.0.210", features = ["derive"]}
+sea-orm = { version = "1.1.0-rc.1" , features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"], default-features = false }
+http = "1.1.0"
+time = "0.3.36"

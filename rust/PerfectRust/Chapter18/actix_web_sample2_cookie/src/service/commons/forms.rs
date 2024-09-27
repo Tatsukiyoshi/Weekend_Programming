@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 use serde::{de, Deserialize, Serialize};
-use validator::{validate_length, validate_range, validate_required, Validate};
+use validator::{ValidateLength, ValidateRange, ValidateRequired, Validate};
 use crate::service::commons::validator::{AppValidator, ValidationError};
 use crate::service::domain::category::{category::Category, category_id::CategoryId, category_name::CategoryName};
 use crate::service::domain::product::{product::Product, product_id::ProductId, product_name::ProductName, product_price::ProductPrice};
@@ -77,25 +77,25 @@ impl AppValidator for ProductRegisterForm {
     fn validate_value(&self) -> anyhow::Result<(), ValidationError> {
         let mut errors: HashMap<String, String> = HashMap::new();
         // nameフィールドの検証：未入力と文字数チェック
-        if !validate_length(self.name.as_ref().unwrap(), Some(4), Some(20), None) {
+        if !ValidateLength::validate_length(self.name.as_ref().unwrap(), Some(4), Some(20), None) {
             errors.insert(String::from("name"),
                           String::from("商品名は4文字以上20文字以内で入力して下さい。"));
         }
         // priceフィールドの検証：未入力と範囲チェック
-        if !validate_required(&self.price) {
+        if !ValidateRequired::validate_required(&self.price) {
             errors.insert(String::from("price"), String::from("単価は入力必須です。"));
         } else {
-            if !validate_range(self.price.unwrap(), Some(50), Some(100000)) {
+            if !ValidateRange::validate_range(&self.price.unwrap(), Some(50), Some(100000), None, None) {
                 errors.insert(String::from("price"),
                               String::from("単価は50～100000までで入力して下さい。"));
             }
         }
         // category_idフィールドの検証：未入力と範囲チェック
-        if !validate_required(&self.category_id){
+        if !ValidateRequired::validate_required(&self.category_id){
             errors.insert(String::from("category_id"),
                           String::from("カテゴリは入力必須です。"));
         } else {
-            if !validate_range(self.category_id.unwrap(), Some(1), Some(3)) {
+            if !ValidateRange::validate_range(&self.category_id.unwrap(), Some(1), Some(3), None, None) {
                 errors.insert(String::from("category_id"),
                               String::from("不正なカテゴリが選択されました"));
             }
