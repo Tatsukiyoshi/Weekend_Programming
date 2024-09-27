@@ -42,7 +42,7 @@ async fn main() -> std::io::Result<()>{
                     .cookie_name("rsessionid".to_string()).build()
             )
             .app_data(web::Data::new(tera.clone())) // Teraの登録
-            .app_data(web::Data::new(pool.clone()))// SeaORMのDatabeseConnectionの登録
+            .app_data(web::Data::new(pool.clone()))// SeaORMのDatabaseConnectionの登録
             .app_data(web::Data::new(provider.clone()))        // ServiceProviderの登録
             .configure(set_config)   // サービスの登録
     }).bind_openssl("127.0.0.1:8081", create_ssl_acceptor_builder())?.run().await
