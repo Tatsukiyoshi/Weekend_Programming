@@ -1,6 +1,6 @@
 [package]
 name = "tauri2-rc-app"
-version = "0.1.6"
+version = "0.1.7"
 description = "A Tauri App"
 authors = ["you"]
 edition = "2021"
@@ -12,10 +12,10 @@ name = "tauri2_rc_app_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.0-rc.12", features = [] }
+tauri-build = { version = "2.0.0-rc.13", features = [] }
 
 [dependencies]
-tauri = { version = "2.0.0-rc.15", features = [] }
+tauri = { version = "2.0.0-rc.16", features = [] }
 tauri-plugin-shell = "2.0.0-rc.3"
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0.128"
