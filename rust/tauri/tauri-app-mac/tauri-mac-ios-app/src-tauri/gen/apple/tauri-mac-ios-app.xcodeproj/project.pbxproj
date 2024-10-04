@@ -11,6 +11,7 @@
 		103AF2AFBA73282EB38EF187 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DF2AA5A76C11749D991995 /* Metal.framework */; };
 		1D2F20983BB58714710ED92A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20DA8D85DE76F8C2F085D2B /* LaunchScreen.storyboard */; };
 		29693B4261B7DA58F8E79BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9BCDAA7EA5EFDCA289FEE4 /* Assets.xcassets */; };
+		672AD5A495554661493F4256 /* libtauri_mac_ios_app_lib.a in Resources */ = {isa = PBXBuildFile; fileRef = 5065A02A6C1B90804882C6B4 /* libtauri_mac_ios_app_lib.a */; };
 		88F97C6DB21B0367F36404B5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E71CC32494A4A5CE3FB2EDD /* WebKit.framework */; };
 		8A2D40AE8265EB583F2BFAB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70370DF6D9C466F118D3FB1 /* QuartzCore.framework */; };
 		DA25C275DDFF4EE78147E068 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A647B6D3C3F02D1EB7C50B4 /* main.mm */; };
@@ -26,6 +27,7 @@
 		29038C28AEAC5701F2D785C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2F511912D4CB9C05F93F92AC /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
 		3EAB9FD236192B20ED4B82DC /* tauri-mac-ios-app_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tauri-mac-ios-app_iOS.entitlements"; sourceTree = "<group>"; };
+		5065A02A6C1B90804882C6B4 /* libtauri_mac_ios_app_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtauri_mac_ios_app_lib.a; sourceTree = "<group>"; };
 		5B57BFA76924C2EC2801547C /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
 		6A647B6D3C3F02D1EB7C50B4 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		74DF2AA5A76C11749D991995 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		34C8ED1340D0D9F3CC8DB739 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				5065A02A6C1B90804882C6B4 /* libtauri_mac_ios_app_lib.a */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
 		3B14BCD9FD95BB0EAE3CAA27 /* bindings */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A3D3478238E05BB772B29488 /* arm64-sim */ = {
+			isa = PBXGroup;
+			children = (
+				34C8ED1340D0D9F3CC8DB739 /* debug */,
+			);
+			path = "arm64-sim";
+			sourceTree = "<group>";
+		};
 		C6A3F9406871B8F35CE27312 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +164,23 @@
 		E8CC7EB6206C2E39225191C0 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				A3D3478238E05BB772B29488 /* arm64-sim */,
 			);
 			path = Externals;
+			sourceTree = "<group>";
+		};
+		"TEMP_14095C76-3928-47CF-9F64-C0DFBD34B856" /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+		"TEMP_D15CB860-2681-444C-9FD4-35065F868E8B" /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = arm64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +243,7 @@
 				29693B4261B7DA58F8E79BCB /* Assets.xcassets in Resources */,
 				1D2F20983BB58714710ED92A /* LaunchScreen.storyboard in Resources */,
 				E043DEFEEB132C6D72FDBB4E /* assets in Resources */,
+				672AD5A495554661493F4256 /* libtauri_mac_ios_app_lib.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +369,7 @@
 				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taurirc2.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauri2.app;
 				PRODUCT_NAME = "tauri-mac-ios-app";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,7 +467,7 @@
 				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taurirc2.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauri2.app;
 				PRODUCT_NAME = "tauri-mac-ios-app";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
