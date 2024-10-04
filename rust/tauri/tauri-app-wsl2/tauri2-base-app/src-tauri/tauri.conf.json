@@ -1,6 +1,6 @@
 {
-  "productName": "tauri2-rc-app",
-  "version": "0.0.0",
+  "productName": "tauri2-base-app",
+  "version": "1.0.0",
   "identifier": "com.tauri.dev",
   "build": {
     "beforeDevCommand": "bun run dev",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "tauri2-rc-app",
+        "title": "tauri2-base-app",
         "width": 800,
         "height": 600
       }

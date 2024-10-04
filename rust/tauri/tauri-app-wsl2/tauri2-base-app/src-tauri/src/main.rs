@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    tauri2_rc_app_lib::run()
+    tauri2_base_app_lib::run()
 }
