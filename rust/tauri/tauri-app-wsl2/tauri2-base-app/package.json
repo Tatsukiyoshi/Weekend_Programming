@@ -1,5 +1,5 @@
 {
-  "name": "tauri-mac-ios-app",
+  "name": "tauri2-base-app",
   "private": true,
   "version": "1.0.0",
   "type": "module",

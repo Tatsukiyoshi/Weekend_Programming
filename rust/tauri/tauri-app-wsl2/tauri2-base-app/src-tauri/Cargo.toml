@@ -1,5 +1,5 @@
 [package]
-name = "tauri-mac-ios-app"
+name = "tauri2-base-app"
 version = "1.0.0"
 description = "A Tauri App Base 2.0"
 authors = ["you"]
@@ -8,7 +8,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name = "tauri_mac_ios_app_lib"
+name = "tauri2_base_app_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]

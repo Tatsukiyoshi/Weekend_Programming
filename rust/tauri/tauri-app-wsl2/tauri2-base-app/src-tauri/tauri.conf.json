@@ -1,7 +1,7 @@
 {
-  "productName": "tauri-mac-ios-app",
+  "productName": "tauri2-base-app",
   "version": "1.0.0",
-  "identifier": "com.tauri2.app",
+  "identifier": "com.tauri.dev",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "tauri-mac-ios-app",
+        "title": "tauri2-base-app",
         "width": 800,
         "height": 600
       }
