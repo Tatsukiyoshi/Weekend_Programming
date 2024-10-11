@@ -1,7 +1,7 @@
 {
   "name": "tauri2-bese-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.0.1",
+    "@tauri-apps/api": "^2.0.2",
     "@tauri-apps/plugin-shell": "^2.0.0"
   },
   "devDependencies": {
@@ -20,9 +20,9 @@
     "svelte": "^4.2.19",
     "svelte-check": "^4.0.4",
     "tslib": "^2.7.0",
-    "typescript": "^5.6.2",
+    "typescript": "^5.6.3",
     "vite": "^5.4.8",
-    "@tauri-apps/cli": "^2.0.1",
+    "@tauri-apps/cli": "^2.0.2",
     "internal-ip": "^8.0.0"
   }
 }
