@@ -25,6 +25,6 @@ Future<void> readFile() async{
   // (3) ファイルの読み込み
   String text = await file.readAsString();
   if (kDebugMode) {
-    print("----- ${text} ----");
+    print("----- $text ----");
   }
 }
