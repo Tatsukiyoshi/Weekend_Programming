@@ -21,8 +21,9 @@ class ItemRouterInformationParser extends RouteInformationParser<AppRoutePath> {
   RouteInformation restoreRouteInformation(AppRoutePath configuration) {
     if (configuration.id != null) {
       //	(4) アイテムが設定されている場合のURLを設定する
-      return RouteInformation(uri: '/${configuration.id}');
+      // https://api.flutter.dev/flutter/widgets/RouteInformation/RouteInformation.html
+      return RouteInformation(uri: Uri.parse('/${configuration.id}'));
     }
-    return const RouteInformation(location: '/');
+    return RouteInformation(uri: Uri.parse('/'));
   }
 }
