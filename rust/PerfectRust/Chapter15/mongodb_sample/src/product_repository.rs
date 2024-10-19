@@ -2,7 +2,7 @@ use anyhow::{Result, Error};
 use mongodb::Collection;
 use async_trait::async_trait;
 use futures_util::StreamExt;
-use mongodb::options::{FindOptions, UpdateModifications};
+use mongodb::options::UpdateModifications;
 use mongodb::bson::doc;
 use crate::connect::SampleMongoClient;
 use crate::entities::Product;
@@ -27,8 +27,7 @@ impl ProductRepository {
 #[async_trait]
 impl Repository<Product, i32, bool> for ProductRepository{
     async fn select_all(&self) -> Result<Vec<Product>> {
-        let find_options = FindOptions::builder().sort(doc! {"price": 1}).build();
-        let mut cursor = self.collection.find(None, find_options).await?;
+        let mut cursor = self.collection.find(Default::default()).await?;
         let mut products = Vec::new();
 
         while let Some(product) = cursor.next().await {
@@ -40,19 +39,19 @@ impl Repository<Product, i32, bool> for ProductRepository{
     /// ### リスト15.8 パラメータ検索
     async fn select_by_id(&self, id: i32) -> Result<Product> {
         let filter = doc! {"id": id};
-        let product = self.collection.find_one(filter, None).await?
+        let product = self.collection.find_one(filter).await?
             .ok_or(Error::msg(format!("商品id:{}は存在しません", id)));
         product
     }
 
     /// ### リスト15.9 指定された商品を追加する
     async fn insert(&self, product: Product) -> Result<bool> {
-        self.collection.insert_one(product, None).await.map(|_| Ok(true))?
+        self.collection.insert_one(product).await.map(|_| Ok(true))?
     }
 
     /// ### リスト15.9 指定された複数の商品を一括追加する
     async fn insert_many(&self, products: Vec<Product>) -> Result<bool> {
-        self.collection.insert_many(products.clone(), None).await.map(|ret| {
+        self.collection.insert_many(products.clone()).await.map(|ret| {
            if ret.inserted_ids.iter().count() == products.iter().count(){
                Ok(true)
            } else {
@@ -67,7 +66,7 @@ impl Repository<Product, i32, bool> for ProductRepository{
         let update = UpdateModifications::Document(
             doc! {"$set": {"name": product.get_name(), "price": product.get_price()} }
         );
-        let result = self.collection.update_one(query, update, None).await.map(|ret| {
+        let result = self.collection.update_one(query, update).await.map(|ret| {
             if ret.modified_count == 1 {
                 true
             } else {
@@ -80,7 +79,7 @@ impl Repository<Product, i32, bool> for ProductRepository{
     /// ### リスト15.11 指定された商品を削除する
     async fn delete_by_id(&self, id: i32) -> Result<bool> {
         let filter = doc! { "product_id": id };
-        let result = self.collection.delete_one(filter, None).await.map(|ret| {
+        let result = self.collection.delete_one(filter).await.map(|ret| {
             if ret.deleted_count == 1 {
                 true
             } else {
@@ -91,7 +90,7 @@ impl Repository<Product, i32, bool> for ProductRepository{
     }
 
     async fn count_documents(&self) -> Result<u64> {
-        let count = self.collection.count_documents(None, None).await?;
+        let count = self.collection.count_documents(Default::default()).await?;
         Ok(count)
     }
 }
