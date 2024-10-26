@@ -1,7 +1,7 @@
 [package]
 name = "tauri2-base-app"
-version = "1.0.2"
-description = "A Tauri App Base 2.0"
+version = "1.1.0"
+description = "A Tauri App Base 2.0 with Svelte 5"
 authors = ["you"]
 edition = "2021"
 rust-version = "1.82"
@@ -9,14 +9,17 @@ rust-version = "1.82"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
 name = "tauri2_base_app_lib"
-crate-type = ["lib", "cdylib", "staticlib"]
+crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.1", features = [] }
+tauri-build = { version = "2.0.2", features = [] }
 
 [dependencies]
-tauri = { version = "2.0.4", features = [] }
-tauri-plugin-shell = "2.0.1"
-serde = { version = "1.0.210", features = ["derive"] }
-serde_json = "1.0.131"
+tauri = { version = "2.0.6", features = [] }
+tauri-plugin-shell = "2.0.2"
+serde = { version = "1.0.213", features = ["derive"] }
+serde_json = "1.0.132"
