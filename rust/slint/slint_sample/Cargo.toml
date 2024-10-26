@@ -1,13 +1,13 @@
 [package]
 name = "slint_sample"
-version = "0.2.1"
+version = "0.2.2"
 build = "build.rs"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-slint = "1.7.1"
+slint = "1.8.0"
 
 [build-dependencies]
-slint-build = "1.7.1"
+slint-build = "1.8.0"
