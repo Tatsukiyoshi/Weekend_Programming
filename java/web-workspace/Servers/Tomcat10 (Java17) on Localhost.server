@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat10 (Java17) on Localhost" deployDir="wtpwebapps" hostname="localhost" id="localhost の Tomcat10 (Java17)" name="Tomcat10 (Java17) on Localhost" runtime-id="Tomcat10 (Java17)" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="31">
-  <list key="modules" value0="docoTsubu::org.eclipse.jst.jee.server:docoTsubu::jst.web::5.0" value1="ex::org.eclipse.jst.jee.server:ex::jst.web::5.0" value2="example::org.eclipse.jst.jee.server:example::jst.web::5.0" value3="sukkiriShop::org.eclipse.jst.jee.server:sukkiriShop::jst.web::5.0"/>
-</server>
