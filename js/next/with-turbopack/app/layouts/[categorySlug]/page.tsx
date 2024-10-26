@@ -2,7 +2,8 @@ import { use } from 'react';
 import { fetchCategoryBySlug, type PageProps } from '@/lib/getCategories';
 import { SkeletonCard } from '@/ui/SkeletonCard';
 
-export default function Page({ params }: PageProps) {
+export default function Page(props: PageProps) {
+  const params = use(props.params);
   const category = use(fetchCategoryBySlug(params.categorySlug));
   if (!category) return null;
 
