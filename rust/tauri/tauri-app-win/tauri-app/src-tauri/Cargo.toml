@@ -1,6 +1,6 @@
 [package]
 name = "tauri-app"
-version = "0.7.2"
+version = "0.7.3"
 description = "A Tauri App"
 authors = ["you"]
 license = ""
@@ -16,12 +16,12 @@ name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.1", features = [] }
+tauri-build = { version = "2.0.2", features = [] }
 
 [dependencies]
-serde_json = "1.0.131"
-serde = { version = "1.0.210", features = ["derive"] }
-tauri = { version = "2.0.4", features = [ "tray-icon", "image-ico"] }
+serde_json = "1.0.132"
+serde = { version = "1.0.213", features = ["derive"] }
+tauri = { version = "2.0.6", features = [ "tray-icon", "image-ico"] }
 
 [features]
 # by default Tauri runs in production mode

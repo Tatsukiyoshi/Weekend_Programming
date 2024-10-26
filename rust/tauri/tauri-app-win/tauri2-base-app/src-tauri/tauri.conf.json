@@ -1,16 +1,18 @@
 {
-  "productName": "tauri2-beta-app",
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "tauri2-base-app",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.tauri2-base-app.app",
   "build": {
-    "beforeDevCommand": "yarn dev",
+    "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "yarn build",
-    "frontendDist": "../dist"
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../build"
   },
-  "app": {"windows": [
+  "app": {
+    "windows": [
       {
-        "title": "tauri2-beta-app",
+        "title": "tauri2-base-app",
         "width": 800,
         "height": 600
       }
