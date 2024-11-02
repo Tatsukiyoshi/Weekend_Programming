@@ -1,6 +1,6 @@
 {
   "name": "p001-props",
-  "version": "0.2.6",
+  "version": "0.3.0-beta.1",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -10,26 +10,26 @@
     "lint": "eslint . --config 'eslint.config.js' --fix"
   },
   "dependencies": {
-    "vue": "^3.5.11"
+    "vue": "^3.5.12"
   },
   "devDependencies": {
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.14.0",
     "@rushstack/eslint-patch": "^1.10.4",
-    "@types/node": "^18.19.54",
+    "@types/node": "^18.19.63",
     "@vitejs/plugin-vue": "^5.1.4",
-    "@vue/eslint-config-prettier": "^9.0.0",
-    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "@vue/eslint-config-typescript": "^14.1.3",
     "@vue/tsconfig": "^0.5.1",
-    "eslint": "9.10.0",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vue": "^9.28.0",
-    "globals": "^15.10.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.11.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.8.0",
-    "vite": "^5.4.8",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2",
+    "vite": "^6.0.0-beta.8",
     "vue-eslint-parser": "^9.4.3",
-    "vue-tsc": "^2.1.6"
+    "vue-tsc": "^2.1.10"
   }
 }
