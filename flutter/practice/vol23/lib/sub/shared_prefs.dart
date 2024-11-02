@@ -14,14 +14,14 @@ Future<void> sharedPrefs() async{
 
     // (3) 値の取得
     if (kDebugMode) {
-        final bool? enable_save = prefs.getBool("enable_save");
-        final String? api_key = prefs.getString("api_key");
-        final int? last_at = prefs.getInt("last_at");
+        final bool? enableSave = prefs.getBool("enable_save");
+        final String? apiKey = prefs.getString("api_key");
+        final int? lastAt = prefs.getInt("last_at");
         final double? margin = prefs.getDouble("margin");
         final List<String>? keys = prefs.getStringList("keys");
-        print("enable_save is $enable_save");
-        print("api_key is $api_key");
-        print("last_at is $last_at");
+        print("enable_save is $enableSave");
+        print("api_key is $apiKey");
+        print("last_at is $lastAt");
         print("margin is $margin");
         for(var key in keys!){
             print("key is $key");
