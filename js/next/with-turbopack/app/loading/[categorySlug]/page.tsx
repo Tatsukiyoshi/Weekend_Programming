@@ -18,7 +18,8 @@ const fetchCategory = async (
   return await fetchCategoryBySlug(categorySlug);
 };
 
-export default function Page({ params }: PageProps) {
+export default function Page(props: PageProps) {
+  const params = use(props.params);
   const category = use(fetchCategory(params.categorySlug));
   if (!category) return null;
 

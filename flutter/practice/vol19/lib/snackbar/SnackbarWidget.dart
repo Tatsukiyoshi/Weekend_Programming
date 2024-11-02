@@ -21,13 +21,13 @@ class _SnackbarWidget extends State<SnackbarWidget> {
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             OutlinedButton(
-                child: const Text("Create snackbar(1)"),
+                child: const Text("Create SnackBar(1)"),
                 onPressed: (){
                   ScaffoldMessenger.of(context).showSnackBar(createSnackBar1(context));
                 }
             ),
             OutlinedButton(
-                child: const Text("Create snackbar(2)"),
+                child: const Text("Create SnackBar(2)"),
                 onPressed: (){
                   ScaffoldMessenger.of(context).showSnackBar(createSnackBar2(context));
                 }
