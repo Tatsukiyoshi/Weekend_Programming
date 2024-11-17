@@ -1,14 +1,39 @@
 {
-  "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
-  "build": {
-    "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run dev",
-    "devUrl": "http://localhost:8083",
-    "frontendDist": "../public"
-  },
+  "$schema": "https://schema.tauri.app/config/2",
   "productName": "tauri-app",
-  "version": "0.6.14",
+  "version": "0.8.0",
   "identifier": "com.tauri.dev",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../build"
+  },
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "closable": true,
+        "resizable": false,
+        "minimizable": false,
+        "maximizable": false,
+        "title": "Tauri App",
+        "width": 800,
+        "visible": false
+      },
+      {
+        "width": 400,
+        "height": 200,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen"
+      }
+    ]
+  },
   "bundle": {
     "active": true,
     "category": "DeveloperTool",
@@ -51,30 +76,5 @@
       "digestAlgorithm": "sha256",
       "timestampUrl": ""
     }
-  },
-  "app": {
-    "security": {
-      "csp": null
-    },
-    "windows": [
-      {
-        "fullscreen": false,
-        "height": 600,
-        "closable": true,
-        "resizable": false,
-        "minimizable": false,
-        "maximizable": false,
-        "title": "Tauri App",
-        "width": 800,
-        "visible": false
-      },
-      {
-        "width": 400,
-        "height": 200,
-        "decorations": false,
-        "url": "splashscreen.html",
-        "label": "splashscreen"
-      }
-    ]
   }
 }
