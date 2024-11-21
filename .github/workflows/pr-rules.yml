@@ -22,7 +22,7 @@ jobs:
             main <- feature/update* [Update]
 
       - name: Check head branch name
-        uses: praha-inc/action-restrict-head-branch@v1.0.0s
+        uses: praha-inc/action-restrict-head-branch@v1.0.0
         with:
           rules: |
             feature/* dependabot/* update/*
