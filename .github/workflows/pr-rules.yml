@@ -12,15 +12,6 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - name: Check pr label name
-        uses: praha-inc/action-restrict-pr-label@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          rules: |
-            main <- feature/* [Feature]
-            main <- feature/update* [Update]
-
       - name: Check head branch name
         uses: praha-inc/action-restrict-head-branch@v1.0.0
         with:
@@ -32,3 +23,12 @@ jobs:
         with:
           rules: |
             main <- feature/* dependabot/* update/*
+
+      - name: Check pr label name
+        uses: praha-inc/action-restrict-pr-label@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          rules: |
+            main <- feature/* [Feature]
+            main <- update/* [Update]
