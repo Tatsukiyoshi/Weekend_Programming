@@ -22,7 +22,7 @@ android {
     namespace 'com.example.myapplication'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_22
     }
 }
 
