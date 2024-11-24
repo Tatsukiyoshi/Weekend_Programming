@@ -29,7 +29,7 @@ android {
     namespace 'com.example.helloandroid'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_22
     }
 }
 
