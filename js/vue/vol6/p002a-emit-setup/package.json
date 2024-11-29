@@ -1,6 +1,6 @@
 {
   "name": "p002a-emit-setup",
-  "version": "0.3.0-beta.8",
+  "version": "0.3.0",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -9,15 +9,15 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "vue": "^3.5.12"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@types/node": "^18.19.63",
-    "@vitejs/plugin-vue": "^5.1.4",
-    "@vue/tsconfig": "^0.5.1",
+    "@types/node": "^18.19.67",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "^5.6.3",
-    "vite": "^6.0.0-beta.8",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.1",
     "vue-tsc": "^2.1.10"
   }
 }
