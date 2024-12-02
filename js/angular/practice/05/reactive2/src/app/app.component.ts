@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl,
-  FormBuilder, Validators } from '@angular/forms'
+  FormBuilder, Validators, 
+  ReactiveFormsModule} from '@angular/forms'
 
 @Component({
+  imports: [CommonModule, ReactiveFormsModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
