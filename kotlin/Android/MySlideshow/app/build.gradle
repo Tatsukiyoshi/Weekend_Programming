@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "com.example.myslideshow"
         minSdk 30
@@ -20,8 +20,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_21
         sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_22
     }
     viewBinding {
         enabled = true
@@ -33,13 +33,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.viewpager2:viewpager2:1.1.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.3'
     testImplementation 'org.testng:testng:7.10.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }

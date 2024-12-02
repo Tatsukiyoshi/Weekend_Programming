@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.mygeminiapplication"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mygeminiapplication"
@@ -32,11 +32,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_22
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "22"
     }
     buildFeatures {
         compose = true

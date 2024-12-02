@@ -1,7 +1,7 @@
 spring:
   batch:
     job:
-      name: CsvImportSkipJob
+      name: CsvImportMybatisJob
     jdbc:
       initialize-schema: always
       schema: classpath:org/springframework/batch/core/schema-postgresql.sql

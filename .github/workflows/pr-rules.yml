@@ -12,24 +12,23 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - name: Check pr label name
-        uses: agaroot-technologies/action-restrict-pr-label@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          rules: |
-            main <- *Update* [Update]
-            main <- *update* [Update]
-            main <- *feature* [Feature]
-
       - name: Check head branch name
-        uses: agaroot-technologies/action-restrict-head-branch@v1.0.0
+        uses: praha-inc/action-restrict-head-branch@v1.0.0
         with:
           rules: |
             feature/* dependabot/* update/*
 
       - name: Check base branch name
-        uses: agaroot-technologies/action-restrict-base-branch@v1.0.0
+        uses: praha-inc/action-restrict-base-branch@v1.0.2
         with:
           rules: |
             main <- feature/* dependabot/* update/*
+
+      - name: Check pr label name
+        uses: praha-inc/action-restrict-pr-label@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          rules: |
+            main <- feature/* [Feature]
+            main <- update/* [Update]

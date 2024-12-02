@@ -1,6 +1,6 @@
 [package]
 name = "mongodb_sample"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 rust-version = "1.82.0"
 
@@ -8,11 +8,9 @@ rust-version = "1.82.0"
 
 [dependencies]
 mongodb = "3.1.0"
-tokio = {version = "1.40.0", features = ["full"]}
-serde = {version = "1.0.210", features = ["derive"]}
-proc-macro2 = "1.0.88"
+tokio = {version = "1.41.1", features = ["full"]}
+serde = {version = "1.0.214", features = ["derive"]}
 futures-util = "0.3.31"
-anyhow = "1.0.90"
+anyhow = "1.0.93"
 lombok = "0.4.0"
 async-trait = "0.1.83"
-time = "0.3.36"
