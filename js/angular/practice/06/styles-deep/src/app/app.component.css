@@ -1,4 +1,4 @@
-:host /deep/ p {
+:host ::ng-deep p {
     background-color: yellow;
     color: red;
 }

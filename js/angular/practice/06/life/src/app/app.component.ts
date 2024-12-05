@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnChanges, OnInit, DoCheck,
   AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges } from '@angular/core';
+import { ChildComponent } from './child.component';
 
 @Component({
+  imports: [CommonModule, ChildComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

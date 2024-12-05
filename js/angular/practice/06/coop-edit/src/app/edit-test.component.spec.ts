@@ -12,7 +12,8 @@ import { Book } from './book';
     selector: 'my-app',
     template: `
         <edit-book [item]="selected" (edited)="onedited($event)"></edit-book>
-    `
+    `,
+    imports: [FormsModule]
 })
 export class EditTestComponent {
     // 選択された書籍情報
@@ -40,9 +41,8 @@ describe('EditComponent', () => {
     // テストの前準備
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [ FormsModule ],
-            declarations: [ EditComponent, EditTestComponent ]
-        });
+    imports: [FormsModule, EditComponent, EditTestComponent]
+});
 
         // ホストコンポーネントをインスタンス化
         fixture = TestBed.createComponent(EditTestComponent);
