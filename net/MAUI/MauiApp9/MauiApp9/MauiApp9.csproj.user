@@ -3,9 +3,9 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net9.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 9 Pro API 35 (Android 15.0 - API 35)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 8 Pro - API 35 (Android 15.0 - API 35)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>Pixel_9_Pro_API_35</DefaultDevice>
+    <DefaultDevice>pixel_8_pro_-_api_35</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
