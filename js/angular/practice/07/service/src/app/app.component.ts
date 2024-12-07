@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 import { Book } from './book';
 import { BookService } from './book.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  imports: [CommonModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

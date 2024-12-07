@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { OverService } from './over.service';
+import { ChildComponent } from './child.component';
 
 @Component({
+  imports: [ChildComponent],
   selector: 'app-root',
   providers: [
     { provide: OverService, useClass: OverService }
