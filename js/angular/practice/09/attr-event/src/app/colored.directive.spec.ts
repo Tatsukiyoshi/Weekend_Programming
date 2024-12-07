@@ -6,6 +6,7 @@ import { DebugElement } from '@angular/core';
 import { ColoredDirective } from './colored.directive';
 
 // myColoredディレクティブをホストするためのColoredTestComponentコンポーネント
+// myColoredディレクティブをホストするためのColoredTestComponentコンポーネント
 @Component({
     selector: 'my-app',
     template: `
@@ -36,8 +37,8 @@ describe('ColoredDirective', () => {
     beforeEach(() => {
         // テストモジュールの宣言
         TestBed.configureTestingModule({
-            declarations: [ ColoredTestComponent, ColoredDirective ]
-        });
+    imports: [ColoredTestComponent, ColoredDirective]
+});
 
         // ホストコンポーネントをインスタンス化
         fixture = TestBed.createComponent(ColoredTestComponent);

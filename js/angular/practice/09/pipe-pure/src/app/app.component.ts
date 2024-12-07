@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+import { GrepPipe } from './grep.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  imports: [CommonModule, GrepPipe],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
