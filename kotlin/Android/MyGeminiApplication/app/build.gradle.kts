@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.10" // this version matches your Kotlin version
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.0" // this version matches your Kotlin version
 }
 
 android {
@@ -53,8 +53,6 @@ android {
 }
 
 composeCompiler {
-    enableStrongSkippingMode = true
-
     reportsDestination = layout.buildDirectory.dir("compose_compiler")
     // stabilityConfigurationFile = rootProject.layout.projectDirectory.file("stability_config.conf")
 }

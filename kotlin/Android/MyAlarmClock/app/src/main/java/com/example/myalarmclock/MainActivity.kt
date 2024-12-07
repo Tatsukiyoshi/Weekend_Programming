@@ -2,15 +2,14 @@ package com.example.myalarmclock
 
 import android.app.AlarmManager
 import android.app.KeyguardManager
-import android.app.PendingIntent.*
-import android.content.Context
+import android.app.PendingIntent.FLAG_IMMUTABLE
+import android.app.PendingIntent.getBroadcast
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import android.text.format.DateFormat
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myalarmclock.databinding.ActivityMainBinding
-import java.lang.IllegalArgumentException
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener,
             this.setShowWhenLocked(true)
             setTurnScreenOn(true)
             val keyguardManager =
-                getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
+                getSystemService(KEYGUARD_SERVICE) as KeyguardManager
             keyguardManager.requestDismissKeyguard(this, null)
 
             val dialog = TimeAlertDialog()
@@ -106,7 +105,7 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener,
 
     // アラームマネージャにイベントを登録する
     private fun setAlarmManager(calendar: Calendar) {
-        val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val am = getSystemService(ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, AlarmBroadcastReceiver::class.java)
         val pending = getBroadcast(this, 0, intent, FLAG_IMMUTABLE)
 
@@ -115,7 +114,7 @@ class MainActivity : AppCompatActivity(), TimeAlertDialog.Listener,
 
     // キャンセル処理を追加する
     private fun cancelAlarmManager() {
-        val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val am = getSystemService(ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, AlarmBroadcastReceiver::class.java)
         val pending = getBroadcast(this, 0, intent, FLAG_IMMUTABLE)
         am.cancel(pending)
