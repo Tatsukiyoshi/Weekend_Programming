@@ -1,13 +1,13 @@
 plugins {
 	id("org.springframework.boot") version "3.3.4"
 	id("io.spring.dependency-management") version "1.1.6"
-	kotlin("jvm") version "2.0.20"
+	kotlin("jvm") version "2.1.0"
 	kotlin("plugin.spring") version "1.8.10"
 	kotlin("plugin.jpa") version "1.8.10"
 }
 
 group = "com.example"
-version = "0.0.3-SNAPSHOT"
+version = "0.0.4-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_22
 
 repositories {
