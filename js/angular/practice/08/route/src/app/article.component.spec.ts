@@ -26,11 +26,11 @@ describe('ArticleComponent', () => {
 
         // テストモジュールを準備
         TestBed.configureTestingModule({
-            declarations: [ ArticleComponent ],
-            providers: [
-                { provide: ActivatedRoute, useValue: ActivatedRouteStub }
-            ]
-        });
+    imports: [ArticleComponent],
+    providers: [
+        { provide: ActivatedRoute, useValue: ActivatedRouteStub }
+    ]
+});
 
         // コンポーネントを準備
         fixture = TestBed.createComponent(ArticleComponent);

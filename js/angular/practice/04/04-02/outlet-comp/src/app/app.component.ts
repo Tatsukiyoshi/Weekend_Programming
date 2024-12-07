@@ -3,8 +3,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { EventComponent } from './event.component';
 import { BookComponent } from './book.component';
 import { WingsComponent } from './wings.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  imports: [CommonModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

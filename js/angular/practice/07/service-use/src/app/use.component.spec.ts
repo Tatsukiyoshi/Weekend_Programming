@@ -24,8 +24,8 @@ describe('UseComponent', () => {
 
         // テストモジュールを準備
         TestBed.configureTestingModule({
-            declarations: [ UseComponent ]
-        }).overrideComponent(UseComponent, { // コンポーネントの設定をオーバーライド
+    imports: [UseComponent]
+}).overrideComponent(UseComponent, { // コンポーネントの設定をオーバーライド
             set: {
                 providers: [
                     { provide: UseService, useValue: serviceStub }

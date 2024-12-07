@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { Book } from './book';
+import { CommonModule } from '@angular/common';
+import { EditComponent } from './edit.component';
 
 @Component({
+  imports: [CommonModule, EditComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

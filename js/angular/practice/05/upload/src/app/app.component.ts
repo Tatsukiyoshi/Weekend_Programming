@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @Component({
+  imports: [FormsModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

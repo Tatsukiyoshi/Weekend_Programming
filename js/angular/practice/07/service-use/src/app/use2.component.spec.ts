@@ -17,8 +17,8 @@ describe('UseComponent', () => {
     beforeEach(() => {
         current = new Date(2017, 3, 1);
         TestBed.configureTestingModule({
-            declarations: [ UseComponent ]
-        }).overrideComponent(UseComponent, {    // UseComponentコンポーネントの設定を上書き
+    imports: [UseComponent]
+}).overrideComponent(UseComponent, {    // UseComponentコンポーネントの設定を上書き
             set: {
                 // UseServiceをインスタンス化する際に、スパイを設定
                 providers: [

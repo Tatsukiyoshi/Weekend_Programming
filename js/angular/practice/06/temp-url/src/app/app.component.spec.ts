@@ -12,10 +12,8 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     // テストモジュールの準備
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents(); // テンプレートのコンパイル
+    imports: [AppComponent],
+}).compileComponents(); // テンプレートのコンパイル
   });
 
   beforeEach(() => {

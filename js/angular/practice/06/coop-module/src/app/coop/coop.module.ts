@@ -6,8 +6,8 @@ import { DetailsComponent } from "./details.component";
 import { EditComponent } from "./edit.component";
 
 @NgModule({
-    imports: [ CommonModule, FormsModule ],
-    declarations: [ DetailsComponent, EditComponent ],
+    imports: [ CommonModule, FormsModule, DetailsComponent, EditComponent],
+    //declarations: [ DetailsComponent, EditComponent ],
     exports: [ DetailsComponent, EditComponent ]
 })
 export class CoopModule { }

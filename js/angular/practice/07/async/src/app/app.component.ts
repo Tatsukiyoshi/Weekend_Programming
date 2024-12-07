@@ -3,8 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { map } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  imports: [CommonModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

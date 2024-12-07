@@ -15,9 +15,8 @@ describe('Input/Output Component', () => {
     beforeEach(() => {
         // テストモジュールの準備
         TestBed.configureTestingModule({
-            imports: [ FormsModule ],
-            declarations: [ EditComponent ]
-        })
+    imports: [FormsModule, EditComponent]
+})
 
         // コンポーネントをインスタンス化
         fixture = TestBed.createComponent(EditComponent);

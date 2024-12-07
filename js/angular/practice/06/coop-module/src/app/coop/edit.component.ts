@@ -1,7 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Book } from '../book';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+    imports: [CommonModule, FormsModule],
     selector: 'edit-book',
     templateUrl: './edit.component.html',
 })

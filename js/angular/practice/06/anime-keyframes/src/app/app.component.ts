@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+  imports: [CommonModule, FormsModule],
   selector: 'app-root',
   animations: [
     trigger('labelState', [
