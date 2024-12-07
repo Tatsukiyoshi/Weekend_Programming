@@ -13,16 +13,14 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     // テストモジュールを準備
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
+    imports: [
+        RouterTestingModule,
         AppComponent
-      ],
-      schemas: [
+    ],
+    schemas: [
         NO_ERRORS_SCHEMA
-      ]
-    }).compileComponents();
+    ]
+}).compileComponents();
 
     // コンポーネントをインスタンス化
     fixture = TestBed.createComponent(AppComponent);

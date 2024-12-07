@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
-import { ActivatedRoute, Params } from "@angular/router";
+import { ActivatedRoute, Params, RouterModule } from "@angular/router";
 
 @Component({
+    imports: [RouterModule],
     templateUrl: './content.component.html',
     styles: ['.current { background-color: #ff0; }']
 })
