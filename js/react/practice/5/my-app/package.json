@@ -1,22 +1,22 @@
 {
   "name": "my-app",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@testing-library/jest-dom": "^6.4.5",
-    "@testing-library/react": "^15.0.7",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
-    "node-sass": "^9.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "sass": "^1.82.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.13",
     "styled-jsx": "^5.1.6",
-    "update-browserslist-db": "^1.0.16",
-    "web-vitals": "^2.1.4"
+    "update-browserslist-db": "^1.1.1",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "craco start",
@@ -44,9 +44,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "postcss": "8.4",
+    "postcss": "~8.4.49",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^7.4.2",
+    "postcss-preset-env": "^7.8.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
