@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdkPreview 'Baklava'
     defaultConfig {
         vectorDrawables.useSupportLibrary = true // Support Vector Format under Android 5.0
         applicationId "com.example.mycountdowntimer"

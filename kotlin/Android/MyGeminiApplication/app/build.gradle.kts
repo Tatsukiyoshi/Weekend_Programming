@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.mygeminiapplication"
-    compileSdk = 35
+    compileSdkPreview = "Baklava"
 
     defaultConfig {
         applicationId = "com.example.mygeminiapplication"

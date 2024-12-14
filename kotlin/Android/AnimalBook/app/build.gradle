@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdkPreview 'Baklava'
     defaultConfig {
         applicationId "com.example.animalbook"
         minSdk 30
@@ -27,7 +27,7 @@ android {
         enabled = true
     }
     namespace 'com.example.animalbook'
-    buildToolsVersion '34.0.0'
+    buildToolsVersion '35.0.0'
 }
 
 dependencies {
