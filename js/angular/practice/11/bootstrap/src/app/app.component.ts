@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { AccordionConfig } from 'ngx-bootstrap/accordion';
+import { AccordionConfig, AccordionModule } from 'ngx-bootstrap/accordion';
 
 @Component({
+  imports: [AccordionModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
