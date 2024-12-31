@@ -28,9 +28,7 @@ fn App() -> Element {
           ResponseContent::Items(items) => {
             rsx! {
               for item in items {
-                rsx! {
-                  div { "{serde_json::to_string(&item).unwrap()}" }
-                }
+                div { "{serde_json::to_string(&item).unwrap()}" }
               }
             }
           },
