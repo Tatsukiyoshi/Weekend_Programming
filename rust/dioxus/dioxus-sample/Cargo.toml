@@ -1,15 +1,27 @@
 [package]
 name = "dioxus-sample"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Shinya Watanabe <48684470+Tatsukiyoshi@users.noreply.github.com>"]
 edition = "2021"
-
+rust-version = "1.83"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 
-dioxus = { version = "0.5", features = ["web", "router"] }
+dioxus = { version = "0.6.1", features = ["web", "router"] }
 
 # Debug
-tracing = "0.1.40"
-dioxus-logger = "0.5.0"
+tracing = "0.1.41"
+dioxus-logger = "0.6.1"
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

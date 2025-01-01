@@ -1,19 +1,20 @@
 [package]
 name = "actix-sample"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+rust-version = "1.83"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-rt = "2.9.0"
-actix-web = "4.5.1"
-env_logger = "0.11.3"
-log = "0.4.21"
-serde = { version = "1.0.198", features = ["derive"] }
-serde_json = "1.0.116"
-chrono = "0.4.38"
-tera = { version = "1.19.1", default-features = false}
+actix-rt = "2.10.0"
+actix-web = "4.9.0"
+env_logger = "0.11.6"
+log = "0.4.22"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+chrono = "0.4.39"
+tera = { version = "1.20.0", default-features = false}
 actix-session = { version = "0.6.2", default-features = false, features = ["cookie-session"] }
 actix-web-flash-messages = { version = "0.4.2", features = ["sessions", "cookies"] }
 serde-xml-rs = { git = "https://github.com/adrianbenavides/serde-xml-rs.git", rev = "fc2d35e5e2d08c4e8c8dee13449ff3ce98de46c1" }
