@@ -4,12 +4,11 @@ use log::info;
 use actix_web::{Responder, HttpResponse, web, get, put, post, delete};
 use actix_session::Session;
 use serde::{Serialize, Deserialize};
-use chrono::{DateTime, Local, Duration};
+use chrono::{DateTime, Local};
 use tera::Context;
 use actix_web_flash_messages::{
   FlashMessage, IncomingFlashMessages, Level,
 };
-use serde_xml_rs::{from_str, to_string};
 
 /// ##  レスポンス生成
 fn build_response(value: &Option<String>, response: &ApiResponse)

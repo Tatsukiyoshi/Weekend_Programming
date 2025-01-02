@@ -3,13 +3,11 @@ mod handler;
 
 use std::io::Result;
 use actix_cors::Cors;
-use actix_web::{App, HttpServer, Responder, HttpResponse, get, web,
-				middleware::Logger};
+use actix_web::{App, HttpServer, web, middleware::Logger};
 use actix_web::cookie::{Key};
 use actix_session::storage::CookieSessionStore;
 use actix_session::SessionMiddleware;
 use actix_web_flash_messages::FlashMessagesFramework;
-use actix_web_flash_messages::storage::SessionMessageStore;
 use actix_web_flash_messages::storage::CookieMessageStore;
 use env_logger::Env;
 use crate::handler::{create, destroy, edit, index, new, show, update};
