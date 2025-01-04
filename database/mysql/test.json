@@ -1,0 +1,18 @@
+{
+    "schema": "test",
+    "includesDdl": true,
+    "includesViewsDdl": true,
+    "includesData": true,
+    "tables": [
+        "tank_operation",
+        "tank"
+    ],
+    "views": [],
+    "events": [],
+    "functions": [],
+    "procedures": [],
+    "basenames": {
+        "tank_operation": "test@tank_operation",
+        "tank": "test@tank"
+    }
+}

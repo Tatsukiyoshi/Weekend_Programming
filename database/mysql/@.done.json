@@ -1,0 +1,20 @@
+{
+    "end": "2025-01-04 15:57:45",
+    "dataBytes": 22,
+    "tableDataBytes": {
+        "test": {
+            "tank_operation": 18,
+            "tank": 4
+        }
+    },
+    "tableRows": {
+        "test": {
+            "tank_operation": 2,
+            "tank": 1
+        }
+    },
+    "chunkFileBytes": {
+        "test@tank_operation@@0.tsv.zst": 18,
+        "test@tank@@0.tsv.zst": 4
+    }
+}
