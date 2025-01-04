@@ -1,0 +1,27 @@
+{
+    "options": {
+        "schema": "test",
+        "table": "tank_operation",
+        "columns": [
+            "tank_operation_id",
+            "status"
+        ],
+        "defaultCharacterSet": "utf8mb4",
+        "fieldsTerminatedBy": "\t",
+        "fieldsEnclosedBy": "",
+        "fieldsOptionallyEnclosed": false,
+        "fieldsEscapedBy": "\\",
+        "linesTerminatedBy": "\n"
+    },
+    "triggers": [],
+    "includesData": true,
+    "includesDdl": true,
+    "extension": "tsv.zst",
+    "chunking": true,
+    "compression": "zstd",
+    "primaryIndex": [
+        "tank_operation_id"
+    ],
+    "partitions": [],
+    "basenames": {}
+}
