@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: test    Table: tank_operation
 -- ------------------------------------------------------
--- Server version	8.4.2
+-- Server version	9.1.0
 
 --
 -- Table structure for table `tank_operation`
@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS `tank_operation` (
   `tank_operation_id` int NOT NULL AUTO_INCREMENT,
   `status` char(10) DEFAULT NULL,
   PRIMARY KEY (`tank_operation_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

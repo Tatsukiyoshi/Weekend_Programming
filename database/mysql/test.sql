@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: test
 -- ------------------------------------------------------
--- Server version	8.4.2
+-- Server version	9.1.0
 
 --
 -- Current Database: test

@@ -4,15 +4,15 @@
     "includesViewsDdl": true,
     "includesData": true,
     "tables": [
-        "tank_operation",
-        "tank"
+        "tank",
+        "tank_operation"
     ],
     "views": [],
     "events": [],
     "functions": [],
     "procedures": [],
     "basenames": {
-        "tank_operation": "test@tank_operation",
-        "tank": "test@tank"
+        "tank": "test@tank",
+        "tank_operation": "test@tank_operation"
     }
 }
