@@ -1,7 +1,7 @@
 {
   "name": "tauri-mac-ios-app",
   "private": true,
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,6 +21,6 @@
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
-    "@tauri-apps/cli": "^2.2.4"
+    "@tauri-apps/cli": "^2.2.5"
   }
 }
