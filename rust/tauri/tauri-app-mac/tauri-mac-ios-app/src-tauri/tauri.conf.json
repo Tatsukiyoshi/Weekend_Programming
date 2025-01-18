@@ -1,6 +1,6 @@
 {
   "productName": "tauri-mac-ios-app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "identifier": "com.tauri2.app",
   "build": {
     "beforeDevCommand": "bun run dev",
