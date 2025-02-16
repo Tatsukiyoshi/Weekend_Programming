@@ -1,6 +1,6 @@
 [package]
 name = "actix-sample"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 rust-version = "1.83"
 
@@ -15,7 +15,7 @@ serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.134"
 chrono = "0.4.39"
 tera = { version = "1.20.0", default-features = false}
-actix-session = { version = "0.6.2", default-features = false, features = ["cookie-session"] }
-actix-web-flash-messages = { version = "0.4.2", features = ["sessions", "cookies"] }
+actix-session = { version = "0.10.1", default-features = false, features = ["cookie-session"] }
+actix-web-flash-messages = { version = "0.5.0", features = ["sessions", "cookies"] }
 serde-xml-rs = { git = "https://github.com/adrianbenavides/serde-xml-rs.git", rev = "fc2d35e5e2d08c4e8c8dee13449ff3ce98de46c1" }
 actix-cors = "0.7.0"
