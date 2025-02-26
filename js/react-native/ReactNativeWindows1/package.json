@@ -1,6 +1,6 @@
 {
-  "name": "ReactNativeWindows1",
-  "version": "0.1.0",
+  "name": "react-native-windows1",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -8,32 +8,39 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "windows": "react-native run-windows"
+    "windows": "bunx @react-native-community/cli run-windows"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-native": "^0.76.3",
-    "react-native-windows": "^0.76.2"
+    "react-native": "^0.77.1",
+    "react-native-windows": "^0.77.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/runtime": "^7.26.0",
-    "@react-native/babel-preset": "^0.76.3",
-    "@react-native/eslint-config": "^0.76.3",
-    "@react-native/metro-config": "^0.76.3",
-    "@react-native/typescript-config": "^0.76.3",
-    "@types/react": "^18.3.12",
-    "@types/react-test-renderer": "^18.3.0",
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/runtime": "^7.26.9",
+    "@react-native/babel-preset": "^0.77.1",
+    "@react-native/eslint-config": "^0.77.1",
+    "@react-native/metro-config": "^0.77.1",
+    "@react-native/typescript-config": "^0.77.1",
+    "@types/react": "^18.3.18",
+    "@types/react-test-renderer": "^18.3.1",
     "babel-jest": "^29.7.0",
-    "eslint": "^9.16.0",
+    "eslint": "^9.21.0",
     "jest": "^29.7.0",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.2",
     "react-test-renderer": "^18.3.1",
-    "typescript": "^5.7.2",
-    "metro-config": "^0.81.0"
+    "typescript": "^5.7.3",
+    "metro-config": "^0.81.2"
   },
   "engines": {
     "node": ">=18"
+  },
+  "react-native-windows": {
+    "init-windows": {
+      "name": "ReactNativeWindows1",
+      "namespace": "ReactNativeWindows1",
+      "template": "old/uwp-cpp-app"
+    }
   }
 }
