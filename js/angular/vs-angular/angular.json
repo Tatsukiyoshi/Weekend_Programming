@@ -20,7 +20,7 @@
             "outputPath": "dist/vs-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [ "zone.js" ],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -118,5 +118,9 @@
           }
         }
       }
-    }}
+    }
+  },
+  "cli": {
+    "analytics": "e563bb6d-37f7-4c06-9730-3f89f461129b"
+  }
 }
