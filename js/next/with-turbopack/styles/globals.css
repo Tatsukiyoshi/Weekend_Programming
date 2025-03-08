@@ -1,3 +1,67 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-vercel-pink: #ff0080;
+  --color-vercel-blue: #0070f3;
+  --color-vercel-cyan: #50e3c2;
+  --color-vercel-orange: #f5a623;
+  --color-vercel-violet: #7928ca;
+
+  @keyframes rerender {
+    0% {
+      border-color: #ff0080;
+    }
+    40% {
+      border-color: #ff0080;
+    }
+  }
+  @keyframes highlight {
+    0% {
+      background: #ff0080;
+      color: #fff;
+    }
+    40% {
+      background: #ff0080;
+      color: #fff;
+    }
+  }
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes translateXReset {
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeToTransparent {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
