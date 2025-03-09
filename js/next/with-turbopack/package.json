@@ -1,5 +1,5 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -19,9 +19,10 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
     "clsx": "^2.1.1",
     "concurrently": "^9.1.2",
-    "next": "^15.1.6",
+    "next": "^15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.15",
@@ -29,16 +30,16 @@
     "use-count-up": "^3.0.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.1",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.20.0",
-    "eslint-config-next": "^15.1.6",
-    "postcss": "^8.5.1",
-    "prettier": "^3.4.2",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "^15.2.1",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.4",
-    "typescript": "^5.7.3"
+    "tailwindcss": "^4.0.12",
+    "typescript": "^5.8.2"
   }
 }
