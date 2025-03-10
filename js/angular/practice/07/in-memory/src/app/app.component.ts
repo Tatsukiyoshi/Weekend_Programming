@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { firstValueFrom } from 'rxjs';
 
 @Component({
   imports: [CommonModule],
@@ -22,7 +23,7 @@ export class AppComponent {
 
   // 議事データベースから書籍情報を取得
   async getAll() {
-    const res = await this.http.get('/api/books').toPromise();
+    const res = await firstValueFrom(this.http.get('/api/books'));
     console.log(res);
   }
 }
