@@ -15,12 +15,13 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser-esbuild",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/vs-angular",
+            "outputPath": {
+              "base": "dist/vs-angular"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [ "zone.js" ],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -30,7 +31,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -46,8 +48,6 @@
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "vs-angular:build"
+            "buildTarget": "vs-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vs-angular:build:production"
+              "buildTarget": "vs-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "vs-angular:build"
+            "buildTarget": "vs-angular:build"
           }
         },
         "test": {
@@ -118,5 +118,9 @@
           }
         }
       }
-    }}
+    }
+  },
+  "cli": {
+    "analytics": "e563bb6d-37f7-4c06-9730-3f89f461129b"
+  }
 }
