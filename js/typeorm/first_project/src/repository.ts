@@ -43,4 +43,16 @@ AppDataSource.initialize().then(async () => {
 	const [photos, photosCount] = await photoRepository.findAndCount()
 	console.log("All photos: ", photos)
 	console.log("Photos count: ", photosCount)
+
+	// Update the photo
+	const photoToUpdate = await photoRepository.findOneBy({
+		id: 1,
+	})
+	photoToUpdate.name = "Me, my friends and polar bears"
+	await photoRepository.save(photoToUpdate)
+	const photoUpdated = await photoRepository.findOneBy({
+		id: 1,
+	})
+	console.log("Photo has been updated: ", photoUpdated)
+
 }).catch(error => console.log(error))
