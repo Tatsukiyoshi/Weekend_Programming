@@ -19,22 +19,16 @@ AppDataSource.initialize().then(async () => {
     metadata.compressed = true
     metadata.comment = "cybershoot"
     metadata.orientation = "portrait"
-    metadata.photo = photo // this way we connect them
 
-    // get entity repositories
+    photo.metadata = metadata // this way we connect them
+
+    // get repository
     const photoRepository = AppDataSource.getRepository(Photo)
-    const metadataRepository = AppDataSource.getRepository(PhotoMetadata)
-
-    // first we should save a photo
+    
+    // saving a photo also save the metadata
     await photoRepository.save(photo)
 
-    // photo is saved. Now we need to save a photo metadata
-    await metadataRepository.save(metadata)
-
-    // done
-    console.log(
-        "Metadata is saved, and the relation between metadata and photo is created in the database too",
-    )
+    console.log("Photo is saved, photo metadata is saved too.")
 
     // load photos with metadata
     const photos = await photoRepository.find({
