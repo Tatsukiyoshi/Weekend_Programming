@@ -1,6 +1,6 @@
 {
    "name": "first_project",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "devDependencies": {
@@ -16,6 +16,7 @@
    "scripts": {
       "start": "ts-node src/index.ts",
       "start:photo1": "ts-node src/entity-manager.ts",
+      "start:photo2": "ts-node src/repository.ts",
       "typeorm": "typeorm-ts-node-commonjs"
    }
 }
