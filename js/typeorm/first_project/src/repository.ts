@@ -11,9 +11,36 @@ AppDataSource.initialize().then(async () => {
 	
 	const photoRepository = AppDataSource.getRepository(Photo)
 	
+	// Save the photo
 	await photoRepository.save(photo)
 	console.log("Photo has been saved")
 	
-	const savedPhotos = await photoRepository.find()
-	console.log("All photos from the db: ", savedPhotos)
+	// Find the photo
+	const allPhotos = await photoRepository.find()
+	console.log("All photos from the db: ", allPhotos)
+	
+	// Find the photo by id
+	const firstPhoto = await photoRepository.findOneBy({
+		id: 1,
+	})
+	console.log("First photo from the db: ", firstPhoto)
+	
+	// Find the photo by name
+	const meAndBearsPhoto = await photoRepository.findOneBy({
+		name: "Me and Bears",
+	})
+	console.log("Me and Bears photo from the db: ", meAndBearsPhoto)
+
+	// Find the photo by views
+	const allViewedPhotos = await photoRepository.findBy({ views: 1 })
+	console.log("All viewed photos: ", allViewedPhotos)
+	
+	// Find the photo by isPublished
+	const allPublishedPhotos = await photoRepository.findBy({ isPublished: true })
+	console.log("All published photos: ", allPublishedPhotos)
+	
+	// Find the photos and count
+	const [photos, photosCount] = await photoRepository.findAndCount()
+	console.log("All photos: ", photos)
+	console.log("Photos count: ", photosCount)
 }).catch(error => console.log(error))

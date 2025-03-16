@@ -1,6 +1,6 @@
 {
    "name": "first_project",
-   "version": "0.0.3",
+   "version": "0.0.4",
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "devDependencies": {
