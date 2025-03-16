@@ -1,20 +1,21 @@
 {
    "name": "first_project",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "devDependencies": {
-      "@types/node": "^16.11.10",
-      "ts-node": "10.9.1",
-      "typescript": "4.5.2"
+      "@types/node": "^22.13.10",
+      "ts-node": "10.9.2",
+      "typescript": "5.8.2"
    },
    "dependencies": {
       "mysql2": "^3.13.0",
-      "reflect-metadata": "^0.1.13",
+      "reflect-metadata": "^0.2.2",
       "typeorm": "0.3.21"
    },
    "scripts": {
       "start": "ts-node src/index.ts",
+      "start:photo1": "ts-node src/entity-manager.ts",
       "typeorm": "typeorm-ts-node-commonjs"
    }
 }
