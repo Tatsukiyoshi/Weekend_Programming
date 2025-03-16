@@ -46,13 +46,21 @@ AppDataSource.initialize().then(async () => {
 
 	// Update the photo
 	const photoToUpdate = await photoRepository.findOneBy({
-		id: 1,
+		views: 1
 	})
 	photoToUpdate.name = "Me, my friends and polar bears"
 	await photoRepository.save(photoToUpdate)
 	const photoUpdated = await photoRepository.findOneBy({
-		id: 1,
+		id: photoToUpdate.id,
 	})
 	console.log("Photo has been updated: ", photoUpdated)
 
+	// Remove the photo
+	const photoToRemove = await photoRepository.findOneBy({
+		views: 1
+	})
+	const removeResult = await photoRepository.remove(photoToRemove)
+	if (removeResult.id === undefined) {
+		console.log("Photo has been removed.")
+	}
 }).catch(error => console.log(error))
