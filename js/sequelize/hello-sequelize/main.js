@@ -1,5 +1,6 @@
 const {Sequelize, DataTypes} = require('sequelize');
-const sequelize = new Sequelize('sqlite::memory:');
+const sequelize = new Sequelize('postgres://sequelize:password@localhost:5432/sequelize') // Example for postgres
+
 const User = sequelize.define('User', {
   firstName : {
     type: DataTypes.STRING,
@@ -13,6 +14,7 @@ const User = sequelize.define('User', {
   }
 }, {
 });
+
 (async()=>{
   await User.sync({ force: true});
 
