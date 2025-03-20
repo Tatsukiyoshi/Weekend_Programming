@@ -1,25 +1,23 @@
-# Next.js + Turbopack
+#	How to build container
+-	How to set environment variables in PowerShell
+	```
+	$env:NODE_ENV="production"
+	```
 
-This example allows you to get started with `next dev --turbo` quicky.
+-	Path of the content built with next.js
+	```
+	.next/server/app/inde.html
+	```
 
-## Deploy your own
+# Start Docker 
+- Build Container Image
+	```
+	docker build --pull -t bun-nextjs .
+	```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-turbopack&project-name=with-turbopack&repository-name=with-turbopack)
+-	Run Container
+	```
+	docker run --name Nextjs_Sample -d -p 8000:80 bun-nextjs
+	```
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-turbopack with-turbopack-app
-```
-
-```bash
-yarn create next-app --example with-turbopack with-turbopack-app
-```
-
-```bash
-pnpm create next-app --example with-turbopack with-turbopack-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+-	Access [Web-Site](http://localhost:8000)
