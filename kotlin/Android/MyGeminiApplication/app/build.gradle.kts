@@ -2,17 +2,17 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
-    id("org.jetbrains.kotlin.plugin.compose") version "2.1.10" // this version matches your Kotlin version
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.20" // this version matches your Kotlin version
 }
 
 android {
     namespace = "com.example.mygeminiapplication"
-    compileSdkPreview = "Baklava"
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.mygeminiapplication"
         minSdk = 33
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -41,9 +41,6 @@ android {
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
