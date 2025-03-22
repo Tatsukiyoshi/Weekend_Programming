@@ -1,12 +1,12 @@
 plugins {
 	id("org.springframework.boot") version "3.4.0"
 	id("io.spring.dependency-management") version "1.1.6"
-	kotlin("jvm") version "2.1.10"
-	kotlin("plugin.spring") version "2.1.10"
+	kotlin("jvm") version "2.1.20"
+	kotlin("plugin.spring") version "2.1.20"
 }
 
 group = "com.example"
-version = "0.1.1-SNAPSHOT"
+version = "0.1.2-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_22
 
 configurations {
@@ -33,7 +33,7 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.batch:spring-batch-test")
-	testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
 	mockitoAgent("org.mockito:mockito-core") { isTransitive = false }
 }
 
