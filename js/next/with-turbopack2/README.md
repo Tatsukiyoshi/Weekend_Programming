@@ -1,4 +1,25 @@
 #	How to build container
+-	Configuration to export static
+	```js
+	/**
+	 * @type {import('next').NextConfig}
+	*/
+	const nextConfig = {
+		output: 'export',
+	
+		// Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+		// trailingSlash: true,
+	
+		// Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+		// skipTrailingSlashRedirect: true,
+	
+		// Optional: Change the output directory `out` -> `dist`
+		// distDir: 'dist',
+	}
+	
+	module.exports = nextConfig
+	```
+
 -	How to set environment variables in PowerShell
 	```
 	$env:NODE_ENV="production"
@@ -6,7 +27,7 @@
 
 -	Path of the content built with next.js
 	```
-	.next/server/app/inde.html
+	out/inde.html
 	```
 
 # Start Docker 
