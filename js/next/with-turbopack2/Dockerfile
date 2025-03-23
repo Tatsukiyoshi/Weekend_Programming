@@ -24,12 +24,12 @@ COPY . .
 # [optional] tests & build
 ENV NODE_ENV=production
 # RUN bun test
-RUN bunx --bun next build
+RUN bunx --bun run build
 
 # copy production dependencies and source code into final image
 FROM base AS release
 COPY --from=install /temp/prod/node_modules node_modules
-COPY --from=prerelease /usr/src/app/.next/server/app dist
+COPY --from=prerelease /usr/src/app/out dist
 COPY --from=prerelease /usr/src/app/package.json .
 
 # static Apache(httpd)
