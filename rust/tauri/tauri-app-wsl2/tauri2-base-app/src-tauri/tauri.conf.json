@@ -1,6 +1,6 @@
 {
   "productName": "tauri2-base-app",
-  "version": "1.1.0",
+  "version": "1.0.11",
   "identifier": "com.tauri.dev",
   "build": {
     "beforeDevCommand": "bun run dev",
