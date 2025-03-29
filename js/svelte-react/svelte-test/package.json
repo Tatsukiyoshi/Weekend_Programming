@@ -1,6 +1,6 @@
 {
 	"name": "svelte-app",
-	"version": "1.5.3",
+	"version": "1.5.4",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -8,6 +8,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"container:build": "docker build --pull -t bun-svelte .",
+		"container:run": "docker run --name Svelte_Sample -d -p 8000:80 bun-svelte",
 		"lint": "eslint ."
 	},
 	"devDependencies": {
@@ -18,11 +20,11 @@
 		"eslint": "^9.23.0",
 		"eslint-plugin-svelte": "^3.3.3",
 		"globals": "^16.0.0",
-		"svelte": "^5.25.2",
+		"svelte": "^5.25.3",
 		"svelte-check": "^4.1.5",
 		"typescript": "^5.8.2",
-		"typescript-eslint": "^8.27.0",
-		"vite": "^6.2.2"
+		"typescript-eslint": "^8.28.0",
+		"vite": "^6.2.3"
 	},
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.8"
