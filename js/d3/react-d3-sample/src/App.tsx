@@ -6,9 +6,9 @@ import LinePlot from './LintPlot'
 
 function App() {
   const [count, setCount] = useState(0)
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const data = [1, 3, 2, 5, 4, 7, 6, 10, 8, 9]
   const width = 640
-  const height = 400
+  const height = 320
   const marginTop = 20
   const marginRight = 20
   const marginBottom = 20
