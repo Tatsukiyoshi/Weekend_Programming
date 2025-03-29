@@ -17,12 +17,22 @@ RUN cd /temp/prod && bun install --frozen-lockfile --production
 
 # copy node_modules from temp directory
 # then copy all (non-ignored) project files into the image
-FROM base AS release
+FROM base AS prerelease
 COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
+
+# [optional] tests & build
 ENV NODE_ENV=production
+# RUN bun test
 RUN bunx --bun vite build
+
+# copy production dependencies and source code into final image
+FROM base AS release
+COPY --from=install /temp/prod/node_modules node_modules
+COPY --from=prerelease /usr/src/app/build dist
+COPY --from=prerelease /usr/src/app/package.json .
 
 # static Apache(httpd)
 FROM httpd:2.4 AS runtime
-COPY --from=release --chmod=755 /usr/src/app/build /usr/local/apache2/htdocs/
+COPY --from=release --chmod=755 /usr/src/app/dist /usr/local/apache2/htdocs/
+EXPOSE 80
