@@ -2,9 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import LinePlot from './LintPlot'
 
 function App() {
   const [count, setCount] = useState(0)
+  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const width = 640
+  const height = 400
+  const marginTop = 20
+  const marginRight = 20
+  const marginBottom = 20
+  const marginLeft = 20
 
   return (
     <>
@@ -25,6 +33,9 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <LinePlot data={data} width={width} height={height}
+        marginTop={marginTop} marginRight={marginRight} marginBottom={marginBottom} marginLeft={marginLeft}>
+      </LinePlot>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
