@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Welcome to Tauri 2.4.0!</h1>
+      <h1>Welcome to Tauri 2.4.1!</h1>
 
       <div className="row">
         <a href="https://vitejs.dev" target="_blank">
