@@ -9,7 +9,7 @@ android {
         vectorDrawables.useSupportLibrary = true // Support Vector Format under Android 5.0
         applicationId "com.example.mycountdowntimer"
         minSdk 30
-        targetSdk 35
+        targetSdk 36
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
