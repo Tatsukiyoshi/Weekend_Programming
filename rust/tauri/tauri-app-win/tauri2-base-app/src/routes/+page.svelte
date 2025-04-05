@@ -12,7 +12,7 @@
 </script>
 
 <main class="container">
-  <h1>Welcome to Tauri 2.4.0 + Svelte 5.25.2</h1>
+  <h1>Welcome to Tauri 2.4.1 + Svelte 5.25.6</h1>
 
   <div class="row">
     <a href="https://vitejs.dev" target="_blank">
